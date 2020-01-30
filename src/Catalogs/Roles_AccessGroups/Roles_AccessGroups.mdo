@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0952f3ec-26ac-4ac4-af52-f5309596c397">
+  <producedTypes>
+    <objectType typeId="c0018436-f4b7-4c86-8dbb-b6774c7eda2d" valueTypeId="be79cb74-c261-414b-8327-f12a44021948"/>
+    <refType typeId="81d772cb-ce67-42f9-8f4f-e66931df1e56" valueTypeId="cbb16eb9-2fa4-42ad-b3c6-8c1d17fd3569"/>
+    <selectionType typeId="92b7ea4b-57a7-41d7-81fa-8c880ae88e82" valueTypeId="583380e4-c069-49f7-b3f5-3081c76f2ef4"/>
+    <listType typeId="ea2e52ef-ec8d-410f-bf98-20490557b6e9" valueTypeId="82229fff-3ee3-44b4-addd-cf78c82591f3"/>
+    <managerType typeId="977af140-41b5-4f94-9ac6-d67adb98f3b3" valueTypeId="6f01f775-d7d7-4922-b7bc-4b396fe7f9c1"/>
+  </producedTypes>
+  <name>Roles_AccessGroups</name>
+  <synonym>
+    <key>en</key>
+    <value>Access groups</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectPresentation>
+    <key>en</key>
+    <value>Access group</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Roles_AccessGroups.Form.ItemForm</defaultObjectForm>
+  <defaultListForm>Catalog.Roles_AccessGroups.Form.ListForm</defaultListForm>
+  <defaultChoiceForm>Catalog.Roles_AccessGroups.Form.ChoiceForm</defaultChoiceForm>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <tabularSections uuid="fe4fd5aa-3c49-4d58-b67f-27e2b17e1592">
+    <producedTypes>
+      <objectType typeId="1d42e7ce-bcb5-4e1c-a72f-c5c1e4e662ae" valueTypeId="e678e68d-c460-4cb6-a085-09ae235f6e99"/>
+      <rowType typeId="b90c200b-6fb7-45c6-bfae-cd9262091da8" valueTypeId="2db2e39c-db41-45c2-bc33-112eecb1dccf"/>
+    </producedTypes>
+    <name>Profiles</name>
+    <synonym>
+      <key>en</key>
+      <value>Profiles</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="c2087828-f4a4-48e7-b8d7-e117411deb87">
+      <name>Profile</name>
+      <synonym>
+        <key>en</key>
+        <value>Profile</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Roles_AccessProfiles</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="62a9bdf1-f664-4e4c-95c6-eeced9dfcb3e">
+    <producedTypes>
+      <objectType typeId="b9a16669-4dfc-4656-9fad-19f7d85e7abd" valueTypeId="a9863eb9-663a-4e29-8bc1-c63e8ca91c4d"/>
+      <rowType typeId="8ff32863-97ca-4529-82d3-49483c1d03ee" valueTypeId="ba7327a8-b0d4-4dfd-a7de-a8b29e9bb283"/>
+    </producedTypes>
+    <name>Users</name>
+    <synonym>
+      <key>en</key>
+      <value>Users</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="1b232d87-f1ef-4b58-9abd-57db4cd69e72">
+      <name>User</name>
+      <synonym>
+        <key>en</key>
+        <value>User</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Users</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+  </tabularSections>
+  <forms uuid="b667d1a0-5bbb-4e2f-b988-0fe54a188569">
+    <name>ItemForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="93949896-3e78-4d29-80e6-68cc46a5f910">
+    <name>ListForm</name>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="92cf89d3-f523-4f03-821c-5e73de36b2c3">
+    <name>ChoiceForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Choice form</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

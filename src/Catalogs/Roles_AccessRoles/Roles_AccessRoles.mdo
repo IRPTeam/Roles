@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0ffdc60-e871-483e-a5c7-41d88cb89550">
+  <producedTypes>
+    <objectType typeId="3dc3acad-e8d7-440b-8412-b19a6c85690e" valueTypeId="4317f8c5-fd74-4495-95c6-3b4e40f49181"/>
+    <refType typeId="ab9d18f1-6cf8-46bf-9297-32cb59954bfa" valueTypeId="d3582415-6e85-4d1f-acb9-c4c5ffc7117d"/>
+    <selectionType typeId="5b362e60-7673-465e-a795-dc5b9ee1ffae" valueTypeId="1ca1d25d-632b-4851-a21f-98b80d087b9d"/>
+    <listType typeId="f0845c7f-e5e6-43a3-9e38-c06d18096692" valueTypeId="0bda2ba3-b80e-4ef6-8d4e-8c706f39dd44"/>
+    <managerType typeId="b1461994-c2e8-4cbc-928c-cc0911adc367" valueTypeId="0277cea7-1ff7-4cb7-83da-cbe0fd012580"/>
+  </producedTypes>
+  <name>Roles_AccessRoles</name>
+  <synonym>
+    <key>en</key>
+    <value>Access roles</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Roles_AccessRoles.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <tabularSections uuid="07c32fbc-9a1f-46bf-9c95-a05ffdb611e0">
+    <producedTypes>
+      <objectType typeId="0eb63fba-f18f-46f2-8965-997ee7dc7453" valueTypeId="18f87195-f52d-493b-9fd8-26b391733367"/>
+      <rowType typeId="a743b39b-4aba-497f-99e7-8cf02efb7e39" valueTypeId="666c2126-d0b4-4df9-8c39-e4c1d222bfe1"/>
+    </producedTypes>
+    <name>Rights</name>
+    <synonym>
+      <key>en</key>
+      <value>Rights</value>
+    </synonym>
+    <attributes uuid="f7b0ff70-608f-4dcf-97f7-94e324750a2e">
+      <name>ObjectType</name>
+      <synonym>
+        <key>en</key>
+        <value>Object type</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9dc5b098-190e-4bdd-ae96-7b1f7ada76d4">
+      <name>ObjectName</name>
+      <synonym>
+        <key>en</key>
+        <value>Object name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="66bf2437-0185-4301-b441-a7ab04f2ee21">
+      <name>RightName</name>
+      <synonym>
+        <key>en</key>
+        <value>Right name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="030d92e1-4351-41b3-a45c-07d853d109b7">
+      <name>RightValue</name>
+      <synonym>
+        <key>en</key>
+        <value>Right value</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4b0e0390-88d5-41a8-aa83-bcaac668f8e7">
+      <name>RowID</name>
+      <synonym>
+        <key>en</key>
+        <value>Row ID</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="2875f49d-7468-4544-b4d4-b62202f85534">
+    <producedTypes>
+      <objectType typeId="7b5c6ba2-3927-46f2-8fae-f29a28efb2a8" valueTypeId="08623a72-0215-4b2c-a754-f5a26affbe4c"/>
+      <rowType typeId="da1a450b-af98-4f5f-8fb9-6fde99bfa6cd" valueTypeId="9599bf31-3a30-4967-92d8-53dfe83728ef"/>
+    </producedTypes>
+    <name>RestrictionByCondition</name>
+    <synonym>
+      <key>en</key>
+      <value>Restriction by condition</value>
+    </synonym>
+    <attributes uuid="133b5480-2d99-4af1-b793-740854a9cbd1">
+      <name>RowID</name>
+      <synonym>
+        <key>en</key>
+        <value>Row ID</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2a9ef2ad-9e27-4231-8a0b-a5b1dfe65f82">
+      <name>Fields</name>
+      <synonym>
+        <key>en</key>
+        <value>Fields</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c853de8f-e473-48f4-9233-33287a040388">
+      <name>Condition</name>
+      <synonym>
+        <key>en</key>
+        <value>Condition</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <multiLine>true</multiLine>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

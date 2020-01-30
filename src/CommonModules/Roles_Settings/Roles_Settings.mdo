@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c9cb254-8d40-40cd-8c85-09884fd1390e">
+  <name>Roles_Settings</name>
+  <synonym>
+    <key>en</key>
+    <value>Settings</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

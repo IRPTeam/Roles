@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59612748-da0c-428e-b54f-26b116424823">
+  <name>Roles_AccessSystem</name>
+  <synonym>
+    <key>en</key>
+    <value>Access system</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Roles_SubsystemIco</picture>
+  </picture>
+  <content>CommonModule.Roles_UsersEvent</content>
+  <content>Role.Roles_DefaultRole</content>
+  <content>Catalog.Roles_AccessRoles</content>
+  <content>Catalog.Roles_AccessProfiles</content>
+  <content>Catalog.Users</content>
+  <content>Catalog.Roles_AccessGroups</content>
+  <content>DataProcessor.Roles_RolesEditor</content>
+</mdclass:Subsystem>

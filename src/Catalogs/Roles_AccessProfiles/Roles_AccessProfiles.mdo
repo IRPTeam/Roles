@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b60895d-431f-4492-ab54-c158b943ff2b">
+  <producedTypes>
+    <objectType typeId="a293cd67-d716-4ea4-85f1-2cacbf25f5fb" valueTypeId="70bf4d3d-f9b1-4196-b05e-035cf6cc88ed"/>
+    <refType typeId="f16b2f0a-1238-44d0-a5c4-428b74961748" valueTypeId="9640373a-3391-4aad-9a69-acb5408019c5"/>
+    <selectionType typeId="ab759751-569e-41c4-90c5-39ad117c0bde" valueTypeId="276f590b-8e69-4b77-a4c7-9dfcb5b8c880"/>
+    <listType typeId="a4431078-2451-40ff-9354-1fc45ebc7741" valueTypeId="8895f0dc-fe2a-417a-a05b-e67bbac490c9"/>
+    <managerType typeId="5811e91f-f121-4c43-8a6c-9c6365c5726f" valueTypeId="b791708d-47a6-43fa-9e75-c3ca839dc0af"/>
+  </producedTypes>
+  <name>Roles_AccessProfiles</name>
+  <synonym>
+    <key>en</key>
+    <value>Access profiles</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectPresentation>
+    <key>en</key>
+    <value>Access profile</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Roles_AccessProfiles.Form.ItemForm</defaultObjectForm>
+  <defaultListForm>Catalog.Roles_AccessProfiles.Form.ListForm</defaultListForm>
+  <defaultChoiceForm>Catalog.Roles_AccessProfiles.Form.ChoiceForm</defaultChoiceForm>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <tabularSections uuid="42dc9edf-b01c-44c1-9e54-9f1e64cd35d2">
+    <producedTypes>
+      <objectType typeId="531e1454-cc2c-4866-9bfe-822f3a3fe21a" valueTypeId="67f48639-7561-4976-bc61-4ef42011dad7"/>
+      <rowType typeId="51d0adda-2a88-4bd1-a2ae-127bcd3ff1d9" valueTypeId="0da3608c-f74e-4a0f-9186-f2d7d52858cd"/>
+    </producedTypes>
+    <name>Roles</name>
+    <synonym>
+      <key>en</key>
+      <value>Roles</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="a3ba0cbb-0693-44a9-a644-be87f4d09064">
+      <name>Role</name>
+      <synonym>
+        <key>en</key>
+        <value>Role</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Roles_AccessRoles</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="0779e018-26d3-42e8-8126-bee913a1ef07">
+      <name>Configuration</name>
+      <synonym>
+        <key>en</key>
+        <value>Configuration</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>256</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+  </tabularSections>
+  <forms uuid="8a77eafd-5000-4773-b0b9-1d08386753d3">
+    <name>ItemForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3dfb462e-40dc-4ccf-b86e-37f4f88bf60a">
+    <name>ListForm</name>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dd87ef55-d145-4c40-96c3-914853506160">
+    <name>ChoiceForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Choice form</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

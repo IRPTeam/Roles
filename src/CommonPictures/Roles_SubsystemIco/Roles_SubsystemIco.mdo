@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="553c05d1-17c9-446a-9a42-0e83a4eb818a">
+  <name>Roles_SubsystemIco</name>
+  <synonym>
+    <key>en</key>
+    <value>Subsystem ico</value>
+  </synonym>
+</mdclass:CommonPicture>
