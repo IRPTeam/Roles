@@ -7,6 +7,8 @@ Procedure UpdateUsersRoleOnWrite(Source, Cancel = False) Export
 		Result = UpdateUsersRolesByGroup(Source.Ref);
 	ElsIf TypeOf(Source) = Type("CatalogObject.Roles_AccessProfiles") Then
 		Result = UpdateUsersRole(Source.Ref);
+	Else
+		Return;
 	EndIf;
 	If Source.AdditionalProperties.Property("UsersEventOnWriteResult") Then
 		Source.AdditionalProperties["UsersEventOnWriteResult"] = Result;
@@ -58,11 +60,12 @@ Function UpdateUsersRole(AccessProfile)
 	QuerySelection = QueryResult.Select();
 	
 	While QuerySelection.Next() Do
-		User = Undefined;
 		If ValueIsFilled(QuerySelection.User.InfobaseUserID) Then
 			User = InfoBaseUsers.FindByUUID(QuerySelection.User.InfobaseUserID);
 		ElsIf ValueIsFilled(QuerySelection.User.Description) Then
 			User = InfoBaseUsers.FindByName(QuerySelection.User.Description);
+		Else
+			User = Undefined;
 		EndIf;
 		If User = Undefined Then
 			Result.Success = False;

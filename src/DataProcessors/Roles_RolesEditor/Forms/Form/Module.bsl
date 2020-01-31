@@ -279,7 +279,7 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	
 	
 	For Each Item In QueryResult Do
-		If NOT Item.ObjectType = "Role" Then
+		If NOT Item.ObjectType = "Role" OR NOT Item.ObjectType = "Configuration" Then
 			UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item);
 		EndIf;
 	EndDo;

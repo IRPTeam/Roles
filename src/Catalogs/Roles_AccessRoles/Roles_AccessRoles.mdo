@@ -27,6 +27,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Roles_AccessRoles.Form.ItemForm</defaultObjectForm>
   <tabularSections uuid="07c32fbc-9a1f-46bf-9c95-a05ffdb611e0">
     <producedTypes>
       <objectType typeId="0eb63fba-f18f-46f2-8965-997ee7dc7453" valueTypeId="18f87195-f52d-493b-9fd8-26b391733367"/>
@@ -49,6 +50,7 @@
           <length>150</length>
         </stringQualifiers>
       </type>
+      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -64,6 +66,7 @@
           <length>150</length>
         </stringQualifiers>
       </type>
+      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -79,6 +82,7 @@
           <length>150</length>
         </stringQualifiers>
       </type>
+      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -101,8 +105,12 @@
         <value>Row ID</value>
       </synonym>
       <type>
-        <types>UUID</types>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
       </type>
+      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <indexing>Index</indexing>
       <fullTextSearch>Use</fullTextSearch>
@@ -125,7 +133,10 @@
         <value>Row ID</value>
       </synonym>
       <type>
-        <types>UUID</types>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
       </type>
       <dataHistory>Use</dataHistory>
       <indexing>Index</indexing>
@@ -141,6 +152,7 @@
         <types>String</types>
         <stringQualifiers/>
       </type>
+      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -155,8 +167,18 @@
         <stringQualifiers/>
       </type>
       <multiLine>true</multiLine>
+      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <forms uuid="1ea93335-7ef1-4f21-a296-840a082ba02c">
+    <name>ItemForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
