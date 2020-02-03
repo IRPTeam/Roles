@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b32f6fdd-a1a8-4a33-bb3b-c79f0c8bab65">
+  <name>Roles_right_mobileClient</name>
+  <synonym>
+    <key>en</key>
+    <value>Right mobile client</value>
+  </synonym>
+</mdclass:CommonPicture>

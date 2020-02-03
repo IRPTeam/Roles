@@ -29,20 +29,4 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="5a229215-a165-4feb-9989-30b2af1be5ad">
-    <name>TemplateDB</name>
-    <synonym>
-      <key>en</key>
-      <value>Template DB</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
-  </templates>
-  <templates uuid="77b50651-f4a6-40cf-bc95-7b3d2d155ffe">
-    <name>TemplateMetaDataObject</name>
-    <synonym>
-      <key>en</key>
-      <value>Template meta data object</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
 </mdclass:DataProcessor>

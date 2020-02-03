@@ -1,421 +1,421 @@
 #Region Service
 Function RolesSet() Export
-	Settings = New Structure;
+	Settings = New Map;
 	
 	#Region HTTPService
 	HTTPService = New Array;
-	HTTPService.Add("Use");
+	HTTPService.Add(Enums.Roles_Rights.Use);
 	#EndRegion 
-	Settings.Insert("HTTPService", HTTPService);
+	Settings.Insert(Enums.Roles_MetadataTypes.HTTPService, HTTPService);
 
 	#Region WebService
 	WebService = New Array;
-	WebService.Add("Use");
+	WebService.Add(Enums.Roles_Rights.Use);
 	#EndRegion 
-	Settings.Insert("WebService", WebService);
+	Settings.Insert(Enums.Roles_MetadataTypes.WebService, WebService);
 
 	#Region BusinessProcess
 	BusinessProcess = New Array;
-	BusinessProcess.Add("Read");
-	BusinessProcess.Add("Insert");
-	BusinessProcess.Add("Update");
-	BusinessProcess.Add("Delete");
-	BusinessProcess.Add("View");
-	BusinessProcess.Add("InteractiveInsert");
-	BusinessProcess.Add("Edit");
-	BusinessProcess.Add("InteractiveDelete");
-	BusinessProcess.Add("InteractiveSetDeletionMark");
-	BusinessProcess.Add("InteractiveClearDeletionMark");
-	BusinessProcess.Add("InteractiveDeleteMarked");
-	BusinessProcess.Add("InputByString");
-	BusinessProcess.Add("InteractiveActivate");
-	BusinessProcess.Add("Start");
-	BusinessProcess.Add("InteractiveStart");
-	BusinessProcess.Add("ReadDataHistory");
-	BusinessProcess.Add("ReadDataHistoryOfMissingData");
-	BusinessProcess.Add("UpdateDataHistory");
-	BusinessProcess.Add("UpdateDataHistoryOfMissingData");
-	BusinessProcess.Add("UpdateDataHistorySettings");
-	BusinessProcess.Add("UpdateDataHistoryVersionComment");
-	BusinessProcess.Add("ViewDataHistory");
-	BusinessProcess.Add("EditDataHistoryVersionComment");
-	BusinessProcess.Add("SwitchToDataHistoryVersion");
+	BusinessProcess.Add(Enums.Roles_Rights.Read);
+	BusinessProcess.Add(Enums.Roles_Rights.Insert);
+	BusinessProcess.Add(Enums.Roles_Rights.Update);
+	BusinessProcess.Add(Enums.Roles_Rights.Delete);
+	BusinessProcess.Add(Enums.Roles_Rights.View);
+	BusinessProcess.Add(Enums.Roles_Rights.InteractiveInsert);
+	BusinessProcess.Add(Enums.Roles_Rights.Edit);
+	BusinessProcess.Add(Enums.Roles_Rights.InteractiveDelete);
+	BusinessProcess.Add(Enums.Roles_Rights.InteractiveSetDeletionMark);
+	BusinessProcess.Add(Enums.Roles_Rights.InteractiveClearDeletionMark);
+	BusinessProcess.Add(Enums.Roles_Rights.InteractiveDeleteMarked);
+	BusinessProcess.Add(Enums.Roles_Rights.InputByString);
+	BusinessProcess.Add(Enums.Roles_Rights.InteractiveActivate);
+	BusinessProcess.Add(Enums.Roles_Rights.Start);
+	BusinessProcess.Add(Enums.Roles_Rights.InteractiveStart);
+	BusinessProcess.Add(Enums.Roles_Rights.ReadDataHistory);
+	BusinessProcess.Add(Enums.Roles_Rights.ReadDataHistoryOfMissingData);
+	BusinessProcess.Add(Enums.Roles_Rights.UpdateDataHistory);
+	BusinessProcess.Add(Enums.Roles_Rights.UpdateDataHistoryOfMissingData);
+	BusinessProcess.Add(Enums.Roles_Rights.UpdateDataHistorySettings);
+	BusinessProcess.Add(Enums.Roles_Rights.UpdateDataHistoryVersionComment);
+	BusinessProcess.Add(Enums.Roles_Rights.ViewDataHistory);
+	BusinessProcess.Add(Enums.Roles_Rights.EditDataHistoryVersionComment);
+	BusinessProcess.Add(Enums.Roles_Rights.SwitchToDataHistoryVersion);
 	#EndRegion 
-	Settings.Insert("BusinessProcess", BusinessProcess);
+	Settings.Insert(Enums.Roles_MetadataTypes.BusinessProcess, BusinessProcess);
 
 	#Region Catalog
 	Catalog = New Array;
-	Catalog.Add("Read");
-	Catalog.Add("Insert");
-	Catalog.Add("Update");
-	Catalog.Add("Delete");
-	Catalog.Add("View");
-	Catalog.Add("InteractiveInsert");
-	Catalog.Add("Edit");
-	Catalog.Add("InteractiveDelete");
-	Catalog.Add("InteractiveSetDeletionMark");
-	Catalog.Add("InteractiveClearDeletionMark");
-	Catalog.Add("InteractiveDeleteMarked");
-	Catalog.Add("InputByString");
-	Catalog.Add("InteractiveDeletePredefinedData");
-	Catalog.Add("InteractiveSetDeletionMarkPredefinedData");
-	Catalog.Add("InteractiveClearDeletionMarkPredefinedData");
-	Catalog.Add("InteractiveDeleteMarkedPredefinedData");
-	Catalog.Add("ReadDataHistory");
-	Catalog.Add("ReadDataHistoryOfMissingData");
-	Catalog.Add("UpdateDataHistory");
-	Catalog.Add("UpdateDataHistoryOfMissingData");
-	Catalog.Add("UpdateDataHistorySettings");
-	Catalog.Add("UpdateDataHistoryVersionComment");
-	Catalog.Add("ViewDataHistory");
-	Catalog.Add("EditDataHistoryVersionComment");
-	Catalog.Add("SwitchToDataHistoryVersion");
+	Catalog.Add(Enums.Roles_Rights.Read);
+	Catalog.Add(Enums.Roles_Rights.Insert);
+	Catalog.Add(Enums.Roles_Rights.Update);
+	Catalog.Add(Enums.Roles_Rights.Delete);
+	Catalog.Add(Enums.Roles_Rights.View);
+	Catalog.Add(Enums.Roles_Rights.InteractiveInsert);
+	Catalog.Add(Enums.Roles_Rights.Edit);
+	Catalog.Add(Enums.Roles_Rights.InteractiveDelete);
+	Catalog.Add(Enums.Roles_Rights.InteractiveSetDeletionMark);
+	Catalog.Add(Enums.Roles_Rights.InteractiveClearDeletionMark);
+	Catalog.Add(Enums.Roles_Rights.InteractiveDeleteMarked);
+	Catalog.Add(Enums.Roles_Rights.InputByString);
+	Catalog.Add(Enums.Roles_Rights.InteractiveDeletePredefinedData);
+	Catalog.Add(Enums.Roles_Rights.InteractiveSetDeletionMarkPredefinedData);
+	Catalog.Add(Enums.Roles_Rights.InteractiveClearDeletionMarkPredefinedData);
+	Catalog.Add(Enums.Roles_Rights.InteractiveDeleteMarkedPredefinedData);
+	Catalog.Add(Enums.Roles_Rights.ReadDataHistory);
+	Catalog.Add(Enums.Roles_Rights.ReadDataHistoryOfMissingData);
+	Catalog.Add(Enums.Roles_Rights.UpdateDataHistory);
+	Catalog.Add(Enums.Roles_Rights.UpdateDataHistoryOfMissingData);
+	Catalog.Add(Enums.Roles_Rights.UpdateDataHistorySettings);
+	Catalog.Add(Enums.Roles_Rights.UpdateDataHistoryVersionComment);
+	Catalog.Add(Enums.Roles_Rights.ViewDataHistory);
+	Catalog.Add(Enums.Roles_Rights.EditDataHistoryVersionComment);
+	Catalog.Add(Enums.Roles_Rights.SwitchToDataHistoryVersion);
 	#EndRegion 
-	Settings.Insert("Catalog", Catalog);
+	Settings.Insert(Enums.Roles_MetadataTypes.Catalog, Catalog);
 
 
 	#Region Document
 	Document = New Array;
-	Document.Add("Read");
-	Document.Add("Insert");
-	Document.Add("Update");
-	Document.Add("Delete");
-	Document.Add("Posting");
-	Document.Add("UndoPosting");
-	Document.Add("View");
-	Document.Add("InteractiveInsert");
-	Document.Add("Edit");
-	Document.Add("InteractiveDelete");
-	Document.Add("InteractiveSetDeletionMark");
-	Document.Add("InteractiveClearDeletionMark");
-	Document.Add("InteractiveDeleteMarked");
-	Document.Add("InteractivePosting");
-	Document.Add("InteractivePostingRegular");
-	Document.Add("InteractiveUndoPosting");
-	Document.Add("InteractiveChangeOfPosted");
-	Document.Add("InputByString");
-	Document.Add("ReadDataHistory");
-	Document.Add("ReadDataHistoryOfMissingData");
-	Document.Add("UpdateDataHistory");
-	Document.Add("UpdateDataHistoryOfMissingData");
-	Document.Add("UpdateDataHistorySettings");
-	Document.Add("UpdateDataHistoryVersionComment");
-	Document.Add("ViewDataHistory");
-	Document.Add("EditDataHistoryVersionComment");
-	Document.Add("SwitchToDataHistoryVersion");
+	Document.Add(Enums.Roles_Rights.Read);
+	Document.Add(Enums.Roles_Rights.Insert);
+	Document.Add(Enums.Roles_Rights.Update);
+	Document.Add(Enums.Roles_Rights.Delete);
+	Document.Add(Enums.Roles_Rights.Posting);
+	Document.Add(Enums.Roles_Rights.UndoPosting);
+	Document.Add(Enums.Roles_Rights.View);
+	Document.Add(Enums.Roles_Rights.InteractiveInsert);
+	Document.Add(Enums.Roles_Rights.Edit);
+	Document.Add(Enums.Roles_Rights.InteractiveDelete);
+	Document.Add(Enums.Roles_Rights.InteractiveSetDeletionMark);
+	Document.Add(Enums.Roles_Rights.InteractiveClearDeletionMark);
+	Document.Add(Enums.Roles_Rights.InteractiveDeleteMarked);
+	Document.Add(Enums.Roles_Rights.InteractivePosting);
+	Document.Add(Enums.Roles_Rights.InteractivePostingRegular);
+	Document.Add(Enums.Roles_Rights.InteractiveUndoPosting);
+	Document.Add(Enums.Roles_Rights.InteractiveChangeOfPosted);
+	Document.Add(Enums.Roles_Rights.InputByString);
+	Document.Add(Enums.Roles_Rights.ReadDataHistory);
+	Document.Add(Enums.Roles_Rights.ReadDataHistoryOfMissingData);
+	Document.Add(Enums.Roles_Rights.UpdateDataHistory);
+	Document.Add(Enums.Roles_Rights.UpdateDataHistoryOfMissingData);
+	Document.Add(Enums.Roles_Rights.UpdateDataHistorySettings);
+	Document.Add(Enums.Roles_Rights.UpdateDataHistoryVersionComment);
+	Document.Add(Enums.Roles_Rights.ViewDataHistory);
+	Document.Add(Enums.Roles_Rights.EditDataHistoryVersionComment);
+	Document.Add(Enums.Roles_Rights.SwitchToDataHistoryVersion);
 	#EndRegion 
-	Settings.Insert("Document", Document);
+	Settings.Insert(Enums.Roles_MetadataTypes.Document, Document);
 
 	#Region DocumentJournal
 	DocumentJournal = New Array;
-	DocumentJournal.Add("Read");
-	DocumentJournal.Add("View");
+	DocumentJournal.Add(Enums.Roles_Rights.Read);
+	DocumentJournal.Add(Enums.Roles_Rights.View);
 	#EndRegion 
-	Settings.Insert("DocumentJournal", DocumentJournal);
+	Settings.Insert(Enums.Roles_MetadataTypes.DocumentJournal, DocumentJournal);
 
 	#Region Task
 	Task = New Array;
-	Task.Add("Read");
-	Task.Add("Insert");
-	Task.Add("Update");
-	Task.Add("Delete");
-	Task.Add("View");
-	Task.Add("InteractiveInsert");
-	Task.Add("Edit");
-	Task.Add("InteractiveDelete");
-	Task.Add("InteractiveSetDeletionMark");
-	Task.Add("InteractiveClearDeletionMark");
-	Task.Add("InteractiveDeleteMarked");
-	Task.Add("InputByString");
-	Task.Add("InteractiveActivate");
-	Task.Add("Execute");
-	Task.Add("InteractiveExecute");
-	Task.Add("ReadDataHistory");
-	Task.Add("ReadDataHistoryOfMissingData");
-	Task.Add("UpdateDataHistory");
-	Task.Add("UpdateDataHistoryOfMissingData");
-	Task.Add("UpdateDataHistorySettings");
-	Task.Add("UpdateDataHistoryVersionComment");
-	Task.Add("ViewDataHistory");
-	Task.Add("EditDataHistoryVersionComment");
-	Task.Add("SwitchToDataHistoryVersion");
+	Task.Add(Enums.Roles_Rights.Read);
+	Task.Add(Enums.Roles_Rights.Insert);
+	Task.Add(Enums.Roles_Rights.Update);
+	Task.Add(Enums.Roles_Rights.Delete);
+	Task.Add(Enums.Roles_Rights.View);
+	Task.Add(Enums.Roles_Rights.InteractiveInsert);
+	Task.Add(Enums.Roles_Rights.Edit);
+	Task.Add(Enums.Roles_Rights.InteractiveDelete);
+	Task.Add(Enums.Roles_Rights.InteractiveSetDeletionMark);
+	Task.Add(Enums.Roles_Rights.InteractiveClearDeletionMark);
+	Task.Add(Enums.Roles_Rights.InteractiveDeleteMarked);
+	Task.Add(Enums.Roles_Rights.InputByString);
+	Task.Add(Enums.Roles_Rights.InteractiveActivate);
+	Task.Add(Enums.Roles_Rights.Execute);
+	Task.Add(Enums.Roles_Rights.InteractiveExecute);
+	Task.Add(Enums.Roles_Rights.ReadDataHistory);
+	Task.Add(Enums.Roles_Rights.ReadDataHistoryOfMissingData);
+	Task.Add(Enums.Roles_Rights.UpdateDataHistory);
+	Task.Add(Enums.Roles_Rights.UpdateDataHistoryOfMissingData);
+	Task.Add(Enums.Roles_Rights.UpdateDataHistorySettings);
+	Task.Add(Enums.Roles_Rights.UpdateDataHistoryVersionComment);
+	Task.Add(Enums.Roles_Rights.ViewDataHistory);
+	Task.Add(Enums.Roles_Rights.EditDataHistoryVersionComment);
+	Task.Add(Enums.Roles_Rights.SwitchToDataHistoryVersion);
 	#EndRegion 
-	Settings.Insert("Task", Task);
+	Settings.Insert(Enums.Roles_MetadataTypes.Task, Task);
 
 	#Region Constant
 	Constant = New Array;
-	Constant.Add("Read");
-	Constant.Add("Update");
-	Constant.Add("View");
-	Constant.Add("Edit");
-	Constant.Add("ReadDataHistory");
-	Constant.Add("UpdateDataHistory");
-	Constant.Add("UpdateDataHistorySettings");
-	Constant.Add("UpdateDataHistoryVersionComment");
-	Constant.Add("ViewDataHistory");
-	Constant.Add("EditDataHistoryVersionComment");
-	Constant.Add("SwitchToDataHistoryVersion");
+	Constant.Add(Enums.Roles_Rights.Read);
+	Constant.Add(Enums.Roles_Rights.Update);
+	Constant.Add(Enums.Roles_Rights.View);
+	Constant.Add(Enums.Roles_Rights.Edit);
+	Constant.Add(Enums.Roles_Rights.ReadDataHistory);
+	Constant.Add(Enums.Roles_Rights.UpdateDataHistory);
+	Constant.Add(Enums.Roles_Rights.UpdateDataHistorySettings);
+	Constant.Add(Enums.Roles_Rights.UpdateDataHistoryVersionComment);
+	Constant.Add(Enums.Roles_Rights.ViewDataHistory);
+	Constant.Add(Enums.Roles_Rights.EditDataHistoryVersionComment);
+	Constant.Add(Enums.Roles_Rights.SwitchToDataHistoryVersion);
 	#EndRegion 
-	Settings.Insert("Constant", Constant);
+	Settings.Insert(Enums.Roles_MetadataTypes.Constant, Constant);
 
 	#Region FilterCriterion
 	FilterCriterion = New Array;
-	FilterCriterion.Add("View");
+	FilterCriterion.Add(Enums.Roles_Rights.View);
 	#EndRegion 
-	Settings.Insert("FilterCriterion", FilterCriterion);
+	Settings.Insert(Enums.Roles_MetadataTypes.FilterCriterion, FilterCriterion);
 
 	#Region DataProcessor
 	DataProcessor = New Array;
-	DataProcessor.Add("Use");
-	DataProcessor.Add("View");
+	DataProcessor.Add(Enums.Roles_Rights.Use);
+	DataProcessor.Add(Enums.Roles_Rights.View);
 	#EndRegion 
-	Settings.Insert("DataProcessor", DataProcessor);
+	Settings.Insert(Enums.Roles_MetadataTypes.DataProcessor, DataProcessor);
 
 	#Region CommonCommand
 	CommonCommand = New Array;
-	CommonCommand.Add("View");
+	CommonCommand.Add(Enums.Roles_Rights.View);
 	#EndRegion 
-	Settings.Insert("CommonCommand", CommonCommand);
+	Settings.Insert(Enums.Roles_MetadataTypes.CommonCommand, CommonCommand);
 
 	#Region CommonForm
 	CommonForm = New Array;
-	CommonForm.Add("View");
+	CommonForm.Add(Enums.Roles_Rights.View);
 	#EndRegion 
-	Settings.Insert("CommonForm", CommonForm);
+	Settings.Insert(Enums.Roles_MetadataTypes.CommonForm, CommonForm);
 
 	#Region CommonAttribute
 	CommonAttribute = New Array;
-	CommonAttribute.Add("View");
-	CommonAttribute.Add("Edit");
+	CommonAttribute.Add(Enums.Roles_Rights.View);
+	CommonAttribute.Add(Enums.Roles_Rights.Edit);
 	#EndRegion 
-	Settings.Insert("CommonAttribute", CommonAttribute);
+	Settings.Insert(Enums.Roles_MetadataTypes.CommonAttribute, CommonAttribute);
 
 	#Region Report
 	Report = New Array;
-	Report.Add("Use");
-	Report.Add("View");
+	Report.Add(Enums.Roles_Rights.Use);
+	Report.Add(Enums.Roles_Rights.View);
 	#EndRegion 
-	Settings.Insert("Report", Report);
+	Settings.Insert(Enums.Roles_MetadataTypes.Report, Report);
 
 	#Region SessionParameter
 	SessionParameter = New Array;
-	SessionParameter.Add("Get");
-	SessionParameter.Add("Set");
+	SessionParameter.Add(Enums.Roles_Rights.Get);
+	SessionParameter.Add(Enums.Roles_Rights.Set);
 	#EndRegion 
-	Settings.Insert("SessionParameter", SessionParameter);
+	Settings.Insert(Enums.Roles_MetadataTypes.SessionParameter, SessionParameter);
 
 	#Region ChartOfCalculationTypes
 	ChartOfCalculationTypes = New Array;
-	ChartOfCalculationTypes.Add("Read");
-	ChartOfCalculationTypes.Add("Insert");
-	ChartOfCalculationTypes.Add("Update");
-	ChartOfCalculationTypes.Add("Delete");
-	ChartOfCalculationTypes.Add("View");
-	ChartOfCalculationTypes.Add("InteractiveInsert");
-	ChartOfCalculationTypes.Add("Edit");
-	ChartOfCalculationTypes.Add("InteractiveDelete");
-	ChartOfCalculationTypes.Add("InteractiveSetDeletionMark");
-	ChartOfCalculationTypes.Add("InteractiveClearDeletionMark");
-	ChartOfCalculationTypes.Add("InteractiveDeleteMarked");
-	ChartOfCalculationTypes.Add("InputByString");
-	ChartOfCalculationTypes.Add("InteractiveDeletePredefinedData");
-	ChartOfCalculationTypes.Add("InteractiveSetDeletionMarkPredefinedData");
-	ChartOfCalculationTypes.Add("InteractiveClearDeletionMarkPredefinedData");
-	ChartOfCalculationTypes.Add("InteractiveDeleteMarkedPredefinedData");
-	ChartOfCalculationTypes.Add("ReadDataHistory");
-	ChartOfCalculationTypes.Add("ReadDataHistoryOfMissingData");
-	ChartOfCalculationTypes.Add("UpdateDataHistory");
-	ChartOfCalculationTypes.Add("UpdateDataHistoryOfMissingData");
-	ChartOfCalculationTypes.Add("UpdateDataHistorySettings");
-	ChartOfCalculationTypes.Add("UpdateDataHistoryVersionComment");
-	ChartOfCalculationTypes.Add("ViewDataHistory");
-	ChartOfCalculationTypes.Add("EditDataHistoryVersionComment");
-	ChartOfCalculationTypes.Add("SwitchToDataHistoryVersion");
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.Read);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.Insert);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.Update);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.Delete);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.View);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.InteractiveInsert);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.Edit);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.InteractiveDelete);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.InteractiveSetDeletionMark);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.InteractiveClearDeletionMark);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.InteractiveDeleteMarked);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.InputByString);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.InteractiveDeletePredefinedData);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.InteractiveSetDeletionMarkPredefinedData);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.InteractiveClearDeletionMarkPredefinedData);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.InteractiveDeleteMarkedPredefinedData);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.ReadDataHistory);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.ReadDataHistoryOfMissingData);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.UpdateDataHistory);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.UpdateDataHistoryOfMissingData);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.UpdateDataHistorySettings);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.UpdateDataHistoryVersionComment);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.ViewDataHistory);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.EditDataHistoryVersionComment);
+	ChartOfCalculationTypes.Add(Enums.Roles_Rights.SwitchToDataHistoryVersion);
 	#EndRegion 
-	Settings.Insert("ChartOfCalculationTypes", ChartOfCalculationTypes);
+	Settings.Insert(Enums.Roles_MetadataTypes.ChartOfCalculationTypes, ChartOfCalculationTypes);
 
 	#Region ChartOfCharacteristicTypes
 	ChartOfCharacteristicTypes = New Array;
-	ChartOfCharacteristicTypes.Add("Read");
-	ChartOfCharacteristicTypes.Add("Insert");
-	ChartOfCharacteristicTypes.Add("Update");
-	ChartOfCharacteristicTypes.Add("Delete");
-	ChartOfCharacteristicTypes.Add("View");
-	ChartOfCharacteristicTypes.Add("InteractiveInsert");
-	ChartOfCharacteristicTypes.Add("Edit");
-	ChartOfCharacteristicTypes.Add("InteractiveDelete");
-	ChartOfCharacteristicTypes.Add("InteractiveSetDeletionMark");
-	ChartOfCharacteristicTypes.Add("InteractiveClearDeletionMark");
-	ChartOfCharacteristicTypes.Add("InteractiveDeleteMarked");
-	ChartOfCharacteristicTypes.Add("InputByString");
-	ChartOfCharacteristicTypes.Add("InteractiveDeletePredefinedData");
-	ChartOfCharacteristicTypes.Add("InteractiveSetDeletionMarkPredefinedData");
-	ChartOfCharacteristicTypes.Add("InteractiveClearDeletionMarkPredefinedData");
-	ChartOfCharacteristicTypes.Add("InteractiveDeleteMarkedPredefinedData");
-	ChartOfCharacteristicTypes.Add("ReadDataHistory");
-	ChartOfCharacteristicTypes.Add("ReadDataHistoryOfMissingData");
-	ChartOfCharacteristicTypes.Add("UpdateDataHistory");
-	ChartOfCharacteristicTypes.Add("UpdateDataHistoryOfMissingData");
-	ChartOfCharacteristicTypes.Add("UpdateDataHistorySettings");
-	ChartOfCharacteristicTypes.Add("UpdateDataHistoryVersionComment");
-	ChartOfCharacteristicTypes.Add("ViewDataHistory");
-	ChartOfCharacteristicTypes.Add("EditDataHistoryVersionComment");
-	ChartOfCharacteristicTypes.Add("SwitchToDataHistoryVersion");
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.Read);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.Insert);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.Update);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.Delete);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.View);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.InteractiveInsert);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.Edit);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.InteractiveDelete);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.InteractiveSetDeletionMark);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.InteractiveClearDeletionMark);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.InteractiveDeleteMarked);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.InputByString);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.InteractiveDeletePredefinedData);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.InteractiveSetDeletionMarkPredefinedData);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.InteractiveClearDeletionMarkPredefinedData);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.InteractiveDeleteMarkedPredefinedData);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.ReadDataHistory);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.ReadDataHistoryOfMissingData);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.UpdateDataHistory);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.UpdateDataHistoryOfMissingData);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.UpdateDataHistorySettings);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.UpdateDataHistoryVersionComment);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.ViewDataHistory);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.EditDataHistoryVersionComment);
+	ChartOfCharacteristicTypes.Add(Enums.Roles_Rights.SwitchToDataHistoryVersion);
 	#EndRegion 
-	Settings.Insert("ChartOfCharacteristicTypes", ChartOfCharacteristicTypes);
+	Settings.Insert(Enums.Roles_MetadataTypes.ChartOfCharacteristicTypes, ChartOfCharacteristicTypes);
 
 	#Region ExchangePlan
 	ExchangePlan = New Array;
-	ExchangePlan.Add("Read");
-	ExchangePlan.Add("Insert");
-	ExchangePlan.Add("Update");
-	ExchangePlan.Add("Delete");
-	ExchangePlan.Add("View");
-	ExchangePlan.Add("InteractiveInsert");
-	ExchangePlan.Add("Edit");
-	ExchangePlan.Add("InteractiveDelete");
-	ExchangePlan.Add("InteractiveSetDeletionMark");
-	ExchangePlan.Add("InteractiveClearDeletionMark");
-	ExchangePlan.Add("InteractiveDeleteMarked");
-	ExchangePlan.Add("InputByString");
-	ExchangePlan.Add("ReadDataHistory");
-	ExchangePlan.Add("ReadDataHistoryOfMissingData");
-	ExchangePlan.Add("UpdateDataHistory");
-	ExchangePlan.Add("UpdateDataHistoryOfMissingData");
-	ExchangePlan.Add("UpdateDataHistorySettings");
-	ExchangePlan.Add("UpdateDataHistoryVersionComment");
-	ExchangePlan.Add("ViewDataHistory");
-	ExchangePlan.Add("EditDataHistoryVersionComment");
-	ExchangePlan.Add("SwitchToDataHistoryVersion");
+	ExchangePlan.Add(Enums.Roles_Rights.Read);
+	ExchangePlan.Add(Enums.Roles_Rights.Insert);
+	ExchangePlan.Add(Enums.Roles_Rights.Update);
+	ExchangePlan.Add(Enums.Roles_Rights.Delete);
+	ExchangePlan.Add(Enums.Roles_Rights.View);
+	ExchangePlan.Add(Enums.Roles_Rights.InteractiveInsert);
+	ExchangePlan.Add(Enums.Roles_Rights.Edit);
+	ExchangePlan.Add(Enums.Roles_Rights.InteractiveDelete);
+	ExchangePlan.Add(Enums.Roles_Rights.InteractiveSetDeletionMark);
+	ExchangePlan.Add(Enums.Roles_Rights.InteractiveClearDeletionMark);
+	ExchangePlan.Add(Enums.Roles_Rights.InteractiveDeleteMarked);
+	ExchangePlan.Add(Enums.Roles_Rights.InputByString);
+	ExchangePlan.Add(Enums.Roles_Rights.ReadDataHistory);
+	ExchangePlan.Add(Enums.Roles_Rights.ReadDataHistoryOfMissingData);
+	ExchangePlan.Add(Enums.Roles_Rights.UpdateDataHistory);
+	ExchangePlan.Add(Enums.Roles_Rights.UpdateDataHistoryOfMissingData);
+	ExchangePlan.Add(Enums.Roles_Rights.UpdateDataHistorySettings);
+	ExchangePlan.Add(Enums.Roles_Rights.UpdateDataHistoryVersionComment);
+	ExchangePlan.Add(Enums.Roles_Rights.ViewDataHistory);
+	ExchangePlan.Add(Enums.Roles_Rights.EditDataHistoryVersionComment);
+	ExchangePlan.Add(Enums.Roles_Rights.SwitchToDataHistoryVersion);
 	#EndRegion 
-	Settings.Insert("ExchangePlan", ExchangePlan);
+	Settings.Insert(Enums.Roles_MetadataTypes.ExchangePlan, ExchangePlan);
 
 	#Region ChartOfAccounts
 	ChartOfAccounts = New Array;
-	ChartOfAccounts.Add("Read");
-	ChartOfAccounts.Add("Insert");
-	ChartOfAccounts.Add("Update");
-	ChartOfAccounts.Add("Delete");
-	ChartOfAccounts.Add("View");
-	ChartOfAccounts.Add("InteractiveInsert");
-	ChartOfAccounts.Add("Edit");
-	ChartOfAccounts.Add("InteractiveDelete");
-	ChartOfAccounts.Add("InteractiveSetDeletionMark");
-	ChartOfAccounts.Add("InteractiveClearDeletionMark");
-	ChartOfAccounts.Add("InteractiveDeleteMarked");
-	ChartOfAccounts.Add("InputByString");
-	ChartOfAccounts.Add("InteractiveDeletePredefinedData");
-	ChartOfAccounts.Add("InteractiveSetDeletionMarkPredefinedData");
-	ChartOfAccounts.Add("InteractiveClearDeletionMarkPredefinedData");
-	ChartOfAccounts.Add("InteractiveDeleteMarkedPredefinedData");
-	ChartOfAccounts.Add("ReadDataHistory");
-	ChartOfAccounts.Add("ReadDataHistoryOfMissingData");
-	ChartOfAccounts.Add("UpdateDataHistory");
-	ChartOfAccounts.Add("UpdateDataHistoryOfMissingData");
-	ChartOfAccounts.Add("UpdateDataHistorySettings");
-	ChartOfAccounts.Add("UpdateDataHistoryVersionComment");
-	ChartOfAccounts.Add("ViewDataHistory");
-	ChartOfAccounts.Add("EditDataHistoryVersionComment");
-	ChartOfAccounts.Add("SwitchToDataHistoryVersion");
+	ChartOfAccounts.Add(Enums.Roles_Rights.Read);
+	ChartOfAccounts.Add(Enums.Roles_Rights.Insert);
+	ChartOfAccounts.Add(Enums.Roles_Rights.Update);
+	ChartOfAccounts.Add(Enums.Roles_Rights.Delete);
+	ChartOfAccounts.Add(Enums.Roles_Rights.View);
+	ChartOfAccounts.Add(Enums.Roles_Rights.InteractiveInsert);
+	ChartOfAccounts.Add(Enums.Roles_Rights.Edit);
+	ChartOfAccounts.Add(Enums.Roles_Rights.InteractiveDelete);
+	ChartOfAccounts.Add(Enums.Roles_Rights.InteractiveSetDeletionMark);
+	ChartOfAccounts.Add(Enums.Roles_Rights.InteractiveClearDeletionMark);
+	ChartOfAccounts.Add(Enums.Roles_Rights.InteractiveDeleteMarked);
+	ChartOfAccounts.Add(Enums.Roles_Rights.InputByString);
+	ChartOfAccounts.Add(Enums.Roles_Rights.InteractiveDeletePredefinedData);
+	ChartOfAccounts.Add(Enums.Roles_Rights.InteractiveSetDeletionMarkPredefinedData);
+	ChartOfAccounts.Add(Enums.Roles_Rights.InteractiveClearDeletionMarkPredefinedData);
+	ChartOfAccounts.Add(Enums.Roles_Rights.InteractiveDeleteMarkedPredefinedData);
+	ChartOfAccounts.Add(Enums.Roles_Rights.ReadDataHistory);
+	ChartOfAccounts.Add(Enums.Roles_Rights.ReadDataHistoryOfMissingData);
+	ChartOfAccounts.Add(Enums.Roles_Rights.UpdateDataHistory);
+	ChartOfAccounts.Add(Enums.Roles_Rights.UpdateDataHistoryOfMissingData);
+	ChartOfAccounts.Add(Enums.Roles_Rights.UpdateDataHistorySettings);
+	ChartOfAccounts.Add(Enums.Roles_Rights.UpdateDataHistoryVersionComment);
+	ChartOfAccounts.Add(Enums.Roles_Rights.ViewDataHistory);
+	ChartOfAccounts.Add(Enums.Roles_Rights.EditDataHistoryVersionComment);
+	ChartOfAccounts.Add(Enums.Roles_Rights.SwitchToDataHistoryVersion);
 	#EndRegion 
-	Settings.Insert("ChartOfAccounts", ChartOfAccounts);
+	Settings.Insert(Enums.Roles_MetadataTypes.ChartOfAccounts, ChartOfAccounts);
 
 	#Region Subsystem
 	Subsystem = New Array;
-	Subsystem.Add("View");
+	Subsystem.Add(Enums.Roles_Rights.View);
 	#EndRegion 
-	Settings.Insert("Subsystem", Subsystem);
+	Settings.Insert(Enums.Roles_MetadataTypes.Subsystem, Subsystem);
 
 	#Region Sequence
 	Sequence = New Array;
-	Sequence.Add("Read");
-	Sequence.Add("Update");
+	Sequence.Add(Enums.Roles_Rights.Read);
+	Sequence.Add(Enums.Roles_Rights.Update);
 	#EndRegion 
-	Settings.Insert("Sequence", Sequence);
+	Settings.Insert(Enums.Roles_MetadataTypes.Sequence, Sequence);
 
 	#Region AccountingRegister
 	AccountingRegister = New Array;
-	AccountingRegister.Add("Read");
-	AccountingRegister.Add("Update");
-	AccountingRegister.Add("View");
-	AccountingRegister.Add("Edit");
-	AccountingRegister.Add("TotalsControl");
+	AccountingRegister.Add(Enums.Roles_Rights.Read);
+	AccountingRegister.Add(Enums.Roles_Rights.Update);
+	AccountingRegister.Add(Enums.Roles_Rights.View);
+	AccountingRegister.Add(Enums.Roles_Rights.Edit);
+	AccountingRegister.Add(Enums.Roles_Rights.TotalsControl);
 	#EndRegion 
-	Settings.Insert("AccountingRegister", AccountingRegister);
+	Settings.Insert(Enums.Roles_MetadataTypes.AccountingRegister, AccountingRegister);
 
 	#Region AccumulationRegister
 	AccumulationRegister = New Array;
-	AccumulationRegister.Add("Read");
-	AccumulationRegister.Add("Update");
-	AccumulationRegister.Add("View");
-	AccumulationRegister.Add("Edit");
-	AccumulationRegister.Add("TotalsControl");
+	AccumulationRegister.Add(Enums.Roles_Rights.Read);
+	AccumulationRegister.Add(Enums.Roles_Rights.Update);
+	AccumulationRegister.Add(Enums.Roles_Rights.View);
+	AccumulationRegister.Add(Enums.Roles_Rights.Edit);
+	AccumulationRegister.Add(Enums.Roles_Rights.TotalsControl);
 	#EndRegion 
-	Settings.Insert("AccumulationRegister", AccumulationRegister);
+	Settings.Insert(Enums.Roles_MetadataTypes.AccumulationRegister, AccumulationRegister);
 
 	#Region CalculationRegister
 	CalculationRegister = New Array;
-	CalculationRegister.Add("Read");
-	CalculationRegister.Add("Update");
-	CalculationRegister.Add("View");
-	CalculationRegister.Add("Edit");
+	CalculationRegister.Add(Enums.Roles_Rights.Read);
+	CalculationRegister.Add(Enums.Roles_Rights.Update);
+	CalculationRegister.Add(Enums.Roles_Rights.View);
+	CalculationRegister.Add(Enums.Roles_Rights.Edit);
 	#EndRegion 
-	Settings.Insert("CalculationRegister", CalculationRegister);
-
+	Settings.Insert(Enums.Roles_MetadataTypes.CalculationRegister, CalculationRegister);
+ 
 	#Region InformationRegister
 	InformationRegister = New Array;
-	InformationRegister.Add("Read");
-	InformationRegister.Add("Update");
-	InformationRegister.Add("View");
-	InformationRegister.Add("Edit");
-	InformationRegister.Add("TotalsControl");
-	InformationRegister.Add("ReadDataHistory");
-	InformationRegister.Add("ReadDataHistoryOfMissingData");
-	InformationRegister.Add("UpdateDataHistory");
-	InformationRegister.Add("UpdateDataHistoryOfMissingData");
-	InformationRegister.Add("UpdateDataHistorySettings");
-	InformationRegister.Add("UpdateDataHistoryVersionComment");
-	InformationRegister.Add("ViewDataHistory");
-	InformationRegister.Add("EditDataHistoryVersionComment");
-	InformationRegister.Add("SwitchToDataHistoryVersion");
+	InformationRegister.Add(Enums.Roles_Rights.Read);
+	InformationRegister.Add(Enums.Roles_Rights.Update);
+	InformationRegister.Add(Enums.Roles_Rights.View);
+	InformationRegister.Add(Enums.Roles_Rights.Edit);
+	InformationRegister.Add(Enums.Roles_Rights.TotalsControl);
+	InformationRegister.Add(Enums.Roles_Rights.ReadDataHistory);
+	InformationRegister.Add(Enums.Roles_Rights.ReadDataHistoryOfMissingData);
+	InformationRegister.Add(Enums.Roles_Rights.UpdateDataHistory);
+	InformationRegister.Add(Enums.Roles_Rights.UpdateDataHistoryOfMissingData);
+	InformationRegister.Add(Enums.Roles_Rights.UpdateDataHistorySettings);
+	InformationRegister.Add(Enums.Roles_Rights.UpdateDataHistoryVersionComment);
+	InformationRegister.Add(Enums.Roles_Rights.ViewDataHistory);
+	InformationRegister.Add(Enums.Roles_Rights.EditDataHistoryVersionComment);
+	InformationRegister.Add(Enums.Roles_Rights.SwitchToDataHistoryVersion);
 	#EndRegion 
-	Settings.Insert("InformationRegister", InformationRegister);
+	Settings.Insert(Enums.Roles_MetadataTypes.InformationRegister, InformationRegister);
 
-//	#Region Configuration
-//	Configuration = New Array;
-//	Configuration.Add("Administration");
-//	Configuration.Add("DataAdministration");
-//	Configuration.Add("UpdateDataBaseConfiguration");
-//	Configuration.Add("ExclusiveMode");
-//	Configuration.Add("ActiveUsers");
-//	Configuration.Add("EventLog");
-//	Configuration.Add("ThinClient");
-//	Configuration.Add("WebClient");
-//	Configuration.Add("MobileClient");
-//	Configuration.Add("ThickClient");
-//	Configuration.Add("ExternalConnection");
-//	Configuration.Add("Automation");
-//	Configuration.Add("TechnicalSpecialistMode");
-//	Configuration.Add("CollaborationSystemInfoBaseRegistration");
-//	Configuration.Add("MainWindowModeNormal");
-//	Configuration.Add("MainWindowModeWorkplace");
-//	Configuration.Add("MainWindowModeEmbeddedWorkplace");
-//	Configuration.Add("MainWindowModeFullscreenWorkplace");
-//	Configuration.Add("MainWindowModeKiosk");
-//	Configuration.Add("AnalyticsSystemClient");
-//	Configuration.Add("SaveUserData");
-//	Configuration.Add("ConfigurationExtensionsAdministration");
-//	Configuration.Add("InteractiveOpenExtDataProcessors");
-//	Configuration.Add("InteractiveOpenExtReports");
-//	Configuration.Add("Output");
-//	#EndRegion 
-//	Settings.Insert("Configuration", Configuration);
+	#Region Configuration
+	Configuration = New Array;
+	Configuration.Add(Enums.Roles_Rights.Administration);
+	Configuration.Add(Enums.Roles_Rights.DataAdministration);
+	Configuration.Add(Enums.Roles_Rights.UpdateDataBaseConfiguration);
+	Configuration.Add(Enums.Roles_Rights.ExclusiveMode);
+	Configuration.Add(Enums.Roles_Rights.ActiveUsers);
+	Configuration.Add(Enums.Roles_Rights.EventLog);
+	Configuration.Add(Enums.Roles_Rights.ThinClient);
+	Configuration.Add(Enums.Roles_Rights.WebClient);
+	Configuration.Add(Enums.Roles_Rights.MobileClient);
+	Configuration.Add(Enums.Roles_Rights.ThickClient);
+	Configuration.Add(Enums.Roles_Rights.ExternalConnection);
+	Configuration.Add(Enums.Roles_Rights.Automation);
+	Configuration.Add(Enums.Roles_Rights.TechnicalSpecialistMode);
+	Configuration.Add(Enums.Roles_Rights.CollaborationSystemInfoBaseRegistration);
+	Configuration.Add(Enums.Roles_Rights.MainWindowModeNormal);
+	Configuration.Add(Enums.Roles_Rights.MainWindowModeWorkplace);
+	Configuration.Add(Enums.Roles_Rights.MainWindowModeEmbeddedWorkplace);
+	Configuration.Add(Enums.Roles_Rights.MainWindowModeFullscreenWorkplace);
+	Configuration.Add(Enums.Roles_Rights.MainWindowModeKiosk);
+	Configuration.Add(Enums.Roles_Rights.AnalyticsSystemClient);
+	Configuration.Add(Enums.Roles_Rights.SaveUserData);
+	Configuration.Add(Enums.Roles_Rights.ConfigurationExtensionsAdministration);
+	Configuration.Add(Enums.Roles_Rights.InteractiveOpenExtDataProcessors);
+	Configuration.Add(Enums.Roles_Rights.InteractiveOpenExtReports);
+	Configuration.Add(Enums.Roles_Rights.Output);
+	#EndRegion 
+//	Settings.Insert(Enums.Roles_MetadataTypes.Configuration, Configuration);
 
 	#Region IntegrationService
 	IntegrationService = New Array;
-	IntegrationService.Add("Use");
+	IntegrationService.Add(Enums.Roles_Rights.Use);
 	#EndRegion 
-	Settings.Insert("IntegrationService", IntegrationService);
+	Settings.Insert(Enums.Roles_MetadataTypes.IntegrationService, IntegrationService);
 	
 	Return Settings;
 EndFunction
@@ -653,56 +653,39 @@ Function MetaDataObject() Export
 EndFunction
 
 Function MetaDataObjectNames() Export
-	Structure = New Structure();
-	Structure.Insert("AccountingRegister", "AccountingRegisters");
-	Structure.Insert("AccumulationRegister", "AccumulationRegisters");
-	Structure.Insert("BusinessProcess", "BusinessProcesses");
-	Structure.Insert("CalculationRegister", "CalculationRegisters");
-	Structure.Insert("Catalog", "Catalogs");
-	Structure.Insert("ChartOfAccounts", "ChartsOfAccounts");
-	Structure.Insert("ChartOfCalculationTypes", "ChartsOfCalculationTypes");
-	Structure.Insert("ChartOfCharacteristicTypes", "ChartsOfCharacteristicTypes");
-	Structure.Insert("CommandGroup", "CommandGroups");
-	Structure.Insert("CommonAttribute", "CommonAttributes");
-	Structure.Insert("CommonCommand", "CommonCommands");
-	Structure.Insert("CommonForm", "CommonForms");
-	Structure.Insert("CommonModule", "CommonModules");
-	Structure.Insert("CommonPicture", "CommonPictures");
-	Structure.Insert("CommonTemplate", "CommonTemplates");
-	Structure.Insert("Constant", "Constants");
-	Structure.Insert("DataProcessor", "DataProcessors");
-	Structure.Insert("DefinedType", "DefinedTypes");
-	Structure.Insert("DocumentJournal", "DocumentJournals");
-	Structure.Insert("DocumentNumerator", "DocumentNumerators");
-	Structure.Insert("Document", "Documents");
-	Structure.Insert("Enum", "Enums");
-	Structure.Insert("EventSubscription", "EventSubscriptions");
-	Structure.Insert("ExchangePlan", "ExchangePlans");
-	Structure.Insert("ExternalDataSource", "ExternalDataSources");
-	Structure.Insert("FilterCriterion", "FilterCriteria");
-	Structure.Insert("FunctionalOption", "FunctionalOptions");
-	Structure.Insert("FunctionalOptionsParameter", "FunctionalOptionsParameters");
-	Structure.Insert("HTTPService", "HTTPServices");
-	Structure.Insert("InformationRegister", "InformationRegisters");
-	Structure.Insert("Language", "Languages");
-	Structure.Insert("Report", "Reports");
-	Structure.Insert("Role", "Roles");
-	Structure.Insert("ScheduledJob", "ScheduledJobs");
-	Structure.Insert("Sequence", "Sequences");
-	Structure.Insert("SessionParameter", "SessionParameters");
-	Structure.Insert("SettingsStorage", "SettingsStorages");
-	Structure.Insert("StyleItem", "StyleItems");
-	Structure.Insert("Style", "Styles");
-	Structure.Insert("Subsystem", "Subsystems");
-	Structure.Insert("Task", "Tasks");
-	Structure.Insert("WebService", "WebServices");
+	Structure = New Map;
+	Structure.Insert(Enums.Roles_MetadataTypes.AccountingRegister, "AccountingRegisters");
+	Structure.Insert(Enums.Roles_MetadataTypes.AccumulationRegister, "AccumulationRegisters");
+	Structure.Insert(Enums.Roles_MetadataTypes.BusinessProcess, "BusinessProcesses");
+	Structure.Insert(Enums.Roles_MetadataTypes.CalculationRegister, "CalculationRegisters");
+	Structure.Insert(Enums.Roles_MetadataTypes.Catalog, "Catalogs");
+	Structure.Insert(Enums.Roles_MetadataTypes.ChartOfAccounts, "ChartsOfAccounts");
+	Structure.Insert(Enums.Roles_MetadataTypes.ChartOfCalculationTypes, "ChartsOfCalculationTypes");
+	Structure.Insert(Enums.Roles_MetadataTypes.ChartOfCharacteristicTypes, "ChartsOfCharacteristicTypes");
+	Structure.Insert(Enums.Roles_MetadataTypes.CommonAttribute, "CommonAttributes");
+	Structure.Insert(Enums.Roles_MetadataTypes.CommonCommand, "CommonCommands");
+	Structure.Insert(Enums.Roles_MetadataTypes.CommonForm, "CommonForms");
+	Structure.Insert(Enums.Roles_MetadataTypes.Constant, "Constants");
+	Structure.Insert(Enums.Roles_MetadataTypes.DataProcessor, "DataProcessors");
+	Structure.Insert(Enums.Roles_MetadataTypes.DocumentJournal, "DocumentJournals");
+	Structure.Insert(Enums.Roles_MetadataTypes.Document, "Documents");
+	Structure.Insert(Enums.Roles_MetadataTypes.ExchangePlan, "ExchangePlans");
+	Structure.Insert(Enums.Roles_MetadataTypes.FilterCriterion, "FilterCriteria");
+	Structure.Insert(Enums.Roles_MetadataTypes.HTTPService, "HTTPServices");
+	Structure.Insert(Enums.Roles_MetadataTypes.InformationRegister, "InformationRegisters");
+	Structure.Insert(Enums.Roles_MetadataTypes.Report, "Reports");
+	Structure.Insert(Enums.Roles_MetadataTypes.Sequence, "Sequences");
+	Structure.Insert(Enums.Roles_MetadataTypes.SessionParameter, "SessionParameters");
+	Structure.Insert(Enums.Roles_MetadataTypes.Subsystem, "Subsystems");
+	Structure.Insert(Enums.Roles_MetadataTypes.Task, "Tasks");
+	Structure.Insert(Enums.Roles_MetadataTypes.WebService, "WebServices");
 	Return Structure;
 EndFunction
 
 Function MetadataInfo() Export
 	
 	Structure = MetaDataObjectNames();
-	MetaStructure = New Structure;
+	MetaStructure = New Map;
 	For Each Row In Structure Do
 		ValueList = New ValueList();
 		For Each Data In Metadata[Row.Value] Do
@@ -711,5 +694,13 @@ Function MetadataInfo() Export
 		MetaStructure.Insert(Row.Key, ValueList); 
 	EndDo;
 	Return MetaStructure;
+EndFunction
+
+Function hasAttributes(MetaName) Export
+
+	Array = New Array;
+	Array.Add(Enums.Roles_MetadataTypes.Catalog);	
+
+	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 #EndRegion

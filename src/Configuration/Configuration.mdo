@@ -44,12 +44,73 @@
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
   <commonPictures>CommonPicture.Roles_SubsystemIco</commonPictures>
+  <commonPictures>CommonPicture.Roles_configuration_extension_administration</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_activeUsers</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_administration</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_allFunctionsMode</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_automation_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_collaborationSystemInfoBaseRegistration_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_dataAdministration</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_delete</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_edit</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_editDataHistoryVersionComment</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_eventLog</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_exclusiveMode</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_externalConnection</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_get</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_inputByString_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_insert</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveChangeOfPosted</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveClearDeletionMark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveClearDeletionMarkPredefinedData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveDelete</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveDeleteMarked</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveDeletePredefinedData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveInsert</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveOpenExtDataProcessors_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveOpenExtReports</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactivePosting</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactivePostingRegular</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveSetDeletionMark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveSetDeletionMarkPredefinedData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveUndoPosting</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mobileClient</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_output</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_posting</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_read</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_readDataHistory</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_readDataHistoryOfMissingData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_updateDataHistorySettings</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_saveUserData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_set</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_switchToDataHistoryVersion_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_thickClient</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_thinClient</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_totalsControl_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_undoPosting</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_update</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_updateDataBaseConfiguration</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_updateDataHistory</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_updateDataHistoryOfMissingData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_updateDataHistoryVersionComment</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_use</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_view_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_viewDataHistory_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_webClient</commonPictures>
+  <commonPictures>CommonPicture.Roles_rls_add</commonPictures>
+  <commonPictures>CommonPicture.Roles_rls_blank</commonPictures>
+  <commonPictures>CommonPicture.Roles_role</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
+  <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
+  <commonTemplates>CommonTemplate.Roles_TemplateMetadataObject</commonTemplates>
   <commonModules>CommonModule.Roles_UsersEvent</commonModules>
   <commonModules>CommonModule.Roles_Settings</commonModules>
+  <commonModules>CommonModule.Roles_GenerateExtension</commonModules>
   <catalogs>Catalog.Roles_AccessRoles</catalogs>
   <catalogs>Catalog.Roles_AccessGroups</catalogs>
   <catalogs>Catalog.Roles_AccessProfiles</catalogs>
   <catalogs>Catalog.Users</catalogs>
+  <enums>Enum.Roles_MetadataTypes</enums>
+  <enums>Enum.Roles_Rights</enums>
   <dataProcessors>DataProcessor.Roles_RolesEditor</dataProcessors>
 </mdclass:Configuration>

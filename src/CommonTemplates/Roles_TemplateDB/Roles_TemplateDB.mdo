@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="910a58f1-5226-4c6a-95d2-8a32931cdb7c">
+  <name>Roles_TemplateDB</name>
+  <synonym>
+    <key>en</key>
+    <value>Roles template DB</value>
+  </synonym>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

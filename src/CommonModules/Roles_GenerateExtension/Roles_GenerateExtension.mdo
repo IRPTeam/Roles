@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5f28207-7b20-49ca-9997-59277c031cf6">
+  <name>Roles_GenerateExtension</name>
+  <synonym>
+    <key>en</key>
+    <value>Generate extantion</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

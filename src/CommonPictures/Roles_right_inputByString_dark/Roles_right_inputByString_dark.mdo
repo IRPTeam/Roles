@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6f42036-4289-4186-85b9-2bb22d675d3a">
+  <name>Roles_right_inputByString_dark</name>
+  <synonym>
+    <key>en</key>
+    <value>Right input by string dark</value>
+  </synonym>
+</mdclass:CommonPicture>

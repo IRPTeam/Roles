@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7fb095b6-c002-447f-a278-f7daeffd2288">
+  <name>Roles_right_readDataHistoryOfMissingData</name>
+  <synonym>
+    <key>en</key>
+    <value>Right read data history of missing data</value>
+  </synonym>
+</mdclass:CommonPicture>

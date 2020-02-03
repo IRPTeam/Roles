@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8cba71a9-1e66-458e-ab02-3d252536ca47">
+  <name>Roles_right_interactiveSetDeletionMark</name>
+  <synonym>
+    <key>en</key>
+    <value>Right interactive set deletion mark</value>
+  </synonym>
+</mdclass:CommonPicture>

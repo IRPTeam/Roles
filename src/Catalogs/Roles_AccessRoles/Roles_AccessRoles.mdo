@@ -45,10 +45,7 @@
         <value>Object type</value>
       </synonym>
       <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>150</length>
-        </stringQualifiers>
+        <types>EnumRef.Roles_MetadataTypes</types>
       </type>
       <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
@@ -77,10 +74,7 @@
         <value>Right name</value>
       </synonym>
       <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>150</length>
-        </stringQualifiers>
+        <types>EnumRef.Roles_Rights</types>
       </type>
       <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>

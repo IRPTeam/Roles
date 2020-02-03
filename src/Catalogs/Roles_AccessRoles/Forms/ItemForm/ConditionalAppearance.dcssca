@@ -18,13 +18,271 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Visible</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>Show</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>RolesEditInsert</field>
+			</item>
+			<item>
+				<field>RolesEditDelete</field>
+			</item>
+			<item>
+				<field>RolesEditRead</field>
+			</item>
+			<item>
+				<field>RolesEditUpdate</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="xs:boolean">true</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Visible</dcscor:parameter>
-				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Gold</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>RolesEditView</field>
+			</item>
+			<item>
+				<field>RolesEditEdit</field>
+			</item>
+			<item>
+				<field>RolesEditInputByString</field>
+			</item>
+			<item>
+				<field>RolesEditPosting</field>
+			</item>
+			<item>
+				<field>RolesEditUndoPosting</field>
+			</item>
+			<item>
+				<field>RolesEditUse</field>
+			</item>
+			<item>
+				<field>RolesEditTotalsControl</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="xs:boolean">true</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:PaleTurquoise</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>RolesEditInteractiveDelete</field>
+			</item>
+			<item>
+				<field>RolesEditInteractiveInsert</field>
+			</item>
+			<item>
+				<field>RolesEditInteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>RolesEditInteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>RolesEditInteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>RolesEditInteractivePosting</field>
+			</item>
+			<item>
+				<field>RolesEditInteractivePostingRegular</field>
+			</item>
+			<item>
+				<field>RolesEditInteractiveUndoPosting</field>
+			</item>
+			<item>
+				<field>RolesEditInteractiveChangeOfPosted</field>
+			</item>
+			<item>
+				<field>RolesEditInteractiveDeletePredefinedData</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="xs:boolean">true</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#E2FFE6</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>RolesEditGet</field>
+			</item>
+			<item>
+				<field>RolesEditSet</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="xs:boolean">true</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:PowderBlue</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>RolesEditAdministration</field>
+			</item>
+			<item>
+				<field>RolesEditDataAdministration</field>
+			</item>
+			<item>
+				<field>RolesEditUpdateDataBaseConfiguration</field>
+			</item>
+			<item>
+				<field>RolesEditExclusiveMode</field>
+			</item>
+			<item>
+				<field>RolesEditActiveUsers</field>
+			</item>
+			<item>
+				<field>RolesEditEventLog</field>
+			</item>
+			<item>
+				<field>RolesEditThinClient</field>
+			</item>
+			<item>
+				<field>RolesEditWebClient</field>
+			</item>
+			<item>
+				<field>RolesEditMobileClient</field>
+			</item>
+			<item>
+				<field>RolesEditThickClient</field>
+			</item>
+			<item>
+				<field>RolesEditExternalConnection</field>
+			</item>
+			<item>
+				<field>RolesEditAutomation</field>
+			</item>
+			<item>
+				<field>RolesEditTechnicalSpecialistMode</field>
+			</item>
+			<item>
+				<field>RolesEditCollaborationSystemInfoBaseRegistration</field>
+			</item>
+			<item>
+				<field>RolesEditSaveUserData</field>
+			</item>
+			<item>
+				<field>RolesEditConfigurationExtensionsAdministration</field>
+			</item>
+			<item>
+				<field>RolesEditInteractiveOpenExtDataProcessors</field>
+			</item>
+			<item>
+				<field>RolesEditInteractiveOpenExtReports</field>
+			</item>
+			<item>
+				<field>RolesEditOutput</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="xs:boolean">true</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LightGray</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>RolesEditReadDataHistory</field>
+			</item>
+			<item>
+				<field>RolesEditViewDataHistory</field>
+			</item>
+			<item>
+				<field>RolesEditReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>RolesEditUpdateDataHistory</field>
+			</item>
+			<item>
+				<field>RolesEditUpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>RolesEditUpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>RolesEditUpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>RolesEditEditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>RolesEditSwitchToDataHistoryVersion</field>
+			</item>
+			<item>
+				<field>RolesEditSwitchToDataHistoryVersion</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="xs:boolean">true</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
