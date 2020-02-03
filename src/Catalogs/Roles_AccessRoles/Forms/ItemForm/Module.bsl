@@ -110,6 +110,7 @@ Procedure UpdateRights(Command)
 	UpdateRightsList();
 EndProcedure
 
+
 &AtServer
 Procedure UpdateRightsList()
 	RoleTree = FormAttributeToValue("RolesEdit");
@@ -130,10 +131,19 @@ Procedure UpdateRightsList()
 			MetaItemRow = MetaRow.Rows.Add();
 			MetaItemRow.ObjectType = Meta;
 			MetaItemRow.ObjectName = MetaItem.Name;
-			MetaItemRow.ObjectFullName = MetaItem.Synonym;
+			MetaItemRow.ObjectFullName = String(MetaItem);
 			
 			AddAttributes(Meta, MetaItem, MetaItemRow);
-
+			AddCommands(Meta, MetaItem, MetaItemRow);
+//			Try	
+//				
+//				ИмяПеречисления = Meta.Метаданные().Имя;
+//				ИндексЗначенияПеречисления = Перечисления[ИмяПеречисления].Индекс(Meta);
+//				ИмяЗначенияПеречисления = Метаданные.Перечисления[ИмяПеречисления].ЗначенияПеречисления[ИндексЗначенияПеречисления].Имя;
+//				Message("	Array.Add(Enums.Roles_MetadataTypes." + ИмяЗначенияПеречисления + ");");
+//			Except
+//				
+//			EndTry;
 		EndDo;
 		If EmptyData Then
 			RoleTree.Rows.Delete(MetaRow);
@@ -146,7 +156,7 @@ EndProcedure
 &AtServer
 Procedure AddAttributes(Meta, MetaItem, MetaItemRow)
 	
-	If NOT Roles_Settings.hasAttributes(MetaItem.ObjectType) Then
+	If NOT Roles_Settings.hasAttributes(Meta) Then
 		Return;
 	EndIf;
 	
@@ -160,7 +170,29 @@ Procedure AddAttributes(Meta, MetaItem, MetaItemRow)
 		AddAttributeRow = AddAttributesRow.Rows.Add();
 		AddAttributeRow.ObjectType = Meta;
 		AddAttributeRow.ObjectName = Attribute.Name;
-		AddAttributeRow.ObjectFullName = Attribute.Synonym;
+		AddAttributeRow.ObjectFullName = String(Attribute);
+	EndDo;
+EndProcedure
+
+
+&AtServer
+Procedure AddCommands(Meta, MetaItem, MetaItemRow)
+	
+	If NOT Roles_Settings.hasCommands(Meta) Then
+		Return;
+	EndIf;
+	
+	If NOT MetaItem.Commands.Count() Then
+		Return;
+	EndIf;
+	
+	CommandsRow = MetaItemRow.Rows.Add();
+	CommandsRow.ObjectFullName = "Commands";
+	For Each Command In MetaItem.Commands Do
+		CommandRow = CommandsRow.Rows.Add();
+		CommandRow.ObjectType = Meta;
+		CommandRow.ObjectName = Command.Name;
+		CommandRow.ObjectFullName = String(Command);
 	EndDo;
 EndProcedure
 
