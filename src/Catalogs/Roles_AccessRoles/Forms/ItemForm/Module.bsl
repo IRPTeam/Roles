@@ -1,3 +1,4 @@
+
 &AtClient
 Procedure RightsObjectTypeOnChange(Item)
 	CurrentRow = Items.Rights.CurrentData;
@@ -29,14 +30,6 @@ Procedure UpdateObjectNameChoiceList(Val CurrentRow)
 		EndDo;
 	EndIf;
 EndProcedure
-
-
-&AtServerNoContext
-Function MetadataName(Val RefData)
-	Return RefData.Metadata().Name;
-EndFunction
-
-
 
 &AtClient
 Procedure RightsObjectNameOnChange(Item)
@@ -110,7 +103,7 @@ Procedure UpdateRights(Command)
 	UpdateRightsList();
 EndProcedure
 
-
+#Region RightsList
 &AtServer
 Procedure UpdateRightsList()
 	RoleTree = FormAttributeToValue("RolesEdit");
@@ -118,13 +111,21 @@ Procedure UpdateRightsList()
 	
 	For Each Meta In Enums.Roles_MetadataTypes Do
 		
-		If Meta = Enums.Roles_MetadataTypes.Configuration 
-			OR Meta = Enums.Roles_MetadataTypes.IntegrationService Then // wait 8.3.17
+		If Meta = Enums.Roles_MetadataTypes.IntegrationService // wait 8.3.17
+			OR Meta = Enums.Roles_MetadataTypes.Role Then 
 			Continue;
 		EndIf;
 		
 		MetaRow = RoleTree.Rows.Add();
+		MetaRow.ObjectType = Meta;
 		MetaRow.ObjectFullName = Meta;
+
+		MetaRow.Picture = PictureLib["Roles_" + Roles_GenerateExtension.MetaName(Meta)];
+		
+		If Meta = Enums.Roles_MetadataTypes.Configuration Then
+			MetaRow.ObjectFullName = Metadata.Name;
+			Continue;
+		EndIf;
 		EmptyData = True;
 		For Each MetaItem In Metadata[Roles_Settings.MetaDataObjectNames().Get(Meta)] Do
 			EmptyData = False;
@@ -132,18 +133,41 @@ Procedure UpdateRightsList()
 			MetaItemRow.ObjectType = Meta;
 			MetaItemRow.ObjectName = MetaItem.Name;
 			MetaItemRow.ObjectFullName = String(MetaItem);
+			MetaItemRow.Picture = PictureLib["Roles_" + Roles_GenerateExtension.MetaName(Meta)];
+			If Roles_Settings.hasAttributes(Meta) Then
+				AddChild(Meta, MetaItem, MetaItemRow, "Attributes");
+			EndIf;
+			If Roles_Settings.hasDimensions(Meta) Then
+				AddChild(Meta, MetaItem, MetaItemRow, "Dimensions");
+			EndIf;
+			If Roles_Settings.hasResources(Meta) Then
+				AddChild(Meta, MetaItem, MetaItemRow, "Resources");
+			EndIf;
+			If Roles_Settings.hasStandardAttributes(Meta) Then
+				AddChild(Meta, MetaItem, MetaItemRow, "StandardAttributes");
+			EndIf;
+			If Roles_Settings.hasCommands(Meta) Then
+				AddChild(Meta, MetaItem, MetaItemRow, "Commands");
+			EndIf;			
+			If Roles_Settings.hasRecalculations(Meta) Then
+				AddChild(Meta, MetaItem, MetaItemRow, "Recalculations");
+			EndIf;
+			If Roles_Settings.hasAccountingFlags(Meta) Then
+				AddChild(Meta, MetaItem, MetaItemRow, "AccountingFlags");
+			EndIf;
+			If Roles_Settings.hasExtDimensionAccountingFlags(Meta) Then
+				AddChild(Meta, MetaItem, MetaItemRow, "ExtDimensionAccountingFlags");
+			EndIf;
+			If Roles_Settings.hasAddressingAttributes(Meta) Then
+				AddChild(Meta, MetaItem, MetaItemRow, "AddressingAttributes");
+			EndIf;
+			If Roles_Settings.hasTabularSections(Meta) Then
+				AddChildTab(Meta, MetaItem, MetaItemRow, "TabularSections");
+			EndIf;
+			If Roles_Settings.hasStandardTabularSections(Meta) Then
+				AddChildStandardTab(Meta, MetaItem, MetaItemRow, "StandardTabularSections");
+			EndIf;
 			
-			AddAttributes(Meta, MetaItem, MetaItemRow);
-			AddCommands(Meta, MetaItem, MetaItemRow);
-//			Try	
-//				
-//				ИмяПеречисления = Meta.Метаданные().Имя;
-//				ИндексЗначенияПеречисления = Перечисления[ИмяПеречисления].Индекс(Meta);
-//				ИмяЗначенияПеречисления = Метаданные.Перечисления[ИмяПеречисления].ЗначенияПеречисления[ИндексЗначенияПеречисления].Имя;
-//				Message("	Array.Add(Enums.Roles_MetadataTypes." + ИмяЗначенияПеречисления + ");");
-//			Except
-//				
-//			EndTry;
 		EndDo;
 		If EmptyData Then
 			RoleTree.Rows.Delete(MetaRow);
@@ -154,49 +178,223 @@ Procedure UpdateRightsList()
 EndProcedure
 
 &AtServer
-Procedure AddAttributes(Meta, MetaItem, MetaItemRow)
-	
-	If NOT Roles_Settings.hasAttributes(Meta) Then
-		Return;
-	EndIf;
-	
-	If NOT MetaItem.Attributes.Count() Then
-		Return;
-	EndIf;
-	
-	AddAttributesRow = MetaItemRow.Rows.Add();
-	AddAttributesRow.ObjectFullName = "Attributes";
-	For Each Attribute In MetaItem.Attributes Do
-		AddAttributeRow = AddAttributesRow.Rows.Add();
-		AddAttributeRow.ObjectType = Meta;
-		AddAttributeRow.ObjectName = Attribute.Name;
-		AddAttributeRow.ObjectFullName = String(Attribute);
-	EndDo;
-EndProcedure
+Procedure AddChild(Meta, MetaItem, MetaItemRow, DataType)
 
+	
+	If NOT MetaItem[DataType].Count() Then
+		Return;
+	EndIf;
+	ObjectSubtype = Enums.Roles_MetadataSubtype[Left(DataType, StrLen(DataType) - 1)];
+	
+	AddChildRows = MetaItemRow.Rows.Add();
+	For Each AddChild In MetaItem[DataType] Do
+		AddChildRow = AddChildRows.Rows.Add();
+		//AddChildRow.ObjectType = Meta;
+		AddChildRow.ObjectName = AddChild.Name;
+		AddChildRow.Picture = PictureLib["Roles_" + DataType];
+		If DataType = "StandardAttributes" Then		
+			AddChildRow.ObjectFullName = AddChild.Name;
+		Else	
+			AddChildRow.ObjectFullName = String(AddChild);
+		EndIf;		
+		AddChildRow.ObjectSubtype = ObjectSubtype;
+	EndDo;
+	If DataType = "StandardAttributes" Then
+		AddChildRows.ObjectFullName = "StandardAttribute";
+	Else
+		NamePart = StrSplit(AddChild.FullName(), ".");
+		AddChildRows.ObjectFullName = NamePart[2];
+	EndIf;
+	AddChildRows.ObjectSubtype = ObjectSubtype;
+	AddChildRows.ObjectName = DataType;
+	AddChildRows.Picture = PictureLib["Roles_" + DataType];
+EndProcedure
 
 &AtServer
-Procedure AddCommands(Meta, MetaItem, MetaItemRow)
-	
-	If NOT Roles_Settings.hasCommands(Meta) Then
+Procedure AddChildTab(Meta, MetaItem, MetaItemRow, DataType)
+	If NOT MetaItem[DataType].Count() Then
 		Return;
 	EndIf;
 	
-	If NOT MetaItem.Commands.Count() Then
-		Return;
-	EndIf;
-	
-	CommandsRow = MetaItemRow.Rows.Add();
-	CommandsRow.ObjectFullName = "Commands";
-	For Each Command In MetaItem.Commands Do
-		CommandRow = CommandsRow.Rows.Add();
-		CommandRow.ObjectType = Meta;
-		CommandRow.ObjectName = Command.Name;
-		CommandRow.ObjectFullName = String(Command);
+	AddChildRows = MetaItemRow.Rows.Add();
+	ObjectSubtype = Enums.Roles_MetadataSubtype[Left(DataType, StrLen(DataType) - 1)];
+	For Each AddChild In MetaItem[DataType] Do
+		AddChildRow = AddChildRows.Rows.Add();
+		//AddChildRow.ObjectType = Meta;
+		AddChildRow.ObjectName = AddChild.Name;
+		AddChildRow.ObjectFullName = String(AddChild);	
+		AddChildRow.Picture = PictureLib["Roles_" + DataType];
+		AddChildRow.ObjectSubtype = ObjectSubtype;
+		For Each AddChildAttribute In AddChild.Attributes Do
+			AddChildNewRow = AddChildRow.Rows.Add();
+			//AddChildNewRow.ObjectType = Meta;
+			AddChildNewRow.ObjectName = AddChildAttribute.Name;
+			AddChildNewRow.ObjectFullName = String(AddChildAttribute);
+			AddChildNewRow.Picture = PictureLib["Roles_Attributes"];
+			AddChildNewRow.ObjectSubtype = ObjectSubtype;
+		EndDo;
+		
 	EndDo;
+	NamePart = StrSplit(AddChild.FullName(), ".");
+	AddChildRows.ObjectFullName = NamePart[2];
+	AddChildRows.Picture = PictureLib["Roles_" + DataType];
+	AddChildRows.ObjectName = DataType;
+	AddChildRows.ObjectSubtype = ObjectSubtype;
 EndProcedure
 
+&AtServer
+Procedure AddChildStandardTab(Meta, MetaItem, MetaItemRow, DataType)
+	AddChildRows = MetaItemRow.Rows.Add();
+	AddChildRows.ObjectFullName = "StandardTabularSection";
+	ObjectSubtype = Enums.Roles_MetadataSubtype[Left(DataType, StrLen(DataType) - 1)];
 
+	For Each AddChild In MetaItem[DataType] Do
+		AddChildRow = AddChildRows.Rows.Add();
+		//AddChildRow.ObjectType = Meta;
+		AddChildRow.ObjectName = AddChild.Name;
+		AddChildRow.ObjectFullName = AddChild.Name;
+		AddChildRow.Picture = PictureLib["Roles_" + DataType];
+		AddChildRow.ObjectSubtype = ObjectSubtype;
+		For Each AddChildAttribute In AddChild.StandardAttributes Do
+			AddChildNewRow = AddChildRow.Rows.Add();
+			//AddChildNewRow.ObjectType = Meta;
+			AddChildNewRow.ObjectName = AddChildAttribute.Name;
+			AddChildNewRow.ObjectFullName = String(AddChildAttribute);	
+			AddChildNewRow.Picture = PictureLib["Roles_StandardAttributes"];
+			AddChildNewRow.ObjectSubtype = ObjectSubtype;
+		EndDo;	
+	EndDo;
+	AddChildRows.Picture = PictureLib["Roles_" + DataType];
+	AddChildRows.ObjectName = DataType;
+	AddChildRows.ObjectSubtype = ObjectSubtype;
+EndProcedure
 
+&AtClient
+Procedure RolesEditBeforeAddRow(Item, Cancel, Clone, Parent, Folder, Parameter)
+	Cancel = True;
+EndProcedure
 
+&AtClient
+Procedure RolesEditBeforeDeleteRow(Item, Cancel)
+	Cancel = True;
+EndProcedure
 
+#EndRegion
+
+&AtClient
+Procedure ChangeRole(Item)
+	FlagOnChange(Item);
+EndProcedure
+
+#Region Service
+
+#Region FlagStatus
+&AtClient
+Procedure FlagOnChange(Item)
+    RowID = Items.RolesEdit.CurrentRow;
+    If RowID <> Undefined Then
+        ItemRow = RolesEdit.FindByID(RowID);
+        If ItemRow[Item.Name] = 2 Then
+            ItemRow[Item.Name] = 0;
+        EndIf;
+        SetFlag(ItemRow, Item, ArrayForViewEdit());
+        Parent = ItemRow.GetParent();
+        While Parent <> Undefined Do
+            Parent[Item.Name] = ?(isAllSet(ItemRow, Item),
+                ItemRow[Item.Name], 2);
+            ItemRow = Parent;
+            Parent = ItemRow.GetParent();
+        EndDo;
+    EndIf;
+EndProcedure
+
+&AtClient
+Procedure SetFlag(ItemRow, Item, ArrayForViewEdit)
+    Childs = ItemRow.GetItems();
+	For Each ThisItem In Childs Do
+		If Skip(ArrayForViewEdit, Item, ThisItem) Then
+			Continue;
+		EndIf;
+        ThisItem[Item.Name] = ItemRow[Item.Name];
+        SetFlag(ThisItem, Item, ArrayForViewEdit);
+    EndDo;
+EndProcedure
+
+&AtClient
+Function Skip(Val ArrayForViewEdit, Val Item, Val ThisItem)
+	
+	If NOT ThisItem.ObjectSubtype.isEmpty() Then
+		If Item.Name = "View" Then
+			If ThisItem.ObjectSubtype = PredefinedValue("Enum.Roles_MetadataSubtype.Command")
+				OR NOT ArrayForViewEdit.Find(ThisItem.ObjectSubtype) = Undefined Then
+				Return False;
+			Else
+				Return True;
+			EndIf;
+		ElsIf (Item.Name = "Read" OR Item.Name = "Update")
+			AND ThisItem.ObjectSubtype = PredefinedValue("Enum.Roles_MetadataSubtype.Recalculation") Then
+			Return False;
+		ElsIf Item.Name = "Edit" 
+			AND NOT ArrayForViewEdit.Find(ThisItem.ObjectSubtype) = Undefined Then
+			Return False;
+		Else	
+			Return True;
+		EndIf;
+		
+	EndIf;
+	Return False;
+EndFunction
+
+&AtClient
+Function isAllSet(ItemRow, Item)
+    UpChilds = ItemRow.GetParent().GetItems();
+    For Each thisItem In UpChilds Do
+        If NOT thisItem[Item.Name] = ItemRow[Item.Name] Then
+            Return False;
+        EndIf;
+    EndDo;
+    Return True;
+КонецФункции   
+#EndRegion
+
+&AtServer
+Procedure SetOnChangeAction()
+	
+	ArrayChildItems = New Array;
+	ArrayChildItems.Add(Items.RolesEditGroupAdmin.ChildItems);
+	ArrayChildItems.Add(Items.RolesEditGroupBasic.ChildItems);
+	ArrayChildItems.Add(Items.RolesEditGroupDocument.ChildItems);
+	ArrayChildItems.Add(Items.RolesEditGroupHistory.ChildItems);
+	ArrayChildItems.Add(Items.RolesEditGroupInteractive.ChildItems);
+	ArrayChildItems.Add(Items.RolesEditGroupPredefined.ChildItems);
+	ArrayChildItems.Add(Items.RolesEditGroupRLS.ChildItems);
+	ArrayChildItems.Add(Items.RolesEditGroupSessionParameters.ChildItems);
+	ArrayChildItems.Add(Items.RolesEditGroupTask.ChildItems);
+	For Each ChildItem In ArrayChildItems Do
+		For Each Item In ChildItem Do
+			Item.SetAction("OnChange", "ChangeRole"); 
+		EndDo;
+	EndDo;
+	
+EndProcedure
+#EndRegion
+
+&AtServer
+Procedure OnCreateAtServer(Cancel, StandardProcessing)
+	SetOnChangeAction();
+EndProcedure
+
+&AtServer
+Function ArrayForViewEdit()
+	ArrayForViewEdit = New Array;
+	ArrayForViewEdit.Add(Enums.Roles_MetadataSubtype.Attribute);
+	ArrayForViewEdit.Add(Enums.Roles_MetadataSubtype.TabularSection);
+	ArrayForViewEdit.Add(Enums.Roles_MetadataSubtype.StandardAttribute);
+	ArrayForViewEdit.Add(Enums.Roles_MetadataSubtype.Dimension);
+	ArrayForViewEdit.Add(Enums.Roles_MetadataSubtype.Resource);
+	ArrayForViewEdit.Add(Enums.Roles_MetadataSubtype.AccountingFlag);
+	ArrayForViewEdit.Add(Enums.Roles_MetadataSubtype.ExtDimensionAccountingFlag);
+	ArrayForViewEdit.Add(Enums.Roles_MetadataSubtype.AddressingAttribute);
+	ArrayForViewEdit.Add(Enums.Roles_MetadataSubtype.StandardTabularSection);
+	Return ArrayForViewEdit;
+EndFunction

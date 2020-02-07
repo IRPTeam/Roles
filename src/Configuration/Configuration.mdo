@@ -8,6 +8,8 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <defaultRunMode>Checked</defaultRunMode>
+    <managedApplicationModule>Extended</managedApplicationModule>
+    <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="dfdd8d1d-f6a8-4e91-96a1-8b8ef9cc7871"/>
@@ -20,7 +22,6 @@
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
   <defaultRunMode>ManagedApplication</defaultRunMode>
-  <usePurposes>PersonalComputer</usePurposes>
   <version>0.0.1</version>
   <defaultLanguage>Language.English</defaultLanguage>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -31,11 +32,6 @@
   <compatibilityMode>8.3.14</compatibilityMode>
   <languages uuid="0e682ddb-91ed-46d0-ab2d-27974eb73d0f">
     <name>English</name>
-    <synonym>
-      <key>en</key>
-      <value>English</value>
-    </synonym>
-    <comment></comment>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:LanguageExtension">
       <languageCode>Checked</languageCode>
@@ -43,8 +39,37 @@
     <languageCode>en</languageCode>
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
-  <commonPictures>CommonPicture.Roles_SubsystemIco</commonPictures>
+  <commonPictures>CommonPicture.Roles_AccountingFlags</commonPictures>
+  <commonPictures>CommonPicture.Roles_AccountingRegister</commonPictures>
+  <commonPictures>CommonPicture.Roles_AccumulationRegister</commonPictures>
+  <commonPictures>CommonPicture.Roles_AddressingAttributes</commonPictures>
+  <commonPictures>CommonPicture.Roles_Attributes</commonPictures>
+  <commonPictures>CommonPicture.Roles_BusinessProcess</commonPictures>
+  <commonPictures>CommonPicture.Roles_CalculationRegister</commonPictures>
+  <commonPictures>CommonPicture.Roles_Catalog</commonPictures>
+  <commonPictures>CommonPicture.Roles_ChartOfAccounts</commonPictures>
+  <commonPictures>CommonPicture.Roles_ChartOfCalculationTypes</commonPictures>
+  <commonPictures>CommonPicture.Roles_ChartOfCharacteristicTypes</commonPictures>
+  <commonPictures>CommonPicture.Roles_Commands</commonPictures>
+  <commonPictures>CommonPicture.Roles_CommonAttribute</commonPictures>
+  <commonPictures>CommonPicture.Roles_CommonCommand</commonPictures>
+  <commonPictures>CommonPicture.Roles_CommonForm</commonPictures>
+  <commonPictures>CommonPicture.Roles_configuration</commonPictures>
   <commonPictures>CommonPicture.Roles_configuration_extension_administration</commonPictures>
+  <commonPictures>CommonPicture.Roles_Constant</commonPictures>
+  <commonPictures>CommonPicture.Roles_DataProcessor</commonPictures>
+  <commonPictures>CommonPicture.Roles_Dimensions</commonPictures>
+  <commonPictures>CommonPicture.Roles_Document</commonPictures>
+  <commonPictures>CommonPicture.Roles_DocumentJournal</commonPictures>
+  <commonPictures>CommonPicture.Roles_ExchangePlan</commonPictures>
+  <commonPictures>CommonPicture.Roles_ExtDimensionAccountingFlags</commonPictures>
+  <commonPictures>CommonPicture.Roles_FilterCriterion</commonPictures>
+  <commonPictures>CommonPicture.Roles_HTTPService</commonPictures>
+  <commonPictures>CommonPicture.Roles_InformationRegister</commonPictures>
+  <commonPictures>CommonPicture.Roles_method</commonPictures>
+  <commonPictures>CommonPicture.Roles_Recalculations</commonPictures>
+  <commonPictures>CommonPicture.Roles_Report</commonPictures>
+  <commonPictures>CommonPicture.Roles_Resources</commonPictures>
   <commonPictures>CommonPicture.Roles_right_activeUsers</commonPictures>
   <commonPictures>CommonPicture.Roles_right_administration</commonPictures>
   <commonPictures>CommonPicture.Roles_right_allFunctionsMode</commonPictures>
@@ -80,7 +105,6 @@
   <commonPictures>CommonPicture.Roles_right_read</commonPictures>
   <commonPictures>CommonPicture.Roles_right_readDataHistory</commonPictures>
   <commonPictures>CommonPicture.Roles_right_readDataHistoryOfMissingData</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_updateDataHistorySettings</commonPictures>
   <commonPictures>CommonPicture.Roles_right_saveUserData</commonPictures>
   <commonPictures>CommonPicture.Roles_right_set</commonPictures>
   <commonPictures>CommonPicture.Roles_right_switchToDataHistoryVersion_dark</commonPictures>
@@ -92,6 +116,7 @@
   <commonPictures>CommonPicture.Roles_right_updateDataBaseConfiguration</commonPictures>
   <commonPictures>CommonPicture.Roles_right_updateDataHistory</commonPictures>
   <commonPictures>CommonPicture.Roles_right_updateDataHistoryOfMissingData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_updateDataHistorySettings</commonPictures>
   <commonPictures>CommonPicture.Roles_right_updateDataHistoryVersionComment</commonPictures>
   <commonPictures>CommonPicture.Roles_right_use</commonPictures>
   <commonPictures>CommonPicture.Roles_right_view_dark</commonPictures>
@@ -100,6 +125,20 @@
   <commonPictures>CommonPicture.Roles_rls_add</commonPictures>
   <commonPictures>CommonPicture.Roles_rls_blank</commonPictures>
   <commonPictures>CommonPicture.Roles_role</commonPictures>
+  <commonPictures>CommonPicture.Roles_Sequence</commonPictures>
+  <commonPictures>CommonPicture.Roles_SessionParameter</commonPictures>
+  <commonPictures>CommonPicture.Roles_StandardAttributes</commonPictures>
+  <commonPictures>CommonPicture.Roles_StandardTabularSections</commonPictures>
+  <commonPictures>CommonPicture.Roles_Subsystem</commonPictures>
+  <commonPictures>CommonPicture.Roles_SubsystemIco</commonPictures>
+  <commonPictures>CommonPicture.Roles_TabularSections</commonPictures>
+  <commonPictures>CommonPicture.Roles_Task</commonPictures>
+  <commonPictures>CommonPicture.Roles_WebService</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveStart</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_start</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_execute</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveExecute</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveActivate</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_TemplateMetadataObject</commonTemplates>
@@ -112,5 +151,6 @@
   <catalogs>Catalog.Users</catalogs>
   <enums>Enum.Roles_MetadataTypes</enums>
   <enums>Enum.Roles_Rights</enums>
+  <enums>Enum.Roles_MetadataSubtype</enums>
   <dataProcessors>DataProcessor.Roles_RolesEditor</dataProcessors>
 </mdclass:Configuration>

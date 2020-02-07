@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4357fbd3-3d9d-482e-8399-98409d593fce">
+  <name>Roles_HTTPService</name>
+  <synonym>
+    <key>en</key>
+    <value>HTTPService</value>
+  </synonym>
+</mdclass:CommonPicture>

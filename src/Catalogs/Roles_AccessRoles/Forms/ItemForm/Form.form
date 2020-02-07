@@ -71,39 +71,137 @@
         </dataPath>
         <titleLocation>None</titleLocation>
         <excludedCommands>Add</excludedCommands>
-        <excludedCommands>Copy</excludedCommands>
         <excludedCommands>Change</excludedCommands>
+        <excludedCommands>Copy</excludedCommands>
+        <excludedCommands>CopyToClipboard</excludedCommands>
         <excludedCommands>Delete</excludedCommands>
         <excludedCommands>EndEdit</excludedCommands>
-        <excludedCommands>ShowRowRearrangement</excludedCommands>
-        <excludedCommands>MoveUp</excludedCommands>
-        <excludedCommands>MoveDown</excludedCommands>
-        <excludedCommands>SortListAsc</excludedCommands>
-        <excludedCommands>SortListDesc</excludedCommands>
-        <excludedCommands>List</excludedCommands>
         <excludedCommands>HierarchicalList</excludedCommands>
-        <excludedCommands>Tree</excludedCommands>
-        <excludedCommands>CopyToClipboard</excludedCommands>
+        <excludedCommands>List</excludedCommands>
+        <excludedCommands>MoveDown</excludedCommands>
+        <excludedCommands>MoveUp</excludedCommands>
         <excludedCommands>SelectAll</excludedCommands>
         <excludedCommands>ShowMultipleSelection</excludedCommands>
-        <items xsi:type="form:FormField">
-          <name>RolesEditObjectFullName</name>
-          <id>283</id>
-          <title>
-            <key>en</key>
-            <value>Object</value>
-          </title>
+        <excludedCommands>ShowRowRearrangement</excludedCommands>
+        <excludedCommands>Tree</excludedCommands>
+        <items xsi:type="form:FormGroup">
+          <name>RolesEditGroup2</name>
+          <id>289</id>
+          <items xsi:type="form:FormField">
+            <name>RolesEditPicture</name>
+            <id>286</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.Picture</segments>
+              </paths>
+            </dataPath>
+            <extendedTooltip>
+              <name>ExtendedTooltip</name>
+              <id>288</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ContextMenu</name>
+              <id>287</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>PictureField</type>
+            <editMode>Enter</editMode>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:ImageFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
+              <verticalStretch>true</verticalStretch>
+              <fileDragMode>AsFileRef</fileDragMode>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>RolesEditObjectFullName</name>
+            <id>283</id>
+            <title>
+              <key>en</key>
+              <value>Object</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.ObjectFullName</segments>
+              </paths>
+            </dataPath>
+            <extendedTooltip>
+              <name>ExtendedTooltip</name>
+              <id>285</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ContextMenu</name>
+              <id>284</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>RolesEdit.ObjectFullName</segments>
-          </dataPath>
+          <readOnly>true</readOnly>
           <extendedTooltip>
-            <name>ExtendedTooltip</name>
-            <id>285</id>
+            <name>RolesEditGroup2ExtendedTooltip</name>
+            <id>290</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -116,28 +214,10 @@
               <horizontalAlign>Left</horizontalAlign>
             </extInfo>
           </extendedTooltip>
-          <contextMenu>
-            <name>ContextMenu</name>
-            <id>284</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>InputField</type>
-          <editMode>Enter</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:InputFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <wrap>true</wrap>
-            <chooseType>true</chooseType>
-            <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
+          <type>ColumnGroup</type>
+          <extInfo xsi:type="form:ColumnGroupExtInfo">
+            <group>InCell</group>
+            <showTitle>true</showTitle>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -155,8 +235,10 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>RolesEdit.ObjectType</segments>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.ObjectType</segments>
+              </paths>
             </dataPath>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
@@ -209,8 +291,10 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>RolesEdit.ObjectName</segments>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.ObjectName</segments>
+              </paths>
             </dataPath>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
@@ -239,6 +323,58 @@
             </contextMenu>
             <type>InputField</type>
             <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>RolesEditObjectSubtype</name>
+            <id>321</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.ObjectSubtype</segments>
+              </paths>
+            </dataPath>
+            <extendedTooltip>
+              <name>RolesEditObjectSubtypeExtendedTooltip</name>
+              <id>323</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>RolesEditObjectSubtypeContextMenu</name>
+              <id>322</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>EnterOnInput</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -280,8 +416,12 @@
           <name>RolesEditGroupRLS</name>
           <id>267</id>
           <items xsi:type="form:FormField">
-            <name>RolesEditInsert</name>
+            <name>Insert</name>
             <id>104</id>
+            <title>
+              <key>en</key>
+              <value>Insert</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -296,8 +436,12 @@
               <color>Web.Gold</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Insert</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>InsertExtendedTooltip</name>
               <id>106</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -312,7 +456,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>InsertContextMenu</name>
               <id>105</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -329,11 +473,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditRead</name>
+            <name>Read</name>
             <id>107</id>
+            <title>
+              <key>en</key>
+              <value>Read</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -348,8 +498,12 @@
               <color>Web.Gold</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Read</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ReadExtendedTooltip</name>
               <id>109</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -364,7 +518,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ReadContextMenu</name>
               <id>108</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -381,11 +535,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditUpdate</name>
+            <name>Update</name>
             <id>110</id>
+            <title>
+              <key>en</key>
+              <value>Update</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -400,8 +560,12 @@
               <color>Web.Gold</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Update</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>UpdateExtendedTooltip</name>
               <id>112</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -416,7 +580,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>UpdateContextMenu</name>
               <id>111</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -433,11 +597,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditDelete</name>
+            <name>Delete</name>
             <id>113</id>
+            <title>
+              <key>en</key>
+              <value>Delete</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -452,8 +622,12 @@
               <color>Web.Gold</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Delete</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>DeleteExtendedTooltip</name>
               <id>115</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -468,7 +642,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>DeleteContextMenu</name>
               <id>114</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -486,6 +660,7 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
               <borderColor xsi:type="core:ColorRef">
                 <color>Web.Gold</color>
               </borderColor>
@@ -525,8 +700,12 @@
           <name>RolesEditGroupBasic</name>
           <id>271</id>
           <items xsi:type="form:FormField">
-            <name>RolesEditView</name>
+            <name>View</name>
             <id>116</id>
+            <title>
+              <key>en</key>
+              <value>View</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -541,8 +720,12 @@
               <color>Web.PaleTurquoise</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>View</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ViewExtendedTooltip</name>
               <id>118</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -557,7 +740,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ViewContextMenu</name>
               <id>117</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -575,14 +758,19 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
               <borderColor xsi:type="core:ColorRef">
                 <color>Web.LightCyan</color>
               </borderColor>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditEdit</name>
+            <name>Edit</name>
             <id>119</id>
+            <title>
+              <key>en</key>
+              <value>Edit</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -597,8 +785,12 @@
               <color>Web.PaleTurquoise</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Edit</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>EditExtendedTooltip</name>
               <id>121</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -613,7 +805,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>EditContextMenu</name>
               <id>120</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -630,11 +822,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditInputByString</name>
+            <name>InputByString</name>
             <id>122</id>
+            <title>
+              <key>en</key>
+              <value>Input by string</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -649,8 +847,12 @@
               <color>Web.PaleTurquoise</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Input by string</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>InputByStringExtendedTooltip</name>
               <id>124</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -665,7 +867,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>InputByStringContextMenu</name>
               <id>123</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -682,115 +884,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditPosting</name>
-            <id>125</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>RolesEdit.Posting</segments>
-              </paths>
-            </dataPath>
-            <titleBackColor xsi:type="core:ColorRef">
-              <color>Web.PaleTurquoise</color>
-            </titleBackColor>
-            <titleLocation>None</titleLocation>
-            <extendedTooltip>
-              <name>ExtendedTooltip</name>
-              <id>127</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ContextMenu</name>
-              <id>126</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerPicture xsi:type="core:PictureRef">
-              <picture>CommonPicture.Roles_right_posting</picture>
-            </headerPicture>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>RolesEditUndoPosting</name>
-            <id>128</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>RolesEdit.UndoPosting</segments>
-              </paths>
-            </dataPath>
-            <titleBackColor xsi:type="core:ColorRef">
-              <color>Web.PaleTurquoise</color>
-            </titleBackColor>
-            <titleLocation>None</titleLocation>
-            <extendedTooltip>
-              <name>ExtendedTooltip</name>
-              <id>130</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ContextMenu</name>
-              <id>129</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerPicture xsi:type="core:PictureRef">
-              <picture>CommonPicture.Roles_right_undoPosting</picture>
-            </headerPicture>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>RolesEditUse</name>
+            <name>Use</name>
             <id>131</id>
+            <title>
+              <key>en</key>
+              <value>Use</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -805,8 +909,12 @@
               <color>Web.PaleTurquoise</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Use</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>UseExtendedTooltip</name>
               <id>133</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -821,7 +929,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>UseContextMenu</name>
               <id>132</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -838,11 +946,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditTotalsControl</name>
+            <name>TotalsControl</name>
             <id>134</id>
+            <title>
+              <key>en</key>
+              <value>Totals control</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -857,8 +971,12 @@
               <color>Web.PaleTurquoise</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Totals control</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>TotalsControlExtendedTooltip</name>
               <id>136</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -873,7 +991,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>TotalsControlContextMenu</name>
               <id>135</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -890,7 +1008,9 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -926,8 +1046,12 @@
           <name>RolesEditGroupInteractive</name>
           <id>269</id>
           <items xsi:type="form:FormField">
-            <name>RolesEditInteractiveDelete</name>
+            <name>InteractiveDelete</name>
             <id>137</id>
+            <title>
+              <key>en</key>
+              <value>Interactive delete</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -944,8 +1068,12 @@
               <blue>230</blue>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive delete</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>InteractiveDeleteExtendedTooltip</name>
               <id>139</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -960,7 +1088,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>InteractiveDeleteContextMenu</name>
               <id>138</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -977,11 +1105,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditInteractiveInsert</name>
+            <name>InteractiveInsert</name>
             <id>140</id>
+            <title>
+              <key>en</key>
+              <value>Interactive insert</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -998,8 +1132,12 @@
               <blue>230</blue>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive insert</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>InteractiveInsertExtendedTooltip</name>
               <id>142</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1014,7 +1152,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>InteractiveInsertContextMenu</name>
               <id>141</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1031,11 +1169,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditInteractiveSetDeletionMark</name>
+            <name>InteractiveSetDeletionMark</name>
             <id>143</id>
+            <title>
+              <key>en</key>
+              <value>Interactive set deletion mark</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1052,8 +1196,12 @@
               <blue>230</blue>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive set deletion mark</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>InteractiveSetDeletionMarkExtendedTooltip</name>
               <id>145</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1068,7 +1216,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>InteractiveSetDeletionMarkContextMenu</name>
               <id>144</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1085,11 +1233,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditInteractiveClearDeletionMark</name>
+            <name>InteractiveClearDeletionMark</name>
             <id>146</id>
+            <title>
+              <key>en</key>
+              <value>Interactive clear deletion mark</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1106,8 +1260,12 @@
               <blue>230</blue>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive clear deletion mark</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>InteractiveClearDeletionMarkExtendedTooltip</name>
               <id>148</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1122,7 +1280,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>InteractiveClearDeletionMarkContextMenu</name>
               <id>147</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1139,11 +1297,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditInteractiveDeleteMarked</name>
+            <name>InteractiveDeleteMarked</name>
             <id>149</id>
+            <title>
+              <key>en</key>
+              <value>Interactive delete marked</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1160,8 +1324,12 @@
               <blue>230</blue>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive delete marked</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>InteractiveDeleteMarkedExtendedTooltip</name>
               <id>151</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1176,7 +1344,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>InteractiveDeleteMarkedContextMenu</name>
               <id>150</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1193,277 +1361,9 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>RolesEditInteractivePosting</name>
-            <id>152</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>RolesEdit.InteractivePosting</segments>
-              </paths>
-            </dataPath>
-            <titleBackColor xsi:type="core:ColorDef">
-              <red>226</red>
-              <green>255</green>
-              <blue>230</blue>
-            </titleBackColor>
-            <titleLocation>None</titleLocation>
-            <extendedTooltip>
-              <name>ExtendedTooltip</name>
-              <id>154</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ContextMenu</name>
-              <id>153</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerPicture xsi:type="core:PictureRef">
-              <picture>CommonPicture.Roles_right_interactivePosting</picture>
-            </headerPicture>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>RolesEditInteractivePostingRegular</name>
-            <id>155</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>RolesEdit.InteractivePostingRegular</segments>
-              </paths>
-            </dataPath>
-            <titleBackColor xsi:type="core:ColorDef">
-              <red>226</red>
-              <green>255</green>
-              <blue>230</blue>
-            </titleBackColor>
-            <titleLocation>None</titleLocation>
-            <extendedTooltip>
-              <name>ExtendedTooltip</name>
-              <id>157</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ContextMenu</name>
-              <id>156</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerPicture xsi:type="core:PictureRef">
-              <picture>CommonPicture.Roles_right_interactivePostingRegular</picture>
-            </headerPicture>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>RolesEditInteractiveUndoPosting</name>
-            <id>158</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>RolesEdit.InteractiveUndoPosting</segments>
-              </paths>
-            </dataPath>
-            <titleBackColor xsi:type="core:ColorDef">
-              <red>226</red>
-              <green>255</green>
-              <blue>230</blue>
-            </titleBackColor>
-            <titleLocation>None</titleLocation>
-            <extendedTooltip>
-              <name>ExtendedTooltip</name>
-              <id>160</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ContextMenu</name>
-              <id>159</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerPicture xsi:type="core:PictureRef">
-              <picture>CommonPicture.Roles_right_interactiveUndoPosting</picture>
-            </headerPicture>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>RolesEditInteractiveChangeOfPosted</name>
-            <id>161</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>RolesEdit.InteractiveChangeOfPosted</segments>
-              </paths>
-            </dataPath>
-            <titleBackColor xsi:type="core:ColorDef">
-              <red>226</red>
-              <green>255</green>
-              <blue>230</blue>
-            </titleBackColor>
-            <titleLocation>None</titleLocation>
-            <extendedTooltip>
-              <name>ExtendedTooltip</name>
-              <id>163</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ContextMenu</name>
-              <id>162</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerPicture xsi:type="core:PictureRef">
-              <picture>CommonPicture.Roles_right_interactiveChangeOfPosted</picture>
-            </headerPicture>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>RolesEditInteractiveDeletePredefinedData</name>
-            <id>164</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>RolesEdit.InteractiveDeletePredefinedData</segments>
-              </paths>
-            </dataPath>
-            <titleBackColor xsi:type="core:ColorDef">
-              <red>226</red>
-              <green>255</green>
-              <blue>230</blue>
-            </titleBackColor>
-            <titleLocation>None</titleLocation>
-            <extendedTooltip>
-              <name>ExtendedTooltip</name>
-              <id>166</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ContextMenu</name>
-              <id>165</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerPicture xsi:type="core:PictureRef">
-              <picture>CommonPicture.Roles_right_interactiveDeletePredefinedData</picture>
-            </headerPicture>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1496,11 +1396,721 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
+          <name>RolesEditGroupDocument</name>
+          <id>319</id>
+          <items xsi:type="form:FormField">
+            <name>Posting</name>
+            <id>125</id>
+            <title>
+              <key>en</key>
+              <value>Posting</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.Posting</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.PaleTurquoise</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Posting</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>PostingExtendedTooltip</name>
+              <id>127</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>PostingContextMenu</name>
+              <id>126</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_posting</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>UndoPosting</name>
+            <id>128</id>
+            <title>
+              <key>en</key>
+              <value>Undo posting</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.UndoPosting</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.PaleTurquoise</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Undo posting</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>UndoPostingExtendedTooltip</name>
+              <id>130</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>UndoPostingContextMenu</name>
+              <id>129</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_undoPosting</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>InteractivePosting</name>
+            <id>152</id>
+            <title>
+              <key>en</key>
+              <value>Interactive posting</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractivePosting</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorDef">
+              <red>226</red>
+              <green>255</green>
+              <blue>230</blue>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive posting</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractivePostingExtendedTooltip</name>
+              <id>154</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractivePostingContextMenu</name>
+              <id>153</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactivePosting</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>InteractiveUndoPosting</name>
+            <id>158</id>
+            <title>
+              <key>en</key>
+              <value>Interactive undo posting</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveUndoPosting</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorDef">
+              <red>226</red>
+              <green>255</green>
+              <blue>230</blue>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive undo posting</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractiveUndoPostingExtendedTooltip</name>
+              <id>160</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractiveUndoPostingContextMenu</name>
+              <id>159</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactiveUndoPosting</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>InteractivePostingRegular</name>
+            <id>155</id>
+            <title>
+              <key>en</key>
+              <value>Interactive posting regular</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractivePostingRegular</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorDef">
+              <red>226</red>
+              <green>255</green>
+              <blue>230</blue>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive posting regular</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractivePostingRegularExtendedTooltip</name>
+              <id>157</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractivePostingRegularContextMenu</name>
+              <id>156</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactivePostingRegular</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>InteractiveChangeOfPosted</name>
+            <id>161</id>
+            <title>
+              <key>en</key>
+              <value>Interactive change of posted</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveChangeOfPosted</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorDef">
+              <red>226</red>
+              <green>255</green>
+              <blue>230</blue>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive change of posted</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractiveChangeOfPostedExtendedTooltip</name>
+              <id>163</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractiveChangeOfPostedContextMenu</name>
+              <id>162</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactiveChangeOfPosted</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>en</key>
+            <value>Document</value>
+          </title>
+          <toolTip>
+            <key>en</key>
+            <value>Roles edit group document</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>RolesEditGroupDocumentExtendedTooltip</name>
+            <id>320</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>ColumnGroup</type>
+          <extInfo xsi:type="form:ColumnGroupExtInfo">
+            <showTitle>true</showTitle>
+            <showInHeader>true</showInHeader>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>RolesEditGroupPredefined</name>
+          <id>308</id>
+          <items xsi:type="form:FormField">
+            <name>InteractiveDeletePredefinedData</name>
+            <id>164</id>
+            <title>
+              <key>en</key>
+              <value>Interactive delete predefined data</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveDeletePredefinedData</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.Thistle</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive delete predefined data</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractiveDeletePredefinedDataExtendedTooltip</name>
+              <id>166</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractiveDeletePredefinedDataContextMenu</name>
+              <id>165</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactiveDeletePredefinedData</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>InteractiveSetDeletionMarkPredefinedData</name>
+            <id>310</id>
+            <title>
+              <key>en</key>
+              <value>Interactive set deletion mark predefined data</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveSetDeletionMarkPredefinedData</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.Thistle</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive set deletion mark predefined data</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractiveSetDeletionMarkPredefinedDataExtendedTooltip</name>
+              <id>312</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractiveSetDeletionMarkPredefinedDataContextMenu</name>
+              <id>311</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactiveSetDeletionMarkPredefinedData</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>InteractiveClearDeletionMarkPredefinedData</name>
+            <id>313</id>
+            <title>
+              <key>en</key>
+              <value>Interactive clear deletion mark predefined data</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveClearDeletionMarkPredefinedData</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.Thistle</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive clear deletion mark predefined data</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractiveClearDeletionMarkPredefinedDataExtendedTooltip</name>
+              <id>315</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractiveClearDeletionMarkPredefinedDataContextMenu</name>
+              <id>314</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactiveClearDeletionMarkPredefinedData</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>InteractiveDeleteMarkedPredefinedData</name>
+            <id>316</id>
+            <title>
+              <key>en</key>
+              <value>Interactive delete marked predefined dData</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveDeleteMarkedPredefinedData</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.Thistle</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive delete marked predefined dData</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractiveDeleteMarkedPredefinedDataExtendedTooltip</name>
+              <id>318</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractiveDeleteMarkedPredefinedDataContextMenu</name>
+              <id>317</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactiveDeletePredefinedData</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key></key>
+            <value>Roles edit group predefined</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Predefined</value>
+          </title>
+          <toolTip>
+            <key></key>
+            <value>Roles edit group predefined</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>RolesEditGroupPredefinedExtendedTooltip</name>
+            <id>309</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>ColumnGroup</type>
+          <extInfo xsi:type="form:ColumnGroupExtInfo">
+            <showTitle>true</showTitle>
+            <showInHeader>true</showInHeader>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
           <name>RolesEditGroupSessionParameters</name>
           <id>265</id>
           <items xsi:type="form:FormField">
-            <name>RolesEditGet</name>
+            <name>Get</name>
             <id>167</id>
+            <title>
+              <key>en</key>
+              <value>Get</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1515,8 +2125,12 @@
               <color>Web.PowderBlue</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Get</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>GetExtendedTooltip</name>
               <id>169</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1531,7 +2145,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>GetContextMenu</name>
               <id>168</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1548,11 +2162,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditSet</name>
+            <name>Set</name>
             <id>170</id>
+            <title>
+              <key>en</key>
+              <value>Set</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1567,8 +2187,12 @@
               <color>Web.PowderBlue</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Set</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>SetExtendedTooltip</name>
               <id>172</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1583,7 +2207,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>SetContextMenu</name>
               <id>171</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1600,7 +2224,9 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1609,7 +2235,7 @@
           </userVisible>
           <title>
             <key>en</key>
-            <value>Session</value>
+            <value>SP</value>
           </title>
           <extendedTooltip>
             <name>RolesEditGroup1ExtendedTooltip2</name>
@@ -1636,8 +2262,12 @@
           <name>RolesEditGroupAdmin</name>
           <id>261</id>
           <items xsi:type="form:FormField">
-            <name>RolesEditAdministration</name>
+            <name>Administration</name>
             <id>173</id>
+            <title>
+              <key>en</key>
+              <value>Administration</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1652,8 +2282,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Administration</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>AdministrationExtendedTooltip</name>
               <id>175</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1668,7 +2302,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>AdministrationContextMenu</name>
               <id>174</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1685,11 +2319,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditDataAdministration</name>
+            <name>DataAdministration</name>
             <id>176</id>
+            <title>
+              <key>en</key>
+              <value>Data administration</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1704,8 +2344,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Data administration</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>DataAdministrationExtendedTooltip</name>
               <id>178</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1720,7 +2364,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>DataAdministrationContextMenu</name>
               <id>177</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1737,11 +2381,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditUpdateDataBaseConfiguration</name>
+            <name>UpdateDataBaseConfiguration</name>
             <id>179</id>
+            <title>
+              <key>en</key>
+              <value>Update data base configuration</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1756,8 +2406,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Update data base configuration</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>UpdateDataBaseConfigurationExtendedTooltip</name>
               <id>181</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1772,7 +2426,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>UpdateDataBaseConfigurationContextMenu</name>
               <id>180</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1789,11 +2443,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditExclusiveMode</name>
+            <name>ExclusiveMode</name>
             <id>182</id>
+            <title>
+              <key>en</key>
+              <value>Exclusive mode</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1808,8 +2468,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Exclusive mode</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ExclusiveModeExtendedTooltip</name>
               <id>184</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1824,7 +2488,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ExclusiveModeContextMenu</name>
               <id>183</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1841,11 +2505,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditActiveUsers</name>
+            <name>ActiveUsers</name>
             <id>185</id>
+            <title>
+              <key>en</key>
+              <value>Active users</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1860,8 +2530,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Active users</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ActiveUsersExtendedTooltip</name>
               <id>187</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1876,7 +2550,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ActiveUsersContextMenu</name>
               <id>186</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1893,11 +2567,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditEventLog</name>
+            <name>EventLog</name>
             <id>188</id>
+            <title>
+              <key>en</key>
+              <value>Event log</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1912,8 +2592,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Event log</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>EventLogExtendedTooltip</name>
               <id>190</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1928,7 +2612,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>EventLogContextMenu</name>
               <id>189</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1945,11 +2629,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditThinClient</name>
+            <name>ThinClient</name>
             <id>191</id>
+            <title>
+              <key>en</key>
+              <value>Thin client</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1964,8 +2654,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Thin client</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ThinClientExtendedTooltip</name>
               <id>193</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1980,7 +2674,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ThinClientContextMenu</name>
               <id>192</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1997,11 +2691,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditWebClient</name>
+            <name>WebClient</name>
             <id>194</id>
+            <title>
+              <key>en</key>
+              <value>Web client</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2016,8 +2716,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Web client</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>WebClientExtendedTooltip</name>
               <id>196</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2032,7 +2736,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>WebClientContextMenu</name>
               <id>195</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2049,11 +2753,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditMobileClient</name>
+            <name>MobileClient</name>
             <id>197</id>
+            <title>
+              <key>en</key>
+              <value>Mobile client</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2068,8 +2778,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Mobile client</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>MobileClientExtendedTooltip</name>
               <id>199</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2084,7 +2798,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>MobileClientContextMenu</name>
               <id>198</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2101,11 +2815,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditThickClient</name>
+            <name>ThickClient</name>
             <id>200</id>
+            <title>
+              <key>en</key>
+              <value>Thick client</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2120,8 +2840,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Thick client</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ThickClientExtendedTooltip</name>
               <id>202</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2136,7 +2860,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ThickClientContextMenu</name>
               <id>201</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2153,11 +2877,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditExternalConnection</name>
+            <name>ExternalConnection</name>
             <id>203</id>
+            <title>
+              <key>en</key>
+              <value>External connection</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2172,8 +2902,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>External connection</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ExternalConnectionExtendedTooltip</name>
               <id>205</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2188,7 +2922,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ExternalConnectionContextMenu</name>
               <id>204</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2205,11 +2939,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditAutomation</name>
+            <name>Automation</name>
             <id>206</id>
+            <title>
+              <key>en</key>
+              <value>Automation</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2224,8 +2964,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Automation</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>AutomationExtendedTooltip</name>
               <id>208</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2240,7 +2984,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>AutomationContextMenu</name>
               <id>207</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2257,11 +3001,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditTechnicalSpecialistMode</name>
+            <name>TechnicalSpecialistMode</name>
             <id>209</id>
+            <title>
+              <key>en</key>
+              <value>Technical specialist mode</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2276,8 +3026,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Technical specialist mode</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>TechnicalSpecialistModeExtendedTooltip</name>
               <id>211</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2292,7 +3046,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>TechnicalSpecialistModeContextMenu</name>
               <id>210</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2309,11 +3063,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditCollaborationSystemInfoBaseRegistration</name>
+            <name>CollaborationSystemInfoBaseRegistration</name>
             <id>212</id>
+            <title>
+              <key>en</key>
+              <value>Collaboration system info base registration</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2328,8 +3088,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Collaboration system info base registration</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>CollaborationSystemInfoBaseRegistrationExtendedTooltip</name>
               <id>214</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2344,7 +3108,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>CollaborationSystemInfoBaseRegistrationContextMenu</name>
               <id>213</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2361,11 +3125,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditSaveUserData</name>
+            <name>SaveUserData</name>
             <id>215</id>
+            <title>
+              <key>en</key>
+              <value>Save user data</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2380,8 +3150,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Save user data</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>SaveUserDataExtendedTooltip</name>
               <id>217</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2396,7 +3170,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>SaveUserDataContextMenu</name>
               <id>216</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2413,11 +3187,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditConfigurationExtensionsAdministration</name>
+            <name>ConfigurationExtensionsAdministration</name>
             <id>218</id>
+            <title>
+              <key>en</key>
+              <value>Configuration extensions administration</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2432,8 +3212,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Configuration extensions administration</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ConfigurationExtensionsAdministrationExtendedTooltip</name>
               <id>220</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2448,7 +3232,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ConfigurationExtensionsAdministrationContextMenu</name>
               <id>219</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2465,11 +3249,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditInteractiveOpenExtDataProcessors</name>
+            <name>InteractiveOpenExtDataProcessors</name>
             <id>221</id>
+            <title>
+              <key>en</key>
+              <value>Interactive open ext data processors</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2484,8 +3274,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive open ext data processors</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>InteractiveOpenExtDataProcessorsExtendedTooltip</name>
               <id>223</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2500,7 +3294,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>InteractiveOpenExtDataProcessorsContextMenu</name>
               <id>222</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2517,11 +3311,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditInteractiveOpenExtReports</name>
+            <name>InteractiveOpenExtReports</name>
             <id>224</id>
+            <title>
+              <key>en</key>
+              <value>Interactive open ext reports</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2536,8 +3336,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive open ext reports</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>InteractiveOpenExtReportsExtendedTooltip</name>
               <id>226</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2552,7 +3356,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>InteractiveOpenExtReportsContextMenu</name>
               <id>225</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2569,11 +3373,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditOutput</name>
+            <name>Output</name>
             <id>227</id>
+            <title>
+              <key>en</key>
+              <value>Output</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2588,8 +3398,12 @@
               <color>Web.LightGray</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Output</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>OutputExtendedTooltip</name>
               <id>229</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2604,7 +3418,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>OutputContextMenu</name>
               <id>228</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2621,7 +3435,9 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -2657,8 +3473,12 @@
           <name>RolesEditGroupHistory</name>
           <id>263</id>
           <items xsi:type="form:FormField">
-            <name>RolesEditReadDataHistory</name>
+            <name>ReadDataHistory</name>
             <id>230</id>
+            <title>
+              <key>en</key>
+              <value>Read data history</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2673,8 +3493,12 @@
               <color>Web.CornSilk</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Read data history</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ReadDataHistoryExtendedTooltip</name>
               <id>232</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2689,7 +3513,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ReadDataHistoryContextMenu</name>
               <id>231</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2706,11 +3530,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditViewDataHistory</name>
+            <name>ViewDataHistory</name>
             <id>233</id>
+            <title>
+              <key>en</key>
+              <value>View data history</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2725,8 +3555,12 @@
               <color>Web.CornSilk</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>View data history</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ViewDataHistoryExtendedTooltip</name>
               <id>235</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2741,7 +3575,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ViewDataHistoryContextMenu</name>
               <id>234</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2758,11 +3592,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditReadDataHistoryOfMissingData</name>
+            <name>ReadDataHistoryOfMissingData</name>
             <id>236</id>
+            <title>
+              <key>en</key>
+              <value>Read data history of missing data</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2777,8 +3617,12 @@
               <color>Web.CornSilk</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Read data history of missing data</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>ReadDataHistoryOfMissingDataExtendedTooltip</name>
               <id>238</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2793,7 +3637,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>ReadDataHistoryOfMissingDataContextMenu</name>
               <id>237</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2810,11 +3654,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditUpdateDataHistory</name>
+            <name>UpdateDataHistory</name>
             <id>239</id>
+            <title>
+              <key>en</key>
+              <value>Update data history</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2829,8 +3679,12 @@
               <color>Web.CornSilk</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Update data history</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>UpdateDataHistoryExtendedTooltip</name>
               <id>241</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2845,7 +3699,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>UpdateDataHistoryContextMenu</name>
               <id>240</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2862,11 +3716,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditUpdateDataHistoryOfMissingData</name>
+            <name>UpdateDataHistoryOfMissingData</name>
             <id>242</id>
+            <title>
+              <key>en</key>
+              <value>Update data history of missing data</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2881,8 +3741,12 @@
               <color>Web.CornSilk</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Update data history of missing data</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>UpdateDataHistoryOfMissingDataExtendedTooltip</name>
               <id>244</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2897,7 +3761,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>UpdateDataHistoryOfMissingDataContextMenu</name>
               <id>243</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2914,11 +3778,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditUpdateDataHistorySettings</name>
+            <name>UpdateDataHistorySettings</name>
             <id>245</id>
+            <title>
+              <key>en</key>
+              <value>Update data history settings</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2933,8 +3803,12 @@
               <color>Web.CornSilk</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Update data history settings</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>UpdateDataHistorySettingsExtendedTooltip</name>
               <id>247</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2949,7 +3823,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>UpdateDataHistorySettingsContextMenu</name>
               <id>246</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2966,11 +3840,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditUpdateDataHistoryVersionComment</name>
+            <name>UpdateDataHistoryVersionComment</name>
             <id>248</id>
+            <title>
+              <key>en</key>
+              <value>Update data history version comment</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2985,8 +3865,12 @@
               <color>Web.CornSilk</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Update data history version comment</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>UpdateDataHistoryVersionCommentExtendedTooltip</name>
               <id>250</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -3001,7 +3885,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>UpdateDataHistoryVersionCommentContextMenu</name>
               <id>249</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -3018,11 +3902,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditEditDataHistoryVersionComment</name>
+            <name>EditDataHistoryVersionComment</name>
             <id>251</id>
+            <title>
+              <key>en</key>
+              <value>Edit data history version comment</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -3037,8 +3927,12 @@
               <color>Web.CornSilk</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Edit data history version comment</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>EditDataHistoryVersionCommentExtendedTooltip</name>
               <id>253</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -3053,7 +3947,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>EditDataHistoryVersionCommentContextMenu</name>
               <id>252</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -3070,11 +3964,17 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>RolesEditSwitchToDataHistoryVersion</name>
+            <name>SwitchToDataHistoryVersion</name>
             <id>254</id>
+            <title>
+              <key>en</key>
+              <value>Switch to data history version</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -3089,8 +3989,12 @@
               <color>Web.CornSilk</color>
             </titleBackColor>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Switch to data history version</value>
+            </toolTip>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>SwitchToDataHistoryVersionExtendedTooltip</name>
               <id>256</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -3105,7 +4009,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>SwitchToDataHistoryVersionContextMenu</name>
               <id>255</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -3122,7 +4026,9 @@
             </headerPicture>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
           </items>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -3136,6 +4042,357 @@
           <extendedTooltip>
             <name>RolesEditGroup1ExtendedTooltip1</name>
             <id>264</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>ColumnGroup</type>
+          <extInfo xsi:type="form:ColumnGroupExtInfo">
+            <showTitle>true</showTitle>
+            <showInHeader>true</showInHeader>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>RolesEditGroupTask</name>
+          <id>291</id>
+          <items xsi:type="form:FormField">
+            <name>Start</name>
+            <id>293</id>
+            <title>
+              <key>en</key>
+              <value>Start</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.Start</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.Lavender</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Start</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>StartExtendedTooltip</name>
+              <id>295</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>StartContextMenu</name>
+              <id>294</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_start</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>InteractiveStart</name>
+            <id>296</id>
+            <title>
+              <key>en</key>
+              <value>Interactive start</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveStart</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.Lavender</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive start</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractiveStartExtendedTooltip</name>
+              <id>298</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractiveStartContextMenu</name>
+              <id>297</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactiveStart</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>InteractiveActivate</name>
+            <id>305</id>
+            <title>
+              <key>en</key>
+              <value>Interactive activate</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveActivate</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.Lavender</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive activate</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractiveActivateExtendedTooltip</name>
+              <id>307</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractiveActivateContextMenu</name>
+              <id>306</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactiveActivate</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>Execute</name>
+            <id>299</id>
+            <title>
+              <key>en</key>
+              <value>Execute</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.Execute</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.Lavender</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Execute</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>ExecuteExtendedTooltip</name>
+              <id>301</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ExecuteContextMenu</name>
+              <id>300</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_execute</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>InteractiveExecute</name>
+            <id>302</id>
+            <title>
+              <key>en</key>
+              <value>Interactive execute</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveExecute</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.Lavender</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Interactive execute</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>InteractiveExecuteExtendedTooltip</name>
+              <id>304</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>InteractiveExecuteContextMenu</name>
+              <id>303</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerPicture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Roles_right_interactiveExecute</picture>
+            </headerPicture>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key></key>
+            <value>Roles edit group task</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Task</value>
+          </title>
+          <toolTip>
+            <key></key>
+            <value>Roles edit group task</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>RolesEditGroupTaskExtendedTooltip</name>
+            <id>292</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -3195,6 +4452,14 @@
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
+        <handlers>
+          <event>BeforeAddRow</event>
+          <name>RolesEditBeforeAddRow</name>
+        </handlers>
+        <handlers>
+          <event>BeforeDeleteRow</event>
+          <name>RolesEditBeforeDeleteRow</name>
+        </handlers>
         <searchStringAddition>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -4282,6 +5547,7 @@
   <autoFillCheck>true</autoFillCheck>
   <allowFormCustomize>true</allowFormCustomize>
   <enabled>true</enabled>
+  <scalingMode>Compact</scalingMode>
   <showTitle>true</showTitle>
   <showCloseButton>true</showCloseButton>
   <attributes>
@@ -4343,7 +5609,11 @@
       </title>
       <id>7</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4360,7 +5630,11 @@
       </title>
       <id>8</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4377,7 +5651,11 @@
       </title>
       <id>9</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4394,7 +5672,11 @@
       </title>
       <id>10</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4411,7 +5693,11 @@
       </title>
       <id>11</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4428,7 +5714,11 @@
       </title>
       <id>12</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4445,7 +5735,11 @@
       </title>
       <id>13</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4462,7 +5756,11 @@
       </title>
       <id>14</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4479,7 +5777,11 @@
       </title>
       <id>15</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4496,7 +5798,11 @@
       </title>
       <id>16</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4513,7 +5819,11 @@
       </title>
       <id>17</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4530,7 +5840,11 @@
       </title>
       <id>18</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4547,7 +5861,11 @@
       </title>
       <id>19</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4564,7 +5882,11 @@
       </title>
       <id>20</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4581,7 +5903,11 @@
       </title>
       <id>21</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4598,7 +5924,11 @@
       </title>
       <id>22</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4615,7 +5945,11 @@
       </title>
       <id>23</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4632,7 +5966,11 @@
       </title>
       <id>24</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4649,7 +5987,11 @@
       </title>
       <id>25</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4666,7 +6008,11 @@
       </title>
       <id>26</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4683,7 +6029,11 @@
       </title>
       <id>27</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4700,7 +6050,11 @@
       </title>
       <id>28</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4717,7 +6071,11 @@
       </title>
       <id>29</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4734,7 +6092,11 @@
       </title>
       <id>30</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4751,7 +6113,11 @@
       </title>
       <id>31</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4768,7 +6134,11 @@
       </title>
       <id>32</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4785,7 +6155,11 @@
       </title>
       <id>33</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4802,7 +6176,11 @@
       </title>
       <id>34</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4819,7 +6197,11 @@
       </title>
       <id>35</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4836,7 +6218,11 @@
       </title>
       <id>36</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4853,7 +6239,11 @@
       </title>
       <id>37</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4870,7 +6260,11 @@
       </title>
       <id>38</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4887,7 +6281,11 @@
       </title>
       <id>39</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4904,7 +6302,11 @@
       </title>
       <id>40</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4921,7 +6323,11 @@
       </title>
       <id>41</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4938,7 +6344,11 @@
       </title>
       <id>42</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4955,7 +6365,11 @@
       </title>
       <id>43</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4972,7 +6386,11 @@
       </title>
       <id>44</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -4989,7 +6407,11 @@
       </title>
       <id>45</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5006,7 +6428,11 @@
       </title>
       <id>46</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5023,7 +6449,11 @@
       </title>
       <id>47</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5040,7 +6470,11 @@
       </title>
       <id>48</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5057,7 +6491,11 @@
       </title>
       <id>49</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5074,7 +6512,11 @@
       </title>
       <id>50</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5091,7 +6533,11 @@
       </title>
       <id>51</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5108,7 +6554,11 @@
       </title>
       <id>52</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5125,7 +6575,11 @@
       </title>
       <id>53</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5142,7 +6596,11 @@
       </title>
       <id>54</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5159,7 +6617,11 @@
       </title>
       <id>55</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5176,7 +6638,11 @@
       </title>
       <id>56</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5193,7 +6659,11 @@
       </title>
       <id>57</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5210,7 +6680,11 @@
       </title>
       <id>58</id>
       <valueType>
-        <types>Boolean</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -5246,6 +6720,208 @@
       <valueType>
         <types>String</types>
         <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Picture</name>
+      <title>
+        <key>en</key>
+        <value>Picture</value>
+      </title>
+      <id>62</id>
+      <valueType>
+        <types>Picture</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Execute</name>
+      <title>
+        <key></key>
+        <value>Execute</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>InteractiveExecute</name>
+      <title>
+        <key></key>
+        <value>Interactive execute</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>InteractiveActivate</name>
+      <title>
+        <key></key>
+        <value>Interactive activate</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Start</name>
+      <title>
+        <key></key>
+        <value>Start</value>
+      </title>
+      <id>4</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>InteractiveStart</name>
+      <title>
+        <key></key>
+        <value>Interactive start</value>
+      </title>
+      <id>5</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>InteractiveSetDeletionMarkPredefinedData</name>
+      <title>
+        <key></key>
+        <value>Interactive set deletion mark predefined data</value>
+      </title>
+      <id>59</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>InteractiveClearDeletionMarkPredefinedData</name>
+      <title>
+        <key></key>
+        <value>Interactive clear deletion mark predefined data</value>
+      </title>
+      <id>63</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>InteractiveDeleteMarkedPredefinedData</name>
+      <title>
+        <key></key>
+        <value>Interactive delete marked predefined data</value>
+      </title>
+      <id>64</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ObjectSubtype</name>
+      <title>
+        <key>en</key>
+        <value>Object subtype</value>
+      </title>
+      <id>65</id>
+      <valueType>
+        <types>EnumRef.Roles_MetadataSubtype</types>
       </valueType>
       <view>
         <common>true</common>

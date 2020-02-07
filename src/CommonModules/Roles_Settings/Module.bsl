@@ -679,6 +679,7 @@ Function MetaDataObjectNames() Export
 	Structure.Insert(Enums.Roles_MetadataTypes.Subsystem, "Subsystems");
 	Structure.Insert(Enums.Roles_MetadataTypes.Task, "Tasks");
 	Structure.Insert(Enums.Roles_MetadataTypes.WebService, "WebServices");
+	Structure.Insert(Enums.Roles_MetadataTypes.Role, "Roles");
 	Return Structure;
 EndFunction
 
@@ -738,27 +739,84 @@ Function hasCommands(MetaName) Export
 EndFunction
 
 Function hasDimensions(MetaName) Export
-	Return True;
 	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.AccountingRegister);
+    Array.Add(Enums.Roles_MetadataTypes.AccumulationRegister);
+    Array.Add(Enums.Roles_MetadataTypes.CalculationRegister);
+    Array.Add(Enums.Roles_MetadataTypes.InformationRegister);
+    Array.Add(Enums.Roles_MetadataTypes.Sequence);	
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 
 Function hasResources(MetaName) Export
-	Return True;
 	Array = New Array;
+	Array.Add(Enums.Roles_MetadataTypes.AccumulationRegister);
+    Array.Add(Enums.Roles_MetadataTypes.CalculationRegister);
+    Array.Add(Enums.Roles_MetadataTypes.InformationRegister);
+    Array.Add(Enums.Roles_MetadataTypes.AccountingRegister);
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 
 Function hasStandardAttributes(MetaName) Export
-	Return True;
 	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.Catalog);
+    Array.Add(Enums.Roles_MetadataTypes.Document);
+    Array.Add(Enums.Roles_MetadataTypes.DocumentJournal);
+    Array.Add(Enums.Roles_MetadataTypes.Task);
+    Array.Add(Enums.Roles_MetadataTypes.ChartOfCalculationTypes);
+    Array.Add(Enums.Roles_MetadataTypes.ChartOfCharacteristicTypes);
+    Array.Add(Enums.Roles_MetadataTypes.ExchangePlan);
+    Array.Add(Enums.Roles_MetadataTypes.ChartOfAccounts);
+    Array.Add(Enums.Roles_MetadataTypes.AccountingRegister);
+    Array.Add(Enums.Roles_MetadataTypes.AccumulationRegister);
+    Array.Add(Enums.Roles_MetadataTypes.CalculationRegister);
+    Array.Add(Enums.Roles_MetadataTypes.InformationRegister);
+    Array.Add(Enums.Roles_MetadataTypes.BusinessProcess);	
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 
 Function hasTabularSections(MetaName) Export
-	Return True;
 	Array = New Array;
+	Array.Add(Enums.Roles_MetadataTypes.Catalog);
+    Array.Add(Enums.Roles_MetadataTypes.Document);
+    Array.Add(Enums.Roles_MetadataTypes.Task);
+    Array.Add(Enums.Roles_MetadataTypes.DataProcessor);
+    Array.Add(Enums.Roles_MetadataTypes.Report);
+    Array.Add(Enums.Roles_MetadataTypes.ChartOfCalculationTypes);
+    Array.Add(Enums.Roles_MetadataTypes.ChartOfCharacteristicTypes);
+    Array.Add(Enums.Roles_MetadataTypes.ExchangePlan);
+    Array.Add(Enums.Roles_MetadataTypes.ChartOfAccounts);
+    Array.Add(Enums.Roles_MetadataTypes.BusinessProcess);
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 
+Function hasRecalculations(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.CalculationRegister);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasAccountingFlags(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.ChartOfAccounts);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasExtDimensionAccountingFlags(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.ChartOfAccounts);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasStandardTabularSections(MetaName) Export
+	Array = New Array;
+	Array.Add(Enums.Roles_MetadataTypes.ChartOfCalculationTypes);
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasAddressingAttributes(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.Task);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
 #EndRegion

@@ -12,7 +12,6 @@
     <key>en</key>
     <value>Access profiles</value>
   </synonym>
-  <comment></comment>
   <useStandardCommands>true</useStandardCommands>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>DontUse</createOnInput>
@@ -43,18 +42,15 @@
       <key>en</key>
       <value>Roles</value>
     </synonym>
-    <comment></comment>
     <attributes uuid="a3ba0cbb-0693-44a9-a644-be87f4d09064">
       <name>Role</name>
       <synonym>
         <key>en</key>
         <value>Role</value>
       </synonym>
-      <comment></comment>
       <type>
         <types>CatalogRef.Roles_AccessRoles</types>
       </type>
-      <mask></mask>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
@@ -65,14 +61,12 @@
         <key>en</key>
         <value>Configuration</value>
       </synonym>
-      <comment></comment>
       <type>
         <types>String</types>
         <stringQualifiers>
           <length>256</length>
         </stringQualifiers>
       </type>
-      <mask></mask>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
@@ -84,7 +78,6 @@
       <key>en</key>
       <value>Item form</value>
     </synonym>
-    <comment></comment>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -94,7 +87,6 @@
       <key>en</key>
       <value>List form</value>
     </synonym>
-    <comment></comment>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -104,7 +96,6 @@
       <key>en</key>
       <value>Choice form</value>
     </synonym>
-    <comment></comment>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

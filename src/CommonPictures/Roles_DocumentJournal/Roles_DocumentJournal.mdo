@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55ebeda0-77ae-4bc4-8494-6c6d2cf2626a">
+  <name>Roles_DocumentJournal</name>
+  <synonym>
+    <key>en</key>
+    <value>Document journal</value>
+  </synonym>
+</mdclass:CommonPicture>

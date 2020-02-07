@@ -31,16 +31,16 @@
 	<item>
 		<selection>
 			<item>
-				<field>RolesEditInsert</field>
+				<field>Insert</field>
 			</item>
 			<item>
-				<field>RolesEditDelete</field>
+				<field>Delete</field>
 			</item>
 			<item>
-				<field>RolesEditRead</field>
+				<field>Read</field>
 			</item>
 			<item>
-				<field>RolesEditUpdate</field>
+				<field>Update</field>
 			</item>
 		</selection>
 		<filter>
@@ -60,25 +60,25 @@
 	<item>
 		<selection>
 			<item>
-				<field>RolesEditView</field>
+				<field>View</field>
 			</item>
 			<item>
-				<field>RolesEditEdit</field>
+				<field>Edit</field>
 			</item>
 			<item>
-				<field>RolesEditInputByString</field>
+				<field>InputByString</field>
 			</item>
 			<item>
-				<field>RolesEditPosting</field>
+				<field>Posting</field>
 			</item>
 			<item>
-				<field>RolesEditUndoPosting</field>
+				<field>UndoPosting</field>
 			</item>
 			<item>
-				<field>RolesEditUse</field>
+				<field>Use</field>
 			</item>
 			<item>
-				<field>RolesEditTotalsControl</field>
+				<field>TotalsControl</field>
 			</item>
 		</selection>
 		<filter>
@@ -98,34 +98,31 @@
 	<item>
 		<selection>
 			<item>
-				<field>RolesEditInteractiveDelete</field>
+				<field>InteractiveDelete</field>
 			</item>
 			<item>
-				<field>RolesEditInteractiveInsert</field>
+				<field>InteractiveInsert</field>
 			</item>
 			<item>
-				<field>RolesEditInteractiveSetDeletionMark</field>
+				<field>InteractiveSetDeletionMark</field>
 			</item>
 			<item>
-				<field>RolesEditInteractiveClearDeletionMark</field>
+				<field>InteractiveClearDeletionMark</field>
 			</item>
 			<item>
-				<field>RolesEditInteractiveDeleteMarked</field>
+				<field>InteractiveDeleteMarked</field>
 			</item>
 			<item>
-				<field>RolesEditInteractivePosting</field>
+				<field>InteractivePosting</field>
 			</item>
 			<item>
-				<field>RolesEditInteractivePostingRegular</field>
+				<field>InteractivePostingRegular</field>
 			</item>
 			<item>
-				<field>RolesEditInteractiveUndoPosting</field>
+				<field>InteractiveUndoPosting</field>
 			</item>
 			<item>
-				<field>RolesEditInteractiveChangeOfPosted</field>
-			</item>
-			<item>
-				<field>RolesEditInteractiveDeletePredefinedData</field>
+				<field>InteractiveChangeOfPosted</field>
 			</item>
 		</selection>
 		<filter>
@@ -145,10 +142,10 @@
 	<item>
 		<selection>
 			<item>
-				<field>RolesEditGet</field>
+				<field>Get</field>
 			</item>
 			<item>
-				<field>RolesEditSet</field>
+				<field>Set</field>
 			</item>
 		</selection>
 		<filter>
@@ -168,61 +165,61 @@
 	<item>
 		<selection>
 			<item>
-				<field>RolesEditAdministration</field>
+				<field>Administration</field>
 			</item>
 			<item>
-				<field>RolesEditDataAdministration</field>
+				<field>DataAdministration</field>
 			</item>
 			<item>
-				<field>RolesEditUpdateDataBaseConfiguration</field>
+				<field>UpdateDataBaseConfiguration</field>
 			</item>
 			<item>
-				<field>RolesEditExclusiveMode</field>
+				<field>ExclusiveMode</field>
 			</item>
 			<item>
-				<field>RolesEditActiveUsers</field>
+				<field>ActiveUsers</field>
 			</item>
 			<item>
-				<field>RolesEditEventLog</field>
+				<field>EventLog</field>
 			</item>
 			<item>
-				<field>RolesEditThinClient</field>
+				<field>ThinClient</field>
 			</item>
 			<item>
-				<field>RolesEditWebClient</field>
+				<field>WebClient</field>
 			</item>
 			<item>
-				<field>RolesEditMobileClient</field>
+				<field>MobileClient</field>
 			</item>
 			<item>
-				<field>RolesEditThickClient</field>
+				<field>ThickClient</field>
 			</item>
 			<item>
-				<field>RolesEditExternalConnection</field>
+				<field>ExternalConnection</field>
 			</item>
 			<item>
-				<field>RolesEditAutomation</field>
+				<field>Automation</field>
 			</item>
 			<item>
-				<field>RolesEditTechnicalSpecialistMode</field>
+				<field>TechnicalSpecialistMode</field>
 			</item>
 			<item>
-				<field>RolesEditCollaborationSystemInfoBaseRegistration</field>
+				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
 			<item>
-				<field>RolesEditSaveUserData</field>
+				<field>SaveUserData</field>
 			</item>
 			<item>
-				<field>RolesEditConfigurationExtensionsAdministration</field>
+				<field>ConfigurationExtensionsAdministration</field>
 			</item>
 			<item>
-				<field>RolesEditInteractiveOpenExtDataProcessors</field>
+				<field>InteractiveOpenExtDataProcessors</field>
 			</item>
 			<item>
-				<field>RolesEditInteractiveOpenExtReports</field>
+				<field>InteractiveOpenExtReports</field>
 			</item>
 			<item>
-				<field>RolesEditOutput</field>
+				<field>Output</field>
 			</item>
 		</selection>
 		<filter>
@@ -242,34 +239,34 @@
 	<item>
 		<selection>
 			<item>
-				<field>RolesEditReadDataHistory</field>
+				<field>ReadDataHistory</field>
 			</item>
 			<item>
-				<field>RolesEditViewDataHistory</field>
+				<field>ViewDataHistory</field>
 			</item>
 			<item>
-				<field>RolesEditReadDataHistoryOfMissingData</field>
+				<field>ReadDataHistoryOfMissingData</field>
 			</item>
 			<item>
-				<field>RolesEditUpdateDataHistory</field>
+				<field>UpdateDataHistory</field>
 			</item>
 			<item>
-				<field>RolesEditUpdateDataHistoryOfMissingData</field>
+				<field>UpdateDataHistoryOfMissingData</field>
 			</item>
 			<item>
-				<field>RolesEditUpdateDataHistorySettings</field>
+				<field>UpdateDataHistorySettings</field>
 			</item>
 			<item>
-				<field>RolesEditUpdateDataHistoryVersionComment</field>
+				<field>UpdateDataHistoryVersionComment</field>
 			</item>
 			<item>
-				<field>RolesEditEditDataHistoryVersionComment</field>
+				<field>EditDataHistoryVersionComment</field>
 			</item>
 			<item>
-				<field>RolesEditSwitchToDataHistoryVersion</field>
+				<field>SwitchToDataHistoryVersion</field>
 			</item>
 			<item>
-				<field>RolesEditSwitchToDataHistoryVersion</field>
+				<field>SwitchToDataHistoryVersion</field>
 			</item>
 		</selection>
 		<filter>
@@ -283,6 +280,1539 @@
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Start</field>
+			</item>
+			<item>
+				<field>InteractiveStart</field>
+			</item>
+			<item>
+				<field>InteractiveActivate</field>
+			</item>
+			<item>
+				<field>Execute</field>
+			</item>
+			<item>
+				<field>InteractiveExecute</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="xs:boolean">true</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Lavender</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>InteractiveSetDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarkedPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveDeletePredefinedData</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="xs:boolean">true</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Thistle</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Insert</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Delete</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>InputByString</field>
+			</item>
+			<item>
+				<field>Posting</field>
+			</item>
+			<item>
+				<field>UndoPosting</field>
+			</item>
+			<item>
+				<field>Use</field>
+			</item>
+			<item>
+				<field>TotalsControl</field>
+			</item>
+			<item>
+				<field>InteractiveDelete</field>
+			</item>
+			<item>
+				<field>InteractiveInsert</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>InteractivePosting</field>
+			</item>
+			<item>
+				<field>InteractivePostingRegular</field>
+			</item>
+			<item>
+				<field>InteractiveUndoPosting</field>
+			</item>
+			<item>
+				<field>InteractiveChangeOfPosted</field>
+			</item>
+			<item>
+				<field>InteractiveDeletePredefinedData</field>
+			</item>
+			<item>
+				<field>Get</field>
+			</item>
+			<item>
+				<field>Set</field>
+			</item>
+			<item>
+				<field>Administration</field>
+			</item>
+			<item>
+				<field>DataAdministration</field>
+			</item>
+			<item>
+				<field>UpdateDataBaseConfiguration</field>
+			</item>
+			<item>
+				<field>ExclusiveMode</field>
+			</item>
+			<item>
+				<field>ActiveUsers</field>
+			</item>
+			<item>
+				<field>EventLog</field>
+			</item>
+			<item>
+				<field>ThinClient</field>
+			</item>
+			<item>
+				<field>WebClient</field>
+			</item>
+			<item>
+				<field>MobileClient</field>
+			</item>
+			<item>
+				<field>ThickClient</field>
+			</item>
+			<item>
+				<field>ExternalConnection</field>
+			</item>
+			<item>
+				<field>Automation</field>
+			</item>
+			<item>
+				<field>TechnicalSpecialistMode</field>
+			</item>
+			<item>
+				<field>CollaborationSystemInfoBaseRegistration</field>
+			</item>
+			<item>
+				<field>SaveUserData</field>
+			</item>
+			<item>
+				<field>ConfigurationExtensionsAdministration</field>
+			</item>
+			<item>
+				<field>InteractiveOpenExtDataProcessors</field>
+			</item>
+			<item>
+				<field>InteractiveOpenExtReports</field>
+			</item>
+			<item>
+				<field>Output</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+			<item>
+				<field>Start</field>
+			</item>
+			<item>
+				<field>InteractiveStart</field>
+			</item>
+			<item>
+				<field>InteractiveActivate</field>
+			</item>
+			<item>
+				<field>Execute</field>
+			</item>
+			<item>
+				<field>InteractiveExecute</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarkedPredefinedData</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="xs:boolean">true</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>3</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>View</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Subsystem</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Get</field>
+			</item>
+			<item>
+				<field>Set</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.SessionParameter</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.CommonAttribute</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Insert</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Delete</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>InputByString</field>
+			</item>
+			<item>
+				<field>InteractiveDelete</field>
+			</item>
+			<item>
+				<field>InteractiveInsert</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.ExchangePlan</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Insert</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Delete</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>InputByString</field>
+			</item>
+			<item>
+				<field>InteractiveDelete</field>
+			</item>
+			<item>
+				<field>InteractiveInsert</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+			<item>
+				<field>InteractiveActivate</field>
+			</item>
+			<item>
+				<field>Execute</field>
+			</item>
+			<item>
+				<field>InteractiveExecute</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Task</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Insert</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Delete</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>InputByString</field>
+			</item>
+			<item>
+				<field>InteractiveDelete</field>
+			</item>
+			<item>
+				<field>InteractiveInsert</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+			<item>
+				<field>InteractiveActivate</field>
+			</item>
+			<item>
+				<field>Start</field>
+			</item>
+			<item>
+				<field>InteractiveStart</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.BusinessProcess</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.CalculationRegister</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>TotalsControl</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.AccountingRegister</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>TotalsControl</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.AccumulationRegister</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>TotalsControl</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.InformationRegister</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Insert</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Delete</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>InputByString</field>
+			</item>
+			<item>
+				<field>InteractiveDelete</field>
+			</item>
+			<item>
+				<field>InteractiveInsert</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+			<item>
+				<field>InteractiveDeletePredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarkedPredefinedData</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.ChartOfCalculationTypes</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Insert</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Delete</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>InputByString</field>
+			</item>
+			<item>
+				<field>InteractiveDelete</field>
+			</item>
+			<item>
+				<field>InteractiveInsert</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+			<item>
+				<field>InteractiveDeletePredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarkedPredefinedData</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.ChartOfAccounts</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Insert</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Delete</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>InputByString</field>
+			</item>
+			<item>
+				<field>InteractiveDelete</field>
+			</item>
+			<item>
+				<field>InteractiveInsert</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+			<item>
+				<field>InteractiveDeletePredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarkedPredefinedData</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.ChartOfCharacteristicTypes</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Use</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.DataProcessor</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.DocumentJournal</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Use</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Report</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>View</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.CommonCommand</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>View</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.CommonForm</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>View</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.FilterCriterion</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Constant</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Insert</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Delete</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>InputByString</field>
+			</item>
+			<item>
+				<field>InteractiveDelete</field>
+			</item>
+			<item>
+				<field>InteractiveInsert</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+			<item>
+				<field>InteractiveDeletePredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarkedPredefinedData</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Catalog</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Insert</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Delete</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>InputByString</field>
+			</item>
+			<item>
+				<field>InteractiveDelete</field>
+			</item>
+			<item>
+				<field>InteractiveInsert</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+			<item>
+				<field>Posting</field>
+			</item>
+			<item>
+				<field>UndoPosting</field>
+			</item>
+			<item>
+				<field>InteractivePosting</field>
+			</item>
+			<item>
+				<field>InteractivePostingRegular</field>
+			</item>
+			<item>
+				<field>InteractiveUndoPosting</field>
+			</item>
+			<item>
+				<field>InteractiveChangeOfPosted</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Document</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Administration</field>
+			</item>
+			<item>
+				<field>DataAdministration</field>
+			</item>
+			<item>
+				<field>UpdateDataBaseConfiguration</field>
+			</item>
+			<item>
+				<field>ExclusiveMode</field>
+			</item>
+			<item>
+				<field>ActiveUsers</field>
+			</item>
+			<item>
+				<field>EventLog</field>
+			</item>
+			<item>
+				<field>ThinClient</field>
+			</item>
+			<item>
+				<field>WebClient</field>
+			</item>
+			<item>
+				<field>MobileClient</field>
+			</item>
+			<item>
+				<field>ThickClient</field>
+			</item>
+			<item>
+				<field>ExternalConnection</field>
+			</item>
+			<item>
+				<field>Automation</field>
+			</item>
+			<item>
+				<field>TechnicalSpecialistMode</field>
+			</item>
+			<item>
+				<field>CollaborationSystemInfoBaseRegistration</field>
+			</item>
+			<item>
+				<field>SaveUserData</field>
+			</item>
+			<item>
+				<field>ConfigurationExtensionsAdministration</field>
+			</item>
+			<item>
+				<field>InteractiveOpenExtDataProcessors</field>
+			</item>
+			<item>
+				<field>InteractiveOpenExtReports</field>
+			</item>
+			<item>
+				<field>Output</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Configuration</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Read</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Sequence</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectSubtype</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Attribute</right>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.TabularSection</right>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.StandardAttribute</right>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Dimension</right>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Resource</right>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.AccountingFlag</right>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.ExtDimensionAccountingFlag</right>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.AddressingAttribute</right>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.StandardTabularSection</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>View</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectSubtype</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Command</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>

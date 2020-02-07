@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2898b637-efb9-4d9d-90fc-5a9ef7ff8a2f">
+  <name>Roles_ExchangePlan</name>
+  <synonym>
+    <key>en</key>
+    <value>Exchange plan</value>
+  </synonym>
+</mdclass:CommonPicture>

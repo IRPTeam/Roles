@@ -6,11 +6,11 @@
 	<object>
 		<name>Catalog.Roles_AccessGroups</name>
 		<right>
-			<name>Insert</name>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Edit</name>
+			<name>Insert</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -18,11 +18,34 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Roles_AccessProfiles</name>
+		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -47,11 +70,11 @@
 	<object>
 		<name>Catalog.Roles_AccessRoles</name>
 		<right>
-			<name>Insert</name>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Edit</name>
+			<name>Insert</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -59,34 +82,11 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Roles_AccessProfiles</name>
-		<right>
-			<name>Insert</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

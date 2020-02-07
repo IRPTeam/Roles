@@ -12,18 +12,18 @@
   </synonym>
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
-  <enumValues uuid="e354ecab-eb96-4bbd-8d28-f8921c8c44a2">
-    <name>HTTPService</name>
+  <enumValues uuid="20dd0b53-762c-4709-81c8-fd8936e59f22">
+    <name>AccountingRegister</name>
     <synonym>
       <key>en</key>
-      <value>HTTPService</value>
+      <value>Accounting register</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="7afd036d-2324-4e0b-95db-4dd42c71fa38">
-    <name>WebService</name>
+  <enumValues uuid="a4085a85-34a3-454f-8db5-0278905bba96">
+    <name>AccumulationRegister</name>
     <synonym>
       <key>en</key>
-      <value>Web service</value>
+      <value>Accumulation register</value>
     </synonym>
   </enumValues>
   <enumValues uuid="24caee96-d616-42e7-9be3-7833a5371bfe">
@@ -33,6 +33,13 @@
       <value>Business process</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="164bfb5e-c2f1-427c-b66e-6d3763f21ec0">
+    <name>CalculationRegister</name>
+    <synonym>
+      <key>en</key>
+      <value>Calculation register</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="89004aa6-75e1-4c85-980a-f949f864626c">
     <name>Catalog</name>
     <synonym>
@@ -40,81 +47,11 @@
       <value>Catalog</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="4026497e-0157-4402-ad77-d1212b89aec1">
-    <name>Document</name>
+  <enumValues uuid="0e4a3f87-78c2-4da9-aa34-c2406e98b460">
+    <name>ChartOfAccounts</name>
     <synonym>
       <key>en</key>
-      <value>Document</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="6913fba0-0650-4e30-bd54-c2e1cfd30b9d">
-    <name>DocumentJournal</name>
-    <synonym>
-      <key>en</key>
-      <value>Document journal</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="b364c41f-5b5b-409f-98d4-2a8ed70862b0">
-    <name>Task</name>
-    <synonym>
-      <key>en</key>
-      <value>Task</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="5a315aea-0232-4386-a1b6-fc225e4cf509">
-    <name>Constant</name>
-    <synonym>
-      <key>en</key>
-      <value>Constant</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="d12757c0-bc17-40f8-b85b-8cfe8eba77a6">
-    <name>FilterCriterion</name>
-    <synonym>
-      <key>en</key>
-      <value>Filter criterion</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="c0685b91-a6ab-4a7b-b786-991ab2638bd5">
-    <name>DataProcessor</name>
-    <synonym>
-      <key>en</key>
-      <value>Data processor</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="52495399-10bb-4481-abbf-71255d25e425">
-    <name>CommonCommand</name>
-    <synonym>
-      <key>en</key>
-      <value>Common command</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="3200e8cd-adee-4422-85a1-6c38ed67df17">
-    <name>CommonForm</name>
-    <synonym>
-      <key>en</key>
-      <value>Common form</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="76adcf41-6ffd-4834-ad8b-b02da52c2afe">
-    <name>CommonAttribute</name>
-    <synonym>
-      <key>en</key>
-      <value>Common attribute</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="1d4e2d47-9786-48fc-b560-e26a6a0ac2a4">
-    <name>Report</name>
-    <synonym>
-      <key>en</key>
-      <value>Report</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="e1dc9f05-4b6a-469f-b624-7d32bc6f9df9">
-    <name>SessionParameter</name>
-    <synonym>
-      <key>en</key>
-      <value>Session parameter</value>
+      <value>Chart of accounts</value>
     </synonym>
   </enumValues>
   <enumValues uuid="8a9bcf77-0ee8-47af-8ac0-3e778c42a406">
@@ -131,60 +68,25 @@
       <value>Chart of characteristic types</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="9d35d03d-0c86-4c10-bff8-3356da7a9053">
-    <name>ExchangePlan</name>
+  <enumValues uuid="76adcf41-6ffd-4834-ad8b-b02da52c2afe">
+    <name>CommonAttribute</name>
     <synonym>
       <key>en</key>
-      <value>Exchange plan</value>
+      <value>Common attribute</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="0e4a3f87-78c2-4da9-aa34-c2406e98b460">
-    <name>ChartOfAccounts</name>
+  <enumValues uuid="52495399-10bb-4481-abbf-71255d25e425">
+    <name>CommonCommand</name>
     <synonym>
       <key>en</key>
-      <value>Chart of accounts</value>
+      <value>Common command</value>
     </synonym>
   </enumValues>
-  <enumValues uuid="08e2c343-8058-425a-b003-95f53f8c2580">
-    <name>Subsystem</name>
+  <enumValues uuid="3200e8cd-adee-4422-85a1-6c38ed67df17">
+    <name>CommonForm</name>
     <synonym>
       <key>en</key>
-      <value>Subsystem</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="4ee43301-40f7-407b-b927-a1d838f3d23b">
-    <name>Sequence</name>
-    <synonym>
-      <key>en</key>
-      <value>Sequence</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="20dd0b53-762c-4709-81c8-fd8936e59f22">
-    <name>AccountingRegister</name>
-    <synonym>
-      <key>en</key>
-      <value>Accounting register</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="a4085a85-34a3-454f-8db5-0278905bba96">
-    <name>AccumulationRegister</name>
-    <synonym>
-      <key>en</key>
-      <value>Accumulation register</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="164bfb5e-c2f1-427c-b66e-6d3763f21ec0">
-    <name>CalculationRegister</name>
-    <synonym>
-      <key>en</key>
-      <value>Calculation register</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="3f34e181-c22f-4608-b515-14df040d32f8">
-    <name>InformationRegister</name>
-    <synonym>
-      <key>en</key>
-      <value>Information register</value>
+      <value>Common form</value>
     </synonym>
   </enumValues>
   <enumValues uuid="85435369-a91d-4d6a-8037-2777dc7f95a1">
@@ -194,11 +96,116 @@
       <value>Configuration</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="5a315aea-0232-4386-a1b6-fc225e4cf509">
+    <name>Constant</name>
+    <synonym>
+      <key>en</key>
+      <value>Constant</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c0685b91-a6ab-4a7b-b786-991ab2638bd5">
+    <name>DataProcessor</name>
+    <synonym>
+      <key>en</key>
+      <value>Data processor</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4026497e-0157-4402-ad77-d1212b89aec1">
+    <name>Document</name>
+    <synonym>
+      <key>en</key>
+      <value>Document</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6913fba0-0650-4e30-bd54-c2e1cfd30b9d">
+    <name>DocumentJournal</name>
+    <synonym>
+      <key>en</key>
+      <value>Document journal</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9d35d03d-0c86-4c10-bff8-3356da7a9053">
+    <name>ExchangePlan</name>
+    <synonym>
+      <key>en</key>
+      <value>Exchange plan</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d12757c0-bc17-40f8-b85b-8cfe8eba77a6">
+    <name>FilterCriterion</name>
+    <synonym>
+      <key>en</key>
+      <value>Filter criterion</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e354ecab-eb96-4bbd-8d28-f8921c8c44a2">
+    <name>HTTPService</name>
+    <synonym>
+      <key>en</key>
+      <value>HTTPService</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3f34e181-c22f-4608-b515-14df040d32f8">
+    <name>InformationRegister</name>
+    <synonym>
+      <key>en</key>
+      <value>Information register</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="17877f0a-11c3-49f9-ab3d-ed596bb0f27a">
     <name>IntegrationService</name>
     <synonym>
       <key>en</key>
       <value>Integration service</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1d4e2d47-9786-48fc-b560-e26a6a0ac2a4">
+    <name>Report</name>
+    <synonym>
+      <key>en</key>
+      <value>Report</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b0427372-7eee-4876-8f83-ae72856d31e7">
+    <name>Role</name>
+    <synonym>
+      <key>en</key>
+      <value>Role</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4ee43301-40f7-407b-b927-a1d838f3d23b">
+    <name>Sequence</name>
+    <synonym>
+      <key>en</key>
+      <value>Sequence</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e1dc9f05-4b6a-469f-b624-7d32bc6f9df9">
+    <name>SessionParameter</name>
+    <synonym>
+      <key>en</key>
+      <value>Session parameter</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="08e2c343-8058-425a-b003-95f53f8c2580">
+    <name>Subsystem</name>
+    <synonym>
+      <key>en</key>
+      <value>Subsystem</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b364c41f-5b5b-409f-98d4-2a8ed70862b0">
+    <name>Task</name>
+    <synonym>
+      <key>en</key>
+      <value>Task</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7afd036d-2324-4e0b-95db-4dd42c71fa38">
+    <name>WebService</name>
+    <synonym>
+      <key>en</key>
+      <value>Web service</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>
