@@ -819,4 +819,9 @@ Function hasAddressingAttributes(MetaName) Export
     Array.Add(Enums.Roles_MetadataTypes.Task);	
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
+
+Function MetaName(RefData) Export
+	Return Roles_SettingsReUse.MetaNameByRef(RefData);
+EndFunction
+
 #EndRegion

@@ -89,18 +89,15 @@ Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 		"SELECT
 		|	Roles_AccessRolesRights.ObjectType AS ObjectType,
 		|	Roles_AccessRolesRights.ObjectName AS ObjectName,
-		|	Roles_AccessRolesRestrictionByCondition.Fields,
+		|	Roles_AccessRolesRestrictionByCondition.Fields AS Fields,
 		|	ISNULL(Roles_AccessRolesRestrictionByCondition.Condition, """") AS Condition,
-		|	Roles_AccessRolesRights.RightName AS RightName,
-		|	Roles_AccessRolesRights.RightValue AS RightValue
+		|	Roles_AccessRolesRights.RightName AS RightName
 		|FROM
 		|	Catalog.Roles_AccessRoles.Rights AS Roles_AccessRolesRights
 		|		LEFT JOIN Catalog.Roles_AccessRoles.RestrictionByCondition AS Roles_AccessRolesRestrictionByCondition
-		|		ON Roles_AccessRolesRestrictionByCondition.Ref = Roles_AccessRolesRights.Ref
-		|		AND Roles_AccessRolesRestrictionByCondition.RowID = Roles_AccessRolesRights.RowID
-		|TOTALS
-		|	MAX(RightValue) AS RightValue
-		|BY
+		|		ON (Roles_AccessRolesRestrictionByCondition.Ref = Roles_AccessRolesRights.Ref)
+		|			AND (Roles_AccessRolesRestrictionByCondition.RowID = Roles_AccessRolesRights.RowID)
+		|TOTALS BY
 		|	ObjectType,
 		|	ObjectName,
 		|	RightName";
@@ -113,7 +110,7 @@ Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 		
 		SelectionObjectName = SelectionObjectType.Select(QueryResultIteration.ByGroups);
 		
-		MetaName = MetaName(SelectionObjectType.ObjectType);
+		MetaName = Roles_Settings.MetaName(SelectionObjectType.ObjectType);
 		While SelectionObjectName.Next() Do
 			ObjectList = XDTOFactory.Create(RightTemplate.object.OwningProperty.Type);
 			ObjectList.Name = MetaName + "." + SelectionObjectName.ObjectName;
@@ -124,8 +121,8 @@ Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 	
 			While SelectionRightName.Next() Do
 				RightList = XDTOFactory.Create(ObjectList.right.OwningProperty.Type);
-				RightList.Name = MetaName(SelectionRightName.RightName);
-				RightList.Value = SelectionRightName.RightValue;
+				RightList.Name = Roles_Settings.MetaName(SelectionRightName.RightName);
+				RightList.Value = True;
 				SelectionDetailRecords = SelectionRightName.Select();
 		
 				While SelectionDetailRecords.Next() Do
@@ -217,7 +214,7 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		
 	ItemsDOM = DOMDocument.GetElementByTagName("ChildObjects");
 	For Each Item In QueryResult Do
-		NewNode = DOMDocument.CreateElement(MetaName(Item.ObjectType));
+		NewNode = DOMDocument.CreateElement(Roles_Settings.MetaName(Item.ObjectType));
 		NewNode.TextContent = Item.ObjectName;
 		ItemsDOM[0].AppendChild(NewNode);
 	EndDo;
@@ -257,14 +254,14 @@ Procedure UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item)
 		
 	DOMDocument.FirstChild.Attributes.GetNamedItem("version").Value	= XMLSettings.version;
 		
-	ObjectNode = DOMDocument.CreateElement(MetaName(Item.ObjectType));
+	ObjectNode = DOMDocument.CreateElement(Roles_Settings.MetaName(Item.ObjectType));
 	AttributeUUID = DOMDocument.CreateAttribute("uuid");
 	AttributeUUID.Value = String(New UUID());
 	ObjectNode.Attributes.SetNamedItem(AttributeUUID);
 		
 	InternalInfo = DOMDocument.CreateElement("InternalInfo");
 	
-	For Each Row In Roles_Settings.MetaDataObject()[MetaName(Item.ObjectType)] Do
+	For Each Row In Roles_Settings.MetaDataObject()[Roles_Settings.MetaName(Item.ObjectType)] Do
 		GeneratedType = DOMDocument.CreateElement("http://v8.1c.ru/8.3/xcf/readable", "GeneratedType");
 		
 		AttributeName = DOMDocument.CreateAttribute("name");
@@ -352,8 +349,3 @@ Function SerializeXMLUseXDTOFactory(Value)
 	Return Result;
 EndFunction
 
-Function MetaName(RefData) Export
-	RefNameType = RefData.Metadata().Name;
-	ValueIndex = Enums[RefNameType].IndexOf(RefData);
-	Return Metadata.Enums[RefNameType].EnumValues[ValueIndex].Name;
-EndFunction

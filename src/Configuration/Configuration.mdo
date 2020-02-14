@@ -9,7 +9,6 @@
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <defaultRunMode>Checked</defaultRunMode>
     <managedApplicationModule>Extended</managedApplicationModule>
-    <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="dfdd8d1d-f6a8-4e91-96a1-8b8ef9cc7871"/>
@@ -33,9 +32,7 @@
   <languages uuid="0e682ddb-91ed-46d0-ab2d-27974eb73d0f">
     <name>English</name>
     <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:LanguageExtension">
-      <languageCode>Checked</languageCode>
-    </extension>
+    <extension xsi:type="mdclassExtension:LanguageExtension"/>
     <languageCode>en</languageCode>
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
@@ -145,10 +142,12 @@
   <commonModules>CommonModule.Roles_UsersEvent</commonModules>
   <commonModules>CommonModule.Roles_Settings</commonModules>
   <commonModules>CommonModule.Roles_GenerateExtension</commonModules>
+  <commonModules>CommonModule.Roles_SettingsReUse</commonModules>
   <catalogs>Catalog.Roles_AccessRoles</catalogs>
   <catalogs>Catalog.Roles_AccessGroups</catalogs>
   <catalogs>Catalog.Roles_AccessProfiles</catalogs>
   <catalogs>Catalog.Users</catalogs>
+  <catalogs>Catalog.Roles_Templates</catalogs>
   <enums>Enum.Roles_MetadataTypes</enums>
   <enums>Enum.Roles_Rights</enums>
   <enums>Enum.Roles_MetadataSubtype</enums>

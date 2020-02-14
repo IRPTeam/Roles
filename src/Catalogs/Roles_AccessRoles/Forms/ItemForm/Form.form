@@ -56,8 +56,190 @@
     <name>Group2</name>
     <id>79</id>
     <items xsi:type="form:FormGroup">
-      <name>Group4</name>
+      <name>GroupRoleMatrix</name>
       <id>83</id>
+      <items xsi:type="form:FormGroup">
+        <name>GroupMainRights</name>
+        <id>324</id>
+        <items xsi:type="form:FormField">
+          <name>SetRightsForNewNativeObjects</name>
+          <id>326</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:MultiLanguageDataPath">
+            <paths xsi:type="form:DataPath">
+              <segments>Object.SetRightsForNewNativeObjects</segments>
+            </paths>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <extendedTooltip>
+            <name>SetRightsForNewNativeObjectsExtendedTooltip</name>
+            <id>328</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>SetRightsForNewNativeObjectsContextMenu</name>
+            <id>327</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>SetRightsForAttributesAndTabularSectionsByDefault</name>
+          <id>329</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:MultiLanguageDataPath">
+            <paths xsi:type="form:DataPath">
+              <segments>Object.SetRightsForAttributesAndTabularSectionsByDefault</segments>
+            </paths>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>SetRightsForAttributesAndTabularSectionsByDefaultOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>SetRightsForAttributesAndTabularSectionsByDefaultExtendedTooltip</name>
+            <id>331</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>SetRightsForAttributesAndTabularSectionsByDefaultContextMenu</name>
+            <id>330</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>SubordinateObjectsHaveIndependentRights</name>
+          <id>332</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:MultiLanguageDataPath">
+            <paths xsi:type="form:DataPath">
+              <segments>Object.SubordinateObjectsHaveIndependentRights</segments>
+            </paths>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <extendedTooltip>
+            <name>SubordinateObjectsHaveIndependentRightsExtendedTooltip</name>
+            <id>334</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>SubordinateObjectsHaveIndependentRightsContextMenu</name>
+            <id>333</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>en</key>
+          <value>Group main rights</value>
+        </title>
+        <toolTip>
+          <key>en</key>
+          <value>Group main rights</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>GroupMainRightsExtendedTooltip</name>
+          <id>325</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>DontUse</currentRowUse>
+        </extInfo>
+      </items>
       <items xsi:type="form:Table">
         <name>RolesEdit</name>
         <id>85</id>
@@ -3439,6 +3621,360 @@
               <threeState>true</threeState>
             </extInfo>
           </items>
+          <items xsi:type="form:FormField">
+            <name>MainWindowModeNormal</name>
+            <id>335</id>
+            <title>
+              <key>en</key>
+              <value>Main window mode normal</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.MainWindowModeNormal</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.LightGray</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Main window mode normal</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>MainWindowModeNormalExtendedTooltip</name>
+              <id>337</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>MainWindowModeNormalContextMenu</name>
+              <id>336</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>MainWindowModeWorkplace</name>
+            <id>338</id>
+            <title>
+              <key>en</key>
+              <value>Main window mode workplace</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.MainWindowModeWorkplace</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.LightGray</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Main window mode workplace</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>MainWindowModeWorkplaceExtendedTooltip</name>
+              <id>340</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>MainWindowModeWorkplaceContextMenu</name>
+              <id>339</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>MainWindowModeEmbeddedWorkplace</name>
+            <id>341</id>
+            <title>
+              <key>en</key>
+              <value>Main window mode embedded workplace</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.MainWindowModeEmbeddedWorkplace</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.LightGray</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Main window mode embedded workplace</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>MainWindowModeEmbeddedWorkplaceExtendedTooltip</name>
+              <id>343</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>MainWindowModeEmbeddedWorkplaceContextMenu</name>
+              <id>342</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>MainWindowModeFullscreenWorkplace</name>
+            <id>344</id>
+            <title>
+              <key>en</key>
+              <value>Main window mode fullscreen workplace</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.MainWindowModeFullscreenWorkplace</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.LightGray</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Main window mode fullscreen workplace</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>MainWindowModeFullscreenWorkplaceExtendedTooltip</name>
+              <id>346</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>MainWindowModeFullscreenWorkplaceContextMenu</name>
+              <id>345</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>MainWindowModeKiosk</name>
+            <id>347</id>
+            <title>
+              <key>en</key>
+              <value>Main window mode kiosk</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.MainWindowModeKiosk</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.LightGray</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Main window mode kiosk</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>MainWindowModeKioskExtendedTooltip</name>
+              <id>349</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>MainWindowModeKioskContextMenu</name>
+              <id>348</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>AnalyticsSystemClient</name>
+            <id>350</id>
+            <title>
+              <key>en</key>
+              <value>Analytics system client</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>RolesEdit.AnalyticsSystemClient</segments>
+              </paths>
+            </dataPath>
+            <titleBackColor xsi:type="core:ColorRef">
+              <color>Web.LightGray</color>
+            </titleBackColor>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>en</key>
+              <value>Analytics system client</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>AnalyticsSystemClientExtendedTooltip</name>
+              <id>352</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>AnalyticsSystemClientContextMenu</name>
+              <id>351</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+              <threeState>true</threeState>
+            </extInfo>
+          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -4613,19 +5149,33 @@
         <verticalScrollBar>AutoUse</verticalScrollBar>
         <horizontalLines>true</horizontalLines>
         <verticalLines>true</verticalLines>
+        <useAlternationRowColor>true</useAlternationRowColor>
         <searchOnInput>Auto</searchOnInput>
         <initialListView>Auto</initialListView>
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
         <fileDragMode>AsFileRef</fileDragMode>
+        <borderColor xsi:type="core:ColorDef">
+          <red>51</red>
+          <green>51</green>
+          <blue>51</blue>
+        </borderColor>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
+      <title>
+        <key>en</key>
+        <value>Role matrix</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Group role matrix</value>
+      </toolTip>
       <extendedTooltip>
-        <name>Group4ExtendedTooltip</name>
+        <name>GroupRoleMatrixExtendedTooltip</name>
         <id>84</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -4646,7 +5196,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>Group3</name>
+      <name>GroupRoleDetails</name>
       <id>81</id>
       <items xsi:type="form:FormGroup">
         <name>GroupData</name>
@@ -4673,7 +5223,7 @@
             </userVisible>
             <dataPath xsi:type="form:MultiLanguageDataPath">
               <paths xsi:type="form:DataPath">
-                <segments>Object.Rights.RightValue</segments>
+                <segments>1/0:07c32fbc-9a1f-46bf-9c95-a05ffdb611e0/0:030d92e1-4351-41b3-a45c-07d853d109b7</segments>
               </paths>
             </dataPath>
             <extendedTooltip>
@@ -4701,12 +5251,10 @@
               </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
-            <type>CheckBoxField</type>
             <editMode>EnterOnInput</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
           </items>
           <items xsi:type="form:FormField">
             <name>RightsObjectType</name>
@@ -4824,6 +5372,58 @@
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <listChoiceMode>true</listChoiceMode>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>RightsObjectPath</name>
+            <id>353</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>Object.Rights.ObjectPath</segments>
+              </paths>
+            </dataPath>
+            <extendedTooltip>
+              <name>RightsObjectPathExtendedTooltip</name>
+              <id>355</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>RightsObjectPathContextMenu</name>
+              <id>354</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>EnterOnInput</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
@@ -5478,8 +6078,16 @@
       <userVisible>
         <common>true</common>
       </userVisible>
+      <title>
+        <key>en</key>
+        <value>Role details</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Group role details</value>
+      </toolTip>
       <extendedTooltip>
-        <name>Group3ExtendedTooltip</name>
+        <name>GroupRoleDetailsExtendedTooltip</name>
         <id>82</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -6930,6 +7538,132 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>MainWindowModeNormal</name>
+      <title>
+        <key>en</key>
+        <value>Main window mode normal</value>
+      </title>
+      <id>66</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>MainWindowModeWorkplace</name>
+      <title>
+        <key>en</key>
+        <value>Main window mode workplace</value>
+      </title>
+      <id>67</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>MainWindowModeEmbeddedWorkplace</name>
+      <title>
+        <key>en</key>
+        <value>Main window mode embedded workplace</value>
+      </title>
+      <id>68</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>MainWindowModeFullscreenWorkplace</name>
+      <title>
+        <key>en</key>
+        <value>Main window mode fullscreen workplace</value>
+      </title>
+      <id>69</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>MainWindowModeKiosk</name>
+      <title>
+        <key>en</key>
+        <value>Main window mode kiosk</value>
+      </title>
+      <id>70</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>AnalyticsSystemClient</name>
+      <title>
+        <key>en</key>
+        <value>Analytics system client</value>
+      </title>
+      <id>71</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>CurrentViewMode</name>
@@ -6972,5 +7706,10 @@
     <navigationPanel/>
     <commandBar/>
   </commandInterface>
-  <extInfo xsi:type="form:CatalogFormExtInfo"/>
+  <extInfo xsi:type="form:CatalogFormExtInfo">
+    <handlers>
+      <event>BeforeWriteAtServer</event>
+      <name>BeforeWriteAtServer</name>
+    </handlers>
+  </extInfo>
 </form:Form>

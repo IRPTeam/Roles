@@ -221,6 +221,24 @@
 			<item>
 				<field>Output</field>
 			</item>
+			<item>
+				<field>MainWindowModeNormal</field>
+			</item>
+			<item>
+				<field>MainWindowModeWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeEmbeddedWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeFullscreenWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeKiosk</field>
+			</item>
+			<item>
+				<field>AnalyticsSystemClient</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -522,6 +540,24 @@
 			</item>
 			<item>
 				<field>InteractiveDeleteMarkedPredefinedData</field>
+			</item>
+			<item>
+				<field>MainWindowModeNormal</field>
+			</item>
+			<item>
+				<field>MainWindowModeWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeEmbeddedWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeFullscreenWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeKiosk</field>
+			</item>
+			<item>
+				<field>AnalyticsSystemClient</field>
 			</item>
 		</selection>
 		<filter>
@@ -1726,6 +1762,24 @@
 			</item>
 			<item>
 				<field>Output</field>
+			</item>
+			<item>
+				<field>MainWindowModeNormal</field>
+			</item>
+			<item>
+				<field>MainWindowModeWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeEmbeddedWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeFullscreenWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeKiosk</field>
+			</item>
+			<item>
+				<field>AnalyticsSystemClient</field>
 			</item>
 		</selection>
 		<filter>

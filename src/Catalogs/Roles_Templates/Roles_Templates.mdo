@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88766028-f2a7-46c0-8b69-9cf3a3217989">
+  <producedTypes>
+    <objectType typeId="ae49920f-9ce6-4608-ba3a-0513dc7c41ca" valueTypeId="a07f8015-7950-4346-8698-bfd06e2664b7"/>
+    <refType typeId="d704cb92-73ca-4c73-9481-e3aef09ba050" valueTypeId="02ce809d-59ba-4239-a9a2-ddfa76403b9e"/>
+    <selectionType typeId="07f285f6-8a11-4874-afed-5829d3b8abbf" valueTypeId="a09be931-a55b-4e81-8f87-7d2dfdc5684b"/>
+    <listType typeId="91730f46-00a6-4154-aec5-d89e8671fc52" valueTypeId="02407aa4-001f-4be8-8156-c05cd290863a"/>
+    <managerType typeId="a106622d-12f4-402d-8f51-b81ddf92151f" valueTypeId="b743768e-bc69-4f3e-b743-e07c083f736f"/>
+  </producedTypes>
+  <name>Roles_Templates</name>
+  <synonym>
+    <key>en</key>
+    <value>Templates</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Roles_Templates.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Roles_Templates.Form.ItemForm</defaultObjectForm>
+  <attributes uuid="e7876bd1-2fda-4cf4-9307-64b0ca3e5056">
+    <name>Template</name>
+    <synonym>
+      <key>en</key>
+      <value>Template</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9af7dc20-6369-48b6-b628-c356c6bf3186">
+    <name>ItemForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>
