@@ -5,10 +5,11 @@
     <key>en</key>
     <value>Roles</value>
   </synonym>
+  <comment> </comment>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
-    <defaultRunMode>Checked</defaultRunMode>
     <managedApplicationModule>Extended</managedApplicationModule>
+    <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="dfdd8d1d-f6a8-4e91-96a1-8b8ef9cc7871"/>
@@ -20,19 +21,19 @@
   <namePrefix>Roles_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
-  <defaultRunMode>ManagedApplication</defaultRunMode>
   <version>0.0.1</version>
   <defaultLanguage>Language.English</defaultLanguage>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
-  <synchronousExtensionAndAddInCallUseMode>DontUse</synchronousExtensionAndAddInCallUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
   <compatibilityMode>8.3.14</compatibilityMode>
   <languages uuid="0e682ddb-91ed-46d0-ab2d-27974eb73d0f">
     <name>English</name>
     <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:LanguageExtension"/>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
     <languageCode>en</languageCode>
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
@@ -63,7 +64,7 @@
   <commonPictures>CommonPicture.Roles_FilterCriterion</commonPictures>
   <commonPictures>CommonPicture.Roles_HTTPService</commonPictures>
   <commonPictures>CommonPicture.Roles_InformationRegister</commonPictures>
-  <commonPictures>CommonPicture.Roles_method</commonPictures>
+  <commonPictures>CommonPicture.Roles_Method</commonPictures>
   <commonPictures>CommonPicture.Roles_Recalculations</commonPictures>
   <commonPictures>CommonPicture.Roles_Report</commonPictures>
   <commonPictures>CommonPicture.Roles_Resources</commonPictures>
@@ -78,16 +79,19 @@
   <commonPictures>CommonPicture.Roles_right_editDataHistoryVersionComment</commonPictures>
   <commonPictures>CommonPicture.Roles_right_eventLog</commonPictures>
   <commonPictures>CommonPicture.Roles_right_exclusiveMode</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_execute</commonPictures>
   <commonPictures>CommonPicture.Roles_right_externalConnection</commonPictures>
   <commonPictures>CommonPicture.Roles_right_get</commonPictures>
   <commonPictures>CommonPicture.Roles_right_inputByString_dark</commonPictures>
   <commonPictures>CommonPicture.Roles_right_insert</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveActivate</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveChangeOfPosted</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveClearDeletionMark</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveClearDeletionMarkPredefinedData</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveDelete</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveDeleteMarked</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveDeletePredefinedData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveExecute</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveInsert</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveOpenExtDataProcessors_dark</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveOpenExtReports</commonPictures>
@@ -95,6 +99,7 @@
   <commonPictures>CommonPicture.Roles_right_interactivePostingRegular</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveSetDeletionMark</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveSetDeletionMarkPredefinedData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveStart</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveUndoPosting</commonPictures>
   <commonPictures>CommonPicture.Roles_right_mobileClient</commonPictures>
   <commonPictures>CommonPicture.Roles_right_output</commonPictures>
@@ -104,6 +109,7 @@
   <commonPictures>CommonPicture.Roles_right_readDataHistoryOfMissingData</commonPictures>
   <commonPictures>CommonPicture.Roles_right_saveUserData</commonPictures>
   <commonPictures>CommonPicture.Roles_right_set</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_start</commonPictures>
   <commonPictures>CommonPicture.Roles_right_switchToDataHistoryVersion_dark</commonPictures>
   <commonPictures>CommonPicture.Roles_right_thickClient</commonPictures>
   <commonPictures>CommonPicture.Roles_right_thinClient</commonPictures>
@@ -131,11 +137,8 @@
   <commonPictures>CommonPicture.Roles_TabularSections</commonPictures>
   <commonPictures>CommonPicture.Roles_Task</commonPictures>
   <commonPictures>CommonPicture.Roles_WebService</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_interactiveStart</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_start</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_execute</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_interactiveExecute</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_interactiveActivate</commonPictures>
+  <commonPictures>CommonPicture.Roles_Operation</commonPictures>
+  <commonPictures>CommonPicture.Roles_URLTemplate</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_TemplateMetadataObject</commonTemplates>
@@ -143,6 +146,9 @@
   <commonModules>CommonModule.Roles_Settings</commonModules>
   <commonModules>CommonModule.Roles_GenerateExtension</commonModules>
   <commonModules>CommonModule.Roles_SettingsReUse</commonModules>
+  <commonModules>CommonModule.Roles_ExportAndLoadCurrentRoles</commonModules>
+  <commonModules>CommonModule.Roles_ServiceServer</commonModules>
+  <commonModules>CommonModule.Roles_RoleMatrix</commonModules>
   <catalogs>Catalog.Roles_AccessRoles</catalogs>
   <catalogs>Catalog.Roles_AccessGroups</catalogs>
   <catalogs>Catalog.Roles_AccessProfiles</catalogs>

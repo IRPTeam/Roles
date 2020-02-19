@@ -6,5 +6,6 @@
     <value>Roles settings re use</value>
   </synonym>
   <server>true</server>
+  <serverCall>true</serverCall>
   <returnValuesReuse>DuringSession</returnValuesReuse>
 </mdclass:CommonModule>

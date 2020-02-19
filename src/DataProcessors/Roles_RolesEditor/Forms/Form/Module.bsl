@@ -60,15 +60,29 @@ Function GetAccessRightsFor_Catalog(RoleInfo)
 	EndDo;
 EndFunction
 
-&AtClient
-Procedure TestRoleEditor(Command)
-	OpenForm("DataProcessor.Roles_RolesEditor.Form.EditRole", , ThisObject, ThisObject.UUID);
-EndProcedure
-
 #Region Extention
 &AtClient
 Procedure UpdateExtention(Command)
 	Roles_GenerateExtension.UpdateRoleExt();
+EndProcedure
+
+&AtClient
+Procedure LoadRolesFromCurrentConfig(Command)
+	Settings = Undefined;
+
+	OpenForm("DataProcessor.Roles_RolesEditor.Form.ConnectionSettingsForm", 
+		, , , , , New NotifyDescription("LoadRolesFromCurrentConfigEnd", ThisForm));
+EndProcedure
+
+&AtClient
+Procedure LoadRolesFromCurrentConfigEnd(Result, AddInfo) Export
+	
+	If Result = Undefined Then
+		Return;
+	EndIf;
+	
+	Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(Result);
+
 EndProcedure
 #EndRegion
 

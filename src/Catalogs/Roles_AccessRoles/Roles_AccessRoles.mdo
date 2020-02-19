@@ -28,6 +28,7 @@
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.Roles_AccessRoles.Form.ItemForm</defaultObjectForm>
+  <defaultListForm>Catalog.Roles_AccessRoles.Form.ListForm</defaultListForm>
   <attributes uuid="91ab6908-1ffe-4d16-a833-448aabd3f4dc">
     <name>SetRightsForNewNativeObjects</name>
     <synonym>
@@ -70,6 +71,43 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b02224a3-6c36-43c6-80e7-5c25608b8a21">
+    <name>ConfigRoles</name>
+    <synonym>
+      <key>en</key>
+      <value>Config roles</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Roles from configuration</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7728ac88-4052-4794-af44-cf8ad3ecd8af">
+    <name>Comment</name>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -165,8 +203,38 @@
           <length>500</length>
         </stringQualifiers>
       </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="91315c9f-dcbd-47c8-83bf-00cdc3cc1e83">
+      <name>RightValue</name>
+      <synonym>
+        <key>en</key>
+        <value>Right value</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5bb0a9d6-f285-43eb-bb24-02deacfbbac6">
+      <name>Disable</name>
+      <synonym>
+        <key>en</key>
+        <value>Disable</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
@@ -242,12 +310,97 @@
       <key>en</key>
       <value>Templates</value>
     </synonym>
+    <attributes uuid="6118ae2c-959b-4de2-8874-287e13a47c96">
+      <name>Name</name>
+      <synonym>
+        <key>en</key>
+        <value>Name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7361d190-69f2-4567-b884-c2588daa5bd0">
+      <name>Template</name>
+      <synonym>
+        <key>en</key>
+        <value>Template</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Roles_Templates</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="52b91ff2-dd14-4b13-8786-0f95009bd7a3">
+    <producedTypes>
+      <objectType typeId="8724f1a4-7823-411d-ac5a-5cef71160c96" valueTypeId="c3f84f8b-3099-4a49-872a-72987b7cc294"/>
+      <rowType typeId="a1808e09-4c02-4a02-ac35-961afb9f0e4a" valueTypeId="a9606a96-5dd9-4e0d-ba2d-66007322f9fd"/>
+    </producedTypes>
+    <name>LangInfo</name>
+    <synonym>
+      <key>en</key>
+      <value>Lang info</value>
+    </synonym>
+    <attributes uuid="06c0f8fa-b8eb-43a1-8383-f3ffc29c8c41">
+      <name>LangCode</name>
+      <synonym>
+        <key>en</key>
+        <value>Lang code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6b0cbfcf-0738-4296-b373-dfb5bd025fdd">
+      <name>LangDescription</name>
+      <synonym>
+        <key>en</key>
+        <value>Lang description</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <forms uuid="1ea93335-7ef1-4f21-a296-840a082ba02c">
     <name>ItemForm</name>
     <synonym>
       <key>en</key>
       <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7da46eb4-d0fe-40f0-aaf7-e712c787f7af">
+    <name>ListForm</name>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

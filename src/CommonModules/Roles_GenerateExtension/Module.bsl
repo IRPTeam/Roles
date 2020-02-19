@@ -77,7 +77,7 @@ Function UpdateRoleExt_CreateRolesXML_ReadRole(Path)
 	TextReader.Open(Path + "AccRoles_DefaultRole\Ext\Rights.xml", TextEncoding.UTF8);
 	Text = TextReader.Read();
 	TextReader.Close();
-	Return DeserializeXMLUseXDTOFactory(Text);
+	Return Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
 EndFunction
 
 Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
@@ -140,7 +140,7 @@ Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 			RightTemplate.object.Add(ObjectList);
 		EndDo;
 	EndDo;
-	Return SerializeXMLUseXDTOFactory(RightTemplate);
+	Return Roles_ServiceServer.SerializeXMLUseXDTOFactory(RightTemplate);
 	
 EndFunction
 
@@ -332,20 +332,3 @@ Procedure InstallExtention(Name, ExtensionData, OverWrite = True) Export
 	Ext.SafeMode = False;
 	Ext.Write(ExtensionData);
 EndProcedure
-
-Function DeserializeXMLUseXDTOFactory(Value)
-	Reader = New XMLReader();
-	Reader.SetString(Value);
-	Result = XDTOFactory.ReadXML(Reader);
-	Reader.Close();
-	Return Result;
-EndFunction
-
-Function SerializeXMLUseXDTOFactory(Value)
-	Writer = New XMLWriter();
-	Writer.SetString();
-	XDTOFactory.WriteXML(Writer, Value);
-	Result = Writer.Close();
-	Return Result;
-EndFunction
-

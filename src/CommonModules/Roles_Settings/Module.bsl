@@ -756,7 +756,7 @@ Function hasResources(MetaName) Export
     Array.Add(Enums.Roles_MetadataTypes.AccountingRegister);
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
-
+ 
 Function hasStandardAttributes(MetaName) Export
 	Array = New Array;
     Array.Add(Enums.Roles_MetadataTypes.Catalog);
@@ -817,6 +817,24 @@ EndFunction
 Function hasAddressingAttributes(MetaName) Export
 	Array = New Array;
     Array.Add(Enums.Roles_MetadataTypes.Task);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasURLTemplates(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.HTTPService);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasOperations(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.WebService);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function isSubsystem(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.Subsystem);	
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 

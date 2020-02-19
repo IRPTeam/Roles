@@ -27,9 +27,6 @@
           <paths xsi:type="form:DataPath">
             <segments>Roles.Picture</segments>
           </paths>
-          <paths xsi:type="form:DataPath">
-            <segments>Roles.Picture</segments>
-          </paths>
         </dataPath>
         <extendedTooltip>
           <name>RolesPictureExtendedTooltip</name>
@@ -81,9 +78,6 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Roles.Synonym</segments>
-          </paths>
           <paths xsi:type="form:DataPath">
             <segments>Roles.Synonym</segments>
           </paths>
@@ -393,6 +387,36 @@
       <placementArea>UserCmds</placementArea>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
+    <items xsi:type="form:Button">
+      <name>FormLoadRolesFromCurrentConfig</name>
+      <id>29</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormLoadRolesFromCurrentConfigExtendedTooltip</name>
+        <id>30</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.LoadRolesFromCurrentConfig</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -529,6 +553,27 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>UpdateExtention</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>LoadRolesFromCurrentConfig</name>
+    <title>
+      <key>en</key>
+      <value>Load roles from current config</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>en</key>
+      <value>Load roles from current config</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>LoadRolesFromCurrentConfig</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

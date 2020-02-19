@@ -20,11 +20,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="4a35276c-be36-4a39-8f13-19e6f65cf596">
-    <name>EditRole</name>
+  <forms uuid="7ee2ec99-8137-4d18-be42-b4153cbb7bff">
+    <name>ConnectionSettingsForm</name>
     <synonym>
       <key>en</key>
-      <value>Edit role</value>
+      <value>Connection settings form</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

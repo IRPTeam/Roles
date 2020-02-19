@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88766028-f2a7-46c0-8b69-9cf3a3217989">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88766028-f2a7-46c0-8b69-9cf3a3217989">
   <producedTypes>
     <objectType typeId="ae49920f-9ce6-4608-ba3a-0513dc7c41ca" valueTypeId="a07f8015-7950-4346-8698-bfd06e2664b7"/>
     <refType typeId="d704cb92-73ca-4c73-9481-e3aef09ba050" valueTypeId="02ce809d-59ba-4239-a9a2-ddfa76403b9e"/>
@@ -37,6 +37,11 @@
       <types>String</types>
       <stringQualifiers/>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

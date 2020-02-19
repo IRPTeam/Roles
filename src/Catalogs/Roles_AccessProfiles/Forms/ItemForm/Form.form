@@ -90,9 +90,6 @@
         <paths xsi:type="form:DataPath">
           <segments>Roles.Use</segments>
         </paths>
-        <paths xsi:type="form:DataPath">
-          <segments>Roles.Use</segments>
-        </paths>
       </dataPath>
       <extendedTooltip>
         <name>RolesUseExtendedTooltip</name>
@@ -134,9 +131,6 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Roles.Role</segments>
-        </paths>
         <paths xsi:type="form:DataPath">
           <segments>Roles.Role</segments>
         </paths>
@@ -192,9 +186,6 @@
         <paths xsi:type="form:DataPath">
           <segments>Roles.Configuration</segments>
         </paths>
-        <paths xsi:type="form:DataPath">
-          <segments>Roles.Configuration</segments>
-        </paths>
       </dataPath>
       <extendedTooltip>
         <name>RolesConfigurationExtendedTooltip</name>
@@ -244,9 +235,6 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Roles.Presentation</segments>
-        </paths>
         <paths xsi:type="form:DataPath">
           <segments>Roles.Presentation</segments>
         </paths>

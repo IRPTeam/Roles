@@ -89,4 +89,25 @@
       <value>Standard tabular section</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="e4df3423-b1d5-4a9f-89e9-d8fed4b3f76c">
+    <name>Operation</name>
+    <synonym>
+      <key>en</key>
+      <value>Operation</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="05ba70d7-30b1-4cec-95f1-0e917c5d6716">
+    <name>URLTemplate</name>
+    <synonym>
+      <key>en</key>
+      <value>URLTemplate</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d0a76ee3-b808-42ad-9ce5-a2edd63c7415">
+    <name>Method</name>
+    <synonym>
+      <key>en</key>
+      <value>Method</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
