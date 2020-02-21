@@ -80,18 +80,13 @@ Procedure UpdateRoleExt(Settings) Export
 				NewObject.ObjectName = ObjectName;
 				NewObject.ObjectType = ObjectType;
 				NewObject.ObjectPath = Object.Name;
-				If ObjectRight.name = "AllFunctionsMode" Then	
-					NewObject.RightName = Enums.Roles_Rights.TechnicalSpecialistMode;
-				Else
-					NewObject.RightName = Enums.Roles_Rights[ObjectRight.name];
-				EndIf;
-				
+				NewObject.RightName = Enums.Roles_Rights[ObjectRight.name];
 				NewObject.RowID = New UUID();
 				NewObject.RightValue = ObjectRight.value;
 				For Each RestrictionByCondition In ObjectRight.restrictionByCondition Do
 					Condition = RightObject.RestrictionByCondition.Add();
 					Condition.RowID = NewObject.RowID;
-					Condition.Condition = RestrictionByCondition.condition;
+					Condition.Condition = RestrictionByCondition.condition
 				EndDo;
 				
 			EndDo;

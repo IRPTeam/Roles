@@ -490,7 +490,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -724,7 +724,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -953,7 +953,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -1182,7 +1182,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -1419,7 +1419,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -1656,7 +1656,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -1890,7 +1890,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -2119,7 +2119,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -2348,7 +2348,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -2577,7 +2577,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -2817,7 +2817,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -3053,7 +3053,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -3282,7 +3282,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -3511,7 +3511,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -3745,7 +3745,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -3979,7 +3979,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -4213,7 +4213,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -4458,7 +4458,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -4687,7 +4687,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -4923,7 +4923,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -5385,7 +5385,7 @@
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>BackColor</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">web:DarkSlateGray</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -9227,6 +9227,26 @@
 						<v8:content>❌</v8:content>
 					</v8:item>
 				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>RolesEdit</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="xs:boolean">true</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Font</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 			</dcscor:item>
 		</appearance>
 	</item>

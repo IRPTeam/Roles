@@ -1,6 +1,6 @@
 &AtServer
 Var RightsMap, PictureLibData Export;
-
+ 
 &AtClient
 Var ArrayForViewEdit Export;
 
@@ -89,6 +89,7 @@ Procedure RightsOnChange(Item)
 	If NOT ValueIsFilled(CurrentRow.RowID) Then
 		CurrentRow.RowID = New UUID();
 	EndIf;
+	MatrixUpdated = False;
 EndProcedure
 
 &AtClient
@@ -108,12 +109,14 @@ EndProcedure
 &AtClient
 Procedure UpdateRights(Command)
 	RolesEdit.GetItems().Clear();
-	UpdateRightsList();
+	Message("I" + CurrentDate());
+	UpdateRightsList(NOT MatrixUpdated);
+	Message("V" + CurrentDate());
 EndProcedure
 
 #Region RightsList
 &AtServer
-Procedure UpdateRightsList()
+Procedure UpdateRightsList(OnlyReport)
 	RoleTree = FormAttributeToValue("RolesEdit");
 	ObjectData = New Structure;
 	ObjectData.Insert("RightTable", Object.Rights.Unload());
@@ -121,8 +124,11 @@ Procedure UpdateRightsList()
 	ObjectData.Insert("SetRightsForNewNativeObjects", Object.SetRightsForNewNativeObjects);
 	ObjectData.Insert("SetRightsForAttributesAndTabularSectionsByDefault", Object.SetRightsForAttributesAndTabularSectionsByDefault);
 	ObjectData.Insert("SubordinateObjectsHaveIndependentRights", Object.SubordinateObjectsHaveIndependentRights);
-	Roles_RoleMatrix.GenerateRoleMatrix(RoleTree, ObjectData);
+	Message("II" + CurrentDate());
+	TabDocMartix = Roles_RoleMatrix.GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport);
+	Message("III" + CurrentDate());
 	ValueToFormAttribute(RoleTree, "RolesEdit");
+	Message("IV" + CurrentDate());
 EndProcedure
 
 &AtClient
@@ -277,12 +283,7 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 		Object.SetRightsForAttributesAndTabularSectionsByDefault = True;
 	EndIf;
 
-	UpdateRightsList();
-EndProcedure
-
-&AtClient
-Procedure SetRightsForAttributesAndTabularSectionsByDefaultOnChange(Item)
-	UpdateRightsList();
+	UpdateRightsList(True);
 EndProcedure
 
 &AtClient
@@ -317,6 +318,8 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined)
 	Else
 		CurrentRow[Field.Name] = 0;
 	EndIf;
+	CurrentRow.Edited = True;
+	SetEditedInfo(CurrentRow);
 	
 	Info = StrSplit(CurrentRow.ObjectPath, ".");
 	
@@ -347,7 +350,48 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined)
 		NewRow.ObjectPath = CurrentRow.ObjectPath;
 		NewRow.RightValue = ?(CurrentRow[Field.Name] = 1, True, False);
 		NewRow.RowID = New UUID;
-	EndIf;	
+	EndIf;
+	
+EndProcedure
+
+&AtClient
+Procedure SetEditedInfo(Row)
+	Parent = Row.GetParent();
+	If Parent = Undefined Then
+		Return;
+	EndIf;
+	If Parent.Edited Then
+		Return;
+	EndIf;
+	Parent.Edited = True;
+	SetEditedInfo(Parent);
+EndProcedure
+
+&AtClient
+Procedure RolesEditOnActivateCell(Item)
+
+	If NOT (Item.CurrentItem.Name = "Read"
+		OR Item.CurrentItem.Name = "Insert"
+		OR Item.CurrentItem.Name = "Update"
+		OR Item.CurrentItem.Name = "Delete") Then
+			Return;
+	EndIf;
+	RightName = PredefinedValue("Enum.Roles_Rights." + Item.CurrentItem.Name);
+	
+	
+EndProcedure
+
+&AtClient
+Procedure GroupMainPagesOnCurrentPageChange(Item, CurrentPage)
+	If CurrentPage = Items.GroupRoleMatrix 
+		AND NOT MatrixUpdated Then
+		
+		RolesEdit.GetItems().Clear();
+		Message("I" + CurrentDate());
+		UpdateRightsList(False);
+		MatrixUpdated = True;
+		Message("V" + CurrentDate());
+	EndIf;
 EndProcedure
 
 ArrayForViewEdit = Roles_SettingsReUse.ArrayForViewEdit();

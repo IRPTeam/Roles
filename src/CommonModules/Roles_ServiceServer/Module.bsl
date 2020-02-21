@@ -14,24 +14,6 @@ Function SerializeXMLUseXDTOFactory(Value) Export
 	Return Result;
 EndFunction
 
-Function DeserializeXML(Value) Export
-	Reader = New XMLReader();
-	Reader.SetString(Value);
-	Result = XDTOSerializer.ReadXML(Reader);
-	Reader.Close();
-	Return Result;
-EndFunction
-
-Function SerializeXML(Value) Export
-	Writer = New XMLWriter();
-	XMLWriterSettings = New XMLWriterSettings(, , False, False, "");
-	Writer.SetString(XMLWriterSettings);
-	XDTOSerializer.WriteXML(Writer, Value);
-	Result = Writer.Close();
-	Return Result;
-EndFunction
-
-
 Function HashMD5(Data) Export
 	  
     Hash = New DataHashing(HashFunction.MD5);
