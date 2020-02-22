@@ -149,6 +149,7 @@
   <commonModules>CommonModule.Roles_ExportAndLoadCurrentRoles</commonModules>
   <commonModules>CommonModule.Roles_ServiceServer</commonModules>
   <commonModules>CommonModule.Roles_RoleMatrix</commonModules>
+  <commonForms>CommonForm.EditText</commonForms>
   <catalogs>Catalog.Roles_AccessRoles</catalogs>
   <catalogs>Catalog.Roles_AccessGroups</catalogs>
   <catalogs>Catalog.Roles_AccessProfiles</catalogs>

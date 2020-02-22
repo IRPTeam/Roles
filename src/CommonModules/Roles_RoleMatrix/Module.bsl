@@ -192,8 +192,6 @@ Procedure AddChildURLTemplates(Val StrData)
 	
 	AddChildRows = StrData.MetaItemRow.Rows.Add();
 	ObjectSubtype = Enums.Roles_MetadataSubtype[Left(StrData.DataType, StrLen(StrData.DataType) - 1)];
-	Picture = StrData.PictureLibData["Roles_" + ObjectSubtype];
-	PictureURLTemplate = StrData.PictureLibData["Roles_URLTemplate"];
 	PictureMethod = StrData.PictureLibData["Roles_Method"];
 	AddChildRows.ObjectPath = StrData.MetaItemRow.ObjectPath + "." + ObjectSubtype;
 	For Each AddChild In StrData.MetaItem[StrData.DataType] Do
@@ -409,15 +407,10 @@ Function CurrentRights(DataTables)
 	For Each RowVT In TempVT Do
 		RightsStructure = New Structure;
 		FindRows = DataTables.RightTable.FindRows(New Structure("ObjectPath, Disable", RowVT.ObjectPath, False));
-		For Each Row In FindRows Do
-			FindRLSRows = DataTables.RestrictionByCondition.FindRows(New Structure("RowID", Row.RowID));
-			RLSMap = New Map;
-			For Each RLSRow In FindRLSRows Do
-				RLSMap.Insert(?(ValueIsFilled(RLSRow.Fields), RLSRow.Fields, "All Fields"), RLSRow.Condition);
-			EndDo;
+		For Each Row In FindRows Do			
 			RightValue = New Structure;
 			RightValue.Insert("Value", Row.RightValue);
-			RightValue.Insert("RLS", RLSMap);
+			RightValue.Insert("RowID", Row.RowID);
 			RightsStructure.Insert(Roles_Settings.MetaName(Row.RightName), RightValue);
 		EndDo;
 		RightMap.Insert(RowVT.ObjectPath, RightsStructure);
@@ -427,12 +420,6 @@ EndFunction
 
 Procedure SetCurrentRights(Row, StrData)
 	
-	//For Each roleStr In Roles_SettingsReUse.MetaRolesName() Do
-	//	If NOT Roles_SettingsReUse.Skip(Row.ObjectType, Row.ObjectSubtype, roleStr.Key) Then
-	//		Row[roleStr.Key] = 2;
-	//	EndIf;
-	//EndDo;
-	
 	RightData = StrData.RightsMap.Get(Row.ObjectPath);
 	If RightData = Undefined Then
 		Return;
@@ -441,6 +428,19 @@ Procedure SetCurrentRights(Row, StrData)
 	For Each Data In RightData Do
 		Row[Data.Key] = ?(Data.Value.Value, 1, 2);
 	EndDo;
+
+	If RightData.Property("Insert") Then
+		Row.RLSInsertID = RightData.Insert.RowID;
+	EndIf;
+	If RightData.Property("Read") Then
+		Row.RLSReadID = RightData.Read.RowID;
+	EndIf;
+	If RightData.Property("Delete") Then
+		Row.RLSDeleteID = RightData.Delete.RowID;
+	EndIf;
+	If RightData.Property("Update") Then
+		Row.RLSUpdateID = RightData.Update.RowID;
+	EndIf;
 
 	Row.Edited = True;
 	SetEditedInfo(Row);

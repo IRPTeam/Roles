@@ -218,7 +218,7 @@
           <autoMaxHeight>true</autoMaxHeight>
           <horizontalStretch>true</horizontalStretch>
           <verticalStretch>true</verticalStretch>
-          <pointerType>Special</pointerType>
+          <showHeaders>true</showHeaders>
           <verticalScrollBar>ScrollAuto</verticalScrollBar>
           <horizontalScrollBar>ScrollAuto</horizontalScrollBar>
           <protection>true</protection>
@@ -5907,20 +5907,36 @@
           <searchControlLocation>CommandBar</searchControlLocation>
         </items>
         <items xsi:type="form:Table">
-          <name>Templates1</name>
-          <id>431</id>
+          <name>RestrictionByConditionMatrix</name>
+          <id>466</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Object.Templates</segments>
+            <segments>Object.RestrictionByCondition</segments>
           </dataPath>
           <titleLocation>None</titleLocation>
+          <excludedCommands>Add</excludedCommands>
+          <excludedCommands>Copy</excludedCommands>
+          <excludedCommands>Change</excludedCommands>
+          <excludedCommands>Delete</excludedCommands>
+          <excludedCommands>EndEdit</excludedCommands>
+          <excludedCommands>Find</excludedCommands>
+          <excludedCommands>CancelSearch</excludedCommands>
+          <excludedCommands>ShowRowRearrangement</excludedCommands>
+          <excludedCommands>MoveUp</excludedCommands>
+          <excludedCommands>MoveDown</excludedCommands>
+          <excludedCommands>SortListAsc</excludedCommands>
+          <excludedCommands>SortListDesc</excludedCommands>
+          <excludedCommands>OutputList</excludedCommands>
+          <excludedCommands>CopyToClipboard</excludedCommands>
+          <excludedCommands>ShowMultipleSelection</excludedCommands>
+          <excludedCommands>SelectAll</excludedCommands>
           <items xsi:type="form:FormField">
-            <name>TemplatesName1</name>
-            <id>447</id>
+            <name>RestrictionByConditionFieldsMatrix</name>
+            <id>485</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5928,12 +5944,15 @@
             </userVisible>
             <dataPath xsi:type="form:MultiLanguageDataPath">
               <paths xsi:type="form:DataPath">
-                <segments>Object.Templates.Name</segments>
+                <segments>Object.RestrictionByCondition.Fields</segments>
+              </paths>
+              <paths xsi:type="form:DataPath">
+                <segments>Object.RestrictionByCondition.Fields</segments>
               </paths>
             </dataPath>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
-              <id>449</id>
+              <id>487</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5948,7 +5967,7 @@
             </extendedTooltip>
             <contextMenu>
               <name>ContextMenu</name>
-              <id>448</id>
+              <id>486</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5957,7 +5976,6 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5971,8 +5989,8 @@
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
-            <name>TemplatesTemplate1</name>
-            <id>450</id>
+            <name>RestrictionByConditionConditionMatrix</name>
+            <id>488</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5980,12 +5998,15 @@
             </userVisible>
             <dataPath xsi:type="form:MultiLanguageDataPath">
               <paths xsi:type="form:DataPath">
-                <segments>Object.Templates.Template</segments>
+                <segments>Object.RestrictionByCondition.Condition</segments>
+              </paths>
+              <paths xsi:type="form:DataPath">
+                <segments>Object.RestrictionByCondition.Condition</segments>
               </paths>
             </dataPath>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
-              <id>452</id>
+              <id>490</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6000,7 +6021,7 @@
             </extendedTooltip>
             <contextMenu>
               <name>ContextMenu</name>
-              <id>451</id>
+              <id>489</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6009,15 +6030,21 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>Enter</editMode>
+            <autoCellHeight>true</autoCellHeight>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>Opening</event>
+                <name>RestrictionByConditionConditionOpening</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
               <multiLine>true</multiLine>
+              <clearButton>true</clearButton>
+              <openButton>true</openButton>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
@@ -6025,7 +6052,37 @@
           </items>
           <autoCommandBar>
             <name>TableCommandBar1</name>
-            <id>432</id>
+            <id>467</id>
+            <items xsi:type="form:Button">
+              <name>RestrictionByConditionMatrixAddRestriction</name>
+              <id>491</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>RestrictionByConditionMatrixAddRestrictionExtendedTooltip</name>
+                <id>492</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <commandName>Form.Command.AddRestriction</commandName>
+              <representation>Auto</representation>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -6041,10 +6098,10 @@
               <common>true</common>
             </userVisible>
             <name>TableSearchString</name>
-            <id>435</id>
+            <id>470</id>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
-              <id>437</id>
+              <id>472</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6059,7 +6116,7 @@
             </extendedTooltip>
             <contextMenu>
               <name>ContextMenu</name>
-              <id>436</id>
+              <id>471</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6078,10 +6135,10 @@
               <common>true</common>
             </userVisible>
             <name>TableViewStatus</name>
-            <id>441</id>
+            <id>476</id>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
-              <id>443</id>
+              <id>478</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6096,7 +6153,7 @@
             </extendedTooltip>
             <contextMenu>
               <name>ContextMenu</name>
-              <id>442</id>
+              <id>477</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6117,10 +6174,10 @@
               <common>true</common>
             </userVisible>
             <name>TableSearchControl</name>
-            <id>438</id>
+            <id>473</id>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
-              <id>440</id>
+              <id>475</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6135,7 +6192,7 @@
             </extendedTooltip>
             <contextMenu>
               <name>ContextMenu</name>
-              <id>439</id>
+              <id>474</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6150,7 +6207,7 @@
           </searchControlAddition>
           <extendedTooltip>
             <name>TableExtendedTooltip</name>
-            <id>434</id>
+            <id>469</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -6165,7 +6222,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>TableContextMenu</name>
-            <id>433</id>
+            <id>468</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -6174,24 +6231,27 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <changeRowSet>true</changeRowSet>
-          <changeRowOrder>true</changeRowOrder>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
+          <heightInTableRows>5</heightInTableRows>
+          <heightControlVariant>InTableRows</heightControlVariant>
           <autoMaxRowsCount>true</autoMaxRowsCount>
           <selectionMode>MultiRow</selectionMode>
-          <header>true</header>
           <headerHeight>1</headerHeight>
           <footerHeight>1</footerHeight>
           <horizontalScrollBar>AutoUse</horizontalScrollBar>
           <verticalScrollBar>AutoUse</verticalScrollBar>
           <horizontalLines>true</horizontalLines>
           <verticalLines>true</verticalLines>
+          <useAlternationRowColor>true</useAlternationRowColor>
           <searchOnInput>Auto</searchOnInput>
           <initialListView>Auto</initialListView>
           <horizontalStretch>true</horizontalStretch>
           <verticalStretch>true</verticalStretch>
           <fileDragMode>AsFileRef</fileDragMode>
-          <rowFilter xsi:type="core:UndefinedValue"/>
+          <rowsPicture xsi:type="core:PictureRef">
+            <picture>CommonPicture.Roles_rls_blank</picture>
+          </rowsPicture>
         </items>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -9788,6 +9848,86 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>RLSInsertID</name>
+      <title>
+        <key>en</key>
+        <value>RLS Insert ID</value>
+      </title>
+      <id>76</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>RLSReadID</name>
+      <title>
+        <key>en</key>
+        <value>RLS Read ID</value>
+      </title>
+      <id>77</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>RLSUpdateID</name>
+      <title>
+        <key>en</key>
+        <value>RLSUpdate ID</value>
+      </title>
+      <id>78</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>RLSDeleteID</name>
+      <title>
+        <key>en</key>
+        <value>RLS Delete ID</value>
+      </title>
+      <id>79</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>CurrentViewMode</name>
@@ -9862,6 +10002,26 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>RLSRowID</name>
+    <title>
+      <key>en</key>
+      <value>RLSRow ID</value>
+    </title>
+    <id>80</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>UpdateRights</name>
     <title>
@@ -9877,6 +10037,27 @@
         <name>UpdateRights</name>
       </handler>
     </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>AddRestriction</name>
+    <title>
+      <key>en</key>
+      <value>Add restriction</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.Roles_rls_add</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>AddRestriction</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>

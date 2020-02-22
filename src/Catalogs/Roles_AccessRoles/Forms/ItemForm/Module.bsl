@@ -1,6 +1,3 @@
-&AtServer
-Var RightsMap, PictureLibData Export;
- 
 &AtClient
 Var ArrayForViewEdit Export;
 
@@ -109,9 +106,7 @@ EndProcedure
 &AtClient
 Procedure UpdateRights(Command)
 	RolesEdit.GetItems().Clear();
-	Message("I" + CurrentDate());
 	UpdateRightsList(NOT MatrixUpdated);
-	Message("V" + CurrentDate());
 EndProcedure
 
 #Region RightsList
@@ -124,11 +119,8 @@ Procedure UpdateRightsList(OnlyReport)
 	ObjectData.Insert("SetRightsForNewNativeObjects", Object.SetRightsForNewNativeObjects);
 	ObjectData.Insert("SetRightsForAttributesAndTabularSectionsByDefault", Object.SetRightsForAttributesAndTabularSectionsByDefault);
 	ObjectData.Insert("SubordinateObjectsHaveIndependentRights", Object.SubordinateObjectsHaveIndependentRights);
-	Message("II" + CurrentDate());
 	TabDocMartix = Roles_RoleMatrix.GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport);
-	Message("III" + CurrentDate());
 	ValueToFormAttribute(RoleTree, "RolesEdit");
-	Message("IV" + CurrentDate());
 EndProcedure
 
 &AtClient
@@ -146,60 +138,6 @@ EndProcedure
 #Region Service
 
 #Region FlagStatus
-&AtClient
-Procedure FlagOnChange(Item)
-    RowID = Items.RolesEdit.CurrentRow;
-	
-	If RowID = Undefined Then
-		Return;
-	EndIf;
-	
-	ItemRow = RolesEdit.FindByID(RowID);
-	
-	If ItemRow[Item.Name] = 2 Then
-		ItemRow[Item.Name] = 0;
-	EndIf;
-	
-	If ItemRow.ObjectType = PredefinedValue("Enum.Roles_MetadataTypes.Subsystem") Then
-		SetFlag(ItemRow, Item, ArrayForViewEdit);
-	Else
-		Parent = ItemRow.GetParent();
-		While Parent <> Undefined Do
-			
-			If NOT Parent.ObjectSubtype = ItemRow.ObjectSubtype Then
-				Break;
-			EndIf;
-			
-			If Skip(Item, Parent) Then
-				Break;
-			EndIf;
-			Parent[Item.Name] = ?(isAllSet(ArrayForViewEdit, Item, ItemRow),
-						ItemRow[Item.Name], 3);
-			ItemRow = Parent;
-			Parent = ItemRow.GetParent();
-		EndDo;
-	EndIf;
-	
-	
-EndProcedure
-
-&AtClient
-Procedure SetFlag(ItemRow, Item, ArrayForViewEdit)
-    Childs = ItemRow.GetItems();
-	For Each ThisItem In Childs Do
-		
-		If NOT ThisItem.ObjectSubtype = ItemRow.ObjectSubtype Then
-			Break;
-		EndIf;
-		
-		If Skip(Item, ThisItem) Then
-			Continue;
-		EndIf;
-        ThisItem[Item.Name] = ItemRow[Item.Name];
-        SetFlag(ThisItem, Item, ArrayForViewEdit);
-    EndDo;
-EndProcedure
-
 &AtClient
 Function Skip(Val Item, Val ThisItem)
 	
@@ -235,22 +173,6 @@ Function Skip(Val Item, Val ThisItem)
 	EndIf;
 	Return False;
 EndFunction
-
-&AtClient
-Function isAllSet(Val ArrayForViewEdit, Val Item, Val ItemRow)
-    UpChilds = ItemRow.GetParent().GetItems();
-	For Each thisItem In UpChilds Do
-		
-		If Skip(Item, thisItem) Then
-			Continue;
-		EndIf;
-		
-        If NOT thisItem[Item.Name] = ItemRow[Item.Name] Then
-            Return False;
-        EndIf;
-    EndDo;
-    Return True;
-КонецФункции   
 #EndRegion
 
 &AtServer
@@ -300,6 +222,7 @@ Procedure RolesEditSelection(Item, SelectedRow, Field, StandardProcessing)
 	StandardProcessing = False;
 	CurrentRow = Items.RolesEdit.CurrentData;
 	SetFlags(CurrentRow, Field);
+	SetAddRestrictionEnabled (CurrentRow, Field.Name);
 EndProcedure
 
 &AtClient
@@ -349,10 +272,33 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined)
 		NewRow.RightName = PredefinedValue("Enum.Roles_Rights." + Field.Name);
 		NewRow.ObjectPath = CurrentRow.ObjectPath;
 		NewRow.RightValue = ?(CurrentRow[Field.Name] = 1, True, False);
-		NewRow.RowID = New UUID;
+			
+		RLSData = Field.Name = "Read"
+			OR Field.Name = "Insert"
+			OR Field.Name = "Update"
+			OR Field.Name = "Delete";
+		If RLSData Then
+			If CurrentRow["RLS" + Field.Name + "ID"] = "" Then
+				NewRow.RowID = New UUID;
+				CurrentRow["RLS" + Field.Name + "ID"] = NewRow.RowID;
+			Else
+				NewRow.RowID = CurrentRow["RLS" + Field.Name + "ID"];
+			EndIf;	
+		EndIf;
+		
 	EndIf;
 	
 EndProcedure
+
+&AtClient
+Procedure RestrictionByConditionConditionOpening(Item, StandardProcessing)
+	StandardProcessing = False;
+	Text = OpenFormModal("CommonForm.EditText", New Structure("Text", Item.Parent.CurrentData.Condition), ThisObject);
+	If NOT Text = Undefined Then
+		Item.Parent.CurrentData.Condition = Text;
+	EndIf;
+EndProcedure
+
 
 &AtClient
 Procedure SetEditedInfo(Row)
@@ -369,15 +315,30 @@ EndProcedure
 
 &AtClient
 Procedure RolesEditOnActivateCell(Item)
+	SetAddRestrictionEnabled (Item.CurrentData, Item.CurrentItem.Name);
+EndProcedure
 
-	If NOT (Item.CurrentItem.Name = "Read"
-		OR Item.CurrentItem.Name = "Insert"
-		OR Item.CurrentItem.Name = "Update"
-		OR Item.CurrentItem.Name = "Delete") Then
-			Return;
-	EndIf;
-	RightName = PredefinedValue("Enum.Roles_Rights." + Item.CurrentItem.Name);
+&AtClient
+Procedure SetAddRestrictionEnabled (CurrentData, ColumnName)
+
+	isRLSData = ColumnName = "Read"
+		OR ColumnName = "Insert"
+		OR ColumnName = "Update"
+		OR ColumnName = "Delete";
 	
+	If NOT isRLSData Then
+		RLSRowID = "";
+		Items.RestrictionByConditionMatrixAddRestriction.Enabled = False;
+		Return;
+	EndIf;
+	Items.RestrictionByConditionMatrixAddRestriction.Enabled = 
+					NOT CurrentData[ColumnName] = 0;
+	RLSRowID = CurrentData["RLS" + ColumnName + "ID"];
+	
+	If RLSRowID = "" Then
+		RLSRowID = New UUID;
+		CurrentData["RLS" + ColumnName + "ID"] = RLSRowID;
+	EndIf;
 	
 EndProcedure
 
@@ -387,11 +348,19 @@ Procedure GroupMainPagesOnCurrentPageChange(Item, CurrentPage)
 		AND NOT MatrixUpdated Then
 		
 		RolesEdit.GetItems().Clear();
-		Message("I" + CurrentDate());
 		UpdateRightsList(False);
 		MatrixUpdated = True;
-		Message("V" + CurrentDate());
 	EndIf;
 EndProcedure
+
+&AtClient
+Procedure AddRestriction(Command)
+	If NOT ValueIsFilled(RLSRowID) Then
+		Return;
+	EndIf;
+	NewRow = Object.RestrictionByCondition.Add();
+	NewRow.RowID = RLSRowID;
+EndProcedure
+
 
 ArrayForViewEdit = Roles_SettingsReUse.ArrayForViewEdit();
