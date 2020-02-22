@@ -411,6 +411,7 @@ Function CurrentRights(DataTables)
 			RightValue = New Structure;
 			RightValue.Insert("Value", Row.RightValue);
 			RightValue.Insert("RowID", Row.RowID);
+			RightValue.Insert("RLSisEmpty", DataTables.RestrictionByCondition.FindRows(New Structure("RowID", Row.RowID)).Count());
 			RightsStructure.Insert(Roles_Settings.MetaName(Row.RightName), RightValue);
 		EndDo;
 		RightMap.Insert(RowVT.ObjectPath, RightsStructure);
@@ -431,15 +432,19 @@ Procedure SetCurrentRights(Row, StrData)
 
 	If RightData.Property("Insert") Then
 		Row.RLSInsertID = RightData.Insert.RowID;
+		Row.RLSInsertIsEmpty = RightData.Insert.RLSisEmpty;
 	EndIf;
 	If RightData.Property("Read") Then
 		Row.RLSReadID = RightData.Read.RowID;
+		Row.RLSReadIsEmpty = RightData.Insert.RLSisEmpty;
 	EndIf;
 	If RightData.Property("Delete") Then
 		Row.RLSDeleteID = RightData.Delete.RowID;
+		Row.RLSDeleteIsEmpty = RightData.Insert.RLSisEmpty;
 	EndIf;
 	If RightData.Property("Update") Then
 		Row.RLSUpdateID = RightData.Update.RowID;
+		Row.RLSUpdateIsEmpty = RightData.Insert.RLSisEmpty;
 	EndIf;
 
 	Row.Edited = True;

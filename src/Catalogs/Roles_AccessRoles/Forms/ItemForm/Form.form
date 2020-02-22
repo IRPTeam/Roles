@@ -9928,6 +9928,74 @@
         <common>true</common>
       </edit>
     </columns>
+    <columns>
+      <name>RLSInsertIsEmpty</name>
+      <title>
+        <key>en</key>
+        <value>RLS Insert is empty</value>
+      </title>
+      <id>81</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>RLSReadIsEmpty</name>
+      <title>
+        <key>en</key>
+        <value>RLS Read is empty</value>
+      </title>
+      <id>82</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>RLSUpdateIsEmpty</name>
+      <title>
+        <key>en</key>
+        <value>RLS Update is empty</value>
+      </title>
+      <id>83</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>RLSDeleteIsEmpty</name>
+      <title>
+        <key>en</key>
+        <value>RLS Delete is empty</value>
+      </title>
+      <id>84</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
   </attributes>
   <attributes>
     <name>CurrentViewMode</name>
