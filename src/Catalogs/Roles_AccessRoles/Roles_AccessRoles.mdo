@@ -409,11 +409,4 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="1c0001a3-cee5-4480-b3d2-f4e7ff1ec8f5">
-    <name>MatrixTemplate</name>
-    <synonym>
-      <key>en</key>
-      <value>Matrix template</value>
-    </synonym>
-  </templates>
 </mdclass:Catalog>

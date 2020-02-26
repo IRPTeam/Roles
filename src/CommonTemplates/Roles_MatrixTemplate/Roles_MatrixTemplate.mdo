@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9fd3803-e271-4bf1-86ee-499173287902">
+  <name>Roles_MatrixTemplate</name>
+  <synonym>
+    <key>en</key>
+    <value>Matrix template</value>
+  </synonym>
+</mdclass:CommonTemplate>

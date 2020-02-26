@@ -680,6 +680,7 @@ Function MetaDataObjectNames() Export
 	Structure.Insert(Enums.Roles_MetadataTypes.Task, "Tasks");
 	Structure.Insert(Enums.Roles_MetadataTypes.WebService, "WebServices");
 	Structure.Insert(Enums.Roles_MetadataTypes.Role, "Roles");
+	Structure.Insert(Enums.Roles_MetadataTypes.ExternalDataSource, "ExternalDataSources");
 	Return Structure;
 EndFunction
 

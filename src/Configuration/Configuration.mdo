@@ -139,9 +139,14 @@
   <commonPictures>CommonPicture.Roles_WebService</commonPictures>
   <commonPictures>CommonPicture.Roles_Operation</commonPictures>
   <commonPictures>CommonPicture.Roles_URLTemplate</commonPictures>
+  <commonPictures>CommonPicture.Roles_ExternalDataSource</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_standardAuthenticationChange</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_sessionStandardAuthenticationChange</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_sessionOSAuthenticationChange</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_TemplateMetadataObject</commonTemplates>
+  <commonTemplates>CommonTemplate.Roles_MatrixTemplate</commonTemplates>
   <commonModules>CommonModule.Roles_UsersEvent</commonModules>
   <commonModules>CommonModule.Roles_Settings</commonModules>
   <commonModules>CommonModule.Roles_GenerateExtension</commonModules>

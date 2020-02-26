@@ -75,3 +75,8 @@ Function Skip(ObjectType, ObjectSubtype, RoleName) Export
 	EndIf;
 	Return False;
 EndFunction
+
+
+Function MatrixTemplates() Export
+	Return GetCommonTemplate("Roles_MatrixTemplate");
+EndFunction

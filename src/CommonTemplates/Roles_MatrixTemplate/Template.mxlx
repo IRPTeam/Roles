@@ -6,408 +6,409 @@
 		<languageInfo>
 			<id>en</id>
 			<code>English</code>
+			<description/>
 		</languageInfo>
 	</languageSettings>
 	<columns>
 		<size>67</size>
 		<columnsItem>
-			<index>1</index>
+			<index>0</index>
 			<column>
 				<formatIndex>1</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
-			<index>2</index>
+			<index>1</index>
 			<column>
 				<formatIndex>2</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>2</index>
+			<column>
+				<formatIndex>3</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>3</index>
 			<column>
-				<formatIndex>2</formatIndex>
+				<formatIndex>3</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>4</index>
 			<column>
-				<formatIndex>2</formatIndex>
+				<formatIndex>3</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>5</index>
 			<column>
-				<formatIndex>2</formatIndex>
+				<formatIndex>3</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>6</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>7</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>8</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>9</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>10</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>11</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>12</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>13</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>14</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>15</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>16</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>17</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>18</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>19</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>20</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>21</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>22</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>23</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>24</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>25</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>26</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>27</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>28</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>29</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>30</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>31</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>32</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>33</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>34</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>35</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>36</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>37</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>38</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>39</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>40</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>41</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>42</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>43</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>44</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>45</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>46</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>47</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>48</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>49</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>50</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>51</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>52</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>53</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>54</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>55</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>56</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>57</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>58</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>59</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>60</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>61</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>62</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>63</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>64</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>65</index>
 			<column>
-				<formatIndex>3</formatIndex>
+				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>66</index>
-			<column>
-				<formatIndex>3</formatIndex>
-			</column>
-		</columnsItem>
-		<columnsItem>
-			<index>0</index>
 			<column>
 				<formatIndex>4</formatIndex>
 			</column>
@@ -1152,24 +1153,28 @@
 				<c>
 					<f>76</f>
 					<parameter>Read</parameter>
+					<detailParameter>RLSReadID</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>77</f>
 					<parameter>Insert</parameter>
+					<detailParameter>RLSInsertID</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>77</f>
 					<parameter>Update</parameter>
+					<detailParameter>RLSUpdateID</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>78</f>
 					<parameter>Delete</parameter>
+					<detailParameter>RLSDeleteID</detailParameter>
 				</c>
 			</c>
 			<c>
@@ -1880,13 +1885,59 @@
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<c>
+				<c>
+					<f>103</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>104</f>
+					<parameter>RLSName</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>105</f>
+					<parameter>Fields</parameter>
+				</c>
+			</c>
+			<c>
+				<i>11</i>
+				<c>
+					<f>106</f>
+					<parameter>Condition</parameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>4</index>
+		<indexTo>26</indexTo>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
-	<height>3</height>
-	<vgRows>3</vgRows>
+	<height>4</height>
+	<vgRows>4</vgRows>
 	<merge>
 		<r>0</r>
 		<c>0</c>
 		<w>1</w>
+	</merge>
+	<merge>
+		<r>3</r>
+		<c>2</c>
+		<w>8</w>
+	</merge>
+	<merge>
+		<r>3</r>
+		<c>11</c>
+		<w>55</w>
 	</merge>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Footer</name>
@@ -1909,6 +1960,16 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
+		<name>RLS</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>3</beginRow>
+			<endRow>3</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
 		<name>Row</name>
 		<area>
 			<type>Rows</type>
@@ -1924,10 +1985,16 @@
 	<line width="2" gap="false">
 		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
 	</line>
+	<line width="1" gap="false">
+		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
+	</line>
 	<font faceName="Arial" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Microsoft Sans Serif" height="8" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<format>
+		<width>23</width>
+	</format>
 	<format>
 		<width>207</width>
 		<columnSizeChange>QuickChange</columnSizeChange>
@@ -1938,9 +2005,6 @@
 	</format>
 	<format>
 		<width>24</width>
-	</format>
-	<format>
-		<width>23</width>
 	</format>
 	<format>
 		<height>60</height>
@@ -3234,199 +3298,311 @@
 	<format>
 		<topBorder>1</topBorder>
 	</format>
+	<format>
+		<font>0</font>
+		<leftBorder>0</leftBorder>
+		<topBorder>2</topBorder>
+		<bottomBorder>2</bottomBorder>
+		<height>60</height>
+		<borderColor>#333333</borderColor>
+		<width>72</width>
+		<verticalAlignment>Top</verticalAlignment>
+		<textColor>#333333</textColor>
+		<backColor>#FFDEAD</backColor>
+		<columnSizeChange>QuickChange</columnSizeChange>
+	</format>
+	<format>
+		<font>0</font>
+		<topBorder>2</topBorder>
+		<bottomBorder>2</bottomBorder>
+		<height>60</height>
+		<borderColor>#333333</borderColor>
+		<width>207</width>
+		<verticalAlignment>Top</verticalAlignment>
+		<textColor>#333333</textColor>
+		<backColor>#FFDEAD</backColor>
+		<fillType>Parameter</fillType>
+		<columnSizeChange>QuickChange</columnSizeChange>
+		<pictureSizeMode>RealSize</pictureSizeMode>
+		<picHorizontalAlignment>Left</picHorizontalAlignment>
+		<picVerticalAlignment>Top</picVerticalAlignment>
+	</format>
+	<format>
+		<leftBorder>1</leftBorder>
+		<topBorder>2</topBorder>
+		<bottomBorder>2</bottomBorder>
+		<width>23</width>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<backColor>style:ToolTipBackColor</backColor>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<leftBorder>1</leftBorder>
+		<topBorder>2</topBorder>
+		<rightBorder>1</rightBorder>
+		<bottomBorder>2</bottomBorder>
+		<horizontalAlignment>Justify</horizontalAlignment>
+		<backColor>style:ToolTipBackColor</backColor>
+		<fillType>Parameter</fillType>
+	</format>
 	<picture>
-		<picture ref="v8ui:Roles_right_read"></picture>
+		<index>0</index>
+		<picture ref="v8ui:Roles_right_read"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_insert"></picture>
+		<index>1</index>
+		<picture ref="v8ui:Roles_right_insert"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_update"></picture>
+		<index>2</index>
+		<picture ref="v8ui:Roles_right_update"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_delete"></picture>
+		<index>3</index>
+		<picture ref="v8ui:Roles_right_delete"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Find"></picture>
+		<index>4</index>
+		<picture ref="v8ui:Find"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_edit"></picture>
+		<index>5</index>
+		<picture ref="v8ui:Roles_right_edit"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_inputByString_dark"></picture>
+		<index>6</index>
+		<picture ref="v8ui:Roles_right_inputByString_dark"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_use"></picture>
+		<index>7</index>
+		<picture ref="v8ui:Roles_right_use"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_totalsControl_dark"></picture>
+		<index>8</index>
+		<picture ref="v8ui:Roles_right_totalsControl_dark"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveDelete"></picture>
+		<index>9</index>
+		<picture ref="v8ui:Roles_right_interactiveDelete"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveInsert"></picture>
+		<index>10</index>
+		<picture ref="v8ui:Roles_right_interactiveInsert"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveSetDeletionMark"></picture>
+		<index>11</index>
+		<picture ref="v8ui:Roles_right_interactiveSetDeletionMark"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveClearDeletionMark"></picture>
+		<index>12</index>
+		<picture ref="v8ui:Roles_right_interactiveClearDeletionMark"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveDelete"></picture>
+		<index>13</index>
+		<picture ref="v8ui:Roles_right_interactiveDelete"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_posting"></picture>
+		<index>14</index>
+		<picture ref="v8ui:Roles_right_posting"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_undoPosting"></picture>
+		<index>15</index>
+		<picture ref="v8ui:Roles_right_undoPosting"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactivePosting"></picture>
+		<index>16</index>
+		<picture ref="v8ui:Roles_right_interactivePosting"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveUndoPosting"></picture>
+		<index>17</index>
+		<picture ref="v8ui:Roles_right_interactiveUndoPosting"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactivePostingRegular"></picture>
+		<index>18</index>
+		<picture ref="v8ui:Roles_right_interactivePostingRegular"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveChangeOfPosted"></picture>
+		<index>19</index>
+		<picture ref="v8ui:Roles_right_interactiveChangeOfPosted"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveDeletePredefinedData"></picture>
+		<index>20</index>
+		<picture ref="v8ui:Roles_right_interactiveDeletePredefinedData"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveSetDeletionMarkPredefinedData"></picture>
+		<index>21</index>
+		<picture ref="v8ui:Roles_right_interactiveSetDeletionMarkPredefinedData"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveClearDeletionMarkPredefinedData"></picture>
+		<index>22</index>
+		<picture ref="v8ui:Roles_right_interactiveClearDeletionMarkPredefinedData"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveDeletePredefinedData"></picture>
+		<index>23</index>
+		<picture ref="v8ui:Roles_right_interactiveDeletePredefinedData"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_get"></picture>
+		<index>24</index>
+		<picture ref="v8ui:Roles_right_get"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_set"></picture>
+		<index>25</index>
+		<picture ref="v8ui:Roles_right_set"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_administration"></picture>
+		<index>26</index>
+		<picture ref="v8ui:Roles_right_administration"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_dataAdministration"></picture>
+		<index>27</index>
+		<picture ref="v8ui:Roles_right_dataAdministration"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_updateDataBaseConfiguration"></picture>
+		<index>28</index>
+		<picture ref="v8ui:Roles_right_updateDataBaseConfiguration"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_exclusiveMode"></picture>
+		<index>29</index>
+		<picture ref="v8ui:Roles_right_exclusiveMode"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_activeUsers"></picture>
+		<index>30</index>
+		<picture ref="v8ui:Roles_right_activeUsers"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_eventLog"></picture>
+		<index>31</index>
+		<picture ref="v8ui:Roles_right_eventLog"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_thinClient"></picture>
+		<index>32</index>
+		<picture ref="v8ui:Roles_right_thinClient"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_webClient"></picture>
+		<index>33</index>
+		<picture ref="v8ui:Roles_right_webClient"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_mobileClient"></picture>
+		<index>34</index>
+		<picture ref="v8ui:Roles_right_mobileClient"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_thickClient"></picture>
+		<index>35</index>
+		<picture ref="v8ui:Roles_right_thickClient"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_externalConnection"></picture>
+		<index>36</index>
+		<picture ref="v8ui:Roles_right_externalConnection"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_automation_dark"></picture>
+		<index>37</index>
+		<picture ref="v8ui:Roles_right_automation_dark"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_allFunctionsMode"></picture>
+		<index>38</index>
+		<picture ref="v8ui:Roles_right_allFunctionsMode"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_collaborationSystemInfoBaseRegistration_dark"></picture>
+		<index>39</index>
+		<picture ref="v8ui:Roles_right_collaborationSystemInfoBaseRegistration_dark"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_saveUserData"></picture>
+		<index>40</index>
+		<picture ref="v8ui:Roles_right_saveUserData"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_configuration_extension_administration"></picture>
+		<index>41</index>
+		<picture ref="v8ui:Roles_configuration_extension_administration"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveOpenExtDataProcessors_dark"></picture>
+		<index>42</index>
+		<picture ref="v8ui:Roles_right_interactiveOpenExtDataProcessors_dark"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveOpenExtReports"></picture>
+		<index>43</index>
+		<picture ref="v8ui:Roles_right_interactiveOpenExtReports"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_output"></picture>
+		<index>44</index>
+		<picture ref="v8ui:Roles_right_output"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Select"></picture>
+		<index>45</index>
+		<picture ref="v8ui:Select"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Select"></picture>
+		<index>46</index>
+		<picture ref="v8ui:Select"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Select"></picture>
+		<index>47</index>
+		<picture ref="v8ui:Select"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Select"></picture>
+		<index>48</index>
+		<picture ref="v8ui:Select"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Select"></picture>
+		<index>49</index>
+		<picture ref="v8ui:Select"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Select"></picture>
+		<index>50</index>
+		<picture ref="v8ui:Select"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_readDataHistory"></picture>
+		<index>51</index>
+		<picture ref="v8ui:Roles_right_readDataHistory"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_viewDataHistory_dark"></picture>
+		<index>52</index>
+		<picture ref="v8ui:Roles_right_viewDataHistory_dark"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_updateDataHistoryOfMissingData"></picture>
+		<index>53</index>
+		<picture ref="v8ui:Roles_right_updateDataHistoryOfMissingData"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_updateDataHistory"></picture>
+		<index>54</index>
+		<picture ref="v8ui:Roles_right_updateDataHistory"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_updateDataHistoryOfMissingData"></picture>
+		<index>55</index>
+		<picture ref="v8ui:Roles_right_updateDataHistoryOfMissingData"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_updateDataHistorySettings"></picture>
+		<index>56</index>
+		<picture ref="v8ui:Roles_right_updateDataHistorySettings"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_updateDataHistoryVersionComment"></picture>
+		<index>57</index>
+		<picture ref="v8ui:Roles_right_updateDataHistoryVersionComment"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_editDataHistoryVersionComment"></picture>
+		<index>58</index>
+		<picture ref="v8ui:Roles_right_editDataHistoryVersionComment"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_switchToDataHistoryVersion_dark"></picture>
+		<index>59</index>
+		<picture ref="v8ui:Roles_right_switchToDataHistoryVersion_dark"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_start"></picture>
+		<index>60</index>
+		<picture ref="v8ui:Roles_right_start"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveStart"></picture>
+		<index>61</index>
+		<picture ref="v8ui:Roles_right_interactiveStart"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveActivate"></picture>
+		<index>62</index>
+		<picture ref="v8ui:Roles_right_interactiveActivate"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_execute"></picture>
+		<index>63</index>
+		<picture ref="v8ui:Roles_right_execute"/>
 	</picture>
 	<picture>
-		<picture ref="v8ui:Roles_right_interactiveExecute"></picture>
+		<index>64</index>
+		<picture ref="v8ui:Roles_right_interactiveExecute"/>
 	</picture>
 </document>

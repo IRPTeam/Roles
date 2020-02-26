@@ -45,12 +45,18 @@ Procedure UpdateRoleExt(Settings) Export
 		RightObject.Description = RoleInfo.Role.Properties.Name;
 		RightObject.ConfigRoles = True;
 		
-		For Each Lang In RoleInfo.Role.Properties.Synonym.item Do
+		If TypeOf(RoleInfo.Role.Properties.Synonym.item) = Type("XDTODataObject") Then
+			Lang = RoleInfo.Role.Properties.Synonym.item;
 			NewLang = RightObject.LangInfo.Add();
 			NewLang.LangCode = Lang.lang;
 			NewLang.LangDescription = Lang.Content;
-		EndDo;
-		
+		Else
+			For Each Lang In RoleInfo.Role.Properties.Synonym.item Do
+				NewLang = RightObject.LangInfo.Add();
+				NewLang.LangCode = Lang.lang;
+				NewLang.LangDescription = Lang.Content;
+			EndDo;
+		EndIf;
 		If TypeOf(RoleInfo.Role.Properties.Comment) = Type("String") Then
 			RightObject.Comment = RoleInfo.Role.Properties.Comment;
 		Else
@@ -80,7 +86,16 @@ Procedure UpdateRoleExt(Settings) Export
 				NewObject.ObjectName = ObjectName;
 				NewObject.ObjectType = ObjectType;
 				NewObject.ObjectPath = Object.Name;
-				NewObject.RightName = Enums.Roles_Rights[ObjectRight.name];
+				Try
+					If ObjectRight.name = "AllFunctionsMode" Then
+						NewObject.RightName = Enums.Roles_Rights.TechnicalSpecialistMode;
+					Else
+						NewObject.RightName = Enums.Roles_Rights[ObjectRight.name];
+					EndIf;
+			Except
+				Message(ObjectRight.name);
+				EndTry;
+				
 				NewObject.RowID = New UUID();
 				NewObject.RightValue = ObjectRight.value;
 				For Each RestrictionByCondition In ObjectRight.restrictionByCondition Do

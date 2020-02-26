@@ -119,7 +119,7 @@ Procedure UpdateRightsList(OnlyReport)
 	ObjectData.Insert("SetRightsForNewNativeObjects", Object.SetRightsForNewNativeObjects);
 	ObjectData.Insert("SetRightsForAttributesAndTabularSectionsByDefault", Object.SetRightsForAttributesAndTabularSectionsByDefault);
 	ObjectData.Insert("SubordinateObjectsHaveIndependentRights", Object.SubordinateObjectsHaveIndependentRights);
-	TabDocMartix = Roles_RoleMatrix.GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport);
+	TabDocMartix = Roles_RoleMatrix.GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, NOT ShowAllObjects);
 	ValueToFormAttribute(RoleTree, "RolesEdit");
 EndProcedure
 
@@ -341,6 +341,12 @@ Procedure SetAddRestrictionEnabled (CurrentData, ColumnName)
 	EndIf;
 	
 EndProcedure
+
+&AtClient
+Procedure TabDocMartixDetailProcessing(Item, Details, StandardProcessing, AdditionalParameters)
+	StandardProcessing = False;
+EndProcedure
+
 
 &AtClient
 Procedure GroupMainPagesOnCurrentPageChange(Item, CurrentPage)

@@ -101,6 +101,61 @@
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
     </items>
+    <items xsi:type="form:FormField">
+      <name>ShowAllObjects</name>
+      <id>504</id>
+      <title>
+        <key>en</key>
+        <value>Show</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>ShowAllObjects</segments>
+        </paths>
+      </dataPath>
+      <extendedTooltip>
+        <name>ShowAllObjectsExtendedTooltip</name>
+        <id>506</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ShowAllObjectsContextMenu</name>
+        <id>505</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+        <checkBoxType>Tumbler</checkBoxType>
+        <editFormat>
+          <key>en</key>
+          <value>BF='Only changed'; BT='All objects'</value>
+        </editFormat>
+      </extInfo>
+    </items>
     <items xsi:type="form:Button">
       <name>UpdateRights</name>
       <id>458</id>
@@ -212,6 +267,10 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
+          <handlers>
+            <event>DetailProcessing</event>
+            <name>TabDocMartixDetailProcessing</name>
+          </handlers>
           <width>50</width>
           <autoMaxWidth>true</autoMaxWidth>
           <height>10</height>
@@ -219,6 +278,7 @@
           <horizontalStretch>true</horizontalStretch>
           <verticalStretch>true</verticalStretch>
           <showHeaders>true</showHeaders>
+          <pointerType>Special</pointerType>
           <verticalScrollBar>ScrollAuto</verticalScrollBar>
           <horizontalScrollBar>ScrollAuto</horizontalScrollBar>
           <protection>true</protection>
@@ -5300,6 +5360,198 @@
             </extInfo>
           </items>
           <items xsi:type="form:FormGroup">
+            <name>RolesEditGroupExternalData</name>
+            <id>493</id>
+            <items xsi:type="form:FormField">
+              <name>RolesEditStandardAuthenticationChange</name>
+              <id>495</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:MultiLanguageDataPath">
+                <paths xsi:type="form:DataPath">
+                  <segments>RolesEdit.StandardAuthenticationChange</segments>
+                </paths>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <extendedTooltip>
+                <name>RolesEditStandardAuthenticationChangeExtendedTooltip</name>
+                <id>497</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>RolesEditStandardAuthenticationChangeContextMenu</name>
+                <id>496</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>LabelField</type>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerPicture xsi:type="core:PictureRef">
+                <picture>CommonPicture.Roles_right_standardAuthenticationChange</picture>
+              </headerPicture>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:LabelFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>RolesEditSessionStandardAuthenticationChange</name>
+              <id>498</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:MultiLanguageDataPath">
+                <paths xsi:type="form:DataPath">
+                  <segments>RolesEdit.SessionStandardAuthenticationChange</segments>
+                </paths>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <extendedTooltip>
+                <name>RolesEditSessionStandardAuthenticationChangeExtendedTooltip</name>
+                <id>500</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>RolesEditSessionStandardAuthenticationChangeContextMenu</name>
+                <id>499</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>LabelField</type>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerPicture xsi:type="core:PictureRef">
+                <picture>CommonPicture.Roles_right_sessionStandardAuthenticationChange</picture>
+              </headerPicture>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:LabelFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>RolesEditSessionOSAuthenticationChange</name>
+              <id>501</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:MultiLanguageDataPath">
+                <paths xsi:type="form:DataPath">
+                  <segments>RolesEdit.SessionOSAuthenticationChange</segments>
+                </paths>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <extendedTooltip>
+                <name>RolesEditSessionOSAuthenticationChangeExtendedTooltip</name>
+                <id>503</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>RolesEditSessionOSAuthenticationChangeContextMenu</name>
+                <id>502</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>LabelField</type>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerPicture xsi:type="core:PictureRef">
+                <picture>CommonPicture.Roles_right_sessionOSAuthenticationChange</picture>
+              </headerPicture>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:LabelFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+              </extInfo>
+            </items>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>en</key>
+              <value>External Data</value>
+            </title>
+            <toolTip>
+              <key>en</key>
+              <value>Roles edit group external data</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>RolesEditGroupExternalDataExtendedTooltip</name>
+              <id>494</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>ColumnGroup</type>
+            <extInfo xsi:type="form:ColumnGroupExtInfo">
+              <showTitle>true</showTitle>
+              <showInHeader>true</showInHeader>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
             <name>RolesEditGroupTask</name>
             <id>291</id>
             <items xsi:type="form:FormField">
@@ -5673,43 +5925,12 @@
           <autoCommandBar>
             <name>CommandBar</name>
             <id>86</id>
-            <items xsi:type="form:Button">
-              <name>RolesEditUpdateRights</name>
-              <id>273</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>RolesEditUpdateRightsExtendedTooltip</name>
-                <id>274</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <commandName>Form.Command.UpdateRights</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
             <horizontalAlign>Left</horizontalAlign>
-            <autoFill>true</autoFill>
           </autoCommandBar>
           <handlers>
             <event>Selection</event>
@@ -5919,21 +6140,21 @@
           </dataPath>
           <titleLocation>None</titleLocation>
           <excludedCommands>Add</excludedCommands>
-          <excludedCommands>Copy</excludedCommands>
+          <excludedCommands>CancelSearch</excludedCommands>
           <excludedCommands>Change</excludedCommands>
+          <excludedCommands>Copy</excludedCommands>
+          <excludedCommands>CopyToClipboard</excludedCommands>
           <excludedCommands>Delete</excludedCommands>
           <excludedCommands>EndEdit</excludedCommands>
           <excludedCommands>Find</excludedCommands>
-          <excludedCommands>CancelSearch</excludedCommands>
-          <excludedCommands>ShowRowRearrangement</excludedCommands>
-          <excludedCommands>MoveUp</excludedCommands>
           <excludedCommands>MoveDown</excludedCommands>
+          <excludedCommands>MoveUp</excludedCommands>
+          <excludedCommands>OutputList</excludedCommands>
+          <excludedCommands>SelectAll</excludedCommands>
+          <excludedCommands>ShowMultipleSelection</excludedCommands>
+          <excludedCommands>ShowRowRearrangement</excludedCommands>
           <excludedCommands>SortListAsc</excludedCommands>
           <excludedCommands>SortListDesc</excludedCommands>
-          <excludedCommands>OutputList</excludedCommands>
-          <excludedCommands>CopyToClipboard</excludedCommands>
-          <excludedCommands>ShowMultipleSelection</excludedCommands>
-          <excludedCommands>SelectAll</excludedCommands>
           <items xsi:type="form:FormField">
             <name>RestrictionByConditionFieldsMatrix</name>
             <id>485</id>
@@ -5943,9 +6164,6 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.RestrictionByCondition.Fields</segments>
-              </paths>
               <paths xsi:type="form:DataPath">
                 <segments>Object.RestrictionByCondition.Fields</segments>
               </paths>
@@ -5997,9 +6215,6 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.RestrictionByCondition.Condition</segments>
-              </paths>
               <paths xsi:type="form:DataPath">
                 <segments>Object.RestrictionByCondition.Condition</segments>
               </paths>
@@ -6252,6 +6467,7 @@
           <rowsPicture xsi:type="core:PictureRef">
             <picture>CommonPicture.Roles_rls_blank</picture>
           </rowsPicture>
+          <rowFilter xsi:type="core:UndefinedValue"/>
         </items>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -9929,10 +10145,10 @@
       </edit>
     </columns>
     <columns>
-      <name>RLSInsertIsEmpty</name>
+      <name>RLSInsertFilled</name>
       <title>
         <key>en</key>
-        <value>RLS Insert is empty</value>
+        <value>RLS Insert Filled</value>
       </title>
       <id>81</id>
       <valueType>
@@ -9946,10 +10162,10 @@
       </edit>
     </columns>
     <columns>
-      <name>RLSReadIsEmpty</name>
+      <name>RLSReadFilled</name>
       <title>
         <key>en</key>
-        <value>RLS Read is empty</value>
+        <value>RLS Read Filled</value>
       </title>
       <id>82</id>
       <valueType>
@@ -9963,10 +10179,10 @@
       </edit>
     </columns>
     <columns>
-      <name>RLSUpdateIsEmpty</name>
+      <name>RLSUpdateFilled</name>
       <title>
         <key>en</key>
-        <value>RLS Update is empty</value>
+        <value>RLS Update Filled</value>
       </title>
       <id>83</id>
       <valueType>
@@ -9980,14 +10196,77 @@
       </edit>
     </columns>
     <columns>
-      <name>RLSDeleteIsEmpty</name>
+      <name>RLSDeleteFilled</name>
       <title>
         <key>en</key>
-        <value>RLS Delete is empty</value>
+        <value>RLS Delete Filled</value>
       </title>
       <id>84</id>
       <valueType>
         <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>StandardAuthenticationChange</name>
+      <title>
+        <key>en</key>
+        <value>Standard authentication change</value>
+      </title>
+      <id>80</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>SessionStandardAuthenticationChange</name>
+      <title>
+        <key>en</key>
+        <value>Session standard authentication change</value>
+      </title>
+      <id>85</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>SessionOSAuthenticationChange</name>
+      <title>
+        <key>en</key>
+        <value>Session OSAuthentication change</value>
+      </title>
+      <id>86</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </valueType>
       <view>
         <common>true</common>
@@ -10082,6 +10361,23 @@
       <stringQualifiers>
         <length>36</length>
       </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ShowAllObjects</name>
+    <title>
+      <key>en</key>
+      <value>Show all objects</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Boolean</types>
     </valueType>
     <view>
       <common>true</common>

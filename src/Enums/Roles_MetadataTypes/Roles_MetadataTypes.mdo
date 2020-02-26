@@ -208,4 +208,11 @@
       <value>Web service</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="316d18be-d617-487d-b3f5-445771078642">
+    <name>ExternalDataSource</name>
+    <synonym>
+      <key>en</key>
+      <value>External data source</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

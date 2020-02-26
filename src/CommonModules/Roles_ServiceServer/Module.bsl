@@ -31,3 +31,17 @@ Function HashMD5(Data) Export
     Return HashSumStringUUID;
     
 EndFunction
+
+
+Function HeadTemplate() Export
+	Return Roles_SettingsReUse.MatrixTemplates().GetArea("Head");
+EndFunction
+Function RowTemplate() Export
+	Return Roles_SettingsReUse.MatrixTemplates().GetArea("Row");
+EndFunction
+Function RLSTemplate() Export
+	Return Roles_SettingsReUse.MatrixTemplates().GetArea("RLS");
+EndFunction
+Function FooterTemplate() Export
+	Return Roles_SettingsReUse.MatrixTemplates().GetArea("Footer");
+EndFunction

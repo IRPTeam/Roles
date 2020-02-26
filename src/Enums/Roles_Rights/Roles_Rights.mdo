@@ -467,4 +467,25 @@
       <value>Web client</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="a3eefb29-f5cc-4572-8aa2-8fa004f37d14">
+    <name>StandardAuthenticationChange</name>
+    <synonym>
+      <key>en</key>
+      <value>Standard authentication change</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bba1b4e3-88f8-434e-9906-e630da57d66f">
+    <name>SessionStandardAuthenticationChange</name>
+    <synonym>
+      <key>en</key>
+      <value>Session standard authentication change</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="72a15c85-13d0-4034-b65e-ed22ad315311">
+    <name>SessionOSAuthenticationChange</name>
+    <synonym>
+      <key>en</key>
+      <value>Session OSAuthentication change</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
