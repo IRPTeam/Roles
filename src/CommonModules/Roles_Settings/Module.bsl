@@ -649,6 +649,9 @@ Function MetaDataObject() Export
 	WebService = New Structure;
 	MetaDataObject.Insert("WebService", WebService);	
 	
+	Configuration = New Structure;
+	MetaDataObject.Insert("Configuration", Configuration);
+	
 	Return MetaDataObject;
 EndFunction
 

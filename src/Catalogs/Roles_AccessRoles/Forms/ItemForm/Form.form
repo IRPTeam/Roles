@@ -445,10 +445,6 @@
               </paths>
             </dataPath>
             <titleLocation>Right</titleLocation>
-            <handlers>
-              <event>OnChange</event>
-              <name>SetRightsForAttributesAndTabularSectionsByDefaultOnChange</name>
-            </handlers>
             <extendedTooltip>
               <name>SetRightsForAttributesAndTabularSectionsByDefaultExtendedTooltip</name>
               <id>331</id>
@@ -1165,10 +1161,6 @@
                 <key>en</key>
                 <value>Read</value>
               </toolTip>
-              <handlers>
-                <event>OnChange</event>
-                <name>ReadOnChange</name>
-              </handlers>
               <extendedTooltip>
                 <name>ReadExtendedTooltip</name>
                 <id>109</id>
@@ -5945,18 +5937,6 @@
             <name>RolesEditBeforeDeleteRow</name>
           </handlers>
           <handlers>
-            <event>OnActivateRow</event>
-            <name>RolesEditOnActivateRow</name>
-          </handlers>
-          <handlers>
-            <event>OnActivateField</event>
-            <name>RolesEditOnActivateField</name>
-          </handlers>
-          <handlers>
-            <event>BeforeExpand</event>
-            <name>RolesEditBeforeExpand</name>
-          </handlers>
-          <handlers>
             <event>OnActivateCell</event>
             <name>RolesEditOnActivateCell</name>
           </handlers>
@@ -6665,10 +6645,6 @@
               <handlers>
                 <event>StartChoice</event>
                 <name>RightsObjectNameStartChoice</name>
-              </handlers>
-              <handlers>
-                <event>StartListChoice</event>
-                <name>RightsObjectNameStartListChoice</name>
               </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -8246,10 +8222,6 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
-  <handlers>
-    <event>OnOpen</event>
-    <name>OnOpen</name>
-  </handlers>
   <handlers>
     <event>OnCreateAtServer</event>
     <name>OnCreateAtServer</name>
@@ -10428,10 +10400,5 @@
     <navigationPanel/>
     <commandBar/>
   </commandInterface>
-  <extInfo xsi:type="form:CatalogFormExtInfo">
-    <handlers>
-      <event>BeforeWriteAtServer</event>
-      <name>BeforeWriteAtServer</name>
-    </handlers>
-  </extInfo>
+  <extInfo xsi:type="form:CatalogFormExtInfo"/>
 </form:Form>

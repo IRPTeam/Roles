@@ -25,11 +25,11 @@ EndProcedure
 
 &AtServer
 Procedure AfterWriteAtServer(CurrentObject, WriteParameters)
-	If CurrentObject.AdditionalProperties.Property("UsersEventOnWriteResult") Then
-		For Each Row In CurrentObject.AdditionalProperties.UsersEventOnWriteResult.ArrayOfResults Do
-			CommonFunctionsClientServer.ShowUsersMessage(Row.Message);
-		EndDo;
-	EndIf;
+//	If CurrentObject.AdditionalProperties.Property("UsersEventOnWriteResult") Then
+//		For Each Row In CurrentObject.AdditionalProperties.UsersEventOnWriteResult.ArrayOfResults Do
+////			CommonFunctionsClientServer.ShowUsersMessage(Row.Message);
+//		EndDo;
+//	EndIf;
 EndProcedure
 
 &AtServer

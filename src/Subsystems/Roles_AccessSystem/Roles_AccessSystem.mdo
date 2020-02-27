@@ -16,5 +16,18 @@
   <content>Catalog.Roles_AccessProfiles</content>
   <content>Catalog.Users</content>
   <content>Catalog.Roles_AccessGroups</content>
-  <content>DataProcessor.Roles_RolesEditor</content>
+  <content>Catalog.Roles_Templates</content>
+  <content>CommonModule.Roles_Settings</content>
+  <content>CommonModule.Roles_GenerateExtension</content>
+  <content>CommonModule.Roles_SettingsReUse</content>
+  <content>CommonModule.Roles_ExportAndLoadCurrentRoles</content>
+  <content>CommonModule.Roles_ServiceServer</content>
+  <content>CommonModule.Roles_RoleMatrix</content>
+  <content>CommonForm.EditText</content>
+  <content>CommonForm.ConnectionSettingsForm</content>
+  <content>CommonCommand.Roles_UpdateExtension</content>
+  <content>CommonCommand.Roles_LoadRolesFromXML</content>
+  <content>CommonTemplate.Roles_TemplateDB</content>
+  <content>CommonTemplate.Roles_TemplateMetadataObject</content>
+  <content>CommonTemplate.Roles_MatrixTemplate</content>
 </mdclass:Subsystem>

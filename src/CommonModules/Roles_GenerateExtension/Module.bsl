@@ -47,7 +47,11 @@ Procedure UpdateRoleExt_CreateRolesXML(Path)
 		|	""AccRoles_"" + Roles_AccessRoles.Description AS RoleName,
 		|	Roles_AccessRoles.Ref AS Ref
 		|FROM
-		|	Catalog.Roles_AccessRoles AS Roles_AccessRoles";
+		|	Catalog.Roles_AccessRoles AS Roles_AccessRoles
+		|WHERE
+		|	NOT Roles_AccessRoles.ConfigRoles
+		|	AND
+		|	NOT Roles_AccessRoles.DeletionMark";
 	
 	RolesList = Query.Execute().Unload();
 	RoleTemplate = UpdateRoleExt_CreateRolesXML_RolesTemplate(Path);
@@ -96,8 +100,9 @@ Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 		|	Catalog.Roles_AccessRoles.Rights AS Roles_AccessRolesRights
 		|		LEFT JOIN Catalog.Roles_AccessRoles.RestrictionByCondition AS Roles_AccessRolesRestrictionByCondition
 		|		ON (Roles_AccessRolesRestrictionByCondition.Ref = Roles_AccessRolesRights.Ref)
-		|			AND (Roles_AccessRolesRestrictionByCondition.RowID = Roles_AccessRolesRights.RowID)
-		|TOTALS BY
+		|		AND (Roles_AccessRolesRestrictionByCondition.RowID = Roles_AccessRolesRights.RowID)
+		|TOTALS
+		|BY
 		|	ObjectType,
 		|	ObjectName,
 		|	RightName";
@@ -195,6 +200,10 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|	Roles_AccessRolesRights.ObjectName
 		|FROM
 		|	Catalog.Roles_AccessRoles.Rights AS Roles_AccessRolesRights
+		|WHERE
+		|	NOT Roles_AccessRolesRights.Ref.ConfigRoles
+		|	AND
+		|	NOT Roles_AccessRolesRights.Ref.DeletionMark
 		|
 		|UNION ALL
 		|
@@ -202,7 +211,11 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|	VALUE(Enum.Roles_MetadataTypes.Role),
 		|	""AccRoles_"" + Roles_AccessRoles.Description
 		|FROM
-		|	Catalog.Roles_AccessRoles AS Roles_AccessRoles";
+		|	Catalog.Roles_AccessRoles AS Roles_AccessRoles
+		|WHERE
+		|	NOT Roles_AccessRoles.DeletionMark
+		|	AND
+		|	NOT Roles_AccessRoles.ConfigRoles";
 	
 	QueryResult = Query.Execute().Unload();
 	

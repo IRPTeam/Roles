@@ -15,8 +15,6 @@ Procedure UpdateRoleExt(Settings) Export
 		
 	EndIf;
 	
-	BeginTransaction();
-	
 	Rights = FindFiles(Settings.PathToXML + "Roles", "*.xml", False);
 	
 	For Each Right In Rights Do
@@ -86,22 +84,18 @@ Procedure UpdateRoleExt(Settings) Export
 				NewObject.ObjectName = ObjectName;
 				NewObject.ObjectType = ObjectType;
 				NewObject.ObjectPath = Object.Name;
-				Try
-					If ObjectRight.name = "AllFunctionsMode" Then
-						NewObject.RightName = Enums.Roles_Rights.TechnicalSpecialistMode;
-					Else
-						NewObject.RightName = Enums.Roles_Rights[ObjectRight.name];
-					EndIf;
-			Except
-				Message(ObjectRight.name);
-				EndTry;
+				If ObjectRight.name = "AllFunctionsMode" Then
+					NewObject.RightName = Enums.Roles_Rights.TechnicalSpecialistMode;
+				Else
+					NewObject.RightName = Enums.Roles_Rights[ObjectRight.name];
+				EndIf;
 				
 				NewObject.RowID = New UUID();
 				NewObject.RightValue = ObjectRight.value;
 				For Each RestrictionByCondition In ObjectRight.restrictionByCondition Do
 					Condition = RightObject.RestrictionByCondition.Add();
 					Condition.RowID = NewObject.RowID;
-					Condition.Condition = RestrictionByCondition.condition
+					Condition.Condition = RestrictionByCondition.condition;
 				EndDo;
 				
 			EndDo;
@@ -133,5 +127,4 @@ Procedure UpdateRoleExt(Settings) Export
 		EndDo;
 		RightObject.Write();
 	EndDo;	
-	CommitTransaction();
 EndProcedure
