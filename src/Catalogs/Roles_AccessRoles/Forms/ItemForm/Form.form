@@ -5355,8 +5355,12 @@
             <name>RolesEditGroupExternalData</name>
             <id>493</id>
             <items xsi:type="form:FormField">
-              <name>RolesEditStandardAuthenticationChange</name>
+              <name>StandardAuthenticationChange</name>
               <id>495</id>
+              <title>
+                <key>en</key>
+                <value>Standard authentication change</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5367,7 +5371,14 @@
                   <segments>RolesEdit.StandardAuthenticationChange</segments>
                 </paths>
               </dataPath>
+              <titleBackColor xsi:type="core:ColorRef">
+                <color>Web.Tomato</color>
+              </titleBackColor>
               <titleLocation>None</titleLocation>
+              <toolTip>
+                <key>en</key>
+                <value>Standard authentication change</value>
+              </toolTip>
               <extendedTooltip>
                 <name>RolesEditStandardAuthenticationChangeExtendedTooltip</name>
                 <id>497</id>
@@ -5404,11 +5415,18 @@
               <extInfo xsi:type="form:LabelFieldExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
+                <backColor xsi:type="core:ColorRef">
+                  <color>Web.Tomato</color>
+                </backColor>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
-              <name>RolesEditSessionStandardAuthenticationChange</name>
+              <name>SessionStandardAuthenticationChange</name>
               <id>498</id>
+              <title>
+                <key>en</key>
+                <value>Session standard authentication change</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5419,7 +5437,14 @@
                   <segments>RolesEdit.SessionStandardAuthenticationChange</segments>
                 </paths>
               </dataPath>
+              <titleBackColor xsi:type="core:ColorRef">
+                <color>Web.Tomato</color>
+              </titleBackColor>
               <titleLocation>None</titleLocation>
+              <toolTip>
+                <key>en</key>
+                <value>Session standard authentication change</value>
+              </toolTip>
               <extendedTooltip>
                 <name>RolesEditSessionStandardAuthenticationChangeExtendedTooltip</name>
                 <id>500</id>
@@ -5456,11 +5481,18 @@
               <extInfo xsi:type="form:LabelFieldExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
+                <backColor xsi:type="core:ColorRef">
+                  <color>Web.Tomato</color>
+                </backColor>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
-              <name>RolesEditSessionOSAuthenticationChange</name>
+              <name>SessionOSAuthenticationChange</name>
               <id>501</id>
+              <title>
+                <key>en</key>
+                <value>Session OS authentication change</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5471,7 +5503,14 @@
                   <segments>RolesEdit.SessionOSAuthenticationChange</segments>
                 </paths>
               </dataPath>
+              <titleBackColor xsi:type="core:ColorRef">
+                <color>Web.Tomato</color>
+              </titleBackColor>
               <titleLocation>None</titleLocation>
+              <toolTip>
+                <key>en</key>
+                <value>Session OS authentication change</value>
+              </toolTip>
               <extendedTooltip>
                 <name>RolesEditSessionOSAuthenticationChangeExtendedTooltip</name>
                 <id>503</id>
@@ -5508,8 +5547,12 @@
               <extInfo xsi:type="form:LabelFieldExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
+                <backColor xsi:type="core:ColorRef">
+                  <color>Web.Tomato</color>
+                </backColor>
               </extInfo>
             </items>
+            <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>

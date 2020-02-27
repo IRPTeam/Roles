@@ -6,11 +6,10 @@
 		<languageInfo>
 			<id>en</id>
 			<code>English</code>
-			<description/>
 		</languageInfo>
 	</languageSettings>
 	<columns>
-		<size>67</size>
+		<size>70</size>
 		<columnsItem>
 			<index>0</index>
 			<column>
@@ -413,22 +412,29 @@
 				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
+		<columnsItem>
+			<index>67</index>
+			<column>
+				<formatIndex>5</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>68</index>
+			<column>
+				<formatIndex>5</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>69</index>
+			<column>
+				<formatIndex>5</formatIndex>
+			</column>
+		</columnsItem>
 	</columns>
 	<rowsItem>
 		<index>0</index>
 		<row>
-			<formatIndex>5</formatIndex>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Object</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
+			<formatIndex>6</formatIndex>
 			<c>
 				<c>
 					<f>7</f>
@@ -443,6 +449,12 @@
 			<c>
 				<c>
 					<f>8</f>
+					<tl>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Object</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
@@ -463,6 +475,11 @@
 			<c>
 				<c>
 					<f>12</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -473,7 +490,7 @@
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>14</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -484,7 +501,7 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>15</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -495,7 +512,7 @@
 			</c>
 			<c>
 				<c>
-					<f>15</f>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -506,7 +523,7 @@
 			</c>
 			<c>
 				<c>
-					<f>16</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -517,7 +534,7 @@
 			</c>
 			<c>
 				<c>
-					<f>17</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -528,7 +545,7 @@
 			</c>
 			<c>
 				<c>
-					<f>18</f>
+					<f>19</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -539,7 +556,7 @@
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>20</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -550,7 +567,7 @@
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>21</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -561,7 +578,7 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -572,7 +589,7 @@
 			</c>
 			<c>
 				<c>
-					<f>22</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -583,7 +600,7 @@
 			</c>
 			<c>
 				<c>
-					<f>23</f>
+					<f>24</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -594,7 +611,7 @@
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>25</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -605,7 +622,7 @@
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -616,7 +633,7 @@
 			</c>
 			<c>
 				<c>
-					<f>26</f>
+					<f>27</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -627,7 +644,7 @@
 			</c>
 			<c>
 				<c>
-					<f>27</f>
+					<f>28</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -638,7 +655,7 @@
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>29</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -649,7 +666,7 @@
 			</c>
 			<c>
 				<c>
-					<f>29</f>
+					<f>30</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -660,7 +677,7 @@
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>31</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -671,7 +688,7 @@
 			</c>
 			<c>
 				<c>
-					<f>31</f>
+					<f>32</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -682,7 +699,7 @@
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -693,7 +710,7 @@
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -704,7 +721,7 @@
 			</c>
 			<c>
 				<c>
-					<f>34</f>
+					<f>35</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -715,7 +732,7 @@
 			</c>
 			<c>
 				<c>
-					<f>35</f>
+					<f>36</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -726,7 +743,7 @@
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>37</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -737,7 +754,7 @@
 			</c>
 			<c>
 				<c>
-					<f>37</f>
+					<f>38</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -748,7 +765,7 @@
 			</c>
 			<c>
 				<c>
-					<f>38</f>
+					<f>39</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -759,7 +776,7 @@
 			</c>
 			<c>
 				<c>
-					<f>39</f>
+					<f>40</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -770,7 +787,7 @@
 			</c>
 			<c>
 				<c>
-					<f>40</f>
+					<f>41</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -781,7 +798,7 @@
 			</c>
 			<c>
 				<c>
-					<f>41</f>
+					<f>42</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -792,7 +809,7 @@
 			</c>
 			<c>
 				<c>
-					<f>42</f>
+					<f>43</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -803,7 +820,7 @@
 			</c>
 			<c>
 				<c>
-					<f>43</f>
+					<f>44</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -814,7 +831,7 @@
 			</c>
 			<c>
 				<c>
-					<f>44</f>
+					<f>45</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -825,7 +842,7 @@
 			</c>
 			<c>
 				<c>
-					<f>45</f>
+					<f>46</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -836,7 +853,7 @@
 			</c>
 			<c>
 				<c>
-					<f>46</f>
+					<f>47</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -847,7 +864,7 @@
 			</c>
 			<c>
 				<c>
-					<f>47</f>
+					<f>48</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -858,7 +875,7 @@
 			</c>
 			<c>
 				<c>
-					<f>48</f>
+					<f>49</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -869,7 +886,7 @@
 			</c>
 			<c>
 				<c>
-					<f>49</f>
+					<f>50</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -880,7 +897,7 @@
 			</c>
 			<c>
 				<c>
-					<f>50</f>
+					<f>51</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -891,7 +908,7 @@
 			</c>
 			<c>
 				<c>
-					<f>51</f>
+					<f>52</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -902,7 +919,7 @@
 			</c>
 			<c>
 				<c>
-					<f>52</f>
+					<f>53</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -913,7 +930,7 @@
 			</c>
 			<c>
 				<c>
-					<f>53</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -924,7 +941,7 @@
 			</c>
 			<c>
 				<c>
-					<f>54</f>
+					<f>55</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -935,7 +952,7 @@
 			</c>
 			<c>
 				<c>
-					<f>55</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -946,7 +963,7 @@
 			</c>
 			<c>
 				<c>
-					<f>56</f>
+					<f>57</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -957,7 +974,7 @@
 			</c>
 			<c>
 				<c>
-					<f>57</f>
+					<f>58</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -968,7 +985,7 @@
 			</c>
 			<c>
 				<c>
-					<f>58</f>
+					<f>59</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -979,7 +996,7 @@
 			</c>
 			<c>
 				<c>
-					<f>59</f>
+					<f>60</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -990,7 +1007,7 @@
 			</c>
 			<c>
 				<c>
-					<f>60</f>
+					<f>61</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1001,7 +1018,7 @@
 			</c>
 			<c>
 				<c>
-					<f>61</f>
+					<f>62</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1012,7 +1029,7 @@
 			</c>
 			<c>
 				<c>
-					<f>62</f>
+					<f>63</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1023,7 +1040,7 @@
 			</c>
 			<c>
 				<c>
-					<f>63</f>
+					<f>64</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1034,7 +1051,7 @@
 			</c>
 			<c>
 				<c>
-					<f>64</f>
+					<f>65</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1045,7 +1062,7 @@
 			</c>
 			<c>
 				<c>
-					<f>65</f>
+					<f>66</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1056,7 +1073,7 @@
 			</c>
 			<c>
 				<c>
-					<f>66</f>
+					<f>67</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1067,7 +1084,7 @@
 			</c>
 			<c>
 				<c>
-					<f>67</f>
+					<f>68</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1078,7 +1095,7 @@
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>69</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1089,7 +1106,7 @@
 			</c>
 			<c>
 				<c>
-					<f>69</f>
+					<f>70</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1100,7 +1117,7 @@
 			</c>
 			<c>
 				<c>
-					<f>70</f>
+					<f>71</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1111,7 +1128,7 @@
 			</c>
 			<c>
 				<c>
-					<f>71</f>
+					<f>72</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1122,11 +1139,44 @@
 			</c>
 			<c>
 				<c>
-					<f>72</f>
+					<f>73</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive execute</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>74</f>
+					<tl>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Standard authentication change</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>75</f>
+					<tl>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Session standard authentication change</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>76</f>
+					<tl>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Session OSAuthentication change</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1136,411 +1186,444 @@
 	<rowsItem>
 		<index>1</index>
 		<row>
-			<formatIndex>73</formatIndex>
+			<formatIndex>77</formatIndex>
 			<c>
 				<c>
-					<f>74</f>
+					<f>78</f>
 					<parameter>Edited</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>75</f>
+					<f>79</f>
 					<parameter>ObjectFullName</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>76</f>
+					<f>80</f>
 					<parameter>Read</parameter>
 					<detailParameter>RLSReadID</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>77</f>
+					<f>81</f>
 					<parameter>Insert</parameter>
 					<detailParameter>RLSInsertID</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>77</f>
+					<f>81</f>
 					<parameter>Update</parameter>
 					<detailParameter>RLSUpdateID</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>78</f>
+					<f>82</f>
 					<parameter>Delete</parameter>
 					<detailParameter>RLSDeleteID</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>79</f>
+					<f>83</f>
 					<parameter>View</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>80</f>
+					<f>84</f>
 					<parameter>Edit</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>80</f>
+					<f>84</f>
 					<parameter>InputByString</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>80</f>
+					<f>84</f>
 					<parameter>Use</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>81</f>
+					<f>85</f>
 					<parameter>TotalsControl</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>82</f>
+					<f>86</f>
 					<parameter>InteractiveDelete</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>83</f>
+					<f>87</f>
 					<parameter>InteractiveInsert</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>83</f>
+					<f>87</f>
 					<parameter>InteractiveSetDeletionMark</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>83</f>
+					<f>87</f>
 					<parameter>InteractiveClearDeletionMark</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>84</f>
+					<f>88</f>
 					<parameter>InteractiveDeleteMarked</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>85</f>
+					<f>89</f>
 					<parameter>Posting</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>86</f>
+					<f>90</f>
 					<parameter>UndoPosting</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>86</f>
+					<f>90</f>
 					<parameter>InteractivePosting</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>86</f>
+					<f>90</f>
 					<parameter>InteractivePostingRegular</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>86</f>
+					<f>90</f>
 					<parameter>InteractiveUndoPosting</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>87</f>
+					<f>91</f>
 					<parameter>InteractiveChangeOfPosted</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>88</f>
+					<f>92</f>
 					<parameter>InteractiveDeletePredefinedData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>89</f>
+					<f>93</f>
 					<parameter>InteractiveSetDeletionMarkPredefinedData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>89</f>
+					<f>93</f>
 					<parameter>InteractiveClearDeletionMarkPredefinedData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>90</f>
+					<f>94</f>
 					<parameter>InteractiveDeleteMarkedPredefinedData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>91</f>
+					<f>95</f>
 					<parameter>Get</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>92</f>
+					<f>96</f>
 					<parameter>Set</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>93</f>
+					<f>97</f>
 					<parameter>Administration</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>DataAdministration</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>UpdateDataBaseConfiguration</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>ExclusiveMode</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>ActiveUsers</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>EventLog</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>ThinClient</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>WebClient</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>MobileClient</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>ThickClient</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>ExternalConnection</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>Automation</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>TechnicalSpecialistMode</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>CollaborationSystemInfoBaseRegistration</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>SaveUserData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>ConfigurationExtensionsAdministration</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>InteractiveOpenExtDataProcessors</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>InteractiveOpenExtReports</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>Output</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>MainWindowModeNormal</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>MainWindowModeWorkplace</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>MainWindowModeEmbeddedWorkplace</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>MainWindowModeFullscreenWorkplace</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>98</f>
 					<parameter>MainWindowModeKiosk</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>95</f>
+					<f>99</f>
 					<parameter>AnalyticsSystemClient</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>96</f>
+					<f>100</f>
 					<parameter>ReadDataHistory</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>97</f>
+					<f>101</f>
 					<parameter>ViewDataHistory</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>97</f>
+					<f>101</f>
 					<parameter>ReadDataHistoryOfMissingData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>97</f>
+					<f>101</f>
 					<parameter>UpdateDataHistory</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>97</f>
+					<f>101</f>
 					<parameter>UpdateDataHistoryOfMissingData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>97</f>
+					<f>101</f>
 					<parameter>UpdateDataHistorySettings</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>97</f>
+					<f>101</f>
 					<parameter>UpdateDataHistoryVersionComment</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>97</f>
+					<f>101</f>
 					<parameter>EditDataHistoryVersionComment</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>102</f>
 					<parameter>SwitchToDataHistoryVersion</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>99</f>
+					<f>103</f>
 					<parameter>Start</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>104</f>
 					<parameter>InteractiveStart</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>104</f>
 					<parameter>InteractiveActivate</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>104</f>
 					<parameter>Execute</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>101</f>
+					<f>105</f>
 					<parameter>InteractiveExecute</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>106</f>
+					<tl>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>StandardAuthenticationChange</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>107</f>
+					<tl>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>SessionStandardAuthenticationChange</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>108</f>
+					<tl>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>SessionOSAuthenticationChange</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -1550,337 +1633,352 @@
 		<row>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>109</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>110</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>110</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>110</f>
 				</c>
 			</c>
 		</row>
@@ -1890,33 +1988,388 @@
 		<row>
 			<c>
 				<c>
-					<f>103</f>
+					<f>111</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>104</f>
+					<f>112</f>
 					<parameter>RLSName</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>105</f>
+					<f>113</f>
 					<parameter>Fields</parameter>
 				</c>
 			</c>
 			<c>
 				<i>11</i>
 				<c>
-					<f>106</f>
+					<f>114</f>
 					<parameter>Condition</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>115</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
 		<index>4</index>
-		<indexTo>26</indexTo>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>10</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>14</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>16</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>18</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>20</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>22</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>24</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>26</index>
 		<row>
 			<empty>true</empty>
 		</row>
@@ -1937,7 +2390,7 @@
 	<merge>
 		<r>3</r>
 		<c>11</c>
-		<w>55</w>
+		<w>58</w>
 	</merge>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Footer</name>
@@ -2005,6 +2458,10 @@
 	</format>
 	<format>
 		<width>24</width>
+	</format>
+	<format>
+		<width>24</width>
+		<widthWeightFactor>1</widthWeightFactor>
 	</format>
 	<format>
 		<height>60</height>
@@ -2960,6 +3417,27 @@
 		<textPosition>Auto</textPosition>
 	</format>
 	<format>
+		<topBorder>2</topBorder>
+		<rightBorder>0</rightBorder>
+		<bottomBorder>2</bottomBorder>
+		<backColor xmlns:webc="http://v8.1c.ru/8.1/data/ui/colors/web">webc:Bisque</backColor>
+		<picIndex>66</picIndex>
+	</format>
+	<format>
+		<topBorder>2</topBorder>
+		<rightBorder>0</rightBorder>
+		<bottomBorder>2</bottomBorder>
+		<backColor xmlns:webc="http://v8.1c.ru/8.1/data/ui/colors/web">webc:Bisque</backColor>
+		<picIndex>67</picIndex>
+	</format>
+	<format>
+		<topBorder>2</topBorder>
+		<rightBorder>2</rightBorder>
+		<bottomBorder>2</bottomBorder>
+		<backColor xmlns:webc="http://v8.1c.ru/8.1/data/ui/colors/web">webc:Bisque</backColor>
+		<picIndex>68</picIndex>
+	</format>
+	<format>
 		<width>72</width>
 		<fillType>Parameter</fillType>
 	</format>
@@ -3296,15 +3774,35 @@
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
+		<topBorder>2</topBorder>
+		<rightBorder>0</rightBorder>
+		<height>60</height>
+		<width>72</width>
+		<backColor xmlns:webc="http://v8.1c.ru/8.1/data/ui/colors/web">webc:Bisque</backColor>
+	</format>
+	<format>
+		<topBorder>2</topBorder>
+		<rightBorder>0</rightBorder>
+		<backColor xmlns:webc="http://v8.1c.ru/8.1/data/ui/colors/web">webc:Bisque</backColor>
+	</format>
+	<format>
+		<topBorder>2</topBorder>
+		<rightBorder>2</rightBorder>
+		<backColor xmlns:webc="http://v8.1c.ru/8.1/data/ui/colors/web">webc:Bisque</backColor>
+	</format>
+	<format>
 		<topBorder>1</topBorder>
+	</format>
+	<format>
+		<topBorder>2</topBorder>
 	</format>
 	<format>
 		<font>0</font>
 		<leftBorder>0</leftBorder>
 		<topBorder>2</topBorder>
 		<bottomBorder>2</bottomBorder>
-		<height>60</height>
 		<borderColor>#333333</borderColor>
+		<height>60</height>
 		<width>72</width>
 		<verticalAlignment>Top</verticalAlignment>
 		<textColor>#333333</textColor>
@@ -3315,8 +3813,8 @@
 		<font>0</font>
 		<topBorder>2</topBorder>
 		<bottomBorder>2</bottomBorder>
-		<height>60</height>
 		<borderColor>#333333</borderColor>
+		<height>60</height>
 		<width>207</width>
 		<verticalAlignment>Top</verticalAlignment>
 		<textColor>#333333</textColor>
@@ -3339,270 +3837,217 @@
 	<format>
 		<leftBorder>1</leftBorder>
 		<topBorder>2</topBorder>
-		<rightBorder>1</rightBorder>
+		<rightBorder>2</rightBorder>
 		<bottomBorder>2</bottomBorder>
 		<horizontalAlignment>Justify</horizontalAlignment>
 		<backColor>style:ToolTipBackColor</backColor>
 		<fillType>Parameter</fillType>
 	</format>
+	<format>
+		<rightBorder>2</rightBorder>
+	</format>
 	<picture>
-		<index>0</index>
-		<picture ref="v8ui:Roles_right_read"/>
+		<picture ref="v8ui:Roles_right_read"></picture>
 	</picture>
 	<picture>
-		<index>1</index>
-		<picture ref="v8ui:Roles_right_insert"/>
+		<picture ref="v8ui:Roles_right_insert"></picture>
 	</picture>
 	<picture>
-		<index>2</index>
-		<picture ref="v8ui:Roles_right_update"/>
+		<picture ref="v8ui:Roles_right_update"></picture>
 	</picture>
 	<picture>
-		<index>3</index>
-		<picture ref="v8ui:Roles_right_delete"/>
+		<picture ref="v8ui:Roles_right_delete"></picture>
 	</picture>
 	<picture>
-		<index>4</index>
-		<picture ref="v8ui:Find"/>
+		<picture ref="v8ui:Find"></picture>
 	</picture>
 	<picture>
-		<index>5</index>
-		<picture ref="v8ui:Roles_right_edit"/>
+		<picture ref="v8ui:Roles_right_edit"></picture>
 	</picture>
 	<picture>
-		<index>6</index>
-		<picture ref="v8ui:Roles_right_inputByString_dark"/>
+		<picture ref="v8ui:Roles_right_inputByString_dark"></picture>
 	</picture>
 	<picture>
-		<index>7</index>
-		<picture ref="v8ui:Roles_right_use"/>
+		<picture ref="v8ui:Roles_right_use"></picture>
 	</picture>
 	<picture>
-		<index>8</index>
-		<picture ref="v8ui:Roles_right_totalsControl_dark"/>
+		<picture ref="v8ui:Roles_right_totalsControl_dark"></picture>
 	</picture>
 	<picture>
-		<index>9</index>
-		<picture ref="v8ui:Roles_right_interactiveDelete"/>
+		<picture ref="v8ui:Roles_right_interactiveDelete"></picture>
 	</picture>
 	<picture>
-		<index>10</index>
-		<picture ref="v8ui:Roles_right_interactiveInsert"/>
+		<picture ref="v8ui:Roles_right_interactiveInsert"></picture>
 	</picture>
 	<picture>
-		<index>11</index>
-		<picture ref="v8ui:Roles_right_interactiveSetDeletionMark"/>
+		<picture ref="v8ui:Roles_right_interactiveSetDeletionMark"></picture>
 	</picture>
 	<picture>
-		<index>12</index>
-		<picture ref="v8ui:Roles_right_interactiveClearDeletionMark"/>
+		<picture ref="v8ui:Roles_right_interactiveClearDeletionMark"></picture>
 	</picture>
 	<picture>
-		<index>13</index>
-		<picture ref="v8ui:Roles_right_interactiveDelete"/>
+		<picture ref="v8ui:Roles_right_interactiveDelete"></picture>
 	</picture>
 	<picture>
-		<index>14</index>
-		<picture ref="v8ui:Roles_right_posting"/>
+		<picture ref="v8ui:Roles_right_posting"></picture>
 	</picture>
 	<picture>
-		<index>15</index>
-		<picture ref="v8ui:Roles_right_undoPosting"/>
+		<picture ref="v8ui:Roles_right_undoPosting"></picture>
 	</picture>
 	<picture>
-		<index>16</index>
-		<picture ref="v8ui:Roles_right_interactivePosting"/>
+		<picture ref="v8ui:Roles_right_interactivePosting"></picture>
 	</picture>
 	<picture>
-		<index>17</index>
-		<picture ref="v8ui:Roles_right_interactiveUndoPosting"/>
+		<picture ref="v8ui:Roles_right_interactiveUndoPosting"></picture>
 	</picture>
 	<picture>
-		<index>18</index>
-		<picture ref="v8ui:Roles_right_interactivePostingRegular"/>
+		<picture ref="v8ui:Roles_right_interactivePostingRegular"></picture>
 	</picture>
 	<picture>
-		<index>19</index>
-		<picture ref="v8ui:Roles_right_interactiveChangeOfPosted"/>
+		<picture ref="v8ui:Roles_right_interactiveChangeOfPosted"></picture>
 	</picture>
 	<picture>
-		<index>20</index>
-		<picture ref="v8ui:Roles_right_interactiveDeletePredefinedData"/>
+		<picture ref="v8ui:Roles_right_interactiveDeletePredefinedData"></picture>
 	</picture>
 	<picture>
-		<index>21</index>
-		<picture ref="v8ui:Roles_right_interactiveSetDeletionMarkPredefinedData"/>
+		<picture ref="v8ui:Roles_right_interactiveSetDeletionMarkPredefinedData"></picture>
 	</picture>
 	<picture>
-		<index>22</index>
-		<picture ref="v8ui:Roles_right_interactiveClearDeletionMarkPredefinedData"/>
+		<picture ref="v8ui:Roles_right_interactiveClearDeletionMarkPredefinedData"></picture>
 	</picture>
 	<picture>
-		<index>23</index>
-		<picture ref="v8ui:Roles_right_interactiveDeletePredefinedData"/>
+		<picture ref="v8ui:Roles_right_interactiveDeletePredefinedData"></picture>
 	</picture>
 	<picture>
-		<index>24</index>
-		<picture ref="v8ui:Roles_right_get"/>
+		<picture ref="v8ui:Roles_right_get"></picture>
 	</picture>
 	<picture>
-		<index>25</index>
-		<picture ref="v8ui:Roles_right_set"/>
+		<picture ref="v8ui:Roles_right_set"></picture>
 	</picture>
 	<picture>
-		<index>26</index>
-		<picture ref="v8ui:Roles_right_administration"/>
+		<picture ref="v8ui:Roles_right_administration"></picture>
 	</picture>
 	<picture>
-		<index>27</index>
-		<picture ref="v8ui:Roles_right_dataAdministration"/>
+		<picture ref="v8ui:Roles_right_dataAdministration"></picture>
 	</picture>
 	<picture>
-		<index>28</index>
-		<picture ref="v8ui:Roles_right_updateDataBaseConfiguration"/>
+		<picture ref="v8ui:Roles_right_updateDataBaseConfiguration"></picture>
 	</picture>
 	<picture>
-		<index>29</index>
-		<picture ref="v8ui:Roles_right_exclusiveMode"/>
+		<picture ref="v8ui:Roles_right_exclusiveMode"></picture>
 	</picture>
 	<picture>
-		<index>30</index>
-		<picture ref="v8ui:Roles_right_activeUsers"/>
+		<picture ref="v8ui:Roles_right_activeUsers"></picture>
 	</picture>
 	<picture>
-		<index>31</index>
-		<picture ref="v8ui:Roles_right_eventLog"/>
+		<picture ref="v8ui:Roles_right_eventLog"></picture>
 	</picture>
 	<picture>
-		<index>32</index>
-		<picture ref="v8ui:Roles_right_thinClient"/>
+		<picture ref="v8ui:Roles_right_thinClient"></picture>
 	</picture>
 	<picture>
-		<index>33</index>
-		<picture ref="v8ui:Roles_right_webClient"/>
+		<picture ref="v8ui:Roles_right_webClient"></picture>
 	</picture>
 	<picture>
-		<index>34</index>
-		<picture ref="v8ui:Roles_right_mobileClient"/>
+		<picture ref="v8ui:Roles_right_mobileClient"></picture>
 	</picture>
 	<picture>
-		<index>35</index>
-		<picture ref="v8ui:Roles_right_thickClient"/>
+		<picture ref="v8ui:Roles_right_thickClient"></picture>
 	</picture>
 	<picture>
-		<index>36</index>
-		<picture ref="v8ui:Roles_right_externalConnection"/>
+		<picture ref="v8ui:Roles_right_externalConnection"></picture>
 	</picture>
 	<picture>
-		<index>37</index>
-		<picture ref="v8ui:Roles_right_automation_dark"/>
+		<picture ref="v8ui:Roles_right_automation_dark"></picture>
 	</picture>
 	<picture>
-		<index>38</index>
-		<picture ref="v8ui:Roles_right_allFunctionsMode"/>
+		<picture ref="v8ui:Roles_right_allFunctionsMode"></picture>
 	</picture>
 	<picture>
-		<index>39</index>
-		<picture ref="v8ui:Roles_right_collaborationSystemInfoBaseRegistration_dark"/>
+		<picture ref="v8ui:Roles_right_collaborationSystemInfoBaseRegistration_dark"></picture>
 	</picture>
 	<picture>
-		<index>40</index>
-		<picture ref="v8ui:Roles_right_saveUserData"/>
+		<picture ref="v8ui:Roles_right_saveUserData"></picture>
 	</picture>
 	<picture>
-		<index>41</index>
-		<picture ref="v8ui:Roles_configuration_extension_administration"/>
+		<picture ref="v8ui:Roles_configuration_extension_administration"></picture>
 	</picture>
 	<picture>
-		<index>42</index>
-		<picture ref="v8ui:Roles_right_interactiveOpenExtDataProcessors_dark"/>
+		<picture ref="v8ui:Roles_right_interactiveOpenExtDataProcessors_dark"></picture>
 	</picture>
 	<picture>
-		<index>43</index>
-		<picture ref="v8ui:Roles_right_interactiveOpenExtReports"/>
+		<picture ref="v8ui:Roles_right_interactiveOpenExtReports"></picture>
 	</picture>
 	<picture>
-		<index>44</index>
-		<picture ref="v8ui:Roles_right_output"/>
+		<picture ref="v8ui:Roles_right_output"></picture>
 	</picture>
 	<picture>
-		<index>45</index>
-		<picture ref="v8ui:Select"/>
+		<picture ref="v8ui:Select"></picture>
 	</picture>
 	<picture>
-		<index>46</index>
-		<picture ref="v8ui:Select"/>
+		<picture ref="v8ui:Select"></picture>
 	</picture>
 	<picture>
-		<index>47</index>
-		<picture ref="v8ui:Select"/>
+		<picture ref="v8ui:Select"></picture>
 	</picture>
 	<picture>
-		<index>48</index>
-		<picture ref="v8ui:Select"/>
+		<picture ref="v8ui:Select"></picture>
 	</picture>
 	<picture>
-		<index>49</index>
-		<picture ref="v8ui:Select"/>
+		<picture ref="v8ui:Select"></picture>
 	</picture>
 	<picture>
-		<index>50</index>
-		<picture ref="v8ui:Select"/>
+		<picture ref="v8ui:Select"></picture>
 	</picture>
 	<picture>
-		<index>51</index>
-		<picture ref="v8ui:Roles_right_readDataHistory"/>
+		<picture ref="v8ui:Roles_right_readDataHistory"></picture>
 	</picture>
 	<picture>
-		<index>52</index>
-		<picture ref="v8ui:Roles_right_viewDataHistory_dark"/>
+		<picture ref="v8ui:Roles_right_viewDataHistory_dark"></picture>
 	</picture>
 	<picture>
-		<index>53</index>
-		<picture ref="v8ui:Roles_right_updateDataHistoryOfMissingData"/>
+		<picture ref="v8ui:Roles_right_updateDataHistoryOfMissingData"></picture>
 	</picture>
 	<picture>
-		<index>54</index>
-		<picture ref="v8ui:Roles_right_updateDataHistory"/>
+		<picture ref="v8ui:Roles_right_updateDataHistory"></picture>
 	</picture>
 	<picture>
-		<index>55</index>
-		<picture ref="v8ui:Roles_right_updateDataHistoryOfMissingData"/>
+		<picture ref="v8ui:Roles_right_updateDataHistoryOfMissingData"></picture>
 	</picture>
 	<picture>
-		<index>56</index>
-		<picture ref="v8ui:Roles_right_updateDataHistorySettings"/>
+		<picture ref="v8ui:Roles_right_updateDataHistorySettings"></picture>
 	</picture>
 	<picture>
-		<index>57</index>
-		<picture ref="v8ui:Roles_right_updateDataHistoryVersionComment"/>
+		<picture ref="v8ui:Roles_right_updateDataHistoryVersionComment"></picture>
 	</picture>
 	<picture>
-		<index>58</index>
-		<picture ref="v8ui:Roles_right_editDataHistoryVersionComment"/>
+		<picture ref="v8ui:Roles_right_editDataHistoryVersionComment"></picture>
 	</picture>
 	<picture>
-		<index>59</index>
-		<picture ref="v8ui:Roles_right_switchToDataHistoryVersion_dark"/>
+		<picture ref="v8ui:Roles_right_switchToDataHistoryVersion_dark"></picture>
 	</picture>
 	<picture>
-		<index>60</index>
-		<picture ref="v8ui:Roles_right_start"/>
+		<picture ref="v8ui:Roles_right_start"></picture>
 	</picture>
 	<picture>
-		<index>61</index>
-		<picture ref="v8ui:Roles_right_interactiveStart"/>
+		<picture ref="v8ui:Roles_right_interactiveStart"></picture>
 	</picture>
 	<picture>
-		<index>62</index>
-		<picture ref="v8ui:Roles_right_interactiveActivate"/>
+		<picture ref="v8ui:Roles_right_interactiveActivate"></picture>
 	</picture>
 	<picture>
-		<index>63</index>
-		<picture ref="v8ui:Roles_right_execute"/>
+		<picture ref="v8ui:Roles_right_execute"></picture>
 	</picture>
 	<picture>
-		<index>64</index>
-		<picture ref="v8ui:Roles_right_interactiveExecute"/>
+		<picture ref="v8ui:Roles_right_interactiveExecute"></picture>
+	</picture>
+	<picture>
+		<picture ref="v8ui:Roles_right_standardAuthenticationChange"></picture>
+	</picture>
+	<picture>
+		<picture ref="v8ui:Roles_right_sessionStandardAuthenticationChange"></picture>
+	</picture>
+	<picture>
+		<picture ref="v8ui:Roles_right_sessionOSAuthenticationChange"></picture>
 	</picture>
 </document>
