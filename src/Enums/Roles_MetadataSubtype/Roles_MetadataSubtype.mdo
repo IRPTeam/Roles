@@ -110,4 +110,39 @@
       <value>Method</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="93862ef4-0424-4634-922d-db4862d87a23">
+    <name>Cube</name>
+    <synonym>
+      <key>en</key>
+      <value>Cube</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ed98fe9d-3c30-495c-994a-418792575e16">
+    <name>Table</name>
+    <synonym>
+      <key>en</key>
+      <value>Table</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="04a6f69a-e5cd-42e3-90e2-f094beddfb6d">
+    <name>DimensionTable</name>
+    <synonym>
+      <key>en</key>
+      <value>Dimension table</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="70d6f5c0-c4c6-45d7-96e5-8eef80e9864f">
+    <name>Function</name>
+    <synonym>
+      <key>en</key>
+      <value>Function</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d46eb63a-c19d-4ac1-8980-a2a2e2e531f3">
+    <name>Field</name>
+    <synonym>
+      <key>en</key>
+      <value>Field</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

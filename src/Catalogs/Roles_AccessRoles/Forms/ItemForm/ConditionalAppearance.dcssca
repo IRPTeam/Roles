@@ -225,6 +225,15 @@
 			<item>
 				<field>AnalyticsSystemClient</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -476,6 +485,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -713,6 +731,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -942,6 +969,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -1171,6 +1207,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -1408,6 +1453,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -1645,6 +1699,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -1879,6 +1942,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -2108,6 +2180,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -2337,6 +2418,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -2566,6 +2656,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -2803,6 +2902,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -2836,11 +2944,19 @@
 			</item>
 		</selection>
 		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
-				<comparisonType>InList</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.DataProcessor</right>
-				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Report</right>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.DataProcessor</right>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Report</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">RolesEdit.ObjectSubtype</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Function</right>
+				</item>
 			</item>
 		</filter>
 		<appearance>
@@ -3041,13 +3157,30 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
-				<comparisonType>InList</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.DataProcessor</right>
-				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Report</right>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.DataProcessor</right>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Report</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">RolesEdit.ObjectSubtype</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Function</right>
+				</item>
 			</item>
 		</filter>
 		<appearance>
@@ -3270,6 +3403,15 @@
 			</item>
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
+			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
 			</item>
 		</selection>
 		<filter>
@@ -3499,6 +3641,15 @@
 			</item>
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
+			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
 			</item>
 		</selection>
 		<filter>
@@ -3733,6 +3884,15 @@
 			</item>
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
+			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
 			</item>
 		</selection>
 		<filter>
@@ -4202,6 +4362,15 @@
 			<item>
 				<field>View</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -4239,6 +4408,7 @@
 				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.ExtDimensionAccountingFlag</right>
 				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.AddressingAttribute</right>
 				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.StandardTabularSection</right>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Field</right>
 			</item>
 		</filter>
 		<appearance>
@@ -4439,6 +4609,15 @@
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -4453,6 +4632,7 @@
 				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.ExtDimensionAccountingFlag</right>
 				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.AddressingAttribute</right>
 				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.StandardTabularSection</right>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Field</right>
 			</item>
 		</filter>
 		<appearance>
@@ -4675,6 +4855,15 @@
 			</item>
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
+			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
 			</item>
 		</selection>
 		<filter>
@@ -4910,6 +5099,15 @@
 			</item>
 			<item>
 				<field>CollaborationSystemInfoBaseRegistration</field>
+			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
 			</item>
 		</selection>
 		<filter>
@@ -5153,6 +5351,15 @@
 			<item>
 				<field>RolesEditEdited</field>
 			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -5372,6 +5579,15 @@
 			</item>
 			<item>
 				<field>View</field>
+			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
 			</item>
 		</selection>
 		<filter>
@@ -9272,6 +9488,406 @@
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.StandardAuthenticationChange</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">1</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>✔</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.StandardAuthenticationChange</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">2</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>❌</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.SessionStandardAuthenticationChange</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">1</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>✔</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.SessionStandardAuthenticationChange</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">2</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>❌</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.SessionOSAuthenticationChange</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">1</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>✔</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.SessionOSAuthenticationChange</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">2</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>❌</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Read</field>
+			</item>
+			<item>
+				<field>Insert</field>
+			</item>
+			<item>
+				<field>Update</field>
+			</item>
+			<item>
+				<field>Delete</field>
+			</item>
+			<item>
+				<field>Edit</field>
+			</item>
+			<item>
+				<field>InputByString</field>
+			</item>
+			<item>
+				<field>Use</field>
+			</item>
+			<item>
+				<field>TotalsControl</field>
+			</item>
+			<item>
+				<field>InteractiveDelete</field>
+			</item>
+			<item>
+				<field>InteractiveInsert</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMark</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarked</field>
+			</item>
+			<item>
+				<field>Posting</field>
+			</item>
+			<item>
+				<field>UndoPosting</field>
+			</item>
+			<item>
+				<field>InteractivePosting</field>
+			</item>
+			<item>
+				<field>InteractiveUndoPosting</field>
+			</item>
+			<item>
+				<field>InteractivePostingRegular</field>
+			</item>
+			<item>
+				<field>InteractiveChangeOfPosted</field>
+			</item>
+			<item>
+				<field>InteractiveDeletePredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveSetDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveClearDeletionMarkPredefinedData</field>
+			</item>
+			<item>
+				<field>InteractiveDeleteMarkedPredefinedData</field>
+			</item>
+			<item>
+				<field>Get</field>
+			</item>
+			<item>
+				<field>Set</field>
+			</item>
+			<item>
+				<field>Administration</field>
+			</item>
+			<item>
+				<field>DataAdministration</field>
+			</item>
+			<item>
+				<field>UpdateDataBaseConfiguration</field>
+			</item>
+			<item>
+				<field>ExclusiveMode</field>
+			</item>
+			<item>
+				<field>ActiveUsers</field>
+			</item>
+			<item>
+				<field>EventLog</field>
+			</item>
+			<item>
+				<field>ThinClient</field>
+			</item>
+			<item>
+				<field>WebClient</field>
+			</item>
+			<item>
+				<field>MobileClient</field>
+			</item>
+			<item>
+				<field>ThickClient</field>
+			</item>
+			<item>
+				<field>ExternalConnection</field>
+			</item>
+			<item>
+				<field>Automation</field>
+			</item>
+			<item>
+				<field>SaveUserData</field>
+			</item>
+			<item>
+				<field>ConfigurationExtensionsAdministration</field>
+			</item>
+			<item>
+				<field>InteractiveOpenExtDataProcessors</field>
+			</item>
+			<item>
+				<field>InteractiveOpenExtReports</field>
+			</item>
+			<item>
+				<field>Output</field>
+			</item>
+			<item>
+				<field>MainWindowModeNormal</field>
+			</item>
+			<item>
+				<field>MainWindowModeWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeEmbeddedWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeFullscreenWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeKiosk</field>
+			</item>
+			<item>
+				<field>AnalyticsSystemClient</field>
+			</item>
+			<item>
+				<field>ReadDataHistory</field>
+			</item>
+			<item>
+				<field>ViewDataHistory</field>
+			</item>
+			<item>
+				<field>ReadDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistory</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryOfMissingData</field>
+			</item>
+			<item>
+				<field>UpdateDataHistorySettings</field>
+			</item>
+			<item>
+				<field>UpdateDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>EditDataHistoryVersionComment</field>
+			</item>
+			<item>
+				<field>SwitchToDataHistoryVersion</field>
+			</item>
+			<item>
+				<field>Start</field>
+			</item>
+			<item>
+				<field>InteractiveStart</field>
+			</item>
+			<item>
+				<field>InteractiveActivate</field>
+			</item>
+			<item>
+				<field>Execute</field>
+			</item>
+			<item>
+				<field>InteractiveExecute</field>
+			</item>
+			<item>
+				<field>TechnicalSpecialistMode</field>
+			</item>
+			<item>
+				<field>CollaborationSystemInfoBaseRegistration</field>
+			</item>
+			<item>
+				<field>StandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionStandardAuthenticationChange</field>
+			</item>
+			<item>
+				<field>SessionOSAuthenticationChange</field>
+			</item>
+			<item>
+				<field>View</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ObjectSubtype</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.URLTemplate</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>Show</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>

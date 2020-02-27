@@ -51,75 +51,18 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 
 			
 			EmptyData = False;
+			
+			Meta = MetaRow.ObjectType;
+			
 			MetaItemRow = MetaRow.Rows.Add();
 			MetaItemRow.ObjectType = Meta;
 			MetaItemRow.ObjectName = MetaItem.Name;
 			MetaItemRow.ObjectFullName = MetaItem.Name;
-			MetaItemRow.Picture = Picture;
+			MetaItemRow.Picture = MetaRow.Picture;
 			MetaItemRow.ObjectPath = MetaRow.ObjectPath + "." + MetaItemRow.ObjectFullName;
-			
-			ParamStructure.Insert("MetaItem", MetaItem);
-			ParamStructure.Insert("MetaItemRow", MetaItemRow);
 
-			
-			SetCurrentRights(MetaItemRow, ParamStructure);			
-						
-			If Roles_Settings.hasAttributes(Meta) Then
-				ParamStructure.Insert("DataType", "Attributes");
-				AddChild(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasDimensions(Meta) Then
-				ParamStructure.Insert("DataType", "Dimensions");
-				AddChild(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasResources(Meta) Then
-				ParamStructure.Insert("DataType", "Resources");
-				AddChild(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasStandardAttributes(Meta) Then
-				ParamStructure.Insert("DataType", "StandardAttributes");
-				AddChild(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasCommands(Meta) Then
-				ParamStructure.Insert("DataType", "Commands");
-				AddChild(ParamStructure);
-			EndIf;			
-			If Roles_Settings.hasRecalculations(Meta) Then
-				ParamStructure.Insert("DataType", "Recalculations");
-				AddChild(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasAccountingFlags(Meta) Then
-				ParamStructure.Insert("DataType", "AccountingFlags");
-				AddChild(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasExtDimensionAccountingFlags(Meta) Then
-				ParamStructure.Insert("DataType", "ExtDimensionAccountingFlags");
-				AddChild(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasAddressingAttributes(Meta) Then
-				ParamStructure.Insert("DataType", "AddressingAttributes");
-				AddChild(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasTabularSections(Meta) Then
-				ParamStructure.Insert("DataType", "TabularSections");
-				AddChildTab(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasStandardTabularSections(Meta) Then
-				ParamStructure.Insert("DataType", "StandardTabularSections");
-				AddChildStandardTab(ParamStructure);
-			EndIf;
-			If Roles_Settings.isSubsystem(Meta) Then
-				ParamStructure.Insert("DataType", "Subsystems");
-				AddChildSubsystem(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasOperations(Meta) Then
-				ParamStructure.Insert("DataType", "Operations");
-				AddChildOperations(ParamStructure);
-			EndIf;
-			If Roles_Settings.hasURLTemplates(Meta) Then
-				ParamStructure.Insert("DataType", "URLTemplates");
-				AddChildURLTemplates(ParamStructure);
-			EndIf;
+			addSubtypeRow(MetaItem, MetaItemRow, ParamStructure);
+
 		EndDo;
 		If EmptyData Then
 			RoleTree.Rows.Delete(MetaRow);
@@ -142,6 +85,77 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	EndIf;
 	Return TabDoc;
 EndFunction
+
+Procedure addSubtypeRow(Val MetaItem, Val MetaItemRow, Val ParamStructure, Val FirstLvl = True)
+	
+	
+	//ParamStructure.Insert("MetaItem", MetaItem);
+	//ParamStructure.Insert("MetaItemRow", MetaItemRow);
+	
+	Meta = MetaItemRow.ObjectType;
+	
+	SetCurrentRights(MetaItemRow, ParamStructure);			
+	
+	If Roles_Settings.hasAttributes(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "Attributes", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasDimensions(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "Dimensions", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasResources(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "Resources", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasStandardAttributes(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "StandardAttributes", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasCommands(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "Commands", ParamStructure);
+	EndIf;			
+	If Roles_Settings.hasRecalculations(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "Recalculations", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasAccountingFlags(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "AccountingFlags", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasExtDimensionAccountingFlags(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "ExtDimensionAccountingFlags", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasAddressingAttributes(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "AddressingAttributes", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasTabularSections(Meta) Then
+		AddChildTab(MetaItem, MetaItemRow, "TabularSections", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasStandardTabularSections(Meta) Then
+		AddChildStandardTab(MetaItem, MetaItemRow, "StandardTabularSections", ParamStructure);
+	EndIf;
+	If Roles_Settings.isSubsystem(Meta) Then
+		AddChildSubsystem(MetaItem, MetaItemRow, "Subsystems", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasOperations(Meta) Then
+		AddChildOperations(MetaItem, MetaItemRow, "Operations", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasURLTemplates(Meta) Then
+		AddChildURLTemplates(MetaItem, MetaItemRow, "URLTemplates",ParamStructure);
+	EndIf;
+	If Roles_Settings.hasTables(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "Tables", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasCubes(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "Cubes", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasFields(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "Fields", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasFunctions(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "Functions", ParamStructure);
+	EndIf;
+	If Roles_Settings.hasDimensionTables(Meta) Then
+		AddChild(MetaItem, MetaItemRow, "DimensionTables", ParamStructure);
+	EndIf;
+	
+
+EndProcedure
 
 
 Procedure ReplaceTextInTabDoc(TabDoc, Find, Replace, Color)
@@ -215,41 +229,43 @@ Procedure FillTabDocRLS(Val ParamStructure, TabDoc, Name, RowID)
 
 EndProcedure
 
-Procedure AddChildOperations(Val StrData)
-	If NOT StrData.MetaItem[StrData.DataType].Count() Then
+#Region AddChilds
+
+Procedure AddChildOperations(MetaItem, MetaItemRow, DataType, Val StrData)
+	If NOT MetaItem[DataType].Count() Then
 		Return;
 	EndIf;
 	
 	ObjectSubtype = Enums.Roles_MetadataSubtype[
-			Left(StrData.DataType, StrLen(StrData.DataType) - 1)];
+			Left(DataType, StrLen(DataType) - 1)];
 	Picture = StrData.PictureLibData["Roles_" + ObjectSubtype];
-	For Each AddChild In StrData.MetaItem[StrData.DataType] Do
+	For Each AddChild In MetaItem[DataType] Do
 		
 		If NOT isNative(AddChild) Then
 			Continue;
 		EndIf;
 		
-		AddChildRow = StrData.MetaItemRow.Rows.Add();
+		AddChildRow = MetaItemRow.Rows.Add();
 		AddChildRow.ObjectName = AddChild.Name;
 		AddChildRow.ObjectFullName = AddChild.Name;	
 		AddChildRow.Picture = Picture;
 		AddChildRow.ObjectSubtype = ObjectSubtype;
 				
-		AddChildRow.ObjectPath = StrData.MetaItemRow.ObjectPath + ".Operation." + AddChildRow.ObjectName;
+		AddChildRow.ObjectPath = MetaItemRow.ObjectPath + ".Operation." + AddChildRow.ObjectName;
 		SetCurrentRights(AddChildRow, StrData);
 	EndDo;
 EndProcedure
 
-Procedure AddChildURLTemplates(Val StrData)
-	If NOT StrData.MetaItem[StrData.DataType].Count() Then
+Procedure AddChildURLTemplates(MetaItem, MetaItemRow, DataType, Val StrData)
+	If NOT MetaItem[DataType].Count() Then
 		Return;
 	EndIf;
 	
-	AddChildRows = StrData.MetaItemRow.Rows.Add();
-	ObjectSubtype = Enums.Roles_MetadataSubtype[Left(StrData.DataType, StrLen(StrData.DataType) - 1)];
+	AddChildRows = MetaItemRow.Rows.Add();
+	ObjectSubtype = Enums.Roles_MetadataSubtype[Left(DataType, StrLen(DataType) - 1)];
 	PictureMethod = StrData.PictureLibData["Roles_Method"];
-	AddChildRows.ObjectPath = StrData.MetaItemRow.ObjectPath + "." + ObjectSubtype;
-	For Each AddChild In StrData.MetaItem[StrData.DataType] Do
+	AddChildRows.ObjectPath = MetaItemRow.ObjectPath + "." + ObjectSubtype;
+	For Each AddChild In MetaItem[DataType] Do
 		
 		If NOT isNative(AddChild) Then
 			Continue;
@@ -280,58 +296,59 @@ Procedure AddChildURLTemplates(Val StrData)
 		
 	EndDo;
 	AddChildRows.Picture = StrData.PictureLibData["Roles_" + ObjectSubtype];
-	AddChildRows.ObjectName = StrData.DataType;
+	AddChildRows.ObjectName = DataType;
 	AddChildRows.ObjectSubtype = ObjectSubtype;
 EndProcedure
 
-Procedure AddChildSubsystem(Val StrData)
+Procedure AddChildSubsystem(MetaItem, MetaItemRow, DataType, Val StrData)
 
 	
-	If NOT StrData.MetaItem[StrData.DataType].Count() Then
+	If NOT MetaItem[DataType].Count() Then
 		Return;
 	EndIf;
-	ObjectSubtypeName = Left(StrData.DataType, StrLen(StrData.DataType) - 1);
+	ObjectSubtypeName = Left(DataType, StrLen(DataType) - 1);
 	Picture = StrData.PictureLibData["Roles_Subsystem"];
-	For Each AddChild In StrData.MetaItem[StrData.DataType] Do
+	For Each AddChild In MetaItem[DataType] Do
 		
 		If NOT isNative(AddChild) Then
 			Continue;
 		EndIf;
 		
-		AddChildRow = StrData.MetaItemRow.Rows.Add();		
+		AddChildRow = MetaItemRow.Rows.Add();		
 		AddChildRow.ObjectName = AddChild.Name;
 		AddChildRow.Picture = Picture;
 		AddChildRow.ObjectFullName = AddChild.Name;
 		AddChildRow.ObjectType = StrData.Meta;		
 		// read data from object
-		If StrData.MetaItemRow.ObjectPath = "" Then
+		If MetaItemRow.ObjectPath = "" Then
 			AddChildRow.ObjectPath = ObjectSubtypeName + "." + AddChildRow.ObjectName;
 		Else
-			AddChildRow.ObjectPath = StrData.MetaItemRow.ObjectPath + "." + 
+			AddChildRow.ObjectPath = MetaItemRow.ObjectPath + "." + 
 					ObjectSubtypeName + "." + AddChildRow.ObjectName;
 		EndIf;
 		SetCurrentRights(AddChildRow, StrData);
 		
-		StrData.MetaItem = AddChild;
-		AddChildSubsystem(StrData);
+		MetaItem = AddChild;
+		AddChildSubsystem(MetaItem, MetaItemRow, "Subsystems", StrData);
 	EndDo;
 EndProcedure
 
-Procedure AddChild(Val StrData)
+Procedure AddChild(MetaItem, MetaItemRow, DataType, Val StrData)
 
 	
-	If NOT StrData.MetaItem[StrData.DataType].Count() Then
+	If NOT MetaItem[DataType].Count() Then
 		Return;
 	EndIf;
-	ObjectSubtypeName = Left(StrData.DataType, StrLen(StrData.DataType) - 1);
+	
+	ObjectSubtypeName = Left(DataType, StrLen(DataType) - 1);
 	ObjectSubtype = Enums.Roles_MetadataSubtype[ObjectSubtypeName];
 	
-	AddChildRows = StrData.MetaItemRow.Rows.Add();
-	AddChildRows.ObjectPath = StrData.MetaItemRow.ObjectPath + "." + ObjectSubtypeName;
-	Picture = StrData.PictureLibData["Roles_" + StrData.DataType];
-	For Each AddChild In StrData.MetaItem[StrData.DataType] Do
+	AddChildRows = MetaItemRow.Rows.Add();
+	AddChildRows.ObjectPath = MetaItemRow.ObjectPath + "." + ObjectSubtypeName;
+	Picture = StrData.PictureLibData["Roles_" + DataType];
+	For Each AddChild In MetaItem[DataType] Do
 		
-		If NOT StrData.DataType = "StandardAttributes" 
+		If NOT DataType = "StandardAttributes" 
 			AND NOT isNative(AddChild) Then
 			Continue;
 		EndIf;
@@ -340,41 +357,48 @@ Procedure AddChild(Val StrData)
 		AddChildRow.ObjectName = AddChild.Name;
 		AddChildRow.Picture = Picture;
 		AddChildRow.ObjectFullName = AddChild.Name;
-		If StrData.DataType = "StandardAttributes" Then		
-			If AddChildRows.ObjectFullName = "" Then
-				AddChildRows.ObjectFullName = "StandardAttribute";
-			EndIf;
-		Else	
-			If AddChildRows.ObjectFullName = "" Then
-				NamePart = StrSplit(AddChild.FullName(), ".");
-				AddChildRows.ObjectFullName = NamePart[2];
-			EndIf;
-		EndIf;		
-		
 		AddChildRow.ObjectSubtype = ObjectSubtype;
 		
 		// read data from object
 		
 		AddChildRow.ObjectPath = AddChildRows.ObjectPath + "." + AddChildRow.ObjectName;
 		SetCurrentRights(AddChildRow, StrData);
+		
+		If ObjectSubtype = Enums.Roles_MetadataSubtype.Table
+			OR ObjectSubtype = Enums.Roles_MetadataSubtype.Cube
+			OR ObjectSubtype = Enums.Roles_MetadataSubtype.DimensionTable Then
+			AddChildRow.ObjectType = ObjectSubtype;
+			addSubtypeRow(AddChild, AddChildRow, StrData, False);
+		EndIf;
+		
 	EndDo;
+	If DataType = "StandardAttributes" Then		
+		If AddChildRows.ObjectFullName = "" Then
+			AddChildRows.ObjectFullName = "StandardAttribute";
+		EndIf;
+	Else	
+		If AddChildRows.ObjectFullName = "" Then
+			NamePart = StrSplit(AddChild.FullName(), ".");
+			AddChildRows.ObjectFullName = NamePart[NamePart.UBound() - 1];
+		EndIf;
+	EndIf;
 	AddChildRows.ObjectSubtype = ObjectSubtype;
-	AddChildRows.ObjectName = StrData.DataType;
-	AddChildRows.Picture = StrData.PictureLibData["Roles_" + StrData.DataType];
+	AddChildRows.ObjectName = DataType;
+	AddChildRows.Picture = StrData.PictureLibData["Roles_" + DataType];
 EndProcedure
 
-Procedure AddChildTab(Val StrData)
-	If NOT StrData.MetaItem[StrData.DataType].Count() Then
+Procedure AddChildTab(MetaItem, MetaItemRow, DataType, Val StrData)
+	If NOT MetaItem[DataType].Count() Then
 		Return;
 	EndIf;
 	
-	AddChildRows = StrData.MetaItemRow.Rows.Add();
-	ObjectSubtypeName = Left(StrData.DataType, StrLen(StrData.DataType) - 1);
+	AddChildRows = MetaItemRow.Rows.Add();
+	ObjectSubtypeName = Left(DataType, StrLen(DataType) - 1);
 	ObjectSubtype = Enums.Roles_MetadataSubtype[ObjectSubtypeName];
-	Picture = StrData.PictureLibData["Roles_" + StrData.DataType];
+	Picture = StrData.PictureLibData["Roles_" + DataType];
 	PictureAttributes = StrData.PictureLibData["Roles_Attributes"];
-	AddChildRows.ObjectPath = StrData.MetaItemRow.ObjectPath + "." + ObjectSubtypeName;
-	For Each AddChild In StrData.MetaItem[StrData.DataType] Do
+	AddChildRows.ObjectPath = MetaItemRow.ObjectPath + "." + ObjectSubtypeName;
+	For Each AddChild In MetaItem[DataType] Do
 		
 		If NOT isNative(AddChild) Then
 			Continue;
@@ -413,22 +437,22 @@ Procedure AddChildTab(Val StrData)
 
 		EndDo;
 	EndDo;
-	AddChildRows.Picture = StrData.PictureLibData["Roles_" + StrData.DataType];
-	AddChildRows.ObjectName = StrData.DataType;
+	AddChildRows.Picture = StrData.PictureLibData["Roles_" + DataType];
+	AddChildRows.ObjectName = DataType;
 	AddChildRows.ObjectSubtype = ObjectSubtype;
 EndProcedure
 
-Procedure AddChildStandardTab(Val StrData)
-	AddChildRows = StrData.MetaItemRow.Rows.Add();
+Procedure AddChildStandardTab(MetaItem, MetaItemRow, DataType, Val StrData)
+	AddChildRows = MetaItemRow.Rows.Add();
 	AddChildRows.ObjectFullName = "StandardTabularSection";
-	ObjectSubtypeName = Left(StrData.DataType, StrLen(StrData.DataType) - 1);
+	ObjectSubtypeName = Left(DataType, StrLen(DataType) - 1);
 	ObjectSubtype = Enums.Roles_MetadataSubtype[ObjectSubtypeName];
-	AddChildRows.ObjectPath = StrData.MetaItemRow.ObjectPath + "." + ObjectSubtype;
-	For Each AddChild In StrData.MetaItem[StrData.DataType] Do
+	AddChildRows.ObjectPath = MetaItemRow.ObjectPath + "." + ObjectSubtype;
+	For Each AddChild In MetaItem[DataType] Do
 		AddChildRow = AddChildRows.Rows.Add();
 		AddChildRow.ObjectName = AddChild.Name;
 		AddChildRow.ObjectFullName = AddChild.Name;
-		AddChildRow.Picture = StrData.PictureLibData["Roles_" + StrData.DataType];
+		AddChildRow.Picture = StrData.PictureLibData["Roles_" + DataType];
 		AddChildRow.ObjectSubtype = ObjectSubtype;
 		
 		AddChildRow.ObjectPath = AddChildRows.ObjectPath + "." + AddChildRow.ObjectName;
@@ -449,10 +473,12 @@ Procedure AddChildStandardTab(Val StrData)
 
 		EndDo;	
 	EndDo;
-	AddChildRows.Picture = StrData.PictureLibData["Roles_" + StrData.DataType];
-	AddChildRows.ObjectName = StrData.DataType;
+	AddChildRows.Picture = StrData.PictureLibData["Roles_" + DataType];
+	AddChildRows.ObjectName = DataType;
 	AddChildRows.ObjectSubtype = ObjectSubtype;
 EndProcedure
+
+#EndRegion
 
 Function CurrentRights(DataTables)
 	RightMap = New Map;

@@ -718,6 +718,7 @@ Function hasAttributes(MetaName) Export
     Array.Add(Enums.Roles_MetadataTypes.CalculationRegister);
     Array.Add(Enums.Roles_MetadataTypes.InformationRegister);
     Array.Add(Enums.Roles_MetadataTypes.BusinessProcess);
+
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 
@@ -739,6 +740,9 @@ Function hasCommands(MetaName) Export
     Array.Add(Enums.Roles_MetadataTypes.AccumulationRegister);
     Array.Add(Enums.Roles_MetadataTypes.CalculationRegister);
     Array.Add(Enums.Roles_MetadataTypes.InformationRegister);
+	Array.Add(Enums.Roles_MetadataSubtype.Table);
+	Array.Add(Enums.Roles_MetadataSubtype.DimensionTable);
+	Array.Add(Enums.Roles_MetadataSubtype.Cube);
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 
@@ -749,6 +753,8 @@ Function hasDimensions(MetaName) Export
     Array.Add(Enums.Roles_MetadataTypes.CalculationRegister);
     Array.Add(Enums.Roles_MetadataTypes.InformationRegister);
     Array.Add(Enums.Roles_MetadataTypes.Sequence);	
+	Array.Add(Enums.Roles_MetadataSubtype.Cube);
+
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 
@@ -758,6 +764,8 @@ Function hasResources(MetaName) Export
     Array.Add(Enums.Roles_MetadataTypes.CalculationRegister);
     Array.Add(Enums.Roles_MetadataTypes.InformationRegister);
     Array.Add(Enums.Roles_MetadataTypes.AccountingRegister);
+	Array.Add(Enums.Roles_MetadataSubtype.Cube);
+
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
  
@@ -827,6 +835,37 @@ EndFunction
 Function hasURLTemplates(MetaName) Export
 	Array = New Array;
     Array.Add(Enums.Roles_MetadataTypes.HTTPService);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasCubes(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.ExternalDataSource);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasTables(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.ExternalDataSource);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasFields(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataSubtype.Table);
+	Array.Add(Enums.Roles_MetadataSubtype.DimensionTable);
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasDimensionTables(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataSubtype.Cube);	
+	Return NOT Array.Find(MetaName) = Undefined;
+EndFunction
+
+Function hasFunctions(MetaName) Export
+	Array = New Array;
+    Array.Add(Enums.Roles_MetadataTypes.ExternalDataSource);	
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 

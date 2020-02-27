@@ -143,6 +143,11 @@
   <commonPictures>CommonPicture.Roles_right_standardAuthenticationChange</commonPictures>
   <commonPictures>CommonPicture.Roles_right_sessionStandardAuthenticationChange</commonPictures>
   <commonPictures>CommonPicture.Roles_right_sessionOSAuthenticationChange</commonPictures>
+  <commonPictures>CommonPicture.Roles_Cubes</commonPictures>
+  <commonPictures>CommonPicture.Roles_Tables</commonPictures>
+  <commonPictures>CommonPicture.Roles_DimensionTables</commonPictures>
+  <commonPictures>CommonPicture.Roles_Functions</commonPictures>
+  <commonPictures>CommonPicture.Roles_Fields</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_TemplateMetadataObject</commonTemplates>
