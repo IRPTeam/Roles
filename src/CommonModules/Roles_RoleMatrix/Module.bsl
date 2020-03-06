@@ -86,11 +86,7 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	Return TabDoc;
 EndFunction
 
-Procedure addSubtypeRow(Val MetaItem, Val MetaItemRow, Val ParamStructure, Val FirstLvl = True)
-	
-	
-	//ParamStructure.Insert("MetaItem", MetaItem);
-	//ParamStructure.Insert("MetaItemRow", MetaItemRow);
+Procedure addSubtypeRow(Val MetaItem, Val MetaItemRow, Val ParamStructure)
 	
 	Meta = MetaItemRow.ObjectType;
 	
@@ -136,7 +132,7 @@ Procedure addSubtypeRow(Val MetaItem, Val MetaItemRow, Val ParamStructure, Val F
 		AddChildOperations(MetaItem, MetaItemRow, "Operations", ParamStructure);
 	EndIf;
 	If Roles_Settings.hasURLTemplates(Meta) Then
-		AddChildURLTemplates(MetaItem, MetaItemRow, "URLTemplates",ParamStructure);
+		AddChildURLTemplates(MetaItem, MetaItemRow, "URLTemplates", ParamStructure);
 	EndIf;
 	If Roles_Settings.hasTables(Meta) Then
 		AddChild(MetaItem, MetaItemRow, "Tables", ParamStructure);
@@ -153,10 +149,7 @@ Procedure addSubtypeRow(Val MetaItem, Val MetaItemRow, Val ParamStructure, Val F
 	If Roles_Settings.hasDimensionTables(Meta) Then
 		AddChild(MetaItem, MetaItemRow, "DimensionTables", ParamStructure);
 	EndIf;
-	
-
 EndProcedure
-
 
 Procedure ReplaceTextInTabDoc(TabDoc, Find, Replace, Color)
 	Var AreaToReplace;
@@ -167,7 +160,6 @@ Procedure ReplaceTextInTabDoc(TabDoc, Find, Replace, Color)
 		AreaToReplace = TabDoc.FindText(Find, , , , True);
 	EndDo;
 EndProcedure
-
 
 Procedure FillTabDoc(TabDoc, RoleTree, ParamStructure)
 	For Each Row In RoleTree.Rows Do
@@ -192,19 +184,15 @@ Procedure FillTabDoc(TabDoc, RoleTree, ParamStructure)
 			TabDoc.Put(TabRowRLS, , , False);
 			TabDoc.StartRowGroup(, False);
 			If Row.RLSInsertFilled Then
-				TabRow.Area(1, 4).Comment.Text = ?(Row.RLSInsertFilled, "RLS", "");
 				FillTabDocRLS(ParamStructure, TabDoc, "Insert", Row.RLSInsertID);
 			EndIf;
 			If Row.RLSReadFilled Then
-				TabRow.Area(1, 3).Comment.Text = ?(Row.RLSReadFilled  , "RLS", "");
 				FillTabDocRLS(ParamStructure, TabDoc, "Read", Row.RLSReadID);
 			EndIf;
 			If Row.RLSDeleteFilled Then
-				TabRow.Area(1, 6).Comment.Text = ?(Row.RLSDeleteFilled, "RLS", "");
 				FillTabDocRLS(ParamStructure, TabDoc, "Delete", Row.RLSDeleteID);
 			EndIf;
 			If Row.RLSUpdateFilled Then
-				TabRow.Area(1, 5).Comment.Text = ?(Row.RLSUpdateFilled, "RLS", "");
 				FillTabDocRLS(ParamStructure, TabDoc, "Update", Row.RLSUpdateID);
 			EndIf;
 			TabDoc.EndRowGroup();
@@ -216,15 +204,18 @@ Procedure FillTabDoc(TabDoc, RoleTree, ParamStructure)
 	
 EndProcedure
 
-Procedure FillTabDocRLS(Val ParamStructure, TabDoc, Name, RowID)
-	For Each RLSRow In ParamStructure.ObjectData.RestrictionByCondition.FindRows(New Structure("RowID", RowID)) Do
-		TabRowRLS = Roles_ServiceServer.RLSTemplate();
-		TabRowRLS.Area(1, 2).Picture = PictureLib.Roles_rls_blank;
-		TabRowRLS.Area(1, 2).Indent = 3;
-		TabRowRLS.Parameters.RLSName = Name;
-		TabRowRLS.Parameters.Fields = RLSRow.Fields;
-		TabRowRLS.Parameters.Condition = RLSRow.Condition;
-		TabDoc.Put(TabRowRLS, , , False);
+Procedure FillTabDocRLS(Val ParamStructure, TabDoc, Name, RowIDList)
+	RowIDArray = StrSplit(RowIDList, ";", False);
+	For Each RowID In RowIDArray Do
+		For Each RLSRow In ParamStructure.ObjectData.RestrictionByCondition.FindRows(New Structure("RowID", RowID)) Do
+			TabRowRLS = Roles_ServiceServer.RLSTemplate();
+			TabRowRLS.Area(1, 2).Picture = PictureLib.Roles_rls_blank;
+			TabRowRLS.Area(1, 2).Indent = 3;
+			TabRowRLS.Parameters.RLSName = Name + "(" + RLSRow.Ref + ")";
+			TabRowRLS.Parameters.Fields = RLSRow.Fields;
+			TabRowRLS.Parameters.Condition = RLSRow.Condition;
+			TabDoc.Put(TabRowRLS, , , False);
+		EndDo;
 	EndDo;
 
 EndProcedure
@@ -368,7 +359,7 @@ Procedure AddChild(MetaItem, MetaItemRow, DataType, Val StrData)
 			OR ObjectSubtype = Enums.Roles_MetadataSubtype.Cube
 			OR ObjectSubtype = Enums.Roles_MetadataSubtype.DimensionTable Then
 			AddChildRow.ObjectType = ObjectSubtype;
-			addSubtypeRow(AddChild, AddChildRow, StrData, False);
+			addSubtypeRow(AddChild, AddChildRow, StrData);
 		EndIf;
 		
 	EndDo;
@@ -396,7 +387,7 @@ Procedure AddChildTab(MetaItem, MetaItemRow, DataType, Val StrData)
 	ObjectSubtypeName = Left(DataType, StrLen(DataType) - 1);
 	ObjectSubtype = Enums.Roles_MetadataSubtype[ObjectSubtypeName];
 	Picture = StrData.PictureLibData["Roles_" + DataType];
-	PictureAttributes = StrData.PictureLibData["Roles_Attributes"];
+	PictureAttributes = StrData.PictureLibData.Roles_Attributes;
 	AddChildRows.ObjectPath = MetaItemRow.ObjectPath + "." + ObjectSubtypeName;
 	For Each AddChild In MetaItem[DataType] Do
 		
@@ -462,7 +453,7 @@ Procedure AddChildStandardTab(MetaItem, MetaItemRow, DataType, Val StrData)
 			AddChildNewRow = AddChildRow.Rows.Add();
 			AddChildNewRow.ObjectName = AddChildAttribute.Name;
 			AddChildNewRow.ObjectFullName = AddChildAttribute.Name;	
-			AddChildNewRow.Picture = StrData.PictureLibData["Roles_StandardAttributes"];
+			AddChildNewRow.Picture = StrData.PictureLibData.Roles_StandardAttributes;
 			AddChildNewRow.ObjectSubtype = ObjectSubtype;
 			
 			// read data from object
@@ -486,48 +477,57 @@ Function CurrentRights(DataTables)
 	TempVT = DataTables.RightTable.Copy();
 	TempVT.GroupBy("ObjectPath");
 	For Each RowVT In TempVT Do
-		RightsStructure = New Structure;
+		
 		FindRows = DataTables.RightTable.FindRows(New Structure("ObjectPath, Disable", RowVT.ObjectPath, False));
-		For Each Row In FindRows Do			
+		RightArray = New Array;
+		For Each Row In FindRows Do	
+			RightsStructure = New Structure;	
 			RightValue = New Structure;
 			RightValue.Insert("Value", Row.RightValue);
 			RightValue.Insert("RowID", Row.RowID);
-			RightValue.Insert("RLSFilled", DataTables.RestrictionByCondition.FindRows(New Structure("RowID", Row.RowID)).Count() > 0);
+			
+			RLSFilter = New Structure("Ref, RowID", Row.Ref, Row.RowID);
+			RLSFilled = DataTables.RestrictionByCondition.FindRows(RLSFilter).Count();
+			
+			RightValue.Insert("RLSFilled", RLSFilled);
 			RightsStructure.Insert(Roles_Settings.MetaName(Row.RightName), RightValue);
+			RightArray.Add(RightsStructure);
 		EndDo;
-		RightMap.Insert(RowVT.ObjectPath, RightsStructure);
+		
+		RightMap.Insert(RowVT.ObjectPath, RightArray);
 	EndDo;
 	Return RightMap;
 EndFunction
 
 Procedure SetCurrentRights(Row, StrData)
 	
-	RightData = StrData.RightsMap.Get(Row.ObjectPath);
-	If RightData = Undefined Then
+	RightDataArray = StrData.RightsMap.Get(Row.ObjectPath);
+	If RightDataArray = Undefined Then
 		Return;
 	EndIf;
+	For Each RightData In RightDataArray Do
+		For Each Data In RightData Do
+			Row[Data.Key] = ?(Data.Value.Value, 1, 2);
+		EndDo;
 	
-	For Each Data In RightData Do
-		Row[Data.Key] = ?(Data.Value.Value, 1, 2);
+		If RightData.Property("Insert") Then
+			Row.RLSInsertID = RightData.Insert.RowID + ";" + Row.RLSInsertID;
+			Row.RLSInsertFilled = RightData.Insert.RLSFilled;
+		EndIf;
+		If RightData.Property("Read") Then
+			Row.RLSReadID = RightData.Read.RowID + ";" + Row.RLSReadID;
+			Row.RLSReadFilled = RightData.Read.RLSFilled;
+		EndIf;
+		If RightData.Property("Delete") Then
+			Row.RLSDeleteID = RightData.Delete.RowID + ";" + Row.RLSDeleteID;
+			Row.RLSDeleteFilled = RightData.Delete.RLSFilled;
+		EndIf;
+		If RightData.Property("Update") Then
+			Row.RLSUpdateID = RightData.Update.RowID + ";" + Row.RLSUpdateID;
+			Row.RLSUpdateFilled = RightData.Update.RLSFilled;
+		EndIf;
 	EndDo;
-
-	If RightData.Property("Insert") Then
-		Row.RLSInsertID = RightData.Insert.RowID;
-		Row.RLSInsertFilled = RightData.Insert.RLSFilled;
-	EndIf;
-	If RightData.Property("Read") Then
-		Row.RLSReadID = RightData.Read.RowID;
-		Row.RLSReadFilled = RightData.Read.RLSFilled;
-	EndIf;
-	If RightData.Property("Delete") Then
-		Row.RLSDeleteID = RightData.Delete.RowID;
-		Row.RLSDeleteFilled = RightData.Delete.RLSFilled;
-	EndIf;
-	If RightData.Property("Update") Then
-		Row.RLSUpdateID = RightData.Update.RowID;
-		Row.RLSUpdateFilled = RightData.Update.RLSFilled;
-	EndIf;
-
+		
 	Row.Edited = True;
 	SetEditedInfo(Row);
 EndProcedure
@@ -547,7 +547,7 @@ EndProcedure
 #Region Service
 Function isNative(TestObject)
 	
-	Return TestObject.ObjectBelonging = Metadata.ObjectBelonging;
+	Return TestObject.ConfigurationExtension() = Undefined;
 
 EndFunction
 

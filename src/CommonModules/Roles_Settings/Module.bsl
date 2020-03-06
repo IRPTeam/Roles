@@ -652,6 +652,11 @@ Function MetaDataObject() Export
 	Configuration = New Structure;
 	MetaDataObject.Insert("Configuration", Configuration);
 	
+	CatalogTabularSection = New Structure;
+	CatalogTabularSection.Insert("CatalogTabularSection"	, "TabularSection");
+	CatalogTabularSection.Insert("CatalogTabularSectionRow", "TabularSectionRow");
+	MetaDataObject.Insert("CatalogTabularSection", CatalogTabularSection);
+	
 	Return MetaDataObject;
 EndFunction
 
@@ -885,4 +890,41 @@ Function MetaName(RefData) Export
 	Return Roles_SettingsReUse.MetaNameByRef(RefData);
 EndFunction
 
+Function hasOnlyProperties(RefData) Export
+	Array = New Array;
+	Array.Add(Enums.Roles_MetadataSubtype.Attribute);
+	Array.Add(Enums.Roles_MetadataSubtype.Dimension);
+	Array.Add(Enums.Roles_MetadataSubtype.Resource);
+	Array.Add(Enums.Roles_MetadataSubtype.Command);
+	Array.Add(Enums.Roles_MetadataSubtype.AccountingFlag);
+	Array.Add(Enums.Roles_MetadataSubtype.ExtDimensionAccountingFlag);
+	Array.Add(Enums.Roles_MetadataSubtype.AddressingAttribute);
+	
+	Return NOT Array.Find(RefData) = Undefined;
+EndFunction
+
+Function hasNoChildObjects(RefData) Export
+	Array = New Array;
+	Array.Add(Enums.Roles_MetadataTypes.SessionParameter);
+	Array.Add(Enums.Roles_MetadataTypes.CommonCommand);
+	Array.Add(Enums.Roles_MetadataTypes.CommonAttribute);
+	Array.Add(Enums.Roles_MetadataTypes.CommonForm);
+	Array.Add(Enums.Roles_MetadataTypes.Constant);
+	Return NOT Array.Find(RefData) = Undefined;
+EndFunction
+
+Function hasNoInternalInfo(RefData) Export
+	Array = New Array;
+	Array.Add(Enums.Roles_MetadataTypes.CommonCommand);
+	Array.Add(Enums.Roles_MetadataTypes.Subsystem);
+	Array.Add(Enums.Roles_MetadataTypes.SessionParameter);
+	Array.Add(Enums.Roles_MetadataTypes.CommonAttribute);
+	Array.Add(Enums.Roles_MetadataTypes.CommonForm);
+	Return NOT Array.Find(RefData) = Undefined;
+EndFunction
+
+
+//URLTemplate
+//Operation
+//TabularSection
 #EndRegion

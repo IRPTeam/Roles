@@ -76,7 +76,10 @@ Function Skip(ObjectType, ObjectSubtype, RoleName) Export
 	Return False;
 EndFunction
 
-
 Function MatrixTemplates() Export
 	Return GetCommonTemplate("Roles_MatrixTemplate");
+EndFunction
+
+Function RoleTree() Export
+	Return Roles_ServiceServer.DeserializeXML(GetCommonTemplate("Roles_RoleTree").GetText());
 EndFunction

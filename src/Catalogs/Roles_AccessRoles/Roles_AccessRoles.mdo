@@ -15,6 +15,8 @@
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.Roles_AccessRoles.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Catalog.Roles_AccessProfiles</basedOn>
+  <basedOn>Catalog.Users</basedOn>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
@@ -112,6 +114,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="7b4de9f1-7781-4fa7-bad1-04b63134c47f">
+    <name>Configuration</name>
+    <synonym>
+      <key>en</key>
+      <value>Configuration</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="07c32fbc-9a1f-46bf-9c95-a05ffdb611e0">
     <producedTypes>
       <objectType typeId="0eb63fba-f18f-46f2-8965-997ee7dc7453" valueTypeId="18f87195-f52d-493b-9fd8-26b391733367"/>
@@ -187,7 +208,6 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <indexing>Index</indexing>
       <fullTextSearch>Use</fullTextSearch>
@@ -235,6 +255,18 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7dec5f55-b0d2-4ffd-bb0d-f5ecad2d5354">
+      <name>ObjectSubtype</name>
+      <synonym>
+        <key>en</key>
+        <value>Object subtype</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Roles_MetadataSubtype</types>
+      </type>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>

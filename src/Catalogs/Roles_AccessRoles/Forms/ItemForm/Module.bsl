@@ -113,12 +113,20 @@ EndProcedure
 &AtServer
 Procedure UpdateRightsList(OnlyReport)
 	RoleTree = FormAttributeToValue("RolesEdit");
+	
 	ObjectData = New Structure;
 	ObjectData.Insert("RightTable", Object.Rights.Unload());
 	ObjectData.Insert("RestrictionByCondition", Object.RestrictionByCondition.Unload());
 	ObjectData.Insert("SetRightsForNewNativeObjects", Object.SetRightsForNewNativeObjects);
 	ObjectData.Insert("SetRightsForAttributesAndTabularSectionsByDefault", Object.SetRightsForAttributesAndTabularSectionsByDefault);
 	ObjectData.Insert("SubordinateObjectsHaveIndependentRights", Object.SubordinateObjectsHaveIndependentRights);
+	
+	ObjectData.RightTable.Columns.Add("Ref");
+	ObjectData.RightTable.FillValues(Object.Ref, "Ref");
+	
+	ObjectData.RestrictionByCondition.Columns.Add("Ref");
+	ObjectData.RestrictionByCondition.FillValues(Object.Ref, "Ref");
+	
 	TabDocMartix = Roles_RoleMatrix.GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, NOT ShowAllObjects);
 	ValueToFormAttribute(RoleTree, "RolesEdit");
 EndProcedure
@@ -244,9 +252,11 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined)
 	CurrentRow.Edited = True;
 	SetEditedInfo(CurrentRow);
 	
-	Info = StrSplit(CurrentRow.ObjectPath, ".");
+	ParentRow = CurrentRow.GetParent();
 	
-	If Info.Count() = 1 Then
+	If CurrentRow.ObjectName = "" 
+	  OR (Not CurrentRow.ObjectSubtype.isEmpty() AND 
+	  		Not ParentRow.ObjectSubtype = CurrentRow.ObjectSubtype) Then
 		For Each RowChild In CurrentRow.GetItems() Do
 			SetFlags(RowChild,  Field, CurrentRow[Field.Name]);
 		EndDo;
@@ -266,11 +276,13 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined)
 			Row[0].Disable = False;
 		EndIf;
 	Else
+		PathArray = StrSplit(CurrentRow.ObjectPath, ".", False);
 		NewRow = Object.Rights.Add();
-		NewRow.ObjectType = PredefinedValue("Enum.Roles_MetadataTypes." + Info[0]);
-		NewRow.ObjectName = Info[1];
-		NewRow.RightName = PredefinedValue("Enum.Roles_Rights." + Field.Name);
+		NewRow.ObjectType = PredefinedValue("Enum.Roles_MetadataTypes." + PathArray[0]);
+		NewRow.ObjectName = PathArray[1];
+		NewRow.RightName  = PredefinedValue("Enum.Roles_Rights." + Field.Name);
 		NewRow.ObjectPath = CurrentRow.ObjectPath;
+		NewRow.ObjectSubtype = CurrentRow.ObjectSubtype;
 		NewRow.RightValue = ?(CurrentRow[Field.Name] = 1, True, False);
 			
 		RLSData = Field.Name = "Read"
@@ -286,6 +298,13 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined)
 			EndIf;	
 		EndIf;
 		
+	EndIf;
+	
+	If NOT CurrentRow.ObjectSubtype.isEmpty()
+		OR CurrentRow.ObjectType = PredefinedValue("Enum.Roles_MetadataTypes.Subsystem") Then
+		For Each Row In CurrentRow.GetItems() Do
+			SetFlags(Row,  Field, CurrentRow[Field.Name])
+		EndDo;
 	EndIf;
 	
 EndProcedure

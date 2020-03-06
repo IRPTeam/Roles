@@ -15,7 +15,6 @@
   <content>Catalog.Roles_AccessRoles</content>
   <content>Catalog.Roles_AccessProfiles</content>
   <content>Catalog.Users</content>
-  <content>Catalog.Roles_AccessGroups</content>
   <content>Catalog.Roles_Templates</content>
   <content>CommonModule.Roles_Settings</content>
   <content>CommonModule.Roles_GenerateExtension</content>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35143393-bd94-4346-8c26-bdf0aeb141c4">
+  <name>Roles_RoleTree</name>
+  <synonym>
+    <key>en</key>
+    <value>Role tree</value>
+  </synonym>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

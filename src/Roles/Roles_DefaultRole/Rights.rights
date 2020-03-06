@@ -4,7 +4,14 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Catalog.Roles_AccessGroups</name>
+		<name>CommonForm.ConnectionSettingsForm</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Roles_AccessProfiles</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -22,12 +29,42 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Roles_AccessProfiles</name>
+		<name>CommonCommand.Roles_LoadRolesFromXML</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.Roles_UpdateExtension</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Users</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -57,6 +94,52 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonForm.EditText</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Roles_Templates</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Roles_AccessRoles</name>
 		<right>
 			<name>Read</name>
@@ -75,58 +158,23 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Users</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Insert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
+			<name>InteractiveInsert</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>CommonCommand.Roles_LoadRolesFromXML</name>
 		<right>
-			<name>View</name>
+			<name>InteractiveSetDeletionMark</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>CommonCommand.Roles_UpdateExtension</name>
 		<right>
-			<name>View</name>
+			<name>InteractiveClearDeletionMark</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>CommonForm.ConnectionSettingsForm</name>
 		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonForm.EditText</name>
-		<right>
-			<name>View</name>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>

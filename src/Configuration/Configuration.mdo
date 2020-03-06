@@ -10,7 +10,6 @@
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <managedApplicationModule>Extended</managedApplicationModule>
     <defaultLanguage>Checked</defaultLanguage>
-    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="dfdd8d1d-f6a8-4e91-96a1-8b8ef9cc7871"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="ed28055f-464c-4b51-8ed3-8cc60fb0bbc4"/>
@@ -152,6 +151,7 @@
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_TemplateMetadataObject</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_MatrixTemplate</commonTemplates>
+  <commonTemplates>CommonTemplate.Roles_RoleTree</commonTemplates>
   <commonModules>CommonModule.Roles_UsersEvent</commonModules>
   <commonModules>CommonModule.Roles_Settings</commonModules>
   <commonModules>CommonModule.Roles_GenerateExtension</commonModules>
@@ -164,7 +164,6 @@
   <commonForms>CommonForm.EditText</commonForms>
   <commonForms>CommonForm.ConnectionSettingsForm</commonForms>
   <catalogs>Catalog.Roles_AccessRoles</catalogs>
-  <catalogs>Catalog.Roles_AccessGroups</catalogs>
   <catalogs>Catalog.Roles_AccessProfiles</catalogs>
   <catalogs>Catalog.Users</catalogs>
   <catalogs>Catalog.Roles_Templates</catalogs>
