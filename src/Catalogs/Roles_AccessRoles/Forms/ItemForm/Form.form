@@ -923,6 +923,7 @@
                 <textEdit>true</textEdit>
               </extInfo>
             </items>
+            <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
@@ -1108,6 +1109,7 @@
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
             </items>
+            <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>

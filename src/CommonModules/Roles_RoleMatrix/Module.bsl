@@ -33,6 +33,8 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 		EmptyData = True;		
 		If Meta = Enums.Roles_MetadataTypes.Configuration Then
 			MetaRow.ObjectFullName = Metadata.Name;
+			MetaRow.ObjectPath = MetaRow.ObjectPath + "." + Metadata.Name;
+			SetCurrentRights(MetaRow, ParamStructure);
 			Continue;
 		EndIf;
 		

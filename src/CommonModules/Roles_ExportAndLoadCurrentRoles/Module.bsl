@@ -84,6 +84,11 @@ Procedure UpdateRoleExt(Settings) Export
 				NewObject.ObjectName = ObjectName;
 				NewObject.ObjectType = ObjectType;
 				NewObject.ObjectPath = Object.Name;
+				If ObjectFullName.Count() > 2 Then
+					If Not ObjectFullName[2] = "Subsystem" Then
+						NewObject.ObjectSubtype = Enums.Roles_MetadataSubtype[ObjectFullName[2]];
+					EndIf;
+				EndIf;
 				If ObjectRight.name = "AllFunctionsMode" Then
 					NewObject.RightName = Enums.Roles_Rights.TechnicalSpecialistMode;
 				Else

@@ -1,5 +1,3 @@
-&AtClient
-Var ArrayForViewEdit Export;
 
 &AtClient
 Procedure RightsObjectTypeOnChange(Item)
@@ -145,44 +143,6 @@ EndProcedure
 
 #Region Service
 
-#Region FlagStatus
-&AtClient
-Function Skip(Val Item, Val ThisItem)
-	
-	If NOT ThisItem.ObjectSubtype.isEmpty() Then
-		If Item.Name = "View" Then
-			If ThisItem.ObjectSubtype = PredefinedValue("Enum.Roles_MetadataSubtype.Command")
-				OR NOT ArrayForViewEdit.Find(ThisItem.ObjectSubtype) = Undefined Then
-				Return False;
-			Else
-				Return True;
-			EndIf;
-		ElsIf (Item.Name = "Read" OR Item.Name = "Update")
-			AND ThisItem.ObjectSubtype = PredefinedValue("Enum.Roles_MetadataSubtype.Recalculation") Then
-			Return False;
-		ElsIf Item.Name = "Edit" 
-			AND NOT ArrayForViewEdit.Find(ThisItem.ObjectSubtype) = Undefined Then
-			Return False;
-		Else	
-			Return True;
-		EndIf;
-	Else
-		If Item.Name = "Edit" Then 
-			If ThisItem.ObjectType = PredefinedValue("Enum.Roles_MetadataTypes.DataProcessor")
-				OR ThisItem.ObjectType = PredefinedValue("Enum.Roles_MetadataTypes.Report")
-				OR ThisItem.ObjectType = PredefinedValue("Enum.Roles_MetadataTypes.DocumentJournal") Then
-				Return True;
-			Else 
-				Return False;
-			EndIf;
-		Else	
-			Return False;
-		EndIf;
-	EndIf;
-	Return False;
-EndFunction
-#EndRegion
-
 &AtServer
 Procedure SetOnChangeAction()
 	
@@ -234,12 +194,8 @@ Procedure RolesEditSelection(Item, SelectedRow, Field, StandardProcessing)
 EndProcedure
 
 &AtClient
-Procedure SetFlags(CurrentRow,  Field, Value = Undefined)
-	
-	If Skip(Field, CurrentRow) Then
-		Return;
-	EndIf;
-	
+Procedure SetFlags(CurrentRow,  Field, Value = Undefined, OnlyNextLvl = False)
+		
 	If NOT Value = Undefined Then
 		CurrentRow[Field.Name] = Value;
 	ElsIf CurrentRow[Field.Name] = 0 Then
@@ -256,9 +212,10 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined)
 	
 	If CurrentRow.ObjectName = "" 
 	  OR (Not CurrentRow.ObjectSubtype.isEmpty() AND 
-	  		Not ParentRow.ObjectSubtype = CurrentRow.ObjectSubtype) Then
+	  		Not ParentRow.ObjectSubtype = CurrentRow.ObjectSubtype AND
+			Not OnlyNextLvl) Then
 		For Each RowChild In CurrentRow.GetItems() Do
-			SetFlags(RowChild,  Field, CurrentRow[Field.Name]);
+			SetFlags(RowChild,  Field, CurrentRow[Field.Name], True);
 		EndDo;
 		Return;
 	EndIf;
@@ -300,8 +257,7 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined)
 		
 	EndIf;
 	
-	If NOT CurrentRow.ObjectSubtype.isEmpty()
-		OR CurrentRow.ObjectType = PredefinedValue("Enum.Roles_MetadataTypes.Subsystem") Then
+	If CurrentRow.ObjectType = PredefinedValue("Enum.Roles_MetadataTypes.Subsystem") Then
 		For Each Row In CurrentRow.GetItems() Do
 			SetFlags(Row,  Field, CurrentRow[Field.Name])
 		EndDo;
@@ -312,10 +268,19 @@ EndProcedure
 &AtClient
 Procedure RestrictionByConditionConditionOpening(Item, StandardProcessing)
 	StandardProcessing = False;
-	Text = OpenFormModal("CommonForm.EditText", New Structure("Text", Item.Parent.CurrentData.Condition), ThisObject);
+	Text = Undefined;
+
+	OpenForm("CommonForm.EditText", New Structure("Text", Item.Parent.CurrentData.Condition), ThisObject,,,, New NotifyDescription("RestrictionByConditionConditionOpeningEnd", ThisForm, New Structure("Item", Item)), FormWindowOpeningMode.LockWholeInterface);
+EndProcedure
+
+&AtClient
+Procedure RestrictionByConditionConditionOpeningEnd(Text, AdditionalParameters) Export
+	
+	Item = AdditionalParameters.Item;
 	If NOT Text = Undefined Then
 		Item.Parent.CurrentData.Condition = Text;
 	EndIf;
+
 EndProcedure
 
 
@@ -386,6 +351,3 @@ Procedure AddRestriction(Command)
 	NewRow = Object.RestrictionByCondition.Add();
 	NewRow.RowID = RLSRowID;
 EndProcedure
-
-
-ArrayForViewEdit = Roles_SettingsReUse.ArrayForViewEdit();

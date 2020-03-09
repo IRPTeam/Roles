@@ -1,5 +1,3 @@
-
-
 &AtClient
 Procedure UpdateMatrix(Command)
 	UpdateMatrixAtServer();
