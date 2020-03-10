@@ -11,7 +11,7 @@ Procedure UpdateMatrixAtServer()
 	Query = New Query;
 	Query.Text =
 		"SELECT
-		|	Roles_AccessRoles.Ref
+		|	Roles_AccessRoles.Ref AS Ref
 		|INTO Roles
 		|FROM
 		|	Catalog.Roles_AccessRoles AS Roles_AccessRoles
@@ -20,7 +20,7 @@ Procedure UpdateMatrixAtServer()
 		|;
 		|////////////////////////////////////////////////////////////////////////////////
 		|SELECT
-		|	Roles_AccessRolesRights.Ref,
+		|	Roles_AccessRolesRights.Ref AS Ref,
 		|	Roles_AccessRolesRights.ObjectType,
 		|	Roles_AccessRolesRights.ObjectName,
 		|	Roles_AccessRolesRights.RightName,
@@ -37,7 +37,7 @@ Procedure UpdateMatrixAtServer()
 		|;
 		|////////////////////////////////////////////////////////////////////////////////
 		|SELECT
-		|	Roles_AccessRolesRestrictionByCondition.Ref,
+		|	Roles_AccessRolesRestrictionByCondition.Ref AS Ref,
 		|	Roles_AccessRolesRestrictionByCondition.RowID,
 		|	Roles_AccessRolesRestrictionByCondition.Fields,
 		|	Roles_AccessRolesRestrictionByCondition.Condition

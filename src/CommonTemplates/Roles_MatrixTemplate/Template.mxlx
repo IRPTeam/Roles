@@ -1624,7 +1624,7 @@
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>110</f>
 				</c>
 			</c>
 			<c>
@@ -1974,330 +1974,583 @@
 		<row>
 			<c>
 				<c>
-					<f>110</f>
-				</c>
-			</c>
-			<c>
-				<c>
 					<f>111</f>
-					<parameter>RLSName</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>112</f>
+					<parameter>RLSName</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>113</f>
 					<parameter>Fields</parameter>
 				</c>
 			</c>
 			<c>
 				<i>11</i>
 				<c>
-					<f>113</f>
+					<f>114</f>
 					<parameter>Condition</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>115</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
 		<index>4</index>
-		<indexTo>26</indexTo>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>5</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>7</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>9</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>10</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>11</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>13</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>14</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>15</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>16</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>17</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>18</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>19</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>20</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>21</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>22</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>23</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>24</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>25</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>26</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>116</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>27</index>
+		<indexTo>33</indexTo>
 		<row>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<height>4</height>
-	<vgRows>4</vgRows>
+	<height>27</height>
+	<vgRows>27</vgRows>
 	<merge>
 		<r>0</r>
 		<c>0</c>
@@ -2370,8 +2623,8 @@
 		<width>23</width>
 	</format>
 	<format>
-		<width>207</width>
-		<columnSizeChange>QuickChange</columnSizeChange>
+		<width>242</width>
+		<columnSizeChange>Normal</columnSizeChange>
 	</format>
 	<format>
 		<width>23</width>
@@ -3390,6 +3643,7 @@
 		<textColor>#333333</textColor>
 		<backColor>#FFDEAD</backColor>
 		<fillType>Parameter</fillType>
+		<columnSizeChange>Normal</columnSizeChange>
 	</format>
 	<format>
 		<font>3</font>
@@ -3702,6 +3956,8 @@
 		<bottomBorder>0</bottomBorder>
 		<height>60</height>
 		<width>72</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
 		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:Bisque</backColor>
 		<fillType>Parameter</fillType>
 	</format>
@@ -3709,6 +3965,8 @@
 		<topBorder>0</topBorder>
 		<rightBorder>0</rightBorder>
 		<bottomBorder>0</bottomBorder>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
 		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:Bisque</backColor>
 		<fillType>Parameter</fillType>
 	</format>
@@ -3716,11 +3974,17 @@
 		<topBorder>0</topBorder>
 		<rightBorder>1</rightBorder>
 		<bottomBorder>0</bottomBorder>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
 		<backColor xmlns:d3p1="http://v8.1c.ru/8.1/data/ui/colors/web">d3p1:Bisque</backColor>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
 		<topBorder>1</topBorder>
+	</format>
+	<format>
+		<topBorder>1</topBorder>
+		<columnSizeChange>Normal</columnSizeChange>
 	</format>
 	<format>
 		<font>0</font>
@@ -3745,8 +4009,9 @@
 		<verticalAlignment>Top</verticalAlignment>
 		<textColor>#333333</textColor>
 		<backColor>#FFDEAD</backColor>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
-		<columnSizeChange>QuickChange</columnSizeChange>
+		<columnSizeChange>Normal</columnSizeChange>
 		<pictureSizeMode>RealSize</pictureSizeMode>
 		<picHorizontalAlignment>Left</picHorizontalAlignment>
 		<picVerticalAlignment>Top</picVerticalAlignment>
@@ -3771,6 +4036,9 @@
 	</format>
 	<format>
 		<rightBorder>2</rightBorder>
+	</format>
+	<format>
+		<columnSizeChange>Normal</columnSizeChange>
 	</format>
 	<picture>
 		<index>0</index>

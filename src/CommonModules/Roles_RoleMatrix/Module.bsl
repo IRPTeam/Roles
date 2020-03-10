@@ -7,8 +7,8 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	ParamStructure.Insert("PictureLibData", PictureLibData);
 	ParamStructure.Insert("RightsMap", RightsMap);
 	ParamStructure.Insert("ObjectData", ObjectData);
-	
-	
+	ParamStructure.Insert("OnlyFilled", OnlyFilled);
+	ParamStructure.Insert("OnlyReport", OnlyReport);
 	For Each Meta In Enums.Roles_MetadataTypes Do
 		
 		If Meta = Enums.Roles_MetadataTypes.IntegrationService // wait 8.3.17
@@ -69,6 +69,8 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 		If EmptyData Then
 			RoleTree.Rows.Delete(MetaRow);
 		EndIf;
+		
+		CulculateTopLvlStatus(MetaRow);
 	EndDo;
 	
 	RoleTree.Rows.Sort("ObjectPath", True);
@@ -82,11 +84,36 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 
 	ReplaceTextInTabDoc(TabDoc, 1, "✔", New Color(0, 255, 0));
 	ReplaceTextInTabDoc(TabDoc, 2, "❌", New Color(255, 0, 0));
+	ReplaceTextInTabDoc(TabDoc, 3, "❔", New Color(255, 255, 0));
 	If OnlyReport Then
 		RoleTree.Rows.Clear();
 	EndIf;
 	Return TabDoc;
 EndFunction
+
+Procedure CulculateTopLvlStatus(Val MetaRow)
+	
+	Var Right, SetFalse, SetTrue;
+	
+	For Each Right In Metadata.Enums.Roles_Rights.EnumValues Do
+		If Not MetaRow.Rows.Total(Right.Name) Then
+			Continue;
+		EndIf;
+		
+		SetTrue = MetaRow.Rows.FindRows(New Structure(Right.Name, 1)).Count();
+		SetFalse = MetaRow.Rows.FindRows(New Structure(Right.Name, 2)).Count();
+		
+		If SetTrue = MetaRow.Rows.Count() Then
+			MetaRow[Right.Name] = 1;
+		ElsIf SetFalse = MetaRow.Rows.Count() Then
+			MetaRow[Right.Name] = 2;
+		Else	
+			MetaRow[Right.Name] = 3;
+		EndIf;
+		
+	EndDo;
+
+EndProcedure
 
 Procedure addSubtypeRow(Val MetaItem, Val MetaItemRow, Val ParamStructure)
 	
@@ -164,8 +191,7 @@ Procedure ReplaceTextInTabDoc(TabDoc, Find, Replace, Color)
 EndProcedure
 
 Procedure FillTabDoc(TabDoc, RoleTree, ParamStructure)
-	For Each Row In RoleTree.Rows Do
-		
+	For Each Row In RoleTree.Rows Do			
 		TabRow = Roles_ServiceServer.RowTemplate();
 			
 		TabRow.Parameters.Fill(Row);
@@ -246,6 +272,10 @@ Procedure AddChildOperations(MetaItem, MetaItemRow, DataType, Val StrData)
 				
 		AddChildRow.ObjectPath = MetaItemRow.ObjectPath + ".Operation." + AddChildRow.ObjectName;
 		SetCurrentRights(AddChildRow, StrData);
+		
+		If NOT AddChildRow.Edited AND StrData.OnlyFilled Then
+			MetaItemRow.Rows.Delete(AddChildRow);								
+		EndIf;
 	EndDo;
 EndProcedure
 
@@ -284,6 +314,10 @@ Procedure AddChildURLTemplates(MetaItem, MetaItemRow, DataType, Val StrData)
 			AddChildNewRow.ObjectPath = AddChildRows.ObjectPath + "." + AddChild.Name + ".Method." + 
 							AddChildNewRow.ObjectName;
 			SetCurrentRights(AddChildNewRow, StrData);
+			
+			If NOT AddChildNewRow.Edited AND StrData.OnlyFilled Then
+				AddChildRows.Rows.Delete(AddChildNewRow);								
+			EndIf;
 
 		EndDo;
 		
@@ -291,6 +325,11 @@ Procedure AddChildURLTemplates(MetaItem, MetaItemRow, DataType, Val StrData)
 	AddChildRows.Picture = StrData.PictureLibData["Roles_" + ObjectSubtype];
 	AddChildRows.ObjectName = DataType;
 	AddChildRows.ObjectSubtype = ObjectSubtype;
+	
+	If NOT AddChildRows.Edited AND StrData.OnlyFilled Then
+		MetaItemRow.Rows.Delete(AddChildRows);								
+	EndIf;
+
 EndProcedure
 
 Procedure AddChildSubsystem(MetaItem, MetaItemRow, DataType, Val StrData)
@@ -323,6 +362,10 @@ Procedure AddChildSubsystem(MetaItem, MetaItemRow, DataType, Val StrData)
 		
 		MetaItem = AddChild;
 		AddChildSubsystem(MetaItem, MetaItemRow, "Subsystems", StrData);
+		
+		If NOT AddChildRow.Edited AND StrData.OnlyFilled Then
+			MetaItemRow.Rows.Delete(AddChildRow);								
+		EndIf;
 	EndDo;
 EndProcedure
 
@@ -363,7 +406,10 @@ Procedure AddChild(MetaItem, MetaItemRow, DataType, Val StrData)
 			AddChildRow.ObjectType = ObjectSubtype;
 			addSubtypeRow(AddChild, AddChildRow, StrData);
 		EndIf;
-		
+		If NOT AddChildRow.Edited AND StrData.OnlyFilled Then
+			AddChildRows.Rows.Delete(AddChildRow);								
+		EndIf;
+
 	EndDo;
 	If DataType = "StandardAttributes" Then		
 		If AddChildRows.ObjectFullName = "" Then
@@ -378,6 +424,14 @@ Procedure AddChild(MetaItem, MetaItemRow, DataType, Val StrData)
 	AddChildRows.ObjectSubtype = ObjectSubtype;
 	AddChildRows.ObjectName = DataType;
 	AddChildRows.Picture = StrData.PictureLibData["Roles_" + DataType];
+	
+	If NOT AddChildRows.Edited AND StrData.OnlyFilled Then
+		MetaItemRow.Rows.Delete(AddChildRows);
+	Else
+		CulculateTopLvlStatus(AddChildRows);
+	EndIf;
+
+	
 EndProcedure
 
 Procedure AddChildTab(MetaItem, MetaItemRow, DataType, Val StrData)
@@ -420,19 +474,29 @@ Procedure AddChildTab(MetaItem, MetaItemRow, DataType, Val StrData)
 			AddChildNewRow.ObjectName = AddChildAttribute.Name;
 			AddChildNewRow.ObjectFullName = AddChildAttribute.Name;
 			AddChildNewRow.Picture = PictureAttributes;
-			AddChildNewRow.ObjectSubtype = ObjectSubtype;
+			AddChildNewRow.ObjectSubtype = Enums.Roles_MetadataSubtype.Attribute;
 			
 			// read data from object
 			
 			AddChildNewRow.ObjectPath = AddChildRow.ObjectPath + ".Attribute." + 
 							AddChildNewRow.ObjectName;
-			SetCurrentRights(AddChildNewRow, StrData);
-
+			If Not AddChildNewRow.Edited AND StrData.OnlyFilled Then
+				AddChildRow.Rows.Delete(AddChildNewRow);								
+			EndIf;
 		EndDo;
+		If Not AddChildRow.Edited AND StrData.OnlyFilled Then
+			AddChildRows.Rows.Delete(AddChildRow);								
+		EndIf;
 	EndDo;
 	AddChildRows.Picture = StrData.PictureLibData["Roles_" + DataType];
 	AddChildRows.ObjectName = DataType;
 	AddChildRows.ObjectSubtype = ObjectSubtype;
+	
+	If Not AddChildRows.Edited AND StrData.OnlyFilled Then
+		MetaItemRow.Rows.Delete(AddChildRows);
+	Else
+		CulculateTopLvlStatus(AddChildRows);
+	EndIf;
 EndProcedure
 
 Procedure AddChildStandardTab(MetaItem, MetaItemRow, DataType, Val StrData)
@@ -456,19 +520,28 @@ Procedure AddChildStandardTab(MetaItem, MetaItemRow, DataType, Val StrData)
 			AddChildNewRow.ObjectName = AddChildAttribute.Name;
 			AddChildNewRow.ObjectFullName = AddChildAttribute.Name;	
 			AddChildNewRow.Picture = StrData.PictureLibData.Roles_StandardAttributes;
-			AddChildNewRow.ObjectSubtype = ObjectSubtype;
+			AddChildNewRow.ObjectSubtype = Enums.Roles_MetadataSubtype.Attribute;
 			
 			// read data from object
 			
 			AddChildNewRow.ObjectPath = AddChildRow.ObjectPath + ".Attribute." + 
 							AddChildNewRow.ObjectName;
-			SetCurrentRights(AddChildNewRow, StrData);
-
-		EndDo;	
+			If Not AddChildNewRow.Edited AND StrData.OnlyFilled Then
+				AddChildRow.Rows.Delete(AddChildNewRow);								
+			EndIf;
+		EndDo;
+		If Not AddChildRow.Edited AND StrData.OnlyFilled Then
+			AddChildRows.Rows.Delete(AddChildRow);								
+		EndIf;
 	EndDo;
 	AddChildRows.Picture = StrData.PictureLibData["Roles_" + DataType];
 	AddChildRows.ObjectName = DataType;
 	AddChildRows.ObjectSubtype = ObjectSubtype;
+	If Not AddChildRows.Edited AND StrData.OnlyFilled Then
+		MetaItemRow.Rows.Delete(AddChildRows);		
+	Else
+		CulculateTopLvlStatus(AddChildRows);
+	EndIf;
 EndProcedure
 
 #EndRegion
@@ -509,6 +582,9 @@ Procedure SetCurrentRights(Row, StrData)
 	EndIf;
 	For Each RightData In RightDataArray Do
 		For Each Data In RightData Do
+			If Row[Data.Key] = 1 Then
+				Continue;
+			EndIf;
 			Row[Data.Key] = ?(Data.Value.Value, 1, 2);
 		EndDo;
 	

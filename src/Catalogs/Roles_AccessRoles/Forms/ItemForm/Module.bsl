@@ -198,12 +198,10 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined, OnlyNextLvl = False)
 		
 	If NOT Value = Undefined Then
 		CurrentRow[Field.Name] = Value;
-	ElsIf CurrentRow[Field.Name] = 0 Then
-		CurrentRow[Field.Name] = 1;
-	ElsIf CurrentRow[Field.Name] = 1 Then
-		CurrentRow[Field.Name] = 2;
-	Else
+	ElsIf CurrentRow[Field.Name] Then
 		CurrentRow[Field.Name] = 0;
+	Else
+		CurrentRow[Field.Name] = ?(Object.SetRightsForNewNativeObjects, 2, 1);
 	EndIf;
 	CurrentRow.Edited = True;
 	SetEditedInfo(CurrentRow);
@@ -261,6 +259,16 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined, OnlyNextLvl = False)
 		For Each Row In CurrentRow.GetItems() Do
 			SetFlags(Row,  Field, CurrentRow[Field.Name])
 		EndDo;
+	ElsIf ParentRow.ObjectSubtype = CurrentRow.ObjectSubtype And Not OnlyNextLvl Then
+		SetNewStatus = New Map;
+		For Each ChRow In ParentRow.GetItems() Do
+			SetNewStatus.Insert(ChRow[Field.Name], ChRow[Field.Name]);
+		EndDo;
+		If SetNewStatus.Count() = 1 Then
+			ParentRow[Field.Name] = SetNewStatus.Get(ChRow[Field.Name]);
+		Else
+			ParentRow[Field.Name] = 3;
+		EndIf;
 	EndIf;
 	
 EndProcedure
@@ -299,7 +307,7 @@ EndProcedure
 
 &AtClient
 Procedure RolesEditOnActivateCell(Item)
-	SetAddRestrictionEnabled (Item.CurrentData, Item.CurrentItem.Name);
+	SetAddRestrictionEnabled(Item.CurrentData, Item.CurrentItem.Name);
 EndProcedure
 
 &AtClient
