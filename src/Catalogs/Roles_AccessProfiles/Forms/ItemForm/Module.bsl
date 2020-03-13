@@ -3,6 +3,28 @@ Procedure UpdateMatrix(Command)
 	UpdateMatrixAtServer();
 EndProcedure
 
+&AtClient
+Procedure TabDocMartixOnActivate(Item)
+	SelectedAreas = Items.TabDocMartix.GetSelectedAreas();
+	If Not SelectedAreas.Count() Then
+		Return;
+	EndIf;
+	ObjectPath = "";
+	RightName = "";
+	Top = SelectedAreas[0].Top;
+	Left = SelectedAreas[0].Left;
+	If Top Then
+		ObjectPath = TabDocMartix.Area(Top, 3).Text;
+	EndIf;
+	If Left Then
+		RightName =  TabDocMartix.Area(1, Left).Text;
+	EndIf;
+	
+	Message(ObjectPath);
+	Message(RightName);
+EndProcedure
+
+
 &AtServer
 Procedure UpdateMatrixAtServer()
 	

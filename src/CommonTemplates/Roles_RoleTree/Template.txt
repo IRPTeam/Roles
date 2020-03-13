@@ -828,25 +828,45 @@
 	<column>
 		<Name xsi:type="xs:string">RLSInsertFilled</Name>
 		<ValueType>
-			<Type>xs:boolean</Type>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Any</AllowedSign>
+			</NumberQualifiers>
 		</ValueType>
 	</column>
 	<column>
 		<Name xsi:type="xs:string">RLSReadFilled</Name>
 		<ValueType>
-			<Type>xs:boolean</Type>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Any</AllowedSign>
+			</NumberQualifiers>
 		</ValueType>
 	</column>
 	<column>
 		<Name xsi:type="xs:string">RLSUpdateFilled</Name>
 		<ValueType>
-			<Type>xs:boolean</Type>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Any</AllowedSign>
+			</NumberQualifiers>
 		</ValueType>
 	</column>
 	<column>
 		<Name xsi:type="xs:string">RLSDeleteFilled</Name>
 		<ValueType>
-			<Type>xs:boolean</Type>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Any</AllowedSign>
+			</NumberQualifiers>
 		</ValueType>
 	</column>
 	<column>

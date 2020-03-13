@@ -81,10 +81,11 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	FillTabDoc(TabDoc, RoleTree, ParamStructure);
 	TabDoc.ShowHeaders = True;
 	TabDoc.Put(Roles_ServiceServer.FooterTemplate()); 
-
+	
 	ReplaceTextInTabDoc(TabDoc, 1, "✔", New Color(0, 255, 0));
 	ReplaceTextInTabDoc(TabDoc, 2, "❌", New Color(255, 0, 0));
 	ReplaceTextInTabDoc(TabDoc, 3, "❔", New Color(255, 255, 0));
+	
 	If OnlyReport Then
 		RoleTree.Rows.Clear();
 	EndIf;
@@ -198,6 +199,20 @@ Procedure FillTabDoc(TabDoc, RoleTree, ParamStructure)
 		TabRow.Area(1, 2).Picture = Row.Picture;
 		TabRow.Area(1, 2).Indent = Row.Level();
 
+//		FindRows = ParamStructure.ObjectData.RightTable.Copy(
+//						New Structure("ObjectPath, Disable", Row.ObjectPath, False), "Ref, RightName");
+//		RightsRef = FindRows.Copy();
+//		FindRows.GroupBy("RightName");
+//		For Each Right In FindRows Do
+//			RightRef = RightsRef.Copy(New Structure("RightName", Right.RightName), "Ref");
+//			RightRef.GroupBy("Ref");
+//			RefList = StrConcat(RightRef.UnloadColumn("Ref"), Chars.LF); 
+//			
+//			TabRow.Parameters[Right.RightName] = RefList;
+//			
+//		EndDo;
+
+		
 		TabDoc.Put(TabRow, , , False);
 		
 		TabDoc.StartRowGroup(, False);
@@ -211,18 +226,12 @@ Procedure FillTabDoc(TabDoc, RoleTree, ParamStructure)
 			TabRowRLS.Parameters.ObjectFullName = "RLS";
 			TabDoc.Put(TabRowRLS, , , False);
 			TabDoc.StartRowGroup(, False);
-			If Row.RLSInsertFilled Then
-				FillTabDocRLS(ParamStructure, TabDoc, "Insert", Row.RLSInsertID);
-			EndIf;
-			If Row.RLSReadFilled Then
-				FillTabDocRLS(ParamStructure, TabDoc, "Read", Row.RLSReadID);
-			EndIf;
-			If Row.RLSDeleteFilled Then
-				FillTabDocRLS(ParamStructure, TabDoc, "Delete", Row.RLSDeleteID);
-			EndIf;
-			If Row.RLSUpdateFilled Then
-				FillTabDocRLS(ParamStructure, TabDoc, "Update", Row.RLSUpdateID);
-			EndIf;
+			
+			FillTabDocRLS(ParamStructure, TabDoc, "Insert", Row.RLSInsertID, Row.RLSInsertFilled, Row);
+			FillTabDocRLS(ParamStructure, TabDoc, "Read", 	Row.RLSReadID, 	Row.RLSReadFilled, Row);
+			FillTabDocRLS(ParamStructure, TabDoc, "Delete", Row.RLSDeleteID, Row.RLSDeleteFilled, Row);
+			FillTabDocRLS(ParamStructure, TabDoc, "Update", Row.RLSUpdateID, Row.RLSUpdateFilled, Row);
+
 			TabDoc.EndRowGroup();
 		
 		EndIf;		
@@ -232,19 +241,25 @@ Procedure FillTabDoc(TabDoc, RoleTree, ParamStructure)
 	
 EndProcedure
 
-Procedure FillTabDocRLS(Val ParamStructure, TabDoc, Name, RowIDList)
-	RowIDArray = StrSplit(RowIDList, ";", False);
-	For Each RowID In RowIDArray Do
-		For Each RLSRow In ParamStructure.ObjectData.RestrictionByCondition.FindRows(New Structure("RowID", RowID)) Do
-			TabRowRLS = Roles_ServiceServer.RLSTemplate();
-			TabRowRLS.Area(1, 2).Picture = PictureLib.Roles_rls_blank;
-			TabRowRLS.Area(1, 2).Indent = 3;
-			TabRowRLS.Parameters.RLSName = Name + "(" + RLSRow.Ref + ")";
-			TabRowRLS.Parameters.Fields = RLSRow.Fields;
-			TabRowRLS.Parameters.Condition = RLSRow.Condition;
-			TabDoc.Put(TabRowRLS, , , False);
+Procedure FillTabDocRLS(Val ParamStructure, TabDoc, Name, RowIDList, RLSFilled, Row)
+	If Not RLSFilled = 0 Then
+		RowIDArray = StrSplit(RowIDList, ";", False);
+		For Each RowID In RowIDArray Do
+			For Each RLSRow In ParamStructure.ObjectData.RestrictionByCondition.FindRows(New Structure("RowID", RowID)) Do
+				TabRowRLS = Roles_ServiceServer.RLSTemplate();
+				TabRowRLS.Area(1, 2).Picture = PictureLib.Roles_rls_blank;
+				TabRowRLS.Area(1, 2).Indent = 3;
+				TabRowRLS.Parameters.RLSName = Name + "(" + RLSRow.Ref + ")";
+				If RLSFilled = -1 Then
+					TabRowRLS.Area(1, 2).Font = New Font(, , , , , True);
+				EndIf;
+				TabRowRLS.Parameters.Fields = RLSRow.Fields;
+				TabRowRLS.Parameters.Condition = RLSRow.Condition;
+				TabRowRLS.Parameters.ObjectPath = Row.ObjectPath;
+				TabDoc.Put(TabRowRLS, , , False);
+			EndDo;
 		EndDo;
-	EndDo;
+	EndIf;
 
 EndProcedure
 
@@ -588,27 +603,31 @@ Procedure SetCurrentRights(Row, StrData)
 			Row[Data.Key] = ?(Data.Value.Value, 1, 2);
 		EndDo;
 	
-		If RightData.Property("Insert") Then
-			Row.RLSInsertID = RightData.Insert.RowID + ";" + Row.RLSInsertID;
-			Row.RLSInsertFilled = RightData.Insert.RLSFilled;
-		EndIf;
-		If RightData.Property("Read") Then
-			Row.RLSReadID = RightData.Read.RowID + ";" + Row.RLSReadID;
-			Row.RLSReadFilled = RightData.Read.RLSFilled;
-		EndIf;
-		If RightData.Property("Delete") Then
-			Row.RLSDeleteID = RightData.Delete.RowID + ";" + Row.RLSDeleteID;
-			Row.RLSDeleteFilled = RightData.Delete.RLSFilled;
-		EndIf;
-		If RightData.Property("Update") Then
-			Row.RLSUpdateID = RightData.Update.RowID + ";" + Row.RLSUpdateID;
-			Row.RLSUpdateFilled = RightData.Update.RLSFilled;
-		EndIf;
+		FillRLSData(Row, RightData, "Read");
+		FillRLSData(Row, RightData, "Insert");
+		FillRLSData(Row, RightData, "Delete");
+		FillRLSData(Row, RightData, "Update");
 	EndDo;
 		
 	Row.Edited = True;
 	SetEditedInfo(Row);
 EndProcedure
+
+
+Procedure FillRLSData(Row, RightData, Name)
+	
+	If RightData.Property(Name) Then
+		Row["RLS" + Name + "ID"] = RightData[Name].RowID + ";" + Row["RLS" + Name + "ID"];
+		If Row["RLS" + Name + "Filled"] = 0 Then
+			Row["RLS" + Name + "Filled"] = ?(RightData[Name].RLSFilled, 1, 0);
+		ElsIf Row["RLS" + Name + "Filled"] = 1 Then
+			Row["RLS" + Name + "Filled"] = ?(Not RightData[Name].RLSFilled, -1, 1);
+		Else
+			Row["RLS" + Name + "Filled"] = -1;
+		EndIf;	
+	EndIf;
+EndProcedure
+
 
 Procedure SetEditedInfo(Row)
 	If Row.Parent = Undefined Then
