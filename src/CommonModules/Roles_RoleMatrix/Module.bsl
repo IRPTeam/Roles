@@ -77,7 +77,11 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	
 	TabDoc = New SpreadsheetDocument;
 	TabDoc.ShowRowGroupLevel(1);
-	TabDoc.Put(Roles_ServiceServer.HeadTemplate()); 
+	HeadTemplate = Roles_ServiceServer.HeadTemplate();
+	For Each Roles_Right In Metadata.Enums.Roles_Rights.EnumValues Do
+		HeadTemplate.Parameters[Roles_Right.Name] = Enums.Roles_Rights[Roles_Right.Name];
+	EndDo;
+	TabDoc.Put(HeadTemplate); 
 	FillTabDoc(TabDoc, RoleTree, ParamStructure);
 	TabDoc.ShowHeaders = True;
 	TabDoc.Put(Roles_ServiceServer.FooterTemplate()); 
@@ -199,18 +203,18 @@ Procedure FillTabDoc(TabDoc, RoleTree, ParamStructure)
 		TabRow.Area(1, 2).Picture = Row.Picture;
 		TabRow.Area(1, 2).Indent = Row.Level();
 
-//		FindRows = ParamStructure.ObjectData.RightTable.Copy(
-//						New Structure("ObjectPath, Disable", Row.ObjectPath, False), "Ref, RightName");
-//		RightsRef = FindRows.Copy();
-//		FindRows.GroupBy("RightName");
-//		For Each Right In FindRows Do
-//			RightRef = RightsRef.Copy(New Structure("RightName", Right.RightName), "Ref");
-//			RightRef.GroupBy("Ref");
-//			RefList = StrConcat(RightRef.UnloadColumn("Ref"), Chars.LF); 
-//			
-//			TabRow.Parameters[Right.RightName] = RefList;
-//			
-//		EndDo;
+		//FindRows = ParamStructure.ObjectData.RightTable.Copy(
+		//				New Structure("ObjectPath, Disable", Row.ObjectPath, False), "Ref, RightName");
+		//RightsRef = FindRows.Copy();
+		//FindRows.GroupBy("RightName");
+		//For Each Right In FindRows Do
+		//	RightRef = RightsRef.Copy(New Structure("RightName", Right.RightName), "Ref");
+		//	RightRef.GroupBy("Ref");
+		//	RefList = StrConcat(RightRef.UnloadColumn("Ref"), Chars.LF); 
+		//	
+		//	TabRow.Parameters[Right.RightName] = RefList;
+		//	
+		//EndDo;
 
 		
 		TabDoc.Put(TabRow, , , False);
