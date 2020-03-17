@@ -88,8 +88,12 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	
 	ReplaceTextInTabDoc(TabDoc, 1, "✔", New Color(0, 255, 0));
 	ReplaceTextInTabDoc(TabDoc, 2, "❌", New Color(255, 0, 0));
-	ReplaceTextInTabDoc(TabDoc, 3, "❔", New Color(255, 255, 0));
+	ReplaceTextInTabDoc(TabDoc, 3, "✔", New Color(255, 255, 0));
 	
+	ReplaceTextInTabDoc(TabDoc, 11, "✅", New Color(0, 255, 0));
+	ReplaceTextInTabDoc(TabDoc, 22, "❎", New Color(255, 0, 0));
+	ReplaceTextInTabDoc(TabDoc, 33, "✅", New Color(255, 255, 0));
+
 	If OnlyReport Then
 		RoleTree.Rows.Clear();
 	EndIf;
@@ -202,20 +206,14 @@ Procedure FillTabDoc(TabDoc, RoleTree, ParamStructure)
 		TabRow.Parameters.Fill(Row);
 		TabRow.Area(1, 2).Picture = Row.Picture;
 		TabRow.Area(1, 2).Indent = Row.Level();
-
-		//FindRows = ParamStructure.ObjectData.RightTable.Copy(
-		//				New Structure("ObjectPath, Disable", Row.ObjectPath, False), "Ref, RightName");
-		//RightsRef = FindRows.Copy();
-		//FindRows.GroupBy("RightName");
-		//For Each Right In FindRows Do
-		//	RightRef = RightsRef.Copy(New Structure("RightName", Right.RightName), "Ref");
-		//	RightRef.GroupBy("Ref");
-		//	RefList = StrConcat(RightRef.UnloadColumn("Ref"), Chars.LF); 
-		//	
-		//	TabRow.Parameters[Right.RightName] = RefList;
-		//	
-		//EndDo;
-
+		
+		If Not ParamStructure.RightsMap.Get(Row.ObjectPath) = Undefined Then
+			For Each Right In ParamStructure.RightsMap.Get(Row.ObjectPath) Do
+				If Right.Value.Count() > 1 Then
+					TabRow.Parameters[Right.Key] = "" + TabRow.Parameters[Right.Key] + TabRow.Parameters[Right.Key];
+				EndIf; 
+			EndDo;
+		EndIf;
 		
 		TabDoc.Put(TabRow, , , False);
 		
@@ -573,9 +571,13 @@ Function CurrentRights(DataTables)
 	For Each RowVT In TempVT Do
 		
 		FindRows = DataTables.RightTable.FindRows(New Structure("ObjectPath, Disable", RowVT.ObjectPath, False));
-		RightArray = New Array;
+		RightsStructure = New Structure;
 		For Each Row In FindRows Do	
-			RightsStructure = New Structure;	
+			CurrentRightStructure = Undefined;
+			If Not RightsStructure.Property(Roles_Settings.MetaName(Row.RightName), CurrentRightStructure) Then
+				RightsStructure.Insert(Roles_Settings.MetaName(Row.RightName), New Array);			
+			EndIf;
+			
 			RightValue = New Structure;
 			RightValue.Insert("Value", Row.RightValue);
 			RightValue.Insert("RowID", Row.RowID);
@@ -584,11 +586,13 @@ Function CurrentRights(DataTables)
 			RLSFilled = DataTables.RestrictionByCondition.FindRows(RLSFilter).Count();
 			
 			RightValue.Insert("RLSFilled", RLSFilled);
-			RightsStructure.Insert(Roles_Settings.MetaName(Row.RightName), RightValue);
-			RightArray.Add(RightsStructure);
+			
+			
+			RightsStructure[Roles_Settings.MetaName(Row.RightName)].Add(RightValue);
+
 		EndDo;
 		
-		RightMap.Insert(RowVT.ObjectPath, RightArray);
+		RightMap.Insert(RowVT.ObjectPath, RightsStructure);
 	EndDo;
 	Return RightMap;
 EndFunction
@@ -600,17 +604,25 @@ Procedure SetCurrentRights(Row, StrData)
 		Return;
 	EndIf;
 	For Each RightData In RightDataArray Do
-		For Each Data In RightData Do
-			If Row[Data.Key] = 1 Then
+		For Each Data In RightData.Value Do
+			
+			If RightData.Key = "Read" Then
+				FillRLSData(Row, Data, "Read");
+			ElsIf RightData.Key = "Insert" Then
+				FillRLSData(Row, Data, "Insert");
+			ElsIf RightData.Key = "Delete" Then
+				FillRLSData(Row, Data, "Delete");
+			ElsIf RightData.Key = "Update" Then
+				FillRLSData(Row, Data, "Update");
+			EndIf;
+			If Row[RightData.Key] = 1 Then
 				Continue;
 			EndIf;
-			Row[Data.Key] = ?(Data.Value.Value, 1, 2);
+			Row[RightData.Key] = ?(Data.Value, 1, 2);
+
 		EndDo;
 	
-		FillRLSData(Row, RightData, "Read");
-		FillRLSData(Row, RightData, "Insert");
-		FillRLSData(Row, RightData, "Delete");
-		FillRLSData(Row, RightData, "Update");
+
 	EndDo;
 		
 	Row.Edited = True;
@@ -619,17 +631,14 @@ EndProcedure
 
 
 Procedure FillRLSData(Row, RightData, Name)
-	
-	If RightData.Property(Name) Then
-		Row["RLS" + Name + "ID"] = RightData[Name].RowID + ";" + Row["RLS" + Name + "ID"];
-		If Row["RLS" + Name + "Filled"] = 0 Then
-			Row["RLS" + Name + "Filled"] = ?(RightData[Name].RLSFilled, 1, 0);
-		ElsIf Row["RLS" + Name + "Filled"] = 1 Then
-			Row["RLS" + Name + "Filled"] = ?(Not RightData[Name].RLSFilled, -1, 1);
-		Else
-			Row["RLS" + Name + "Filled"] = -1;
-		EndIf;	
-	EndIf;
+	Row["RLS" + Name + "ID"] = RightData.RowID + ";" + Row["RLS" + Name + "ID"];
+	If Row["RLS" + Name + "Filled"] = 0 Then
+		Row["RLS" + Name + "Filled"] = ?(RightData.RLSFilled, 1, 0);
+	ElsIf Row["RLS" + Name + "Filled"] = 1 Then
+		Row["RLS" + Name + "Filled"] = ?(Not RightData.RLSFilled, -1, 1);
+	Else
+		Row["RLS" + Name + "Filled"] = -1;
+	EndIf;	
 EndProcedure
 
 
