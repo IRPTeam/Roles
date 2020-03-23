@@ -97,6 +97,8 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	If OnlyReport Then
 		RoleTree.Rows.Clear();
 	EndIf;
+	TabDoc.FixedLeft = 2;
+	TabDoc.FixedTop = 1;
 	Return TabDoc;
 EndFunction
 
@@ -246,12 +248,13 @@ EndProcedure
 Procedure FillTabDocRLS(Val ParamStructure, TabDoc, Name, RowIDList, RLSFilled, Row)
 	If Not RLSFilled = 0 Then
 		RowIDArray = StrSplit(RowIDList, ";", False);
+		RLSMap = New Map;
 		For Each RowID In RowIDArray Do
-			For Each RLSRow In ParamStructure.ObjectData.RestrictionByCondition.FindRows(New Structure("RowID", RowID)) Do
+			For Each RLSRow In ParamStructure.ObjectData.RestrictionByCondition.FindRows(New Structure("RowID", RowID)) Do				
 				TabRowRLS = Roles_ServiceServer.RLSTemplate();
 				TabRowRLS.Area(1, 2).Picture = PictureLib.Roles_rls_blank;
 				TabRowRLS.Area(1, 2).Indent = 3;
-				TabRowRLS.Parameters.RLSName = Name + "(" + RLSRow.Ref + ")";
+				TabRowRLS.Parameters.RLSName = Name + Chars.LF + RLSRow.Ref;
 				If RLSFilled = -1 Then
 					TabRowRLS.Area(1, 2).Font = New Font(, , , , , True);
 				EndIf;

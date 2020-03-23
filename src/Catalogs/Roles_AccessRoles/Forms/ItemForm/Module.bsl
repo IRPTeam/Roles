@@ -176,6 +176,7 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 	UpdateRightsList(True);
 EndProcedure
 
+
 &AtClient
 Procedure SearchTextOnChange(Item)
 	If ValueIsFilled(SearchText) Then
@@ -318,7 +319,7 @@ Procedure SetAddRestrictionEnabled (CurrentData, ColumnName)
 		OR ColumnName = "Update"
 		OR ColumnName = "Delete";
 	
-	If NOT isRLSData Then
+	If NOT isRLSData Or CurrentData.ObjectName = "" Then
 		RLSRowID = "";
 		Items.RestrictionByConditionMatrixAddRestriction.Enabled = False;
 		Return;
@@ -359,3 +360,24 @@ Procedure AddRestriction(Command)
 	NewRow = Object.RestrictionByCondition.Add();
 	NewRow.RowID = RLSRowID;
 EndProcedure
+
+
+&AtClient
+Procedure OnFinishEditFilter(Result, AddInfo = Undefined) Export
+	If TypeOf(Result) = Type("Structure") Then
+
+	EndIf;
+EndProcedure
+
+
+&AtClient
+Procedure RestrictionByConditionMatrixFilterDataStartChoice(Item, ChoiceData, StandardProcessing)
+	StandardProcessing = False;
+	Notify = New NotifyDescription("OnFinishEditFilter", ThisObject);
+	OpeningParameters = New Structure();
+	OpeningParameters.Insert("Path", Items.RolesEdit.CurrentData.ObjectPath);
+
+	OpenForm("Catalog.Roles_AccessRoles.Form.EditCondition", OpeningParameters, ThisObject, , , , Notify);
+
+EndProcedure
+

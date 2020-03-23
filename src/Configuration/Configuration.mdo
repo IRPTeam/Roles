@@ -20,7 +20,7 @@
   <namePrefix>Roles_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
-  <version>0.0.5</version>
+  <version>0.0.7</version>
   <defaultLanguage>Language.English</defaultLanguage>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
@@ -152,6 +152,7 @@
   <commonTemplates>CommonTemplate.Roles_TemplateMetadataObject</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_MatrixTemplate</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_RoleTree</commonTemplates>
+  <commonTemplates>CommonTemplate.Roles_DCS</commonTemplates>
   <commonModules>CommonModule.Roles_UsersEvent</commonModules>
   <commonModules>CommonModule.Roles_Settings</commonModules>
   <commonModules>CommonModule.Roles_GenerateExtension</commonModules>
@@ -159,6 +160,7 @@
   <commonModules>CommonModule.Roles_ExportAndLoadCurrentRoles</commonModules>
   <commonModules>CommonModule.Roles_ServiceServer</commonModules>
   <commonModules>CommonModule.Roles_RoleMatrix</commonModules>
+  <commonModules>CommonModule.КомпоновкаДанныхКлиентСервер</commonModules>
   <commonCommands>CommonCommand.Roles_UpdateExtension</commonCommands>
   <commonCommands>CommonCommand.Roles_LoadRolesFromXML</commonCommands>
   <commonForms>CommonForm.EditText</commonForms>

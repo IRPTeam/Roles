@@ -443,4 +443,13 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="9350bee6-ae91-46dd-b838-7ac162869574">
+    <name>EditCondition</name>
+    <synonym>
+      <key>en</key>
+      <value>Edit condition</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
