@@ -365,7 +365,7 @@ EndProcedure
 &AtClient
 Procedure OnFinishEditFilter(Result, AddInfo = Undefined) Export
 	If TypeOf(Result) = Type("Structure") Then
-
+		Items.RestrictionByConditionMatrix.CurrentData.FilterData = Result.Settings.Filter;
 	EndIf;
 EndProcedure
 

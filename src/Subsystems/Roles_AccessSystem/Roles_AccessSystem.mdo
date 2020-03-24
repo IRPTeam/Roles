@@ -29,4 +29,5 @@
   <content>CommonTemplate.Roles_TemplateDB</content>
   <content>CommonTemplate.Roles_TemplateMetadataObject</content>
   <content>CommonTemplate.Roles_MatrixTemplate</content>
+  <content>Catalog.Roles_Parameters</content>
 </mdclass:Subsystem>

@@ -7,48 +7,46 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>DataSet</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Ref</dataPath>
-			<field>Ref</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Description</dataPath>
-			<field>Description</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>DataVersion</dataPath>
-			<field>DataVersion</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Code</dataPath>
-			<field>Code</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>DeletionMark</dataPath>
-			<field>DeletionMark</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Predefined</dataPath>
-			<field>Predefined</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>PredefinedDataName</dataPath>
-			<field>PredefinedDataName</field>
+			<dataPath>Параметр</dataPath>
+			<field>Параметр</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Параметр</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<dataSource>DataSource</dataSource>
-		<query>SELECT
-	DataObj.*
-FROM
-	Catalog.Users AS DataObj</query>
+		<query>ВЫБРАТЬ
+	ВЫРАЗИТЬ(&amp;Параметр КАК Справочник.Users) КАК Параметр</query>
 	</dataSet>
+	<parameter>
+		<name>Параметр</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Параметр</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Default</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Default</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Ref</dcsset:field>
+					<dcsset:field>Параметр</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Параметр</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemAuto"/>

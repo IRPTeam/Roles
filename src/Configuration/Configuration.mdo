@@ -20,7 +20,7 @@
   <namePrefix>Roles_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
-  <version>0.0.7</version>
+  <version>0.0.8</version>
   <defaultLanguage>Language.English</defaultLanguage>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
@@ -160,7 +160,6 @@
   <commonModules>CommonModule.Roles_ExportAndLoadCurrentRoles</commonModules>
   <commonModules>CommonModule.Roles_ServiceServer</commonModules>
   <commonModules>CommonModule.Roles_RoleMatrix</commonModules>
-  <commonModules>CommonModule.КомпоновкаДанныхКлиентСервер</commonModules>
   <commonCommands>CommonCommand.Roles_UpdateExtension</commonCommands>
   <commonCommands>CommonCommand.Roles_LoadRolesFromXML</commonCommands>
   <commonForms>CommonForm.EditText</commonForms>
@@ -169,6 +168,7 @@
   <catalogs>Catalog.Roles_AccessProfiles</catalogs>
   <catalogs>Catalog.Users</catalogs>
   <catalogs>Catalog.Roles_Templates</catalogs>
+  <catalogs>Catalog.Roles_Parameters</catalogs>
   <enums>Enum.Roles_MetadataTypes</enums>
   <enums>Enum.Roles_Rights</enums>
   <enums>Enum.Roles_MetadataSubtype</enums>
