@@ -231,11 +231,20 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|
 		|ORDER BY
 		|	ObjectPath
-		|AUTOORDER";
+		|AUTOORDER
+		|;
+		|
+		|////////////////////////////////////////////////////////////////////////////////
+		|SELECT
+		|	""Roles_"" + Roles_Parameters.Description AS ObjectName,
+		|	Roles_Parameters.ValueTypeData AS ValueTypeData
+		|FROM
+		|	Catalog.Roles_Parameters AS Roles_Parameters";
 	
 	QueryResult = Query.ExecuteBatch();
 	MainMetadata = QueryResult[0].Unload();
 	SubMetadata = QueryResult[1].Unload();
+	SessionParam = QueryResult[2].Unload();
 	SubMetadata.Indexes.Add("ObjectType");
 	SubMetadata.Indexes.Add("ObjectName");
 	
@@ -255,7 +264,12 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		NewNode.TextContent = Item.ObjectName;
 		ItemsDOM[0].AppendChild(NewNode);
 	EndDo;
-	
+	For Each Item In SessionParam Do
+		NewNode = DOMDocument.CreateElement("SessionParameter");
+		NewNode.TextContent = Item.ObjectName;
+		ItemsDOM[0].AppendChild(NewNode);
+	EndDo;
+
 
 	Language = DOMDocument.GetElementByTagName("Language");
 	Language[0].TextContent = Metadata.DefaultLanguage.Name;
@@ -280,6 +294,48 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 			UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item, SubMetadata);
 		EndIf;
 	EndDo;
+	
+	CreateDirectory(SourcePath + "SessionParameters");
+	For Each SessionRow In SessionParam Do
+		UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, SessionRow);
+	EndDo;
+EndProcedure
+
+Procedure UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, Item)
+	ReadXML = New XMLReader;
+	ReadXML.SetString(XMLSettings.Template);
+	DOMBuilder = New DOMBuilder;
+	DOMDocument = DOMBuilder.Read(ReadXML);
+	ReadXML.Close();
+		
+	DOMDocument.FirstChild.Attributes.GetNamedItem("version").Value	= XMLSettings.version;
+		
+	ObjectNode = DOMDocument.CreateElement("SessionParameter");
+	UpdateRoleExt_ConfigurationXML_AddUUID(DOMDocument, ObjectNode);
+
+	Properties = DOMDocument.CreateElement("Properties");
+	NameTag = DOMDocument.CreateElement("Name");
+	NameTag.TextContent = Item.ObjectName;
+	
+	TypeTag = DOMDocument.CreateElement("Type");
+	Raise "TODO";
+	TypeTag.TextContent = Roles_ServiceServer.SerializeXML(Item.ValueTypeData.Get().Types()[0]);
+	 
+	Properties.AppendChild(NameTag);
+	Properties.AppendChild(TypeTag);
+	
+	ObjectNode.AppendChild(Properties);
+	
+	DOMDocument.FirstChild.AppendChild(ObjectNode);	
+	
+	CreateDirectory(XMLSettings.SourcePath + "SessionParameters");
+	
+	WriteXML = New XMLWriter;
+	WriteXML.OpenFile(XMLSettings.SourcePath + "SessionParameters\" + Item.ObjectName + ".xml");
+	SaveDOM = New DOMWriter;
+	SaveDOM.Write(DOMDocument, WriteXML);
+	WriteXML.Close();
+		
 EndProcedure
 
 Procedure UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item, SubMetadata)

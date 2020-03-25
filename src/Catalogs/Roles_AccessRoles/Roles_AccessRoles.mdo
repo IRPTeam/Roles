@@ -333,6 +333,18 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="d8f76b2d-106f-4831-90a2-68f007e7556c">
+      <name>FilterDataStorage</name>
+      <synonym>
+        <key>en</key>
+        <value>Filter data storage</value>
+      </synonym>
+      <type>
+        <types>ValueStorage</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="0e205f21-cfc1-4eea-815f-940cb6355a0e">
     <producedTypes>

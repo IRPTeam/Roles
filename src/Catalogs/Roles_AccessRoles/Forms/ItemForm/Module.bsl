@@ -174,6 +174,7 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 	EndIf;
 
 	UpdateRightsList(True);
+
 EndProcedure
 
 
@@ -363,21 +364,50 @@ EndProcedure
 
 
 &AtClient
-Procedure OnFinishEditFilter(Result, AddInfo = Undefined) Export
-	If TypeOf(Result) = Type("Structure") Then
-		Items.RestrictionByConditionMatrix.CurrentData.FilterData = Result.Settings.Filter;
-	EndIf;
-EndProcedure
-
-
-&AtClient
 Procedure RestrictionByConditionMatrixFilterDataStartChoice(Item, ChoiceData, StandardProcessing)
 	StandardProcessing = False;
 	Notify = New NotifyDescription("OnFinishEditFilter", ThisObject);
 	OpeningParameters = New Structure();
 	OpeningParameters.Insert("Path", Items.RolesEdit.CurrentData.ObjectPath);
-
+	OpeningParameters.Insert("FilterData", Items.RestrictionByConditionMatrix.CurrentData.SerializedData);
+	
 	OpenForm("Catalog.Roles_AccessRoles.Form.EditCondition", OpeningParameters, ThisObject, , , , Notify);
+EndProcedure
 
+
+
+&AtClient
+Procedure OnFinishEditFilter(Result, AddInfo = Undefined) Export
+	If TypeOf(Result) = Type("Structure") Then
+		CurrentData = Items.RestrictionByConditionMatrix.CurrentData;
+		CurrentData.FilterData = Result.Settings.Filter;
+		CurrentData.Condition = Result.Filter;
+		
+		CurrentData.Modified = Not CurrentData.SerializedData = Result.SettingsXML;
+		CurrentData.SerializedData = Result.SettingsXML;
+	EndIf;
+EndProcedure
+
+
+&AtServer
+Procedure BeforeWriteAtServer(Cancel, CurrentObject, WriteParameters)
+	ModifiedRows = Object.RestrictionByCondition.FindRows(New Structure("Modified", True));
+	For Each Row In ModifiedRows Do
+		CurrentObject.RestrictionByCondition[Row.SourceLineNumber - 1].FilterDataStorage = 
+										New ValueStorage(Row.SerializedData, New Deflation(9));
+	EndDo;
+EndProcedure
+
+
+&AtServer
+Procedure OnReadAtServer(CurrentObject)
+	For Each Row In CurrentObject.RestrictionByCondition Do
+		FormRow = Object.RestrictionByCondition.FindRows(
+						New Structure("SourceLineNumber", Row.LineNumber))[0];
+		FormRow.SerializedData = Row.FilterDataStorage.Get();
+		If Not FormRow.SerializedData = "" Then
+			FormRow.FilterData = Roles_ServiceServer.DeserializeXML(FormRow.SerializedData).Filter;
+		EndIf;
+	EndDo;
 EndProcedure
 
