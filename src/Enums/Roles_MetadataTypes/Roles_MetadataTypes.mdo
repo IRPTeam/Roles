@@ -124,11 +124,25 @@
       <value>Document journal</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="d462b838-416b-4730-af07-3b5c09ce0b50">
+    <name>Enum</name>
+    <synonym>
+      <key>en</key>
+      <value>Enum</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="9d35d03d-0c86-4c10-bff8-3356da7a9053">
     <name>ExchangePlan</name>
     <synonym>
       <key>en</key>
       <value>Exchange plan</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="316d18be-d617-487d-b3f5-445771078642">
+    <name>ExternalDataSource</name>
+    <synonym>
+      <key>en</key>
+      <value>External data source</value>
     </synonym>
   </enumValues>
   <enumValues uuid="d12757c0-bc17-40f8-b85b-8cfe8eba77a6">
@@ -206,13 +220,6 @@
     <synonym>
       <key>en</key>
       <value>Web service</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="316d18be-d617-487d-b3f5-445771078642">
-    <name>ExternalDataSource</name>
-    <synonym>
-      <key>en</key>
-      <value>External data source</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

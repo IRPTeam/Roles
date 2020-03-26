@@ -83,7 +83,6 @@ Procedure LoadFromEDTFormat(Settings, Val Rights)
 	EndDo;
 EndProcedure
 
-
 Procedure LoadRightsToDB(RightObject, Text)
 
 	RightInfo = Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
@@ -152,7 +151,6 @@ Procedure LoadRightsToDB(RightObject, Text)
 	EndDo;
 	RightObject.Write();
 EndProcedure
-
 
 Procedure LoadFromXMLFormat(Settings, Val Rights)
 

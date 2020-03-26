@@ -236,10 +236,12 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|
 		|////////////////////////////////////////////////////////////////////////////////
 		|SELECT
-		|	""Roles_"" + Roles_Parameters.Description AS ObjectName,
+		|	""AccRoles_"" + Roles_Parameters.Description AS ObjectName,
 		|	Roles_Parameters.ValueTypeData AS ValueTypeData
 		|FROM
-		|	Catalog.Roles_Parameters AS Roles_Parameters";
+		|	Catalog.Roles_Parameters AS Roles_Parameters
+		|WHERE
+		|	NOT Roles_Parameters.Ref.DeletionMark";
 	
 	QueryResult = Query.ExecuteBatch();
 	MainMetadata = QueryResult[0].Unload();
@@ -256,20 +258,32 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	ReadXML.Close();
 	
     DOMDocument.GetElementByTagName("Version")[0].TextContent = String(CurrentDate());
-	
-	
 	ItemsDOM = DOMDocument.GetElementByTagName("ChildObjects");
+		
+	For Each Item In SessionParam Do
+		NewNode = DOMDocument.CreateElement("SessionParameter");
+		NewNode.TextContent = Item.ObjectName;
+		ItemsDOM[0].AppendChild(NewNode);
+		For Each RowType In Item.ValueTypeData.Get().Types() Do
+			
+			TypeData = Metadata.FindByType(RowType);
+			If TypeData = Undefined Then
+				Continue;
+			EndIf;
+			NewType = MainMetadata.Add();
+			ObjectName = StrSplit(TypeData.FullName(), ".", False);
+			NewType.ObjectName = ObjectName[1];
+			NewType.ObjectType = Enums.Roles_MetadataTypes[ObjectName[0]];
+		EndDo;
+	EndDo;
+	
+	MainMetadata.GroupBy("ObjectName, ObjectType");
+	
 	For Each Item In MainMetadata Do
 		NewNode = DOMDocument.CreateElement(Roles_Settings.MetaName(Item.ObjectType));
 		NewNode.TextContent = Item.ObjectName;
 		ItemsDOM[0].AppendChild(NewNode);
 	EndDo;
-	For Each Item In SessionParam Do
-		NewNode = DOMDocument.CreateElement("SessionParameter");
-		NewNode.TextContent = Item.ObjectName;
-		ItemsDOM[0].AppendChild(NewNode);
-	EndDo;
-
 
 	Language = DOMDocument.GetElementByTagName("Language");
 	Language[0].TextContent = Metadata.DefaultLanguage.Name;
@@ -285,6 +299,7 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	XMLSettings = New Structure;
 	XMLSettings.Insert("version", DOMDocument.FirstChild.Attributes.GetNamedItem("version").Value);
 	XMLSettings.Insert("Template", GetCommonTemplate("Roles_TemplateMetadataObject").GetText());
+	XMLSettings.Insert("TemplateSP", GetCommonTemplate("Roles_TemplateMetadataObjectSP").GetText());
 	XMLSettings.Insert("SourcePath", SourcePath);
 	
 	
@@ -302,39 +317,38 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 EndProcedure
 
 Procedure UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, Item)
+	
+	TextContent = Roles_ServiceServer.SerializeXML(Item.ValueTypeData.Get());
+	
+	TemplateSP = StrTemplate(XMLSettings.TemplateSP, String(New UUID), Item.ObjectName, TextContent, XMLSettings.version);
+	
 	ReadXML = New XMLReader;
-	ReadXML.SetString(XMLSettings.Template);
+	ReadXML.SetString(TemplateSP);
 	DOMBuilder = New DOMBuilder;
 	DOMDocument = DOMBuilder.Read(ReadXML);
 	ReadXML.Close();
-		
-	DOMDocument.FirstChild.Attributes.GetNamedItem("version").Value	= XMLSettings.version;
-		
-	ObjectNode = DOMDocument.CreateElement("SessionParameter");
-	UpdateRoleExt_ConfigurationXML_AddUUID(DOMDocument, ObjectNode);
 
-	Properties = DOMDocument.CreateElement("Properties");
-	NameTag = DOMDocument.CreateElement("Name");
-	NameTag.TextContent = Item.ObjectName;
+	TypeDescription = DOMDocument.GetElementByTagName("TypeDescription").Item(0);
+	TypeDescription.UnsetNamespaceMapping("http://v8.1c.ru/8.1/data/core");
 	
-	TypeTag = DOMDocument.CreateElement("Type");
-	Raise "TODO";
-	TypeTag.TextContent = Roles_ServiceServer.SerializeXML(Item.ValueTypeData.Get().Types()[0]);
-	 
-	Properties.AppendChild(NameTag);
-	Properties.AppendChild(TypeTag);
-	
-	ObjectNode.AppendChild(Properties);
-	
-	DOMDocument.FirstChild.AppendChild(ObjectNode);	
-	
-	CreateDirectory(XMLSettings.SourcePath + "SessionParameters");
-	
+	For Each Child In TypeDescription.ChildNodes Do
+		Child.UnsetNamespaceMapping("http://v8.1c.ru/8.1/data/enterprise/current-config");
+		
+		TextContent = StrSplit(Child.TextContent, ":", False);
+		If TextContent.Count() > 1 And Not TextContent[0] = "xs" Then
+			TextContent[0] = "cfg";
+			Child.TextContent = StrConcat(TextContent, ":");
+		EndIf;
+		TypeDescription.ParentNode.AppendChild(Child);
+	EndDo;
+	TypeDescription.ParentNode.RemoveChild(TypeDescription);
+		
 	WriteXML = New XMLWriter;
 	WriteXML.OpenFile(XMLSettings.SourcePath + "SessionParameters\" + Item.ObjectName + ".xml");
 	SaveDOM = New DOMWriter;
 	SaveDOM.Write(DOMDocument, WriteXML);
 	WriteXML.Close();
+
 		
 EndProcedure
 

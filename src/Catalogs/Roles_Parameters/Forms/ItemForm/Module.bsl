@@ -17,8 +17,11 @@ EndProcedure
 
 &AtServer
 Procedure OnReadAtServer(CurrentObject)
-	ValueData = CurrentObject.ValuesData.Get();
-	ValueList = CurrentObject.ValuesListData.Get();
+	If Not CurrentObject.isList Then
+		ValueData = CurrentObject.ValuesData.Get();
+	Else
+		ValueList = CurrentObject.ValuesData.Get();
+	EndIf;
 	ValueType = CurrentObject.ValueTypeData.Get();
 EndProcedure
 
@@ -26,13 +29,15 @@ EndProcedure
 &AtServer
 Procedure BeforeWriteAtServer(Cancel, CurrentObject, WriteParameters)
 	CurrentObject.ValuesData 		= New ValueStorage(ValueData);
-	CurrentObject.ValuesListData 	= New ValueStorage(ValueList);
 	CurrentObject.ValueTypeData 	= New ValueStorage(ValueType);
 EndProcedure
 
 
 &AtClient
 Procedure ValueTypeOnChange(Item)
+	
+	
+	
 	Items.ValueData.TypeRestriction = New TypeDescription(ValueType);
 	ValueList.ValueType = New TypeDescription(ValueType);
 EndProcedure

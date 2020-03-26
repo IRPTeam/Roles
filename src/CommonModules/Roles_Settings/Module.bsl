@@ -689,6 +689,7 @@ Function MetaDataObjectNames() Export
 	Structure.Insert(Enums.Roles_MetadataTypes.WebService, "WebServices");
 	Structure.Insert(Enums.Roles_MetadataTypes.Role, "Roles");
 	Structure.Insert(Enums.Roles_MetadataTypes.ExternalDataSource, "ExternalDataSources");
+	Structure.Insert(Enums.Roles_MetadataTypes.Enum, "Enums");
 	Return Structure;
 EndFunction
 
@@ -705,7 +706,6 @@ Function MetadataInfo() Export
 	EndDo;
 	Return MetaStructure;
 EndFunction
-
 
 Function hasAttributes(MetaName) Export
 	Array = New Array;
@@ -923,8 +923,4 @@ Function hasNoInternalInfo(RefData) Export
 	Return NOT Array.Find(RefData) = Undefined;
 EndFunction
 
-
-//URLTemplate
-//Operation
-//TabularSection
 #EndRegion

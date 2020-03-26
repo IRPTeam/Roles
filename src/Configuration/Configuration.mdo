@@ -9,7 +9,6 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <managedApplicationModule>Extended</managedApplicationModule>
-    <defaultLanguage>Checked</defaultLanguage>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="dfdd8d1d-f6a8-4e91-96a1-8b8ef9cc7871"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="ed28055f-464c-4b51-8ed3-8cc60fb0bbc4"/>
@@ -20,8 +19,8 @@
   <namePrefix>Roles_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
+  <defaultRoles>Role.Roles_UserRole</defaultRoles>
   <version>0.0.9</version>
-  <defaultLanguage>Language.English</defaultLanguage>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
@@ -148,11 +147,13 @@
   <commonPictures>CommonPicture.Roles_Functions</commonPictures>
   <commonPictures>CommonPicture.Roles_Fields</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
+  <roles>Role.Roles_UserRole</roles>
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_TemplateMetadataObject</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_MatrixTemplate</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_RoleTree</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_DCS</commonTemplates>
+  <commonTemplates>CommonTemplate.Roles_TemplateMetadataObjectSP</commonTemplates>
   <commonModules>CommonModule.Roles_UsersEvent</commonModules>
   <commonModules>CommonModule.Roles_Settings</commonModules>
   <commonModules>CommonModule.Roles_GenerateExtension</commonModules>

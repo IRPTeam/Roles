@@ -333,7 +333,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="d8f76b2d-106f-4831-90a2-68f007e7556c">
+    <attributes uuid="69eb07c5-0bcf-4a70-a737-9a984149753e">
       <name>FilterDataStorage</name>
       <synonym>
         <key>en</key>
@@ -342,8 +342,9 @@
       <type>
         <types>ValueStorage</types>
       </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
   <tabularSections uuid="0e205f21-cfc1-4eea-815f-940cb6355a0e">

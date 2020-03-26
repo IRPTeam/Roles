@@ -12,7 +12,8 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	For Each Meta In Enums.Roles_MetadataTypes Do
 		
 		If Meta = Enums.Roles_MetadataTypes.IntegrationService // wait 8.3.17
-			OR Meta = Enums.Roles_MetadataTypes.Role Then 
+			OR Meta = Enums.Roles_MetadataTypes.Role
+			OR Meta = Enums.Roles_MetadataTypes.Enum Then 
 			Continue;
 		EndIf;
 		

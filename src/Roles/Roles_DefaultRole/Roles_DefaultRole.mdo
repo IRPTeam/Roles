@@ -3,6 +3,6 @@
   <name>Roles_DefaultRole</name>
   <synonym>
     <key>en</key>
-    <value>Roles Admin Access</value>
+    <value>Admin role</value>
   </synonym>
 </mdclass:Role>

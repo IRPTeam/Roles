@@ -68,6 +68,11 @@
           <segments>ValueType</segments>
         </paths>
       </dataPath>
+      <toolTip>
+        <key>en</key>
+        <value>It have to be only one type selected, and only native type for configuration</value>
+      </toolTip>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
       <handlers>
         <event>OnChange</event>
         <name>ValueTypeOnChange</name>

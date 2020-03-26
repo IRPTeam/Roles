@@ -58,21 +58,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="a7b1f440-ca07-4419-893b-d7c42cb98989">
-    <name>ValuesListData</name>
-    <synonym>
-      <key>en</key>
-      <value>Values list data</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="efc53bdb-bd0f-47aa-bb07-8d45abe472c4">
     <name>ValueTypeData</name>
     <synonym>

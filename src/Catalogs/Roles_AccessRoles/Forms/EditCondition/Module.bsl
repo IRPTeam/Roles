@@ -11,7 +11,6 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 		|	Roles_Parameters.Description AS Description,
 		|	Roles_Parameters.ValuesData AS ValuesData,
 		|	Roles_Parameters.isList AS isList,
-		|	Roles_Parameters.ValuesListData AS ValuesListData,
 		|	Roles_Parameters.ValueTypeData AS ValueTypeData
 		|FROM
 		|	Catalog.Roles_Parameters AS Roles_Parameters";
@@ -25,7 +24,7 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 		NewParam.Name = ParamStr.Description;
 		NewParam.ValueType = ParamStr.ValueTypeData.Get();
 		NewParam.ValueListAllowed = ParamStr.isList;
-		NewParam.Value = ?(ParamStr.isList, ParamStr.ValuesListData.Get(), ParamStr.ValuesData.Get());
+		NewParam.Value = ParamStr.ValuesData.Get();
 		NewParam.Use = DataCompositionParameterUse.Always;
 	EndDo;
 	
@@ -99,7 +98,7 @@ Function PrepareResult()
 	
 	FilterPrepare = StrConcat(FilterArray, Chars.LF);
 	FilterPrepare = StrReplace(FilterPrepare, "DataSet.", "");
-	FilterPrepare = StrReplace(FilterPrepare, "&", "&Role_");
+	FilterPrepare = StrReplace(FilterPrepare, "&", "&AccRoles_");
 	
 	
 	Result = New Structure();
