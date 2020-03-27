@@ -280,7 +280,7 @@ Procedure RestrictionByConditionConditionOpening(Item, StandardProcessing)
 	StandardProcessing = False;
 	Text = Undefined;
 
-	OpenForm("CommonForm.EditText", New Structure("Text", Item.Parent.CurrentData.Condition), ThisObject,,,, New NotifyDescription("RestrictionByConditionConditionOpeningEnd", ThisForm, New Structure("Item", Item)), FormWindowOpeningMode.LockWholeInterface);
+	OpenForm("CommonForm.Roles_EditText", New Structure("Text", Item.Parent.CurrentData.Condition), ThisObject,,,, New NotifyDescription("RestrictionByConditionConditionOpeningEnd", ThisForm, New Structure("Item", Item)), FormWindowOpeningMode.LockWholeInterface);
 EndProcedure
 
 &AtClient

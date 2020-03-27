@@ -6,5 +6,6 @@ Procedure OnCopy(CopiedObject)
 			Restriction.RowID = NewID;
 		EndDo;
 		Row.RowID = NewID;
+		ConfigRoles = False;
 	EndDo;
 EndProcedure

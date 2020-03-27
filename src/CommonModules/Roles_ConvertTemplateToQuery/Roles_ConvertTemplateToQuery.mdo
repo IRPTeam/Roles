@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b65261e-431d-4e6c-aee7-0526abf98d77">
+  <name>Roles_ConvertTemplateToQuery</name>
+  <synonym>
+    <key>en</key>
+    <value>Roles convert template to query</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

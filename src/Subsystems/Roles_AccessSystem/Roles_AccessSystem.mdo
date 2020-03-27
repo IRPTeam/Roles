@@ -21,13 +21,23 @@
   <content>CommonModule.Roles_SettingsReUse</content>
   <content>CommonModule.Roles_ExportAndLoadCurrentRoles</content>
   <content>CommonModule.Roles_ServiceServer</content>
-  <content>CommonModule.Roles_RoleMatrix</content>
-  <content>CommonForm.EditText</content>
-  <content>CommonForm.ConnectionSettingsForm</content>
+  <content>CommonForm.Roles_EditText</content>
+  <content>CommonForm.Roles_ConnectionSettingsForm</content>
   <content>CommonCommand.Roles_UpdateExtension</content>
   <content>CommonCommand.Roles_LoadRolesFromXML</content>
   <content>CommonTemplate.Roles_TemplateDB</content>
   <content>CommonTemplate.Roles_TemplateMetadataObject</content>
   <content>CommonTemplate.Roles_MatrixTemplate</content>
   <content>Catalog.Roles_Parameters</content>
+  <content>CommonCommand.Roles_ConvertTemplate</content>
+  <content>CommonForm.Roles_ConvertTemplateToQuery</content>
+  <content>Role.Roles_UserRole</content>
+  <content>CommonModule.Roles_ConvertTemplateToQuery</content>
+  <content>CommonModule.Roles_RoleMatrix</content>
+  <content>CommonTemplate.Roles_RoleTree</content>
+  <content>CommonTemplate.Roles_DCS</content>
+  <content>CommonTemplate.Roles_TemplateMetadataObjectSP</content>
+  <content>Enum.Roles_Rights</content>
+  <content>Enum.Roles_MetadataTypes</content>
+  <content>Enum.Roles_MetadataSubtype</content>
 </mdclass:Subsystem>

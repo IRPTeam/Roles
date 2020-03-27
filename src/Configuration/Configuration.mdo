@@ -20,7 +20,7 @@
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
   <defaultRoles>Role.Roles_UserRole</defaultRoles>
-  <version>0.0.9</version>
+  <version>0.2.0</version>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
@@ -161,10 +161,13 @@
   <commonModules>CommonModule.Roles_ExportAndLoadCurrentRoles</commonModules>
   <commonModules>CommonModule.Roles_ServiceServer</commonModules>
   <commonModules>CommonModule.Roles_RoleMatrix</commonModules>
+  <commonModules>CommonModule.Roles_ConvertTemplateToQuery</commonModules>
   <commonCommands>CommonCommand.Roles_UpdateExtension</commonCommands>
   <commonCommands>CommonCommand.Roles_LoadRolesFromXML</commonCommands>
-  <commonForms>CommonForm.EditText</commonForms>
-  <commonForms>CommonForm.ConnectionSettingsForm</commonForms>
+  <commonCommands>CommonCommand.Roles_ConvertTemplate</commonCommands>
+  <commonForms>CommonForm.Roles_EditText</commonForms>
+  <commonForms>CommonForm.Roles_ConnectionSettingsForm</commonForms>
+  <commonForms>CommonForm.Roles_ConvertTemplateToQuery</commonForms>
   <catalogs>Catalog.Roles_AccessRoles</catalogs>
   <catalogs>Catalog.Roles_AccessProfiles</catalogs>
   <catalogs>Catalog.Users</catalogs>

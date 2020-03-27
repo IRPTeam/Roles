@@ -1,7 +1,7 @@
 
 &AtClient
 Procedure CommandProcessing(CommandParameter, CommandExecuteParameters)
-	OpenForm("CommonForm.ConnectionSettingsForm", 
+	OpenForm("CommonForm.Roles_ConnectionSettingsForm", 
 		, , , , , New NotifyDescription("LoadRolesFromCurrentConfigEnd", ThisObject));
 EndProcedure
 
