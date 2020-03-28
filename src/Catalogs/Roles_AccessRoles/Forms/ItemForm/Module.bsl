@@ -278,9 +278,14 @@ EndProcedure
 &AtClient
 Procedure RestrictionByConditionConditionOpening(Item, StandardProcessing)
 	StandardProcessing = False;
-	Text = Undefined;
+	Filter = New Structure("Text, ObjectPath, RightName");
+	Filter.Text = Item.Parent.CurrentData.Condition;
+	Filter.ObjectPath = Items.RolesEdit.CurrentData.ObjectPath;
+	Filter.RightName = Items.RolesEdit.CurrentItem.Name;
 
-	OpenForm("CommonForm.Roles_EditText", New Structure("Text", Item.Parent.CurrentData.Condition), ThisObject,,,, New NotifyDescription("RestrictionByConditionConditionOpeningEnd", ThisForm, New Structure("Item", Item)), FormWindowOpeningMode.LockWholeInterface);
+	Notify = New NotifyDescription("RestrictionByConditionConditionOpeningEnd", ThisForm, New Structure("Item", Item));
+	
+	OpenForm("CommonForm.Roles_ConvertTemplateToQuery", Filter, ThisObject,,,, Notify, FormWindowOpeningMode.LockWholeInterface);
 EndProcedure
 
 &AtClient

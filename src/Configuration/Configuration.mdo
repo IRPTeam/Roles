@@ -146,6 +146,7 @@
   <commonPictures>CommonPicture.Roles_DimensionTables</commonPictures>
   <commonPictures>CommonPicture.Roles_Functions</commonPictures>
   <commonPictures>CommonPicture.Roles_Fields</commonPictures>
+  <commonPictures>CommonPicture.Roles_Debug</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
   <roles>Role.Roles_UserRole</roles>
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
@@ -154,7 +155,6 @@
   <commonTemplates>CommonTemplate.Roles_RoleTree</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_DCS</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_TemplateMetadataObjectSP</commonTemplates>
-  <commonModules>CommonModule.Roles_UsersEvent</commonModules>
   <commonModules>CommonModule.Roles_Settings</commonModules>
   <commonModules>CommonModule.Roles_GenerateExtension</commonModules>
   <commonModules>CommonModule.Roles_SettingsReUse</commonModules>
@@ -165,7 +165,6 @@
   <commonCommands>CommonCommand.Roles_UpdateExtension</commonCommands>
   <commonCommands>CommonCommand.Roles_LoadRolesFromXML</commonCommands>
   <commonCommands>CommonCommand.Roles_ConvertTemplate</commonCommands>
-  <commonForms>CommonForm.Roles_EditText</commonForms>
   <commonForms>CommonForm.Roles_ConnectionSettingsForm</commonForms>
   <commonForms>CommonForm.Roles_ConvertTemplateToQuery</commonForms>
   <catalogs>Catalog.Roles_AccessRoles</catalogs>

@@ -236,13 +236,6 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonForm.Roles_EditText</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.Roles_Parameters</name>
 		<right>
 			<name>Read</name>

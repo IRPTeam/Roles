@@ -152,8 +152,8 @@ Procedure RunReportAtServer()
 	DataCompositionProcessor.Initialize(Template);
 	
 	OutputProcessor = New DataCompositionResultSpreadsheetDocumentOutputProcessor;
-	OutputProcessor.УстановитьДокумент(TabDoc);
-	OutputProcessor.Вывести(DataCompositionProcessor);
+	OutputProcessor.SetDocument(TabDoc);
+	OutputProcessor.Output(DataCompositionProcessor);
 	
 EndProcedure
 
