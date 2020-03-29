@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right thin client</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный тонкий клиент</value>
+  </synonym>
 </mdclass:CommonPicture>

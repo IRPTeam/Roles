@@ -12,6 +12,10 @@
     <key>en</key>
     <value>Access roles</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роли доступа</value>
+  </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.Roles_AccessRoles.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
@@ -32,11 +36,17 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.Roles_AccessRoles.Form.ItemForm</defaultObjectForm>
   <defaultListForm>Catalog.Roles_AccessRoles.Form.ListForm</defaultListForm>
+  <auxiliaryObjectForm>Catalog.Roles_AccessRoles.Form.ItemForm</auxiliaryObjectForm>
+  <auxiliaryListForm>Catalog.Roles_AccessRoles.Form.ListForm</auxiliaryListForm>
   <attributes uuid="91ab6908-1ffe-4d16-a833-448aabd3f4dc">
     <name>SetRightsForNewNativeObjects</name>
     <synonym>
       <key>en</key>
       <value>Set rights for new native objects</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Установить права для новых нативных объектов</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -53,6 +63,10 @@
       <key>en</key>
       <value>Set rights for attributes and tabular sections by default</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Установить права для атрибутов и табличных разделов по умолчанию</value>
+    </synonym>
     <type>
       <types>Boolean</types>
     </type>
@@ -67,6 +81,10 @@
     <synonym>
       <key>en</key>
       <value>Subordinate objects have independent rights</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Независимые права подчиненных объектов</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -83,12 +101,20 @@
       <key>en</key>
       <value>Config roles</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Роли конфигурации</value>
+    </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>en</key>
       <value>Roles from configuration</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Роли из конфигурации</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -101,6 +127,10 @@
     <synonym>
       <key>en</key>
       <value>Comment</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
     </synonym>
     <type>
       <types>String</types>
@@ -119,6 +149,10 @@
     <synonym>
       <key>en</key>
       <value>Configuration</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
     </synonym>
     <type>
       <types>String</types>
@@ -143,11 +177,19 @@
       <key>en</key>
       <value>Rights</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Права</value>
+    </synonym>
     <attributes uuid="f7b0ff70-608f-4dcf-97f7-94e324750a2e">
       <name>ObjectType</name>
       <synonym>
         <key>en</key>
         <value>Object type</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Тип объекта</value>
       </synonym>
       <type>
         <types>EnumRef.Roles_MetadataTypes</types>
@@ -164,6 +206,10 @@
       <synonym>
         <key>en</key>
         <value>Object name</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Имя объекта</value>
       </synonym>
       <type>
         <types>String</types>
@@ -184,6 +230,10 @@
         <key>en</key>
         <value>Right name</value>
       </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Правильное имя</value>
+      </synonym>
       <type>
         <types>EnumRef.Roles_Rights</types>
       </type>
@@ -199,6 +249,10 @@
       <synonym>
         <key>en</key>
         <value>Row ID</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>ID строки</value>
       </synonym>
       <type>
         <types>String</types>
@@ -218,6 +272,10 @@
         <key>en</key>
         <value>Object path</value>
       </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Путь объекта</value>
+      </synonym>
       <type>
         <types>String</types>
         <stringQualifiers>
@@ -236,6 +294,10 @@
         <key>en</key>
         <value>Right value</value>
       </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Правильное значение</value>
+      </synonym>
       <type>
         <types>Boolean</types>
       </type>
@@ -250,6 +312,10 @@
         <key>en</key>
         <value>Disable</value>
       </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Отключить</value>
+      </synonym>
       <type>
         <types>Boolean</types>
       </type>
@@ -263,6 +329,10 @@
       <synonym>
         <key>en</key>
         <value>Object subtype</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Подтип объекта</value>
       </synonym>
       <type>
         <types>EnumRef.Roles_MetadataSubtype</types>
@@ -283,11 +353,19 @@
       <key>en</key>
       <value>Restriction by condition</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Ограничение по условию</value>
+    </synonym>
     <attributes uuid="133b5480-2d99-4af1-b793-740854a9cbd1">
       <name>RowID</name>
       <synonym>
         <key>en</key>
         <value>Row ID</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>ID строки</value>
       </synonym>
       <type>
         <types>String</types>
@@ -307,6 +385,10 @@
         <key>en</key>
         <value>Fields</value>
       </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Пол</value>
+      </synonym>
       <type>
         <types>String</types>
         <stringQualifiers/>
@@ -321,6 +403,10 @@
       <synonym>
         <key>en</key>
         <value>Condition</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Условие</value>
       </synonym>
       <type>
         <types>String</types>
@@ -338,6 +424,10 @@
       <synonym>
         <key>en</key>
         <value>Filter data storage</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Хранилище данных отбора</value>
       </synonym>
       <type>
         <types>ValueStorage</types>
@@ -357,11 +447,19 @@
       <key>en</key>
       <value>Templates</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблоны</value>
+    </synonym>
     <attributes uuid="6118ae2c-959b-4de2-8874-287e13a47c96">
       <name>Name</name>
       <synonym>
         <key>en</key>
         <value>Name</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
       </synonym>
       <type>
         <types>String</types>
@@ -383,6 +481,10 @@
         <key>en</key>
         <value>Template</value>
       </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Шаблон</value>
+      </synonym>
       <type>
         <types>CatalogRef.Roles_Templates</types>
       </type>
@@ -403,11 +505,19 @@
       <key>en</key>
       <value>Lang info</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Информация о языке</value>
+    </synonym>
     <attributes uuid="06c0f8fa-b8eb-43a1-8383-f3ffc29c8c41">
       <name>LangCode</name>
       <synonym>
         <key>en</key>
         <value>Lang code</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Код языка</value>
       </synonym>
       <type>
         <types>String</types>
@@ -425,6 +535,10 @@
       <synonym>
         <key>en</key>
         <value>Lang description</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Описание на языке</value>
       </synonym>
       <type>
         <types>String</types>
@@ -444,6 +558,10 @@
       <key>en</key>
       <value>Item form</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -453,6 +571,10 @@
       <key>en</key>
       <value>List form</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -461,6 +583,10 @@
     <synonym>
       <key>en</key>
       <value>Edit condition</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменить условие</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

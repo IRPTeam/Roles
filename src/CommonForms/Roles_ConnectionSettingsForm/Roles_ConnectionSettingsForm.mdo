@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Connection settings form</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Форма настроек подключения</value>
+  </synonym>
   <usePurposes>PersonalComputer</usePurposes>
   <usePurposes>MobileDevice</usePurposes>
 </mdclass:CommonForm>

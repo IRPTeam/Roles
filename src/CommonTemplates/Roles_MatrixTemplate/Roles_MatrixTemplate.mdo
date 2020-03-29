@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Matrix template</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблон матрицы</value>
+  </synonym>
 </mdclass:CommonTemplate>

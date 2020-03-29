@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Rls add</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Rls добавить</value>
+  </synonym>
 </mdclass:CommonPicture>

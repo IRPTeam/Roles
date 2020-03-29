@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right exclusive mode</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный эксклюзивный режим</value>
+  </synonym>
 </mdclass:CommonPicture>

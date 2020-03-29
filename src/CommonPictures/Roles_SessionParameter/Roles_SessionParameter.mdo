@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Session parameter</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Параметр сеанса</value>
+  </synonym>
 </mdclass:CommonPicture>

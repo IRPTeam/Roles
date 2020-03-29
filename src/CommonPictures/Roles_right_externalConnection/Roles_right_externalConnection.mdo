@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right external connection</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильное внешнее соединение</value>
+  </synonym>
 </mdclass:CommonPicture>

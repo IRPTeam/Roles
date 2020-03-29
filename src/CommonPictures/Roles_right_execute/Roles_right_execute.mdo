@@ -2,7 +2,11 @@
 <mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf9f4ab6-0f99-4a6c-924d-8233a025526d">
   <name>Roles_right_execute</name>
   <synonym>
-    <key></key>
+    <key>en</key>
     <value>Roles right execute</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роли правого исполнения</value>
   </synonym>
 </mdclass:CommonPicture>

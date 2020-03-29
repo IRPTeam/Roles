@@ -450,6 +450,10 @@
               <key>en</key>
               <value>Fill all parameters value</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>Заполните все значения параметров</value>
+            </title>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
@@ -657,9 +661,17 @@
         <key>en</key>
         <value>Filter</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Отбор</value>
+      </title>
       <toolTip>
         <key>en</key>
         <value>Group filter</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа отбор</value>
       </toolTip>
       <extendedTooltip>
         <name>GroupFilterExtendedTooltip</name>
@@ -695,6 +707,10 @@
             <key>en</key>
             <value>Open parameters</value>
           </title>
+          <title>
+            <key>ru</key>
+            <value>Открыть параметры</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -729,6 +745,10 @@
           <title>
             <key>en</key>
             <value>This is settings not will be saved in parameters.</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Это настройки не будут сохранены в параметрах.</value>
           </title>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -999,9 +1019,17 @@
         <key>en</key>
         <value>Parameters</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Параметры</value>
+      </title>
       <toolTip>
         <key>en</key>
         <value>Group parameters</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа параметров</value>
       </toolTip>
       <extendedTooltip>
         <name>GroupParametersExtendedTooltip</name>
@@ -1070,6 +1098,10 @@
             <title>
               <key>en</key>
               <value>This is settings not will be saved in RLS</value>
+            </title>
+            <title>
+              <key>ru</key>
+              <value>Это настройки не будут сохранены в RLS</value>
             </title>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1424,9 +1456,17 @@
         <key>en</key>
         <value>Report</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Отчет</value>
+      </title>
       <toolTip>
         <key>en</key>
         <value>Group report</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа отчет</value>
       </toolTip>
       <extendedTooltip>
         <name>GroupReportExtendedTooltip</name>
@@ -1509,6 +1549,10 @@
       <key>en</key>
       <value>Settings composer</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Настройки конструктора</value>
+    </title>
     <id>1</id>
     <valueType>
       <types>DataCompositionSettingsComposer</types>
@@ -1525,6 +1569,10 @@
     <title>
       <key>en</key>
       <value>Path</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Путь</value>
     </title>
     <id>2</id>
     <valueType>
@@ -1544,6 +1592,10 @@
       <key>en</key>
       <value>Address</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Адрес</value>
+    </title>
     <id>4</id>
     <valueType>
       <types>String</types>
@@ -1560,7 +1612,11 @@
     <name>TabDoc</name>
     <title>
       <key>en</key>
-      <value>Tab doc</value>
+      <value>TabDoc</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>ТабДок</value>
     </title>
     <id>3</id>
     <valueType>
@@ -1578,7 +1634,11 @@
     <name>Ok</name>
     <title>
       <key>en</key>
-      <value>Ok</value>
+      <value>OK</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>ОК</value>
     </title>
     <id>1</id>
     <use>
@@ -1597,6 +1657,10 @@
       <key>en</key>
       <value>Cancel</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>отменить</value>
+    </title>
     <id>2</id>
     <use>
       <common>true</common>
@@ -1614,10 +1678,18 @@
       <key>en</key>
       <value>Run report</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Запустить отчет</value>
+    </title>
     <id>3</id>
     <toolTip>
       <key>en</key>
       <value>Run report</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Запустить отчет</value>
     </toolTip>
     <use>
       <common>true</common>

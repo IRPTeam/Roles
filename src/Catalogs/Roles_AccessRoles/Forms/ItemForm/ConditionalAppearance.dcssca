@@ -19,12 +19,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Visible</dcscor:parameter>
+				<dcscor:parameter>Видимость</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -245,26 +245,30 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>HorizontalAlign</dcscor:parameter>
+				<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
 						<v8:content>3</v8:content>
 					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>3</v8:content>
+					</v8:item>
 				</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>ReadOnly</dcscor:parameter>
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -287,7 +291,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -508,12 +512,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -536,7 +540,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -751,7 +755,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -774,7 +778,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -989,7 +993,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -1069,7 +1073,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -1227,12 +1231,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -1321,7 +1325,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -1470,12 +1474,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -1564,7 +1568,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -1713,12 +1717,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -1747,7 +1751,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -1956,7 +1960,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -1988,7 +1992,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -2194,7 +2198,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -2226,7 +2230,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -2432,7 +2436,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -2491,7 +2495,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -2670,12 +2674,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -2770,7 +2774,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -2919,12 +2923,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -2956,7 +2960,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -3180,7 +3184,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -3212,7 +3216,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -3436,7 +3440,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -3486,7 +3490,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -3674,12 +3678,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -3777,7 +3781,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -3917,12 +3921,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -4014,7 +4018,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -4160,12 +4164,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -4196,7 +4200,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -4419,7 +4423,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -4451,7 +4455,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -4675,7 +4679,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -4695,7 +4699,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -4913,12 +4917,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -4939,7 +4943,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -5158,12 +5162,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -5384,12 +5388,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -5424,7 +5428,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -5633,7 +5637,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -5677,7 +5681,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -5871,7 +5875,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -6120,11 +6124,11 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Visible</dcscor:parameter>
+				<dcscor:parameter>Видимость</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -6346,12 +6350,12 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:BurlyWood</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -6371,7 +6375,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Font</dcscor:parameter>
+				<dcscor:parameter>Шрифт</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 			</dcscor:item>
 		</appearance>
@@ -6397,11 +6401,11 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Visible</dcscor:parameter>
+				<dcscor:parameter>Видимость</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -6421,14 +6425,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6450,14 +6458,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6479,14 +6491,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6508,14 +6524,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6537,14 +6557,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6566,14 +6590,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6595,14 +6623,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6624,14 +6656,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6653,14 +6689,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6682,14 +6722,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6711,14 +6755,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6740,14 +6788,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6769,14 +6821,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6798,14 +6854,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6827,14 +6887,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6856,14 +6920,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6885,14 +6953,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6914,14 +6986,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6943,14 +7019,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -6972,14 +7052,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7001,14 +7085,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7030,14 +7118,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7059,14 +7151,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7088,14 +7184,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7117,14 +7217,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7146,14 +7250,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7175,14 +7283,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7204,14 +7316,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7233,14 +7349,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7262,14 +7382,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7291,14 +7415,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7320,14 +7448,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7349,14 +7481,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7378,14 +7514,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7407,14 +7547,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7436,14 +7580,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7465,14 +7613,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7494,14 +7646,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7523,14 +7679,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7552,14 +7712,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7581,14 +7745,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7610,14 +7778,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7639,14 +7811,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7668,14 +7844,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7697,14 +7877,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7726,14 +7910,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7755,14 +7943,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7784,14 +7976,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7813,14 +8009,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7842,14 +8042,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7871,14 +8075,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7900,14 +8108,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7929,14 +8141,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7958,14 +8174,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -7987,14 +8207,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8016,14 +8240,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8045,14 +8273,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8074,14 +8306,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8103,14 +8339,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8132,14 +8372,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8161,14 +8405,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8190,14 +8438,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8219,14 +8471,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8248,14 +8504,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8277,14 +8537,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8306,14 +8570,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8335,14 +8603,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8364,14 +8636,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8393,14 +8669,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8422,14 +8702,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8451,14 +8735,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8480,14 +8768,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8509,14 +8801,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8538,14 +8834,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8567,14 +8867,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8596,14 +8900,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8625,14 +8933,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8654,14 +8966,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8683,14 +8999,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8712,14 +9032,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8741,14 +9065,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8770,14 +9098,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8799,14 +9131,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8828,14 +9164,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8857,14 +9197,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8886,14 +9230,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8915,14 +9263,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8944,14 +9296,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -8973,14 +9329,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9002,14 +9362,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9031,14 +9395,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9060,14 +9428,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9089,14 +9461,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9118,14 +9494,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9147,14 +9527,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9176,14 +9560,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9205,14 +9593,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9234,14 +9626,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9263,14 +9659,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9292,14 +9692,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9321,14 +9725,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9350,14 +9758,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9379,14 +9791,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9408,14 +9824,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9437,14 +9857,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9466,14 +9890,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9495,14 +9923,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9524,14 +9956,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9553,14 +9989,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9582,14 +10022,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9611,14 +10055,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9640,14 +10088,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9669,14 +10121,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9698,14 +10154,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9727,14 +10187,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9756,14 +10220,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9785,14 +10253,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9814,14 +10286,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9843,14 +10319,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9872,14 +10352,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9901,14 +10385,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9930,14 +10418,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9959,14 +10451,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -9988,14 +10484,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10017,14 +10517,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10046,14 +10550,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10075,14 +10583,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10104,14 +10616,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10133,14 +10649,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10162,14 +10682,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10191,14 +10715,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10220,14 +10748,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10249,14 +10781,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10278,14 +10814,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10307,14 +10847,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#00E71E</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10336,14 +10880,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10365,14 +10913,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10394,14 +10946,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10423,14 +10979,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10452,14 +11012,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10481,14 +11045,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10510,14 +11078,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10539,14 +11111,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10568,14 +11144,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10597,14 +11177,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10626,14 +11210,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10655,14 +11243,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10684,14 +11276,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10713,14 +11309,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10742,14 +11342,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10771,14 +11375,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10800,14 +11408,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10829,14 +11441,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10858,14 +11474,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10887,14 +11507,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10916,14 +11540,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10945,14 +11573,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -10974,14 +11606,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11003,14 +11639,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11032,14 +11672,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11061,14 +11705,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11090,14 +11738,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11119,14 +11771,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11148,14 +11804,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11177,14 +11837,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11206,14 +11870,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11235,14 +11903,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11264,14 +11936,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11293,14 +11969,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11322,14 +12002,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11351,14 +12035,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11380,14 +12068,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11409,14 +12101,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11438,14 +12134,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11467,14 +12167,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11496,14 +12200,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11525,14 +12233,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11554,14 +12266,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11583,14 +12299,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11612,14 +12332,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11641,14 +12365,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11670,14 +12398,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11699,14 +12431,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11728,14 +12464,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11757,14 +12497,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11786,14 +12530,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11815,14 +12563,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11844,14 +12596,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11873,14 +12629,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11902,14 +12662,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11931,14 +12695,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11960,14 +12728,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -11989,14 +12761,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12018,14 +12794,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12047,14 +12827,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12076,14 +12860,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12105,14 +12893,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12134,14 +12926,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12163,14 +12959,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12192,14 +12992,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12221,14 +13025,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12250,14 +13058,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12279,14 +13091,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
@@ -12308,14 +13124,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>

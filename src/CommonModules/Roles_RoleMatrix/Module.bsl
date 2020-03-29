@@ -278,7 +278,8 @@ Procedure AddChildOperations(MetaItem, MetaItemRow, DataType, Val StrData)
 	
 	ObjectSubtype = Enums.Roles_MetadataSubtype[
 			Left(DataType, StrLen(DataType) - 1)];
-	Picture = StrData.PictureLibData["Roles_" + ObjectSubtype];
+	Picture = StrData.PictureLibData["Roles_" + Roles_SettingsReUse.MetaNameByRef(ObjectSubtype)];
+	
 	For Each AddChild In MetaItem[DataType] Do
 		
 		If NOT isNative(AddChild) Then

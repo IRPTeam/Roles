@@ -7,6 +7,10 @@
       <key>en</key>
       <value>Base type connection</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Тип соединения с базой</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -56,6 +60,10 @@
       <editFormat>
         <key>en</key>
         <value>БЛ=File; БИ=SQL</value>
+      </editFormat>
+      <editFormat>
+        <key>ru</key>
+        <value>БЛ=Файловая; БИ=SQL</value>
       </editFormat>
     </extInfo>
   </items>
@@ -123,9 +131,17 @@
       <key>en</key>
       <value>Group file</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Группа файл</value>
+    </title>
     <toolTip>
       <key>en</key>
       <value>Group file</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа файл</value>
     </toolTip>
     <extendedTooltip>
       <name>GroupFileExtendedTooltip</name>
@@ -267,9 +283,17 @@
       <key>en</key>
       <value>Group SQL</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Группа SQL</value>
+    </title>
     <toolTip>
       <key>en</key>
       <value>Group SQL</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа SQL</value>
     </toolTip>
     <extendedTooltip>
       <name>GroupSQLExtendedTooltip</name>
@@ -406,6 +430,10 @@
       <key>en</key>
       <value>OR set path where xml files in</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>ИЛИ установить путь, где XML-файлы в</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -459,6 +487,10 @@
     <toolTip>
       <key>en</key>
       <value>Path at server call, ex. D:\Base\, set upper Right folder</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Путь (на стороне сервера), напр. D:\Base\</value>
     </toolTip>
     <toolTipRepresentation>ShowBottom</toolTipRepresentation>
     <extendedTooltip>
@@ -561,6 +593,10 @@
       <key>en</key>
       <value>Path</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Путь</value>
+    </title>
     <id>2</id>
     <valueType>
       <types>String</types>
@@ -578,6 +614,10 @@
     <title>
       <key>en</key>
       <value>Server</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Сервер</value>
     </title>
     <id>3</id>
     <valueType>
@@ -597,6 +637,10 @@
       <key>en</key>
       <value>Base name</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Имя базы</value>
+    </title>
     <id>4</id>
     <valueType>
       <types>String</types>
@@ -614,6 +658,10 @@
     <title>
       <key>en</key>
       <value>Login</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Логин</value>
     </title>
     <id>5</id>
     <valueType>
@@ -633,6 +681,10 @@
       <key>en</key>
       <value>Password</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Пароль</value>
+    </title>
     <id>6</id>
     <valueType>
       <types>String</types>
@@ -649,6 +701,10 @@
     <name>SQL</name>
     <title>
       <key>en</key>
+      <value>SQL</value>
+    </title>
+    <title>
+      <key>ru</key>
       <value>SQL</value>
     </title>
     <id>7</id>
@@ -668,6 +724,10 @@
       <key>en</key>
       <value>Path to XML</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Путь к XML</value>
+    </title>
     <id>8</id>
     <valueType>
       <types>String</types>
@@ -686,10 +746,18 @@
       <key>en</key>
       <value>OK</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>ОК</value>
+    </title>
     <id>1</id>
     <toolTip>
       <key>en</key>
       <value>OK</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>ОК</value>
     </toolTip>
     <use>
       <common>true</common>

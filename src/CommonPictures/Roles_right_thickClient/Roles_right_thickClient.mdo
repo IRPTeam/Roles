@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right thick client</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный толстый клиент</value>
+  </synonym>
 </mdclass:CommonPicture>

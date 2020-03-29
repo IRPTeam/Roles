@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Document</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Документ</value>
+  </synonym>
 </mdclass:CommonPicture>

@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Addressing attribute</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Атрибут адресации</value>
+  </synonym>
 </mdclass:CommonPicture>

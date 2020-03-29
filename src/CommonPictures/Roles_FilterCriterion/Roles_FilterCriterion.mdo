@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Filter criterion</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Критерий отбора</value>
+  </synonym>
 </mdclass:CommonPicture>

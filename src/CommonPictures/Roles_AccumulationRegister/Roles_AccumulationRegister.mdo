@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Accumulation register</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Регистр накопления</value>
+  </synonym>
 </mdclass:CommonPicture>

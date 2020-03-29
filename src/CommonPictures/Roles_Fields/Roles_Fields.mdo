@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Fields</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Пол</value>
+  </synonym>
 </mdclass:CommonPicture>

@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Subsystem</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Подсистема</value>
+  </synonym>
 </mdclass:CommonPicture>

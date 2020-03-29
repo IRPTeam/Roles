@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Standard tabular section</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Стандартный табличный раздел</value>
+  </synonym>
 </mdclass:CommonPicture>

@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Functions</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Функции</value>
+  </synonym>
 </mdclass:CommonPicture>

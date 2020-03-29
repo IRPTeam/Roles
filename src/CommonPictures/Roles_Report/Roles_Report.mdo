@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Report</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет</value>
+  </synonym>
 </mdclass:CommonPicture>

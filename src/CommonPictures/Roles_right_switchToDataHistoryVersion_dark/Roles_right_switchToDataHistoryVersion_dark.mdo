@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right switch to data history version dark</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правый переход к версии истории данных темный</value>
+  </synonym>
 </mdclass:CommonPicture>

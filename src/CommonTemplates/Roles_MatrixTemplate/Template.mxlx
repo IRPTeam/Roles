@@ -13,6 +13,11 @@
 			<code>Language1</code>
 			<description>Language1</description>
 		</languageInfo>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
 	</languageSettings>
 	<columns>
 		<size>71</size>
@@ -512,7 +517,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>z</v8:content>
+							<v8:content>Delete</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Delete</detailParameter>
@@ -1280,7 +1285,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Session OSAuthentication change</v8:content>
+							<v8:content>Session OS authentication change</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>SessionOSAuthenticationChange</detailParameter>
@@ -3759,6 +3764,10 @@
 		<format>
 			<v8:item>
 				<v8:lang>en</v8:lang>
+				<v8:content>BF=; BT=✔</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
 				<v8:content>BF=; BT=✔</v8:content>
 			</v8:item>
 		</format>

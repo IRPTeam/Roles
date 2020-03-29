@@ -277,6 +277,9 @@ Procedure FillTemplateWithParams(RLSParamStructure)
 		CurrentCode = StrReplace(CurrentCode, "#ИмяТекущейТаблицы", Char(34) + CurrentTableName + Char(34));
 		CurrentCode = StrReplace(CurrentCode, "#CurrentTableName", Char(34) + CurrentTableName + Char(34));
 		
+		CurrentCode = StrReplace(CurrentCode, "#ТекущаяТаблица", CurrentTableName);
+		CurrentCode = StrReplace(CurrentCode, "#CurrentTable", CurrentTableName);
+		
 		RLSParamStructure[Tmp.Key].Insert("Code", CurrentCode);
 	EndDo;
 EndProcedure

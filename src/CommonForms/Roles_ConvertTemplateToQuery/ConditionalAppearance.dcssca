@@ -15,7 +15,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">web:PaleGreen</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -35,7 +35,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#FFBEC1</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -55,7 +55,7 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>BackColor</dcscor:parameter>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">#FF6060</dcscor:value>
 			</dcscor:item>
 		</appearance>

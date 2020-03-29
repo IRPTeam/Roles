@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right interactive set deletion mark</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный знак удаления интерактивного набора</value>
+  </synonym>
 </mdclass:CommonPicture>

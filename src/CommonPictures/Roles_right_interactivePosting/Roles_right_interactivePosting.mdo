@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right interactive posting</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильная интерактивная публикация</value>
+  </synonym>
 </mdclass:CommonPicture>

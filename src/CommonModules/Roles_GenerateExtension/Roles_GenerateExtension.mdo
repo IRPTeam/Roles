@@ -3,7 +3,11 @@
   <name>Roles_GenerateExtension</name>
   <synonym>
     <key>en</key>
-    <value>Generate extantion</value>
+    <value>Generate extension</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Создать расширение</value>
   </synonym>
   <server>true</server>
   <serverCall>true</serverCall>

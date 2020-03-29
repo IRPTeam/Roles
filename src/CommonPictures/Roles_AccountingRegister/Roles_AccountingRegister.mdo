@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Accounting register</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Бухгалтерский регистр</value>
+  </synonym>
 </mdclass:CommonPicture>

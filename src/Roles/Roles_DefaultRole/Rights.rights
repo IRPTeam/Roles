@@ -18,6 +18,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.Roles_ButtonForm</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Roles_AccessProfiles</name>
 		<right>
 			<name>Read</name>

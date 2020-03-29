@@ -72,6 +72,10 @@
         <key>en</key>
         <value>It have to be only one type selected, and only native type for configuration</value>
       </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Должен быть выбран только один тип и только из основной конфигурации</value>
+      </toolTip>
       <toolTipRepresentation>ShowBottom</toolTipRepresentation>
       <handlers>
         <event>OnChange</event>
@@ -122,6 +126,10 @@
       <title>
         <key>en</key>
         <value>Use list</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Использовать список</value>
       </title>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -177,6 +185,10 @@
     <toolTip>
       <key>en</key>
       <value>Group H</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа горизонтальная</value>
     </toolTip>
     <extendedTooltip>
       <name>GroupHExtendedTooltip</name>
@@ -533,6 +545,10 @@
       <key>en</key>
       <value>Value list</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Список значений</value>
+    </title>
     <id>2</id>
     <valueType>
       <types>ValueList</types>
@@ -553,6 +569,10 @@
       <key>en</key>
       <value>Value type</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Тип данных</value>
+    </title>
     <id>3</id>
     <valueType>
       <types>TypeDescription</types>
@@ -569,6 +589,10 @@
     <title>
       <key>en</key>
       <value>Value data</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Значение данных</value>
     </title>
     <id>4</id>
     <valueType>

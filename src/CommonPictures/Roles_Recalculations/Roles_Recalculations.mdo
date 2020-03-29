@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Recalculations</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Перерасчеты</value>
+  </synonym>
 </mdclass:CommonPicture>

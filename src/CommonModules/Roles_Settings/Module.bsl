@@ -690,6 +690,9 @@ Function MetaDataObjectNames() Export
 	Structure.Insert(Enums.Roles_MetadataTypes.Role, "Roles");
 	Structure.Insert(Enums.Roles_MetadataTypes.ExternalDataSource, "ExternalDataSources");
 	Structure.Insert(Enums.Roles_MetadataTypes.Enum, "Enums");
+	Structure.Insert(Enums.Roles_MetadataTypes.Interface, "Interfaces");
+	Structure.Insert(Enums.Roles_MetadataTypes.Language, "Languages");
+
 	Return Structure;
 EndFunction
 
@@ -910,6 +913,7 @@ Function hasNoChildObjects(RefData) Export
 	Array.Add(Enums.Roles_MetadataTypes.CommonAttribute);
 	Array.Add(Enums.Roles_MetadataTypes.CommonForm);
 	Array.Add(Enums.Roles_MetadataTypes.Constant);
+	Array.Add(Enums.Roles_MetadataTypes.Language);
 	Return NOT Array.Find(RefData) = Undefined;
 EndFunction
 

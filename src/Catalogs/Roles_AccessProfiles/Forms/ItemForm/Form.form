@@ -606,6 +606,10 @@
           <key>en</key>
           <value>Current role</value>
         </title>
+        <title>
+          <key>ru</key>
+          <value>Текущая роль</value>
+        </title>
         <id>1</id>
         <valueType>
           <types>Number</types>
@@ -627,6 +631,10 @@
           <key>en</key>
           <value>Hide</value>
         </title>
+        <title>
+          <key>ru</key>
+          <value>Скрыть</value>
+        </title>
         <id>2</id>
         <valueType>
           <types>Boolean</types>
@@ -646,6 +654,10 @@
       <key>en</key>
       <value>Tab doc martix</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>ТабДок матрица</value>
+    </title>
     <id>2</id>
     <valueType>
       <types>SpreadsheetDocument</types>
@@ -664,6 +676,10 @@
       <key>en</key>
       <value>Update matrix</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Обновить матрицу</value>
+    </title>
     <id>1</id>
     <use>
       <common>true</common>
@@ -681,10 +697,18 @@
       <key>en</key>
       <value>Edit on</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Изменить на</value>
+    </title>
     <id>2</id>
     <toolTip>
       <key>en</key>
       <value>Edit on</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Изменить на</value>
     </toolTip>
     <use>
       <common>true</common>

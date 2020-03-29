@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Chart of characteristic types</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Схема характерных типов</value>
+  </synonym>
 </mdclass:CommonPicture>

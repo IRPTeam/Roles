@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Service server</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Сервисный сервер</value>
+  </synonym>
   <server>true</server>
   <serverCall>true</serverCall>
 </mdclass:CommonModule>

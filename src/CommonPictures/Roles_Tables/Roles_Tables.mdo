@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Tables</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Таблицы</value>
+  </synonym>
 </mdclass:CommonPicture>

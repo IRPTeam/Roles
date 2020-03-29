@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right interactive set deletion mark predefined data</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правый интерактивный набор меток для удаления предварительно определенных данных</value>
+  </synonym>
 </mdclass:CommonPicture>

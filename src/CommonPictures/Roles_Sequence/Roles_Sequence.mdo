@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Sequence</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Последовательность</value>
+  </synonym>
 </mdclass:CommonPicture>

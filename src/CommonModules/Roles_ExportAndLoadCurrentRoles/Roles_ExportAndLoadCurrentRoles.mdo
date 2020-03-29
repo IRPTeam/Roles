@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Roles export and load current roles</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Экспорт ролей и загрузка текущих ролей</value>
+  </synonym>
   <server>true</server>
   <serverCall>true</serverCall>
 </mdclass:CommonModule>

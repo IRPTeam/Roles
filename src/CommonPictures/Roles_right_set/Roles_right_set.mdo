@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right set</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный набор</value>
+  </synonym>
 </mdclass:CommonPicture>

@@ -5,5 +5,9 @@
     <key>en</key>
     <value>Role matrix</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Ролевая матрица</value>
+  </synonym>
   <server>true</server>
 </mdclass:CommonModule>

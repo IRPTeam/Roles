@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right data administration</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильное управление данными</value>
+  </synonym>
 </mdclass:CommonPicture>

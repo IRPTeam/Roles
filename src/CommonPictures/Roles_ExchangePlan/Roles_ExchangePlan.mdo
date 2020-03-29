@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Exchange plan</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>План обмена</value>
+  </synonym>
 </mdclass:CommonPicture>

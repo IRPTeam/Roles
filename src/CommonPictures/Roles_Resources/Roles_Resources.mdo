@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Register resource</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Ресурс</value>
+  </synonym>
 </mdclass:CommonPicture>

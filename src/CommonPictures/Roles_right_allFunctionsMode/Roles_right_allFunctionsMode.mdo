@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right all functions mode</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правый режим всех функций</value>
+  </synonym>
 </mdclass:CommonPicture>

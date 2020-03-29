@@ -8,10 +8,6 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <title>
-      <key>en</key>
-      <value>Группа пользовательских настроек</value>
-    </title>
     <verticalStretch>false</verticalStretch>
     <extendedTooltip>
       <name>ListSettingsComposerUserSettingsExtendedTooltip</name>
@@ -361,10 +357,18 @@
       <key>en</key>
       <value>Copy current profiles</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Копировать текущие профили</value>
+    </title>
     <id>1</id>
     <toolTip>
       <key>en</key>
       <value>Copy current profiles</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Копировать текущие профили</value>
     </toolTip>
     <use>
       <common>true</common>

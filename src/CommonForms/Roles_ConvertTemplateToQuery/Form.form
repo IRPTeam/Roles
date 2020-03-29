@@ -653,6 +653,286 @@
         <items xsi:type="form:FormGroup">
           <name>GroupQuery</name>
           <id>73</id>
+          <items xsi:type="form:FormGroup">
+            <name>Group7</name>
+            <id>138</id>
+            <items xsi:type="form:FormGroup">
+              <name>Group8</name>
+              <id>142</id>
+              <items xsi:type="form:Button">
+                <name>RunReport</name>
+                <id>140</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>RunReportExtendedTooltip</name>
+                  <id>141</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualButton</type>
+                <commandName>Form.Command.RunReport</commandName>
+                <representation>Auto</representation>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <placementArea>UserCmds</placementArea>
+                <representationInContextMenu>Auto</representationInContextMenu>
+              </items>
+              <items xsi:type="form:Button">
+                <name>QueryWizard</name>
+                <id>144</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>QueryWizardExtendedTooltip</name>
+                  <id>145</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualButton</type>
+                <commandName>Form.Command.QueryWizard</commandName>
+                <representation>Auto</representation>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <placementArea>UserCmds</placementArea>
+                <representationInContextMenu>Auto</representationInContextMenu>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>Group8ExtendedTooltip</name>
+                <id>143</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>Vertical</group>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>DontUse</currentRowUse>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>Group6</name>
+              <id>136</id>
+              <items xsi:type="form:FormField">
+                <name>FindStringIntoQuery</name>
+                <id>130</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:MultiLanguageDataPath">
+                  <paths xsi:type="form:DataPath">
+                    <segments>FindStringIntoQuery</segments>
+                  </paths>
+                </dataPath>
+                <toolTip>
+                  <key>en</key>
+                  <value>T FROM T</value>
+                </toolTip>
+                <toolTip>
+                  <key>ru</key>
+                  <value>Т ИЗ Т</value>
+                </toolTip>
+                <toolTipRepresentation>Button</toolTipRepresentation>
+                <extendedTooltip>
+                  <name>FindStringIntoQueryExtendedTooltip</name>
+                  <id>132</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>FindStringIntoQueryContextMenu</name>
+                  <id>131</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>InputField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:InputFieldExtInfo">
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <wrap>true</wrap>
+                  <chooseType>true</chooseType>
+                  <typeDomainEnabled>true</typeDomainEnabled>
+                  <textEdit>true</textEdit>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormField">
+                <name>ReplaceStringWith</name>
+                <id>133</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:MultiLanguageDataPath">
+                  <paths xsi:type="form:DataPath">
+                    <segments>ReplaceStringWith</segments>
+                  </paths>
+                </dataPath>
+                <toolTip>
+                  <key>en</key>
+                  <value>SELECT TOP 10 T.* FROM Document.SomeDoc AS T</value>
+                </toolTip>
+                <toolTip>
+                  <key>ru</key>
+                  <value>ВЫБРАТЬ ПЕРВЫЕ 10 Т.* ИЗ Документ.НекийДокумент КАК Т</value>
+                </toolTip>
+                <toolTipRepresentation>Button</toolTipRepresentation>
+                <extendedTooltip>
+                  <name>ReplaceStringWithExtendedTooltip</name>
+                  <id>135</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ReplaceStringWithContextMenu</name>
+                  <id>134</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>InputField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:InputFieldExtInfo">
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <wrap>true</wrap>
+                  <chooseType>true</chooseType>
+                  <typeDomainEnabled>true</typeDomainEnabled>
+                  <textEdit>true</textEdit>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>Group6ExtendedTooltip</name>
+                <id>137</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>Vertical</group>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>DontUse</currentRowUse>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>Group7ExtendedTooltip</name>
+              <id>139</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>AlwaysHorizontal</group>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>DontUse</currentRowUse>
+            </extInfo>
+          </items>
           <items xsi:type="form:FormField">
             <name>Query</name>
             <id>9</id>
@@ -710,6 +990,66 @@
               </font>
             </extInfo>
           </items>
+          <items xsi:type="form:FormField">
+            <name>QueryResult</name>
+            <id>127</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>TabDoc</segments>
+              </paths>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>QueryResultExtendedTooltip</name>
+              <id>129</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>QueryResultContextMenu</name>
+              <id>128</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>SpreadsheetDocumentField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
+              <width>50</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>10</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
+              <verticalStretch>true</verticalStretch>
+              <pointerType>Special</pointerType>
+              <verticalScrollBar>ScrollAuto</verticalScrollBar>
+              <horizontalScrollBar>ScrollAuto</horizontalScrollBar>
+              <selectionShowMode>Always</selectionShowMode>
+              <showGroups>true</showGroups>
+              <enableStartDrag>true</enableStartDrag>
+              <enableDrag>true</enableDrag>
+            </extInfo>
+          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -719,9 +1059,17 @@
             <key>en</key>
             <value>Query</value>
           </title>
+          <title>
+            <key>ru</key>
+            <value>Запрос</value>
+          </title>
           <toolTip>
             <key>en</key>
             <value>Group query</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа запрос</value>
           </toolTip>
           <extendedTooltip>
             <name>GroupQueryExtendedTooltip</name>
@@ -829,6 +1177,10 @@
                     <key>en</key>
                     <value>If</value>
                   </presentation>
+                  <presentation>
+                    <key>ru</key>
+                    <value>Если</value>
+                  </presentation>
                   <value xsi:type="core:StringValue">
                     <value>if</value>
                   </value>
@@ -837,6 +1189,10 @@
                   <presentation>
                     <key>en</key>
                     <value>Else</value>
+                  </presentation>
+                  <presentation>
+                    <key>ru</key>
+                    <value>Иначе</value>
                   </presentation>
                   <value xsi:type="core:StringValue">
                     <value>else</value>
@@ -847,6 +1203,10 @@
                     <key>en</key>
                     <value>ElsIf</value>
                   </presentation>
+                  <presentation>
+                    <key>ru</key>
+                    <value>ИначеЕсли</value>
+                  </presentation>
                   <value xsi:type="core:StringValue">
                     <value>elsif</value>
                   </value>
@@ -856,6 +1216,10 @@
                     <key>en</key>
                     <value>EndIf</value>
                   </presentation>
+                  <presentation>
+                    <key>ru</key>
+                    <value>КонецЕсли</value>
+                  </presentation>
                   <value xsi:type="core:StringValue">
                     <value>endIf</value>
                   </value>
@@ -864,6 +1228,10 @@
                   <presentation>
                     <key>en</key>
                     <value>Then</value>
+                  </presentation>
+                  <presentation>
+                    <key>ru</key>
+                    <value>Тогда</value>
                   </presentation>
                   <value xsi:type="core:StringValue">
                     <value>then</value>
@@ -1411,9 +1779,17 @@
             <key>en</key>
             <value>Debug</value>
           </title>
+          <title>
+            <key>ru</key>
+            <value>Отладка</value>
+          </title>
           <toolTip>
             <key>en</key>
             <value>Group debug tree</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа дерево отладки</value>
           </toolTip>
           <extendedTooltip>
             <name>GroupDebugTreeExtendedTooltip</name>
@@ -1508,9 +1884,17 @@
             <key>en</key>
             <value>Selected template</value>
           </title>
+          <title>
+            <key>ru</key>
+            <value>Выбранный шаблон</value>
+          </title>
           <toolTip>
             <key>en</key>
             <value>Group current template</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа текущий шаблон</value>
           </toolTip>
           <extendedTooltip>
             <name>GroupCurrentTemplateExtendedTooltip</name>
@@ -1853,9 +2237,17 @@
             <key>en</key>
             <value>Session parameters</value>
           </title>
+          <title>
+            <key>ru</key>
+            <value>Параметры сеанса</value>
+          </title>
           <toolTip>
             <key>en</key>
             <value>Group session parameters</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа параметров сеанса</value>
           </toolTip>
           <extendedTooltip>
             <name>GroupSessionParametersExtendedTooltip</name>
@@ -1877,375 +2269,6 @@
             <picture xsi:type="core:PictureRef">
               <picture>CommonPicture.Roles_right_get</picture>
             </picture>
-            <group>Vertical</group>
-            <showTitle>true</showTitle>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormGroup">
-          <name>GroupResult</name>
-          <id>125</id>
-          <items xsi:type="form:FormGroup">
-            <name>Group7</name>
-            <id>138</id>
-            <items xsi:type="form:FormGroup">
-              <name>Group8</name>
-              <id>142</id>
-              <items xsi:type="form:Button">
-                <name>RunReport</name>
-                <id>140</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>RunReportExtendedTooltip</name>
-                  <id>141</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <type>UsualButton</type>
-                <commandName>Form.Command.RunReport</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-              </items>
-              <items xsi:type="form:Button">
-                <name>QueryWizard</name>
-                <id>144</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <extendedTooltip>
-                  <name>QueryWizardExtendedTooltip</name>
-                  <id>145</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <type>UsualButton</type>
-                <commandName>Form.Command.QueryWizard</commandName>
-                <representation>Auto</representation>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <placementArea>UserCmds</placementArea>
-                <representationInContextMenu>Auto</representationInContextMenu>
-              </items>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>Group8ExtendedTooltip</name>
-                <id>143</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <type>UsualGroup</type>
-              <extInfo xsi:type="form:UsualGroupExtInfo">
-                <group>Vertical</group>
-                <showLeftMargin>true</showLeftMargin>
-                <united>true</united>
-                <throughAlign>Auto</throughAlign>
-                <currentRowUse>DontUse</currentRowUse>
-              </extInfo>
-            </items>
-            <items xsi:type="form:FormGroup">
-              <name>Group6</name>
-              <id>136</id>
-              <items xsi:type="form:FormField">
-                <name>FindStringIntoQuery</name>
-                <id>130</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <dataPath xsi:type="form:MultiLanguageDataPath">
-                  <paths xsi:type="form:DataPath">
-                    <segments>FindStringIntoQuery</segments>
-                  </paths>
-                </dataPath>
-                <toolTip>
-                  <key>en</key>
-                  <value>T FROM T</value>
-                </toolTip>
-                <toolTipRepresentation>Button</toolTipRepresentation>
-                <extendedTooltip>
-                  <name>FindStringIntoQueryExtendedTooltip</name>
-                  <id>132</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <contextMenu>
-                  <name>FindStringIntoQueryContextMenu</name>
-                  <id>131</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <type>InputField</type>
-                <editMode>Enter</editMode>
-                <showInHeader>true</showInHeader>
-                <headerHorizontalAlign>Left</headerHorizontalAlign>
-                <showInFooter>true</showInFooter>
-                <extInfo xsi:type="form:InputFieldExtInfo">
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <wrap>true</wrap>
-                  <chooseType>true</chooseType>
-                  <typeDomainEnabled>true</typeDomainEnabled>
-                  <textEdit>true</textEdit>
-                </extInfo>
-              </items>
-              <items xsi:type="form:FormField">
-                <name>ReplaceStringWith</name>
-                <id>133</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <dataPath xsi:type="form:MultiLanguageDataPath">
-                  <paths xsi:type="form:DataPath">
-                    <segments>ReplaceStringWith</segments>
-                  </paths>
-                </dataPath>
-                <toolTip>
-                  <key>en</key>
-                  <value>SELECT TOP 10 T.* FROM Document.SomeDoc AS T</value>
-                </toolTip>
-                <toolTipRepresentation>Button</toolTipRepresentation>
-                <extendedTooltip>
-                  <name>ReplaceStringWithExtendedTooltip</name>
-                  <id>135</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <contextMenu>
-                  <name>ReplaceStringWithContextMenu</name>
-                  <id>134</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <type>InputField</type>
-                <editMode>Enter</editMode>
-                <showInHeader>true</showInHeader>
-                <headerHorizontalAlign>Left</headerHorizontalAlign>
-                <showInFooter>true</showInFooter>
-                <extInfo xsi:type="form:InputFieldExtInfo">
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <wrap>true</wrap>
-                  <chooseType>true</chooseType>
-                  <typeDomainEnabled>true</typeDomainEnabled>
-                  <textEdit>true</textEdit>
-                </extInfo>
-              </items>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>Group6ExtendedTooltip</name>
-                <id>137</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <type>UsualGroup</type>
-              <extInfo xsi:type="form:UsualGroupExtInfo">
-                <group>Vertical</group>
-                <showLeftMargin>true</showLeftMargin>
-                <united>true</united>
-                <throughAlign>Auto</throughAlign>
-                <currentRowUse>DontUse</currentRowUse>
-              </extInfo>
-            </items>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <extendedTooltip>
-              <name>Group7ExtendedTooltip</name>
-              <id>139</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <type>UsualGroup</type>
-            <extInfo xsi:type="form:UsualGroupExtInfo">
-              <group>AlwaysHorizontal</group>
-              <showLeftMargin>true</showLeftMargin>
-              <united>true</united>
-              <throughAlign>Auto</throughAlign>
-              <currentRowUse>DontUse</currentRowUse>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>QueryResult</name>
-            <id>127</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>TabDoc</segments>
-              </paths>
-            </dataPath>
-            <titleLocation>None</titleLocation>
-            <extendedTooltip>
-              <name>QueryResultExtendedTooltip</name>
-              <id>129</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>QueryResultContextMenu</name>
-              <id>128</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>SpreadsheetDocumentField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
-              <width>50</width>
-              <autoMaxWidth>true</autoMaxWidth>
-              <height>10</height>
-              <autoMaxHeight>true</autoMaxHeight>
-              <horizontalStretch>true</horizontalStretch>
-              <verticalStretch>true</verticalStretch>
-              <pointerType>Special</pointerType>
-              <verticalScrollBar>ScrollAuto</verticalScrollBar>
-              <horizontalScrollBar>ScrollAuto</horizontalScrollBar>
-              <selectionShowMode>Always</selectionShowMode>
-              <showGroups>true</showGroups>
-              <enableStartDrag>true</enableStartDrag>
-              <enableDrag>true</enableDrag>
-            </extInfo>
-          </items>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <title>
-            <key>en</key>
-            <value>Query result</value>
-          </title>
-          <toolTip>
-            <key>en</key>
-            <value>Group result</value>
-          </toolTip>
-          <extendedTooltip>
-            <name>GroupResultExtendedTooltip</name>
-            <id>126</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <type>Page</type>
-          <extInfo xsi:type="form:PageGroupExtInfo">
             <group>Vertical</group>
             <showTitle>true</showTitle>
           </extInfo>
@@ -2362,6 +2385,10 @@
       <key>en</key>
       <value>RLS</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>RLS</value>
+    </title>
     <id>1</id>
     <valueType>
       <types>String</types>
@@ -2383,6 +2410,10 @@
       <key>en</key>
       <value>Templates</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Шаблоны</value>
+    </title>
     <id>2</id>
     <valueType>
       <types>ValueTable</types>
@@ -2402,6 +2433,10 @@
         <key>en</key>
         <value>Name</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Имя</value>
+      </title>
       <id>1</id>
       <valueType>
         <types>String</types>
@@ -2419,6 +2454,10 @@
       <title>
         <key>en</key>
         <value>Code</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Код</value>
       </title>
       <id>2</id>
       <valueType>
@@ -2438,6 +2477,10 @@
         <key>en</key>
         <value>Named params</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Именованные параметры</value>
+      </title>
       <id>3</id>
       <valueType>
         <types>String</types>
@@ -2456,6 +2499,10 @@
     <title>
       <key>en</key>
       <value>Query text</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Текст запроса</value>
     </title>
     <id>3</id>
     <valueType>
@@ -2478,6 +2525,10 @@
       <key>en</key>
       <value>Current table name</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Имя текущей таблицы</value>
+    </title>
     <id>4</id>
     <valueType>
       <types>String</types>
@@ -2498,6 +2549,10 @@
     <title>
       <key>en</key>
       <value>Current access right name</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Текущее имя доступа</value>
     </title>
     <id>5</id>
     <valueType>
@@ -2520,6 +2575,10 @@
       <key>en</key>
       <value>Debug code</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Код отладки</value>
+    </title>
     <id>6</id>
     <valueType>
       <types>String</types>
@@ -2541,6 +2600,10 @@
       <key>en</key>
       <value>Debug tree</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Дерево отладки</value>
+    </title>
     <id>7</id>
     <valueType>
       <types>ValueTree</types>
@@ -2560,6 +2623,10 @@
         <key>en</key>
         <value>Condition</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Условие</value>
+      </title>
       <id>1</id>
       <valueType>
         <types>String</types>
@@ -2577,6 +2644,10 @@
       <title>
         <key>en</key>
         <value>Code</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Код</value>
       </title>
       <id>2</id>
       <valueType>
@@ -2596,6 +2667,10 @@
         <key>en</key>
         <value>Result</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Результат</value>
+      </title>
       <id>3</id>
       <valueType>
         <types>Boolean</types>
@@ -2612,6 +2687,10 @@
       <title>
         <key>en</key>
         <value>Condition text</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Текст условия</value>
       </title>
       <id>4</id>
       <valueType>
@@ -2631,6 +2710,10 @@
         <key>en</key>
         <value>Status</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Статус</value>
+      </title>
       <id>5</id>
       <valueType>
         <types>Boolean</types>
@@ -2647,6 +2730,10 @@
       <title>
         <key>en</key>
         <value>Error</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Ошибка</value>
       </title>
       <id>6</id>
       <valueType>
@@ -2666,6 +2753,10 @@
       <key>en</key>
       <value>Session parameters table</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Таблица параметров сеанса</value>
+    </title>
     <id>8</id>
     <valueType>
       <types>ValueTable</types>
@@ -2681,6 +2772,10 @@
       <title>
         <key>en</key>
         <value>Name</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Имя</value>
       </title>
       <id>1</id>
       <valueType>
@@ -2700,6 +2795,10 @@
         <key>en</key>
         <value>Value</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Значение</value>
+      </title>
       <id>2</id>
       <valueType/>
       <view>
@@ -2714,7 +2813,11 @@
     <name>TabDoc</name>
     <title>
       <key>en</key>
-      <value>Tab doc</value>
+      <value>TabDoc</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>ТабДок</value>
     </title>
     <id>9</id>
     <valueType>
@@ -2734,6 +2837,10 @@
       <key>en</key>
       <value>Find string into query</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Найти строку в запросе</value>
+    </title>
     <id>10</id>
     <valueType>
       <types>String</types>
@@ -2751,6 +2858,10 @@
     <title>
       <key>en</key>
       <value>Replace string with</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Заменить строку на</value>
     </title>
     <id>11</id>
     <valueType>
@@ -2770,6 +2881,10 @@
       <key>en</key>
       <value>Settings composer</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Настройки конструктора</value>
+    </title>
     <id>12</id>
     <valueType>
       <types>DataCompositionSettingsComposer</types>
@@ -2787,10 +2902,18 @@
       <key>en</key>
       <value>Convert to query and debug</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Конвертировать в запрос и отладка</value>
+    </title>
     <id>1</id>
     <toolTip>
       <key>en</key>
       <value>Convert to query</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Преобразовать в запрос</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -2808,10 +2931,18 @@
       <key>en</key>
       <value>Run</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Запустить</value>
+    </title>
     <id>2</id>
     <toolTip>
       <key>en</key>
       <value>Run report</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Запустить отчет</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -2833,10 +2964,18 @@
       <key>en</key>
       <value>Query wizard</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Конструктор запросов</value>
+    </title>
     <id>3</id>
     <toolTip>
       <key>en</key>
       <value>Query wizard</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Конструктор запросов</value>
     </toolTip>
     <use>
       <common>true</common>

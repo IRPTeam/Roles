@@ -3,6 +3,10 @@
   <name>Roles_right_standardAuthenticationChange</name>
   <synonym>
     <key>en</key>
-    <value>standard Authentication Change</value>
+    <value>Standard authentication change</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение стандартной аутентификации</value>
   </synonym>
 </mdclass:CommonPicture>

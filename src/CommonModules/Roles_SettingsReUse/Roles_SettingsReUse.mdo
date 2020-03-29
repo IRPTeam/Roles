@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Roles settings re use</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роли настройки повторно использовать</value>
+  </synonym>
   <server>true</server>
   <serverCall>true</serverCall>
   <returnValuesReuse>DuringSession</returnValuesReuse>

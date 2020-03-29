@@ -108,6 +108,10 @@
         <key>en</key>
         <value>Show</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Показать</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -153,6 +157,10 @@
         <editFormat>
           <key>en</key>
           <value>BF='Only changed'; BT='All objects'</value>
+        </editFormat>
+        <editFormat>
+          <key>ru</key>
+          <value>BF='Только измененные'; BT='Все объекты'</value>
         </editFormat>
       </extInfo>
     </items>
@@ -295,9 +303,17 @@
         <key>en</key>
         <value>Report</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Отчет</value>
+      </title>
       <toolTip>
         <key>en</key>
         <value>Group report</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа отчет</value>
       </toolTip>
       <extendedTooltip>
         <name>GroupReportExtendedTooltip</name>
@@ -532,9 +548,17 @@
             <key>en</key>
             <value>Group main rights</value>
           </title>
+          <title>
+            <key>ru</key>
+            <value>Группа основные права</value>
+          </title>
           <toolTip>
             <key>en</key>
             <value>Group main rights</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа основные права</value>
           </toolTip>
           <extendedTooltip>
             <name>GroupMainRightsExtendedTooltip</name>
@@ -684,6 +708,10 @@
               <title>
                 <key>en</key>
                 <value>Object</value>
+              </title>
+              <title>
+                <key>ru</key>
+                <value>Объект</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -958,6 +986,10 @@
                 <key>en</key>
                 <value>Type</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Тип</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1013,6 +1045,10 @@
               <title>
                 <key>en</key>
                 <value>Name</value>
+              </title>
+              <title>
+                <key>ru</key>
+                <value>Имя</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1143,6 +1179,10 @@
                 <key>en</key>
                 <value>Read</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Чтение</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1160,6 +1200,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Read</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Чтение</value>
               </toolTip>
               <extendedTooltip>
                 <name>ReadExtendedTooltip</name>
@@ -1209,6 +1253,10 @@
                 <key>en</key>
                 <value>Insert</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Вставить</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1226,6 +1274,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Insert</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Вставить</value>
               </toolTip>
               <extendedTooltip>
                 <name>InsertExtendedTooltip</name>
@@ -1275,6 +1327,10 @@
                 <key>en</key>
                 <value>Update</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Изменение</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1292,6 +1348,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Update</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Изменение</value>
               </toolTip>
               <extendedTooltip>
                 <name>UpdateExtendedTooltip</name>
@@ -1341,6 +1401,10 @@
                 <key>en</key>
                 <value>Delete</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Удалить</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1358,6 +1422,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Delete</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Удалить</value>
               </toolTip>
               <extendedTooltip>
                 <name>DeleteExtendedTooltip</name>
@@ -1409,6 +1477,10 @@
               <key>en</key>
               <value>RLS</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>RLS</value>
+            </title>
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip3</name>
               <id>268</id>
@@ -1440,6 +1512,10 @@
                 <key>en</key>
                 <value>View</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Просмотр</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1457,6 +1533,10 @@
               <toolTip>
                 <key>en</key>
                 <value>View</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Просмотр</value>
               </toolTip>
               <extendedTooltip>
                 <name>ViewExtendedTooltip</name>
@@ -1506,6 +1586,10 @@
                 <key>en</key>
                 <value>Edit</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>редактировать</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1523,6 +1607,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Edit</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>редактировать</value>
               </toolTip>
               <extendedTooltip>
                 <name>EditExtendedTooltip</name>
@@ -1572,6 +1660,10 @@
                 <key>en</key>
                 <value>Input by string</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Ввод по строке</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1589,6 +1681,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Input by string</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Ввод по строке</value>
               </toolTip>
               <extendedTooltip>
                 <name>InputByStringExtendedTooltip</name>
@@ -1638,6 +1734,10 @@
                 <key>en</key>
                 <value>Use</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Использовать</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1655,6 +1755,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Use</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Использовать</value>
               </toolTip>
               <extendedTooltip>
                 <name>UseExtendedTooltip</name>
@@ -1704,6 +1808,10 @@
                 <key>en</key>
                 <value>Totals control</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Контроль итогов</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1721,6 +1829,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Totals control</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Контроль итогов</value>
               </toolTip>
               <extendedTooltip>
                 <name>TotalsControlExtendedTooltip</name>
@@ -1772,6 +1884,10 @@
               <key>en</key>
               <value>Basic</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>Основной</value>
+            </title>
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip5</name>
               <id>272</id>
@@ -1803,6 +1919,10 @@
                 <key>en</key>
                 <value>Interactive delete</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное удаление</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1820,6 +1940,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive delete</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное удаление</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveDeleteExtendedTooltip</name>
@@ -1869,6 +1993,10 @@
                 <key>en</key>
                 <value>Interactive insert</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное добавление</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1886,6 +2014,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive insert</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное добавление</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveInsertExtendedTooltip</name>
@@ -1935,6 +2067,10 @@
                 <key>en</key>
                 <value>Interactive set deletion mark</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивная пометка на удаление</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1952,6 +2088,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive set deletion mark</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивная пометка на удаление</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveSetDeletionMarkExtendedTooltip</name>
@@ -2001,6 +2141,10 @@
                 <key>en</key>
                 <value>Interactive clear deletion mark</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное снятие пометки удаления</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2018,6 +2162,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive clear deletion mark</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное снятие пометки удаления</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveClearDeletionMarkExtendedTooltip</name>
@@ -2067,6 +2215,10 @@
                 <key>en</key>
                 <value>Interactive delete marked</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное удаление помеченных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2084,6 +2236,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive delete marked</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное удаление помеченных</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveDeleteMarkedExtendedTooltip</name>
@@ -2135,6 +2291,10 @@
               <key>en</key>
               <value>Iinteractive</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>Интерактивно</value>
+            </title>
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip4</name>
               <id>270</id>
@@ -2166,6 +2326,10 @@
                 <key>en</key>
                 <value>Posting</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Проведение</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2183,6 +2347,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Posting</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Проведение</value>
               </toolTip>
               <extendedTooltip>
                 <name>PostingExtendedTooltip</name>
@@ -2232,6 +2400,10 @@
                 <key>en</key>
                 <value>Undo posting</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Отменить проведение</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2249,6 +2421,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Undo posting</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Отменить проведение</value>
               </toolTip>
               <extendedTooltip>
                 <name>UndoPostingExtendedTooltip</name>
@@ -2298,6 +2474,10 @@
                 <key>en</key>
                 <value>Interactive posting</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное проведение</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2315,6 +2495,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive posting</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное проведение</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractivePostingExtendedTooltip</name>
@@ -2364,6 +2548,10 @@
                 <key>en</key>
                 <value>Interactive undo posting</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивная отмена проведения</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2381,6 +2569,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive undo posting</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивная отмена проведения</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveUndoPostingExtendedTooltip</name>
@@ -2430,6 +2622,10 @@
                 <key>en</key>
                 <value>Interactive posting regular</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное проведение неоперативное</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2447,6 +2643,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive posting regular</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное проведение неоперативное</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractivePostingRegularExtendedTooltip</name>
@@ -2496,6 +2696,10 @@
                 <key>en</key>
                 <value>Interactive change of posted</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное изменение проведенных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2513,6 +2717,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive change of posted</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное изменение проведенных</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveChangeOfPostedExtendedTooltip</name>
@@ -2564,9 +2772,17 @@
               <key>en</key>
               <value>Document</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>Документ</value>
+            </title>
             <toolTip>
               <key>en</key>
               <value>Roles edit group document</value>
+            </toolTip>
+            <toolTip>
+              <key>ru</key>
+              <value>Роли редактировать групповой документ</value>
             </toolTip>
             <extendedTooltip>
               <name>RolesEditGroupDocumentExtendedTooltip</name>
@@ -2599,6 +2815,10 @@
                 <key>en</key>
                 <value>Interactive delete predefined data</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное удаление предопределенных данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2616,6 +2836,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive delete predefined data</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное удаление предопределенных данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveDeletePredefinedDataExtendedTooltip</name>
@@ -2665,6 +2889,10 @@
                 <key>en</key>
                 <value>Interactive set deletion mark predefined data</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивная пометка на удаление предопределенных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2682,6 +2910,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive set deletion mark predefined data</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивная пометка на удаление предопределенных</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveSetDeletionMarkPredefinedDataExtendedTooltip</name>
@@ -2731,6 +2963,10 @@
                 <key>en</key>
                 <value>Interactive clear deletion mark predefined data</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное снятие пометки удаления предопределенных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2748,6 +2984,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive clear deletion mark predefined data</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное снятие пометки удаления предопределенных</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveClearDeletionMarkPredefinedDataExtendedTooltip</name>
@@ -2795,7 +3035,11 @@
               <id>316</id>
               <title>
                 <key>en</key>
-                <value>Interactive delete marked predefined dData</value>
+                <value>Interactive delete marked predefined data</value>
+              </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное удаление помеченных предопределенных данных</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2813,7 +3057,11 @@
               <titleLocation>None</titleLocation>
               <toolTip>
                 <key>en</key>
-                <value>Interactive delete marked predefined dData</value>
+                <value>Interactive delete marked predefined data</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное удаление помеченных предопределенных данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveDeleteMarkedPredefinedDataExtendedTooltip</name>
@@ -2862,16 +3110,20 @@
               <common>true</common>
             </userVisible>
             <title>
-              <key></key>
-              <value>Roles edit group predefined</value>
-            </title>
-            <title>
               <key>en</key>
               <value>Predefined</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>Предопределенный</value>
+            </title>
             <toolTip>
-              <key></key>
+              <key>en</key>
               <value>Roles edit group predefined</value>
+            </toolTip>
+            <toolTip>
+              <key>ru</key>
+              <value>Предопределенная группа редактирования ролей</value>
             </toolTip>
             <extendedTooltip>
               <name>RolesEditGroupPredefinedExtendedTooltip</name>
@@ -2904,6 +3156,10 @@
                 <key>en</key>
                 <value>Get</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Получить</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2921,6 +3177,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Get</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Получить</value>
               </toolTip>
               <extendedTooltip>
                 <name>GetExtendedTooltip</name>
@@ -2970,6 +3230,10 @@
                 <key>en</key>
                 <value>Set</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Установить</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2987,6 +3251,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Set</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Установить</value>
               </toolTip>
               <extendedTooltip>
                 <name>SetExtendedTooltip</name>
@@ -3038,6 +3306,10 @@
               <key>en</key>
               <value>SP</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>SP</value>
+            </title>
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip2</name>
               <id>266</id>
@@ -3069,6 +3341,10 @@
                 <key>en</key>
                 <value>Administration</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Администрирование	</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3086,6 +3362,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Administration</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Администрирование	</value>
               </toolTip>
               <extendedTooltip>
                 <name>AdministrationExtendedTooltip</name>
@@ -3135,6 +3415,10 @@
                 <key>en</key>
                 <value>Data administration</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Администрирование данных	</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3152,6 +3436,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Data administration</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Администрирование данных	</value>
               </toolTip>
               <extendedTooltip>
                 <name>DataAdministrationExtendedTooltip</name>
@@ -3201,6 +3489,10 @@
                 <key>en</key>
                 <value>Update data base configuration</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Обновление конфигурации базы данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3218,6 +3510,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Update data base configuration</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Обновление конфигурации базы данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>UpdateDataBaseConfigurationExtendedTooltip</name>
@@ -3267,6 +3563,10 @@
                 <key>en</key>
                 <value>Exclusive mode</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Монопольный режим	</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3284,6 +3584,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Exclusive mode</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Монопольный режим	</value>
               </toolTip>
               <extendedTooltip>
                 <name>ExclusiveModeExtendedTooltip</name>
@@ -3333,6 +3637,10 @@
                 <key>en</key>
                 <value>Active users</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Активные пользователи</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3350,6 +3658,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Active users</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Активные пользователи</value>
               </toolTip>
               <extendedTooltip>
                 <name>ActiveUsersExtendedTooltip</name>
@@ -3399,6 +3711,10 @@
                 <key>en</key>
                 <value>Event log</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Журнал событий</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3416,6 +3732,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Event log</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Журнал событий</value>
               </toolTip>
               <extendedTooltip>
                 <name>EventLogExtendedTooltip</name>
@@ -3465,6 +3785,10 @@
                 <key>en</key>
                 <value>Thin client</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Тонкий клиент</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3482,6 +3806,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Thin client</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Тонкий клиент</value>
               </toolTip>
               <extendedTooltip>
                 <name>ThinClientExtendedTooltip</name>
@@ -3531,6 +3859,10 @@
                 <key>en</key>
                 <value>Web client</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Веб-клиент</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3548,6 +3880,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Web client</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Веб-клиент</value>
               </toolTip>
               <extendedTooltip>
                 <name>WebClientExtendedTooltip</name>
@@ -3597,6 +3933,10 @@
                 <key>en</key>
                 <value>Mobile client</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Мобильный клиент</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3614,6 +3954,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Mobile client</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Мобильный клиент</value>
               </toolTip>
               <extendedTooltip>
                 <name>MobileClientExtendedTooltip</name>
@@ -3663,6 +4007,10 @@
                 <key>en</key>
                 <value>Thick client</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Толстый клиент</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3680,6 +4028,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Thick client</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Толстый клиент</value>
               </toolTip>
               <extendedTooltip>
                 <name>ThickClientExtendedTooltip</name>
@@ -3729,6 +4081,10 @@
                 <key>en</key>
                 <value>External connection</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Внешнее соединение</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3746,6 +4102,10 @@
               <toolTip>
                 <key>en</key>
                 <value>External connection</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Внешнее соединение</value>
               </toolTip>
               <extendedTooltip>
                 <name>ExternalConnectionExtendedTooltip</name>
@@ -3795,6 +4155,10 @@
                 <key>en</key>
                 <value>Automation</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Automation</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3811,6 +4175,10 @@
               <titleLocation>None</titleLocation>
               <toolTip>
                 <key>en</key>
+                <value>Automation</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
                 <value>Automation</value>
               </toolTip>
               <extendedTooltip>
@@ -3861,6 +4229,10 @@
                 <key>en</key>
                 <value>Technical specialist mode</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Режим технического специалиста</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3878,6 +4250,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Technical specialist mode</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Режим технического специалиста</value>
               </toolTip>
               <extendedTooltip>
                 <name>TechnicalSpecialistModeExtendedTooltip</name>
@@ -3927,6 +4303,10 @@
                 <key>en</key>
                 <value>Collaboration system info base registration</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Регистрация системы взаимодействия</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3944,6 +4324,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Collaboration system info base registration</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Регистрация системы взаимодействия</value>
               </toolTip>
               <extendedTooltip>
                 <name>CollaborationSystemInfoBaseRegistrationExtendedTooltip</name>
@@ -3993,6 +4377,10 @@
                 <key>en</key>
                 <value>Save user data</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Сохранить данные пользователя</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4010,6 +4398,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Save user data</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Сохранить данные пользователя</value>
               </toolTip>
               <extendedTooltip>
                 <name>SaveUserDataExtendedTooltip</name>
@@ -4059,6 +4451,10 @@
                 <key>en</key>
                 <value>Configuration extensions administration</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Администрирование расширений конфигурации</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4076,6 +4472,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Configuration extensions administration</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Администрирование расширений конфигурации</value>
               </toolTip>
               <extendedTooltip>
                 <name>ConfigurationExtensionsAdministrationExtendedTooltip</name>
@@ -4125,6 +4525,10 @@
                 <key>en</key>
                 <value>Interactive open ext data processors</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное открытие внешних обработок</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4142,6 +4546,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive open ext data processors</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное открытие внешних обработок</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveOpenExtDataProcessorsExtendedTooltip</name>
@@ -4191,6 +4599,10 @@
                 <key>en</key>
                 <value>Interactive open ext reports</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное открытие внешних отчетов	</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4208,6 +4620,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive open ext reports</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное открытие внешних отчетов	</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveOpenExtReportsExtendedTooltip</name>
@@ -4257,6 +4673,10 @@
                 <key>en</key>
                 <value>Output</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Вывод</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4274,6 +4694,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Output</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Вывод</value>
               </toolTip>
               <extendedTooltip>
                 <name>OutputExtendedTooltip</name>
@@ -4323,6 +4747,10 @@
                 <key>en</key>
                 <value>Main window mode normal</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Режим основного окна &quot;Обычный&quot;</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4340,6 +4768,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Main window mode normal</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Режим основного окна &quot;Обычный&quot;</value>
               </toolTip>
               <extendedTooltip>
                 <name>MainWindowModeNormalExtendedTooltip</name>
@@ -4386,6 +4818,10 @@
                 <key>en</key>
                 <value>Main window mode workplace</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Режим основного окна &quot;Рабочее место&quot;</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4403,6 +4839,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Main window mode workplace</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Режим основного окна &quot;Рабочее место&quot;</value>
               </toolTip>
               <extendedTooltip>
                 <name>MainWindowModeWorkplaceExtendedTooltip</name>
@@ -4449,6 +4889,10 @@
                 <key>en</key>
                 <value>Main window mode embedded workplace</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Режим основного окна &quot;Встроенное рабочее место&quot;</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4466,6 +4910,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Main window mode embedded workplace</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Режим основного окна &quot;Встроенное рабочее место&quot;</value>
               </toolTip>
               <extendedTooltip>
                 <name>MainWindowModeEmbeddedWorkplaceExtendedTooltip</name>
@@ -4512,6 +4960,10 @@
                 <key>en</key>
                 <value>Main window mode fullscreen workplace</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Режим основного окна &quot;Полноэкранное рабочее место&quot;</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4529,6 +4981,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Main window mode fullscreen workplace</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Режим основного окна &quot;Полноэкранное рабочее место&quot;</value>
               </toolTip>
               <extendedTooltip>
                 <name>MainWindowModeFullscreenWorkplaceExtendedTooltip</name>
@@ -4575,6 +5031,10 @@
                 <key>en</key>
                 <value>Main window mode kiosk</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Режим основного окна &quot;Киоск&quot;</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4592,6 +5052,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Main window mode kiosk</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Режим основного окна &quot;Киоск&quot;</value>
               </toolTip>
               <extendedTooltip>
                 <name>MainWindowModeKioskExtendedTooltip</name>
@@ -4638,6 +5102,10 @@
                 <key>en</key>
                 <value>Analytics system client</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Клиент системы аналитики	</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4655,6 +5123,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Analytics system client</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Клиент системы аналитики	</value>
               </toolTip>
               <extendedTooltip>
                 <name>AnalyticsSystemClientExtendedTooltip</name>
@@ -4703,6 +5175,10 @@
               <key>en</key>
               <value>Administration</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>Администрирование	</value>
+            </title>
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip</name>
               <id>262</id>
@@ -4734,6 +5210,10 @@
                 <key>en</key>
                 <value>Read data history</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Чтение истории данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4751,6 +5231,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Read data history</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Чтение истории данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>ReadDataHistoryExtendedTooltip</name>
@@ -4800,6 +5284,10 @@
                 <key>en</key>
                 <value>View data history</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Просмотр истории данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4817,6 +5305,10 @@
               <toolTip>
                 <key>en</key>
                 <value>View data history</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Просмотр истории данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>ViewDataHistoryExtendedTooltip</name>
@@ -4866,6 +5358,10 @@
                 <key>en</key>
                 <value>Read data history of missing data</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Чтение истории данных отсутствующих данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4883,6 +5379,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Read data history of missing data</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Чтение истории данных отсутствующих данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>ReadDataHistoryOfMissingDataExtendedTooltip</name>
@@ -4932,6 +5432,10 @@
                 <key>en</key>
                 <value>Update data history</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Изменение истории данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4949,6 +5453,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Update data history</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Изменение истории данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>UpdateDataHistoryExtendedTooltip</name>
@@ -4998,6 +5506,10 @@
                 <key>en</key>
                 <value>Update data history of missing data</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Изменение истории данных отсутствующих данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5015,6 +5527,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Update data history of missing data</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Изменение истории данных отсутствующих данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>UpdateDataHistoryOfMissingDataExtendedTooltip</name>
@@ -5064,6 +5580,10 @@
                 <key>en</key>
                 <value>Update data history settings</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Изменение настроек истории данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5081,6 +5601,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Update data history settings</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Изменение настроек истории данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>UpdateDataHistorySettingsExtendedTooltip</name>
@@ -5130,6 +5654,10 @@
                 <key>en</key>
                 <value>Update data history version comment</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Изменение комментария версии истории данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5147,6 +5675,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Update data history version comment</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Изменение комментария версии истории данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>UpdateDataHistoryVersionCommentExtendedTooltip</name>
@@ -5196,6 +5728,10 @@
                 <key>en</key>
                 <value>Edit data history version comment</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Редактирование комментария версии истории данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5213,6 +5749,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Edit data history version comment</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Редактирование комментария версии истории данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>EditDataHistoryVersionCommentExtendedTooltip</name>
@@ -5262,6 +5802,10 @@
                 <key>en</key>
                 <value>Switch to data history version</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Переход на версию истории данных</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5279,6 +5823,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Switch to data history version</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Переход на версию истории данных</value>
               </toolTip>
               <extendedTooltip>
                 <name>SwitchToDataHistoryVersionExtendedTooltip</name>
@@ -5330,6 +5878,10 @@
               <key>en</key>
               <value>History</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>История</value>
+            </title>
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip1</name>
               <id>264</id>
@@ -5361,6 +5913,10 @@
                 <key>en</key>
                 <value>Standard authentication change</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Изменение стандартной аутентификации</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5378,6 +5934,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Standard authentication change</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Изменение стандартной аутентификации</value>
               </toolTip>
               <extendedTooltip>
                 <name>RolesEditStandardAuthenticationChangeExtendedTooltip</name>
@@ -5427,6 +5987,10 @@
                 <key>en</key>
                 <value>Session standard authentication change</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Изменение стандартной аутентификации текущего пользователя</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5444,6 +6008,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Session standard authentication change</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Изменение стандартной аутентификации текущего пользователя</value>
               </toolTip>
               <extendedTooltip>
                 <name>RolesEditSessionStandardAuthenticationChangeExtendedTooltip</name>
@@ -5493,6 +6061,10 @@
                 <key>en</key>
                 <value>Session OS authentication change</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Изменение аутентификации операционной системы сеанса</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5510,6 +6082,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Session OS authentication change</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Изменение аутентификации операционной системы сеанса</value>
               </toolTip>
               <extendedTooltip>
                 <name>RolesEditSessionOSAuthenticationChangeExtendedTooltip</name>
@@ -5561,9 +6137,17 @@
               <key>en</key>
               <value>External Data</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>Внешние данные</value>
+            </title>
             <toolTip>
               <key>en</key>
               <value>Roles edit group external data</value>
+            </toolTip>
+            <toolTip>
+              <key>ru</key>
+              <value>Роли редактировать группу внешних данных</value>
             </toolTip>
             <extendedTooltip>
               <name>RolesEditGroupExternalDataExtendedTooltip</name>
@@ -5596,6 +6180,10 @@
                 <key>en</key>
                 <value>Start</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Начните</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5613,6 +6201,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Start</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Начните</value>
               </toolTip>
               <extendedTooltip>
                 <name>StartExtendedTooltip</name>
@@ -5662,6 +6254,10 @@
                 <key>en</key>
                 <value>Interactive start</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивный старт</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5679,6 +6275,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive start</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивный старт</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveStartExtendedTooltip</name>
@@ -5728,6 +6328,10 @@
                 <key>en</key>
                 <value>Interactive activate</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивная активация</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5745,6 +6349,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive activate</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивная активация</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveActivateExtendedTooltip</name>
@@ -5794,6 +6402,10 @@
                 <key>en</key>
                 <value>Execute</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Выполнить</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5811,6 +6423,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Execute</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Выполнить</value>
               </toolTip>
               <extendedTooltip>
                 <name>ExecuteExtendedTooltip</name>
@@ -5860,6 +6476,10 @@
                 <key>en</key>
                 <value>Interactive execute</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>Интерактивное выполнение</value>
+              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5877,6 +6497,10 @@
               <toolTip>
                 <key>en</key>
                 <value>Interactive execute</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Интерактивное выполнение</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveExecuteExtendedTooltip</name>
@@ -5925,16 +6549,20 @@
               <common>true</common>
             </userVisible>
             <title>
-              <key></key>
-              <value>Roles edit group task</value>
-            </title>
-            <title>
               <key>en</key>
               <value>Task</value>
             </title>
+            <title>
+              <key>ru</key>
+              <value>Задача</value>
+            </title>
             <toolTip>
-              <key></key>
+              <key>en</key>
               <value>Roles edit group task</value>
+            </toolTip>
+            <toolTip>
+              <key>ru</key>
+              <value>Роль редактировать групповое задание</value>
             </toolTip>
             <extendedTooltip>
               <name>RolesEditGroupTaskExtendedTooltip</name>
@@ -6569,9 +7197,17 @@
           <key>en</key>
           <value>Group vertical1</value>
         </title>
+        <title>
+          <key>ru</key>
+          <value>Группа вертикальная1</value>
+        </title>
         <toolTip>
           <key>en</key>
           <value>Group vertical1</value>
+        </toolTip>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа вертикальная1</value>
         </toolTip>
         <extendedTooltip>
           <name>GroupVertical1ExtendedTooltip</name>
@@ -6606,9 +7242,17 @@
         <key>en</key>
         <value>Role matrix</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Матрица ролей</value>
+      </title>
       <toolTip>
         <key>en</key>
         <value>Group role matrix</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа матрица ролей</value>
       </toolTip>
       <extendedTooltip>
         <name>GroupRoleMatrixExtendedTooltip</name>
@@ -7658,9 +8302,17 @@
         <key>en</key>
         <value>Role details</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Детали роли</value>
+      </title>
       <toolTip>
         <key>en</key>
         <value>Group role details</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа роли детально</value>
       </toolTip>
       <extendedTooltip>
         <name>GroupRoleDetailsExtendedTooltip</name>
@@ -8033,9 +8685,17 @@
         <key>en</key>
         <value>Templates</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Шаблоны</value>
+      </title>
       <toolTip>
         <key>en</key>
         <value>Group templates</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа шаблоны</value>
       </toolTip>
       <extendedTooltip>
         <name>GroupTemplatesExtendedTooltip</name>
@@ -8408,9 +9068,17 @@
         <key>en</key>
         <value>Langs</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Языки</value>
+      </title>
       <toolTip>
         <key>en</key>
         <value>Group lang</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа языков</value>
       </toolTip>
       <extendedTooltip>
         <name>GroupLangExtendedTooltip</name>
@@ -8442,9 +9110,17 @@
       <key>en</key>
       <value>Group main pages</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Группа главные страницы</value>
+    </title>
     <toolTip>
       <key>en</key>
       <value>Group main pages</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа главные страницы</value>
     </toolTip>
     <extendedTooltip>
       <name>GroupMainPagesExtendedTooltip</name>
@@ -8519,6 +9195,10 @@
           <key>en</key>
           <value>Filter data</value>
         </title>
+        <title>
+          <key>ru</key>
+          <value>Данные отбора</value>
+        </title>
         <id>1</id>
         <valueType>
           <types>DataCompositionFilter</types>
@@ -8535,6 +9215,10 @@
         <title>
           <key>en</key>
           <value>Serialized data</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Сериализованные данные</value>
         </title>
         <id>2</id>
         <valueType>
@@ -8554,6 +9238,10 @@
           <key>en</key>
           <value>Modified</value>
         </title>
+        <title>
+          <key>ru</key>
+          <value>Модифицированный</value>
+        </title>
         <id>3</id>
         <valueType>
           <types>Boolean</types>
@@ -8572,6 +9260,10 @@
     <title>
       <key>en</key>
       <value>Roles edit</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Роли редактировать</value>
     </title>
     <id>2</id>
     <valueType>
@@ -8814,6 +9506,10 @@
         <key>en</key>
         <value>Object name</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Имя объекта</value>
+      </title>
       <id>6</id>
       <valueType>
         <types>String</types>
@@ -8833,6 +9529,10 @@
       <title>
         <key>en</key>
         <value>Data access restrictions</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Ограничения доступа к данным</value>
       </title>
       <id>7</id>
       <valueType>
@@ -8855,6 +9555,10 @@
         <key>en</key>
         <value>Insert</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Вставить</value>
+      </title>
       <id>8</id>
       <valueType>
         <types>Number</types>
@@ -8875,6 +9579,10 @@
       <title>
         <key>en</key>
         <value>Read</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Чтение</value>
       </title>
       <id>9</id>
       <valueType>
@@ -8897,6 +9605,10 @@
         <key>en</key>
         <value>Update</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Изменение</value>
+      </title>
       <id>10</id>
       <valueType>
         <types>Number</types>
@@ -8917,6 +9629,10 @@
       <title>
         <key>en</key>
         <value>Delete</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Удалить</value>
       </title>
       <id>11</id>
       <valueType>
@@ -8939,6 +9655,10 @@
         <key>en</key>
         <value>View</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Просмотр</value>
+      </title>
       <id>12</id>
       <valueType>
         <types>Number</types>
@@ -8959,6 +9679,10 @@
       <title>
         <key>en</key>
         <value>Edit</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>редактировать</value>
       </title>
       <id>13</id>
       <valueType>
@@ -8981,6 +9705,10 @@
         <key>en</key>
         <value>Input by string</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Ввод по строке</value>
+      </title>
       <id>14</id>
       <valueType>
         <types>Number</types>
@@ -9001,6 +9729,10 @@
       <title>
         <key>en</key>
         <value>Posting</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Проведение</value>
       </title>
       <id>15</id>
       <valueType>
@@ -9023,6 +9755,10 @@
         <key>en</key>
         <value>Undo posting</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Отменить проведение</value>
+      </title>
       <id>16</id>
       <valueType>
         <types>Number</types>
@@ -9043,6 +9779,10 @@
       <title>
         <key>en</key>
         <value>Use</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Использовать</value>
       </title>
       <id>17</id>
       <valueType>
@@ -9065,6 +9805,10 @@
         <key>en</key>
         <value>Totals control</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Контроль итогов</value>
+      </title>
       <id>18</id>
       <valueType>
         <types>Number</types>
@@ -9085,6 +9829,10 @@
       <title>
         <key>en</key>
         <value>Interactive delete</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное удаление</value>
       </title>
       <id>19</id>
       <valueType>
@@ -9107,6 +9855,10 @@
         <key>en</key>
         <value>Interactive insert</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное добавление</value>
+      </title>
       <id>20</id>
       <valueType>
         <types>Number</types>
@@ -9127,6 +9879,10 @@
       <title>
         <key>en</key>
         <value>Interactive set deletion mark</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивная пометка на удаление</value>
       </title>
       <id>21</id>
       <valueType>
@@ -9149,6 +9905,10 @@
         <key>en</key>
         <value>Interactive clear deletion mark</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное снятие пометки удаления</value>
+      </title>
       <id>22</id>
       <valueType>
         <types>Number</types>
@@ -9169,6 +9929,10 @@
       <title>
         <key>en</key>
         <value>Interactive delete marked</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное удаление помеченных</value>
       </title>
       <id>23</id>
       <valueType>
@@ -9191,6 +9955,10 @@
         <key>en</key>
         <value>Interactive posting</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное проведение</value>
+      </title>
       <id>24</id>
       <valueType>
         <types>Number</types>
@@ -9211,6 +9979,10 @@
       <title>
         <key>en</key>
         <value>Interactive posting regular</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное проведение неоперативное</value>
       </title>
       <id>25</id>
       <valueType>
@@ -9233,6 +10005,10 @@
         <key>en</key>
         <value>Interactive undo posting</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивная отмена проведения</value>
+      </title>
       <id>26</id>
       <valueType>
         <types>Number</types>
@@ -9253,6 +10029,10 @@
       <title>
         <key>en</key>
         <value>Interactive change of posted</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное изменение проведенных</value>
       </title>
       <id>27</id>
       <valueType>
@@ -9275,6 +10055,10 @@
         <key>en</key>
         <value>Interactive delete predefined data</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное удаление предопределенных данных</value>
+      </title>
       <id>28</id>
       <valueType>
         <types>Number</types>
@@ -9295,6 +10079,10 @@
       <title>
         <key>en</key>
         <value>Get</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Получить</value>
       </title>
       <id>29</id>
       <valueType>
@@ -9317,6 +10105,10 @@
         <key>en</key>
         <value>Set</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Установить</value>
+      </title>
       <id>30</id>
       <valueType>
         <types>Number</types>
@@ -9337,6 +10129,10 @@
       <title>
         <key>en</key>
         <value>Administration</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Администрирование	</value>
       </title>
       <id>31</id>
       <valueType>
@@ -9359,6 +10155,10 @@
         <key>en</key>
         <value>Data administration</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Администрирование данных	</value>
+      </title>
       <id>32</id>
       <valueType>
         <types>Number</types>
@@ -9379,6 +10179,10 @@
       <title>
         <key>en</key>
         <value>Update data base configuration</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Обновление конфигурации базы данных</value>
       </title>
       <id>33</id>
       <valueType>
@@ -9401,6 +10205,10 @@
         <key>en</key>
         <value>Exclusive mode</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Монопольный режим	</value>
+      </title>
       <id>34</id>
       <valueType>
         <types>Number</types>
@@ -9421,6 +10229,10 @@
       <title>
         <key>en</key>
         <value>Active users</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Активные пользователи</value>
       </title>
       <id>35</id>
       <valueType>
@@ -9443,6 +10255,10 @@
         <key>en</key>
         <value>Event log</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Журнал событий</value>
+      </title>
       <id>36</id>
       <valueType>
         <types>Number</types>
@@ -9463,6 +10279,10 @@
       <title>
         <key>en</key>
         <value>Thin client</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Тонкий клиент</value>
       </title>
       <id>37</id>
       <valueType>
@@ -9485,6 +10305,10 @@
         <key>en</key>
         <value>Web client</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Веб-клиент</value>
+      </title>
       <id>38</id>
       <valueType>
         <types>Number</types>
@@ -9505,6 +10329,10 @@
       <title>
         <key>en</key>
         <value>Mobile client</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Мобильный клиент</value>
       </title>
       <id>39</id>
       <valueType>
@@ -9527,6 +10355,10 @@
         <key>en</key>
         <value>Thick client</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Толстый клиент</value>
+      </title>
       <id>40</id>
       <valueType>
         <types>Number</types>
@@ -9548,6 +10380,10 @@
         <key>en</key>
         <value>External connection</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Внешнее соединение</value>
+      </title>
       <id>41</id>
       <valueType>
         <types>Number</types>
@@ -9567,6 +10403,10 @@
       <name>Automation</name>
       <title>
         <key>en</key>
+        <value>Automation</value>
+      </title>
+      <title>
+        <key>ru</key>
         <value>Automation</value>
       </title>
       <id>42</id>
@@ -9590,6 +10430,10 @@
         <key>en</key>
         <value>Technical specialist mode</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Режим технического специалиста</value>
+      </title>
       <id>43</id>
       <valueType>
         <types>Number</types>
@@ -9610,6 +10454,10 @@
       <title>
         <key>en</key>
         <value>Collaboration system info base registration</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Регистрация системы взаимодействия</value>
       </title>
       <id>44</id>
       <valueType>
@@ -9632,6 +10480,10 @@
         <key>en</key>
         <value>Save user data</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Сохранить данные пользователя</value>
+      </title>
       <id>45</id>
       <valueType>
         <types>Number</types>
@@ -9652,6 +10504,10 @@
       <title>
         <key>en</key>
         <value>Configuration extensions administration</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Администрирование расширений конфигурации</value>
       </title>
       <id>46</id>
       <valueType>
@@ -9674,6 +10530,10 @@
         <key>en</key>
         <value>Interactive open ext data processors</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное открытие внешних обработок</value>
+      </title>
       <id>47</id>
       <valueType>
         <types>Number</types>
@@ -9694,6 +10554,10 @@
       <title>
         <key>en</key>
         <value>Interactive open ext reports</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное открытие внешних отчетов	</value>
       </title>
       <id>48</id>
       <valueType>
@@ -9716,6 +10580,10 @@
         <key>en</key>
         <value>Output</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Вывод</value>
+      </title>
       <id>49</id>
       <valueType>
         <types>Number</types>
@@ -9736,6 +10604,10 @@
       <title>
         <key>en</key>
         <value>Read data history</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Чтение истории данных</value>
       </title>
       <id>50</id>
       <valueType>
@@ -9758,6 +10630,10 @@
         <key>en</key>
         <value>View data history</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Просмотр истории данных</value>
+      </title>
       <id>51</id>
       <valueType>
         <types>Number</types>
@@ -9778,6 +10654,10 @@
       <title>
         <key>en</key>
         <value>Read data history of missing data</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Чтение истории данных отсутствующих данных</value>
       </title>
       <id>52</id>
       <valueType>
@@ -9800,6 +10680,10 @@
         <key>en</key>
         <value>Update data history</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Изменение истории данных</value>
+      </title>
       <id>53</id>
       <valueType>
         <types>Number</types>
@@ -9820,6 +10704,10 @@
       <title>
         <key>en</key>
         <value>Update data history of missing data</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Изменение истории данных отсутствующих данных</value>
       </title>
       <id>54</id>
       <valueType>
@@ -9842,6 +10730,10 @@
         <key>en</key>
         <value>Update data history settings</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Изменение настроек истории данных</value>
+      </title>
       <id>55</id>
       <valueType>
         <types>Number</types>
@@ -9862,6 +10754,10 @@
       <title>
         <key>en</key>
         <value>Update data history version comment</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Изменение комментария версии истории данных</value>
       </title>
       <id>56</id>
       <valueType>
@@ -9884,6 +10780,10 @@
         <key>en</key>
         <value>Edit data history version comment</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Редактирование комментария версии истории данных</value>
+      </title>
       <id>57</id>
       <valueType>
         <types>Number</types>
@@ -9904,6 +10804,10 @@
       <title>
         <key>en</key>
         <value>Switch to data history version</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Переход на версию истории данных</value>
       </title>
       <id>58</id>
       <valueType>
@@ -9926,6 +10830,10 @@
         <key>en</key>
         <value>Object type</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Тип объекта</value>
+      </title>
       <id>60</id>
       <valueType>
         <types>EnumRef.Roles_MetadataSubtype</types>
@@ -9943,6 +10851,10 @@
       <title>
         <key>en</key>
         <value>Object full name</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Полное имя объекта</value>
       </title>
       <id>61</id>
       <valueType>
@@ -9962,6 +10874,10 @@
         <key>en</key>
         <value>Picture</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Рисунок</value>
+      </title>
       <id>62</id>
       <valueType>
         <types>Picture</types>
@@ -9976,8 +10892,12 @@
     <columns>
       <name>Execute</name>
       <title>
-        <key></key>
+        <key>en</key>
         <value>Execute</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Выполнить</value>
       </title>
       <id>1</id>
       <valueType>
@@ -9997,8 +10917,12 @@
     <columns>
       <name>InteractiveExecute</name>
       <title>
-        <key></key>
+        <key>en</key>
         <value>Interactive execute</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное выполнение</value>
       </title>
       <id>2</id>
       <valueType>
@@ -10018,8 +10942,12 @@
     <columns>
       <name>InteractiveActivate</name>
       <title>
-        <key></key>
+        <key>en</key>
         <value>Interactive activate</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивная активация</value>
       </title>
       <id>3</id>
       <valueType>
@@ -10039,8 +10967,12 @@
     <columns>
       <name>Start</name>
       <title>
-        <key></key>
+        <key>en</key>
         <value>Start</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Начните</value>
       </title>
       <id>4</id>
       <valueType>
@@ -10060,8 +10992,12 @@
     <columns>
       <name>InteractiveStart</name>
       <title>
-        <key></key>
+        <key>en</key>
         <value>Interactive start</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивный старт</value>
       </title>
       <id>5</id>
       <valueType>
@@ -10081,8 +11017,12 @@
     <columns>
       <name>InteractiveSetDeletionMarkPredefinedData</name>
       <title>
-        <key></key>
+        <key>en</key>
         <value>Interactive set deletion mark predefined data</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивная пометка на удаление предопределенных</value>
       </title>
       <id>59</id>
       <valueType>
@@ -10102,8 +11042,12 @@
     <columns>
       <name>InteractiveClearDeletionMarkPredefinedData</name>
       <title>
-        <key></key>
+        <key>en</key>
         <value>Interactive clear deletion mark predefined data</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное снятие пометки удаления предопределенных</value>
       </title>
       <id>63</id>
       <valueType>
@@ -10123,8 +11067,12 @@
     <columns>
       <name>InteractiveDeleteMarkedPredefinedData</name>
       <title>
-        <key></key>
+        <key>en</key>
         <value>Interactive delete marked predefined data</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Интерактивное удаление помеченных предопределенных данных</value>
       </title>
       <id>64</id>
       <valueType>
@@ -10147,6 +11095,10 @@
         <key>en</key>
         <value>Object subtype</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Подтип объекта</value>
+      </title>
       <id>65</id>
       <valueType>
         <types>EnumRef.Roles_MetadataSubtype</types>
@@ -10163,6 +11115,10 @@
       <title>
         <key>en</key>
         <value>Main window mode normal</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Режим основного окна &quot;Обычный&quot;</value>
       </title>
       <id>66</id>
       <valueType>
@@ -10185,6 +11141,10 @@
         <key>en</key>
         <value>Main window mode workplace</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Режим основного окна &quot;Рабочее место&quot;</value>
+      </title>
       <id>67</id>
       <valueType>
         <types>Number</types>
@@ -10205,6 +11165,10 @@
       <title>
         <key>en</key>
         <value>Main window mode embedded workplace</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Режим основного окна &quot;Встроенное рабочее место&quot;</value>
       </title>
       <id>68</id>
       <valueType>
@@ -10227,6 +11191,10 @@
         <key>en</key>
         <value>Main window mode fullscreen workplace</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Режим основного окна &quot;Полноэкранное рабочее место&quot;</value>
+      </title>
       <id>69</id>
       <valueType>
         <types>Number</types>
@@ -10247,6 +11215,10 @@
       <title>
         <key>en</key>
         <value>Main window mode kiosk</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Режим основного окна &quot;Киоск&quot;</value>
       </title>
       <id>70</id>
       <valueType>
@@ -10269,6 +11241,10 @@
         <key>en</key>
         <value>Analytics system client</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Клиент системы аналитики	</value>
+      </title>
       <id>71</id>
       <valueType>
         <types>Number</types>
@@ -10290,6 +11266,10 @@
         <key>en</key>
         <value>Object path</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Путь объекта</value>
+      </title>
       <id>72</id>
       <valueType>
         <types>String</types>
@@ -10308,6 +11288,10 @@
         <key>en</key>
         <value>Edited</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Измененно</value>
+      </title>
       <id>73</id>
       <valueType>
         <types>Boolean</types>
@@ -10324,6 +11308,10 @@
       <title>
         <key>en</key>
         <value>Empty row</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Пустая строка</value>
       </title>
       <id>74</id>
       <valueType>
@@ -10342,6 +11330,10 @@
         <key>en</key>
         <value>Data storage link</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Ссылка для хранения данных</value>
+      </title>
       <id>75</id>
       <valueType>
         <types>String</types>
@@ -10359,6 +11351,10 @@
       <title>
         <key>en</key>
         <value>RLS Insert ID</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>ID вставки RLS</value>
       </title>
       <id>76</id>
       <valueType>
@@ -10380,6 +11376,10 @@
         <key>en</key>
         <value>RLS Read ID</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>RLS ID чтения</value>
+      </title>
       <id>77</id>
       <valueType>
         <types>String</types>
@@ -10398,6 +11398,10 @@
       <name>RLSUpdateID</name>
       <title>
         <key>en</key>
+        <value>RLSUpdate ID</value>
+      </title>
+      <title>
+        <key>ru</key>
         <value>RLSUpdate ID</value>
       </title>
       <id>78</id>
@@ -10420,6 +11424,10 @@
         <key>en</key>
         <value>RLS Delete ID</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>RLS Удалить ID</value>
+      </title>
       <id>79</id>
       <valueType>
         <types>String</types>
@@ -10439,6 +11447,10 @@
       <title>
         <key>en</key>
         <value>RLS Insert Filled</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>RLS Вставка заполнена</value>
       </title>
       <id>81</id>
       <valueType>
@@ -10460,6 +11472,10 @@
         <key>en</key>
         <value>RLS Read Filled</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>RLS Читать Заполнено</value>
+      </title>
       <id>82</id>
       <valueType>
         <types>Number</types>
@@ -10479,6 +11495,10 @@
       <title>
         <key>en</key>
         <value>RLS Update Filled</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Обновление RLS заполнено</value>
       </title>
       <id>83</id>
       <valueType>
@@ -10500,6 +11520,10 @@
         <key>en</key>
         <value>RLS Delete Filled</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>RLS Удалить Заполнено</value>
+      </title>
       <id>84</id>
       <valueType>
         <types>Number</types>
@@ -10519,6 +11543,10 @@
       <title>
         <key>en</key>
         <value>Standard authentication change</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Изменение стандартной аутентификации</value>
       </title>
       <id>80</id>
       <valueType>
@@ -10541,6 +11569,10 @@
         <key>en</key>
         <value>Session standard authentication change</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Изменение стандартной аутентификации текущего пользователя</value>
+      </title>
       <id>85</id>
       <valueType>
         <types>Number</types>
@@ -10560,7 +11592,11 @@
       <name>SessionOSAuthenticationChange</name>
       <title>
         <key>en</key>
-        <value>Session OSAuthentication change</value>
+        <value>Session OS authentication change</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Изменение аутентификации операционной системы сеанса</value>
       </title>
       <id>86</id>
       <valueType>
@@ -10584,6 +11620,10 @@
       <key>en</key>
       <value>Current view mode</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Текущий режим просмотра</value>
+    </title>
     <id>59</id>
     <valueType>
       <types>Number</types>
@@ -10604,6 +11644,10 @@
       <key>en</key>
       <value>Search text</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Поиск текста</value>
+    </title>
     <id>3</id>
     <valueType>
       <types>String</types>
@@ -10621,6 +11665,10 @@
     <title>
       <key>en</key>
       <value>Tab doc martix</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>ТабДок матрица</value>
     </title>
     <id>74</id>
     <valueType>
@@ -10640,6 +11688,10 @@
       <key>en</key>
       <value>Matrix updated</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Обновить матрицу</value>
+    </title>
     <id>4</id>
     <valueType>
       <types>Boolean</types>
@@ -10655,6 +11707,10 @@
     <name>RLSRowID</name>
     <title>
       <key>en</key>
+      <value>RLSRow ID</value>
+    </title>
+    <title>
+      <key>ru</key>
       <value>RLSRow ID</value>
     </title>
     <id>80</id>
@@ -10677,6 +11733,10 @@
       <key>en</key>
       <value>Show all objects</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Показать все объекты</value>
+    </title>
     <id>5</id>
     <valueType>
       <types>Boolean</types>
@@ -10694,6 +11754,10 @@
       <key>en</key>
       <value>Update rights</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Обновить права</value>
+    </title>
     <id>1</id>
     <use>
       <common>true</common>
@@ -10710,6 +11774,10 @@
     <title>
       <key>en</key>
       <value>Add restriction</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Добавить ограничение</value>
     </title>
     <id>2</id>
     <use>

@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right edit data history version comment</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Право редактировать комментарий к версии истории данных</value>
+  </synonym>
 </mdclass:CommonPicture>

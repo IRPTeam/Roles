@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Chart of calculation types</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Схема видов расчета</value>
+  </synonym>
 </mdclass:CommonPicture>

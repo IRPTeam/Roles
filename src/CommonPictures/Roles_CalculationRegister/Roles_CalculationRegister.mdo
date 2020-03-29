@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Calculation register</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Расчетный регистр</value>
+  </synonym>
 </mdclass:CommonPicture>

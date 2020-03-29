@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Configuration extension administration</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование расширения конфигурации</value>
+  </synonym>
 </mdclass:CommonPicture>

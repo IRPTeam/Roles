@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right interactive delete</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Право интерактивного удаления</value>
+  </synonym>
 </mdclass:CommonPicture>

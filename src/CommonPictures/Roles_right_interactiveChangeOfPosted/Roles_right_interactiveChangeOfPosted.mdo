@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right interactive change of posted</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильное интерактивное изменение опубликовано</value>
+  </synonym>
 </mdclass:CommonPicture>

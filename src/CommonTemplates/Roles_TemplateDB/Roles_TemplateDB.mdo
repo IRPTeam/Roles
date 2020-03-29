@@ -5,5 +5,9 @@
     <key>en</key>
     <value>Roles template DB</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роль шаблона БД</value>
+  </synonym>
   <templateType>BinaryData</templateType>
 </mdclass:CommonTemplate>

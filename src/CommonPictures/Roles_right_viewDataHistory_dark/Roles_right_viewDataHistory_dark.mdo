@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right view data history dark</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный просмотр истории данных темный</value>
+  </synonym>
 </mdclass:CommonPicture>

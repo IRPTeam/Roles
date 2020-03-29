@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Ext dimension accounting flags</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Признаки учета субконто</value>
+  </synonym>
 </mdclass:CommonPicture>

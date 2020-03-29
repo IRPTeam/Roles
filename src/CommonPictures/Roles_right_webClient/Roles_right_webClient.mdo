@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right web client</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный веб-клиент</value>
+  </synonym>
 </mdclass:CommonPicture>

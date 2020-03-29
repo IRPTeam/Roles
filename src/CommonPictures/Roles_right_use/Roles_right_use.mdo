@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right use</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильное использование</value>
+  </synonym>
 </mdclass:CommonPicture>

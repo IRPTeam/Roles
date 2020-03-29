@@ -10,6 +10,10 @@
     <key>en</key>
     <value>Metadata type</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Тип метаданных</value>
+  </synonym>
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
   <enumValues uuid="c57a00f2-47d7-4f31-82f5-08e5fa7fc3e7">
@@ -18,12 +22,20 @@
       <key>en</key>
       <value>Attribute</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизит</value>
+    </synonym>
   </enumValues>
   <enumValues uuid="bf249572-41da-4520-a45d-b89989e1fd01">
     <name>Dimension</name>
     <synonym>
       <key>en</key>
       <value>Dimension</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Измерение</value>
     </synonym>
   </enumValues>
   <enumValues uuid="e3c47229-8e47-489a-b34d-7cd3e0248c78">
@@ -32,12 +44,20 @@
       <key>en</key>
       <value>Resource</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурс</value>
+    </synonym>
   </enumValues>
   <enumValues uuid="19b6db3a-b571-410e-be6f-80eeda52288e">
     <name>StandardAttribute</name>
     <synonym>
       <key>en</key>
       <value>Standard attribute</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Стандартные реквизиты</value>
     </synonym>
   </enumValues>
   <enumValues uuid="1f8c6bd5-1d1f-41af-8e8a-8bba22e456ad">
@@ -46,12 +66,20 @@
       <key>en</key>
       <value>Command</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Команда</value>
+    </synonym>
   </enumValues>
   <enumValues uuid="0f11e141-75b7-4c14-b843-015ba425d423">
     <name>Recalculation</name>
     <synonym>
       <key>en</key>
       <value>Recalculation</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Перерасчет</value>
     </synonym>
   </enumValues>
   <enumValues uuid="dbe2b975-3d12-4ab3-af5d-a86e3ddec384">
@@ -60,12 +88,20 @@
       <key>en</key>
       <value>Accounting flag</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Флаг учета</value>
+    </synonym>
   </enumValues>
   <enumValues uuid="5edc481b-c034-4859-80f0-efdae1071427">
     <name>ExtDimensionAccountingFlag</name>
     <synonym>
       <key>en</key>
       <value>Ext dimension accounting flag</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Признак учета субконто</value>
     </synonym>
   </enumValues>
   <enumValues uuid="96d46ce3-1144-41b3-a621-d992eb8c9a75">
@@ -74,12 +110,20 @@
       <key>en</key>
       <value>Addressing attribute</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Атрибут адресации</value>
+    </synonym>
   </enumValues>
   <enumValues uuid="8ccedcfe-166d-4ddd-b530-63d8181275bc">
     <name>TabularSection</name>
     <synonym>
       <key>en</key>
       <value>Tabular section</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица секции</value>
     </synonym>
   </enumValues>
   <enumValues uuid="058045c3-90df-4fc0-970f-516046c43876">
@@ -88,12 +132,20 @@
       <key>en</key>
       <value>Standard tabular section</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Стандартный табличный раздел</value>
+    </synonym>
   </enumValues>
   <enumValues uuid="e4df3423-b1d5-4a9f-89e9-d8fed4b3f76c">
     <name>Operation</name>
     <synonym>
       <key>en</key>
       <value>Operation</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
     </synonym>
   </enumValues>
   <enumValues uuid="05ba70d7-30b1-4cec-95f1-0e917c5d6716">
@@ -102,12 +154,20 @@
       <key>en</key>
       <value>URLTemplate</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>URL шаблоны</value>
+    </synonym>
   </enumValues>
   <enumValues uuid="d0a76ee3-b808-42ad-9ce5-a2edd63c7415">
     <name>Method</name>
     <synonym>
       <key>en</key>
       <value>Method</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Метод</value>
     </synonym>
   </enumValues>
   <enumValues uuid="93862ef4-0424-4634-922d-db4862d87a23">
@@ -116,12 +176,20 @@
       <key>en</key>
       <value>Cube</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Куб</value>
+    </synonym>
   </enumValues>
   <enumValues uuid="ed98fe9d-3c30-495c-994a-418792575e16">
     <name>Table</name>
     <synonym>
       <key>en</key>
       <value>Table</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица</value>
     </synonym>
   </enumValues>
   <enumValues uuid="04a6f69a-e5cd-42e3-90e2-f094beddfb6d">
@@ -130,6 +198,10 @@
       <key>en</key>
       <value>Dimension table</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица измерений</value>
+    </synonym>
   </enumValues>
   <enumValues uuid="70d6f5c0-c4c6-45d7-96e5-8eef80e9864f">
     <name>Function</name>
@@ -137,12 +209,20 @@
       <key>en</key>
       <value>Function</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Функция</value>
+    </synonym>
   </enumValues>
   <enumValues uuid="d46eb63a-c19d-4ac1-8980-a2a2e2e531f3">
     <name>Field</name>
     <synonym>
       <key>en</key>
       <value>Field</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Поле</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

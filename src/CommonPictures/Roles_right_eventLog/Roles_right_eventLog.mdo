@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right event log</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный журнал событий</value>
+  </synonym>
 </mdclass:CommonPicture>

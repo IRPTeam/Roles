@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Update extension</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Обновить расширение</value>
+  </synonym>
   <group>ActionsPanelTools</group>
   <commandParameterType/>
   <representation>Auto</representation>

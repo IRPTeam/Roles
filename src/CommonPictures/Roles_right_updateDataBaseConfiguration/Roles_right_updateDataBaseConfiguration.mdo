@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right update data base configuration</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильно обновить конфигурацию базы данных</value>
+  </synonym>
 </mdclass:CommonPicture>

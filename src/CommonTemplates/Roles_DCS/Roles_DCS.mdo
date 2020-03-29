@@ -5,5 +5,9 @@
     <key>en</key>
     <value>Roles DCS</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роли DCS</value>
+  </synonym>
   <templateType>DataCompositionSchema</templateType>
 </mdclass:CommonTemplate>

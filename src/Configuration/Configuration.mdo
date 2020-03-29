@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Roles</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роли</value>
+  </synonym>
   <comment> </comment>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
@@ -20,7 +24,7 @@
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
   <defaultRoles>Role.Roles_UserRole</defaultRoles>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
@@ -29,10 +33,7 @@
   <languages uuid="0e682ddb-91ed-46d0-ab2d-27974eb73d0f">
     <name>English</name>
     <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:LanguageExtension">
-      <languageCode>Checked</languageCode>
-    </extension>
-    <languageCode>en</languageCode>
+    <extension xsi:type="mdclassExtension:LanguageExtension"/>
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
   <commonPictures>CommonPicture.Roles_AccountingFlags</commonPictures>
@@ -147,6 +148,7 @@
   <commonPictures>CommonPicture.Roles_Functions</commonPictures>
   <commonPictures>CommonPicture.Roles_Fields</commonPictures>
   <commonPictures>CommonPicture.Roles_Debug</commonPictures>
+  <commonPictures>CommonPicture.Roles_Interface</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
   <roles>Role.Roles_UserRole</roles>
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
@@ -175,4 +177,5 @@
   <enums>Enum.Roles_MetadataTypes</enums>
   <enums>Enum.Roles_Rights</enums>
   <enums>Enum.Roles_MetadataSubtype</enums>
+  <dataProcessors>DataProcessor.Roles_ButtonForm</dataProcessors>
 </mdclass:Configuration>

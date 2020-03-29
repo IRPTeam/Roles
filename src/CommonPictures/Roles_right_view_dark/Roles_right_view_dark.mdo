@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right view dark</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный взгляд темный</value>
+  </synonym>
 </mdclass:CommonPicture>

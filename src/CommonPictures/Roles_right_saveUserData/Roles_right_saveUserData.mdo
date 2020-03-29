@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right save user data</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильно сохранить данные пользователя</value>
+  </synonym>
 </mdclass:CommonPicture>

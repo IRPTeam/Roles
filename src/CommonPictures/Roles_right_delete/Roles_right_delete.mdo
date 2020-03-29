@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right delete</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Право удалить</value>
+  </synonym>
 </mdclass:CommonPicture>

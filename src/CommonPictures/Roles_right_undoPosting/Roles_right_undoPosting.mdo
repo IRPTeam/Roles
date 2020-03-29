@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right undo posting</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Право отменить отправку</value>
+  </synonym>
 </mdclass:CommonPicture>

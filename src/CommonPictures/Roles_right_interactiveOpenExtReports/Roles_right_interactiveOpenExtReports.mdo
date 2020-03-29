@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right interactive open ext reports</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Право интерактивных отчетов Open Ext</value>
+  </synonym>
 </mdclass:CommonPicture>

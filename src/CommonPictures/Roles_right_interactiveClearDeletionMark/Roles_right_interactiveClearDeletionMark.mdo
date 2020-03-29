@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right interactive clear deletion mark</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правый интерактивный четкий знак удаления</value>
+  </synonym>
 </mdclass:CommonPicture>

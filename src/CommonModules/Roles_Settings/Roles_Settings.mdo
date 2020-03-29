@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Settings</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки</value>
+  </synonym>
   <server>true</server>
   <serverCall>true</serverCall>
   <returnValuesReuse>DuringSession</returnValuesReuse>

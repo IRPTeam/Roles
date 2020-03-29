@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right read</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильно читать</value>
+  </synonym>
 </mdclass:CommonPicture>

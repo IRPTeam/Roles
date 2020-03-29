@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Dimensions</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Измерения</value>
+  </synonym>
 </mdclass:CommonPicture>

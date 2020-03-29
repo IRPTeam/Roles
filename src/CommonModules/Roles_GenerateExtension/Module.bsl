@@ -197,23 +197,30 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	Query.Text =
 		"SELECT DISTINCT
 		|	Roles_AccessRolesRights.ObjectType AS ObjectType,
-		|	Roles_AccessRolesRights.ObjectName AS ObjectName
+		|	Roles_AccessRolesRights.ObjectName AS ObjectName,
+		|	""          "" AS AddInfo
 		|FROM
 		|	Catalog.Roles_AccessRoles.Rights AS Roles_AccessRolesRights
 		|WHERE
 		|	NOT Roles_AccessRolesRights.Ref.ConfigRoles
 		|	AND NOT Roles_AccessRolesRights.Ref.DeletionMark
+		|	AND NOT Roles_AccessRolesRights.ObjectType = VALUE(Enum.Roles_MetadataTypes.Configuration)
 		|
 		|UNION ALL
 		|
 		|SELECT
 		|	VALUE(Enum.Roles_MetadataTypes.Role),
-		|	""AccRoles_"" + Roles_AccessRoles.Description
+		|	""AccRoles_"" + Roles_AccessRoles.Description,
+		|	""          ""
 		|FROM
 		|	Catalog.Roles_AccessRoles AS Roles_AccessRoles
 		|WHERE
 		|	NOT Roles_AccessRoles.DeletionMark
 		|	AND NOT Roles_AccessRoles.ConfigRoles
+		|
+		|ORDER BY
+		|	ObjectType,
+		|	ObjectName
 		|;
 		|
 		|////////////////////////////////////////////////////////////////////////////////
@@ -230,7 +237,10 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|	AND NOT Roles_AccessRolesRights.ObjectSubtype = VALUE(Enum.Roles_MetadataSubtype.EmptyRef)
 		|
 		|ORDER BY
-		|	ObjectPath
+		|	ObjectPath,
+		|	ObjectType,
+		|	ObjectName,
+		|	ObjectSubtype
 		|AUTOORDER
 		|;
 		|
@@ -241,7 +251,10 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|FROM
 		|	Catalog.Roles_Parameters AS Roles_Parameters
 		|WHERE
-		|	NOT Roles_Parameters.Ref.DeletionMark";
+		|	NOT Roles_Parameters.Ref.DeletionMark
+		|
+		|ORDER BY
+		|	ObjectName";
 	
 	QueryResult = Query.ExecuteBatch();
 	MainMetadata = QueryResult[0].Unload();
@@ -257,9 +270,14 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	DOMDocument = DOMBuilder.Read(ReadXML);
 	ReadXML.Close();
 	
+	ExtLanguage = DOMDocument.GetElementByTagName("Language").Item(0);
+	ExtLanguage.ParentNode.RemoveChild(ExtLanguage);
+	
     DOMDocument.GetElementByTagName("Version")[0].TextContent = String(CurrentDate());
 	ItemsDOM = DOMDocument.GetElementByTagName("ChildObjects");
-		
+	
+	
+	
 	For Each Item In SessionParam Do
 		NewNode = DOMDocument.CreateElement("SessionParameter");
 		NewNode.TextContent = Item.ObjectName;
@@ -273,11 +291,20 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 			NewType = MainMetadata.Add();
 			ObjectName = StrSplit(TypeData.FullName(), ".", False);
 			NewType.ObjectName = ObjectName[1];
-			NewType.ObjectType = Enums.Roles_MetadataTypes[ObjectName[0]];
+			NewType.ObjectType = Enums.Roles_MetadataTypes[Roles_Settings.MetaName(ObjectName[0])];
 		EndDo;
 	EndDo;
 	
-	MainMetadata.GroupBy("ObjectName, ObjectType");
+	For Each Lang In Metadata.Languages Do
+		NewType = MainMetadata.Add();
+		ObjectName = StrSplit(Lang.FullName(), ".", False);
+		NewType.ObjectName = ObjectName[1];
+		NewType.ObjectType = Enums.Roles_MetadataTypes.Language;
+		NewType.AddInfo = Lang.LanguageCode;
+	EndDo;
+
+	
+	MainMetadata.GroupBy("ObjectName, ObjectType, AddInfo");
 	
 	For Each Item In MainMetadata Do
 		NewNode = DOMDocument.CreateElement(Roles_Settings.MetaName(Item.ObjectType));
@@ -285,8 +312,8 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		ItemsDOM[0].AppendChild(NewNode);
 	EndDo;
 
-	Language = DOMDocument.GetElementByTagName("Language");
-	Language[0].TextContent = Metadata.DefaultLanguage.Name;
+
+	
 	
 	WriteXML = New XMLWriter;
 	WriteXML.OpenFile(SourcePath + "Configuration.xml");
@@ -304,8 +331,7 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	
 	
 	For Each Item In MainMetadata Do
-		If NOT Item.ObjectType = Enums.Roles_MetadataTypes.Role 
-			OR NOT Item.ObjectType = Enums.Roles_MetadataTypes.Configuration Then
+		If NOT Item.ObjectType = Enums.Roles_MetadataTypes.Role  Then
 			UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item, SubMetadata);
 		EndIf;
 	EndDo;
@@ -382,6 +408,12 @@ Procedure UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item, SubMe
 	EndIf;
 	
 	Properties = UpdateRoleExt_ConfigurationXML_AddProperties(DOMDocument, Item.ObjectName);
+	If Item.ObjectType = Enums.Roles_MetadataTypes.Language Then
+		ThisNode = DOMDocument.CreateElement("LanguageCode");
+		ThisNode.TextContent = Item.AddInfo;
+		Properties.AppendChild(ThisNode);
+	EndIf;
+
 	ObjectNode.AppendChild(Properties);
 	
 	If Not Roles_Settings.hasNoChildObjects(Item.ObjectType)  Then		

@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right input by string dark</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный ввод строки темный</value>
+  </synonym>
 </mdclass:CommonPicture>

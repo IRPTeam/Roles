@@ -5,12 +5,15 @@
     <key>en</key>
     <value>Access system</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Система доступа</value>
+  </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Roles_SubsystemIco</picture>
   </picture>
-  <content>2c60e70a-d5e1-4e1b-8a3f-bb2bddd622d5</content>
   <content>Role.Roles_DefaultRole</content>
   <content>Catalog.Roles_AccessRoles</content>
   <content>Catalog.Roles_AccessProfiles</content>
@@ -21,7 +24,6 @@
   <content>CommonModule.Roles_SettingsReUse</content>
   <content>CommonModule.Roles_ExportAndLoadCurrentRoles</content>
   <content>CommonModule.Roles_ServiceServer</content>
-  <content>75d84f3a-14be-413b-a65d-4f97e02b4720</content>
   <content>CommonForm.Roles_ConnectionSettingsForm</content>
   <content>CommonCommand.Roles_UpdateExtension</content>
   <content>CommonCommand.Roles_LoadRolesFromXML</content>
@@ -40,4 +42,5 @@
   <content>Enum.Roles_Rights</content>
   <content>Enum.Roles_MetadataTypes</content>
   <content>Enum.Roles_MetadataSubtype</content>
+  <content>DataProcessor.Roles_ButtonForm</content>
 </mdclass:Subsystem>

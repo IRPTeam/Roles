@@ -3,6 +3,10 @@
   <name>Roles_UserRole</name>
   <synonym>
     <key>en</key>
-    <value>Uuser role</value>
+    <value>User role</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Пользовательская роль</value>
   </synonym>
 </mdclass:Role>

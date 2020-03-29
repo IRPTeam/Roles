@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Accounting flags</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Флаги учета</value>
+  </synonym>
 </mdclass:CommonPicture>

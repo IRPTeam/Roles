@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Subsystem ico</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Подсистема ico</value>
+  </synonym>
 </mdclass:CommonPicture>

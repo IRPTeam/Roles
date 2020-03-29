@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Information register</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Регистра сведений</value>
+  </synonym>
 </mdclass:CommonPicture>

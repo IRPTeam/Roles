@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Admin role</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роль администратора</value>
+  </synonym>
 </mdclass:Role>

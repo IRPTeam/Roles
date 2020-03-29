@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Attribute</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Реквизит</value>
+  </synonym>
 </mdclass:CommonPicture>

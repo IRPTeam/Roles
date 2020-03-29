@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Standard attribute</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Стандартные реквизиты</value>
+  </synonym>
 </mdclass:CommonPicture>

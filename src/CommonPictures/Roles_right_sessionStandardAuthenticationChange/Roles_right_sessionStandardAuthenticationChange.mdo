@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Session standard authentication change</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение стандартной аутентификации текущего пользователя</value>
+  </synonym>
 </mdclass:CommonPicture>

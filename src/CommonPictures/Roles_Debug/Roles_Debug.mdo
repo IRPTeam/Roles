@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Debug</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Отладка</value>
+  </synonym>
 </mdclass:CommonPicture>

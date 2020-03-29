@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right update data history version comment</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильное обновление данных истории комментария к версии</value>
+  </synonym>
 </mdclass:CommonPicture>

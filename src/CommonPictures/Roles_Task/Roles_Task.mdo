@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Task</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Задача</value>
+  </synonym>
 </mdclass:CommonPicture>

@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Roles URLTemplate</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роли URLTemplate</value>
+  </synonym>
 </mdclass:CommonPicture>

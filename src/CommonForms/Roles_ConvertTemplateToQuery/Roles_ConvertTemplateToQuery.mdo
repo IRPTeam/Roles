@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Convert template to query</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Конвертировать шаблон в запрос</value>
+  </synonym>
   <usePurposes>PersonalComputer</usePurposes>
   <usePurposes>MobileDevice</usePurposes>
 </mdclass:CommonForm>

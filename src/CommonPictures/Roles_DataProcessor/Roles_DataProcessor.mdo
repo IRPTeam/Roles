@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Data processor</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Обработки</value>
+  </synonym>
 </mdclass:CommonPicture>

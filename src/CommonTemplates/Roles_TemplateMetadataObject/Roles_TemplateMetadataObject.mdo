@@ -5,5 +5,9 @@
     <key>en</key>
     <value>Template metadata object</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблон метаданных объекта</value>
+  </synonym>
   <templateType>TextDocument</templateType>
 </mdclass:CommonTemplate>

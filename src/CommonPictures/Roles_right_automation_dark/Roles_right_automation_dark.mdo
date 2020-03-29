@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Right automation dark</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правая автоматика темная</value>
+  </synonym>
 </mdclass:CommonPicture>

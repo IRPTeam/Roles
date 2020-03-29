@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Load roles from XML</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузить роли из XML</value>
+  </synonym>
   <group>ActionsPanelTools</group>
   <commandParameterType/>
   <representation>Auto</representation>

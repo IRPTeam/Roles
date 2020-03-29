@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Web service</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>веб-сервис</value>
+  </synonym>
 </mdclass:CommonPicture>

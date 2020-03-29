@@ -12,6 +12,10 @@
     <key>en</key>
     <value>Access profiles</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Профили доступа</value>
+  </synonym>
   <useStandardCommands>true</useStandardCommands>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>DontUse</createOnInput>
@@ -19,6 +23,10 @@
   <objectPresentation>
     <key>en</key>
     <value>Access profile</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Профиль доступа</value>
   </objectPresentation>
   <hierarchical>true</hierarchical>
   <levelCount>2</levelCount>
@@ -42,11 +50,19 @@
       <key>en</key>
       <value>Roles</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Роли</value>
+    </synonym>
     <attributes uuid="a3ba0cbb-0693-44a9-a644-be87f4d09064">
       <name>Role</name>
       <synonym>
         <key>en</key>
         <value>Role</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Роль</value>
       </synonym>
       <type>
         <types>CatalogRef.Roles_AccessRoles</types>
@@ -62,6 +78,10 @@
       <key>en</key>
       <value>Item form</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -70,6 +90,10 @@
     <synonym>
       <key>en</key>
       <value>List form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

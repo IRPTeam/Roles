@@ -3,6 +3,10 @@
   <name>Roles_right_sessionOSAuthenticationChange</name>
   <synonym>
     <key>en</key>
-    <value>Ssession OSAuthentication change</value>
+    <value>Session OS authentication change</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение аутентификации операционной системы сеанса</value>
   </synonym>
 </mdclass:CommonPicture>

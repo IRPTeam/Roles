@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Chart of accounts</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>План счетов</value>
+  </synonym>
 </mdclass:CommonPicture>
