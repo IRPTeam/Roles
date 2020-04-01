@@ -49,8 +49,7 @@
 		<filter>
 			<item xsi:type="FilterItemComparison">
 				<left xsi:type="dcscor:Field">DebugTree.Error</left>
-				<comparisonType>Equal</comparisonType>
-				<right xsi:type="xs:boolean">true</right>
+				<comparisonType>Filled</comparisonType>
 			</item>
 		</filter>
 		<appearance>

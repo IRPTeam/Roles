@@ -69,10 +69,6 @@
           <event>Selection</event>
           <name>SettingsComposerSettingsFilterFilterAvailableFieldsSelection</name>
         </handlers>
-        <handlers>
-          <event>OnStartEdit</event>
-          <name>SettingsComposerSettingsFilterFilterAvailableFieldsOnStartEdit</name>
-        </handlers>
         <searchStringAddition>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1529,10 +1525,6 @@
   <handlers>
     <event>OnCreateAtServer</event>
     <name>OnCreateAtServer</name>
-  </handlers>
-  <handlers>
-    <event>FillCheckProcessingAtServer</event>
-    <name>FillCheckProcessingAtServer</name>
   </handlers>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
   <autoTitle>true</autoTitle>

@@ -6929,10 +6929,6 @@
                 <segments>Object.RestrictionByCondition.FilterData</segments>
               </paths>
             </dataPath>
-            <handlers>
-              <event>OnChange</event>
-              <name>RestrictionByConditionMatrixFilterDataOnChange</name>
-            </handlers>
             <extendedTooltip>
               <name>RestrictionByConditionMatrixFilterDataExtendedTooltip</name>
               <id>518</id>
@@ -7017,14 +7013,6 @@
             <horizontalAlign>Left</horizontalAlign>
             <autoFill>true</autoFill>
           </autoCommandBar>
-          <handlers>
-            <event>BeforeAddRow</event>
-            <name>RestrictionByConditionMatrixBeforeAddRow</name>
-          </handlers>
-          <handlers>
-            <event>OnStartEdit</event>
-            <name>RestrictionByConditionMatrixOnStartEdit</name>
-          </handlers>
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>

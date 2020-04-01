@@ -13,7 +13,8 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 		
 		If Meta = Enums.Roles_MetadataTypes.IntegrationService // wait 8.3.17
 			OR Meta = Enums.Roles_MetadataTypes.Role
-			OR Meta = Enums.Roles_MetadataTypes.Enum Then 
+			OR Meta = Enums.Roles_MetadataTypes.Enum
+			OR Meta = Enums.Roles_MetadataTypes.Language Then 
 			Continue;
 		EndIf;
 		
@@ -69,9 +70,11 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 		EndDo;
 		If EmptyData Then
 			RoleTree.Rows.Delete(MetaRow);
+		Else
+			CulculateTopLvlStatus(MetaRow);
 		EndIf;
 		
-		CulculateTopLvlStatus(MetaRow);
+		
 	EndDo;
 	
 	RoleTree.Rows.Sort("ObjectPath", True);
@@ -198,7 +201,7 @@ Procedure ReplaceTextInTabDoc(TabDoc, Find, Replace, Color)
 	While NOT AreaToReplace = Undefined Do
 		AreaToReplace.Text = Replace;
 		AreaToReplace.BackColor = Color;
-		AreaToReplace = TabDoc.FindText(Find, , , , True);
+		AreaToReplace = TabDoc.FindText(Find, AreaToReplace, , , True);
 	EndDo;
 EndProcedure
 
@@ -249,7 +252,6 @@ EndProcedure
 Procedure FillTabDocRLS(Val ParamStructure, TabDoc, Name, RowIDList, RLSFilled, Row)
 	If Not RLSFilled = 0 Then
 		RowIDArray = StrSplit(RowIDList, ";", False);
-		RLSMap = New Map;
 		For Each RowID In RowIDArray Do
 			For Each RLSRow In ParamStructure.ObjectData.RestrictionByCondition.FindRows(New Structure("RowID", RowID)) Do				
 				TabRowRLS = Roles_ServiceServer.RLSTemplate();
@@ -344,7 +346,7 @@ Procedure AddChildURLTemplates(MetaItem, MetaItemRow, DataType, Val StrData)
 		EndDo;
 		
 	EndDo;
-	AddChildRows.Picture = StrData.PictureLibData["Roles_" + ObjectSubtype];
+	AddChildRows.Picture = StrData.PictureLibData["Roles_" + Roles_Settings.MetaName(ObjectSubtype)];
 	AddChildRows.ObjectName = DataType;
 	AddChildRows.ObjectSubtype = ObjectSubtype;
 	

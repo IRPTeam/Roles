@@ -633,9 +633,5 @@
       <event>BeforeWriteAtServer</event>
       <name>BeforeWriteAtServer</name>
     </handlers>
-    <handlers>
-      <event>OnWriteAtServer</event>
-      <name>OnWriteAtServer</name>
-    </handlers>
   </extInfo>
 </form:Form>

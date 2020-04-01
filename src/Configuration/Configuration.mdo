@@ -23,8 +23,7 @@
   <namePrefix>Roles_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
-  <defaultRoles>Role.Roles_UserRole</defaultRoles>
-  <version>0.2.1</version>
+  <version>0.2.2</version>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
@@ -33,7 +32,10 @@
   <languages uuid="0e682ddb-91ed-46d0-ab2d-27974eb73d0f">
     <name>English</name>
     <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:LanguageExtension"/>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>en</languageCode>
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
   <commonPictures>CommonPicture.Roles_AccountingFlags</commonPictures>

@@ -54,7 +54,6 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 	FullCode = StrReplace(TotalRLSCode, "&", "AdditionalParamsStructure.");
 	Result = True;	
 	Rows = StrSplit(FullCode, "#", False);
-	Skip = False;
 	QueryText = StrConcat(Rows, Chars.LF);
 	
 	For Index = 0 To Rows.Count() - 1 Do
@@ -62,15 +61,15 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 		Row = TrimAll(Row);
 		FirstTextLen = StrLen(StrSplit(Row, " " + Chars.LF, False)[0]);
 		If StrStartsWith(Lower(Row), "if") Or StrStartsWith(Lower(Row), "если") Then
-			
+			NewRow = NewRow.Rows.Add();
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
 			Result = CalculateResult(Code, AdditionalParamsStructure, Query);
 			
-			If Result = Undefined Then
+			If TypeOf(Result) = Type("Array") Then
+				NewRow.Error = StrConcat(Result, Chars.LF);
 				Result = False;
-				
 			EndIf;
-			NewRow = NewRow.Rows.Add();
+			
 			NewRow.Result = Result;
 			NewRow.Condition = "If";
 			NewRow.ConditionText = Code;
@@ -94,6 +93,11 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 			NewRow = NewRow.Parent.Rows.Add();
 			NewRow.Condition = "elsif";
 			Result = CalculateResult(Code, AdditionalParamsStructure, Query);
+			If TypeOf(Result) = Type("Array") Then
+				NewRow.Error = StrConcat(Result, Chars.LF);
+				Result = False;
+			EndIf;
+
 			NewRow.Result = Result;
 			NewRow.ConditionText = Code;
 			
@@ -205,7 +209,7 @@ Function CalculateResult(Val Code, AdditionalParamsStructure, Query)
 		Message(Row);
 	EndDo;
 	
-	Return Result
+	Return ErrorList
 EndFunction
 
 &AtServer
@@ -265,10 +269,15 @@ Procedure FillTemplateWithParams(RLSParamStructure)
 		For Index = 0 To Tmp.Value.Params.Ubound() Do
 			CurrentCode = StrReplace(CurrentCode, "#Параметр(" + (Index + 1) + ")" , String(Tmp.Value.Params[Index]));
 			CurrentCode = StrReplace(CurrentCode, "#Parameter(" + (Index + 1) + ")", String(Tmp.Value.Params[Index]));
+			
+			CurrentCode = StrReplace(CurrentCode, "#Поле"  + (Index + 1), String(Tmp.Value.Params[Index]));
+			CurrentCode = StrReplace(CurrentCode, "#Field" + (Index + 1), String(Tmp.Value.Params[Index]));
+
 		EndDo;                          
 		
 		For Each NamedParam In Tmp.Value.NamedParams Do
-			CurrentCode = StrReplace(CurrentCode, "#" + NamedParam.Key, Char(34) + NamedParam.Value + Char(34));
+			CurrentCode = StrReplace(CurrentCode, Char(34) + "#" + NamedParam.Key + Char(34), Char(34) + NamedParam.Value + Char(34));
+			CurrentCode = StrReplace(CurrentCode, "#" + NamedParam.Key, NamedParam.Value);
 		EndDo;
 		
 		CurrentCode = StrReplace(CurrentCode, "#ИмяТекущегоПраваДоступа", Char(34) + CurrentAccessRightName + Char(34));
@@ -284,11 +293,11 @@ Procedure FillTemplateWithParams(RLSParamStructure)
 	EndDo;
 EndProcedure
 
-Function StrContains(String, Substring)
+Function StrContains(String, Substring) Export
 	Return StrFind(String, Substring) > 0;
 EndFunction
 
-Function СтрСодержит(String, Substring)
+Function СтрСодержит(String, Substring) Export
 	Return StrFind(String, Substring) > 0;
 EndFunction
 
@@ -480,3 +489,215 @@ Procedure RunReportAtServer()
 
 
 EndProcedure
+
+#Region ConvertToExternalBSLCode
+&AtClient
+Procedure ConvertToBSLCode(Command)
+	ConvertToBSLCodeAtServer()	
+EndProcedure
+
+
+&AtServer
+Procedure ConvertToBSLCodeAtServer()
+	FunctionMap = New Map;
+	ArrayBSLCode = New Array;
+	ArrayBSLCode.Add("&AtServer");
+	ArrayBSLCode.Add("Procedure TestBSL()");
+	ArrayBSLCode.Add("ArrayText = New Array;");
+	
+	ArrayBSLCode.Add("Query = New Query;
+	|	
+	|	AdditionalParamsStructure = New Structure;
+	|	For Each Param In Metadata.SessionParameters Do
+	|		Query.SetParameter(Param.Name, SessionParameters[Param.Name]);
+	|		AdditionalParamsStructure.Insert(Param.Name, SessionParameters[Param.Name]);
+	|	EndDo;");	
+	
+	Query = New Query;
+
+	AdditionalParamsStructure = New Structure;
+	For Each Param In SessionParametersTable Do
+		Query.SetParameter(Param.Name, Param.Value);
+		AdditionalParamsStructure.Insert(Param.Name, Param.Value);
+	EndDo;
+	
+	ConvertToBSLCodeRecursion(DebugTree.GetItems(), ArrayBSLCode, FunctionMap, AdditionalParamsStructure, Query);
+	ArrayBSLCode.Add("EndProcedure");
+	
+	For Each Func In FunctionMap Do
+		ArrayBSLCode.Add(StrConcat(Func.Value, Chars.LF));
+	EndDo;
+	
+	ArrayBSLCode.Add("
+		|Function StrContains(String, Substring) Export
+		|	Return StrFind(String, Substring) > 0;
+		|EndFunction
+		|Function СтрСодержит(String, Substring) Export
+		|	Return StrFind(String, Substring) > 0;
+		|EndFunction");
+
+	
+	BSLCode = StrConcat(ArrayBSLCode, Chars.LF);
+EndProcedure
+
+&AtServer
+Procedure ConvertToBSLCodeRecursion(Rows, Array, FunctionMap, AdditionalParamsStructure, Query)
+	For Each Row In Rows Do
+
+		If IsBlankString(Row.ConditionText) Then
+			If Row.Condition = "endif" Then
+				Row.Condition = Row.Condition + ";";
+			EndIf;
+			Array.Add(Row.Condition);
+		Else
+			CodeTypeOrData = CodeTypeOrData(Row.ConditionText, AdditionalParamsStructure, Query);
+			
+			If TypeOf(CodeTypeOrData) = Type("Boolean") Then
+				Array.Add(Row.Condition + " " + Row.ConditionText + " Then");
+			ElsIf TypeOf(CodeTypeOrData) = Type("String") Then
+				Array.Add(Row.Condition + " " + "QueryFunction" + Format(FunctionMap.Count()) + "(Query) Then");
+				
+				TmpArray = New Array;
+				TmpArray.Add("Function " + "QueryFunction" + Format(FunctionMap.Count()) + "(Query)");
+				TmpArray.Add("Query.Text = """ + CodeTypeOrData + """;");
+				TmpArray.Add("Return Query.Execute().Unload()[0].Result;");
+				TmpArray.Add("EndFunction");
+				FunctionMap.Insert("QueryFunction" + Format(FunctionMap.Count()), TmpArray);
+			Else
+				
+			EndIf;
+		EndIf;
+		
+		Text = PrepareQueryText(Row.Code);
+		Array.Add("ArrayText.Add(""" + Text + """);");
+		
+		ConvertToBSLCodeRecursion(Row.GetItems(), Array, FunctionMap, AdditionalParamsStructure, Query);
+	EndDo;
+EndProcedure
+
+#EndRegion
+
+&AtServer
+Function CodeTypeOrData(Val Code, AdditionalParamsStructure, Query)
+	Result = Undefined;
+	ErrorList = New Array;
+	Try
+		Execute("Result = " + Code);
+		Return False;
+	Except
+		ErrorList.Add(DetailErrorDescription(ErrorInfo()));
+	EndTry;
+	
+	// try to create query
+	Code = StrReplace(Code, "AdditionalParamsStructure.", "&");
+	Query.Text = 
+	"SELECT TOP 1
+	|	CASE
+	|		WHEN ("+Code+")
+	|			THEN TRUE
+	|		ELSE FALSE
+	|	END AS Result";
+		
+	Try
+		Query.Execute();
+		Text = Query.Text;
+		Text = PrepareQueryText(Text);
+
+		Return Text;
+	Except
+		ErrorList.Add(DetailErrorDescription(ErrorInfo()))
+	EndTry;
+
+	For Each Row In ErrorList Do
+		Message(Row);
+	EndDo;
+	
+	Return ErrorList
+EndFunction
+
+
+&AtServer
+Function PrepareQueryText(Val Text)
+	Text = StrReplace(Text, Char(34), Char(34) + Char(34));
+	Text = StrReplace(Text, Chars.LF, Chars.LF + "|");
+	Return Text;
+EndFunction
+
+
+&AtClient
+Procedure RunBSLCode(Command)
+	RunBSLCodeAtServer();
+EndProcedure
+
+
+&AtServer
+Procedure RunBSLCodeAtServer()
+	ArrayText = New Array;
+	Execute(BSLCode);
+	BSLResult = StrConcat(ArrayText, Chars.LF);
+EndProcedure
+
+#Region ConvertToExternalBSLCode
+
+&AtClient
+Procedure ConvertToInternalBSLCode(Command)
+	ConvertToInternalBSLCodeAtServer()
+EndProcedure
+
+
+&AtServer
+Procedure ConvertToInternalBSLCodeAtServer()
+	ArrayBSLCode = New Array;
+	ArrayBSLCode.Add("ArrayText = New Array;");
+	
+	ArrayBSLCode.Add("Query = New Query;
+	|	
+	|	AdditionalParamsStructure = New Structure;
+	|For Each Param In SessionParametersTable Do
+	|	Query.SetParameter(Param.Name, Param.Value);
+	|	AdditionalParamsStructure.Insert(Param.Name, Param.Value);
+	|EndDo;");	
+	
+	Query = New Query;
+
+	AdditionalParamsStructure = New Structure;
+	For Each Param In SessionParametersTable Do
+		Query.SetParameter(Param.Name, Param.Value);
+		AdditionalParamsStructure.Insert(Param.Name, Param.Value);
+	EndDo;
+	
+	ConvertToInternalBSLCodeRecursion(DebugTree.GetItems()[0].GetItems(), ArrayBSLCode,  AdditionalParamsStructure, Query);
+	
+	BSLCode = StrConcat(ArrayBSLCode, Chars.LF);
+EndProcedure
+
+&AtServer
+Procedure ConvertToInternalBSLCodeRecursion(Rows, Array,  AdditionalParamsStructure, Query)
+	For Each Row In Rows Do
+
+		If IsBlankString(Row.ConditionText) Then
+			If Row.Condition = "endif" Then
+				Row.Condition = Row.Condition + ";";
+			EndIf;
+			Array.Add(Row.Condition);
+		Else
+			CodeTypeOrData = CodeTypeOrData(Row.ConditionText, AdditionalParamsStructure, Query);
+			
+			If TypeOf(CodeTypeOrData) = Type("Boolean") Then
+				Array.Add(Row.Condition + " " + Row.ConditionText + " Then");
+			ElsIf TypeOf(CodeTypeOrData) = Type("String") Then
+				Array.Add("Query.Text = """ + CodeTypeOrData + """;");
+				Array.Add(Row.Condition + " Query.Execute().Unload()[0].Result Then");
+			Else
+				
+			EndIf;
+		EndIf;
+		
+		Text = PrepareQueryText(Row.Code);
+		Array.Add("ArrayText.Add(""" + Text + """);");
+		
+		ConvertToInternalBSLCodeRecursion(Row.GetItems(), Array, AdditionalParamsStructure, Query);
+	EndDo;
+EndProcedure
+
+#EndRegion

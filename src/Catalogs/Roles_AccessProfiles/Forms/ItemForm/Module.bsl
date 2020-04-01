@@ -148,4 +148,5 @@ Procedure EditOn(Command)
 	Items.TabDocMartix.Protection = Not Items.TabDocMartixEditOn.Check;
 EndProcedure
 
+
 AllRights = New Map;
