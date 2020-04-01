@@ -11,9 +11,7 @@
   </synonym>
   <comment> </comment>
   <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:ConfigurationExtension">
-    <managedApplicationModule>Extended</managedApplicationModule>
-  </extension>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension"/>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="dfdd8d1d-f6a8-4e91-96a1-8b8ef9cc7871"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="ed28055f-464c-4b51-8ed3-8cc60fb0bbc4"/>
   <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="902e6ef9-1ed6-4baa-9400-957794aeaafc"/>
@@ -29,7 +27,7 @@
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
   <compatibilityMode>8.3.14</compatibilityMode>
-  <languages uuid="0e682ddb-91ed-46d0-ab2d-27974eb73d0f">
+  <languages uuid="bd8c7b65-4e11-4806-94fd-94d0fed1a1e0">
     <name>English</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:LanguageExtension">

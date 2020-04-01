@@ -276,7 +276,16 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
     DOMDocument.GetElementByTagName("Version")[0].TextContent = String(CurrentDate());
 	ItemsDOM = DOMDocument.GetElementByTagName("ChildObjects");
 	
-	
+	 
+	If Metadata.CompatibilityMode = Metadata.ObjectProperties.CompatibilityMode.DontUse Then
+		SystemInfo = New SystemInfo;
+		Version = StrSplit(SystemInfo.AppVersion, ".");
+		Version.Delete(Version.UBound());
+		CompatibilityMode = "Version" + StrConcat(Version, "_");
+	Else
+		CompatibilityMode = StrReplace(Metadata.CompatibilityMode, "Версия", "Version");
+	EndIf;
+	DOMDocument.GetElementByTagName("ConfigurationExtensionCompatibilityMode")[0].TextContent = CompatibilityMode;
 	
 	For Each Item In SessionParam Do
 		NewNode = DOMDocument.CreateElement("SessionParameter");
@@ -337,9 +346,38 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	EndDo;
 	
 	CreateDirectory(SourcePath + "SessionParameters");
+	
+	
+	TmpText =" 
+	|<object>
+	|	<name>SessionParameter.%1</name>
+	|	<right>
+	|		<name>Get</name>
+	|		<value>true</value>
+	|	</right>
+	|	<right>
+	|		<name>Set</name>
+	|		<value>true</value>
+	|	</right>
+	|</object>";
+	TmpRoleSPArray = New Array;
 	For Each SessionRow In SessionParam Do
+		Tmp = TmpText;
+		TmpRoleSPArray.Add(StrTemplate(Tmp, SessionRow.ObjectName));
 		UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, SessionRow);
 	EndDo;
+	TmpRoleSPArray.Add("</Rights>");
+	// Add to DefaultRole access to session parameters
+	TextReader = New TextReader();
+	TextReader.Open(SourcePath + "Roles\AccRoles_DefaultRole\Ext\Rights.xml", TextEncoding.UTF8);
+	Text = TextReader.Read();
+	TextReader.Close();
+	
+	Text = StrReplace(Text, "</Rights>", StrConcat(TmpRoleSPArray, Chars.LF));
+	
+	TextWriter = New TextWriter(SourcePath + "Roles\AccRoles_DefaultRole\Ext\Rights.xml", TextEncoding.UTF8);
+	TextWriter.Write(Text);
+	TextWriter.Close();
 EndProcedure
 
 Procedure UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, Item)
