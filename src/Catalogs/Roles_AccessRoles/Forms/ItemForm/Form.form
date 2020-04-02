@@ -1588,7 +1588,7 @@
               </title>
               <title>
                 <key>ru</key>
-                <value>редактировать</value>
+                <value>Редактировать</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1610,7 +1610,7 @@
               </toolTip>
               <toolTip>
                 <key>ru</key>
-                <value>редактировать</value>
+                <value>Редактировать</value>
               </toolTip>
               <extendedTooltip>
                 <name>EditExtendedTooltip</name>
@@ -3565,7 +3565,7 @@
               </title>
               <title>
                 <key>ru</key>
-                <value>Монопольный режим	</value>
+                <value>Монопольный режим</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -3587,7 +3587,7 @@
               </toolTip>
               <toolTip>
                 <key>ru</key>
-                <value>Монопольный режим	</value>
+                <value>Монопольный режим</value>
               </toolTip>
               <extendedTooltip>
                 <name>ExclusiveModeExtendedTooltip</name>
@@ -4601,7 +4601,7 @@
               </title>
               <title>
                 <key>ru</key>
-                <value>Интерактивное открытие внешних отчетов	</value>
+                <value>Интерактивное открытие внешних отчетов</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4623,7 +4623,7 @@
               </toolTip>
               <toolTip>
                 <key>ru</key>
-                <value>Интерактивное открытие внешних отчетов	</value>
+                <value>Интерактивное открытие внешних отчетов</value>
               </toolTip>
               <extendedTooltip>
                 <name>InteractiveOpenExtReportsExtendedTooltip</name>
@@ -6182,7 +6182,7 @@
               </title>
               <title>
                 <key>ru</key>
-                <value>Начните</value>
+                <value>Старт</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -6204,7 +6204,7 @@
               </toolTip>
               <toolTip>
                 <key>ru</key>
-                <value>Начните</value>
+                <value>Старт</value>
               </toolTip>
               <extendedTooltip>
                 <name>StartExtendedTooltip</name>
@@ -9670,7 +9670,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>редактировать</value>
+        <value>Редактировать</value>
       </title>
       <id>13</id>
       <valueType>
@@ -10195,7 +10195,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>Монопольный режим	</value>
+        <value>Монопольный режим</value>
       </title>
       <id>34</id>
       <valueType>
@@ -10545,7 +10545,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>Интерактивное открытие внешних отчетов	</value>
+        <value>Интерактивное открытие внешних отчетов</value>
       </title>
       <id>48</id>
       <valueType>
@@ -10960,7 +10960,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>Начните</value>
+        <value>Старт</value>
       </title>
       <id>4</id>
       <valueType>
@@ -11390,7 +11390,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>RLSUpdate ID</value>
+        <value>RLS ID обновления</value>
       </title>
       <id>78</id>
       <valueType>
@@ -11699,7 +11699,7 @@
     </title>
     <title>
       <key>ru</key>
-      <value>RLSRow ID</value>
+      <value>RLS ID Строки</value>
     </title>
     <id>80</id>
     <valueType>

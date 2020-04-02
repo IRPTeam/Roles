@@ -112,7 +112,7 @@
     </synonym>
     <synonym>
       <key>ru</key>
-      <value>редактировать</value>
+      <value>Редактировать</value>
     </synonym>
   </enumValues>
   <enumValues uuid="e8145a39-6167-4d95-bfe5-dc12f757871b">
@@ -145,7 +145,7 @@
     </synonym>
     <synonym>
       <key>ru</key>
-      <value>Монопольный режим	</value>
+      <value>Монопольный режим</value>
     </synonym>
   </enumValues>
   <enumValues uuid="e10b2cc5-1686-47ec-b345-2325c6aafa2e">
@@ -332,7 +332,7 @@
     </synonym>
     <synonym>
       <key>ru</key>
-      <value>Интерактивное открытие внешних отчетов	</value>
+      <value>Интерактивное открытие внешних отчетов</value>
     </synonym>
   </enumValues>
   <enumValues uuid="21366951-f128-4aab-ab9b-d11ab949f13b">
@@ -552,7 +552,7 @@
     </synonym>
     <synonym>
       <key>ru</key>
-      <value>Начните</value>
+      <value>Старт</value>
     </synonym>
   </enumValues>
   <enumValues uuid="64345e24-76bd-43d6-958e-6c0e2e07108c">

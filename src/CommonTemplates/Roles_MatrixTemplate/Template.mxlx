@@ -460,6 +460,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Object</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект</v8:content>
+						</v8:item>
 					</tl>
 				</c>
 			</c>
@@ -472,6 +476,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Object</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект</v8:content>
+						</v8:item>
 					</tl>
 				</c>
 			</c>
@@ -482,6 +490,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Read</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Чтение</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Read</detailParameter>
@@ -495,6 +507,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Insert</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вставить</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>Insert</detailParameter>
 				</c>
@@ -506,6 +522,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Update</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Update</detailParameter>
@@ -519,6 +539,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Delete</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удалить</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>Delete</detailParameter>
 				</c>
@@ -530,6 +554,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>View</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>View</detailParameter>
@@ -543,6 +571,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Edit</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Редактировать</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>Edit</detailParameter>
 				</c>
@@ -554,6 +586,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Input by string</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ввод по строке</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>InputByString</detailParameter>
@@ -567,6 +603,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Use</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>Use</detailParameter>
 				</c>
@@ -578,6 +618,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Totals control</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контроль итогов</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>TotalsControl</detailParameter>
@@ -591,6 +635,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive delete</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное удаление</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>InteractiveDelete</detailParameter>
 				</c>
@@ -602,6 +650,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive insert</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное добавление</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>InteractiveInsert</detailParameter>
@@ -615,6 +667,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive set deletion mark</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивная пометка на удаление</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>InteractiveSetDeletionMark</detailParameter>
 				</c>
@@ -626,6 +682,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive clear deletion mark</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное снятие пометки удаления</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>InteractiveClearDeletionMark</detailParameter>
@@ -639,6 +699,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive delete marked</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное удаление помеченных</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>InteractiveDeleteMarked</detailParameter>
 				</c>
@@ -650,6 +714,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Posting</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведение</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Posting</detailParameter>
@@ -663,6 +731,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Undo posting</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отменить проведение</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>UndoPosting</detailParameter>
 				</c>
@@ -674,6 +746,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive posting</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное проведение</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>InteractivePosting</detailParameter>
@@ -687,6 +763,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive undo posting</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивная отмена проведения</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>InteractivePostingRegular</detailParameter>
 				</c>
@@ -698,6 +778,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive posting regular</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное проведение неоперативное</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>InteractiveUndoPosting</detailParameter>
@@ -711,6 +795,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive change of posted</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное изменение проведенных</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>InteractiveChangeOfPosted</detailParameter>
 				</c>
@@ -722,6 +810,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive delete predefined data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное удаление предопределенных данных</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>InteractiveDeletePredefinedData</detailParameter>
@@ -735,6 +827,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive set deletion mark predefined data</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивная пометка на удаление предопределенных</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>InteractiveSetDeletionMarkPredefinedData</detailParameter>
 				</c>
@@ -746,6 +842,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive clear deletion mark predefined data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное снятие пометки удаления предопределенных</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>InteractiveClearDeletionMarkPredefinedData</detailParameter>
@@ -759,6 +859,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive delete marked predefined data</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное удаление помеченных предопределенных данных</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>InteractiveDeleteMarkedPredefinedData</detailParameter>
 				</c>
@@ -770,6 +874,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Get</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Get</detailParameter>
@@ -783,6 +891,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Set</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Установить</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>Set</detailParameter>
 				</c>
@@ -794,6 +906,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Administration</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Администрирование	</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Administration</detailParameter>
@@ -807,6 +923,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Data administration</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Администрирование данных	</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>DataAdministration</detailParameter>
 				</c>
@@ -818,6 +938,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Update data base configuration</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление конфигурации базы данных</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>UpdateDataBaseConfiguration</detailParameter>
@@ -831,6 +955,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Exclusive mode</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Монопольный режим</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>ExclusiveMode</detailParameter>
 				</c>
@@ -842,6 +970,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Active users</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активные пользователи</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>ActiveUsers</detailParameter>
@@ -855,6 +987,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Event log</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал событий</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>EventLog</detailParameter>
 				</c>
@@ -866,6 +1002,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Thin client</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тонкий клиент</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>ThinClient</detailParameter>
@@ -879,6 +1019,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Web client</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Веб-клиент</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>WebClient</detailParameter>
 				</c>
@@ -890,6 +1034,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Mobile client</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мобильный клиент</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>MobileClient</detailParameter>
@@ -903,6 +1051,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Thick client</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Толстый клиент</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>ThickClient</detailParameter>
 				</c>
@@ -915,6 +1067,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>External connection</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Внешнее соединение</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>ExternalConnection</detailParameter>
 				</c>
@@ -925,6 +1081,10 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Automation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>Automation</v8:content>
 						</v8:item>
 					</tl>
@@ -939,6 +1099,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Technical specialist mode</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим технического специалиста</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>TechnicalSpecialistMode</detailParameter>
 				</c>
@@ -950,6 +1114,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Collaboration system info base registration</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрация системы взаимодействия</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>CollaborationSystemInfoBaseRegistration</detailParameter>
@@ -963,6 +1131,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Save user data</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранить данные пользователя</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>SaveUserData</detailParameter>
 				</c>
@@ -974,6 +1146,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Configuration extensions administration</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Администрирование расширений конфигурации</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>ConfigurationExtensionsAdministration</detailParameter>
@@ -987,6 +1163,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive open ext data processors</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное открытие внешних обработок</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>InteractiveOpenExtDataProcessors</detailParameter>
 				</c>
@@ -998,6 +1178,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive open ext reports</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное открытие внешних отчетов</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>InteractiveOpenExtReports</detailParameter>
@@ -1011,6 +1195,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Output</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вывод</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>Output</detailParameter>
 				</c>
@@ -1022,6 +1210,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Main window mode normal</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим основного окна "Обычный"</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>MainWindowModeNormal</detailParameter>
@@ -1035,6 +1227,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Main window mode workplace</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим основного окна "Рабочее место"</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>MainWindowModeWorkplace</detailParameter>
 				</c>
@@ -1046,6 +1242,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Main window mode embedded workplace</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим основного окна "Встроенное рабочее место"</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>MainWindowModeEmbeddedWorkplace</detailParameter>
@@ -1059,6 +1259,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Main window mode fullscreen workplace</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим основного окна "Полноэкранное рабочее место"</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>MainWindowModeFullscreenWorkplace</detailParameter>
 				</c>
@@ -1070,6 +1274,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Main window mode kiosk</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим основного окна "Киоск"</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>MainWindowModeKiosk</detailParameter>
@@ -1083,6 +1291,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Analytics system client</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент системы аналитики	</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>AnalyticsSystemClient</detailParameter>
 				</c>
@@ -1094,6 +1306,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Read data history</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Чтение истории данных</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>ReadDataHistory</detailParameter>
@@ -1107,6 +1323,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>View data history</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр истории данных</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>ViewDataHistory</detailParameter>
 				</c>
@@ -1118,6 +1338,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Read data history of missing data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Чтение истории данных отсутствующих данных</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>ReadDataHistoryOfMissingData</detailParameter>
@@ -1131,6 +1355,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Update data history</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение истории данных</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>UpdateDataHistory</detailParameter>
 				</c>
@@ -1142,6 +1370,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Update data history of missing data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение истории данных отсутствующих данных</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>UpdateDataHistoryOfMissingData</detailParameter>
@@ -1155,6 +1387,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Update data history settings</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение настроек истории данных</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>UpdateDataHistorySettings</detailParameter>
 				</c>
@@ -1166,6 +1402,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Update data history version comment</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение комментария версии истории данных</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>UpdateDataHistoryVersionComment</detailParameter>
@@ -1179,6 +1419,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Edit data history version comment</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Редактирование комментария версии истории данных</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>EditDataHistoryVersionComment</detailParameter>
 				</c>
@@ -1190,6 +1434,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Switch to data history version</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Переход на версию истории данных</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>SwitchToDataHistoryVersion</detailParameter>
@@ -1203,6 +1451,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Start</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Старт</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>Start</detailParameter>
 				</c>
@@ -1214,6 +1466,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive start</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивный старт</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>InteractiveStart</detailParameter>
@@ -1227,6 +1483,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive activate</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интеграционный сервис</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>InteractiveActivate</detailParameter>
 				</c>
@@ -1238,6 +1498,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Execute</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнить</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Execute</detailParameter>
@@ -1251,6 +1515,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Interactive execute</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерактивное выполнение</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>InteractiveExecute</detailParameter>
 				</c>
@@ -1262,6 +1530,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Standard authentication change</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение стандартной аутентификации</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>StandardAuthenticationChange</detailParameter>
@@ -1275,6 +1547,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Session standard authentication change</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение стандартной аутентификации текущего пользователя</v8:content>
+						</v8:item>
 					</tl>
 					<detailParameter>SessionStandardAuthenticationChange</detailParameter>
 				</c>
@@ -1286,6 +1562,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Session OS authentication change</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение аутентификации операционной системы сеанса</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>SessionOSAuthenticationChange</detailParameter>

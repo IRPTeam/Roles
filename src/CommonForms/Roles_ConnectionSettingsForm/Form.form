@@ -433,7 +433,7 @@
     </title>
     <title>
       <key>ru</key>
-      <value>ИЛИ установить путь, где XML-файлы в</value>
+      <value>ИЛИ укажите путь с XML-файлами</value>
     </title>
     <visible>true</visible>
     <enabled>true</enabled>

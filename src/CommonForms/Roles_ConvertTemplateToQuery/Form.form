@@ -1790,8 +1790,12 @@
                 <common>true</common>
               </userVisible>
               <title>
-                <key>ru</key>
+                <key>en</key>
                 <value>Tree</value>
+              </title>
+              <title>
+                <key>ru</key>
+                <value>Древо</value>
               </title>
               <extendedTooltip>
                 <name>Group10ExtendedTooltip</name>
@@ -2092,8 +2096,12 @@
                 <common>true</common>
               </userVisible>
               <title>
-                <key>ru</key>
+                <key>en</key>
                 <value>BSL Code</value>
+              </title>
+              <title>
+                <key>ru</key>
+                <value>BSL Код</value>
               </title>
               <extendedTooltip>
                 <name>Group11ExtendedTooltip</name>
@@ -3276,7 +3284,11 @@
     <name>BSLCode</name>
     <title>
       <key>ru</key>
-      <value>BSLCode</value>
+      <value>BSL Код</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>BSL Code</value>
     </title>
     <id>13</id>
     <valueType>
@@ -3294,7 +3306,11 @@
     <name>BSLResult</name>
     <title>
       <key>ru</key>
-      <value>BSLResult</value>
+      <value>BSL результат</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>BSL Result</value>
     </title>
     <id>14</id>
     <valueType>
@@ -3406,13 +3422,21 @@
   <formCommands>
     <name>ConvertToBSLCode</name>
     <title>
-      <key>ru</key>
+      <key>en</key>
       <value>Convert to BSL code</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Конвертировать в BSL код</value>
     </title>
     <id>4</id>
     <toolTip>
       <key>ru</key>
-      <value>Convert to BSLCode</value>
+      <value>Конвертировать в BSL код</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Convert to BSL code</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -3432,12 +3456,20 @@
     <name>RunBSLCode</name>
     <title>
       <key>ru</key>
+      <value>Выполнить BSL code</value>
+    </title>
+    <title>
+      <key>en</key>
       <value>Run BSL code</value>
     </title>
     <id>5</id>
     <toolTip>
       <key>ru</key>
-      <value>Run BSLCode</value>
+      <value>Выполнить BSL code</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Run BSL сode</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -3457,12 +3489,20 @@
     <name>ConvertToInternalBSLCode</name>
     <title>
       <key>ru</key>
+      <value>Конвертировать во внутренний BSL код</value>
+    </title>
+    <title>
+      <key>en</key>
       <value>Convert to internal BSL code</value>
     </title>
     <id>6</id>
     <toolTip>
+      <key>en</key>
+      <value>Convert to internal BSL code</value>
+    </toolTip>
+    <toolTip>
       <key>ru</key>
-      <value>Convert to internal BSLCode</value>
+      <value>Конвертировать во внутренний BSL код</value>
     </toolTip>
     <use>
       <common>true</common>

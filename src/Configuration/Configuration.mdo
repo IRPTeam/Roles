@@ -21,7 +21,7 @@
   <namePrefix>Roles_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
-  <version>0.2.2</version>
+  <version>0.2.3</version>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
@@ -34,6 +34,14 @@
       <languageCode>Checked</languageCode>
     </extension>
     <languageCode>en</languageCode>
+  </languages>
+  <languages uuid="7f6635e0-0b85-4afe-9b6c-e1cba857101d">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
   <commonPictures>CommonPicture.Roles_AccountingFlags</commonPictures>
