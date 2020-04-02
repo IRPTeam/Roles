@@ -2127,6 +2127,96 @@
                 <showTitle>true</showTitle>
               </extInfo>
             </items>
+            <items xsi:type="form:FormGroup">
+              <name>Group14</name>
+              <id>168</id>
+              <items xsi:type="form:FormField">
+                <name>RLSTemplateView</name>
+                <id>170</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:MultiLanguageDataPath">
+                  <paths xsi:type="form:DataPath">
+                    <segments>RLSTemplateView</segments>
+                  </paths>
+                </dataPath>
+                <titleLocation>None</titleLocation>
+                <extendedTooltip>
+                  <name>RLSTemplateViewExtendedTooltip</name>
+                  <id>172</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>RLSTemplateViewContextMenu</name>
+                  <id>171</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>TextDocumentField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:TextDocFieldExtInfo">
+                  <width>50</width>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <height>10</height>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <horizontalStretch>true</horizontalStretch>
+                  <verticalStretch>true</verticalStretch>
+                  <font xsi:type="core:FontRef">
+                    <font>System.ANSIFixedFont</font>
+                    <height>10.0</height>
+                  </font>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>en</key>
+                <value>RLS View</value>
+              </title>
+              <extendedTooltip>
+                <name>Group14ExtendedTooltip</name>
+                <id>169</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>Page</type>
+              <extInfo xsi:type="form:PageGroupExtInfo">
+                <group>Vertical</group>
+                <showTitle>true</showTitle>
+              </extInfo>
+            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -3324,6 +3414,24 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>RLSTemplateView</name>
+    <title>
+      <key>en</key>
+      <value>RLSTemplate view</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ConvertToQuery</name>
     <title>
@@ -3538,6 +3646,10 @@
       <types>String</types>
       <stringQualifiers/>
     </valueType>
+  </parameters>
+  <parameters>
+    <name>RLSList</name>
+    <valueType/>
   </parameters>
   <commandInterface>
     <navigationPanel/>

@@ -51,6 +51,8 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 	NewRow.Status = True;
 	NewRow.Result = True;
 	
+	RLSTemplateView = TotalRLSCode;
+	
 	FullCode = StrReplace(TotalRLSCode, "&", "AdditionalParamsStructure.");
 	Result = True;	
 	Rows = StrSplit(FullCode, "#", False);
@@ -87,7 +89,7 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
 			NewRow.Code = Code;						
 			
-		ElsIf StrStartsWith(Lower(Row), "elsif") Or StrStartsWith(Lower(Row), "иначеесли") Then
+		ElsIf StrStartsWith(Lower(Row), "elseif") Or StrStartsWith(Lower(Row), "иначеесли") Then
 			
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
 			NewRow = NewRow.Parent.Rows.Add();
@@ -407,8 +409,9 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 		|FROM
 		|	Catalog.Roles_Templates AS Roles_Templates
 		|WHERE
-		|	NOT Roles_Templates.DeletionMark";
-	
+		|	NOT Roles_Templates.DeletionMark
+		|	AND Roles_Templates.Ref IN(&RLSList)";
+	Query.SetParameter("RLSList", Parameters.RLSList);
 	QueryResult = Query.Execute().Unload();
 	Templates.Load(QueryResult);
 	
