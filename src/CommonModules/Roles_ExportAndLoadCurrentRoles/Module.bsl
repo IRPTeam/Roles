@@ -35,6 +35,7 @@ Procedure LoadFromEDTFormat(Settings, Val Rights)
 		TextReader.Open(Right.FullName, TextEncoding.UTF8);
 		Text = TextReader.Read();
 		TextReader.Close();
+		CurrentHash = Roles_ServiceServer.HashMD5(Text);
 		
 		RoleInfo = Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
 		
@@ -45,9 +46,18 @@ Procedure LoadFromEDTFormat(Settings, Val Rights)
 			RightObject = Catalogs.Roles_AccessRoles.CreateItem();
 			RightObject.SetNewObjectRef(RightRef);
 		Else
+			If RightRef.LastHashUpdate = CurrentHash Then
+				Continue;
+			EndIf;
+
 			RightObject = RightRef.GetObject();
 		EndIf;
+		
+		RightObject.LastHashUpdate = CurrentHash;
 		RightObject.AdditionalProperties.Insert("Update");
+		
+		CurrentHash = Roles_ServiceServer.HashMD5(Roles_ServiceServer.SerializeXML(RightObject));
+		
 		RightObject.Rights.Clear();
 		RightObject.LangInfo.Clear();
 		RightObject.RestrictionByCondition.Clear();
@@ -80,6 +90,12 @@ Procedure LoadFromEDTFormat(Settings, Val Rights)
 		TextReader.Close();
 		
 		LoadRightsToDB(RightObject, Text);
+		
+		NewHash = Roles_ServiceServer.HashMD5(Roles_ServiceServer.SerializeXML(RightObject));
+		
+		If Not CurrentHash = NewHash Then
+			RightObject.Write();
+		EndIf;
 	EndDo;
 EndProcedure
 
@@ -149,7 +165,6 @@ Procedure LoadRightsToDB(RightObject, Text)
 		
 		Condition.Template = TemplateRef;
 	EndDo;
-	RightObject.Write();
 EndProcedure
 
 Procedure LoadFromXMLFormat(Settings, Val Rights)
@@ -160,6 +175,9 @@ Procedure LoadFromXMLFormat(Settings, Val Rights)
 		Text = TextReader.Read();
 		TextReader.Close();
 		
+		CurrentHash = Roles_ServiceServer.HashMD5(Text);
+		
+		
 		RoleInfo = Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
 		
 		UUID = New UUID(RoleInfo.Role.uuid);
@@ -169,9 +187,15 @@ Procedure LoadFromXMLFormat(Settings, Val Rights)
 			RightObject = Catalogs.Roles_AccessRoles.CreateItem();
 			RightObject.SetNewObjectRef(RightRef);
 		Else
+			If RightRef.LastHashUpdate = CurrentHash Then
+				Continue;
+			EndIf;
 			RightObject = RightRef.GetObject();
 		EndIf;
 		
+		RightObject.LastHashUpdate = CurrentHash;
+		
+		RightObject.AdditionalProperties.Insert("Update");		
 		RightObject.Rights.Clear();
 		RightObject.LangInfo.Clear();
 		RightObject.RestrictionByCondition.Clear();
@@ -204,6 +228,6 @@ Procedure LoadFromXMLFormat(Settings, Val Rights)
 		TextReader.Close();
 		
 		LoadRightsToDB(RightObject, Text);
+		RightObject.Write();
 	EndDo;
 EndProcedure
-

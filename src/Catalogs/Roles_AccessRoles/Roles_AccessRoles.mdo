@@ -167,6 +167,22 @@
     </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="5893ed5b-4574-4f46-b6c1-9c37bd922311">
+    <name>LastHashUpdate</name>
+    <synonym>
+      <key>en</key>
+      <value>Last hash update</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="07c32fbc-9a1f-46bf-9c95-a05ffdb611e0">
     <producedTypes>
       <objectType typeId="0eb63fba-f18f-46f2-8965-997ee7dc7453" valueTypeId="18f87195-f52d-493b-9fd8-26b391733367"/>
