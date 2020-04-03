@@ -4,6 +4,21 @@ Function MetaNameByRef(RefData) Export
 	Return Metadata.Enums[RefNameType].EnumValues[ValueIndex].Name;
 EndFunction
 
+Function GetRefForAllLang(Name, XMLTypeRef = Undefined) Export
+	If Metadata.ScriptVariant = Metadata.ObjectProperties.ScriptVariant.English Then
+		Return Enums.Roles_MetadataTypes[Name];
+	Else
+		If XMLTypeRef = Undefined Then
+			Return Undefined;
+		Else
+			XMLParts = StrSplit(XMLTypeRef, "<.:", False);
+			TypeName = XMLParts[XMLParts.UBound() - 1 - 1];
+			TypeName = Left(TypeName, StrLen(TypeName) - 3);
+			Return Enums.Roles_MetadataTypes[TypeName];
+		EndIf;		
+	EndIf;
+EndFunction
+
 Function PictureList() Export
 	
 	PictureLibData = New Structure;

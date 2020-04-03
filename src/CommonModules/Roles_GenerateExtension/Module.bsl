@@ -198,7 +198,7 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		"SELECT DISTINCT
 		|	Roles_AccessRolesRights.ObjectType AS ObjectType,
 		|	Roles_AccessRolesRights.ObjectName AS ObjectName,
-		|	""          "" AS AddInfo
+		|	UNDEFINED AS AddInfo
 		|FROM
 		|	Catalog.Roles_AccessRoles.Rights AS Roles_AccessRolesRights
 		|WHERE
@@ -211,7 +211,7 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|SELECT
 		|	VALUE(Enum.Roles_MetadataTypes.Role),
 		|	""AccRoles_"" + Roles_AccessRoles.Description,
-		|	""          ""
+		|	UNDEFINED
 		|FROM
 		|	Catalog.Roles_AccessRoles AS Roles_AccessRoles
 		|WHERE
@@ -300,7 +300,7 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 			NewType = MainMetadata.Add();
 			ObjectName = StrSplit(TypeData.FullName(), ".", False);
 			NewType.ObjectName = ObjectName[1];
-			NewType.ObjectType = Enums.Roles_MetadataTypes[Roles_Settings.MetaName(ObjectName[0])];
+			NewType.ObjectType = Roles_SettingsReUse.GetRefForAllLang(ObjectName[0], Roles_ServiceServer.SerializeXML(RowType));
 		EndDo;
 	EndDo;
 	
@@ -395,7 +395,8 @@ Procedure UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, It
 	TypeDescription = DOMDocument.GetElementByTagName("TypeDescription").Item(0);
 	TypeDescription.UnsetNamespaceMapping("http://v8.1c.ru/8.1/data/core");
 	
-	For Each Child In TypeDescription.ChildNodes Do
+	While TypeDescription.ChildNodes.Count() Do
+		Child = TypeDescription.ChildNodes[0];
 		Child.UnsetNamespaceMapping("http://v8.1c.ru/8.1/data/enterprise/current-config");
 		
 		TextContent = StrSplit(Child.TextContent, ":", False);
