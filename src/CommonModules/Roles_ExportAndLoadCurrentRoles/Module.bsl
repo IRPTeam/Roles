@@ -47,7 +47,7 @@ Procedure LoadFromEDTFormat(Settings, Val Rights)
 		Else
 			RightObject = RightRef.GetObject();
 		EndIf;
-		
+		RightObject.AdditionalProperties.Insert("Update");
 		RightObject.Rights.Clear();
 		RightObject.LangInfo.Clear();
 		RightObject.RestrictionByCondition.Clear();
