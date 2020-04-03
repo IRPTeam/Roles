@@ -2,32 +2,16 @@
 Procedure OnCreateAtServer(Cancel, StandardProcessing)
 	Path = Parameters.Path;
 	
+	UpdateQuery();
+EndProcedure
+
+&AtServer
+Procedure UpdateQuery()
+	
 	DCSTemplate = GetCommonTemplate("Roles_DCS");
-	
-	Query = New Query;
-	Query.Text = 
-		"SELECT
-		|	Roles_Parameters.Ref AS Ref,
-		|	Roles_Parameters.Description AS Description,
-		|	Roles_Parameters.ValuesData AS ValuesData,
-		|	Roles_Parameters.isList AS isList,
-		|	Roles_Parameters.ValueTypeData AS ValueTypeData
-		|FROM
-		|	Catalog.Roles_Parameters AS Roles_Parameters";
-	
-	QueryResult = Query.Execute();
-	
-	ParamStr = QueryResult.Select();
-	
-	While ParamStr.Next() Do
-		NewParam = DCSTemplate.Parameters.Add();
-		NewParam.Name = ParamStr.Description;
-		NewParam.ValueType = ParamStr.ValueTypeData.Get();
-		NewParam.ValueListAllowed = ParamStr.isList;
-		NewParam.Value = ParamStr.ValuesData.Get();
-		NewParam.Use = DataCompositionParameterUse.Always;
-	EndDo;
-	
+
+	UpdateParams(DCSTemplate);
+
 	DataSet = DCSTemplate.DataSets[0];
 	DataSet.Query = (
 	"SELECT *
@@ -52,7 +36,38 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 		Selection.Use = True;
 		Selection.Field = Field.Field; 
 	EndDo;
+
+EndProcedure
+
+&AtServer
+Procedure UpdateParams(DCSTemplate)
 	
+	Query = New Query;
+	Query.Text = 
+	"SELECT
+	|	Roles_Parameters.Ref AS Ref,
+	|	Roles_Parameters.Description AS Description,
+	|	Roles_Parameters.ValuesData AS ValuesData,
+	|	Roles_Parameters.isList AS isList,
+	|	Roles_Parameters.ValueTypeData AS ValueTypeData
+	|FROM
+	|	Catalog.Roles_Parameters AS Roles_Parameters
+	|WHERE
+	|	NOT Roles_Parameters.DeletionMark";
+	
+	QueryResult = Query.Execute();
+	
+	ParamStr = QueryResult.Select();
+	DCSTemplate.Parameters.Clear();
+	While ParamStr.Next() Do
+		NewParam = DCSTemplate.Parameters.Add();
+		NewParam.Name = ParamStr.Description;
+		NewParam.ValueType = ParamStr.ValueTypeData.Get();
+		NewParam.ValueListAllowed = ParamStr.isList;
+		NewParam.Value = ParamStr.ValuesData.Get();
+		NewParam.Use = DataCompositionParameterUse.Always;
+	EndDo;
+
 EndProcedure
 
 &AtClient
@@ -111,27 +126,52 @@ EndFunction
 
 &AtClient
 Procedure SettingsFilterDrag(Item, DragParameters, StandardProcessing, Row, Field)
-	StandardProcessing = False;
-	For Each SelectedField In DragParameters.Value Do
-		AddNewFilterRow(SelectedField);
-	EndDo;
+	If DragParameters.Value.Count() 
+		And TypeOf(DragParameters.Value[0]) = Type("DataCompositionFilterAvailableField") Then
+		StandardProcessing = False;
+		For Each SelectedField In DragParameters.Value Do
+			AddNewFilterRow(SelectedField, Row);
+		EndDo;
+	EndIf;
 EndProcedure
 
 &AtClient
-Procedure AddNewFilterRow(Val SelectedField)
+Procedure AddNewFilterRow(Val SelectedField, Row)
+	Index = 0;
+	GroupItem = Undefined;
+	If Not Row = Undefined And Not IsBlankString(String(Row)) Then 
+		RowData = SettingsComposer.Settings.Filter.GetObjectByID(Row);
+		Index = SettingsComposer.Settings.Filter.Items.IndexOf(RowData);
 		
-	NewRow = SettingsComposer.Settings.Filter.Items.Add(Type("DataCompositionFilterItem"));
+		
+		If TypeOf(RowData) = Type("DataCompositionFilterItemGroup") Then
+			GroupItem = RowData;
+		ElsIf Not RowData.Parent = Undefined And TypeOf(RowData.Parent) = Type("DataCompositionFilterItemGroup") Then
+			GroupItem = RowData.Parent;
+		Else
+			GroupItem = Undefined;
+		EndIf;
+	EndIf;
+	
+	If GroupItem = Undefined Then
+		NewRow = SettingsComposer.Settings.Filter.Items.Insert(Index + 1, Type("DataCompositionFilterItem"));
+	Else
+		NewRow = GroupItem.Items.Insert(Index + 1, Type("DataCompositionFilterItem"));
+	EndIf;
+	
 	NewRow.Use = True;    
 	NewRow.LeftValue = SelectedField.Field;
 	NewRow.RightValue = New DataCompositionField("");
-
+	If SettingsComposer.Settings.Filter.Items.Count() = 1 Then
+		Items.SettingsFilter.Expand(Items.SettingsFilter.CurrentRow);
+	EndIf;
 EndProcedure
 
 
 &AtClient
 Procedure SettingsComposerSettingsFilterFilterAvailableFieldsSelection(Item, SelectedRow, Field, StandardProcessing)
 	StandardProcessing = False;
-	AddNewFilterRow(SettingsComposer.Settings.Filter.FilterAvailableFields.GetObjectByID(SelectedRow));
+	AddNewFilterRow(SettingsComposer.Settings.Filter.FilterAvailableFields.GetObjectByID(SelectedRow), Items.SettingsFilter.CurrentRow);
 EndProcedure
 
 
@@ -157,5 +197,22 @@ Procedure RunReportAtServer()
 	
 EndProcedure
 
+&AtClient
+Procedure UpdateQueryData(Command)
+	UpdateQueryDataAtServer();
+EndProcedure
+
+&AtServer
+Procedure UpdateQueryDataAtServer()
+	
+	DCSTemplate = GetFromTempStorage(Address);
+	UpdateParams(DCSTemplate);
+	Address = PutToTempStorage(DCSTemplate, UUID);
+	Settings = SettingsComposer.Settings;
+	
+	SettingsComposer.Initialize(New DataCompositionAvailableSettingsSource(Address));
+	SettingsComposer.LoadSettings(Settings);
+	
+EndProcedure
 
 

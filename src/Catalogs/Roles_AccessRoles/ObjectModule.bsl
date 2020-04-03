@@ -9,3 +9,9 @@ Procedure OnCopy(CopiedObject)
 		ConfigRoles = False;
 	EndDo;
 EndProcedure
+
+Procedure BeforeWrite(Cancel)
+	If ConfigRoles And Not AdditionalProperties.Property("Update") Then
+		Cancel = True;
+	EndIf;
+EndProcedure

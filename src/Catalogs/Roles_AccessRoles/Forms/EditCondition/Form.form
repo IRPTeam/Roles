@@ -417,6 +417,7 @@
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <autoMaxRowsCount>true</autoMaxRowsCount>
+          <rowInputMode>AfterCurrentRow</rowInputMode>
           <selectionMode>MultiRow</selectionMode>
           <header>true</header>
           <headerHeight>1</headerHeight>
@@ -425,14 +426,15 @@
           <verticalScrollBar>AutoUse</verticalScrollBar>
           <horizontalLines>true</horizontalLines>
           <verticalLines>true</verticalLines>
+          <useAlternationRowColor>true</useAlternationRowColor>
           <searchOnInput>Auto</searchOnInput>
-          <initialListView>Auto</initialListView>
-          <initialTreeView>ExpandAllLevels</initialTreeView>
+          <initialTreeView>ExpandTopLevel</initialTreeView>
           <horizontalStretch>true</horizontalStretch>
           <verticalStretch>true</verticalStretch>
           <enableStartDrag>true</enableStartDrag>
           <enableDrag>true</enableDrag>
           <fileDragMode>AsFileRef</fileDragMode>
+          <currentRowUse>SelectionPresentation</currentRowUse>
           <viewMode>All</viewMode>
           <settingsNamedItemDetailedRepresentation>false</settingsNamedItemDetailedRepresentation>
         </items>
@@ -520,7 +522,6 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <horizontalStretch>true</horizontalStretch>
             <extInfo xsi:type="form:LabelDecorationExtInfo">
@@ -729,6 +730,37 @@
           </extendedTooltip>
           <type>Hyperlink</type>
           <commandName>Catalog.Roles_Parameters.StandardCommand.OpenList</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>UpdateQueryData</name>
+          <id>202</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>UpdateQueryDataExtendedTooltip</name>
+            <id>203</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Hyperlink</type>
+          <commandName>Form.Command.UpdateQueryData</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1692,6 +1724,31 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>RunReport</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>UpdateQueryData</name>
+    <title>
+      <key>en</key>
+      <value>Update query data</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>en</key>
+      <value>Update query data</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Reread</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>UpdateQueryData</name>
       </handler>
     </action>
     <representation>TextPicture</representation>
