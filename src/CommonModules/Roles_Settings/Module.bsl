@@ -652,6 +652,9 @@ Function MetaDataObject() Export
 	Configuration = New Structure;
 	MetaDataObject.Insert("Configuration", Configuration);
 	
+	Interface = New Structure;
+	MetaDataObject.Insert("Interface", Interface);
+	
 	CatalogTabularSection = New Structure;
 	CatalogTabularSection.Insert("CatalogTabularSection"	, "TabularSection");
 	CatalogTabularSection.Insert("CatalogTabularSectionRow", "TabularSectionRow");
