@@ -38,7 +38,7 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 		NewSP.Name = Param.Key;
 		NewSP.Value = Param.Value;
 	EndDo;	
-	
+	 
 	
 	DebugsTree = FormAttributeToValue("DebugTree");
 	TotalRLSCode = RLS;
