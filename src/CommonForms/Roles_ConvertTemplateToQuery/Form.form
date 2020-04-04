@@ -3647,6 +3647,12 @@
       <stringQualifiers/>
     </valueType>
   </parameters>
+  <parameters>
+    <name>RLSList</name>
+    <valueType>
+      <types>Arbitrary</types>
+    </valueType>
+  </parameters>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
