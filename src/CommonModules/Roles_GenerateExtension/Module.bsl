@@ -68,10 +68,12 @@ Procedure UpdateRoleExt_CreateRolesXML(Path)
 		RoleData = UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Row.Ref);
 		
 		CreateDirectory(Path + Row.RoleName + "\Ext");
-		TextWriter = New TextWriter(Path + Row.RoleName + "\Ext\Rights.xml", TextEncoding.UTF8);
-		TextWriter.Write(RoleData);
-		TextWriter.Close();	
 		
+		Writer = New XMLWriter();
+		XMLWriterSettings = New XMLWriterSettings();
+		Writer.OpenFile(Path + Row.RoleName + "\Ext\Rights.xml", XMLWriterSettings);
+		XDTOFactory.WriteXML(Writer, RoleData);
+		Writer.Close();
 	EndDo;
 	
 EndProcedure
@@ -87,7 +89,7 @@ EndFunction
 Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 	
 	RightTemplate.Object.Clear();
-	
+	RightTemplate.restrictionTemplate.Clear();
 	Query = New Query;
 	Query.Text =
 		"SELECT
@@ -154,7 +156,7 @@ Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 		RightTemplate.restrictionTemplate.Add(ObjectTemplate);
 	EndDo;
 	
-	Return Roles_ServiceServer.SerializeXMLUseXDTOFactory(RightTemplate);
+	Return RightTemplate;
 	
 EndFunction
 
