@@ -145,6 +145,15 @@ Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 		
 		RightTemplate.object.Add(ObjectList);
 	EndDo;
+	
+	
+	For Each Template In Role.Templates Do
+		ObjectTemplate = XDTOFactory.Create(RightTemplate.restrictionTemplate.OwningProperty.Type);
+		ObjectTemplate.name = Template.Name;
+		ObjectTemplate.condition = Template.Template.Template;
+		RightTemplate.restrictionTemplate.Add(ObjectTemplate);
+	EndDo;
+	
 	Return Roles_ServiceServer.SerializeXMLUseXDTOFactory(RightTemplate);
 	
 EndFunction
