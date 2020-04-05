@@ -49,3 +49,12 @@ EndFunction
 Function RoleTree() Export
 	Return Roles_ServiceServer.DeserializeXML(GetCommonTemplate("Roles_RoleTree").GetText());
 EndFunction
+
+Function isMetadataExist(MetaName) Export
+	ReturnValue = True;
+	FoundedMetadata = Metadata.FindByFullName(MetaName);
+	If FoundedMetadata = Undefined Then
+		ReturnValue = False;
+	EndIf;
+	Return ReturnValue;
+EndFunction

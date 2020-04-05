@@ -892,6 +892,10 @@ Function isSubsystem(MetaName) Export
 	Return NOT Array.Find(MetaName) = Undefined;
 EndFunction
 
+Function isMetadataExist(MetaName) Export
+	Return Roles_SettingsReUse.isMetadataExist(MetaName);
+EndFunction
+
 Function MetaName(RefData) Export
 	Return Roles_SettingsReUse.MetaNameByRef(RefData);
 EndFunction
