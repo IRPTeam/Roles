@@ -172,6 +172,10 @@
   <commonModules>CommonModule.Roles_ServiceServer</commonModules>
   <commonModules>CommonModule.Roles_RoleMatrix</commonModules>
   <commonModules>CommonModule.Roles_ConvertTemplateToQuery</commonModules>
+  <commonModules>CommonModule.Roles_Localization</commonModules>
+  <commonModules>CommonModule.Roles_LocalizationClientServer</commonModules>
+  <commonModules>CommonModule.Roles_LocalizationReuse</commonModules>
+  <commonModules>CommonModule.Roles_LocalizationServer</commonModules>
   <commonCommands>CommonCommand.Roles_UpdateExtension</commonCommands>
   <commonCommands>CommonCommand.Roles_LoadRolesFromXML</commonCommands>
   <commonCommands>CommonCommand.Roles_ConvertTemplate</commonCommands>
