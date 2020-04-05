@@ -58,3 +58,42 @@ Function isMetadataExist(MetaName) Export
 	EndIf;
 	Return ReturnValue;
 EndFunction
+
+Function RightPictureByRef(RefData) Export
+	If ValueIsFilled(RefData) Then
+		Name = MetaNameByRef(RefData);
+		Return New ValueStorage(PictureLib["Roles_right_" + Name].GetBinaryData());
+	Else
+		Return New ValueStorage(New Picture);
+	EndIf;
+		                       
+EndFunction
+
+Function TypeObjectPictureByRef(RefData) Export
+	If ValueIsFilled(RefData) Then
+		Name = MetaNameByRef(RefData);
+		
+		PictureList = Roles_SettingsReUse.PictureList();
+		If PictureList.Property("Roles_" + Name) Then
+			Return New ValueStorage(PictureList["Roles_" + Name].GetBinaryData());
+		Else
+			Return New ValueStorage(PictureList["Roles_" + Name + "s"].GetBinaryData());
+		EndIf;
+	Else
+		Return New ValueStorage(New Picture);
+	EndIf;
+EndFunction
+
+Function ObjectPathSubtype(Path, Type) Export
+	If Not ValueIsFilled(Type) Then
+		Return Path;
+	EndIf;
+	PartPath = StrSplit(Path, ".", False);
+	If Type = Enums.Roles_MetadataSubtype.StandardTabularSection
+		OR Type = Enums.Roles_MetadataSubtype.TabularSection Then
+		Return PartPath[PartPath.UBound() - 1 - 1] + "." + PartPath[PartPath.UBound()];
+	Else
+		Return PartPath[PartPath.UBound()];
+	EndIf;
+EndFunction
+

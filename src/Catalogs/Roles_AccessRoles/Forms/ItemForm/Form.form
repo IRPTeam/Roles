@@ -1715,7 +1715,7 @@
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerPicture xsi:type="core:PictureRef">
-                <picture>CommonPicture.Roles_right_inputByString_dark</picture>
+                <picture>CommonPicture.Roles_right_inputByString</picture>
               </headerPicture>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -1863,7 +1863,7 @@
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerPicture xsi:type="core:PictureRef">
-                <picture>CommonPicture.Roles_right_totalsControl_dark</picture>
+                <picture>CommonPicture.Roles_right_totalsControl</picture>
               </headerPicture>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -2870,7 +2870,7 @@
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerPicture xsi:type="core:PictureRef">
-                <picture>CommonPicture.Roles_right_interactiveDeletePredefinedData</picture>
+                <picture>CommonPicture.Roles_right_InteractiveDeletePredefinedData</picture>
               </headerPicture>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -3092,7 +3092,7 @@
               <editMode>EnterOnInput</editMode>
               <showInHeader>true</showInHeader>
               <headerPicture xsi:type="core:PictureRef">
-                <picture>CommonPicture.Roles_right_interactiveDeletePredefinedData</picture>
+                <picture>CommonPicture.Roles_right_InteractiveDeleteMarkedPredefinedData</picture>
               </headerPicture>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -4210,7 +4210,7 @@
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerPicture xsi:type="core:PictureRef">
-                <picture>CommonPicture.Roles_right_automation_dark</picture>
+                <picture>CommonPicture.Roles_right_automation</picture>
               </headerPicture>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -4358,7 +4358,7 @@
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerPicture xsi:type="core:PictureRef">
-                <picture>CommonPicture.Roles_right_collaborationSystemInfoBaseRegistration_dark</picture>
+                <picture>CommonPicture.Roles_right_collaborationSystemInfoBaseRegistration</picture>
               </headerPicture>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -4580,7 +4580,7 @@
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerPicture xsi:type="core:PictureRef">
-                <picture>CommonPicture.Roles_right_interactiveOpenExtDataProcessors_dark</picture>
+                <picture>CommonPicture.Roles_right_interactiveOpenExtDataProcessors</picture>
               </headerPicture>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -5339,7 +5339,7 @@
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerPicture xsi:type="core:PictureRef">
-                <picture>CommonPicture.Roles_right_viewDataHistory_dark</picture>
+                <picture>CommonPicture.Roles_right_viewDataHistory</picture>
               </headerPicture>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -5857,7 +5857,7 @@
               <editMode>Enter</editMode>
               <showInHeader>true</showInHeader>
               <headerPicture xsi:type="core:PictureRef">
-                <picture>CommonPicture.Roles_right_switchToDataHistoryVersion_dark</picture>
+                <picture>CommonPicture.Roles_right_switchToDataHistoryVersion</picture>
               </headerPicture>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>

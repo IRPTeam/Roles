@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<languageSettings>
-		<currentLanguage>en</currentLanguage>
+		<currentLanguage>ru</currentLanguage>
 		<defaultLanguage>en</defaultLanguage>
 		<languageInfo>
 			<id>en</id>
@@ -4512,7 +4512,7 @@
 	</picture>
 	<picture>
 		<index>6</index>
-		<picture ref="v8ui:Roles_right_inputByString_dark"/>
+		<picture ref="v8ui:Roles_right_inputByString"/>
 	</picture>
 	<picture>
 		<index>7</index>
@@ -4520,7 +4520,7 @@
 	</picture>
 	<picture>
 		<index>8</index>
-		<picture ref="v8ui:Roles_right_totalsControl_dark"/>
+		<picture ref="v8ui:Roles_right_totalsControl"/>
 	</picture>
 	<picture>
 		<index>9</index>
@@ -4568,7 +4568,7 @@
 	</picture>
 	<picture>
 		<index>20</index>
-		<picture ref="v8ui:Roles_right_interactiveDeletePredefinedData"/>
+		<picture ref="v8ui:Roles_right_InteractiveDeletePredefinedData"/>
 	</picture>
 	<picture>
 		<index>21</index>
@@ -4580,7 +4580,7 @@
 	</picture>
 	<picture>
 		<index>23</index>
-		<picture ref="v8ui:Roles_right_interactiveDeletePredefinedData"/>
+		<picture ref="v8ui:Roles_right_InteractiveDeleteMarkedPredefinedData"/>
 	</picture>
 	<picture>
 		<index>24</index>
@@ -4636,7 +4636,7 @@
 	</picture>
 	<picture>
 		<index>37</index>
-		<picture ref="v8ui:Roles_right_automation_dark"/>
+		<picture ref="v8ui:Roles_right_automation"/>
 	</picture>
 	<picture>
 		<index>38</index>
@@ -4644,7 +4644,7 @@
 	</picture>
 	<picture>
 		<index>39</index>
-		<picture ref="v8ui:Roles_right_collaborationSystemInfoBaseRegistration_dark"/>
+		<picture ref="v8ui:Roles_right_collaborationSystemInfoBaseRegistration"/>
 	</picture>
 	<picture>
 		<index>40</index>
@@ -4656,7 +4656,7 @@
 	</picture>
 	<picture>
 		<index>42</index>
-		<picture ref="v8ui:Roles_right_interactiveOpenExtDataProcessors_dark"/>
+		<picture ref="v8ui:Roles_right_interactiveOpenExtDataProcessors"/>
 	</picture>
 	<picture>
 		<index>43</index>
@@ -4696,7 +4696,7 @@
 	</picture>
 	<picture>
 		<index>52</index>
-		<picture ref="v8ui:Roles_right_viewDataHistory_dark"/>
+		<picture ref="v8ui:Roles_right_viewDataHistory"/>
 	</picture>
 	<picture>
 		<index>53</index>
@@ -4724,7 +4724,7 @@
 	</picture>
 	<picture>
 		<index>59</index>
-		<picture ref="v8ui:Roles_right_switchToDataHistoryVersion_dark"/>
+		<picture ref="v8ui:Roles_right_switchToDataHistoryVersion"/>
 	</picture>
 	<picture>
 		<index>60</index>

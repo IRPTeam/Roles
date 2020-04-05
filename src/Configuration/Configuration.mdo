@@ -21,7 +21,7 @@
   <namePrefix>Roles_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
-  <version>0.3.3</version>
+  <version>0.3.4</version>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
@@ -45,12 +45,9 @@
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
   <commonPictures>CommonPicture.Roles_AccountingFlags</commonPictures>
-  <commonPictures>CommonPicture.Roles_AccountingRegister</commonPictures>
-  <commonPictures>CommonPicture.Roles_AccumulationRegister</commonPictures>
-  <commonPictures>CommonPicture.Roles_AddressingAttributes</commonPictures>
-  <commonPictures>CommonPicture.Roles_Attributes</commonPictures>
   <commonPictures>CommonPicture.Roles_BusinessProcess</commonPictures>
-  <commonPictures>CommonPicture.Roles_CalculationRegister</commonPictures>
+  <commonPictures>CommonPicture.Roles_AccountingRegister</commonPictures>
+  <commonPictures>CommonPicture.Roles_AddressingAttributes</commonPictures>
   <commonPictures>CommonPicture.Roles_Catalog</commonPictures>
   <commonPictures>CommonPicture.Roles_ChartOfAccounts</commonPictures>
   <commonPictures>CommonPicture.Roles_ChartOfCalculationTypes</commonPictures>
@@ -62,24 +59,32 @@
   <commonPictures>CommonPicture.Roles_configuration</commonPictures>
   <commonPictures>CommonPicture.Roles_configuration_extension_administration</commonPictures>
   <commonPictures>CommonPicture.Roles_Constant</commonPictures>
+  <commonPictures>CommonPicture.Roles_Cubes</commonPictures>
   <commonPictures>CommonPicture.Roles_DataProcessor</commonPictures>
+  <commonPictures>CommonPicture.Roles_Debug</commonPictures>
   <commonPictures>CommonPicture.Roles_Dimensions</commonPictures>
+  <commonPictures>CommonPicture.Roles_DimensionTables</commonPictures>
   <commonPictures>CommonPicture.Roles_Document</commonPictures>
   <commonPictures>CommonPicture.Roles_DocumentJournal</commonPictures>
   <commonPictures>CommonPicture.Roles_ExchangePlan</commonPictures>
   <commonPictures>CommonPicture.Roles_ExtDimensionAccountingFlags</commonPictures>
+  <commonPictures>CommonPicture.Roles_ExternalDataSource</commonPictures>
+  <commonPictures>CommonPicture.Roles_Fields</commonPictures>
   <commonPictures>CommonPicture.Roles_FilterCriterion</commonPictures>
+  <commonPictures>CommonPicture.Roles_Functions</commonPictures>
   <commonPictures>CommonPicture.Roles_HTTPService</commonPictures>
   <commonPictures>CommonPicture.Roles_InformationRegister</commonPictures>
+  <commonPictures>CommonPicture.Roles_Interface</commonPictures>
   <commonPictures>CommonPicture.Roles_Method</commonPictures>
+  <commonPictures>CommonPicture.Roles_Operation</commonPictures>
   <commonPictures>CommonPicture.Roles_Recalculations</commonPictures>
   <commonPictures>CommonPicture.Roles_Report</commonPictures>
   <commonPictures>CommonPicture.Roles_Resources</commonPictures>
   <commonPictures>CommonPicture.Roles_right_activeUsers</commonPictures>
   <commonPictures>CommonPicture.Roles_right_administration</commonPictures>
   <commonPictures>CommonPicture.Roles_right_allFunctionsMode</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_automation_dark</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_collaborationSystemInfoBaseRegistration_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_automation</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_collaborationSystemInfoBaseRegistration</commonPictures>
   <commonPictures>CommonPicture.Roles_right_dataAdministration</commonPictures>
   <commonPictures>CommonPicture.Roles_right_delete</commonPictures>
   <commonPictures>CommonPicture.Roles_right_edit</commonPictures>
@@ -89,7 +94,7 @@
   <commonPictures>CommonPicture.Roles_right_execute</commonPictures>
   <commonPictures>CommonPicture.Roles_right_externalConnection</commonPictures>
   <commonPictures>CommonPicture.Roles_right_get</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_inputByString_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_inputByString</commonPictures>
   <commonPictures>CommonPicture.Roles_right_insert</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveActivate</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveChangeOfPosted</commonPictures>
@@ -97,10 +102,10 @@
   <commonPictures>CommonPicture.Roles_right_interactiveClearDeletionMarkPredefinedData</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveDelete</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveDeleteMarked</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_interactiveDeletePredefinedData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_InteractiveDeletePredefinedData</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveExecute</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveInsert</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_interactiveOpenExtDataProcessors_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_interactiveOpenExtDataProcessors</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveOpenExtReports</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactivePosting</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactivePostingRegular</commonPictures>
@@ -115,12 +120,15 @@
   <commonPictures>CommonPicture.Roles_right_readDataHistory</commonPictures>
   <commonPictures>CommonPicture.Roles_right_readDataHistoryOfMissingData</commonPictures>
   <commonPictures>CommonPicture.Roles_right_saveUserData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_sessionOSAuthenticationChange</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_sessionStandardAuthenticationChange</commonPictures>
   <commonPictures>CommonPicture.Roles_right_set</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_standardAuthenticationChange</commonPictures>
   <commonPictures>CommonPicture.Roles_right_start</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_switchToDataHistoryVersion_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_switchToDataHistoryVersion</commonPictures>
   <commonPictures>CommonPicture.Roles_right_thickClient</commonPictures>
   <commonPictures>CommonPicture.Roles_right_thinClient</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_totalsControl_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_totalsControl</commonPictures>
   <commonPictures>CommonPicture.Roles_right_undoPosting</commonPictures>
   <commonPictures>CommonPicture.Roles_right_update</commonPictures>
   <commonPictures>CommonPicture.Roles_right_updateDataBaseConfiguration</commonPictures>
@@ -129,8 +137,8 @@
   <commonPictures>CommonPicture.Roles_right_updateDataHistorySettings</commonPictures>
   <commonPictures>CommonPicture.Roles_right_updateDataHistoryVersionComment</commonPictures>
   <commonPictures>CommonPicture.Roles_right_use</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_view_dark</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_viewDataHistory_dark</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_view</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_viewDataHistory</commonPictures>
   <commonPictures>CommonPicture.Roles_right_webClient</commonPictures>
   <commonPictures>CommonPicture.Roles_rls_add</commonPictures>
   <commonPictures>CommonPicture.Roles_rls_blank</commonPictures>
@@ -141,22 +149,17 @@
   <commonPictures>CommonPicture.Roles_StandardTabularSections</commonPictures>
   <commonPictures>CommonPicture.Roles_Subsystem</commonPictures>
   <commonPictures>CommonPicture.Roles_SubsystemIco</commonPictures>
+  <commonPictures>CommonPicture.Roles_Tables</commonPictures>
   <commonPictures>CommonPicture.Roles_TabularSections</commonPictures>
   <commonPictures>CommonPicture.Roles_Task</commonPictures>
-  <commonPictures>CommonPicture.Roles_WebService</commonPictures>
-  <commonPictures>CommonPicture.Roles_Operation</commonPictures>
   <commonPictures>CommonPicture.Roles_URLTemplate</commonPictures>
-  <commonPictures>CommonPicture.Roles_ExternalDataSource</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_standardAuthenticationChange</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_sessionStandardAuthenticationChange</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_sessionOSAuthenticationChange</commonPictures>
-  <commonPictures>CommonPicture.Roles_Cubes</commonPictures>
-  <commonPictures>CommonPicture.Roles_Tables</commonPictures>
-  <commonPictures>CommonPicture.Roles_DimensionTables</commonPictures>
-  <commonPictures>CommonPicture.Roles_Functions</commonPictures>
-  <commonPictures>CommonPicture.Roles_Fields</commonPictures>
-  <commonPictures>CommonPicture.Roles_Debug</commonPictures>
-  <commonPictures>CommonPicture.Roles_Interface</commonPictures>
+  <commonPictures>CommonPicture.Roles_WebService</commonPictures>
+  <commonPictures>CommonPicture.Roles_AccumulationRegister</commonPictures>
+  <commonPictures>CommonPicture.Roles_Attributes</commonPictures>
+  <commonPictures>CommonPicture.Roles_CalculationRegister</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_InteractiveDeleteMarkedPredefinedData</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_TechnicalSpecialistMode</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_ConfigurationExtensionsAdministration</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
   <roles>Role.Roles_UserRole</roles>
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>

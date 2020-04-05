@@ -321,7 +321,7 @@
       </synonym>
       <synonym>
         <key>ru</key>
-        <value>Правильное значение</value>
+        <value>Значение</value>
       </synonym>
       <type>
         <types>Boolean</types>
