@@ -12,5 +12,5 @@ Function Strings(LangCode = "en") Export
 EndFunction
 
 Function GetLocalizationCode(AddInfo = Undefined) Export
-	Return AdministrationSession.LanguageCode;
+	Return CurrentLocaleCode();
 EndFunction
