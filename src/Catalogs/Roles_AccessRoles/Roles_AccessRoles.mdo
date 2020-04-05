@@ -173,6 +173,10 @@
       <key>en</key>
       <value>Last hash update</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Хэш последнего обновления</value>
+    </synonym>
     <type>
       <types>String</types>
       <stringQualifiers>
@@ -253,7 +257,7 @@
       </synonym>
       <synonym>
         <key>ru</key>
-        <value>Правильное имя</value>
+        <value>Имя права</value>
       </synonym>
       <type>
         <types>EnumRef.Roles_Rights</types>
@@ -408,7 +412,7 @@
       </synonym>
       <synonym>
         <key>ru</key>
-        <value>Пол</value>
+        <value>Поля</value>
       </synonym>
       <type>
         <types>String</types>

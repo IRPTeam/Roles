@@ -7,7 +7,7 @@
   </synonym>
   <synonym>
     <key>ru</key>
-    <value>Ролевая матрица</value>
+    <value>Матрица ролей</value>
   </synonym>
   <server>true</server>
 </mdclass:CommonModule>

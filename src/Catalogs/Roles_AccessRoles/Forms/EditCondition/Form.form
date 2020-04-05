@@ -1683,7 +1683,7 @@
     </title>
     <title>
       <key>ru</key>
-      <value>отменить</value>
+      <value>Отменить</value>
     </title>
     <id>2</id>
     <use>
@@ -1704,7 +1704,7 @@
     </title>
     <title>
       <key>ru</key>
-      <value>Запустить отчет</value>
+      <value>Сформировать</value>
     </title>
     <id>3</id>
     <toolTip>
@@ -1713,7 +1713,7 @@
     </toolTip>
     <toolTip>
       <key>ru</key>
-      <value>Запустить отчет</value>
+      <value>Сформировать</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -1735,10 +1735,18 @@
       <key>en</key>
       <value>Update query data</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Обновление данных запроса</value>
+    </title>
     <id>4</id>
     <toolTip>
       <key>en</key>
       <value>Update query data</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Обновление данных запроса</value>
     </toolTip>
     <use>
       <common>true</common>

@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Roles localization</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Локализация</value>
+  </synonym>
   <server>true</server>
   <serverCall>true</serverCall>
 </mdclass:CommonModule>

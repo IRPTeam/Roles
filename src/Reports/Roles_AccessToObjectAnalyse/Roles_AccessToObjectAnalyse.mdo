@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="94c7715d-1bfd-42ce-ac6b-23e37a5ded5d">
+  <producedTypes>
+    <objectType typeId="bf19b47b-f4d7-4057-ba43-fa67125b5c5e" valueTypeId="07e6ea31-9a82-4093-a3d6-7c42b545eb47"/>
+    <managerType typeId="60dda52d-e3f0-4cd5-b9ce-786163577a17" valueTypeId="f83c28a8-ac33-472b-9de8-796be6f5578f"/>
+  </producedTypes>
+  <name>Roles_AccessToObjectAnalyse</name>
+  <synonym>
+    <key>en</key>
+    <value>Access to object analyse</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ доступов к объектам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.Roles_AccessToObjectAnalyse.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <templates uuid="3a05b497-66dd-4106-a301-75d8f3fa4845">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key></key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

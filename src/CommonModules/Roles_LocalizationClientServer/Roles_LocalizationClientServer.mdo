@@ -5,7 +5,10 @@
     <key>en</key>
     <value>Roles localization client server</value>
   </synonym>
-  <comment></comment>
+  <synonym>
+    <key>ru</key>
+    <value>Локализация клиент сервер</value>
+  </synonym>
   <clientManagedApplication>true</clientManagedApplication>
   <server>true</server>
   <serverCall>true</serverCall>

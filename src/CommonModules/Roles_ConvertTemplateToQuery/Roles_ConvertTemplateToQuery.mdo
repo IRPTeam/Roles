@@ -3,11 +3,11 @@
   <name>Roles_ConvertTemplateToQuery</name>
   <synonym>
     <key>en</key>
-    <value>Roles convert template to query</value>
+    <value>Convert template to query</value>
   </synonym>
   <synonym>
     <key>ru</key>
-    <value>Роли конвертируют шаблон в запрос</value>
+    <value>Конвертация шаблона в запрос</value>
   </synonym>
   <server>true</server>
 </mdclass:CommonModule>

@@ -2196,6 +2196,10 @@
                 <key>en</key>
                 <value>RLS View</value>
               </title>
+              <title>
+                <key>ru</key>
+                <value>RLS Просмотр</value>
+              </title>
               <extendedTooltip>
                 <name>Group14ExtendedTooltip</name>
                 <id>169</id>
@@ -3418,7 +3422,11 @@
     <name>RLSTemplateView</name>
     <title>
       <key>en</key>
-      <value>RLSTemplate view</value>
+      <value>RLS Template view</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>RLS шаблон просмотра</value>
     </title>
     <id>15</id>
     <valueType>
@@ -3478,7 +3486,7 @@
     </toolTip>
     <toolTip>
       <key>ru</key>
-      <value>Запустить отчет</value>
+      <value>Сформировать</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -3568,7 +3576,7 @@
     </title>
     <title>
       <key>en</key>
-      <value>Run BSL code</value>
+      <value>Run BSL сode</value>
     </title>
     <id>5</id>
     <toolTip>
@@ -3649,9 +3657,7 @@
   </parameters>
   <parameters>
     <name>RLSList</name>
-    <valueType>
-      <types>Arbitrary</types>
-    </valueType>
+    <valueType/>
   </parameters>
   <commandInterface>
     <navigationPanel/>

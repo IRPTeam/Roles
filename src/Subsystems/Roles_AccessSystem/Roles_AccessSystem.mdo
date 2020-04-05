@@ -43,4 +43,10 @@
   <content>Enum.Roles_MetadataTypes</content>
   <content>Enum.Roles_MetadataSubtype</content>
   <content>DataProcessor.Roles_ButtonForm</content>
+  <content>CommonModule.Roles_Localization</content>
+  <content>CommonModule.Roles_LocalizationClientServer</content>
+  <content>CommonModule.Roles_LocalizationReuse</content>
+  <content>CommonModule.Roles_LocalizationServer</content>
+  <content>CommonModule.Roles_CommonFunctionsClientServer</content>
+  <content>Report.Roles_AccessToObjectAnalyse</content>
 </mdclass:Subsystem>

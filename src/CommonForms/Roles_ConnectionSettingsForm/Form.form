@@ -5,7 +5,7 @@
     <id>4</id>
     <title>
       <key>en</key>
-      <value>Source</value>
+      <value>Connection type to database</value>
     </title>
     <title>
       <key>ru</key>
@@ -72,6 +72,10 @@
           <key>en</key>
           <value>File database</value>
         </presentation>
+        <presentation>
+          <key>ru</key>
+          <value>Файловая база данных</value>
+        </presentation>
         <value xsi:type="core:StringValue">
           <value>File</value>
         </value>
@@ -80,6 +84,10 @@
         <presentation>
           <key>en</key>
           <value>Configuration XML files</value>
+        </presentation>
+        <presentation>
+          <key>ru</key>
+          <value>XML файлы конфигурации</value>
         </presentation>
         <value xsi:type="core:StringValue">
           <value>XML</value>
@@ -815,7 +823,7 @@
     <name>Source</name>
     <title>
       <key>en</key>
-      <value>Source</value>
+      <value>SQL</value>
     </title>
     <title>
       <key>ru</key>
@@ -897,6 +905,10 @@
     <title>
       <key>en</key>
       <value>Fill from current database</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Заполнить из текущей базы</value>
     </title>
     <id>2</id>
     <use>

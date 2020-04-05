@@ -5,6 +5,10 @@
     <key>en</key>
     <value>Roles common functions client server</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роли обычные функции клеинт сервер</value>
+  </synonym>
   <clientManagedApplication>true</clientManagedApplication>
   <server>true</server>
 </mdclass:CommonModule>

@@ -5,7 +5,10 @@
     <key>en</key>
     <value>Roles localization reuse</value>
   </synonym>
-  <comment></comment>
+  <synonym>
+    <key>ru</key>
+    <value>Локализация повторного использования</value>
+  </synonym>
   <server>true</server>
   <serverCall>true</serverCall>
   <returnValuesReuse>DuringSession</returnValuesReuse>

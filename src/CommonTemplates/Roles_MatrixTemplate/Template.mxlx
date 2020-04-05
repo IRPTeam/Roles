@@ -1021,7 +1021,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Веб-клиент</v8:content>
+							<v8:content>Web-клиент</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>WebClient</detailParameter>
@@ -1485,7 +1485,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Интеграционный сервис</v8:content>
+							<v8:content>Интерактивная активация</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>InteractiveActivate</detailParameter>

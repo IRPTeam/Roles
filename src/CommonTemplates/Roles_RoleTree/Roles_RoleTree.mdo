@@ -7,7 +7,7 @@
   </synonym>
   <synonym>
     <key>ru</key>
-    <value>Роль дерева</value>
+    <value>Древо ролей</value>
   </synonym>
   <templateType>TextDocument</templateType>
 </mdclass:CommonTemplate>

@@ -3861,7 +3861,7 @@
               </title>
               <title>
                 <key>ru</key>
-                <value>Веб-клиент</value>
+                <value>Web-клиент</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -3883,7 +3883,7 @@
               </toolTip>
               <toolTip>
                 <key>ru</key>
-                <value>Веб-клиент</value>
+                <value>Web-клиент</value>
               </toolTip>
               <extendedTooltip>
                 <name>WebClientExtendedTooltip</name>
@@ -10295,7 +10295,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>Веб-клиент</value>
+        <value>Web-клиент</value>
       </title>
       <id>38</id>
       <valueType>
@@ -11386,7 +11386,7 @@
       <name>RLSUpdateID</name>
       <title>
         <key>en</key>
-        <value>RLSUpdate ID</value>
+        <value>RLS Update ID</value>
       </title>
       <title>
         <key>ru</key>
@@ -11695,7 +11695,7 @@
     <name>RLSRowID</name>
     <title>
       <key>en</key>
-      <value>RLSRow ID</value>
+      <value>RLS Row ID</value>
     </title>
     <title>
       <key>ru</key>

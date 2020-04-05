@@ -3,11 +3,11 @@
   <name>Roles_TemplateDB</name>
   <synonym>
     <key>en</key>
-    <value>Roles template DB</value>
+    <value>Template DB</value>
   </synonym>
   <synonym>
     <key>ru</key>
-    <value>Роль шаблона БД</value>
+    <value>Шаблона БД</value>
   </synonym>
   <templateType>BinaryData</templateType>
 </mdclass:CommonTemplate>

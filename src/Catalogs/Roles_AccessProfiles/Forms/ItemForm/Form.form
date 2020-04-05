@@ -749,6 +749,10 @@
       <key>en</key>
       <value>Show all roles</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Показать все роли</value>
+    </title>
     <id>3</id>
     <valueType>
       <types>Boolean</types>
