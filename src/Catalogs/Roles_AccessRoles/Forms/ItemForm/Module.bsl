@@ -281,10 +281,16 @@ EndProcedure
 &AtClient
 Procedure RestrictionByConditionConditionOpening(Item, StandardProcessing)
 	StandardProcessing = False;
-	Filter = New Structure("Text, ObjectPath, RightName");
+	Filter = New Structure("Text, ObjectPath, RightName, RLSList");
 	Filter.Text = Item.Parent.CurrentData.Condition;
 	Filter.ObjectPath = Items.RolesEdit.CurrentData.ObjectPath;
 	Filter.RightName = Items.RolesEdit.CurrentItem.Name;
+
+	RLSList = New Array;
+	For Each RLSRow In Object.Templates Do
+		RLSList.Add(RLSRow.Template);
+	EndDo;
+	Filter.RLSList = RLSList;
 
 	Notify = New NotifyDescription("RestrictionByConditionConditionOpeningEnd", ThisForm, New Structure("Item", Item));
 	

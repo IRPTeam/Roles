@@ -38,7 +38,7 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 		NewSP.Name = Param.Key;
 		NewSP.Value = Param.Value;
 	EndDo;	
-	
+	 
 	
 	DebugsTree = FormAttributeToValue("DebugTree");
 	TotalRLSCode = RLS;
@@ -409,8 +409,9 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 		|FROM
 		|	Catalog.Roles_Templates AS Roles_Templates
 		|WHERE
-		|	NOT Roles_Templates.DeletionMark";
-	
+		|	NOT Roles_Templates.DeletionMark
+		|	AND Roles_Templates.Ref IN(&RLSList)";
+	Query.SetParameter("RLSList", Parameters.RLSList);
 	QueryResult = Query.Execute().Unload();
 	Templates.Load(QueryResult);
 	

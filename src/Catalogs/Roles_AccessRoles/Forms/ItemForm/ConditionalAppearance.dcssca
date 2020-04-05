@@ -4934,11 +4934,19 @@
 			</item>
 		</selection>
 		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">RolesEdit.ObjectSubtype</left>
-				<comparisonType>InList</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Operation</right>
-				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Method</right>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">RolesEdit.ObjectSubtype</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Operation</right>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Method</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Interface</right>
+				</item>
 			</item>
 		</filter>
 		<appearance>
@@ -5153,11 +5161,19 @@
 			</item>
 		</selection>
 		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">RolesEdit.ObjectSubtype</left>
-				<comparisonType>InList</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Operation</right>
-				<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Method</right>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">RolesEdit.ObjectSubtype</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Operation</right>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataSubtype.Method</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">RolesEdit.ObjectType</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="dcscor:DesignTimeValue">Enum.Roles_MetadataTypes.Interface</right>
+				</item>
 			</item>
 		</filter>
 		<appearance>
