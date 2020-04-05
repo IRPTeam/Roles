@@ -35,7 +35,7 @@ Procedure UpdateRoleExt() Export
 	// load cfe to cuurent db
 	BD = New BinaryData(Path + "\AccessRoles.cfe");
 	InstallExtention("AccessRoles", BD, True);
-//	DeleteFiles(Path);
+	DeleteFiles(Path);
 	
 EndProcedure
 

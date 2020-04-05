@@ -1,10 +1,11 @@
 Procedure UpdateRoleExt(Settings) Export
+	LoadFromTemp = False;
 	If Settings.Source = "SQL"
 		or Settings.Source = "File" Then
 			
 		Path = TempFilesDir() + "TR";
 		DeleteFiles(Path);
-		
+		LoadFromTemp = True;
 		// unload to xml
 		CommandToUploadExt = """" + BinDir() + "1cv8.exe"" designer " + "/N """ + Settings.Login + """" +
 		" /P """ + Settings.Password + """" + " " + 
@@ -22,7 +23,10 @@ Procedure UpdateRoleExt(Settings) Export
 	
 	Rights = FindFiles(Settings.PathToXML + "Roles", "*.mdo", True);		
 	LoadFromEDTFormat(Settings, Rights);
-			
+	
+	If LoadFromTemp Then	
+		DeleteFiles(Path);
+	ENdIf;	
 EndProcedure
 
 Procedure LoadFromEDTFormat(Settings, Val Rights)
