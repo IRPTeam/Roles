@@ -1,12 +1,14 @@
 Procedure UpdateRoleExt(Settings) Export
-	If NOT ValueIsFilled(Settings.PathToXML) Then
-		Path = TempFilesDir() + "TemplateRoles";
+	If Settings.Source = "SQL"
+		or Settings.Source = "File" Then
+			
+		Path = TempFilesDir() + "TR";
 		DeleteFiles(Path);
 		
 		// unload to xml
 		CommandToUploadExt = """" + BinDir() + "1cv8.exe"" designer " + "/N """ + Settings.Login + """" +
 		" /P """ + Settings.Password + """" + " " + 
-		?(Settings.SQL, "/s " + Settings.Server + "\" + Settings.BaseName, "/f " + Path) +
+		?(Settings.Source = "SQL", "/s " + Settings.ServerName + "\" + Settings.BaseName, "/f " + Path) +
 		" /DumpConfigToFiles " + Path + " -Right /DumpResult " + Path + 
 		"\Event.log /DisableStartupMessages /DisableStartupDialogs";
 		RunApp(CommandToUploadExt, , True);
@@ -14,18 +16,13 @@ Procedure UpdateRoleExt(Settings) Export
 		Settings.PathToXML = Path + "\";
 		
 	EndIf;
-	
-	If Not StrEndsWith(Settings.PathToXML, "\") Then
-		Settings.PathToXML = Settings.PathToXML + "\";
-	EndIf;
-	
-	Rights = FindFiles(Settings.PathToXML + "Roles", "*.xml", False);
-	
+		
+	Rights = FindFiles(Settings.PathToXML + "Roles", "*.xml", False);	
 	LoadFromXMLFormat(Settings, Rights);
 	
-	Rights = FindFiles(Settings.PathToXML + "Roles", "*.mdo", True);
-		
-	LoadFromEDTFormat(Settings, Rights);		
+	Rights = FindFiles(Settings.PathToXML + "Roles", "*.mdo", True);		
+	LoadFromEDTFormat(Settings, Rights);
+			
 EndProcedure
 
 Procedure LoadFromEDTFormat(Settings, Val Rights)
