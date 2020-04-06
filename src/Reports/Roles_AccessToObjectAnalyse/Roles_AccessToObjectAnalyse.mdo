@@ -19,7 +19,7 @@
   <forms uuid="b8a9a70f-2f92-487f-8a20-76a642ef2a35">
     <name>ReportForm</name>
     <synonym>
-      <key></key>
+      <key>en</key>
       <value>Report form</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
@@ -28,7 +28,7 @@
   <templates uuid="3a05b497-66dd-4106-a301-75d8f3fa4845">
     <name>MainDataCompositionSchema</name>
     <synonym>
-      <key></key>
+      <key>en</key>
       <value>Main data composition schema</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>

@@ -71,13 +71,17 @@ EndFunction
 
 Function TypeObjectPictureByRef(RefData) Export
 	If ValueIsFilled(RefData) Then
-		Name = MetaNameByRef(RefData);
-		
-		PictureList = Roles_SettingsReUse.PictureList();
-		If PictureList.Property("Roles_" + Name) Then
-			Return New ValueStorage(PictureList["Roles_" + Name].GetBinaryData());
+		If TypeOf(RefData) = Type("String") Then
+			Return New ValueStorage(PictureLib[RefData].GetBinaryData());
 		Else
-			Return New ValueStorage(PictureList["Roles_" + Name + "s"].GetBinaryData());
+			Name = MetaNameByRef(RefData);
+			
+			PictureList = Roles_SettingsReUse.PictureList();
+			If PictureList.Property("Roles_" + Name) Then
+				Return New ValueStorage(PictureList["Roles_" + Name].GetBinaryData());
+			Else
+				Return New ValueStorage(PictureList["Roles_" + Name + "s"].GetBinaryData());
+			EndIf;
 		EndIf;
 	Else
 		Return New ValueStorage(New Picture);

@@ -3,6 +3,10 @@
   <name>Roles_right_ConfigurationExtensionsAdministration</name>
   <synonym>
     <key>ru</key>
-    <value>Roles right configuration extensions administration</value>
+    <value>Право администрирования расширений конфигурации</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Right configuration extensions administration</value>
   </synonym>
 </mdclass:CommonPicture>

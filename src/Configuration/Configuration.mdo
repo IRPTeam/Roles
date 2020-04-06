@@ -21,7 +21,7 @@
   <namePrefix>Roles_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
-  <version>0.3.4</version>
+  <version>0.3.5</version>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
@@ -45,9 +45,11 @@
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
   <commonPictures>CommonPicture.Roles_AccountingFlags</commonPictures>
-  <commonPictures>CommonPicture.Roles_BusinessProcess</commonPictures>
   <commonPictures>CommonPicture.Roles_AccountingRegister</commonPictures>
   <commonPictures>CommonPicture.Roles_AddressingAttributes</commonPictures>
+  <commonPictures>CommonPicture.Roles_Attributes</commonPictures>
+  <commonPictures>CommonPicture.Roles_BusinessProcess</commonPictures>
+  <commonPictures>CommonPicture.Roles_CalculationRegister</commonPictures>
   <commonPictures>CommonPicture.Roles_Catalog</commonPictures>
   <commonPictures>CommonPicture.Roles_ChartOfAccounts</commonPictures>
   <commonPictures>CommonPicture.Roles_ChartOfCalculationTypes</commonPictures>
@@ -154,12 +156,11 @@
   <commonPictures>CommonPicture.Roles_Task</commonPictures>
   <commonPictures>CommonPicture.Roles_URLTemplate</commonPictures>
   <commonPictures>CommonPicture.Roles_WebService</commonPictures>
-  <commonPictures>CommonPicture.Roles_AccumulationRegister</commonPictures>
-  <commonPictures>CommonPicture.Roles_Attributes</commonPictures>
-  <commonPictures>CommonPicture.Roles_CalculationRegister</commonPictures>
   <commonPictures>CommonPicture.Roles_right_InteractiveDeleteMarkedPredefinedData</commonPictures>
   <commonPictures>CommonPicture.Roles_right_TechnicalSpecialistMode</commonPictures>
   <commonPictures>CommonPicture.Roles_right_ConfigurationExtensionsAdministration</commonPictures>
+  <commonPictures>CommonPicture.Roles_AccumulationRegister</commonPictures>
+  <commonPictures>CommonPicture.Roles_Profile</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
   <roles>Role.Roles_UserRole</roles>
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>

@@ -9,8 +9,12 @@
       <common>true</common>
     </userVisible>
     <title>
-      <key></key>
+      <key>ru</key>
       <value>Основная командная панель</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Main command bar</value>
     </title>
     <extendedTooltip>
       <name>MainCommandBarExtendedTooltip</name>
@@ -42,8 +46,12 @@
       <common>true</common>
     </userVisible>
     <title>
-      <key></key>
+      <key>ru</key>
       <value>Группа пользовательских настроек</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Users settings group</value>
     </title>
     <verticalStretch>false</verticalStretch>
     <extendedTooltip>
@@ -168,8 +176,12 @@
   <attributes>
     <name>Result</name>
     <title>
-      <key></key>
+      <key>ru</key>
       <value>Результат</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Result</value>
     </title>
     <id>2</id>
     <valueType>
