@@ -1,13 +1,3 @@
-
-#Region FormEvents
-
-&AtServer
-Procedure OnCreateAtServer(Cancel, StandardProcessing)
-	Items.FormCopyCurrentProfiles.Visible = Roles_Settings.isMetadataExist("Catalog.ПрофилиГруппДоступа");
-EndProcedure
-
-#EndRegion
-
 &AtClient
 Procedure CopyCurrentProfiles(Command)
 	 CopyAndUpdateProfiles();
