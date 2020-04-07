@@ -22,12 +22,17 @@ Procedure CopyAndUpdateProfiles()
 		|	Profile.Ref AS Profile,
 		|	Roles_AccessRoles.Ref AS AccessRoles
 		|FROM
-		|	Catalog.ПрофилиГруппДоступа.Роли AS Profile
+		|	Catalog.%1 AS Profile
 		|		LEFT JOIN Catalog.Roles_AccessRoles AS Roles_AccessRoles
-		|		ON (Profile.Роль.Имя = Roles_AccessRoles.Description)
+		|		ON (Profile.%2 = Roles_AccessRoles.Description)
 		|TOTALS BY
 		|	Profile
 		|";
+	If Metadata.ScriptVariant = Metadata.ObjectProperties.ScriptVariant.English Then
+		Query.Text = StrTemplate(Query.Text, "AccessGroupProfiles.Roles", "Role.Name")
+	Else
+		Query.Text = StrTemplate(Query.Text, "ПрофилиГруппДоступа.Роли", "Роль.Имя")
+	EndIf;
 	
 	ProfileList = Query.Execute().Select(QueryResultIteration.ByGroups);
 	
