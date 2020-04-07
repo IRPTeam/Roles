@@ -40,9 +40,19 @@ Procedure PathToXMLStartChoice(Item, ChoiceData, StandardProcessing)
 	StandardProcessing = False;
 	DirectoryChooseDialog = New FileDialog(FileDialogMode.ChooseDirectory);
 	DirectoryChooseDialog.Directory = ThisObject.PathToXML;
-	If DirectoryChooseDialog.Choose() Then
+	DirectoryChooseDialog.Show(New NotifyDescription("PathToXMLStartChoiceEnd", ThisForm, New Structure("DirectoryChooseDialog", DirectoryChooseDialog)));	
+EndProcedure
+
+&AtClient
+Procedure PathToXMLStartChoiceEnd(SelectedFiles, AdditionalParameters) Export
+	
+	DirectoryChooseDialog = AdditionalParameters.DirectoryChooseDialog;
+	
+	
+	If (SelectedFiles <> Undefined) Then
 		ThisObject.PathToXML = DirectoryChooseDialog.Directory;
-	EndIf;	
+	EndIf;
+
 EndProcedure
 
 &AtClient
@@ -50,9 +60,19 @@ Procedure PathStartChoice(Item, ChoiceData, StandardProcessing)
 	StandardProcessing = False;
 	DirectoryChooseDialog = New FileDialog(FileDialogMode.ChooseDirectory);
 	DirectoryChooseDialog.Directory = ThisObject.Path;
-	If DirectoryChooseDialog.Choose() Then
+	DirectoryChooseDialog.Show(New NotifyDescription("PathStartChoiceEnd", ThisForm, New Structure("DirectoryChooseDialog", DirectoryChooseDialog)));	
+EndProcedure
+
+&AtClient
+Procedure PathStartChoiceEnd(SelectedFiles, AdditionalParameters) Export
+	
+	DirectoryChooseDialog = AdditionalParameters.DirectoryChooseDialog;
+	
+	
+	If (SelectedFiles <> Undefined) Then
 		ThisObject.Path = DirectoryChooseDialog.Directory;
-	EndIf;	
+	EndIf;
+
 EndProcedure
 
 &AtClient
