@@ -108,7 +108,18 @@ EndProcedure
 
 Procedure LoadRightsToDB(RightObject, Text)
 
-	RightInfo = Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
+	
+	Try
+		RightInfo = Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
+	Except
+		// Try to make lower version
+		VersionIndex = StrFind(Text, "version=" + Char(34), , StrFind(Text, "Rights"));
+		VersioneEndIndex = StrFind(Text, Char(34), , VersionIndex + 9) + 1;
+		Version = Mid(Text, VersionIndex, VersioneEndIndex - VersionIndex);
+		Text = StrReplace(Text, Version, "version=""2.8""");	
+		RightInfo = Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
+	EndTry;
+
 	
 	RightObject.SetRightsForAttributesAndTabularSectionsByDefault = 
 		RightInfo.setForAttributesByDefault;
