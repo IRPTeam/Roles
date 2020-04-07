@@ -310,7 +310,7 @@ Procedure AddChildURLTemplates(MetaItem, MetaItemRow, DataType, Val StrData)
 	
 	AddChildRows = MetaItemRow.Rows.Add();
 	ObjectSubtype = Enums.Roles_MetadataSubtype[Left(DataType, StrLen(DataType) - 1)];
-	PictureMethod = StrData.PictureLibData["Roles_Method"];
+	PictureMethod = StrData.PictureLibData.Roles_Method;
 	AddChildRows.ObjectPath = MetaItemRow.ObjectPath + "." + Roles_SettingsReUse.MetaNameByRef(ObjectSubtype);
 	For Each AddChild In MetaItem[DataType] Do
 		
@@ -363,7 +363,7 @@ Procedure AddChildSubsystem(MetaItem, MetaItemRow, DataType, Val StrData)
 		Return;
 	EndIf;
 	ObjectSubtypeName = Left(DataType, StrLen(DataType) - 1);
-	Picture = StrData.PictureLibData["Roles_Subsystem"];
+	Picture = StrData.PictureLibData.Roles_Subsystem;
 	For Each AddChild In MetaItem[DataType] Do
 		
 		If NOT isNative(AddChild) Then
