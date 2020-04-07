@@ -1,6 +1,6 @@
 
 &AtClient
-Procedure OK(Command)
+Procedure LoadRoles(Command)
 	CheckFilling();
 	Settings = New Structure;
 	Settings.Insert("Source",  	ThisObject.Source);
@@ -10,7 +10,15 @@ Procedure OK(Command)
 	Settings.Insert("Password", ThisObject.Password);
 	Settings.Insert("ServerName", 	ThisObject.ServerName);
 	Settings.Insert("PathToXML",ThisObject.PathToXML);
-	Close(Settings);
+	LoadRolesFromCurrentConfigEnd(Settings);
+EndProcedure
+
+
+&AtClient
+Procedure LoadRolesFromCurrentConfigEnd(Result)
+	
+	Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(Result, CountRoles);
+
 EndProcedure
 
 &AtClient
@@ -75,18 +83,9 @@ EndFunction
 &AtClient
 Procedure FillByCurrentDatabase(Command)
 	ConnectionString = InfoBaseConnectionString();	
-    If Find(Upper(ConnectionString), "FILE=") = 1 Then
-    	ConnectionString = StrReplace(ConnectionString, "File=", "");
-		ConnectionString = StrReplace(ConnectionString, ";", "");
-		ThisObject.Path = ConnectionString;
-	ElsIf Find(Upper(ConnectionString), "SQL=") = 1 Then
-		ConnectionString = StrReplace(ConnectionString, "Srvr=""", "");
-		ConnectionString = StrReplace(ConnectionString, """;Ref=""", "|");
-		ConnectionString = StrReplace(ConnectionString, ";", "");
-		ConnectionStringArray = StrSplit(ConnectionString, "|");
-		ThisObject.ServerName = ConnectionStringArray[0];
-		ThisObject.BaseName = ConnectionStringArray[1];
-	EndIf;
+	ThisObject.Path = NStr(ConnectionString, "File");
+	ThisObject.ServerName = NStr(ConnectionString, "Srvr");
+	ThisObject.BaseName = NStr(ConnectionString, "Ref");
 	ThisObject.Login = UserName();
 EndProcedure
 

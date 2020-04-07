@@ -1,4 +1,4 @@
-Procedure UpdateRoleExt(Settings) Export
+Procedure UpdateRoleExt(Val Settings, CountRoles = 0) Export
 	LoadFromTemp = False;
 	If Settings.Source = "SQL"
 		or Settings.Source = "File" Then
@@ -17,12 +17,17 @@ Procedure UpdateRoleExt(Settings) Export
 		Settings.PathToXML = Path + "\";
 		
 	EndIf;
+	
 		
 	Rights = FindFiles(Settings.PathToXML + "Roles", "*.xml", False);	
 	LoadFromXMLFormat(Settings, Rights);
 	
+	CountRoles = Rights.Count();
+	
 	Rights = FindFiles(Settings.PathToXML + "Roles", "*.mdo", True);		
 	LoadFromEDTFormat(Settings, Rights);
+	
+	CountRoles = CountRoles + Rights.Count();
 	
 	If LoadFromTemp Then	
 		DeleteFiles(Path);
@@ -66,18 +71,19 @@ Procedure LoadFromEDTFormat(Settings, Val Rights)
 		
 		RightObject.Description = RoleInfo.Name;
 		RightObject.ConfigRoles = True;
-		
-		If TypeOf(RoleInfo.Synonym) = Type("XDTODataObject") Then
-			Lang = RoleInfo.Synonym;
-			NewLang = RightObject.LangInfo.Add();
-			NewLang.LangCode = Lang.key;
-			NewLang.LangDescription = Lang.value;
-		Else
-			For Each Lang In RoleInfo.Synonym Do
+		If Not RoleInfo.Properties().Get("Synonym") = Undefined Then	
+			If TypeOf(RoleInfo.Synonym) = Type("XDTODataObject") Then
+				Lang = RoleInfo.Synonym;
 				NewLang = RightObject.LangInfo.Add();
 				NewLang.LangCode = Lang.key;
 				NewLang.LangDescription = Lang.value;
-			EndDo;
+			Else
+				For Each Lang In RoleInfo.Synonym Do
+					NewLang = RightObject.LangInfo.Add();
+					NewLang.LangCode = Lang.key;
+					NewLang.LangDescription = Lang.value;
+				EndDo;
+			EndIf;
 		EndIf;
 		If Not RoleInfo.Properties().Get("Comment") = Undefined Then
 			RightObject.Comment = RoleInfo.Comment;

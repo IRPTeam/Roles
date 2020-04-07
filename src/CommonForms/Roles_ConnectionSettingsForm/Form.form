@@ -518,11 +518,11 @@
       </dataPath>
       <toolTip>
         <key>en</key>
-        <value>Path at server call, ex. D:\Base\, set upper Right folder</value>
+        <value>Path at server call, ex. D:\Base\, set upper Roles folder</value>
       </toolTip>
       <toolTip>
         <key>ru</key>
-        <value>Путь (на стороне сервера), напр. D:\Base\</value>
+        <value>Путь (на стороне сервера), напр. D:\Base\, выберите верхнюю папку над Roles</value>
       </toolTip>
       <toolTipRepresentation>ShowBottom</toolTipRepresentation>
       <handlers>
@@ -603,6 +603,133 @@
       <currentRowUse>DontUse</currentRowUse>
     </extInfo>
   </items>
+  <items xsi:type="form:FormGroup">
+    <name>Group1</name>
+    <id>37</id>
+    <items xsi:type="form:Decoration">
+      <name>DecorationCountRoles</name>
+      <id>39</id>
+      <title>
+        <key>en</key>
+        <value>Find and load roles</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>DecorationCountRolesExtendedTooltip</name>
+        <id>41</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>DecorationCountRolesContextMenu</name>
+        <id>40</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>CountRoles</name>
+      <id>42</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>CountRoles</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <extendedTooltip>
+        <name>CountRolesExtendedTooltip</name>
+        <id>44</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>CountRolesContextMenu</name>
+        <id>43</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>3</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>Group1ExtendedTooltip</name>
+      <id>38</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <backColor xsi:type="core:ColorRef">
+        <color>Style.ReportHeaderBackColor</color>
+      </backColor>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
   <autoCommandBar>
     <name>FormCommandBar</name>
     <id>-1</id>
@@ -630,7 +757,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.OK</commandName>
+      <commandName>Form.Command.LoadRoles</commandName>
       <representation>Auto</representation>
       <defaultButton>true</defaultButton>
       <autoMaxWidth>true</autoMaxWidth>
@@ -871,15 +998,35 @@
       <segments>PathToXML</segments>
     </settingsSavedData>
   </attributes>
-  <formCommands>
-    <name>OK</name>
+  <attributes>
+    <name>CountRoles</name>
     <title>
       <key>en</key>
-      <value>OK</value>
+      <value>Count roles</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>LoadRoles</name>
+    <title>
+      <key>en</key>
+      <value>Load roles</value>
     </title>
     <title>
       <key>ru</key>
-      <value>ОК</value>
+      <value>Загрузить роли</value>
     </title>
     <id>1</id>
     <toolTip>
@@ -895,7 +1042,7 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>OK</name>
+        <name>LoadRoles</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
