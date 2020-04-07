@@ -46,6 +46,12 @@ Procedure TabDocMartixOnActivate(Item)
 	EndDo;
 EndProcedure
 
+&AtServer
+Procedure OnCreateAtServer(Cancel, StandardProcessing)
+	ShowAllRoles = True;
+EndProcedure
+
+
 
 &AtServer
 Procedure UpdateMatrixAtServer(AllRights)
