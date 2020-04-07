@@ -931,6 +931,7 @@ Function hasNoInternalInfo(RefData) Export
 	Array.Add(Enums.Roles_MetadataTypes.SessionParameter);
 	Array.Add(Enums.Roles_MetadataTypes.CommonAttribute);
 	Array.Add(Enums.Roles_MetadataTypes.CommonForm);
+	Array.Add(Enums.Roles_MetadataTypes.Language);
 	Return NOT Array.Find(RefData) = Undefined;
 EndFunction
 

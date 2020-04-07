@@ -311,7 +311,7 @@ Procedure AddChildURLTemplates(MetaItem, MetaItemRow, DataType, Val StrData)
 	AddChildRows = MetaItemRow.Rows.Add();
 	ObjectSubtype = Enums.Roles_MetadataSubtype[Left(DataType, StrLen(DataType) - 1)];
 	PictureMethod = StrData.PictureLibData["Roles_Method"];
-	AddChildRows.ObjectPath = MetaItemRow.ObjectPath + "." + ObjectSubtype;
+	AddChildRows.ObjectPath = MetaItemRow.ObjectPath + "." + Roles_SettingsReUse.MetaNameByRef(ObjectSubtype);
 	For Each AddChild In MetaItem[DataType] Do
 		
 		If NOT isNative(AddChild) Then
@@ -420,8 +420,11 @@ Procedure AddChild(MetaItem, MetaItemRow, DataType, Val StrData)
 		AddChildRow.ObjectSubtype = ObjectSubtype;
 		
 		// read data from object
-		
-		AddChildRow.ObjectPath = AddChildRows.ObjectPath + "." + AddChildRow.ObjectName;
+		If NOT DataType = "StandardAttributes" Then
+			AddChildRow.ObjectPath = AddChildRows.ObjectPath + "." + AddChildRow.ObjectName;
+		Else
+			AddChildRow.ObjectPath = AddChildRows.ObjectPath + "." + Roles_SettingsReUse.TranslationList(AddChildRow.ObjectName);
+		EndIf;
 		SetCurrentRights(AddChildRow, StrData);
 		
 		If ObjectSubtype = Enums.Roles_MetadataSubtype.Table
@@ -528,7 +531,7 @@ Procedure AddChildStandardTab(MetaItem, MetaItemRow, DataType, Val StrData)
 	AddChildRows.ObjectFullName = "StandardTabularSection";
 	ObjectSubtypeName = Left(DataType, StrLen(DataType) - 1);
 	ObjectSubtype = Enums.Roles_MetadataSubtype[ObjectSubtypeName];
-	AddChildRows.ObjectPath = MetaItemRow.ObjectPath + "." + ObjectSubtype;
+	AddChildRows.ObjectPath = MetaItemRow.ObjectPath + "." + Roles_SettingsReUse.MetaNameByRef(ObjectSubtype);
 	For Each AddChild In MetaItem[DataType] Do
 		AddChildRow = AddChildRows.Rows.Add();
 		AddChildRow.ObjectName = AddChild.Name;
@@ -549,7 +552,7 @@ Procedure AddChildStandardTab(MetaItem, MetaItemRow, DataType, Val StrData)
 			// read data from object
 			
 			AddChildNewRow.ObjectPath = AddChildRow.ObjectPath + ".Attribute." + 
-							AddChildNewRow.ObjectName;
+							Roles_SettingsReUse.TranslationList(AddChildNewRow.ObjectName);
 			If Not AddChildNewRow.Edited AND StrData.OnlyFilled Then
 				AddChildRow.Rows.Delete(AddChildNewRow);								
 			EndIf;

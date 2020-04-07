@@ -196,6 +196,7 @@ Procedure RolesEditSelection(Item, SelectedRow, Field, StandardProcessing)
 	CurrentRow = Items.RolesEdit.CurrentData;
 	SetFlags(CurrentRow, Field);
 	SetAddRestrictionEnabled (CurrentRow, Field.Name);
+	Modified = True;
 EndProcedure
 
 &AtClient
@@ -399,6 +400,7 @@ Procedure OnFinishEditFilter(Result, AddInfo = Undefined) Export
 		
 		CurrentData.Modified = Not CurrentData.SerializedData = Result.SettingsXML;
 		CurrentData.SerializedData = Result.SettingsXML;
+		Modified = True;
 	EndIf;
 EndProcedure
 

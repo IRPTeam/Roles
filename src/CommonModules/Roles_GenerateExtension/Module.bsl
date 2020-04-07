@@ -35,7 +35,7 @@ Procedure UpdateRoleExt() Export
 	// load cfe to cuurent db
 	BD = New BinaryData(Path + "\AccessRoles.cfe");
 	InstallExtention("AccessRoles", BD, True);
-	DeleteFiles(Path);
+	//DeleteFiles(Path);
 	
 EndProcedure
 
@@ -100,7 +100,8 @@ Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 		|	Roles_AccessRolesRights.RightName AS RightName,
 		|	Roles_AccessRolesRights.RightValue AS RightValue,
 		|	Roles_AccessRolesRights.ObjectPath AS ObjectPath,
-		|	Roles_AccessRolesRights.Ref AS Ref
+		|	Roles_AccessRolesRights.Ref AS Ref,
+		|	Roles_AccessRolesRights.ObjectSubtype AS ObjectSubtype
 		|FROM
 		|	Catalog.Roles_AccessRoles.Rights AS Roles_AccessRolesRights
 		|		LEFT JOIN Catalog.Roles_AccessRoles.RestrictionByCondition AS Roles_AccessRolesRestrictionByCondition

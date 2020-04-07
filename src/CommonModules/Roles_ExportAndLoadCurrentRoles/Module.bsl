@@ -205,17 +205,19 @@ Procedure LoadFromXMLFormat(Settings, Val Rights)
 		RightObject.Description = RoleInfo.Role.Properties.Name;
 		RightObject.ConfigRoles = True;
 		
-		If TypeOf(RoleInfo.Role.Properties.Synonym.item) = Type("XDTODataObject") Then
-			Lang = RoleInfo.Role.Properties.Synonym.item;
-			NewLang = RightObject.LangInfo.Add();
-			NewLang.LangCode = Lang.lang;
-			NewLang.LangDescription = Lang.Content;
-		Else
-			For Each Lang In RoleInfo.Role.Properties.Synonym.item Do
+		If Not RoleInfo.Role.Properties.Synonym.Properties().Get("Item") = Undefined Then
+			If TypeOf(RoleInfo.Role.Properties.Synonym.item) = Type("XDTODataObject") Then
+				Lang = RoleInfo.Role.Properties.Synonym.item;
 				NewLang = RightObject.LangInfo.Add();
 				NewLang.LangCode = Lang.lang;
 				NewLang.LangDescription = Lang.Content;
-			EndDo;
+			Else
+				For Each Lang In RoleInfo.Role.Properties.Synonym.item Do
+					NewLang = RightObject.LangInfo.Add();
+					NewLang.LangCode = Lang.lang;
+					NewLang.LangDescription = Lang.Content;
+				EndDo;
+			EndIf;
 		EndIf;
 		If TypeOf(RoleInfo.Role.Properties.Comment) = Type("String") Then
 			RightObject.Comment = RoleInfo.Role.Properties.Comment;
