@@ -422,6 +422,21 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 		Row.Name = StrSplit(Row.Name, " (")[0];;
 	EndDo;
 	
+	If Metadata.ScriptVariant = Metadata.ObjectProperties.ScriptVariant.Russian Then
+		If CurrentAccessRightName = "Read" Then
+			CurrentAccessRightName = "Чтение";
+		ElsIf CurrentAccessRightName = "Insert" Then
+			CurrentAccessRightName = "Добавление";
+		ElsIf CurrentAccessRightName = "Edit" Then
+			CurrentAccessRightName = "Изменение";
+		ElsIf CurrentAccessRightName = "Delete" Then
+			CurrentAccessRightName = "Удаление";
+		EndIf;
+		
+		CurrentTableName = Metadata.FindByFullName(CurrentTableName).FullName();
+		
+	EndIf;
+	
 EndProcedure
 
 &AtClient
