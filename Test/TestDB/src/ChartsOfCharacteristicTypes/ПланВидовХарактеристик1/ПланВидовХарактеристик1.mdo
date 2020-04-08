@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0604121c-b1eb-440c-a4bc-ee978eee700c">
+  <producedTypes>
+    <objectType typeId="293e1170-c0b3-4fd5-8d86-978f723611a0" valueTypeId="137bf9d9-9bac-4baa-bac6-b080ce448746"/>
+    <refType typeId="83a0ab8c-85c0-4208-aeb5-ec0c2ef62d99" valueTypeId="8b559fc7-9629-4578-891b-7e5734ca3aba"/>
+    <selectionType typeId="385e2055-2f38-4712-b43e-171b8b358830" valueTypeId="ea5e1ea0-1492-4ca9-a2ff-b1d9c1846b48"/>
+    <listType typeId="f19e97c0-ad65-43df-9094-50dba32f8ee0" valueTypeId="e6b32ec3-5893-43f0-a602-6f6500b25105"/>
+    <managerType typeId="4dbf91d2-eeb6-4654-93bc-be16b7277fbb" valueTypeId="6410b5aa-0e3d-482f-b0cd-3c226baa1811"/>
+    <containerType typeId="193d2dd1-6e33-4374-b7d0-7196bf34f2d8" valueTypeId="79c5597e-95fa-4bb6-82bb-a100f76624e2"/>
+  </producedTypes>
+  <name>ПланВидовХарактеристик1</name>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ПланВидовХарактеристик1.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ПланВидовХарактеристик1.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="19a3d556-a24b-4c48-9b70-bdf5a6052a0c">
+    <name>Реквизит1</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:ChartOfCharacteristicTypes>

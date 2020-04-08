@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccountingRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3fac4067-d871-443f-b966-bc783a761253">
+  <producedTypes>
+    <selectionType typeId="a285b1e4-7ef8-4f09-90f7-e197884b543e" valueTypeId="d14485b2-39c1-42a3-839e-5dce3c3f264c"/>
+    <listType typeId="83507dce-30d8-4da7-a21c-cf367a483e53" valueTypeId="746e7667-bc1d-4ab0-b382-b7c864dd0208"/>
+    <managerType typeId="2d6597fa-f000-4aea-92d4-5b09804a855b" valueTypeId="f88f22ac-eeac-47e4-a83e-1463dabf2f34"/>
+    <recordSetType typeId="1b7bf81d-584c-4423-80ec-2a36ecdc71b7" valueTypeId="638aebfe-5df8-4c90-a3a8-75dd1fc43ae6"/>
+    <recordKeyType typeId="4b4814da-2925-4bbd-9331-e578c82f76cd" valueTypeId="c26a6f7f-b153-4d47-af0e-21b4e1d67d07"/>
+    <recordType typeId="fe9419e6-9003-4425-9909-519b2e28b059" valueTypeId="1c692f88-932c-4a09-8339-267d6c93bb8a"/>
+    <extDimensionsType typeId="34bc5eb7-ca97-4f81-932e-4a39552415e8" valueTypeId="9b228d7b-01c3-4ee2-88c0-75e6bd8bbcdd"/>
+  </producedTypes>
+  <name>РегистрБухгалтерии1</name>
+  <useStandardCommands>true</useStandardCommands>
+  <chartOfAccounts>ChartOfAccounts.ПланСчетов1</chartOfAccounts>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <dimensions uuid="dc7a9c2c-3088-435a-9ea4-51933b93a3bf">
+    <name>Измерение1</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <balance>true</balance>
+  </dimensions>
+  <resources uuid="d2eae556-d34a-43be-89e3-677c3a9e0de7">
+    <name>Ресурс1</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <balance>true</balance>
+  </resources>
+</mdclass:AccountingRegister>

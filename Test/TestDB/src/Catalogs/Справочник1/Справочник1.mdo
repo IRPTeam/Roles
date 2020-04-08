@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fdd5fc5f-5f4e-456c-bf45-c23d2dfcfaa3">
+  <producedTypes>
+    <objectType typeId="31da1340-1028-407c-b1e8-fba65ab87815" valueTypeId="e5f8482a-8502-4c4d-a2ae-96d5d488d0c7"/>
+    <refType typeId="e199f2e2-46a0-4dd3-8e2b-890934cfd8a2" valueTypeId="68313eca-3296-467f-9e92-3e33c210fe8e"/>
+    <selectionType typeId="ce87a6f2-62fc-4059-84d9-392422fc6fe5" valueTypeId="d04e5b92-b1f2-496b-a0c8-f2428d7bdeeb"/>
+    <listType typeId="44992b95-dd1d-49d3-b208-9258afdd23a1" valueTypeId="7ff3e771-cea5-4ac1-94a4-c2a7578c0d0c"/>
+    <managerType typeId="b47384b2-f3fa-4249-aacf-2db14b5f6fe1" valueTypeId="f74e8d15-afce-4e20-b732-a276252aa543"/>
+  </producedTypes>
+  <name>Справочник1</name>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Справочник1.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Справочник1.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="a4ca4a7b-7f74-4ae8-9f2a-631ba31d5f65">
+    <name>Реквизит1</name>
+    <type>
+      <types>CatalogRef.Справочник2</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

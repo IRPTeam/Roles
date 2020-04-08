@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22e513c8-523c-4737-a263-5cd15518baf1">
+  <name>HTTPСервис1</name>
+  <rootURL>роьроь</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="bb89559f-48b2-4674-89a2-a0bd50741804">
+    <name>ШаблонURL1</name>
+    <template>/*</template>
+    <methods uuid="0403b2c3-ad15-47d4-9b6e-887d851dbc96">
+      <name>Метод1</name>
+      <handler>ШаблонURL1Метод1</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

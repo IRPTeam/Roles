@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df5d9e5b-6050-4eed-a126-3cf00370a245">
+  <name>ФункциональнаяОпция1</name>
+  <location>Constant.Константа1</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

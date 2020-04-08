@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45bc40f9-2b69-4bc6-8dfc-b22ccc94a4e3">
+  <name>РегламентноеЗадание1</name>
+  <methodName>CommonModule.ОбщийМодуль1.РегламентноеЗадание1</methodName>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

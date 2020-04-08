@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aed85d47-e1a3-4f0b-9a4e-4bb4f2c2cbc7">
+  <producedTypes>
+    <objectType typeId="538464ec-6d8e-420a-9ad4-beefa7ef0bcc" valueTypeId="31a1b5a9-47fd-47d5-a3b5-c2c4c2adf939"/>
+    <refType typeId="bdb75ecc-d8b0-4ad6-b803-cf96aebfcd90" valueTypeId="b54331e7-4f2f-4720-bc2e-784120df5f43"/>
+    <selectionType typeId="a66a6048-4f8b-4913-aee5-9395049ded80" valueTypeId="0c73c156-f4c0-4407-a310-ea6afa3b4f4e"/>
+    <listType typeId="acf52b21-7b62-404f-a0bb-5d62c14d303b" valueTypeId="ae7d6fcd-5019-4824-be37-b0f84d4c43de"/>
+    <managerType typeId="6a3c565a-9e47-4776-ac30-f21179372bbf" valueTypeId="637a26a6-b28b-41ac-b69c-050ad05dcc45"/>
+  </producedTypes>
+  <name>Документ1</name>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Документ1.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.РегистрНакопления1</registerRecords>
+  <registerRecords>AccountingRegister.РегистрБухгалтерии1</registerRecords>
+  <registerRecords>CalculationRegister.РегистрРасчета1</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+</mdclass:Document>

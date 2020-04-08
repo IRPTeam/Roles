@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b21cb32-3bbd-4778-9a01-fd161cc0f8a5">
+  <name>Конфигурация</name>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="f8462078-a42b-4054-a9d5-cbd52615693f"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="7ee11d9e-2423-42b9-8b1b-1c4ba2c5dda8"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="aef02318-162f-4334-9ddf-fd5eced37dc6"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="88b88246-7f4b-4f86-a85f-a74457d06217"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="beff7e51-3053-47ab-9ddb-c74d2825abe4"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="f6f9ee0d-b91e-402b-9a29-1c597cf669ec"/>
+  <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.14</compatibilityMode>
+  <languages uuid="4e80abb5-811a-4bb7-a1ba-71fcf4d12d8c">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <languages uuid="f7f6a275-ab95-486c-b1ff-cffc1af75b17">
+    <name>English</name>
+    <synonym>
+      <key>ru</key>
+      <value>English</value>
+    </synonym>
+    <languageCode>en</languageCode>
+  </languages>
+  <subsystems>Subsystem.Подсистема1</subsystems>
+  <roles>Role.Роль1</roles>
+  <roles>Role.Роль2</roles>
+  <commonTemplates>CommonTemplate.Макет</commonTemplates>
+  <filterCriteria>FilterCriterion.КритерийОтбора1</filterCriteria>
+  <commonModules>CommonModule.ОбщийМодуль1</commonModules>
+  <exchangePlans>ExchangePlan.ПланОбмена1</exchangePlans>
+  <webServices>WebService.WebСервис1</webServices>
+  <httpServices>HTTPService.HTTPСервис1</httpServices>
+  <eventSubscriptions>EventSubscription.ПодпискаНаСобытие1</eventSubscriptions>
+  <scheduledJobs>ScheduledJob.РегламентноеЗадание1</scheduledJobs>
+  <settingsStorages>SettingsStorage.ХранилищеНастроек1</settingsStorages>
+  <functionalOptions>FunctionalOption.ФункциональнаяОпция1</functionalOptions>
+  <functionalOptionsParameters>FunctionalOptionsParameter.ПараметрФункциональныхОпций1</functionalOptionsParameters>
+  <definedTypes>DefinedType.ОпределяемыйТип1</definedTypes>
+  <commonCommands>CommonCommand.ОбщаяКоманда1</commonCommands>
+  <commandGroups>CommandGroup.ГруппаКоманд1</commandGroups>
+  <constants>Constant.Константа1</constants>
+  <commonForms>CommonForm.Форма</commonForms>
+  <catalogs>Catalog.Справочник1</catalogs>
+  <catalogs>Catalog.Справочник2</catalogs>
+  <catalogs>Catalog.Справочник3</catalogs>
+  <catalogs>Catalog.Users</catalogs>
+  <documents>Document.Документ1</documents>
+  <documentNumerators>DocumentNumerator.НумераторДокументов1</documentNumerators>
+  <sequences>Sequence.Последовательность1</sequences>
+  <documentJournals>DocumentJournal.ЖурналДокументов1</documentJournals>
+  <enums>Enum.Перечисление1</enums>
+  <reports>Report.Отчет1</reports>
+  <dataProcessors>DataProcessor.Обработка1</dataProcessors>
+  <informationRegisters>InformationRegister.РегистрСведений1</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.РегистрНакопления1</accumulationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ПланВидовХарактеристик1</chartsOfCharacteristicTypes>
+  <chartsOfAccounts>ChartOfAccounts.ПланСчетов1</chartsOfAccounts>
+  <accountingRegisters>AccountingRegister.РегистрБухгалтерии1</accountingRegisters>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ПланВидовРасчета1</chartsOfCalculationTypes>
+  <calculationRegisters>CalculationRegister.РегистрРасчета1</calculationRegisters>
+  <businessProcesses>BusinessProcess.БизнесПроцесс1</businessProcesses>
+  <tasks>Task.Задача1</tasks>
+  <externalDataSources>ExternalDataSource.ВнешнийИсточникДанных1</externalDataSources>
+</mdclass:Configuration>

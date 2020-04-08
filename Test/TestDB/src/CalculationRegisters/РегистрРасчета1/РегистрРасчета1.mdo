@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f8fefe2-c41d-413b-9135-e1949848a395">
+  <producedTypes>
+    <selectionType typeId="51dd0670-3d25-4d2c-88f9-25e1ba3b62a4" valueTypeId="d3082ab0-e938-4ce8-90b3-8d1c087c7dbd"/>
+    <listType typeId="b1902057-a369-4d97-b9ba-b7f3e5d0ca58" valueTypeId="f21c950d-78fb-4294-85e4-4bbb45c0cfdd"/>
+    <managerType typeId="dba15f4d-00b8-40a5-9b76-e1f6e6f432df" valueTypeId="cb7a8f00-3287-4515-8745-7e04b41068f0"/>
+    <recordSetType typeId="a67d6c46-a20c-4fb1-9599-4a134e40a78e" valueTypeId="05886917-c0bc-43a9-87bc-8741f044c749"/>
+    <recordKeyType typeId="b317082f-2d62-4db6-b982-a171728b6c2b" valueTypeId="0f5ac3d1-4057-4744-b027-345940e24d62"/>
+    <recordType typeId="a45870e0-debc-4ad6-b53b-58d7126c4114" valueTypeId="b85cab26-7950-4830-a088-d6082edbbd11"/>
+    <recalcsType typeId="db9a712f-8001-487f-ba6d-14b21d7985a6" valueTypeId="b56910c0-f6cd-4bc3-a03a-535107604738"/>
+  </producedTypes>
+  <name>РегистрРасчета1</name>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ПланВидовРасчета1</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="61fcf37b-d8ac-4b8a-aeeb-6a2a7f166029">
+    <name>Ресурс1</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="416933f9-b839-404f-932f-f9787f27f61c">
+    <name>Реквизит1</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="cc0d5c26-9fe1-4942-8ec8-206681db7566">
+    <name>Измерение1</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <recalculations uuid="814b71d6-eda5-4028-a000-285870119508">
+    <producedTypes>
+      <recordType typeId="f948013a-3877-443c-918e-83e3e8df2a2c" valueTypeId="82287762-f6cb-413b-8023-9d38bae2b3ba"/>
+      <managerType typeId="2ba895cf-67ef-401b-a22e-51c35a1d2c84" valueTypeId="b634753d-1a6e-4f6d-9f4d-4bb1485ff808"/>
+      <recordSetType typeId="6e9962d6-355f-44f8-9acc-378d80e5f58b" valueTypeId="c02509d2-beda-4201-b5c9-96643204a631"/>
+    </producedTypes>
+    <name>Перерасчет1</name>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </recalculations>
+</mdclass:CalculationRegister>

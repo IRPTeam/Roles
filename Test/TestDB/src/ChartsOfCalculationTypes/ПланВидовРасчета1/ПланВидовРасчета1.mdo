@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02cf3c70-85a4-4342-8fb4-18587509327b">
+  <producedTypes>
+    <objectType typeId="0b994c7a-429d-4540-927b-9c644e6d5fb8" valueTypeId="0f62f69e-ca26-4ad8-8eac-3d2b9298abd2"/>
+    <refType typeId="08ac8c66-5349-4f24-a792-e04110881e35" valueTypeId="26e59bff-f232-424e-8431-c139118342a1"/>
+    <selectionType typeId="a488c283-4782-4580-ac55-0d783e435094" valueTypeId="6c5e4b85-7da5-42b4-bc3f-06e1f35db0b4"/>
+    <listType typeId="7b151252-48d6-48fc-bf87-5a3f75911882" valueTypeId="e79bf946-e291-427d-8794-5b5b9c2a9afc"/>
+    <managerType typeId="0487a1e8-d264-4b0b-bd62-2b4e626503ef" valueTypeId="f09c0328-7cb5-4bb7-8713-45570f754f9c"/>
+    <displacingCalculationTypesType typeId="258b7a58-5cfd-4193-97c6-a584f783f1d8" valueTypeId="f60c095f-b3af-4d54-979f-a49ac819c0da"/>
+    <displacingCalculationTypesRowType typeId="96f40658-a5d5-4d94-817e-b941ea29dd89" valueTypeId="728d99f8-70a7-4ee9-b243-2d3a23f0d720"/>
+    <baseCalculationTypesType typeId="ab84d869-463b-47b3-9334-fd1a003c2765" valueTypeId="b4a0021c-e823-4d18-a54e-f5029c1cec93"/>
+    <baseCalculationTypesRowType typeId="beb54d39-030f-44d2-8b84-ea81a7c0fe6e" valueTypeId="e55b0532-8ec1-46ba-95fa-a1a5c928a186"/>
+    <leadingCalculationTypesType typeId="6760e1d5-bfb9-41ff-8533-4ac19460a980" valueTypeId="2009a162-84d4-4d4e-8f0a-5d8eefa44081"/>
+    <leadingCalculationTypesRowType typeId="0ad5fc9e-464b-4a22-8978-c8ca5b3370da" valueTypeId="09580375-6c76-4c56-8840-74801f99e849"/>
+  </producedTypes>
+  <name>ПланВидовРасчета1</name>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.ПланВидовРасчета1.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCalculationTypes.ПланВидовРасчета1.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ПланВидовРасчета1</baseCalculationTypes>
+  <attributes uuid="879a9331-c890-49f2-ac4b-fea38116e31b">
+    <name>Реквизит1</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:ChartOfCalculationTypes>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23e45311-9f9d-4658-b0f7-0a4e5a0c872a">
+  <producedTypes>
+    <selectionType typeId="8298bc5d-6bf4-4146-9e48-827f8f7464f9" valueTypeId="04a82b40-5bb2-4bc4-a43f-398df21a68f6"/>
+    <listType typeId="179e8819-f910-4c58-9afe-55fe6391f4da" valueTypeId="180d32e4-70ad-479b-9659-aedc8c8162c2"/>
+    <managerType typeId="98dbbebd-6420-421a-9785-c1feb88febbc" valueTypeId="27d127ce-47fc-4257-b44d-e83c8bd1ed47"/>
+    <recordSetType typeId="522a1129-d280-4187-9789-5608dec11fef" valueTypeId="429bf2d8-28da-4ca7-9346-d2595e7acd2b"/>
+    <recordKeyType typeId="f766dccd-1481-4613-8277-f45752da5913" valueTypeId="dbda9992-f454-4370-843c-60e117fc6811"/>
+    <recordType typeId="af3595a5-3976-4154-b65d-6440ba4a1291" valueTypeId="188fa0bd-a05e-494c-b30b-a048833fe46a"/>
+  </producedTypes>
+  <name>РегистрНакопления1</name>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="175fcfb2-8c4a-4c86-8725-7e4b159e6f93">
+    <name>Ресурс1</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="cbd498a5-f93b-4fde-aba0-287c6380f2a7">
+    <name>Измерение1</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfAccounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7015550a-1750-46d4-93d0-0f478070a188">
+  <producedTypes>
+    <objectType typeId="0ed69370-656a-4d8c-9967-735d1968e05d" valueTypeId="f25caee2-c2c9-43e2-a923-5e7390add5c9"/>
+    <refType typeId="b1814a84-cf4b-4047-85b7-23d4ceb1cd99" valueTypeId="73688b3e-78f6-44f0-a5da-a32149a5d123"/>
+    <selectionType typeId="0e889e4e-7269-4671-aa3a-9dfbeb3d88d0" valueTypeId="67cd4355-0178-41bd-a882-7be833925faf"/>
+    <listType typeId="c11b9a0b-7960-4b80-a38d-a3a4fbb2a0be" valueTypeId="7471da6d-71e7-44bb-bbef-05b9448b4827"/>
+    <managerType typeId="0a17f773-8179-4d19-a442-c594b8f31ebe" valueTypeId="102d87e6-2d73-4689-a404-01f456be31fc"/>
+    <extDimensionTypes typeId="1cf963fa-2f11-4d84-a2f3-2d77c06415e0" valueTypeId="4ce7c823-5cb9-4d0b-8379-17df6096adf8"/>
+    <extDimensionTypesRow typeId="5854da5d-0573-4cdc-b10b-570316992578" valueTypeId="d4674a7d-02cb-4ff3-bec6-153e121b55dd"/>
+  </producedTypes>
+  <name>ПланСчетов1</name>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfAccounts.ПланСчетов1.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfAccounts.ПланСчетов1.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="fd826193-358c-47c0-845e-ce0209cad267">
+    <name>Реквизит1</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="4428002c-cc72-43ed-9b6b-dfae8421034a">
+    <producedTypes>
+      <objectType typeId="3ff613d6-4361-4cb5-be4f-4894445510c8" valueTypeId="18fda96b-e6a6-4b66-9969-5d40086a084c"/>
+      <rowType typeId="8375e31a-b8ee-4944-a00e-0c6b174f1f3a" valueTypeId="88288880-44c4-4a4d-9666-15c1141cc1c5"/>
+    </producedTypes>
+    <name>ТабличнаяЧасть1</name>
+    <attributes uuid="aa0e179f-026e-4865-b8df-e21d904c0feb">
+      <name>Реквизит1</name>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <accountingFlags uuid="46952663-3ae8-4d95-880d-48beafdaf39b">
+    <name>ПризнакУчета1</name>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </accountingFlags>
+  <extDimensionAccountingFlags uuid="fd89c899-842f-4eba-8d2a-7aaaa2ef1aa3">
+    <name>ПризнакУчетаСубконто1</name>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </extDimensionAccountingFlags>
+</mdclass:ChartOfAccounts>
