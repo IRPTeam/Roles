@@ -102,7 +102,6 @@
       <common>true</common>
     </userVisible>
     <horizontalAlign>Left</horizontalAlign>
-    <autoFill>true</autoFill>
   </autoCommandBar>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>

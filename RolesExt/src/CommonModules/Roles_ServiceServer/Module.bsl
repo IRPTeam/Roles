@@ -1,3 +1,4 @@
+#Region Internal
 Function DeserializeXMLUseXDTOFactory(Value) Export
 	Reader = New XMLReader();
 	Reader.SetString(Value);
@@ -61,3 +62,4 @@ EndFunction
 Function FooterTemplate() Export
 	Return Roles_SettingsReUse.MatrixTemplates().GetArea("Footer");
 EndFunction
+#EndRegion

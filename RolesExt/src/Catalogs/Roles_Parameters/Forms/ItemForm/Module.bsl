@@ -1,17 +1,8 @@
 
+#Region FormEventHandlers
+
 &AtServer
 Procedure OnCreateAtServer(Cancel, StandardProcessing)
-	DisplayFilter();
-EndProcedure
-
-&AtServer
-Procedure DisplayFilter()
-	Items.ValueList.Visible = Object.isList;
-	Items.ValueData.Visible = Not Object.isList;
-EndProcedure
-
-&AtClient
-Procedure isListOnChange(Item)
 	DisplayFilter();
 EndProcedure
 
@@ -32,23 +23,61 @@ Procedure BeforeWriteAtServer(Cancel, CurrentObject, WriteParameters)
 	CurrentObject.ValueTypeData 	= New ValueStorage(ValueType);
 EndProcedure
 
-
-&AtClient
-Procedure ValueTypeOnChange(Item)
-	
-	
-	
-	Items.ValueData.TypeRestriction = New TypeDescription(ValueType);
-	ValueList.ValueType = New TypeDescription(ValueType);
-EndProcedure
-
-
 &AtClient
 Procedure BeforeWrite(Cancel, WriteParameters)
 	Try
+		// @skip-warning
 		Str = New Structure(Object.Description);
 	Except
 		Cancel = True;
 	EndTry;
 EndProcedure
+
+&AtClient
+Procedure OnOpen(Cancel)
+	SetValueType();
+EndProcedure
+#EndRegion
+
+#Region FormHeaderItemsEventHandlers
+&AtClient
+Procedure ValueTypeOnChange(Item)
+	SetValueType();
+EndProcedure
+
+&AtClient
+Procedure isListOnChange(Item)
+	DisplayFilter();
+EndProcedure
+
+#EndRegion
+
+#Region Private
+
+&AtServer
+Procedure DisplayFilter()
+	Items.ValueList.Visible = Object.isList;
+	Items.ValueData.Visible = Not Object.isList;
+EndProcedure
+
+&AtClient
+Procedure SetValueType()
+	Items.ValueData.TypeRestriction = New TypeDescription(ValueType);
+	ValueList.ValueType = New TypeDescription(ValueType);
+EndProcedure
+
+#EndRegion
+
+
+
+
+
+
+
+
+
+
+
+
+
 

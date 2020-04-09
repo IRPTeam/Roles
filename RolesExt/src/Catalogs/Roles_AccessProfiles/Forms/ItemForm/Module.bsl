@@ -1,10 +1,18 @@
+#Region Variables
 &AtClient
 Var AllRights Export;
+#EndRegion
 
-&AtClient
-Procedure UpdateMatrix(Command)
-	UpdateMatrixAtServer(AllRights);
+#Region FormEventHandlers
+
+&AtServer
+Procedure OnCreateAtServer(Cancel, StandardProcessing)
+	ShowAllRoles = True;
 EndProcedure
+
+#EndRegion
+
+#Region FormHeaderItemsEventHandlers
 
 &AtClient
 Procedure TabDocMartixOnActivate(Item)
@@ -46,12 +54,29 @@ Procedure TabDocMartixOnActivate(Item)
 	EndDo;
 EndProcedure
 
-&AtServer
-Procedure OnCreateAtServer(Cancel, StandardProcessing)
-	ShowAllRoles = True;
+&AtClient
+Procedure RolesOnChange(Item)
+	Items.TabDocMartix.BlackAndWhiteView = True;
 EndProcedure
 
+#EndRegion
 
+#Region FormCommandsEventHandlers
+
+&AtClient
+Procedure UpdateMatrix(Command)
+	UpdateMatrixAtServer(AllRights);
+EndProcedure
+
+&AtClient
+Procedure EditOn(Command)
+	Items.TabDocMartixEditOn.Check = Not Items.TabDocMartixEditOn.Check;
+	Items.TabDocMartix.Protection = Not Items.TabDocMartixEditOn.Check;
+EndProcedure
+
+#EndRegion
+
+#Region Private
 
 &AtServer
 Procedure UpdateMatrixAtServer(AllRights)
@@ -119,7 +144,7 @@ Procedure UpdateMatrixAtServer(AllRights)
 	QueryResult = Query.ExecuteBatch();
 	AllRightsVT =  QueryResult[1].Unload();
 	ObjectData = New Structure;
-	ObjectData.Insert("RightTable",AllRightsVT);
+	ObjectData.Insert("RightTable", AllRightsVT);
 	ObjectData.Insert("RestrictionByCondition", QueryResult[2].Unload());
 	ObjectData.Insert("SetRightsForNewNativeObjects", True);
 	ObjectData.Insert("SetRightsForAttributesAndTabularSectionsByDefault", True);
@@ -143,16 +168,10 @@ Procedure UpdateMatrixAtServer(AllRights)
 	Items.TabDocMartix.BlackAndWhiteView = False;
 EndProcedure
 
-&AtClient
-Procedure RolesOnChange(Item)
-	Items.TabDocMartix.BlackAndWhiteView = True;
-EndProcedure
+#EndRegion
 
-&AtClient
-Procedure EditOn(Command)
-	Items.TabDocMartixEditOn.Check = Not Items.TabDocMartixEditOn.Check;
-	Items.TabDocMartix.Protection = Not Items.TabDocMartixEditOn.Check;
-EndProcedure
-
+#Region Initialize
 
 AllRights = New Map;
+
+#EndRegion

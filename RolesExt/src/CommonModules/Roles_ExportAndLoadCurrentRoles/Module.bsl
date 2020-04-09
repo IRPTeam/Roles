@@ -1,7 +1,8 @@
+#Region Internal
 Procedure UpdateRoleExt(Val Settings, CountRoles = 0) Export
 	LoadFromTemp = False;
 	If Settings.Source = "SQL"
-		or Settings.Source = "File" Then
+		Or Settings.Source = "File" Then
 			
 		Path = TempFilesDir() + "TR";
 		DeleteFiles(Path);
@@ -31,9 +32,11 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0) Export
 	
 	If LoadFromTemp Then	
 		DeleteFiles(Path);
-	ENdIf;	
+	EndIf;	
 EndProcedure
+#EndRegion
 
+#Region Private
 Procedure LoadFromEDTFormat(Settings, Val Rights)
 
 	For Each Right In Rights Do
@@ -251,3 +254,4 @@ Procedure LoadFromXMLFormat(Settings, Val Rights)
 		RightObject.Write();
 	EndDo;
 EndProcedure
+#EndRegion

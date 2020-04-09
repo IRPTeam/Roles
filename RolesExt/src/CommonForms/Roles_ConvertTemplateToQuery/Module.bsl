@@ -1,3 +1,58 @@
+#Region FormEventHandlers
+&AtServer
+Procedure OnCreateAtServer(Cancel, StandardProcessing)
+	CurrentAccessRightName = Parameters.RightName;
+	CurrentTableName = Parameters.ObjectPath;
+	RLS =  Parameters.Text;
+		
+	Query = New Query;
+	Query.Text = 
+		"SELECT
+		|	Roles_Templates.Description AS Name,
+		|	Roles_Templates.Template AS Code
+		|FROM
+		|	Catalog.Roles_Templates AS Roles_Templates
+		|WHERE
+		|	NOT Roles_Templates.DeletionMark
+		|	AND Roles_Templates.Ref IN(&RLSList)";
+	Query.SetParameter("RLSList", Parameters.RLSList);
+	QueryResult = Query.Execute().Unload();
+	Templates.Load(QueryResult);
+	
+
+	If Metadata.ScriptVariant = Metadata.ObjectProperties.ScriptVariant.Russian Then
+		// BSLLS:IfElseIfEndsWithElse-off
+		If CurrentAccessRightName = "Read" Then
+			CurrentAccessRightName = "Чтение";
+		ElsIf CurrentAccessRightName = "Insert" Then
+			CurrentAccessRightName = "Добавление";
+		ElsIf CurrentAccessRightName = "Update" Then
+			CurrentAccessRightName = "Изменение";
+		ElsIf CurrentAccessRightName = "Delete" Then
+			CurrentAccessRightName = "Удаление";
+		EndIf;
+		// BSLLS:IfElseIfEndsWithElse-on
+		
+		CurrentTableName = Metadata.FindByFullName(CurrentTableName).FullName();
+		
+	EndIf;
+	
+EndProcedure
+
+&AtClient
+Procedure OnOpen(Cancel)
+	For Each Row In Templates Do
+		If StrFind(Row.Name, "(") Then
+			Row.NamedParams = FunctionString(Row.Name, StrFind(Row.Name, "("));
+		EndIf;
+		Row.Name = StrSplit(Row.Name, " (")[0];
+	EndDo;
+EndProcedure
+
+
+#EndRegion
+
+#Region FormCommandsEventHandlers
 
 &AtClient
 Procedure ConvertToQuery(Command)
@@ -27,18 +82,44 @@ Procedure ConvertToQuery(Command)
 	
 EndProcedure
 
+&AtClient
+Procedure ConvertToBSLCode(Command)
+	ConvertToBSLCodeAtServer();	
+EndProcedure
+
+&AtClient
+Procedure ConvertToInternalBSLCode(Command)
+	ConvertToInternalBSLCodeAtServer();
+EndProcedure
+
+&AtClient
+Procedure RunBSLCode(Command)
+	RunBSLCodeAtServer();
+EndProcedure
+
+&AtClient
+Procedure QueryWizard(Command)
+	QueryWizard = New QueryWizard;
+	If Not IsBlankString(QueryText) Then
+		QueryWizard.Text = QueryText;
+	EndIf;
+	QueryWizard.Show(New NotifyDescription("AfterQueryChange", ThisObject));
+EndProcedure
+
+&AtClient
+Procedure RunReport(Command)
+	RunReportAtServer();
+EndProcedure
+
+#EndRegion
+
+#Region Private
+
+#Region CalculateQuery
+
+
 &AtServer
 Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
-	
-	Query = New Query;
-	SessionParametersTable.Clear();
-	For Each Param In AdditionalParamsStructure Do
-		Query.SetParameter(Param.Key, Param.Value);
-		NewSP = SessionParametersTable.Add();
-		NewSP.Name = Param.Key;
-		NewSP.Value = Param.Value;
-	EndDo;	
-	 
 	
 	DebugsTree = FormAttributeToValue("DebugTree");
 	TotalRLSCode = RLS;
@@ -54,43 +135,63 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 	RLSTemplateView = TotalRLSCode;
 	
 	FullCode = StrReplace(TotalRLSCode, "&", "AdditionalParamsStructure.");
-	Result = True;	
 	Rows = StrSplit(FullCode, "#", False);
 	QueryText = StrConcat(Rows, Chars.LF);
+		
+	CalculateTreeRow(NewRow, Rows, AdditionalParamsStructure);
+
+	QueryRowsArray = New Array;
+	DebugsTree.Rows[0].Status = True;
+	CalculateQueryRows(DebugsTree.Rows[0].Rows, QueryRowsArray);
+	QueryText = StrConcat(QueryRowsArray, "");
+	QueryText = StrReplace(QueryText, "AdditionalParamsStructure.", "&");
+	
+	ValueToFormAttribute(DebugsTree, "DebugTree");
+EndProcedure
+
+
+&AtServer
+Procedure CalculateTreeRow(NewRow, Rows, AdditionalParamsStructure) 
+	Query = New Query;
+	SessionParametersTable.Clear();
+	For Each Param In AdditionalParamsStructure Do
+		Query.SetParameter(Param.Key, Param.Value);
+		NewSP = SessionParametersTable.Add();
+		NewSP.Name = Param.Key;
+		NewSP.Value = Param.Value;
+	EndDo;	
 	
 	For Index = 0 To Rows.Count() - 1 Do
-		Row = Rows[Index];
-		Row = TrimAll(Row);
+		Row = TrimAll(Rows[Index]);
 		FirstTextLen = StrLen(StrSplit(Row, " " + Chars.LF, False)[0]);
 		If StrStartsWith(Lower(Row), "if") Or StrStartsWith(Lower(Row), "если") Then
 			NewRow = NewRow.Rows.Add();
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
 			Result = CalculateResult(Code, AdditionalParamsStructure, Query);
-			
+
 			If TypeOf(Result) = Type("Array") Then
 				NewRow.Error = StrConcat(Result, Chars.LF);
 				Result = False;
+				Roles_CommonFunctionsClientServer.ShowUsersMessage(NewRow.Error);
 			EndIf;
-			
+		
+			// @skip-warning
 			NewRow.Result = Result;
 			NewRow.Condition = "If";
 			NewRow.ConditionText = Code;
-			If Not NewRow.Parent.Status	Then
-				Result = False;	
+			If Not NewRow.Parent.Status Then
+				Result = False;
 			EndIf;
+			// @skip-warning
 			NewRow.Status = Result;
-			
-			
-			
 			Index = Index + 1;
-			Row = Rows[Index];
-			Row = TrimAll(Row);
+			Row = TrimAll(Rows[Index]);
 			FirstTextLen = StrLen(StrSplit(Row, " " + Chars.LF, False)[0]);
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
-			NewRow.Code = Code;						
-			
+			NewRow.Code = Code;
+
 		ElsIf StrStartsWith(Lower(Row), "elseif") Or StrStartsWith(Lower(Row), "иначеесли") Then
-			
+
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
 			NewRow = NewRow.Parent.Rows.Add();
 			NewRow.Condition = "elsif";
@@ -98,67 +199,43 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 			If TypeOf(Result) = Type("Array") Then
 				NewRow.Error = StrConcat(Result, Chars.LF);
 				Result = False;
+				Roles_CommonFunctionsClientServer.ShowUsersMessage(NewRow.Error);
 			EndIf;
-
+			// @skip-warning
 			NewRow.Result = Result;
 			NewRow.ConditionText = Code;
-			
+
 			TmpIndex = NewRow.Parent.Rows.Count() - 1;
-			isSet = False;
-			While TmpIndex >= 0 Do
-				If NewRow.Parent.Rows[TmpIndex].Condition = "endif" Then
-					Break;
-				Else
-					If NewRow.Parent.Rows[TmpIndex].Status Then
-						isSet = True;
-						Break;
-					EndIf;
-				EndIf;
-				TmpIndex = TmpIndex - 1;
-			EndDo;
-			If isSet Then
+			If isFirstStatusTrue(TmpIndex, NewRow) Then
 				NewRow.Status = False;
 			Else
+			// @skip-warning
 				NewRow.Status = Result;
 			EndIf;
-			
-			
 			Index = Index + 1;
 			Row = Rows[Index];
 			Row = TrimAll(Row);
 			FirstTextLen = StrLen(StrSplit(Row, " " + Chars.LF, False)[0]);
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
-			NewRow.Code = Code;		
-			
+			NewRow.Code = Code;
+
 		ElsIf StrStartsWith(Lower(Row), "else") Or StrStartsWith(Lower(Row), "иначе") Then
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
 			NewRow = NewRow.Parent.Rows.Add();
-			
+
 			NewRow.Condition = "else";
 			NewRow.Code = Code;
-			
+
 			TmpIndex = NewRow.Parent.Rows.Count() - 1;
-			
-			isSet = False;
-			While TmpIndex >= 0 Do
-				If NewRow.Parent.Rows[TmpIndex].Condition = "endif" Then
-					Break;
-				Else
-					If NewRow.Parent.Rows[TmpIndex].Status Then
-						isSet = True;
-						Break;
-					EndIf;
-				EndIf;
-				TmpIndex = TmpIndex - 1;
-			EndDo;
-			If isSet Then
+
+			If isFirstStatusTrue(TmpIndex, NewRow) Then
 				NewRow.Status = False;
 			Else
 				NewRow.Status = NewRow.Parent.Status;
 			EndIf;
 			NewRow.Result = NewRow.Status;
 		ElsIf StrStartsWith(Lower(Row), "endif") Or StrStartsWith(Lower(Row), "конецесли") Then
-			
+
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
 			NewRow = NewRow.Parent.Rows.Add();
 			NewRow.Condition = "endif";
@@ -167,20 +244,33 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 			NewRow.Result = NewRow.Status;
 			NewRow =  NewRow.Parent;
 		Else
-			Continue;
+			Return;
 		EndIf;
 	EndDo;
-	QueryRowsArray = New Array;
-	DebugsTree.Rows[0].Status = True;
-	CalculateQueryRows(DebugsTree.Rows[0].Rows, QueryRowsArray);
-	QueryText = StrConcat(QueryRowsArray,"");
-	QueryText = StrReplace(QueryText, "AdditionalParamsStructure.", "&");
-	
-	ValueToFormAttribute(DebugsTree, "DebugTree");
 EndProcedure
 
+
+
 &AtServer
-Function CalculateResult(Val Code, AdditionalParamsStructure, Query)
+Function isFirstStatusTrue(TmpIndex, NewRow)
+	isSet = False;
+	While TmpIndex >= 0 Do
+		If NewRow.Parent.Rows[TmpIndex].Condition = "endif" Then
+			Break;
+		Else
+			If NewRow.Parent.Rows[TmpIndex].Status Then
+				isSet = True;
+				Break;
+			EndIf;
+		EndIf;
+		TmpIndex = TmpIndex - 1;
+	EndDo;
+	Return isSet;
+EndFunction
+
+
+&AtServer
+Function CalculateResult(Val Code, AdditionalParamsStructure, Query) Export
 	Result = Undefined;
 	ErrorList = New Array;
 	Try
@@ -196,7 +286,7 @@ Function CalculateResult(Val Code, AdditionalParamsStructure, Query)
 	Query.Text = 
 	"SELECT TOP 1
 	|	CASE
-	|		WHEN ("+Code+")
+	|		WHEN (" + Code + ")
 	|			THEN TRUE
 	|		ELSE FALSE
 	|	END AS Result";
@@ -204,14 +294,10 @@ Function CalculateResult(Val Code, AdditionalParamsStructure, Query)
 	Try
 		Return Query.Execute().Unload()[0].Result;
 	Except
-		ErrorList.Add(DetailErrorDescription(ErrorInfo()))
+		ErrorList.Add(DetailErrorDescription(ErrorInfo()));
 	EndTry;
-
-	For Each Row In ErrorList Do
-		Message(Row);
-	EndDo;
 	
-	Return ErrorList
+	Return ErrorList;
 EndFunction
 
 &AtServer
@@ -221,7 +307,7 @@ Procedure CalculateQueryRows(Rows, QueryRowsArray)
 			If ValueIsFilled(Row.Code) Then 
 				QueryRowsArray.Add(Row.Code);
 			EndIf;
-			CalculateQueryRows(Row.Rows, QueryRowsArray)
+			CalculateQueryRows(Row.Rows, QueryRowsArray);
 		EndIf;
 	EndDo;
 EndProcedure
@@ -232,9 +318,7 @@ Procedure FillAdditionalParam(AdditionalParamsStructure)
 		SessionParameter = Metadata.SessionParameters.Find(Param.Key);
 		If SessionParameter = Undefined Then
 			Constant = Metadata.Constants.Find(Param.Key);
-			If Constant = Undefined Then
-				// Raise Param.Key;
-			Else
+			If Not Constant = Undefined Then
 				AdditionalParamsStructure.Insert(Param.Key, Constants[Param.Key].Get());
 			EndIf;
 		Else
@@ -244,13 +328,14 @@ Procedure FillAdditionalParam(AdditionalParamsStructure)
 	EndDo;
 EndProcedure
 
+&AtServer
 Function AdditionalParamsStructure(RLSParamStructure)
 	AdditionalParamList = New Structure;
 	For Each Tmp In RLSParamStructure Do
 		CodeRows = StrSplit(Tmp.Value.Code, " ,.()/" + Chars.LF, False);
 		For Each Row In CodeRows Do
 			If StrStartsWith(Row, "&") Then
-				AdditionalParamList.Insert(StrReplace(Row,"&",""));
+				AdditionalParamList.Insert(StrReplace(Row, "&", ""));
 			EndIf;
 		EndDo;
 	EndDo;
@@ -258,13 +343,14 @@ Function AdditionalParamsStructure(RLSParamStructure)
 	CodeRows = StrSplit(RLS, " ,.()/" + Chars.LF, False);
 	For Each Row In CodeRows Do
 		If StrStartsWith(Row, "&") Then
-			AdditionalParamList.Insert(StrReplace(Row,"&",""));
+			AdditionalParamList.Insert(StrReplace(Row, "&", ""));
 		EndIf;
 	EndDo;
 	
 	Return AdditionalParamList;
 EndFunction
-	
+
+&AtClient	
 Procedure FillTemplateWithParams(RLSParamStructure)
 	For Each Tmp In RLSParamStructure Do
 		CurrentCode = Tmp.Value.Code;
@@ -295,14 +381,7 @@ Procedure FillTemplateWithParams(RLSParamStructure)
 	EndDo;
 EndProcedure
 
-Function StrContains(String, Substring) Export
-	Return StrFind(String, Substring) > 0;
-EndFunction
-
-Function СтрСодержит(String, Substring) Export
-	Return StrFind(String, Substring) > 0;
-EndFunction
-
+&AtClient
 Function ParamsStructureInTemplates(Val RLSString, Val TemplateStructure)
 	FilteredStructure = New Structure;
 	For Each TemplateRow In TemplateStructure Do
@@ -324,7 +403,7 @@ Function ParamsStructureInTemplates(Val RLSString, Val TemplateStructure)
 			ParamsArray.Add(RLSrows[Index]);
 			
 			If Index - 1 <=  TemplateRow.Value.NamedParams.UBound() Then
-				NamedParamsStructure.Insert(TemplateRow.Value.NamedParams[Index - 1], RLSrows[Index])
+				NamedParamsStructure.Insert(TemplateRow.Value.NamedParams[Index - 1], RLSrows[Index]);
 			EndIf;
 			
 		EndDo;
@@ -341,6 +420,7 @@ Function ParamsStructureInTemplates(Val RLSString, Val TemplateStructure)
 	Return FilteredStructure;
 EndFunction
 
+&AtClient
 Function FunctionString(Val RLSString, Val StartFunctionNumber)
 	
 	Start = StrFind(RLSString, "(", , StartFunctionNumber) + 1;
@@ -358,6 +438,7 @@ Function FunctionString(Val RLSString, Val StartFunctionNumber)
 
 EndFunction
 
+&AtClient
 Function NumberCharFunctionStart(Val RLSString, Val TemplateRow)
 	
 	StartFunctionNumber = StrFind(RLSString, "#" + TemplateRow.Key + "(");
@@ -377,7 +458,7 @@ Function NumberCharFunctionStart(Val RLSString, Val TemplateRow)
 	Return 0;
 EndFunction
 
-
+&AtClient
 Function DeleteCommentAndEmptyRow(Rows)
 	NewRows = New Array;
 	For Each Row In Rows Do
@@ -395,125 +476,31 @@ Function DeleteCommentAndEmptyRow(Rows)
 	Return NewRows;
 EndFunction
 
-&AtServer
-Procedure OnCreateAtServer(Cancel, StandardProcessing)
-	CurrentAccessRightName = Parameters.RightName;
-	CurrentTableName = Parameters.ObjectPath;
-	RLS =  Parameters.Text;
-		
-	Query = New Query;
-	Query.Text = 
-		"SELECT
-		|	Roles_Templates.Description AS Name,
-		|	Roles_Templates.Template AS Code
-		|FROM
-		|	Catalog.Roles_Templates AS Roles_Templates
-		|WHERE
-		|	NOT Roles_Templates.DeletionMark
-		|	AND Roles_Templates.Ref IN(&RLSList)";
-	Query.SetParameter("RLSList", Parameters.RLSList);
-	QueryResult = Query.Execute().Unload();
-	Templates.Load(QueryResult);
-	
-	For Each Row In Templates Do
-		If StrFind(Row.Name, "(") Then
-			Row.NamedParams = FunctionString(Row.Name, StrFind(Row.Name, "("));
-		EndIf;
-		Row.Name = StrSplit(Row.Name, " (")[0];;
-	EndDo;
-	
-	If Metadata.ScriptVariant = Metadata.ObjectProperties.ScriptVariant.Russian Then
-		If CurrentAccessRightName = "Read" Then
-			CurrentAccessRightName = "Чтение";
-		ElsIf CurrentAccessRightName = "Insert" Then
-			CurrentAccessRightName = "Добавление";
-		ElsIf CurrentAccessRightName = "Update" Then
-			CurrentAccessRightName = "Изменение";
-		ElsIf CurrentAccessRightName = "Delete" Then
-			CurrentAccessRightName = "Удаление";
-		EndIf;
-		
-		CurrentTableName = Metadata.FindByFullName(CurrentTableName).FullName();
-		
-	EndIf;
-	
-EndProcedure
-
-&AtClient
-Procedure QueryWizard(Command)
-	QueryWizard = New QueryWizard;
-	If Not IsBlankString(QueryText) Then
-		QueryWizard.Text = QueryText;
-	EndIf;
-	QueryWizard.Show(New NotifyDescription("AfterQueryChange", ThisObject));
-EndProcedure
-
-&AtClient
-Procedure AfterQueryChange(Text, AddInfo) Export
-    If Not IsBlankString(QueryText) Then
-        QueryText = Text;
-    EndIf;
-КонецПроцедуры
-
-&AtClient
-Procedure RunReport(Command)
-	RunReportAtServer();
-EndProcedure
 
 &AtServer
-Procedure RunReportAtServer()
-	DCSTemplate = GetCommonTemplate("Roles_DCS");
-	
-	For Each ParamStr In SessionParametersTable Do
-		NewParam = DCSTemplate.Parameters.Add();
-		NewParam.Name = ParamStr.Name;
-		NewParam.Value = ParamStr.Value;
-		NewParam.Use = DataCompositionParameterUse.Always;
-	EndDo;
-	
-	QueryText = StrReplace(QueryText, FindStringIntoQuery, ReplaceStringWith);
-	
-	DataSet = DCSTemplate.DataSets[0];
-	DataSet.Query = (QueryText);
-
-	
-	Address = PutToTempStorage(DCSTemplate, UUID);
-	SettingsComposer.Initialize(New DataCompositionAvailableSettingsSource(Address));
-	
-	SettingsComposer.LoadSettings(DCSTemplate.DefaultSettings);
-	SettingsComposer.Settings.Selection.Items.Clear();
-	For Each Field In SettingsComposer.Settings.Selection.SelectionAvailableFields.Items Do
-		If Field.Folder Then
-			Continue;
-		EndIf;
-		Selection = SettingsComposer.Settings.Selection.Items.Add(Type("DataCompositionSelectedField"));
-		Selection.Use = True;
-		Selection.Field = Field.Field; 
-	EndDo;
-	
-	
-	
-	Settings = SettingsComposer.GetSettings();
-	DataCompositionSchema = GetFromTempStorage(Address);
-	Composer = New DataCompositionTemplateComposer();
-	Template = Composer.Execute(DataCompositionSchema, Settings);
-	TabDoc.Clear();
-	DataCompositionProcessor = New DataCompositionProcessor;
-	DataCompositionProcessor.Initialize(Template);
-	
-	OutputProcessor = New DataCompositionResultSpreadsheetDocumentOutputProcessor;
-	OutputProcessor.SetDocument(TabDoc);
-	OutputProcessor.Output(DataCompositionProcessor);
+Function PrepareQueryText(Val Text)
+	Text = StrReplace(Text, Char(34), Char(34) + Char(34));
+	Text = StrReplace(Text, Chars.LF, Chars.LF + "|");
+	Return Text;
+EndFunction
 
 
-EndProcedure
+#EndRegion
+
+#Region SpecialFunctionForRLS
+
+&AtServer
+Function StrContains(String, Substring) Export
+	Return StrFind(String, Substring) > 0;
+EndFunction
+
+&AtServer
+Function СтрСодержит(String, Substring) Export
+	Return StrFind(String, Substring) > 0;
+EndFunction
+#EndRegion
 
 #Region ConvertToExternalBSLCode
-&AtClient
-Procedure ConvertToBSLCode(Command)
-	ConvertToBSLCodeAtServer()	
-EndProcedure
-
 
 &AtServer
 Procedure ConvertToBSLCodeAtServer()
@@ -572,7 +559,7 @@ Procedure ConvertToBSLCodeRecursion(Rows, Array, FunctionMap, AdditionalParamsSt
 			
 			If TypeOf(CodeTypeOrData) = Type("Boolean") Then
 				Array.Add(Row.Condition + " " + Row.ConditionText + " Then");
-			ElsIf TypeOf(CodeTypeOrData) = Type("String") Then
+			Else
 				Array.Add(Row.Condition + " " + "QueryFunction" + Format(FunctionMap.Count()) + "(Query) Then");
 				
 				TmpArray = New Array;
@@ -581,8 +568,6 @@ Procedure ConvertToBSLCodeRecursion(Rows, Array, FunctionMap, AdditionalParamsSt
 				TmpArray.Add("Return Query.Execute().Unload()[0].Result;");
 				TmpArray.Add("EndFunction");
 				FunctionMap.Insert("QueryFunction" + Format(FunctionMap.Count()), TmpArray);
-			Else
-				
 			EndIf;
 		EndIf;
 		
@@ -595,73 +580,7 @@ EndProcedure
 
 #EndRegion
 
-&AtServer
-Function CodeTypeOrData(Val Code, AdditionalParamsStructure, Query)
-	Result = Undefined;
-	ErrorList = New Array;
-	Try
-		Execute("Result = " + Code);
-		Return False;
-	Except
-		ErrorList.Add(DetailErrorDescription(ErrorInfo()));
-	EndTry;
-	
-	// try to create query
-	Code = StrReplace(Code, "AdditionalParamsStructure.", "&");
-	Query.Text = 
-	"SELECT TOP 1
-	|	CASE
-	|		WHEN ("+Code+")
-	|			THEN TRUE
-	|		ELSE FALSE
-	|	END AS Result";
-		
-	Try
-		Query.Execute();
-		Text = Query.Text;
-		Text = PrepareQueryText(Text);
-
-		Return Text;
-	Except
-		ErrorList.Add(DetailErrorDescription(ErrorInfo()))
-	EndTry;
-
-	For Each Row In ErrorList Do
-		Message(Row);
-	EndDo;
-	
-	Return ErrorList
-EndFunction
-
-
-&AtServer
-Function PrepareQueryText(Val Text)
-	Text = StrReplace(Text, Char(34), Char(34) + Char(34));
-	Text = StrReplace(Text, Chars.LF, Chars.LF + "|");
-	Return Text;
-EndFunction
-
-
-&AtClient
-Procedure RunBSLCode(Command)
-	RunBSLCodeAtServer();
-EndProcedure
-
-
-&AtServer
-Procedure RunBSLCodeAtServer()
-	ArrayText = New Array;
-	Execute(BSLCode);
-	BSLResult = StrConcat(ArrayText, Chars.LF);
-EndProcedure
-
-#Region ConvertToExternalBSLCode
-
-&AtClient
-Procedure ConvertToInternalBSLCode(Command)
-	ConvertToInternalBSLCodeAtServer()
-EndProcedure
-
+#Region ConvertToInternalBSLCode
 
 &AtServer
 Procedure ConvertToInternalBSLCodeAtServer()
@@ -703,11 +622,9 @@ Procedure ConvertToInternalBSLCodeRecursion(Rows, Array,  AdditionalParamsStruct
 			
 			If TypeOf(CodeTypeOrData) = Type("Boolean") Then
 				Array.Add(Row.Condition + " " + Row.ConditionText + " Then");
-			ElsIf TypeOf(CodeTypeOrData) = Type("String") Then
+			Else
 				Array.Add("Query.Text = """ + CodeTypeOrData + """;");
 				Array.Add(Row.Condition + " Query.Execute().Unload()[0].Result Then");
-			Else
-				
 			EndIf;
 		EndIf;
 		
@@ -719,3 +636,110 @@ Procedure ConvertToInternalBSLCodeRecursion(Rows, Array,  AdditionalParamsStruct
 EndProcedure
 
 #EndRegion
+
+&AtServer
+Function CodeTypeOrData(Val Code, AdditionalParamsStructure, Query)
+	//@skip-warning
+	Result = Undefined;
+	ErrorList = New Array;
+	Try
+		Execute("Result = " + Code);
+		Return False;
+	Except
+		ErrorList.Add(DetailErrorDescription(ErrorInfo()));
+	EndTry;
+	
+	// try to create query
+	Code = StrReplace(Code, "AdditionalParamsStructure.", "&");
+	Query.Text = 
+	"SELECT TOP 1
+	|	CASE
+	|		WHEN (" + Code + ")
+	|			THEN TRUE
+	|		ELSE FALSE
+	|	END AS Result";
+		
+	Try
+		Query.Execute();
+		Text = Query.Text;
+		Text = PrepareQueryText(Text);
+
+		Return Text;
+	Except
+		ErrorList.Add(DetailErrorDescription(ErrorInfo()));
+	EndTry;
+
+	For Each Row In ErrorList Do
+		Roles_CommonFunctionsClientServer.ShowUsersMessage(Row);
+	EndDo;
+	
+	Return ErrorList;
+EndFunction
+
+&AtServer
+Procedure RunBSLCodeAtServer()
+	ArrayText = New Array;
+	Execute(BSLCode);
+	BSLResult = StrConcat(ArrayText, Chars.LF);
+EndProcedure
+
+&AtServer
+Procedure RunReportAtServer()
+	DCSTemplate = GetCommonTemplate("Roles_DCS");
+	
+	For Each ParamStr In SessionParametersTable Do
+		NewParam = DCSTemplate.Parameters.Add();
+		NewParam.Name = ParamStr.Name;
+		NewParam.Value = ParamStr.Value;
+		NewParam.Use = DataCompositionParameterUse.Always;
+	EndDo;
+	
+	QueryText = StrReplace(QueryText, FindStringIntoQuery, ReplaceStringWith);
+	
+	DataSet = DCSTemplate.DataSets[0];
+	DataSet.Query = (QueryText);
+
+	
+	Address = PutToTempStorage(DCSTemplate, UUID);
+	SettingsComposer.Initialize(New DataCompositionAvailableSettingsSource(Address));
+	
+	SettingsComposer.LoadSettings(DCSTemplate.DefaultSettings);
+	SettingsComposer.Settings.Selection.Items.Clear();
+	For Each Field In SettingsComposer.Settings.Selection.SelectionAvailableFields.Items Do
+		If Field.Folder Then
+			Continue;
+		EndIf;
+		Selection = SettingsComposer.Settings.Selection.Items.Add(Type("DataCompositionSelectedField"));
+		Selection.Use = True;
+		Selection.Field = Field.Field; 
+	EndDo;
+	
+	
+	
+	Settings = SettingsComposer.GetSettings();
+	DataCompositionSchema = GetFromTempStorage(Address);
+	Composer = New DataCompositionTemplateComposer();
+	Template = Composer.Execute(DataCompositionSchema, Settings);
+	TabDoc.Clear();
+	DataCompositionProcessor = New DataCompositionProcessor;
+	DataCompositionProcessor.Initialize(Template);
+	
+	OutputProcessor = New DataCompositionResultSpreadsheetDocumentOutputProcessor;
+	OutputProcessor.SetDocument(TabDoc);
+	OutputProcessor.Output(DataCompositionProcessor);
+
+
+EndProcedure
+
+&AtClient
+Procedure AfterQueryChange(Text, AddInfo) Export
+    If Not IsBlankString(QueryText) Then
+        QueryText = Text;
+    EndIf;
+EndProcedure
+
+#EndRegion
+
+
+
+

@@ -1,3 +1,4 @@
+#Region Private
 Procedure OnCopy(CopiedObject)
 	For Each Row In Rights Do
 		NewID = New UUID;
@@ -15,3 +16,4 @@ Procedure BeforeWrite(Cancel)
 		Cancel = True;
 	EndIf;
 EndProcedure
+#EndRegion

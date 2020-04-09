@@ -6,6 +6,14 @@
     <items xsi:type="form:FormField">
       <name>Description</name>
       <id>1</id>
+      <title>
+        <key>en</key>
+        <value>Name</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Имя</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -7228,11 +7236,11 @@
       </userVisible>
       <title>
         <key>en</key>
-        <value>Role matrix</value>
+        <value>Matrix</value>
       </title>
       <title>
         <key>ru</key>
-        <value>Матрица ролей</value>
+        <value>Матрица</value>
       </title>
       <toolTip>
         <key>en</key>
@@ -8288,11 +8296,11 @@
       </userVisible>
       <title>
         <key>en</key>
-        <value>Role details</value>
+        <value>Analyse &amp; Modify</value>
       </title>
       <title>
         <key>ru</key>
-        <value>Детали роли</value>
+        <value>Анализ и изменение</value>
       </title>
       <toolTip>
         <key>en</key>
@@ -9054,11 +9062,11 @@
       </userVisible>
       <title>
         <key>en</key>
-        <value>Langs</value>
+        <value>Descriptions</value>
       </title>
       <title>
         <key>ru</key>
-        <value>Языки</value>
+        <value>Наименования</value>
       </title>
       <toolTip>
         <key>en</key>
@@ -11794,6 +11802,10 @@
     <handlers>
       <event>BeforeWriteAtServer</event>
       <name>BeforeWriteAtServer</name>
+    </handlers>
+    <handlers>
+      <event>BeforeWrite</event>
+      <name>BeforeWrite</name>
     </handlers>
   </extInfo>
 </form:Form>

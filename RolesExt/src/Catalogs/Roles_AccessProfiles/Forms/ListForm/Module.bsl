@@ -1,7 +1,14 @@
+
+#Region FormCommandsEventHandlers
+
 &AtClient
 Procedure CopyCurrentProfiles(Command)
 	 CopyAndUpdateProfiles();
 EndProcedure
+
+#EndRegion
+
+#Region Private
 
 &AtServer
 Procedure CopyAndUpdateProfiles()
@@ -19,9 +26,9 @@ Procedure CopyAndUpdateProfiles()
 		|	Profile
 		|";
 	If Metadata.ScriptVariant = Metadata.ObjectProperties.ScriptVariant.English Then
-		Query.Text = StrTemplate(Query.Text, "AccessGroupProfiles.Roles", "Role.Name")
+		Query.Text = StrTemplate(Query.Text, "AccessGroupProfiles.Roles", "Role.Name");
 	Else
-		Query.Text = StrTemplate(Query.Text, "ПрофилиГруппДоступа.Роли", "Роль.Имя")
+		Query.Text = StrTemplate(Query.Text, "ПрофилиГруппДоступа.Роли", "Роль.Имя");
 	EndIf;
 	
 	ProfileList = Query.Execute().Select(QueryResultIteration.ByGroups);
@@ -68,4 +75,9 @@ Function CopyAndUpdateProfiles_CreateProfile(MainProfile)
 	EndIf;
 	
 EndFunction
+
+#EndRegion
+
+
+
 

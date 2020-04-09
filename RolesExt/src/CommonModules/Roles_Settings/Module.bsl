@@ -1,4 +1,4 @@
-#Region Service
+#Region Internal
 Function RolesSet() Export
 	Settings = New Map;
 	
@@ -409,7 +409,6 @@ Function RolesSet() Export
 	Configuration.Add(Enums.Roles_Rights.InteractiveOpenExtReports);
 	Configuration.Add(Enums.Roles_Rights.Output);
 	#EndRegion 
-//	Settings.Insert(Enums.Roles_MetadataTypes.Configuration, Configuration);
 
 	#Region IntegrationService
 	IntegrationService = New Array;

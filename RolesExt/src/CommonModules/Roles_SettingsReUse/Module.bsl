@@ -1,3 +1,4 @@
+#Region Internal
 Function MetaNameByRef(RefData) Export
 	RefNameType = RefData.Metadata().Name;
 	ValueIndex = Enums[RefNameType].IndexOf(RefData);
@@ -12,8 +13,10 @@ Function GetRefForAllLang(Name, XMLTypeRef = Undefined) Export
 			Return Undefined;
 		Else
 			XMLParts = StrSplit(XMLTypeRef, "<.:", False);
-			TypeName = XMLParts[XMLParts.UBound() - 1 - 1];
-			TypeName = Left(TypeName, StrLen(TypeName) - 3);
+			TypeIndexFromEnd = 2;
+			TypeName = XMLParts[XMLParts.UBound() - TypeIndexFromEnd];
+			RefText = "Ref";
+			TypeName = Left(TypeName, StrLen(TypeName) - StrLen(RefText));
 			Return Enums.Roles_MetadataTypes[TypeName];
 		EndIf;		
 	EndIf;
@@ -154,9 +157,11 @@ Function ObjectPathSubtype(Path, Type) Export
 	PartPath = StrSplit(Path, ".", False);
 	If Type = Enums.Roles_MetadataSubtype.StandardTabularSection
 		OR Type = Enums.Roles_MetadataSubtype.TabularSection Then
-		Return PartPath[PartPath.UBound() - 1 - 1] + "." + PartPath[PartPath.UBound()];
+			TypeIndexFromEnd = 2;
+		Return PartPath[PartPath.UBound() - TypeIndexFromEnd] + "." + PartPath[PartPath.UBound()];
 	Else
 		Return PartPath[PartPath.UBound()];
 	EndIf;
 EndFunction
 
+#EndRegion

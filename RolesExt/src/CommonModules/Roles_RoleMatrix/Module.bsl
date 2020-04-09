@@ -1,3 +1,4 @@
+#Region Internal
 Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True) Export
 	
 	RightsMap = CurrentRights(ObjectData);
@@ -10,11 +11,11 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	ParamStructure.Insert("OnlyFilled", OnlyFilled);
 	ParamStructure.Insert("OnlyReport", OnlyReport);
 	For Each Meta In Enums.Roles_MetadataTypes Do
-		
-		If Meta = Enums.Roles_MetadataTypes.IntegrationService // wait 8.3.17
+		SkipMeta =  Meta = Enums.Roles_MetadataTypes.IntegrationService // wait 8.3.17
 			OR Meta = Enums.Roles_MetadataTypes.Role
 			OR Meta = Enums.Roles_MetadataTypes.Enum
-			OR Meta = Enums.Roles_MetadataTypes.Language Then 
+			OR Meta = Enums.Roles_MetadataTypes.Language;
+		If SkipMeta Then 
 			Continue;
 		EndIf;
 		
@@ -105,7 +106,9 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	TabDoc.FixedTop = 1;
 	Return TabDoc;
 EndFunction
+#EndRegion
 
+#Region Private
 Procedure CulculateTopLvlStatus(Val MetaRow)
 	
 	Var Right, SetFalse, SetTrue;
@@ -615,16 +618,12 @@ Procedure SetCurrentRights(Row, StrData)
 	EndIf;
 	For Each RightData In RightDataArray Do
 		For Each Data In RightData.Value Do
-			
-			If RightData.Key = "Read" Then
-				FillRLSData(Row, Data, "Read");
-			ElsIf RightData.Key = "Insert" Then
-				FillRLSData(Row, Data, "Insert");
-			ElsIf RightData.Key = "Delete" Then
-				FillRLSData(Row, Data, "Delete");
-			ElsIf RightData.Key = "Update" Then
-				FillRLSData(Row, Data, "Update");
+			isRLS = RightData.Key = "Read" 	 Or RightData.Key = "Insert" 
+				 Or RightData.Key = "Delete" Or RightData.Key = "Update";
+			If isRLS Then
+				FillRLSData(Row, Data,  RightData.Key);
 			EndIf;
+			
 			If Row[RightData.Key] = 1 Then
 				Continue;
 			EndIf;
@@ -670,6 +669,6 @@ Function isNative(TestObject)
 	Return TestObject.ConfigurationExtension() = Undefined;
 
 EndFunction
-
+#EndRegion
 
 #EndRegion

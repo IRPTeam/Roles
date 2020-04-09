@@ -1,3 +1,4 @@
+#Region Internal
 Procedure UpdateRoleExt() Export
 	Path = TempFilesDir() + "TemplateDB";
 	DeleteFiles(Path);
@@ -35,10 +36,12 @@ Procedure UpdateRoleExt() Export
 	// load cfe to cuurent db
 	BD = New BinaryData(Path + "\AccessRoles.cfe");
 	InstallExtention("AccessRoles", BD, True);
-	//DeleteFiles(Path);
+	DeleteFiles(Path);
 	
 EndProcedure
+#EndRegion
 
+#Region Private
 Procedure UpdateRoleExt_CreateRolesXML(Path)
 
 	Query = New Query;
@@ -160,7 +163,6 @@ Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 	Return RightTemplate;
 	
 EndFunction
-
 
 Function UpdateRoleExt_CreateRolesXML_RolesTemplate(Path)
 	TextReader = New TextReader();
@@ -544,7 +546,7 @@ Function UpdateRoleExt_ConfigurationXML_AddProperties(Val DOMDocument, Name)
 
 EndFunction
 
-Procedure InstallExtention(Name, ExtensionData, OverWrite = True) Export
+Procedure InstallExtention(Name, ExtensionData, OverWrite = True)
 	If ExtensionData = Undefined Then
 		Return;
 	EndIf;
@@ -563,3 +565,4 @@ Procedure InstallExtention(Name, ExtensionData, OverWrite = True) Export
 	Ext.SafeMode = False;
 	Ext.Write(ExtensionData);
 EndProcedure
+#EndRegion

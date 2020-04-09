@@ -21,7 +21,7 @@
   <namePrefix>Roles_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
-  <version>0.3.6</version>
+  <version>0.3.7</version>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
@@ -175,11 +175,6 @@
   <commonModules>CommonModule.Roles_ExportAndLoadCurrentRoles</commonModules>
   <commonModules>CommonModule.Roles_ServiceServer</commonModules>
   <commonModules>CommonModule.Roles_RoleMatrix</commonModules>
-  <commonModules>CommonModule.Roles_ConvertTemplateToQuery</commonModules>
-  <commonModules>CommonModule.Roles_Localization</commonModules>
-  <commonModules>CommonModule.Roles_LocalizationClientServer</commonModules>
-  <commonModules>CommonModule.Roles_LocalizationReuse</commonModules>
-  <commonModules>CommonModule.Roles_LocalizationServer</commonModules>
   <commonModules>CommonModule.Roles_CommonFunctionsClientServer</commonModules>
   <commonCommands>CommonCommand.Roles_UpdateExtension</commonCommands>
   <commonCommands>CommonCommand.Roles_LoadRolesFromXML</commonCommands>

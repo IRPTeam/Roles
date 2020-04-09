@@ -1,9 +1,92 @@
+#Region FormEventHandlers
+
 &AtServer
 Procedure OnCreateAtServer(Cancel, StandardProcessing)
 	Path = Parameters.Path;
 	
 	UpdateQuery();
 EndProcedure
+
+#EndRegion
+
+#Region FormHeaderItemsEventHandlers
+
+&AtClient
+Procedure SettingsFilterDrag(Item, DragParameters, StandardProcessing, Row, Field)
+	If DragParameters.Value.Count() 
+		And TypeOf(DragParameters.Value[0]) = Type("DataCompositionFilterAvailableField") Then
+		StandardProcessing = False;
+		For Each SelectedField In DragParameters.Value Do
+			AddNewFilterRow(SelectedField, Row);
+		EndDo;
+	EndIf;
+EndProcedure
+
+&AtClient
+Procedure AddNewFilterRow(Val SelectedField, Row)
+	Index = 0;
+	GroupItem = Undefined;
+	If Not Row = Undefined And Not IsBlankString(String(Row)) Then 
+		RowData = SettingsComposer.Settings.Filter.GetObjectByID(Row);
+		Index = SettingsComposer.Settings.Filter.Items.IndexOf(RowData);
+		
+		
+		If TypeOf(RowData) = Type("DataCompositionFilterItemGroup") Then
+			GroupItem = RowData;
+		ElsIf Not RowData.Parent = Undefined And TypeOf(RowData.Parent) = Type("DataCompositionFilterItemGroup") Then
+			GroupItem = RowData.Parent;
+		Else
+			GroupItem = Undefined;
+		EndIf;
+	EndIf;
+	
+	If GroupItem = Undefined Then
+		NewRow = SettingsComposer.Settings.Filter.Items.Insert(Index + 1, Type("DataCompositionFilterItem"));
+	Else
+		NewRow = GroupItem.Items.Insert(Index + 1, Type("DataCompositionFilterItem"));
+	EndIf;
+	
+	NewRow.Use = True;    
+	NewRow.LeftValue = SelectedField.Field;
+	NewRow.RightValue = New DataCompositionField("");
+	If SettingsComposer.Settings.Filter.Items.Count() = 1 Then
+		Items.SettingsFilter.Expand(Items.SettingsFilter.CurrentRow);
+	EndIf;
+EndProcedure
+
+&AtClient
+Procedure SettingsComposerSettingsFilterFilterAvailableFieldsSelection(Item, SelectedRow, Field, StandardProcessing)
+	StandardProcessing = False;
+	AddNewFilterRow(SettingsComposer.Settings.Filter.FilterAvailableFields.GetObjectByID(SelectedRow), Items.SettingsFilter.CurrentRow);
+EndProcedure
+
+#EndRegion
+
+#Region FormCommandsEventHandlers
+
+&AtClient
+Procedure Cancel(Command)
+	Close(Undefined);
+EndProcedure
+
+&AtClient
+Procedure Ok(Command)
+	Close(PrepareResult());
+EndProcedure
+
+&AtClient
+Procedure RunReport(Command)
+	RunReportAtServer();
+EndProcedure
+
+&AtClient
+Procedure UpdateQueryData(Command)
+	UpdateQueryDataAtServer();
+EndProcedure
+
+#EndRegion
+
+#Region Private
 
 &AtServer
 Procedure UpdateQuery()
@@ -70,16 +153,6 @@ Procedure UpdateParams(DCSTemplate)
 
 EndProcedure
 
-&AtClient
-Procedure Cancel(Command)
-	Close(Undefined);
-EndProcedure
-
-&AtClient
-Procedure Ok(Command)
-	Close(PrepareResult());
-EndProcedure
-
 &AtServer
 Function PrepareResult()
 	
@@ -124,62 +197,6 @@ Function PrepareResult()
 	Return Result;
 EndFunction
 
-&AtClient
-Procedure SettingsFilterDrag(Item, DragParameters, StandardProcessing, Row, Field)
-	If DragParameters.Value.Count() 
-		And TypeOf(DragParameters.Value[0]) = Type("DataCompositionFilterAvailableField") Then
-		StandardProcessing = False;
-		For Each SelectedField In DragParameters.Value Do
-			AddNewFilterRow(SelectedField, Row);
-		EndDo;
-	EndIf;
-EndProcedure
-
-&AtClient
-Procedure AddNewFilterRow(Val SelectedField, Row)
-	Index = 0;
-	GroupItem = Undefined;
-	If Not Row = Undefined And Not IsBlankString(String(Row)) Then 
-		RowData = SettingsComposer.Settings.Filter.GetObjectByID(Row);
-		Index = SettingsComposer.Settings.Filter.Items.IndexOf(RowData);
-		
-		
-		If TypeOf(RowData) = Type("DataCompositionFilterItemGroup") Then
-			GroupItem = RowData;
-		ElsIf Not RowData.Parent = Undefined And TypeOf(RowData.Parent) = Type("DataCompositionFilterItemGroup") Then
-			GroupItem = RowData.Parent;
-		Else
-			GroupItem = Undefined;
-		EndIf;
-	EndIf;
-	
-	If GroupItem = Undefined Then
-		NewRow = SettingsComposer.Settings.Filter.Items.Insert(Index + 1, Type("DataCompositionFilterItem"));
-	Else
-		NewRow = GroupItem.Items.Insert(Index + 1, Type("DataCompositionFilterItem"));
-	EndIf;
-	
-	NewRow.Use = True;    
-	NewRow.LeftValue = SelectedField.Field;
-	NewRow.RightValue = New DataCompositionField("");
-	If SettingsComposer.Settings.Filter.Items.Count() = 1 Then
-		Items.SettingsFilter.Expand(Items.SettingsFilter.CurrentRow);
-	EndIf;
-EndProcedure
-
-
-&AtClient
-Procedure SettingsComposerSettingsFilterFilterAvailableFieldsSelection(Item, SelectedRow, Field, StandardProcessing)
-	StandardProcessing = False;
-	AddNewFilterRow(SettingsComposer.Settings.Filter.FilterAvailableFields.GetObjectByID(SelectedRow), Items.SettingsFilter.CurrentRow);
-EndProcedure
-
-
-&AtClient
-Procedure RunReport(Command)
-	RunReportAtServer();
-EndProcedure
-
 &AtServer
 Procedure RunReportAtServer()
 	
@@ -197,11 +214,6 @@ Procedure RunReportAtServer()
 	
 EndProcedure
 
-&AtClient
-Procedure UpdateQueryData(Command)
-	UpdateQueryDataAtServer();
-EndProcedure
-
 &AtServer
 Procedure UpdateQueryDataAtServer()
 	
@@ -215,4 +227,4 @@ Procedure UpdateQueryDataAtServer()
 	
 EndProcedure
 
-
+#EndRegion

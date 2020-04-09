@@ -3,10 +3,10 @@
   <name>Roles_DefaultRole</name>
   <synonym>
     <key>en</key>
-    <value>Admin role</value>
+    <value>Administrator subsystem &quot;Roles&quot;</value>
   </synonym>
   <synonym>
     <key>ru</key>
-    <value>Роль администратора</value>
+    <value>Администратор подсистемы &quot;Роли&quot;</value>
   </synonym>
 </mdclass:Role>
