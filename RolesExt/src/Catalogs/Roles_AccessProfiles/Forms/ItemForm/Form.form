@@ -797,7 +797,7 @@
     </title>
     <title>
       <key>ru</key>
-      <value>Изменить на</value>
+      <value>Включить редактирование</value>
     </title>
     <id>2</id>
     <toolTip>
@@ -806,7 +806,7 @@
     </toolTip>
     <toolTip>
       <key>ru</key>
-      <value>Изменить на</value>
+      <value>Включить редактирование</value>
     </toolTip>
     <use>
       <common>true</common>

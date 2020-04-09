@@ -63,6 +63,10 @@
           <key>en</key>
           <value>SQL database</value>
         </presentation>
+        <presentation>
+          <key>ru</key>
+          <value>SQL база данных</value>
+        </presentation>
         <value xsi:type="core:StringValue">
           <value>SQL</value>
         </value>
@@ -613,6 +617,10 @@
         <key>en</key>
         <value>Find and load roles</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Найти и загрузить роли</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -1005,6 +1013,10 @@
     <title>
       <key>en</key>
       <value>Count roles</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Количество ролей</value>
     </title>
     <id>9</id>
     <valueType>

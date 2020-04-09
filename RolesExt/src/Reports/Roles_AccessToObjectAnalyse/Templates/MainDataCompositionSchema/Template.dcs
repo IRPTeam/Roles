@@ -152,11 +152,11 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Профиль доступа</v8:content>
+					<v8:content>Access profile</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Access profile</v8:content>
+					<v8:content>Профиль доступа</v8:content>
 				</v8:item>
 			</title>
 		</field>

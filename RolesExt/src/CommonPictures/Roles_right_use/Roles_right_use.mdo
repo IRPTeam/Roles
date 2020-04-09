@@ -3,10 +3,10 @@
   <name>Roles_right_use</name>
   <synonym>
     <key>en</key>
-    <value>Right use</value>
+    <value>Use</value>
   </synonym>
   <synonym>
     <key>ru</key>
-    <value>Правильное использование</value>
+    <value>Использование</value>
   </synonym>
 </mdclass:CommonPicture>

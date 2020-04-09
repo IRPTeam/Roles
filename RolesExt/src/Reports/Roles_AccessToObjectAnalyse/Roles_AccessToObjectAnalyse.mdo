@@ -22,6 +22,10 @@
       <key>en</key>
       <value>Report form</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -30,6 +34,10 @@
     <synonym>
       <key>en</key>
       <value>Main data composition schema</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>

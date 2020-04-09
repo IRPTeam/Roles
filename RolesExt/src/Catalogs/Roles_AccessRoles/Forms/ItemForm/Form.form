@@ -1588,7 +1588,7 @@
               </title>
               <title>
                 <key>ru</key>
-                <value>Редактировать</value>
+                <value>Изменение</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1610,7 +1610,7 @@
               </toolTip>
               <toolTip>
                 <key>ru</key>
-                <value>Редактировать</value>
+                <value>Изменение</value>
               </toolTip>
               <extendedTooltip>
                 <name>EditExtendedTooltip</name>
@@ -1736,7 +1736,7 @@
               </title>
               <title>
                 <key>ru</key>
-                <value>Использовать</value>
+                <value>Использование</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1758,7 +1758,7 @@
               </toolTip>
               <toolTip>
                 <key>ru</key>
-                <value>Использовать</value>
+                <value>Использование</value>
               </toolTip>
               <extendedTooltip>
                 <name>UseExtendedTooltip</name>
@@ -9670,7 +9670,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>Редактировать</value>
+        <value>Изменение</value>
       </title>
       <id>13</id>
       <valueType>
@@ -9770,7 +9770,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>Использовать</value>
+        <value>Использование</value>
       </title>
       <id>17</id>
       <valueType>
