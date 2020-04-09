@@ -427,7 +427,7 @@ Procedure OnCreateAtServer(Cancel, StandardProcessing)
 			CurrentAccessRightName = "Чтение";
 		ElsIf CurrentAccessRightName = "Insert" Then
 			CurrentAccessRightName = "Добавление";
-		ElsIf CurrentAccessRightName = "Edit" Then
+		ElsIf CurrentAccessRightName = "Update" Then
 			CurrentAccessRightName = "Изменение";
 		ElsIf CurrentAccessRightName = "Delete" Then
 			CurrentAccessRightName = "Удаление";
