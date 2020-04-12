@@ -74,6 +74,16 @@ Procedure EditOn(Command)
 	Items.TabDocMartix.Protection = Not Items.TabDocMartixEditOn.Check;
 EndProcedure
 
+&AtClient
+Procedure CheckAll(Command)
+	CheckUncheck(True);
+EndProcedure
+
+&AtClient
+Procedure UncheckAll(Command)
+	CheckUncheck(False);
+EndProcedure
+
 #EndRegion
 
 #Region Private
@@ -169,6 +179,15 @@ Procedure UpdateMatrixAtServer(AllRights)
 	EndDo;
 	Items.TabDocMartix.BlackAndWhiteView = False;
 EndProcedure
+
+&AtClient
+Procedure CheckUncheck(Status)
+	For Each Row In Items.Roles.SelectedRows Do
+		TmpRow = Object.Roles.FindByID(Row);
+		TmpRow.Hide = Status;
+	EndDo;
+EndProcedure
+
 
 #EndRegion
 
