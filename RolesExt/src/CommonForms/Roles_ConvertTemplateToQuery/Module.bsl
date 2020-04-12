@@ -49,7 +49,6 @@ Procedure OnOpen(Cancel)
 	EndDo;
 EndProcedure
 
-
 #EndRegion
 
 #Region FormCommandsEventHandlers
@@ -72,13 +71,11 @@ Procedure ConvertToQuery(Command)
 	
 	FillTemplateWithParams(RLSParamStructure);
 	
-	AdditionalParamsStructure = AdditionalParamsStructure(RLSParamStructure);
-	
-	FillAdditionalParam(AdditionalParamsStructure);
+	FillSessionParametersTable(RLSParamStructure);
 	
 	DebugTree.GetItems().Clear();
 	
-	CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure);
+	CalculateResultQuery(RLSParamStructure);
 	
 EndProcedure
 
@@ -117,9 +114,8 @@ EndProcedure
 
 #Region CalculateQuery
 
-
 &AtServer
-Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
+Procedure CalculateResultQuery(RLSParamStructure)
 	
 	DebugsTree = FormAttributeToValue("DebugTree");
 	TotalRLSCode = RLS;
@@ -138,7 +134,7 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 	Rows = StrSplit(FullCode, "#", False);
 	QueryText = StrConcat(Rows, Chars.LF);
 		
-	CalculateTreeRow(NewRow, Rows, AdditionalParamsStructure);
+	CalculateTreeRow(NewRow, Rows);
 
 	QueryRowsArray = New Array;
 	DebugsTree.Rows[0].Status = True;
@@ -149,16 +145,11 @@ Procedure CalculateResultQuery(RLSParamStructure, AdditionalParamsStructure)
 	ValueToFormAttribute(DebugsTree, "DebugTree");
 EndProcedure
 
-
 &AtServer
-Procedure CalculateTreeRow(NewRow, Rows, AdditionalParamsStructure) 
+Procedure CalculateTreeRow(NewRow, Rows) 
 	Query = New Query;
-	SessionParametersTable.Clear();
-	For Each Param In AdditionalParamsStructure Do
-		Query.SetParameter(Param.Key, Param.Value);
-		NewSP = SessionParametersTable.Add();
-		NewSP.Name = Param.Key;
-		NewSP.Value = Param.Value;
+	For Each Param In SessionParametersTable Do
+		Query.SetParameter(Param.Name, Param.Value);
 	EndDo;	
 	
 	For Index = 0 To Rows.Count() - 1 Do
@@ -167,7 +158,7 @@ Procedure CalculateTreeRow(NewRow, Rows, AdditionalParamsStructure)
 		If StrStartsWith(Lower(Row), "if") Or StrStartsWith(Lower(Row), "если") Then
 			NewRow = NewRow.Rows.Add();
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
-			Result = CalculateResult(Code, AdditionalParamsStructure, Query);
+			Result = CalculateResult(Code, Query);
 
 			If TypeOf(Result) = Type("Array") Then
 				NewRow.Error = StrConcat(Result, Chars.LF);
@@ -195,7 +186,7 @@ Procedure CalculateTreeRow(NewRow, Rows, AdditionalParamsStructure)
 			Code = Right(Row, StrLen(Row) - FirstTextLen);
 			NewRow = NewRow.Parent.Rows.Add();
 			NewRow.Condition = "elsif";
-			Result = CalculateResult(Code, AdditionalParamsStructure, Query);
+			Result = CalculateResult(Code, Query);
 			If TypeOf(Result) = Type("Array") Then
 				NewRow.Error = StrConcat(Result, Chars.LF);
 				Result = False;
@@ -249,8 +240,6 @@ Procedure CalculateTreeRow(NewRow, Rows, AdditionalParamsStructure)
 	EndDo;
 EndProcedure
 
-
-
 &AtServer
 Function isFirstStatusTrue(TmpIndex, NewRow)
 	isSet = False;
@@ -268,9 +257,8 @@ Function isFirstStatusTrue(TmpIndex, NewRow)
 	Return isSet;
 EndFunction
 
-
 &AtServer
-Function CalculateResult(Val Code, AdditionalParamsStructure, Query) Export
+Function CalculateResult(Val Code, Query) Export
 	Result = Undefined;
 	ErrorList = New Array;
 	Try
@@ -324,7 +312,6 @@ Procedure FillAdditionalParam(AdditionalParamsStructure)
 		Else
 			AdditionalParamsStructure.Insert(Param.Key, SessionParameters[Param.Key]);
 		EndIf;
-		
 	EndDo;
 EndProcedure
 
@@ -476,14 +463,12 @@ Function DeleteCommentAndEmptyRow(Rows)
 	Return NewRows;
 EndFunction
 
-
 &AtServer
 Function PrepareQueryText(Val Text)
 	Text = StrReplace(Text, Char(34), Char(34) + Char(34));
 	Text = StrReplace(Text, Chars.LF, Chars.LF + "|");
 	Return Text;
 EndFunction
-
 
 #EndRegion
 
@@ -738,6 +723,26 @@ Procedure AfterQueryChange(Text, AddInfo) Export
     EndIf;
 EndProcedure
 
+&AtClient
+Procedure FillSessionParametersTable(Val RLSParamStructure)
+	If Not UseSessionParametersFromTable Or 
+			UseSessionParametersFromTable And Not SessionParametersTable.Count() Then
+		AdditionalParamsStructure = AdditionalParamsStructure(RLSParamStructure);
+		FillAdditionalParam(AdditionalParamsStructure);
+		
+		SessionParametersTable.Clear();		
+		For Each Param In AdditionalParamsStructure Do
+			NewSP = SessionParametersTable.Add();
+			NewSP.Name = Param.Key;
+			NewSP.Value = Param.Value;
+		EndDo;	
+	Else
+		AdditionalParamsStructure = New Structure;
+		For Each Param In SessionParametersTable Do
+			AdditionalParamsStructure.Insert(Param.Name, Param.Value);
+		EndDo; 
+	EndIf;
+EndProcedure
 #EndRegion
 
 

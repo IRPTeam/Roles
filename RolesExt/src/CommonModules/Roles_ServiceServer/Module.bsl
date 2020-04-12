@@ -54,7 +54,10 @@ Function HeadTemplate() Export
 	Return Roles_SettingsReUse.MatrixTemplates().GetArea("Head");
 EndFunction
 Function RowTemplate() Export
-	Return Roles_SettingsReUse.MatrixTemplates().GetArea("Row");
+	Str = Roles_SettingsReUse.MatrixTemplates_Rows();
+	Template = Str.Template;
+	Template.Parameters.Fill(Str.Params);
+	Return Template;
 EndFunction
 Function RLSTemplate() Export
 	Return Roles_SettingsReUse.MatrixTemplates().GetArea("RLS");

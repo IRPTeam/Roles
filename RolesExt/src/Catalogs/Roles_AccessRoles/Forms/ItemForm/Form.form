@@ -1596,7 +1596,7 @@
               </title>
               <title>
                 <key>ru</key>
-                <value>Изменение</value>
+                <value>Редактирование</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -11800,12 +11800,12 @@
       <name>OnReadAtServer</name>
     </handlers>
     <handlers>
-      <event>BeforeWriteAtServer</event>
-      <name>BeforeWriteAtServer</name>
-    </handlers>
-    <handlers>
       <event>BeforeWrite</event>
       <name>BeforeWrite</name>
+    </handlers>
+    <handlers>
+      <event>BeforeWriteAtServer</event>
+      <name>BeforeWriteAtServer</name>
     </handlers>
   </extInfo>
 </form:Form>

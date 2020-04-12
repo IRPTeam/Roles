@@ -108,6 +108,21 @@ Function MatrixTemplates() Export
 	Return GetCommonTemplate("Roles_MatrixTemplate");
 EndFunction
 
+Function MatrixTemplates_Rows() Export
+	Str = New Structure;
+	Str.Insert("Template", Roles_SettingsReUse.MatrixTemplates().GetArea("Row"));
+	Params = New Structure;
+	For Index = 1 To Str.Template.TableWidth Do
+		Cell = Str.Template.Area(1, Index);
+		Params.Insert(Cell.Parameter);
+	EndDo;
+		
+	Str.Insert("Params", Params);
+	
+	Return New FixedStructure(Str);
+EndFunction
+
+
 Function RoleTree() Export
 	Return Roles_ServiceServer.DeserializeXML(GetCommonTemplate("Roles_RoleTree").GetText());
 EndFunction

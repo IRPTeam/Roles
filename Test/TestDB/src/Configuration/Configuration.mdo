@@ -17,14 +17,6 @@
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
   <compatibilityMode>8.3.14</compatibilityMode>
-  <languages uuid="4e80abb5-811a-4bb7-a1ba-71fcf4d12d8c">
-    <name>Русский</name>
-    <synonym>
-      <key>ru</key>
-      <value>Русский</value>
-    </synonym>
-    <languageCode>ru</languageCode>
-  </languages>
   <languages uuid="f7f6a275-ab95-486c-b1ff-cffc1af75b17">
     <name>English</name>
     <synonym>
@@ -32,6 +24,14 @@
       <value>English</value>
     </synonym>
     <languageCode>en</languageCode>
+  </languages>
+  <languages uuid="4e80abb5-811a-4bb7-a1ba-71fcf4d12d8c">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.Подсистема1</subsystems>
   <roles>Role.Роль1</roles>
