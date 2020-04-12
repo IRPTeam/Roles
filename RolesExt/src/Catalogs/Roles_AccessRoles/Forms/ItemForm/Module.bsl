@@ -243,7 +243,10 @@ Procedure UpdateRightsList(OnlyReport)
 	RoleTree = FormAttributeToValue("RolesEdit");
 	
 	ObjectData = New Structure;
-	ObjectData.Insert("RightTable", Object.Rights.Unload());
+	AllRightsVT = Object.Rights.Unload();
+	AllRightsVT.Indexes.Add("ObjectPath, Disable");
+	AllRightsVT.Indexes.Add("ObjectName, Disable");
+	ObjectData.Insert("RightTable", AllRightsVT);
 	ObjectData.Insert("RestrictionByCondition", Object.RestrictionByCondition.Unload());
 	ObjectData.Insert("SetRightsForNewNativeObjects", Object.SetRightsForNewNativeObjects);
 	ObjectData.Insert("SetRightsForAttributesAndTabularSectionsByDefault", Object.SetRightsForAttributesAndTabularSectionsByDefault);

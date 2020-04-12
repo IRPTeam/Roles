@@ -143,6 +143,8 @@ Procedure UpdateMatrixAtServer(AllRights)
 	
 	QueryResult = Query.ExecuteBatch();
 	AllRightsVT =  QueryResult[1].Unload();
+	AllRightsVT.Indexes.Add("ObjectPath, Disable");
+	AllRightsVT.Indexes.Add("ObjectName, Disable");
 	ObjectData = New Structure;
 	ObjectData.Insert("RightTable", AllRightsVT);
 	ObjectData.Insert("RestrictionByCondition", QueryResult[2].Unload());

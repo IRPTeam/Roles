@@ -90,7 +90,7 @@ Function GenerateRoleMatrix(RoleTree, ObjectData, OnlyReport, OnlyFilled = True)
 	FillTabDoc(TabDoc, RoleTree, ParamStructure);
 	TabDoc.ShowHeaders = True;
 	TabDoc.Put(Roles_ServiceServer.FooterTemplate()); 
-	
+
 	ReplaceTextInTabDoc(TabDoc, 1, "✔", New Color(0, 255, 0));
 	ReplaceTextInTabDoc(TabDoc, 2, "❌", New Color(255, 0, 0));
 	ReplaceTextInTabDoc(TabDoc, 3, "✔", New Color(255, 255, 0));
@@ -580,6 +580,7 @@ Function CurrentRights(DataTables)
 	RightMap = New Map;
 	
 	TempVT = DataTables.RightTable.Copy();
+	TempVT.Indexes.Add();
 	TempVT.GroupBy("ObjectPath");
 	For Each RowVT In TempVT Do
 		
