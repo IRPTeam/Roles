@@ -713,14 +713,6 @@
             <items xsi:type="form:FormField">
               <name>RolesEditObjectFullName</name>
               <id>283</id>
-              <title>
-                <key>en</key>
-                <value>Object</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Объект</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -990,14 +982,6 @@
             <items xsi:type="form:FormField">
               <name>RolesEditObjectType</name>
               <id>275</id>
-              <title>
-                <key>en</key>
-                <value>Type</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Тип</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1050,14 +1034,6 @@
             <items xsi:type="form:FormField">
               <name>RolesEditObjectName</name>
               <id>280</id>
-              <title>
-                <key>en</key>
-                <value>Name</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Имя</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1183,14 +1159,6 @@
             <items xsi:type="form:FormField">
               <name>Read</name>
               <id>107</id>
-              <title>
-                <key>en</key>
-                <value>Read</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Чтение</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1257,14 +1225,6 @@
             <items xsi:type="form:FormField">
               <name>Insert</name>
               <id>104</id>
-              <title>
-                <key>en</key>
-                <value>Insert</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Вставить</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1285,7 +1245,7 @@
               </toolTip>
               <toolTip>
                 <key>ru</key>
-                <value>Вставить</value>
+                <value>Добавление</value>
               </toolTip>
               <extendedTooltip>
                 <name>InsertExtendedTooltip</name>
@@ -1331,14 +1291,6 @@
             <items xsi:type="form:FormField">
               <name>Update</name>
               <id>110</id>
-              <title>
-                <key>en</key>
-                <value>Update</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Изменение</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1405,14 +1357,6 @@
             <items xsi:type="form:FormField">
               <name>Delete</name>
               <id>113</id>
-              <title>
-                <key>en</key>
-                <value>Delete</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Удалить</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1433,7 +1377,7 @@
               </toolTip>
               <toolTip>
                 <key>ru</key>
-                <value>Удалить</value>
+                <value>Удаление</value>
               </toolTip>
               <extendedTooltip>
                 <name>DeleteExtendedTooltip</name>
@@ -1516,14 +1460,6 @@
             <items xsi:type="form:FormField">
               <name>View</name>
               <id>116</id>
-              <title>
-                <key>en</key>
-                <value>View</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Просмотр</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1590,14 +1526,6 @@
             <items xsi:type="form:FormField">
               <name>Edit</name>
               <id>119</id>
-              <title>
-                <key>en</key>
-                <value>Edit</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Редактирование</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1612,14 +1540,6 @@
                 <color>Web.DodgerBlue</color>
               </titleBackColor>
               <titleLocation>None</titleLocation>
-              <toolTip>
-                <key>en</key>
-                <value>Edit</value>
-              </toolTip>
-              <toolTip>
-                <key>ru</key>
-                <value>Изменение</value>
-              </toolTip>
               <extendedTooltip>
                 <name>EditExtendedTooltip</name>
                 <id>121</id>
@@ -1664,14 +1584,6 @@
             <items xsi:type="form:FormField">
               <name>InputByString</name>
               <id>122</id>
-              <title>
-                <key>en</key>
-                <value>Input by string</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Ввод по строке</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1738,14 +1650,6 @@
             <items xsi:type="form:FormField">
               <name>Use</name>
               <id>131</id>
-              <title>
-                <key>en</key>
-                <value>Use</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Использование</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1812,14 +1716,6 @@
             <items xsi:type="form:FormField">
               <name>TotalsControl</name>
               <id>134</id>
-              <title>
-                <key>en</key>
-                <value>Totals control</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Контроль итогов</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1923,14 +1819,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveDelete</name>
               <id>137</id>
-              <title>
-                <key>en</key>
-                <value>Interactive delete</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное удаление</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1997,14 +1885,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveInsert</name>
               <id>140</id>
-              <title>
-                <key>en</key>
-                <value>Interactive insert</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное добавление</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2071,14 +1951,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveSetDeletionMark</name>
               <id>143</id>
-              <title>
-                <key>en</key>
-                <value>Interactive set deletion mark</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивная пометка на удаление</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2145,14 +2017,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveClearDeletionMark</name>
               <id>146</id>
-              <title>
-                <key>en</key>
-                <value>Interactive clear deletion mark</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное снятие пометки удаления</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2219,14 +2083,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveDeleteMarked</name>
               <id>149</id>
-              <title>
-                <key>en</key>
-                <value>Interactive delete marked</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное удаление помеченных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2297,7 +2153,7 @@
             </userVisible>
             <title>
               <key>en</key>
-              <value>Iinteractive</value>
+              <value>Interactive</value>
             </title>
             <title>
               <key>ru</key>
@@ -2330,14 +2186,6 @@
             <items xsi:type="form:FormField">
               <name>Posting</name>
               <id>125</id>
-              <title>
-                <key>en</key>
-                <value>Posting</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Проведение</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2404,14 +2252,6 @@
             <items xsi:type="form:FormField">
               <name>UndoPosting</name>
               <id>128</id>
-              <title>
-                <key>en</key>
-                <value>Undo posting</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Отменить проведение</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2478,14 +2318,6 @@
             <items xsi:type="form:FormField">
               <name>InteractivePosting</name>
               <id>152</id>
-              <title>
-                <key>en</key>
-                <value>Interactive posting</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное проведение</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2552,14 +2384,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveUndoPosting</name>
               <id>158</id>
-              <title>
-                <key>en</key>
-                <value>Interactive undo posting</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивная отмена проведения</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2626,14 +2450,6 @@
             <items xsi:type="form:FormField">
               <name>InteractivePostingRegular</name>
               <id>155</id>
-              <title>
-                <key>en</key>
-                <value>Interactive posting regular</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное проведение неоперативное</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2700,14 +2516,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveChangeOfPosted</name>
               <id>161</id>
-              <title>
-                <key>en</key>
-                <value>Interactive change of posted</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное изменение проведенных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2819,14 +2627,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveDeletePredefinedData</name>
               <id>164</id>
-              <title>
-                <key>en</key>
-                <value>Interactive delete predefined data</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное удаление предопределенных данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2893,14 +2693,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveSetDeletionMarkPredefinedData</name>
               <id>310</id>
-              <title>
-                <key>en</key>
-                <value>Interactive set deletion mark predefined data</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивная пометка на удаление предопределенных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2967,14 +2759,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveClearDeletionMarkPredefinedData</name>
               <id>313</id>
-              <title>
-                <key>en</key>
-                <value>Interactive clear deletion mark predefined data</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное снятие пометки удаления предопределенных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3041,14 +2825,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveDeleteMarkedPredefinedData</name>
               <id>316</id>
-              <title>
-                <key>en</key>
-                <value>Interactive delete marked predefined data</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное удаление помеченных предопределенных данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3160,14 +2936,6 @@
             <items xsi:type="form:FormField">
               <name>Get</name>
               <id>167</id>
-              <title>
-                <key>en</key>
-                <value>Get</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Получить</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3188,7 +2956,7 @@
               </toolTip>
               <toolTip>
                 <key>ru</key>
-                <value>Получить</value>
+                <value>Получение</value>
               </toolTip>
               <extendedTooltip>
                 <name>GetExtendedTooltip</name>
@@ -3234,14 +3002,6 @@
             <items xsi:type="form:FormField">
               <name>Set</name>
               <id>170</id>
-              <title>
-                <key>en</key>
-                <value>Set</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Установить</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3345,14 +3105,6 @@
             <items xsi:type="form:FormField">
               <name>Administration</name>
               <id>173</id>
-              <title>
-                <key>en</key>
-                <value>Administration</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Администрирование	</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3419,14 +3171,6 @@
             <items xsi:type="form:FormField">
               <name>DataAdministration</name>
               <id>176</id>
-              <title>
-                <key>en</key>
-                <value>Data administration</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Администрирование данных	</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3493,14 +3237,6 @@
             <items xsi:type="form:FormField">
               <name>UpdateDataBaseConfiguration</name>
               <id>179</id>
-              <title>
-                <key>en</key>
-                <value>Update data base configuration</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Обновление конфигурации базы данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3567,14 +3303,6 @@
             <items xsi:type="form:FormField">
               <name>ExclusiveMode</name>
               <id>182</id>
-              <title>
-                <key>en</key>
-                <value>Exclusive mode</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Монопольный режим</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3641,14 +3369,6 @@
             <items xsi:type="form:FormField">
               <name>ActiveUsers</name>
               <id>185</id>
-              <title>
-                <key>en</key>
-                <value>Active users</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Активные пользователи</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3715,14 +3435,6 @@
             <items xsi:type="form:FormField">
               <name>EventLog</name>
               <id>188</id>
-              <title>
-                <key>en</key>
-                <value>Event log</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Журнал событий</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3789,14 +3501,6 @@
             <items xsi:type="form:FormField">
               <name>ThinClient</name>
               <id>191</id>
-              <title>
-                <key>en</key>
-                <value>Thin client</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Тонкий клиент</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3863,14 +3567,6 @@
             <items xsi:type="form:FormField">
               <name>WebClient</name>
               <id>194</id>
-              <title>
-                <key>en</key>
-                <value>Web client</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Web-клиент</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -3937,14 +3633,6 @@
             <items xsi:type="form:FormField">
               <name>MobileClient</name>
               <id>197</id>
-              <title>
-                <key>en</key>
-                <value>Mobile client</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Мобильный клиент</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4011,14 +3699,6 @@
             <items xsi:type="form:FormField">
               <name>ThickClient</name>
               <id>200</id>
-              <title>
-                <key>en</key>
-                <value>Thick client</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Толстый клиент</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4085,14 +3765,6 @@
             <items xsi:type="form:FormField">
               <name>ExternalConnection</name>
               <id>203</id>
-              <title>
-                <key>en</key>
-                <value>External connection</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Внешнее соединение</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4159,14 +3831,6 @@
             <items xsi:type="form:FormField">
               <name>Automation</name>
               <id>206</id>
-              <title>
-                <key>en</key>
-                <value>Automation</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Automation</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4233,14 +3897,6 @@
             <items xsi:type="form:FormField">
               <name>TechnicalSpecialistMode</name>
               <id>209</id>
-              <title>
-                <key>en</key>
-                <value>Technical specialist mode</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Режим технического специалиста</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4307,14 +3963,6 @@
             <items xsi:type="form:FormField">
               <name>CollaborationSystemInfoBaseRegistration</name>
               <id>212</id>
-              <title>
-                <key>en</key>
-                <value>Collaboration system info base registration</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Регистрация системы взаимодействия</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4381,14 +4029,6 @@
             <items xsi:type="form:FormField">
               <name>SaveUserData</name>
               <id>215</id>
-              <title>
-                <key>en</key>
-                <value>Save user data</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Сохранить данные пользователя</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4455,14 +4095,6 @@
             <items xsi:type="form:FormField">
               <name>ConfigurationExtensionsAdministration</name>
               <id>218</id>
-              <title>
-                <key>en</key>
-                <value>Configuration extensions administration</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Администрирование расширений конфигурации</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4529,14 +4161,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveOpenExtDataProcessors</name>
               <id>221</id>
-              <title>
-                <key>en</key>
-                <value>Interactive open ext data processors</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное открытие внешних обработок</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4603,14 +4227,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveOpenExtReports</name>
               <id>224</id>
-              <title>
-                <key>en</key>
-                <value>Interactive open ext reports</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное открытие внешних отчетов</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4677,10 +4293,6 @@
             <items xsi:type="form:FormField">
               <name>Output</name>
               <id>227</id>
-              <title>
-                <key>en</key>
-                <value>Output</value>
-              </title>
               <title>
                 <key>ru</key>
                 <value>Вывод</value>
@@ -4751,14 +4363,6 @@
             <items xsi:type="form:FormField">
               <name>MainWindowModeNormal</name>
               <id>335</id>
-              <title>
-                <key>en</key>
-                <value>Main window mode normal</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Режим основного окна &quot;Обычный&quot;</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4822,14 +4426,6 @@
             <items xsi:type="form:FormField">
               <name>MainWindowModeWorkplace</name>
               <id>338</id>
-              <title>
-                <key>en</key>
-                <value>Main window mode workplace</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Режим основного окна &quot;Рабочее место&quot;</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4893,14 +4489,6 @@
             <items xsi:type="form:FormField">
               <name>MainWindowModeEmbeddedWorkplace</name>
               <id>341</id>
-              <title>
-                <key>en</key>
-                <value>Main window mode embedded workplace</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Режим основного окна &quot;Встроенное рабочее место&quot;</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -4964,14 +4552,6 @@
             <items xsi:type="form:FormField">
               <name>MainWindowModeFullscreenWorkplace</name>
               <id>344</id>
-              <title>
-                <key>en</key>
-                <value>Main window mode fullscreen workplace</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Режим основного окна &quot;Полноэкранное рабочее место&quot;</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5035,14 +4615,6 @@
             <items xsi:type="form:FormField">
               <name>MainWindowModeKiosk</name>
               <id>347</id>
-              <title>
-                <key>en</key>
-                <value>Main window mode kiosk</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Режим основного окна &quot;Киоск&quot;</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5106,14 +4678,6 @@
             <items xsi:type="form:FormField">
               <name>AnalyticsSystemClient</name>
               <id>350</id>
-              <title>
-                <key>en</key>
-                <value>Analytics system client</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Клиент системы аналитики	</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5214,14 +4778,6 @@
             <items xsi:type="form:FormField">
               <name>ReadDataHistory</name>
               <id>230</id>
-              <title>
-                <key>en</key>
-                <value>Read data history</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Чтение истории данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5288,14 +4844,6 @@
             <items xsi:type="form:FormField">
               <name>ViewDataHistory</name>
               <id>233</id>
-              <title>
-                <key>en</key>
-                <value>View data history</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Просмотр истории данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5362,14 +4910,6 @@
             <items xsi:type="form:FormField">
               <name>ReadDataHistoryOfMissingData</name>
               <id>236</id>
-              <title>
-                <key>en</key>
-                <value>Read data history of missing data</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Чтение истории данных отсутствующих данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5436,14 +4976,6 @@
             <items xsi:type="form:FormField">
               <name>UpdateDataHistory</name>
               <id>239</id>
-              <title>
-                <key>en</key>
-                <value>Update data history</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Изменение истории данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5510,14 +5042,6 @@
             <items xsi:type="form:FormField">
               <name>UpdateDataHistoryOfMissingData</name>
               <id>242</id>
-              <title>
-                <key>en</key>
-                <value>Update data history of missing data</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Изменение истории данных отсутствующих данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5584,14 +5108,6 @@
             <items xsi:type="form:FormField">
               <name>UpdateDataHistorySettings</name>
               <id>245</id>
-              <title>
-                <key>en</key>
-                <value>Update data history settings</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Изменение настроек истории данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5658,14 +5174,6 @@
             <items xsi:type="form:FormField">
               <name>UpdateDataHistoryVersionComment</name>
               <id>248</id>
-              <title>
-                <key>en</key>
-                <value>Update data history version comment</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Изменение комментария версии истории данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5732,14 +5240,6 @@
             <items xsi:type="form:FormField">
               <name>EditDataHistoryVersionComment</name>
               <id>251</id>
-              <title>
-                <key>en</key>
-                <value>Edit data history version comment</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Редактирование комментария версии истории данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5806,14 +5306,6 @@
             <items xsi:type="form:FormField">
               <name>SwitchToDataHistoryVersion</name>
               <id>254</id>
-              <title>
-                <key>en</key>
-                <value>Switch to data history version</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Переход на версию истории данных</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5917,14 +5409,6 @@
             <items xsi:type="form:FormField">
               <name>StandardAuthenticationChange</name>
               <id>495</id>
-              <title>
-                <key>en</key>
-                <value>Standard authentication change</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Изменение стандартной аутентификации</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -5991,14 +5475,6 @@
             <items xsi:type="form:FormField">
               <name>SessionStandardAuthenticationChange</name>
               <id>498</id>
-              <title>
-                <key>en</key>
-                <value>Session standard authentication change</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Изменение стандартной аутентификации текущего пользователя</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6065,14 +5541,6 @@
             <items xsi:type="form:FormField">
               <name>SessionOSAuthenticationChange</name>
               <id>501</id>
-              <title>
-                <key>en</key>
-                <value>Session OS authentication change</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Изменение аутентификации операционной системы сеанса</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6184,14 +5652,6 @@
             <items xsi:type="form:FormField">
               <name>Start</name>
               <id>293</id>
-              <title>
-                <key>en</key>
-                <value>Start</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Старт</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6258,14 +5718,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveStart</name>
               <id>296</id>
-              <title>
-                <key>en</key>
-                <value>Interactive start</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивный старт</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6332,14 +5784,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveActivate</name>
               <id>305</id>
-              <title>
-                <key>en</key>
-                <value>Interactive activate</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивная активация</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6406,14 +5850,6 @@
             <items xsi:type="form:FormField">
               <name>Execute</name>
               <id>299</id>
-              <title>
-                <key>en</key>
-                <value>Execute</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Выполнить</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6480,14 +5916,6 @@
             <items xsi:type="form:FormField">
               <name>InteractiveExecute</name>
               <id>302</id>
-              <title>
-                <key>en</key>
-                <value>Interactive execute</value>
-              </title>
-              <title>
-                <key>ru</key>
-                <value>Интерактивное выполнение</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -6596,12 +6024,43 @@
           <autoCommandBar>
             <name>CommandBar</name>
             <id>86</id>
+            <items xsi:type="form:Button">
+              <name>RestrictionByConditionMatrixAddRestriction</name>
+              <id>491</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>RestrictionByConditionMatrixAddRestrictionExtendedTooltip</name>
+                <id>492</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <commandName>Form.Command.AddRestriction</commandName>
+              <representation>Auto</representation>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
             <horizontalAlign>Left</horizontalAlign>
+            <autoFill>true</autoFill>
           </autoCommandBar>
           <handlers>
             <event>Selection</event>
@@ -6983,36 +6442,6 @@
           <autoCommandBar>
             <name>TableCommandBar1</name>
             <id>467</id>
-            <items xsi:type="form:Button">
-              <name>RestrictionByConditionMatrixAddRestriction</name>
-              <id>491</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <extendedTooltip>
-                <name>RestrictionByConditionMatrixAddRestrictionExtendedTooltip</name>
-                <id>492</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <commandName>Form.Command.AddRestriction</commandName>
-              <representation>Auto</representation>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <placementArea>UserCmds</placementArea>
-              <representationInContextMenu>Auto</representationInContextMenu>
-            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -9553,7 +8982,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>Вставить</value>
+        <value>Добавление</value>
       </title>
       <id>8</id>
       <valueType>
@@ -9628,7 +9057,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>Удалить</value>
+        <value>Удаление</value>
       </title>
       <id>11</id>
       <valueType>
@@ -10078,7 +9507,7 @@
       </title>
       <title>
         <key>ru</key>
-        <value>Получить</value>
+        <value>Получение</value>
       </title>
       <id>29</id>
       <valueType>
@@ -10846,11 +10275,11 @@
       <name>ObjectFullName</name>
       <title>
         <key>en</key>
-        <value>Object full name</value>
+        <value>Object</value>
       </title>
       <title>
         <key>ru</key>
-        <value>Полное имя объекта</value>
+        <value>Объект</value>
       </title>
       <id>61</id>
       <valueType>

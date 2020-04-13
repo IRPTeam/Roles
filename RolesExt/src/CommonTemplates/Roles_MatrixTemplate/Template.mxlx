@@ -509,7 +509,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Вставить</v8:content>
+							<v8:content>Добавление</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Insert</detailParameter>
@@ -541,7 +541,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Удалить</v8:content>
+							<v8:content>Удаление</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Delete</detailParameter>
@@ -573,7 +573,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Изменение</v8:content>
+							<v8:content>Редактирование</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Edit</detailParameter>
@@ -877,7 +877,7 @@
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Получить</v8:content>
+							<v8:content>Получение</v8:content>
 						</v8:item>
 					</tl>
 					<detailParameter>Get</detailParameter>

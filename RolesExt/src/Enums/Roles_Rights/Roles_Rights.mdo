@@ -101,7 +101,7 @@
     </synonym>
     <synonym>
       <key>ru</key>
-      <value>Удалить</value>
+      <value>Удаление</value>
     </synonym>
   </enumValues>
   <enumValues uuid="6f64263b-d609-44e7-8ec1-5c35ef89118f">
@@ -178,7 +178,7 @@
     </synonym>
     <synonym>
       <key>ru</key>
-      <value>Получить</value>
+      <value>Получение</value>
     </synonym>
   </enumValues>
   <enumValues uuid="3b17bf12-1768-44b8-ab93-00ea662f069a">
@@ -200,7 +200,7 @@
     </synonym>
     <synonym>
       <key>ru</key>
-      <value>Вставить</value>
+      <value>Добавление</value>
     </synonym>
   </enumValues>
   <enumValues uuid="7ca9ea61-bb85-40de-9df1-0d25098d242c">
