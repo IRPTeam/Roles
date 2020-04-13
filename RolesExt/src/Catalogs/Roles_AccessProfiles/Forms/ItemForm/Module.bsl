@@ -186,6 +186,7 @@ Procedure CheckUncheck(Status)
 		TmpRow = Object.Roles.FindByID(Row);
 		TmpRow.Hide = Status;
 	EndDo;
+	Items.TabDocMartix.BlackAndWhiteView = True;
 EndProcedure
 
 
