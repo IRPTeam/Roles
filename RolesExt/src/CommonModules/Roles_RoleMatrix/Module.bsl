@@ -648,13 +648,28 @@ Procedure FillRLSData(Row, RightData, Name)
 	If Row["RLS" + Name + "Filled"] = -1 Then
 		Return;
 	EndIf;
+	
+	If Not RightData.RLSFilled 
+		And Row["RLS" + Name + "Filled"] = 0 
+		And Not FirstStep Then
+		Return;
+	EndIf;
 	// 0 - have no RLS
 	// 1 - All RLS is active
 	// -1 - some role give full access to object
-	If Not RightData.RLSFilled Then
+	
+	If Not RightData.RLSFilled 
+		And Row["RLS" + Name + "Filled"] = 1 Then
 		Row["RLS" + Name + "Filled"] = -1;
-	ElsIf RightData.RLSFilled Then
+	ElsIf RightData.RLSFilled
+	 	And Row["RLS" + Name + "Filled"] = 0 
+	 	And Not FirstStep Then
+		Row["RLS" + Name + "Filled"] = -1;
+	ElsIf RightData.RLSFilled
+	 	And Row["RLS" + Name + "Filled"] = 0 Then
 		Row["RLS" + Name + "Filled"] = 1;
+	Else
+		Return;
 	EndIf;	
 EndProcedure
 

@@ -246,6 +246,7 @@
       </userVisible>
       <autoFill>true</autoFill>
     </contextMenu>
+    <representation>Tree</representation>
     <changeRowSet>true</changeRowSet>
     <changeRowOrder>true</changeRowOrder>
     <autoMaxWidth>true</autoMaxWidth>
