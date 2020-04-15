@@ -1,4 +1,5 @@
 #Region Internal
+
 Procedure UpdateRoleExt() Export
 	Path = TempFilesDir() + "TemplateDB";
 	DeleteFiles(Path);
@@ -39,9 +40,11 @@ Procedure UpdateRoleExt() Export
 	DeleteFiles(Path);
 	
 EndProcedure
+
 #EndRegion
 
 #Region Private
+
 Procedure UpdateRoleExt_CreateRolesXML(Path)
 
 	Query = New Query;
@@ -249,6 +252,7 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|	NOT Roles_AccessRolesRights.Disable
 		|	AND NOT Roles_AccessRolesRights.Ref.DeletionMark
 		|	AND NOT Roles_AccessRolesRights.ObjectSubtype = VALUE(Enum.Roles_MetadataSubtype.EmptyRef)
+		|	AND NOT Roles_AccessRolesRights.Ref.ConfigRoles
 		|
 		|ORDER BY
 		|	ObjectPath,
@@ -261,7 +265,9 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|////////////////////////////////////////////////////////////////////////////////
 		|SELECT
 		|	""AccRoles_"" + Roles_Parameters.Description AS ObjectName,
-		|	Roles_Parameters.ValueTypeData AS ValueTypeData
+		|	Roles_Parameters.ValueTypeData AS ValueTypeData,
+		|	Roles_Parameters.BSLCode AS BSLCode,
+		|	Roles_Parameters.UseCode AS UseCode
 		|FROM
 		|	Catalog.Roles_Parameters AS Roles_Parameters
 		|WHERE
@@ -359,6 +365,12 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		EndIf;
 	EndDo;
 	
+	UpdateRoleExt_ConfigurationXML_SetSessionParameters(SourcePath, XMLSettings, SessionParam);
+EndProcedure
+
+
+Procedure UpdateRoleExt_ConfigurationXML_SetSessionParameters(Val SourcePath, Val XMLSettings, Val SessionParam)
+
 	CreateDirectory(SourcePath + "SessionParameters");
 	
 	
@@ -374,11 +386,33 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	|		<value>true</value>
 	|	</right>
 	|</object>";
+	
 	TmpRoleSPArray = New Array;
+	
+	BSLCodeArray = New Array;
+	BSLCodeArrayName = New Array;
+	BSLCodeArrayName.Add("");
+	BSLCodeArrayName.Add("	If RequiredParameters = Undefined Then");
+	BSLCodeArrayName.Add("		Return;");
+	BSLCodeArrayName.Add("	EndIf;");
+	BSLCodeArrayName.Add("");
+	
 	For Each SessionRow In SessionParam Do
 		Tmp = TmpText;
 		TmpRoleSPArray.Add(StrTemplate(Tmp, SessionRow.ObjectName));
 		UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, SessionRow);
+		
+		If SessionRow.UseCode Then
+					
+			BSLCodeArrayName.Add("	If Not RequiredParameters.Find(""" + SessionRow.ObjectName + """) = Undefined Then");
+			BSLCodeArrayName.Add("		" + SessionRow.ObjectName + "(RequiredParameters);");
+			BSLCodeArrayName.Add("	EndIf;");
+
+			BSLCodeArray.Add("Function " + SessionRow.ObjectName + "(RequiredParameters)");
+			BSLCodeArray.Add(SessionRow.BSLCode);
+			BSLCodeArray.Add("EndFunction");
+			BSLCodeArray.Add("");
+		EndIf;
 	EndDo;
 	TmpRoleSPArray.Add("</Rights>");
 	// Add to DefaultRole access to session parameters
@@ -392,7 +426,20 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	TextWriter = New TextWriter(SourcePath + "Roles\AccRoles_DefaultRole\Ext\Rights.xml", TextEncoding.UTF8);
 	TextWriter.Write(Text);
 	TextWriter.Close();
+	
+	TextReader = New TextReader();
+	TextReader.Open(SourcePath + "CommonModules\AccRoles_SetSessionParameters\Ext\Module.bsl", TextEncoding.UTF8);
+	Text = TextReader.Read();
+	TextReader.Close();
+	
+	Text = StrReplace(Text, "//#ImportCode", StrConcat(BSLCodeArrayName, Chars.LF));
+	Text = Text + Chars.LF + StrConcat(BSLCodeArray, Chars.LF);
+	
+	TextWriter = New TextWriter(SourcePath + "CommonModules\AccRoles_SetSessionParameters\Ext\Module.bsl", TextEncoding.UTF8);
+	TextWriter.Write(Text);
+	TextWriter.Close();
 EndProcedure
+
 
 Procedure UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, Item)
 	
@@ -565,4 +612,5 @@ Procedure InstallExtention(Name, ExtensionData, OverWrite = True)
 	Ext.SafeMode = False;
 	Ext.Write(ExtensionData);
 EndProcedure
+
 #EndRegion

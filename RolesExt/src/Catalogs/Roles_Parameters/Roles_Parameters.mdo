@@ -89,6 +89,39 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="2291ec7e-9cd5-4413-80ed-c40eaa8164dd">
+    <name>BSLCode</name>
+    <synonym>
+      <key>en</key>
+      <value>BSL Code</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="59e7897d-01e4-4061-ac01-045aaea62edc">
+    <name>UseCode</name>
+    <synonym>
+      <key>en</key>
+      <value>Use code</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="99bbd249-53ab-458e-ad49-3fd23f9cdf1a">
     <name>ItemForm</name>
     <synonym>

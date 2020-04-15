@@ -36,6 +36,12 @@ EndProcedure
 &AtClient
 Procedure OnOpen(Cancel)
 	SetValueType();
+	SetBSLFunction();
+EndProcedure
+
+&AtClient
+Procedure DescriptionOnChange(Item)
+	SetBSLFunction();
 EndProcedure
 #EndRegion
 
@@ -50,20 +56,35 @@ Procedure isListOnChange(Item)
 	DisplayFilter();
 EndProcedure
 
+&AtClient
+Procedure UseCodeOnChange(Item)
+	DisplayFilter();
+EndProcedure
+
 #EndRegion
 
 #Region Private
 
 &AtServer
 Procedure DisplayFilter()
+	Items.GroupBSL.Visible = Object.UseCode;
+	Items.GroupValue.Visible = Not Object.UseCode;	
 	Items.ValueList.Visible = Object.isList;
 	Items.ValueData.Visible = Not Object.isList;
 EndProcedure
+
+
 
 &AtClient
 Procedure SetValueType()
 	Items.ValueData.TypeRestriction = New TypeDescription(ValueType);
 	ValueList.ValueType = New TypeDescription(ValueType);
+EndProcedure
+
+&AtClient
+Procedure SetBSLFunction()
+	Items.DecorationName.Title = "Function AccRoles_" + Object.Description + "(RequiredParameters)";
+	Items.DecorationEnd.Title = "EndFunction";
 EndProcedure
 
 #EndRegion

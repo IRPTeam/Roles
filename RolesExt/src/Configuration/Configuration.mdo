@@ -11,7 +11,9 @@
   </synonym>
   <comment> </comment>
   <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:ConfigurationExtension"/>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <sessionModule>Extended</sessionModule>
+  </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="dfdd8d1d-f6a8-4e91-96a1-8b8ef9cc7871"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="ed28055f-464c-4b51-8ed3-8cc60fb0bbc4"/>
   <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="902e6ef9-1ed6-4baa-9400-957794aeaafc"/>
@@ -22,7 +24,7 @@
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
   <vendor>IRP Team (ditrixnew@gmail.com)</vendor>
-  <version>0.3.8</version>
+  <version>0.3.9</version>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
