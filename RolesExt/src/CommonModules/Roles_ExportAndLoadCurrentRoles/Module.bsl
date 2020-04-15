@@ -1,19 +1,36 @@
 #Region Internal
-Procedure UpdateRoleExt(Val Settings, CountRoles = 0) Export
+Procedure UpdateRoleExt(Val Settings, CountRoles = 0, Log = "") Export
 	LoadFromTemp = False;
 	If Settings.Source = "SQL"
 		Or Settings.Source = "File" Then
 			
 		Path = TempFilesDir() + "TR";
+		
 		DeleteFiles(Path);
+		CreateDirectory(Path);
 		LoadFromTemp = True;
 		// unload to xml
 		CommandToUploadExt = """" + BinDir() + "1cv8.exe"" designer " + "/N """ + Settings.Login + """" +
 		" /P """ + Settings.Password + """" + " " + 
 		?(Settings.Source = "SQL", "/s " + Settings.ServerName + "\" + Settings.BaseName, "/f " + Settings.Path) +
 		" /DumpConfigToFiles " + Path + " /DumpResult " + Path + 
-		"\Event.log /DisableStartupMessages /DisableStartupDialogs";
+		"\Result.log /DisableStartupMessages /DisableStartupDialogs /Len /Out " + Path + "\Event.log";
 		RunApp(CommandToUploadExt, , True);
+		
+		TextReader = New TextReader();
+		TextReader.Open(Path + "\Event.log", TextEncoding.UTF8);
+		Log = TextReader.Read();
+		TextReader.Close();
+
+		TextReader = New TextReader();
+		TextReader.Open(Path + "\Result.log", TextEncoding.UTF8);
+		Status = TextReader.Read();
+		TextReader.Close();
+
+		If Not Status = "0" Then
+			Log = Log + Chars.LF + "Status = " + Status;
+			Return;
+		EndIf;
 		
 		Settings.PathToXML = Path + "\";
 		
@@ -31,7 +48,7 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0) Export
 	CountRoles = CountRoles + Rights.Count();
 	
 	If LoadFromTemp Then	
-		DeleteFiles(Path);
+		//DeleteFiles(Path);
 	EndIf;	
 EndProcedure
 #EndRegion

@@ -105,7 +105,7 @@ EndProcedure
 &AtClient
 Procedure LoadRolesFromCurrentConfigEnd(Result)
 	
-	Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(Result, CountRoles);
+	Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(Result, CountRoles, Log);
 
 EndProcedure
 
