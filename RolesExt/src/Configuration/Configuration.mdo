@@ -186,7 +186,6 @@
   <commonForms>CommonForm.Roles_ConvertTemplateToQuery</commonForms>
   <catalogs>Catalog.Roles_AccessRoles</catalogs>
   <catalogs>Catalog.Roles_AccessProfiles</catalogs>
-  <catalogs>Catalog.Users</catalogs>
   <catalogs>Catalog.Roles_Templates</catalogs>
   <catalogs>Catalog.Roles_Parameters</catalogs>
   <enums>Enum.Roles_MetadataTypes</enums>

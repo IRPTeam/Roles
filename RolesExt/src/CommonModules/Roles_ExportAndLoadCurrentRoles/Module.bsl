@@ -10,8 +10,8 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0) Export
 		// unload to xml
 		CommandToUploadExt = """" + BinDir() + "1cv8.exe"" designer " + "/N """ + Settings.Login + """" +
 		" /P """ + Settings.Password + """" + " " + 
-		?(Settings.Source = "SQL", "/s " + Settings.ServerName + "\" + Settings.BaseName, "/f " + Path) +
-		" /DumpConfigToFiles " + Path + " -Right /DumpResult " + Path + 
+		?(Settings.Source = "SQL", "/s " + Settings.ServerName + "\" + Settings.BaseName, "/f " + Settings.Path) +
+		" /DumpConfigToFiles " + Path + " /DumpResult " + Path + 
 		"\Event.log /DisableStartupMessages /DisableStartupDialogs";
 		RunApp(CommandToUploadExt, , True);
 		

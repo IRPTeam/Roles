@@ -19,7 +19,6 @@
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.Roles_AccessRoles.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
-  <basedOn>Catalog.Users</basedOn>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
