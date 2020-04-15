@@ -48,7 +48,7 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0, Log = "") Export
 	CountRoles = CountRoles + Rights.Count();
 	
 	If LoadFromTemp Then	
-		//DeleteFiles(Path);
+		DeleteFiles(Path);
 	EndIf;	
 EndProcedure
 #EndRegion

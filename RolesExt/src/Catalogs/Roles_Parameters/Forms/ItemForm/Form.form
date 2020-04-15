@@ -802,6 +802,10 @@
       <key>en</key>
       <value>Group BSL</value>
     </title>
+    <title>
+      <key>ru</key>
+      <value>Группа BSL</value>
+    </title>
     <extendedTooltip>
       <name>GroupBSLExtendedTooltip</name>
       <id>45</id>

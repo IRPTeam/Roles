@@ -920,6 +920,7 @@ Function hasNoChildObjects(RefData) Export
 	Array.Add(Enums.Roles_MetadataTypes.CommonForm);
 	Array.Add(Enums.Roles_MetadataTypes.Constant);
 	Array.Add(Enums.Roles_MetadataTypes.Language);
+	Array.Add(Enums.Roles_MetadataTypes.Interface);
 	Return NOT Array.Find(RefData) = Undefined;
 EndFunction
 

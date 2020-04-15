@@ -1093,8 +1093,12 @@
   <attributes>
     <name>Log</name>
     <title>
-      <key></key>
+      <key>en</key>
       <value>Log</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Лог</value>
     </title>
     <id>1</id>
     <valueType>

@@ -1209,13 +1209,21 @@
   <formCommands>
     <name>CheckSelectedRows</name>
     <title>
-      <key></key>
+      <key>en</key>
       <value>Check selected rows</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Отметить выделенные строки</value>
     </title>
     <id>3</id>
     <toolTip>
-      <key></key>
+      <key>en</key>
       <value>Check selected rows</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Отметить выделенные строки</value>
     </toolTip>
     <use>
       <common>true</common>
@@ -1234,13 +1242,21 @@
   <formCommands>
     <name>UncheckSelectedRows</name>
     <title>
-      <key></key>
+      <key>en</key>
       <value>Uncheck selected rows</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Снять отметку у выделенных строк</value>
     </title>
     <id>4</id>
     <toolTip>
-      <key></key>
+      <key>en</key>
       <value>Uncheck selected rows</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Снять отметку у выделенных строк</value>
     </toolTip>
     <use>
       <common>true</common>

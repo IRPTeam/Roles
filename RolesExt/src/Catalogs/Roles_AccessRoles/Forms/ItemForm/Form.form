@@ -4293,10 +4293,6 @@
             <items xsi:type="form:FormField">
               <name>Output</name>
               <id>227</id>
-              <title>
-                <key>ru</key>
-                <value>Вывод</value>
-              </title>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>

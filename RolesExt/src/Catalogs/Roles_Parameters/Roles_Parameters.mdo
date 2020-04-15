@@ -95,6 +95,10 @@
       <key>en</key>
       <value>BSL Code</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>BSL Код</value>
+    </synonym>
     <type>
       <types>String</types>
       <stringQualifiers/>
@@ -112,6 +116,10 @@
     <synonym>
       <key>en</key>
       <value>Use code</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать код</value>
     </synonym>
     <type>
       <types>Boolean</types>
