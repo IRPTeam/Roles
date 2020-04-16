@@ -326,10 +326,13 @@ Procedure SetFlags(CurrentRow,  Field, Value = Undefined, OnlyNextLvl = False)
 	SetEditedInfo(CurrentRow);
 	
 	ParentRow = CurrentRow.GetParent();
-	Param = CurrentRow.ObjectName = "" 
+	Param = (CurrentRow.ObjectName = "" 
 			  OR (Not CurrentRow.ObjectSubtype.isEmpty() AND 
 			  		Not ParentRow.ObjectSubtype = CurrentRow.ObjectSubtype AND
-					Not OnlyNextLvl);
+					Not OnlyNextLvl)
+			) And
+	         Not (CurrentRow.ObjectSubtype = PredefinedValue("Enum.Roles_MetadataSubtype.Operation")
+		       Or CurrentRow.ObjectSubtype = PredefinedValue("Enum.Roles_MetadataSubtype.Method"));
 	If Param Then
 		For Each RowChild In CurrentRow.GetItems() Do
 			SetFlags(RowChild,  Field, CurrentRow[Field.Name], True);
