@@ -3932,6 +3932,7 @@
 		</appearance>
 	</item>
 	<item>
+		<use>false</use>
 		<selection>
 			<item>
 				<field>Administration</field>
@@ -13155,6 +13156,111 @@
 						<v8:content>⚫</v8:content>
 					</v8:item>
 				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Administration</field>
+			</item>
+			<item>
+				<field>DataAdministration</field>
+			</item>
+			<item>
+				<field>UpdateDataBaseConfiguration</field>
+			</item>
+			<item>
+				<field>ExclusiveMode</field>
+			</item>
+			<item>
+				<field>ActiveUsers</field>
+			</item>
+			<item>
+				<field>EventLog</field>
+			</item>
+			<item>
+				<field>ThinClient</field>
+			</item>
+			<item>
+				<field>WebClient</field>
+			</item>
+			<item>
+				<field>MobileClient</field>
+			</item>
+			<item>
+				<field>ThickClient</field>
+			</item>
+			<item>
+				<field>ExternalConnection</field>
+			</item>
+			<item>
+				<field>Automation</field>
+			</item>
+			<item>
+				<field>TechnicalSpecialistMode</field>
+			</item>
+			<item>
+				<field>CollaborationSystemInfoBaseRegistration</field>
+			</item>
+			<item>
+				<field>SaveUserData</field>
+			</item>
+			<item>
+				<field>ConfigurationExtensionsAdministration</field>
+			</item>
+			<item>
+				<field>InteractiveOpenExtDataProcessors</field>
+			</item>
+			<item>
+				<field>InteractiveOpenExtReports</field>
+			</item>
+			<item>
+				<field>Output</field>
+			</item>
+			<item>
+				<field>MainWindowModeNormal</field>
+			</item>
+			<item>
+				<field>MainWindowModeWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeEmbeddedWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeFullscreenWorkplace</field>
+			</item>
+			<item>
+				<field>MainWindowModeKiosk</field>
+			</item>
+			<item>
+				<field>AnalyticsSystemClient</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Object.ConfigRoles</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Enabled</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Show</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Visible</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
