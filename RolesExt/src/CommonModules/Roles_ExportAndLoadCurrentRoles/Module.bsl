@@ -11,10 +11,10 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0, Log = "") Export
 		LoadFromTemp = True;
 		// unload to xml
 		CommandToUploadExt = """" + BinDir() + "1cv8.exe"" designer " + "/N """ + Settings.Login + """" +
-		" /P """ + Settings.Password + """" + " " + 
-		?(Settings.Source = "SQL", "/s " + Settings.ServerName + "\" + Settings.BaseName, "/f " + Settings.Path) +
-		" /DumpConfigToFiles " + Path + " /DumpResult " + Path + 
-		"\Result.log /DisableStartupMessages /DisableStartupDialogs /Len /Out " + Path + "\Event.log";
+			" /P """ + Settings.Password + """" + " " + 
+			?(Settings.Source = "SQL", "/s " + Settings.ServerName + "\" + Settings.BaseName, "/f " + Settings.Path) +
+			" /DumpConfigToFiles " + Path + " /DumpResult " + Path + 
+			"\Result.log /DisableStartupMessages /DisableStartupDialogs /Out " + Path + "\Event.log";
 		RunApp(CommandToUploadExt, , True);
 		
 		TextReader = New TextReader();
