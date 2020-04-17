@@ -2,7 +2,7 @@
 
 &AtClient
 Procedure OnOpen(Cancel)
-	SourceOnChange();
+	AutoFillSettings();
 EndProcedure
 
 &AtServer
@@ -64,12 +64,26 @@ EndProcedure
 
 &AtClient
 Procedure FillByCurrentDatabase(Command)
+	AutoFillSettings();
+EndProcedure
+
+
+&AtClient
+Procedure AutoFillSettings()
+	Var ConnectionString;
 	ConnectionString = InfoBaseConnectionString();	
 	ThisObject.Path = NStr(ConnectionString, "File");
 	ThisObject.ServerName = NStr(ConnectionString, "Srvr");
 	ThisObject.BaseName = NStr(ConnectionString, "Ref");
 	ThisObject.Login = UserName();
+	If IsBlankString(ThisObject.Path) Then
+		Source = "SQL";
+	Else
+		Source = "File";
+	EndIf;
+	SourceOnChange();
 EndProcedure
+
 
 &AtClient
 Procedure SourceOnChange()
