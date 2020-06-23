@@ -24,7 +24,7 @@
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
   <vendor>IRP Team (ditrixnew@gmail.com)</vendor>
-  <version>1.0.8</version>
+  <version>1.0.8.#buildNumber#</version>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
