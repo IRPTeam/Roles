@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea19e0f5-f704-4739-ac8c-83296c7f378b">
+  <name>Roles_right_automation</name>
+  <synonym>
+    <key>en</key>
+    <value>Right automation dark</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правая автоматика темная</value>
+  </synonym>
+</mdclass:CommonPicture>

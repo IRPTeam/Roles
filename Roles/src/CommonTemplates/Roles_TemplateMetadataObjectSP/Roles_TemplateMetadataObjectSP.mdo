@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4438c12c-11aa-48a9-944a-6e98f3ee4636">
+  <name>Roles_TemplateMetadataObjectSP</name>
+  <synonym>
+    <key>en</key>
+    <value>Template metadata object SP</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблон метаданных объекта SP</value>
+  </synonym>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

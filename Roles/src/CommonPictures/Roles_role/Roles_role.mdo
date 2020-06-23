@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53c74824-a078-4442-a2c3-00ef82a851cd">
+  <name>Roles_role</name>
+  <synonym>
+    <key>en</key>
+    <value>Role</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роль</value>
+  </synonym>
+</mdclass:CommonPicture>

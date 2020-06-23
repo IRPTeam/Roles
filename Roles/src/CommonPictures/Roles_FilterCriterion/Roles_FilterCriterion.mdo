@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="694ace3f-6a32-41e6-b4df-cdd0b9d9530c">
+  <name>Roles_FilterCriterion</name>
+  <synonym>
+    <key>en</key>
+    <value>Filter criterion</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Критерий отбора</value>
+  </synonym>
+</mdclass:CommonPicture>

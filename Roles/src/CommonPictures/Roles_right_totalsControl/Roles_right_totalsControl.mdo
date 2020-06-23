@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58931d4b-3d87-4567-8382-3f7bf0a70747">
+  <name>Roles_right_totalsControl</name>
+  <synonym>
+    <key>en</key>
+    <value>Right totals control dark</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный итог контролирует темный</value>
+  </synonym>
+</mdclass:CommonPicture>

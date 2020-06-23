@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b15097e-fc8a-40f0-9762-eb51dad82ebc">
+  <name>Roles_right_interactiveExecute</name>
+  <synonym>
+    <key>en</key>
+    <value>Roles right interactive execute</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Роли правые интерактивные исполнять</value>
+  </synonym>
+</mdclass:CommonPicture>

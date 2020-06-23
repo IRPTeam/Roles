@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d3ac88b-2f6a-47ed-bb99-754b5dc3a7d4">
+  <name>Roles_right_interactiveSetDeletionMarkPredefinedData</name>
+  <synonym>
+    <key>en</key>
+    <value>Right interactive set deletion mark predefined data</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правый интерактивный набор меток для удаления предварительно определенных данных</value>
+  </synonym>
+</mdclass:CommonPicture>

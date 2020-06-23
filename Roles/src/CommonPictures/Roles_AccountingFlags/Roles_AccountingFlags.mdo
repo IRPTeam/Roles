@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06059250-94f5-4e36-8105-f22d10431587">
+  <name>Roles_AccountingFlags</name>
+  <synonym>
+    <key>en</key>
+    <value>Accounting flags</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Флаги учета</value>
+  </synonym>
+</mdclass:CommonPicture>

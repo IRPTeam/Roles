@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b9a69ce-73b3-4bd3-8408-94348a6cbe5a">
+  <name>Roles_StandardAttributes</name>
+  <synonym>
+    <key>en</key>
+    <value>Standard attribute</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Стандартные реквизиты</value>
+  </synonym>
+</mdclass:CommonPicture>

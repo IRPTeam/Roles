@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1f5d0dcb-2606-43c6-b991-7ff92c3e88a8">
+  <name>Roles_right_eventLog</name>
+  <synonym>
+    <key>en</key>
+    <value>Right event log</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный журнал событий</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6cfffd15-fde1-49d2-87d3-06b2ae139603">
+  <name>Roles_right_updateDataBaseConfiguration</name>
+  <synonym>
+    <key>en</key>
+    <value>Right update data base configuration</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильно обновить конфигурацию базы данных</value>
+  </synonym>
+</mdclass:CommonPicture>

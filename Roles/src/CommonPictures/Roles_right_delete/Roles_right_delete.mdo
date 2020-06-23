@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec152b90-d029-4caa-8cbb-640796c4c98c">
+  <name>Roles_right_delete</name>
+  <synonym>
+    <key>en</key>
+    <value>Right delete</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Право удалить</value>
+  </synonym>
+</mdclass:CommonPicture>

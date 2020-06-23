@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b1ffcaa-df96-4bca-81f7-e14927ff8f4a">
+  <name>Roles_ConvertTemplate</name>
+  <synonym>
+    <key>en</key>
+    <value>Convert template</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Конвертировать шаблон</value>
+  </synonym>
+  <group>ActionsPanelTools</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

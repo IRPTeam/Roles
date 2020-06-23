@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4645a065-73ba-4c6a-8f29-1d20f5c27746">
+  <name>Roles_LoadRolesFromXML</name>
+  <synonym>
+    <key>en</key>
+    <value>Load roles from XML</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузить роли из XML</value>
+  </synonym>
+  <group>ActionsPanelTools</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

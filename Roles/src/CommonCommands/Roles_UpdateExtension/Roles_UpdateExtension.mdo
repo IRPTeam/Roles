@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d3f3229-e9d8-48f0-b2ff-e357c4a7c4bd">
+  <name>Roles_UpdateExtension</name>
+  <synonym>
+    <key>en</key>
+    <value>Update extension</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Обновить расширение</value>
+  </synonym>
+  <group>ActionsPanelTools</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

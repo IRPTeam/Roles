@@ -1,0 +1,905 @@
+<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<column>
+		<Name xsi:type="xs:string">ObjectName</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>150</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Insert</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Read</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Update</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Delete</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">View</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Edit</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InputByString</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Posting</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">UndoPosting</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Use</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">TotalsControl</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveDelete</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveInsert</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveSetDeletionMark</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveClearDeletionMark</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveDeleteMarked</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractivePosting</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractivePostingRegular</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveUndoPosting</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveChangeOfPosted</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveDeletePredefinedData</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Get</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Set</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Administration</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">DataAdministration</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">UpdateDataBaseConfiguration</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ExclusiveMode</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ActiveUsers</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">EventLog</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ThinClient</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">WebClient</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">MobileClient</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ThickClient</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ExternalConnection</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Automation</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">TechnicalSpecialistMode</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">CollaborationSystemInfoBaseRegistration</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">SaveUserData</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ConfigurationExtensionsAdministration</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveOpenExtDataProcessors</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveOpenExtReports</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Output</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ReadDataHistory</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ViewDataHistory</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ReadDataHistoryOfMissingData</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">UpdateDataHistory</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">UpdateDataHistoryOfMissingData</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">UpdateDataHistorySettings</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">UpdateDataHistoryVersionComment</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">EditDataHistoryVersionComment</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">SwitchToDataHistoryVersion</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ObjectType</Name>
+		<ValueType>
+			<Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.Roles_MetadataSubtype</Type>
+			<Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.Roles_MetadataTypes</Type>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ObjectFullName</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Picture</Name>
+		<ValueType>
+			<Type xmlns:d4p1="http://v8.1c.ru/8.1/data/ui">d4p1:Picture</Type>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Execute</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveExecute</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveActivate</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Start</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveStart</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveSetDeletionMarkPredefinedData</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveClearDeletionMarkPredefinedData</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">InteractiveDeleteMarkedPredefinedData</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ObjectSubtype</Name>
+		<ValueType>
+			<Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.Roles_MetadataSubtype</Type>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">MainWindowModeNormal</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">MainWindowModeWorkplace</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">MainWindowModeEmbeddedWorkplace</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">MainWindowModeFullscreenWorkplace</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">MainWindowModeKiosk</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">AnalyticsSystemClient</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ObjectPath</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Edited</Name>
+		<ValueType>
+			<Type>xs:boolean</Type>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">EmptyRow</Name>
+		<ValueType>
+			<Type>xs:boolean</Type>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">DataStorageLink</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">RLSInsertID</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">RLSReadID</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">RLSUpdateID</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">RLSDeleteID</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">RLSInsertFilled</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Any</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">RLSReadFilled</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Any</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">RLSUpdateFilled</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Any</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">RLSDeleteFilled</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Any</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">StandardAuthenticationChange</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">SessionStandardAuthenticationChange</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">SessionOSAuthenticationChange</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+</ValueTree>

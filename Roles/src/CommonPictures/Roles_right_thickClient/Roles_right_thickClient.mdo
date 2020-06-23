@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f402c7e3-c11e-4a4e-94eb-47fd740f334a">
+  <name>Roles_right_thickClient</name>
+  <synonym>
+    <key>en</key>
+    <value>Right thick client</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильный толстый клиент</value>
+  </synonym>
+</mdclass:CommonPicture>

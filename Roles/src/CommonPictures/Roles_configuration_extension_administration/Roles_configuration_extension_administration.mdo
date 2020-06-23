@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93f42e52-83af-4844-af95-ffdcfd9cef8a">
+  <name>Roles_configuration_extension_administration</name>
+  <synonym>
+    <key>en</key>
+    <value>Configuration extension administration</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование расширения конфигурации</value>
+  </synonym>
+</mdclass:CommonPicture>

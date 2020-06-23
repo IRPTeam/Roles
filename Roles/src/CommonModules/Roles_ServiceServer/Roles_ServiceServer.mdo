@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ac2f59f-76a4-4d3f-8b9a-05ba8e6d94f4">
+  <name>Roles_ServiceServer</name>
+  <synonym>
+    <key>en</key>
+    <value>Service server</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Сервисный сервер</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

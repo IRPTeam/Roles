@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4daf4ad1-bb9c-4e03-bcb1-8d0e7b94c544">
+  <name>Roles_SettingsReUse</name>
+  <synonym>
+    <key>en</key>
+    <value>Roles settings re use</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки повторно использовать</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

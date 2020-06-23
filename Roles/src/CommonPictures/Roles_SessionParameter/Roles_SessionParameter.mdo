@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3a49bef-084f-4b18-a3cd-3d48ea240791">
+  <name>Roles_SessionParameter</name>
+  <synonym>
+    <key>en</key>
+    <value>Session parameter</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Параметр сеанса</value>
+  </synonym>
+</mdclass:CommonPicture>

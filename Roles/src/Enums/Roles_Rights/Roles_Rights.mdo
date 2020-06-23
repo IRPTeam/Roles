@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9bda979d-1244-4e7a-be68-08b7ccc6775e">
+  <producedTypes>
+    <refType typeId="edab43b8-19d4-4ccf-a486-e9be43f51343" valueTypeId="2501ec6a-bf7a-4f91-a159-717d9a098904"/>
+    <listType typeId="0e61aad9-4e11-47f8-aa9f-fb268ca0dbe4" valueTypeId="4170f396-120e-4d06-9456-54345e1b5d65"/>
+    <managerType typeId="db05d8b4-56e8-4f52-8c76-45a26972b482" valueTypeId="34ed66b6-71e6-4faf-b8a9-749c34774a63"/>
+  </producedTypes>
+  <name>Roles_Rights</name>
+  <synonym>
+    <key>en</key>
+    <value>Rights</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Права</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cbece97f-d2f1-49e8-b0b2-947d8d417947">
+    <name>ActiveUsers</name>
+    <synonym>
+      <key>en</key>
+      <value>Active users</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Активные пользователи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7c664aa7-5519-4c43-a92d-74f1319af3b8">
+    <name>Administration</name>
+    <synonym>
+      <key>en</key>
+      <value>Administration</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Администрирование	</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="05af4ff6-241e-45d3-91d2-1a449788a10e">
+    <name>AnalyticsSystemClient</name>
+    <synonym>
+      <key>en</key>
+      <value>Analytics system client</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент системы аналитики	</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="33b79d41-cb44-48d9-9a60-e12154a3c4fb">
+    <name>Automation</name>
+    <synonym>
+      <key>en</key>
+      <value>Automation</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Automation</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3bb04de5-7127-457d-b5c4-e9f93002245e">
+    <name>CollaborationSystemInfoBaseRegistration</name>
+    <synonym>
+      <key>en</key>
+      <value>Collaboration system info base registration</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация системы взаимодействия</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="573bf596-d960-4622-8759-853b38bb95f2">
+    <name>ConfigurationExtensionsAdministration</name>
+    <synonym>
+      <key>en</key>
+      <value>Configuration extensions administration</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Администрирование расширений конфигурации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6f4535df-6c9a-42cb-8085-8f12408875ef">
+    <name>DataAdministration</name>
+    <synonym>
+      <key>en</key>
+      <value>Data administration</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Администрирование данных	</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a2f49744-699b-4c7b-97ba-a15e079959ce">
+    <name>Delete</name>
+    <synonym>
+      <key>en</key>
+      <value>Delete</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Удаление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6f64263b-d609-44e7-8ec1-5c35ef89118f">
+    <name>Edit</name>
+    <synonym>
+      <key>en</key>
+      <value>Edit</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e8145a39-6167-4d95-bfe5-dc12f757871b">
+    <name>EditDataHistoryVersionComment</name>
+    <synonym>
+      <key>en</key>
+      <value>Edit data history version comment</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование комментария версии истории данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="84aa8a3d-af69-4abe-a2bd-ca85fd2d9f6b">
+    <name>EventLog</name>
+    <synonym>
+      <key>en</key>
+      <value>Event log</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Журнал событий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d40589f1-992c-4b42-8f59-e716c5cf21d4">
+    <name>ExclusiveMode</name>
+    <synonym>
+      <key>en</key>
+      <value>Exclusive mode</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Монопольный режим</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e10b2cc5-1686-47ec-b345-2325c6aafa2e">
+    <name>Execute</name>
+    <synonym>
+      <key>en</key>
+      <value>Execute</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнить</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="02a25145-3e18-46c4-8acf-e268bbc3e7a9">
+    <name>ExternalConnection</name>
+    <synonym>
+      <key>en</key>
+      <value>External connection</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Внешнее соединение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ad3f9776-30a1-4c3a-8cd0-2c2d5acc9d4e">
+    <name>Get</name>
+    <synonym>
+      <key>en</key>
+      <value>Get</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Получение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3b17bf12-1768-44b8-ab93-00ea662f069a">
+    <name>InputByString</name>
+    <synonym>
+      <key>en</key>
+      <value>Input by string</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод по строке</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="92b4306a-cd13-4b9f-afa8-9d0dd637849d">
+    <name>Insert</name>
+    <synonym>
+      <key>en</key>
+      <value>Insert</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7ca9ea61-bb85-40de-9df1-0d25098d242c">
+    <name>InteractiveActivate</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive activate</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивная активация</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1399f372-2b43-4542-a9db-8537441874a4">
+    <name>InteractiveChangeOfPosted</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive change of posted</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное изменение проведенных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a48329b0-5d30-4f3c-9dd8-51deb6a2aef7">
+    <name>InteractiveClearDeletionMark</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive clear deletion mark</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное снятие пометки удаления</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f346c9aa-32ab-4d2e-a9bc-4f082983f585">
+    <name>InteractiveClearDeletionMarkPredefinedData</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive clear deletion mark predefined data</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное снятие пометки удаления предопределенных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="70c67759-1a89-45e5-8239-936b0d4ecb4a">
+    <name>InteractiveDelete</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive delete</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное удаление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8b2dbc00-1ba4-4aa3-a1cc-8460f22ea3d9">
+    <name>InteractiveDeleteMarked</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive delete marked</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное удаление помеченных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="29bd9c0b-f3ce-45ec-982d-2fc8af9faeb1">
+    <name>InteractiveDeleteMarkedPredefinedData</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive delete marked predefined data</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное удаление помеченных предопределенных данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b149cb76-8bb7-4733-8b23-4ba3364456b1">
+    <name>InteractiveDeletePredefinedData</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive delete predefined data</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное удаление предопределенных данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2c5ea40c-032b-44c5-bf96-d6f0a6ed5963">
+    <name>InteractiveExecute</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive execute</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное выполнение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="feb39c44-0a12-44d9-bc50-830f292d64a0">
+    <name>InteractiveInsert</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive insert</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное добавление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="755f0023-362b-40d9-ba7e-e63eac4ff753">
+    <name>InteractiveOpenExtDataProcessors</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive open ext data processors</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное открытие внешних обработок</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6f410da3-53db-4447-baa8-4041d9c29cc9">
+    <name>InteractiveOpenExtReports</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive open ext reports</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное открытие внешних отчетов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="21366951-f128-4aab-ab9b-d11ab949f13b">
+    <name>InteractivePosting</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive posting</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное проведение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5df54b10-1c84-418e-93ed-f536bdfe157b">
+    <name>InteractivePostingRegular</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive posting regular</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное проведение неоперативное</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c39072b9-eafc-4894-8fb5-be0b71883844">
+    <name>InteractiveSetDeletionMark</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive set deletion mark</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивная пометка на удаление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="060bcb17-0458-45a8-88d6-1f0357abc573">
+    <name>InteractiveSetDeletionMarkPredefinedData</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive set deletion mark predefined data</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивная пометка на удаление предопределенных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2a565bdd-f50b-41ac-8742-1ba4f1362736">
+    <name>InteractiveStart</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive start</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивный старт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9162a3c6-54a8-49be-b73c-d98d93700661">
+    <name>InteractiveUndoPosting</name>
+    <synonym>
+      <key>en</key>
+      <value>Interactive undo posting</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивная отмена проведения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="118a9311-8088-4f70-b93f-163b08392671">
+    <name>MainWindowModeEmbeddedWorkplace</name>
+    <synonym>
+      <key>en</key>
+      <value>Main window mode embedded workplace</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Режим основного окна &quot;Встроенное рабочее место&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4f36fc2c-20dc-4e37-8a1d-05bffc807fcc">
+    <name>MainWindowModeFullscreenWorkplace</name>
+    <synonym>
+      <key>en</key>
+      <value>Main window mode fullscreen workplace</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Режим основного окна &quot;Полноэкранное рабочее место&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5938cf0a-5bd6-45b8-a0dc-a507a416b4d0">
+    <name>MainWindowModeKiosk</name>
+    <synonym>
+      <key>en</key>
+      <value>Main window mode kiosk</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Режим основного окна &quot;Киоск&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c7c971ae-c1c3-4903-9b0e-3e1f2dc56e70">
+    <name>MainWindowModeNormal</name>
+    <synonym>
+      <key>en</key>
+      <value>Main window mode normal</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Режим основного окна &quot;Обычный&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="48d9bd87-6b5d-44d4-8a22-0aba95fa2e8e">
+    <name>MainWindowModeWorkplace</name>
+    <synonym>
+      <key>en</key>
+      <value>Main window mode workplace</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Режим основного окна &quot;Рабочее место&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d52d745c-b402-4770-81f6-728a75076593">
+    <name>MobileClient</name>
+    <synonym>
+      <key>en</key>
+      <value>Mobile client</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Мобильный клиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a3e24c1a-3cef-46a6-b453-2bb3c792a65e">
+    <name>Output</name>
+    <synonym>
+      <key>en</key>
+      <value>Output</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Вывод</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3f0d3674-3ae3-4a65-a063-0efe2b9b02d6">
+    <name>Posting</name>
+    <synonym>
+      <key>en</key>
+      <value>Posting</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Проведение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6ae44e81-d721-4cd5-a658-a53b7004b9cc">
+    <name>Read</name>
+    <synonym>
+      <key>en</key>
+      <value>Read</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Чтение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1527e402-2d57-4616-b62e-242c53ef1a9e">
+    <name>ReadDataHistory</name>
+    <synonym>
+      <key>en</key>
+      <value>Read data history</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Чтение истории данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="db864cb0-73b1-42b9-a9c1-05256e1800b5">
+    <name>ReadDataHistoryOfMissingData</name>
+    <synonym>
+      <key>en</key>
+      <value>Read data history of missing data</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Чтение истории данных отсутствующих данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="58c07b57-a3c0-4854-8f7e-50bbdcc08b39">
+    <name>SaveUserData</name>
+    <synonym>
+      <key>en</key>
+      <value>Save user data</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Сохранить данные пользователя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8d52136d-915b-4d6e-b79e-d51a090760c7">
+    <name>Set</name>
+    <synonym>
+      <key>en</key>
+      <value>Set</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Установить</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b1a7c7c4-640c-4bc7-8692-9c859e1046df">
+    <name>Start</name>
+    <synonym>
+      <key>en</key>
+      <value>Start</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Старт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="64345e24-76bd-43d6-958e-6c0e2e07108c">
+    <name>SwitchToDataHistoryVersion</name>
+    <synonym>
+      <key>en</key>
+      <value>Switch to data history version</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Переход на версию истории данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7f2ee39b-b280-4085-9261-00de4449ea30">
+    <name>TechnicalSpecialistMode</name>
+    <synonym>
+      <key>en</key>
+      <value>Technical specialist mode</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Режим технического специалиста</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6a774f11-fcc4-4ded-9a02-ccef4768724f">
+    <name>ThickClient</name>
+    <synonym>
+      <key>en</key>
+      <value>Thick client</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Толстый клиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a71e60ac-a3c4-4b1d-822f-db1dfc0987e0">
+    <name>ThinClient</name>
+    <synonym>
+      <key>en</key>
+      <value>Thin client</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Тонкий клиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="de9fba00-2eed-450e-8114-5956d2f92317">
+    <name>TotalsControl</name>
+    <synonym>
+      <key>en</key>
+      <value>Totals control</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль итогов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2f155b5e-165a-42e8-867a-35d30fc874f7">
+    <name>UndoPosting</name>
+    <synonym>
+      <key>en</key>
+      <value>Undo posting</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Отменить проведение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6029e934-271e-419c-92cd-4e225a8e3ee7">
+    <name>Update</name>
+    <synonym>
+      <key>en</key>
+      <value>Update</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e345a7f5-671a-4991-94b7-a9ad34a3b627">
+    <name>UpdateDataBaseConfiguration</name>
+    <synonym>
+      <key>en</key>
+      <value>Update data base configuration</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Обновление конфигурации базы данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b8962882-c149-48b5-a1a1-2350b6c6a81b">
+    <name>UpdateDataHistory</name>
+    <synonym>
+      <key>en</key>
+      <value>Update data history</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение истории данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c5ba3dd9-9acb-41ce-bd48-30c649330f28">
+    <name>UpdateDataHistoryOfMissingData</name>
+    <synonym>
+      <key>en</key>
+      <value>Update data history of missing data</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение истории данных отсутствующих данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0f001a21-964c-40e7-b4ae-5a63ffc15617">
+    <name>UpdateDataHistorySettings</name>
+    <synonym>
+      <key>en</key>
+      <value>Update data history settings</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение настроек истории данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dd768df6-5b56-4b23-9aa9-17c30a4c44e5">
+    <name>UpdateDataHistoryVersionComment</name>
+    <synonym>
+      <key>en</key>
+      <value>Update data history version comment</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение комментария версии истории данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6afcc039-93ae-499c-96bc-434c4efd0aae">
+    <name>Use</name>
+    <synonym>
+      <key>en</key>
+      <value>Use</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Использование</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6d3e42c1-936e-4d91-a524-a33dbc8a0da8">
+    <name>View</name>
+    <synonym>
+      <key>en</key>
+      <value>View</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="44a7f121-f29d-4dd0-931f-090b3902e759">
+    <name>ViewDataHistory</name>
+    <synonym>
+      <key>en</key>
+      <value>View data history</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр истории данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d9836f53-9bdb-4c8a-9401-ca3b819dd2ac">
+    <name>WebClient</name>
+    <synonym>
+      <key>en</key>
+      <value>Web client</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Web-клиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a3eefb29-f5cc-4572-8aa2-8fa004f37d14">
+    <name>StandardAuthenticationChange</name>
+    <synonym>
+      <key>en</key>
+      <value>Standard authentication change</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение стандартной аутентификации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bba1b4e3-88f8-434e-9906-e630da57d66f">
+    <name>SessionStandardAuthenticationChange</name>
+    <synonym>
+      <key>en</key>
+      <value>Session standard authentication change</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение стандартной аутентификации текущего пользователя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="72a15c85-13d0-4034-b65e-ed22ad315311">
+    <name>SessionOSAuthenticationChange</name>
+    <synonym>
+      <key>en</key>
+      <value>Session OS authentication change</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение аутентификации операционной системы сеанса</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

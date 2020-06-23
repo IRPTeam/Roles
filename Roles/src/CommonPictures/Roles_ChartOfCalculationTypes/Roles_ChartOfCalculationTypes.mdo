@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce34356e-c9d8-43f4-9d00-44441c5d7119">
+  <name>Roles_ChartOfCalculationTypes</name>
+  <synonym>
+    <key>en</key>
+    <value>Chart of calculation types</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>План видов расчета</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b311de24-bea8-4d9a-80f5-f10f0a8c6186">
+  <name>Roles_Method</name>
+  <synonym>
+    <key>en</key>
+    <value>Method</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Метод</value>
+  </synonym>
+</mdclass:CommonPicture>

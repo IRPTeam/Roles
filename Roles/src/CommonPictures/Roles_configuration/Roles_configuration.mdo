@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9047859-1b22-4118-ae53-a54a566d49f0">
+  <name>Roles_configuration</name>
+  <synonym>
+    <key>en</key>
+    <value>Configuration</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Конфигурация</value>
+  </synonym>
+</mdclass:CommonPicture>

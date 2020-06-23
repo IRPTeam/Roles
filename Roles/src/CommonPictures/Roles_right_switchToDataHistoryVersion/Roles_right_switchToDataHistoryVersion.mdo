@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78d3edc2-7c60-4c8e-845a-baee3e764714">
+  <name>Roles_right_switchToDataHistoryVersion</name>
+  <synonym>
+    <key>en</key>
+    <value>Right switch to data history version dark</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правый переход к версии истории данных темный</value>
+  </synonym>
+</mdclass:CommonPicture>

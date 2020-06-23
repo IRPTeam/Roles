@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4183641-a5ac-4018-9056-a9c57997efc2">
+  <name>Roles_right_updateDataHistory</name>
+  <synonym>
+    <key>en</key>
+    <value>Right update data history</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Правильное обновление истории данных</value>
+  </synonym>
+</mdclass:CommonPicture>
