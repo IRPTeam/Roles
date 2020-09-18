@@ -1,4 +1,5 @@
 #Region Internal
+
 Function MetaNameByRef(RefData) Export
 	RefNameType = RefData.Metadata().Name;
 	ValueIndex = Enums[RefNameType].IndexOf(RefData);
@@ -23,6 +24,9 @@ Function GetRefForAllLang(Name, XMLTypeRef = Undefined) Export
 EndFunction
 
 Function TranslationList(Val TranslateString = "") Export
+	If Metadata.ScriptVariant = Metadata.ObjectProperties.ScriptVariant.English Then
+		Return TranslateString;
+	EndIf;
 	Str = New Structure;
 	Str.Insert("ИмяПредопределенныхДанных", "PredefinedDataName");
 	Str.Insert("Код", "Code");
@@ -121,7 +125,6 @@ Function MatrixTemplates_Rows() Export
 	
 	Return New FixedStructure(Str);
 EndFunction
-
 
 Function RoleTree() Export
 	Return Roles_ServiceServer.DeserializeXML(GetCommonTemplate("Roles_RoleTree").GetText());

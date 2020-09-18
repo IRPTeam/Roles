@@ -13,6 +13,7 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <sessionModule>Extended</sessionModule>
+    <compatibilityMode>Checked</compatibilityMode>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="dfdd8d1d-f6a8-4e91-96a1-8b8ef9cc7871"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="ed28055f-464c-4b51-8ed3-8cc60fb0bbc4"/>
@@ -21,15 +22,15 @@
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="dd878d97-8040-4222-8daf-80c890fc7d7b"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="a9ae8566-3787-4f7f-8c49-d91635e03e14"/>
   <namePrefix>Roles_</namePrefix>
-  <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
+  <configurationExtensionCompatibilityMode>8.3.16</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
-  <vendor>IRP Team (ditrixnew@gmail.com)</vendor>
+  <vendor>IRP Team</vendor>
   <version>1.0.8.#buildNumber#</version>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
-  <compatibilityMode>8.3.14</compatibilityMode>
+  <compatibilityMode>8.3.16</compatibilityMode>
   <languages uuid="bd8c7b65-4e11-4806-94fd-94d0fed1a1e0">
     <name>English</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -37,14 +38,6 @@
       <languageCode>Checked</languageCode>
     </extension>
     <languageCode>en</languageCode>
-  </languages>
-  <languages uuid="7f6635e0-0b85-4afe-9b6c-e1cba857101d">
-    <name>Русский</name>
-    <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:LanguageExtension">
-      <languageCode>Checked</languageCode>
-    </extension>
-    <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
   <commonPictures>CommonPicture.Roles_AccountingFlags</commonPictures>

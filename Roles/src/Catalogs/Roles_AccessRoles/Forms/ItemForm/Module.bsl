@@ -250,6 +250,7 @@ Procedure UpdateRightsList(OnlyReport)
 	ObjectData.Insert("RestrictionByCondition", Object.RestrictionByCondition.Unload());
 	ObjectData.Insert("SetRightsForNewNativeObjects", Object.SetRightsForNewNativeObjects);
 	ObjectData.Insert("SetRightsForAttributesAndTabularSectionsByDefault", Object.SetRightsForAttributesAndTabularSectionsByDefault);
+	ObjectData.Insert("SetSeparateRightToStandardAttributes", Object.SetSeparateRightToStandardAttributes);
 	ObjectData.Insert("SubordinateObjectsHaveIndependentRights", Object.SubordinateObjectsHaveIndependentRights);
 	
 	ObjectData.RightTable.Columns.Add("Ref");

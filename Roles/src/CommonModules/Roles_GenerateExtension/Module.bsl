@@ -368,7 +368,6 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	UpdateRoleExt_ConfigurationXML_SetSessionParameters(SourcePath, XMLSettings, SessionParam);
 EndProcedure
 
-
 Procedure UpdateRoleExt_ConfigurationXML_SetSessionParameters(Val SourcePath, Val XMLSettings, Val SessionParam)
 
 	CreateDirectory(SourcePath + "SessionParameters");
@@ -439,7 +438,6 @@ Procedure UpdateRoleExt_ConfigurationXML_SetSessionParameters(Val SourcePath, Va
 	TextWriter.Write(Text);
 	TextWriter.Close();
 EndProcedure
-
 
 Procedure UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, Item)
 	

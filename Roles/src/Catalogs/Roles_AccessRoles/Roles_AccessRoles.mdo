@@ -190,6 +190,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="b929570f-c303-4818-82d9-63ca7e7bf8bb">
+    <name>SetSeparateRightToStandardAttributes</name>
+    <synonym>
+      <key>en</key>
+      <value>Set separate right to standard attributes</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="07c32fbc-9a1f-46bf-9c95-a05ffdb611e0">
     <producedTypes>
       <objectType typeId="0eb63fba-f18f-46f2-8965-997ee7dc7453" valueTypeId="18f87195-f52d-493b-9fd8-26b391733367"/>

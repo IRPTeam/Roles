@@ -148,7 +148,7 @@ Procedure addSubtypeRow(Val MetaItem, Val MetaItemRow, Val ParamStructure)
 	If Roles_Settings.hasResources(Meta) Then
 		AddChild(MetaItem, MetaItemRow, "Resources", ParamStructure);
 	EndIf;
-	If Roles_Settings.hasStandardAttributes(Meta) Then
+	If Roles_Settings.hasStandardAttributes(Meta) And ParamStructure.ObjectData.SetSeparateRightToStandardAttributes Then
 		AddChild(MetaItem, MetaItemRow, "StandardAttributes", ParamStructure);
 	EndIf;
 	If Roles_Settings.hasCommands(Meta) Then
@@ -169,7 +169,7 @@ Procedure addSubtypeRow(Val MetaItem, Val MetaItemRow, Val ParamStructure)
 	If Roles_Settings.hasTabularSections(Meta) Then
 		AddChildTab(MetaItem, MetaItemRow, "TabularSections", ParamStructure);
 	EndIf;
-	If Roles_Settings.hasStandardTabularSections(Meta) Then
+	If Roles_Settings.hasStandardTabularSections(Meta) And ParamStructure.ObjectData.SetSeparateRightToStandardAttributes Then
 		AddChildStandardTab(MetaItem, MetaItemRow, "StandardTabularSections", ParamStructure);
 	EndIf;
 	If Roles_Settings.isSubsystem(Meta) Then
