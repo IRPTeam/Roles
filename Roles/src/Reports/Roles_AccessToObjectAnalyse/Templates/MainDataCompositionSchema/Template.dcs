@@ -1426,6 +1426,15 @@ FROM
 							<dcscor:parameter>МаксимальнаяВысота</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
 						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>MinimumHeight</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Placement</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
 					</dcsset:appearance>
 					<dcsset:useInGroup>DontUse</dcsset:useInGroup>
 					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>

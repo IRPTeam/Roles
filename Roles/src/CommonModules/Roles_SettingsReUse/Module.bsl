@@ -142,7 +142,11 @@ EndFunction
 Function RightPictureByRef(RefData) Export
 	If ValueIsFilled(RefData) Then
 		Name = MetaNameByRef(RefData);
-		Return New ValueStorage(PictureLib["Roles_right_" + Name].GetBinaryData());
+		If Metadata.CommonPictures.Find("Roles_right_" + Name) = Undefined Then
+			Return New ValueStorage(New Picture());
+		Else
+			Return New ValueStorage(PictureLib["Roles_right_" + Name].GetBinaryData());
+		EndIf;
 	Else
 		Return New ValueStorage(New Picture);
 	EndIf;
