@@ -21,7 +21,6 @@ Procedure UpdateRoleExt() Export
 	
 	UpdateRoleExt_CreateRolesXML(Path + "\Ext\Roles\");
 	
-	
 	// load from xml to db
 	CommandToUploadExt = """" + BinDir() + "1cv8.exe"" designer /f " + Path + 
 			" /LoadConfigFromFiles " + Path + "\Ext -Extension AccessRoles /DumpResult " + Path + 
@@ -37,7 +36,7 @@ Procedure UpdateRoleExt() Export
 	// load cfe to cuurent db
 	BD = New BinaryData(Path + "\AccessRoles.cfe");
 	InstallExtention("AccessRoles", BD, True);
-	DeleteFiles(Path);
+	//DeleteFiles(Path);
 	
 EndProcedure
 
@@ -155,7 +154,6 @@ Function UpdateRoleExt_CreateRolesXML_RoleData(RightTemplate, Role)
 		RightTemplate.object.Add(ObjectList);
 	EndDo;
 	
-	
 	For Each Template In Role.Templates Do
 		ObjectTemplate = XDTOFactory.Create(RightTemplate.restrictionTemplate.OwningProperty.Type);
 		ObjectTemplate.name = Template.Name;
@@ -199,7 +197,6 @@ Procedure UpdateRoleExt_ConfigurationXML_UpdateLang(Path)
 		ExtendedConfigurationObject[0].ParentNode.RemoveChild(ExtendedConfigurationObject[0]);	
 	EndIf;
 	
-	
 	WriteXML = New XMLWriter;
 	WriteXML.OpenFile(Path + "Languages\" + MainLang.Name + ".xml");
 	SaveDOM = New DOMWriter;
@@ -215,7 +212,11 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		"SELECT DISTINCT
 		|	Roles_AccessRolesRights.ObjectType AS ObjectType,
 		|	Roles_AccessRolesRights.ObjectName AS ObjectName,
-		|	UNDEFINED AS AddInfo
+		|	CASE
+		|		WHEN Roles_AccessRolesRights.ObjectType = VALUE(Enum.Roles_MetadataTypes.Subsystem)
+		|			THEN Roles_AccessRolesRights.ObjectPath
+		|		ELSE UNDEFINED
+		|	END AS AddInfo
 		|FROM
 		|	Catalog.Roles_AccessRoles.Rights AS Roles_AccessRolesRights
 		|WHERE
@@ -282,7 +283,7 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	SessionParam = QueryResult[2].Unload();
 	SubMetadata.Indexes.Add("ObjectType");
 	SubMetadata.Indexes.Add("ObjectName");
-	
+	SubMetadata.Indexes.Add("ObjectName, ObjectType");
 	
 	ReadXML = New XMLReader;
 	ReadXML.OpenFile(SourcePath + "Configuration.xml");
@@ -293,9 +294,8 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	ExtLanguage = DOMDocument.GetElementByTagName("Language").Item(0);
 	ExtLanguage.ParentNode.RemoveChild(ExtLanguage);
 	
-    DOMDocument.GetElementByTagName("Version")[0].TextContent = String(CurrentDate());
+    DOMDocument.GetElementByTagName("Version")[0].TextContent = String(CurrentSessionDate());
 	ItemsDOM = DOMDocument.GetElementByTagName("ChildObjects");
-	
 	 
 	If Metadata.CompatibilityMode = Metadata.ObjectProperties.CompatibilityMode.DontUse Then
 		SystemInfo = New SystemInfo;
@@ -332,17 +332,31 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		NewType.AddInfo = Lang.LanguageCode;
 	EndDo;
 
-	
 	MainMetadata.GroupBy("ObjectName, ObjectType, AddInfo");
 	
 	For Each Item In MainMetadata Do
+		If Item.ObjectType = Enums.Roles_MetadataTypes.Subsystem
+			And StrSplit(Item.AddInfo, ".").Count() > 2 Then
+				Continue;
+		EndIf;
+
 		NewNode = DOMDocument.CreateElement(Roles_Settings.MetaName(Item.ObjectType));
 		NewNode.TextContent = Item.ObjectName;
 		ItemsDOM[0].AppendChild(NewNode);
 	EndDo;
 
-
-	
+	For Each Item In MainMetadata Do
+		If Not (Item.ObjectType = Enums.Roles_MetadataTypes.Subsystem
+			And StrSplit(Item.AddInfo, ".").Count() > 2) Then
+				Continue;
+		EndIf;
+		
+		// TODO: Fix this plan
+		NewRow = SubMetadata.Add();
+		NewRow.ObjectType = Enums.Roles_MetadataTypes.Subsystem;
+		//NewRow.ObjectName
+		
+	EndDo;
 	
 	WriteXML = New XMLWriter;
 	WriteXML.OpenFile(SourcePath + "Configuration.xml");
@@ -358,7 +372,6 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 	XMLSettings.Insert("TemplateSP", GetCommonTemplate("Roles_TemplateMetadataObjectSP").GetText());
 	XMLSettings.Insert("SourcePath", SourcePath);
 	
-	
 	For Each Item In MainMetadata Do
 		If NOT Item.ObjectType = Enums.Roles_MetadataTypes.Role  Then
 			UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item, SubMetadata);
@@ -372,8 +385,7 @@ Procedure UpdateRoleExt_ConfigurationXML_SetSessionParameters(Val SourcePath, Va
 
 	CreateDirectory(SourcePath + "SessionParameters");
 	
-	
-	TmpText =" 
+	TmpText = " 
 	|<object>
 	|	<name>SessionParameter.%1</name>
 	|	<right>
@@ -473,10 +485,24 @@ Procedure UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, It
 	SaveDOM.Write(DOMDocument, WriteXML);
 	WriteXML.Close();
 
-		
 EndProcedure
 
 Procedure UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item, SubMetadata)
+	
+	FilterSubmodules = Item.ObjectName;
+	If Item.ObjectType = Enums.Roles_MetadataTypes.Subsystem Then
+		Addr = StrSplit(Item.AddInfo, ".");
+		If Addr.Count() > 2 Then
+			Item.ObjectName = Addr[Addr.UBound()];
+			Addr.Delete(Addr.UBound());
+			AddPath = StrConcat(Addr, "\");
+			SourcePath = XMLSettings.SourcePath + StrReplace(AddPath, "Subsystem", "Subsystems");			
+		Else
+			SourcePath = XMLSettings.SourcePath + Roles_Settings.MetaDataObjectNames()[Item.ObjectType];
+		EndIf;
+	Else
+		SourcePath = XMLSettings.SourcePath + Roles_Settings.MetaDataObjectNames()[Item.ObjectType];
+	EndIf;
 	ReadXML = New XMLReader;
 	ReadXML.SetString(XMLSettings.Template);
 	DOMBuilder = New DOMBuilder;
@@ -515,8 +541,8 @@ Procedure UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item, SubMe
 	ObjectNode.AppendChild(Properties);
 	
 	If Not Roles_Settings.hasNoChildObjects(Item.ObjectType)  Then		
-		ChildObjects = DOMDocument.CreateElement("ChildObjects");		
-		SubMetadataRows = SubMetadata.FindRows(New Structure("ObjectName, ObjectType", Item.ObjectName, Item.ObjectType));
+		ChildObjects = DOMDocument.CreateElement("ChildObjects");
+		SubMetadataRows = SubMetadata.FindRows(New Structure("ObjectName, ObjectType", FilterSubmodules, Item.ObjectType));
 		For Each Row In SubMetadataRows Do		
 			If Roles_Settings.hasOnlyProperties(Row.ObjectSubtype) Then
 				Path = StrSplit(Row.ObjectPath, ".", False);
@@ -532,10 +558,10 @@ Procedure UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item, SubMe
 	
 	DOMDocument.FirstChild.AppendChild(ObjectNode);	
 	
-	CreateDirectory(XMLSettings.SourcePath + Roles_Settings.MetaDataObjectNames()[Item.ObjectType]);
+	CreateDirectory(SourcePath);
 	
 	WriteXML = New XMLWriter;
-	WriteXML.OpenFile(XMLSettings.SourcePath + Roles_Settings.MetaDataObjectNames()[Item.ObjectType] + "\" + Item.ObjectName + ".xml");
+	WriteXML.OpenFile(SourcePath + "\" + Item.ObjectName + ".xml");
 	SaveDOM = New DOMWriter;
 	SaveDOM.Write(DOMDocument, WriteXML);
 	WriteXML.Close();

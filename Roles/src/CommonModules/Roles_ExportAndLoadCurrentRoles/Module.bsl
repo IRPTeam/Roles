@@ -35,7 +35,6 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0, Log = "") Export
 		Settings.PathToXML = Path + "\";
 		
 	EndIf;
-	
 		
 	Rights = FindFiles(Settings.PathToXML + "Roles", "*.xml", False);	
 	LoadFromXMLFormat(Settings, Rights);
@@ -128,7 +127,6 @@ EndProcedure
 
 Procedure LoadRightsToDB(RightObject, Text)
 
-	
 	Try
 		RightInfo = Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
 	Except
@@ -139,7 +137,6 @@ Procedure LoadRightsToDB(RightObject, Text)
 		Text = StrReplace(Text, Version, "version=""2.8""");	
 		RightInfo = Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
 	EndTry;
-
 	
 	RightObject.SetRightsForAttributesAndTabularSectionsByDefault = 
 		RightInfo.setForAttributesByDefault;
@@ -182,8 +179,6 @@ Procedure LoadRightsToDB(RightObject, Text)
 		Condition = RightObject.Templates.Add();
 		Condition.Name = restrictionTemplate.Name;
 		
-		
-		
 		TemplateUUID = New UUID(Roles_ServiceServer.HashMD5(restrictionTemplate.condition));
 		TemplateRef  = Catalogs.Roles_Templates.GetRef(TemplateUUID);
 		
@@ -214,7 +209,6 @@ Procedure LoadFromXMLFormat(Settings, Val Rights)
 		TextReader.Close();
 		
 		CurrentHash = Roles_ServiceServer.HashMD5(Text);
-		
 		
 		RoleInfo = Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
 		
