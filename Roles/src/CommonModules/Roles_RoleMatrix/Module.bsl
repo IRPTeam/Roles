@@ -382,13 +382,13 @@ Procedure AddChildSubsystem(MetaItem, MetaItemRow, DataType, Val StrData)
 		If MetaItemRow.ObjectPath = "" Then
 			AddChildRow.ObjectPath = ObjectSubtypeName + "." + AddChildRow.ObjectName;
 		Else
-			AddChildRow.ObjectPath = MetaItemRow.ObjectPath + "." + 
+			AddChildRow.ObjectPath = AddChildRow.Parent.ObjectPath + "." + 
 					ObjectSubtypeName + "." + AddChildRow.ObjectName;
 		EndIf;
 		SetCurrentRights(AddChildRow, StrData);
 		
 		MetaItem = AddChild;
-		AddChildSubsystem(MetaItem, MetaItemRow, "Subsystems", StrData);
+		AddChildSubsystem(MetaItem, AddChildRow, "Subsystems", StrData);
 		
 		If NOT AddChildRow.Edited AND StrData.OnlyFilled Then
 			MetaItemRow.Rows.Delete(AddChildRow);								

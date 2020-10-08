@@ -238,7 +238,8 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|
 		|ORDER BY
 		|	ObjectType,
-		|	ObjectName
+		|	ObjectName,
+		|	AddInfo
 		|;
 		|
 		|////////////////////////////////////////////////////////////////////////////////
@@ -246,7 +247,11 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		|	Roles_AccessRolesRights.ObjectPath AS ObjectPath,
 		|	Roles_AccessRolesRights.ObjectType AS ObjectType,
 		|	Roles_AccessRolesRights.ObjectName AS ObjectName,
-		|	Roles_AccessRolesRights.ObjectSubtype AS ObjectSubtype
+		|	CASE
+		|		WHEN TRUE
+		|			THEN Roles_AccessRolesRights.ObjectSubtype
+		|		ELSE VALUE(Enum.Roles_MetadataTypes.EmptyRef)
+		|	END AS ObjectSubtype
 		|FROM
 		|	Catalog.Roles_AccessRoles.Rights AS Roles_AccessRolesRights
 		|WHERE
@@ -354,9 +359,17 @@ Procedure UpdateRoleExt_ConfigurationXML(SourcePath)
 		// TODO: Fix this plan
 		NewRow = SubMetadata.Add();
 		NewRow.ObjectType = Enums.Roles_MetadataTypes.Subsystem;
-		//NewRow.ObjectName
+		Array = StrSplit(Item.AddInfo, ".");
+		NewRow.ObjectName = Array[Array.UBound() - 2];
+		NewRow.ObjectSubtype = Item.ObjectType;
+		NewRow.ObjectPath = Array[Array.UBound()];
 		
+		If Array.Count() > 4 Then
+			Item.ObjectName = Array[Array.UBound() - 2];
+		EndIf;
 	EndDo;
+
+	MainMetadata.GroupBy("ObjectName, ObjectType, AddInfo");
 	
 	WriteXML = New XMLWriter;
 	WriteXML.OpenFile(SourcePath + "Configuration.xml");
@@ -488,15 +501,16 @@ Procedure UpdateRoleExt_ConfigurationXML_AttachSessionParameters(XMLSettings, It
 EndProcedure
 
 Procedure UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item, SubMetadata)
-	
-	FilterSubmodules = Item.ObjectName;
+
 	If Item.ObjectType = Enums.Roles_MetadataTypes.Subsystem Then
 		Addr = StrSplit(Item.AddInfo, ".");
 		If Addr.Count() > 2 Then
 			Item.ObjectName = Addr[Addr.UBound()];
 			Addr.Delete(Addr.UBound());
+			Addr.Add("");
 			AddPath = StrConcat(Addr, "\");
-			SourcePath = XMLSettings.SourcePath + StrReplace(AddPath, "Subsystem", "Subsystems");			
+			SourcePath = XMLSettings.SourcePath + AddPath;
+			SourcePath = StrReplace(SourcePath, "\Subsystem\", "\Subsystems\")
 		Else
 			SourcePath = XMLSettings.SourcePath + Roles_Settings.MetaDataObjectNames()[Item.ObjectType];
 		EndIf;
@@ -542,14 +556,18 @@ Procedure UpdateRoleExt_ConfigurationXML_AttachMetadata(XMLSettings, Item, SubMe
 	
 	If Not Roles_Settings.hasNoChildObjects(Item.ObjectType)  Then		
 		ChildObjects = DOMDocument.CreateElement("ChildObjects");
-		SubMetadataRows = SubMetadata.FindRows(New Structure("ObjectName, ObjectType", FilterSubmodules, Item.ObjectType));
+		SubMetadataRows = SubMetadata.FindRows(New Structure("ObjectName, ObjectType", Item.ObjectName, Item.ObjectType));
 		For Each Row In SubMetadataRows Do		
-			If Roles_Settings.hasOnlyProperties(Row.ObjectSubtype) Then
+			If Roles_Settings.hasOnlyProperties(Row.ObjectSubtype) Then 
 				Path = StrSplit(Row.ObjectPath, ".", False);
 				SubtypeTag = DOMDocument.CreateElement(Roles_Settings.MetaName(Row.ObjectSubtype));
 				UpdateRoleExt_ConfigurationXML_AddUUID(DOMDocument, SubtypeTag);
 				Properties = UpdateRoleExt_ConfigurationXML_AddProperties(DOMDocument, Path[3]);
 				SubtypeTag.AppendChild(Properties);
+				ChildObjects.AppendChild(SubtypeTag);
+			ElsIf Row.ObjectSubtype = Enums.Roles_MetadataTypes.Subsystem Then
+				SubtypeTag = DOMDocument.CreateElement(Roles_Settings.MetaName(Row.ObjectSubtype));
+				SubtypeTag.TextContent = Row.ObjectPath;
 				ChildObjects.AppendChild(SubtypeTag);
 			EndIf;
 		EndDo;
