@@ -8,7 +8,7 @@ EndProcedure
 &AtServer
 Procedure FillCheckProcessingAtServer(Cancel, CheckedAttributes)
 	If ValueIsFilled(ThisObject.PathToXML)
-	And Not StrEndsWith(ThisObject.PathToXML, "\") Then
+	And Not StrEndsWith(ThisObject.PathToXML, "\") And Not LoadFromClientPath Then
 		ThisObject.PathToXML = ThisObject.PathToXML + "\";
 	EndIf;
 	If ValueIsFilled(ThisObject.Path) Then
@@ -26,6 +26,12 @@ EndProcedure
 #Region FormHeaderItemsEventHandlers
 
 &AtClient
+Procedure LoadFromClientPathOnChange(Item)
+	Items.DecorationClient.Visible = LoadFromClientPath;
+	Items.DecorationServer.Visible = Not LoadFromClientPath;
+EndProcedure
+
+&AtClient
 Procedure PathOnChange(Item)
 	CheckFilling();
 EndProcedure
@@ -38,10 +44,15 @@ EndProcedure
 &AtClient
 Procedure PathToXMLStartChoice(Item, ChoiceData, StandardProcessing)
 	StandardProcessing = False;
-	DirectoryChooseDialog = New FileDialog(FileDialogMode.ChooseDirectory);
+	If LoadFromClientPath Then
+		DirectoryChooseDialog = New FileDialog(FileDialogMode.Open);
+		DirectoryChooseDialog.Filter = "(*.zip)|*.zip";
+	Else
+		DirectoryChooseDialog = New FileDialog(FileDialogMode.ChooseDirectory);
+	EndIf;	
 	DirectoryChooseDialog.Directory = ThisObject.PathToXML;
 	DirectoryChooseDialog.Show(New NotifyDescription("PathToXMLStartChoiceEnd", ThisObject, 
-										New Structure("DirectoryChooseDialog", DirectoryChooseDialog)));	
+											New Structure("DirectoryChooseDialog", DirectoryChooseDialog)));
 EndProcedure
 
 #EndRegion
@@ -117,22 +128,24 @@ EndProcedure
 
 
 &AtClient
-Procedure LoadRolesFromCurrentConfigEnd(Result)
+Procedure LoadRolesFromCurrentConfigEnd(Settings)
 	
-	Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(Result, CountRoles, Log);
+	If LoadFromClientPath Then
 
+		EndCall = New NotifyDescription("AddFileEndCall", ThisObject, New Structure("Settings", Settings));
+	    ProgressCall = New NotifyDescription("AddFileProgressCall", ThisObject);
+	    BeforeStartCall = New NotifyDescription("AddFileBeforeStartCall", ThisObject);
+	    BeginPutFileToServer(EndCall, ProgressCall, BeforeStartCall, , Settings.PathToXML, ThisObject.UUID);
+	Else	
+		Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(Settings, CountRoles, Log);
+	EndIf;
 EndProcedure
 
 &AtClient
 Procedure PathToXMLStartChoiceEnd(SelectedFiles, AdditionalParameters) Export
-	
-	DirectoryChooseDialog = AdditionalParameters.DirectoryChooseDialog;
-	
-	
 	If (SelectedFiles <> Undefined) Then
-		ThisObject.PathToXML = DirectoryChooseDialog.Directory;
+		ThisObject.PathToXML = SelectedFiles[0];
 	EndIf;
-
 EndProcedure
 
 
@@ -168,6 +181,54 @@ EndFunction
 
 #EndRegion
 
+#Region FileTransfer
+
+&AtClient
+Procedure AddFileEndCall(FileDescription, AddInfo) Export
+	If FileDescription = Undefined Then 
+		Return;
+	EndIf;
+	#If NOT WebClient Then
+	If FileDescription.PutFileCanceled Then 
+		Return;
+	EndIf;
+	#EndIf
+	SaveFilesAtServer(FileDescription.Address, AddInfo);
+EndProcedure
+	
+&AtServer
+Procedure SaveFilesAtServer(Address, AddInfo) 
+	
+	BD = GetFromTempStorage(Address);
+	
+	Path = TempFilesDir() + "RolesTmp\";
+	DeleteFiles(Path);
+	
+	MemoryStream = New MemoryStream();
+	
+	DataWriter = New DataWriter(MemoryStream);
+	DataWriter.Write(BD);
+	DataWriter.Close();
+	
+	Zip = New ZipFileReader(MemoryStream);
+	Zip.ExtractAll(Path);
+	Zip.Close();
+	MemoryStream.Close();
+	AddInfo.Settings.PathToXML = Path;
+	Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(AddInfo.Settings, CountRoles, Log);
+EndProcedure
+
+&AtClient
+Procedure AddFileProgressCall(PuttingFile, PutProgress, CancelPut, AddInfo) Export
+    Status(PuttingFile.Name, PutProgress, , PictureLib.MoveUp);
+EndProcedure
+
+&AtClient
+Procedure AddFileBeforeStartCall(PuttingFile, CancelPut, AddInfo) Export
+	Return;
+EndProcedure
+
+#EndRegion
 
 
 

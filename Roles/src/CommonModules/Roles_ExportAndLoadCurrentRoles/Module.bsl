@@ -31,11 +31,11 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0, Log = "") Export
 			Log = Log + Chars.LF + "Status = " + Status;
 			Return;
 		EndIf;
-		
 		Settings.PathToXML = Path + "\";
-		
 	EndIf;
-		
+	
+	
+	
 	Rights = FindFiles(Settings.PathToXML + "Roles", "*.xml", False);	
 	LoadFromXMLFormat(Settings, Rights);
 	
