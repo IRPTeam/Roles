@@ -180,6 +180,7 @@
   <commonCommands>CommonCommand.Roles_UpdateExtension</commonCommands>
   <commonCommands>CommonCommand.Roles_LoadRolesFromXML</commonCommands>
   <commonCommands>CommonCommand.Roles_ConvertTemplate</commonCommands>
+  <commonCommands>CommonCommand.Roles_SaveExtensionToFile</commonCommands>
   <commonForms>CommonForm.Roles_ConnectionSettingsForm</commonForms>
   <commonForms>CommonForm.Roles_ConvertTemplateToQuery</commonForms>
   <catalogs>Catalog.Roles_AccessRoles</catalogs>

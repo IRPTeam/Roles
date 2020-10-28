@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad5b9d24-d3f1-48fc-b8d9-397f35e4272b">
+  <name>Roles_SaveExtensionToFile</name>
+  <synonym>
+    <key>en</key>
+    <value>Save extension to file</value>
+  </synonym>
+  <group>ActionsPanelTools</group>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

@@ -1,6 +1,6 @@
 #Region Internal
 
-Procedure UpdateRoleExt() Export
+Function UpdateRoleExt(SaveToFile = False) Export
 	Path = TempFilesDir() + "TemplateDB";
 	DeleteFiles(Path);
 	
@@ -35,10 +35,14 @@ Procedure UpdateRoleExt() Export
 	
 	// load cfe to cuurent db
 	BD = New BinaryData(Path + "\AccessRoles.cfe");
-	InstallExtention("AccessRoles", BD, True);
-	//DeleteFiles(Path);
+	If SaveToFile Then
+		Return PutToTempStorage(BD);
+	Else
+		InstallExtention("AccessRoles", BD, True);
+	EndIf;
+	DeleteFiles(Path);
 	
-EndProcedure
+EndFunction
 
 #EndRegion
 

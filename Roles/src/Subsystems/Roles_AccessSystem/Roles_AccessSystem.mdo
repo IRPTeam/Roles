@@ -43,4 +43,5 @@
   <content>DataProcessor.Roles_ButtonForm</content>
   <content>CommonModule.Roles_CommonFunctionsClientServer</content>
   <content>Report.Roles_AccessToObjectAnalyse</content>
+  <content>CommonCommand.Roles_SaveExtensionToFile</content>
 </mdclass:Subsystem>
