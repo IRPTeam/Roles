@@ -9,5 +9,6 @@
     <key>ru</key>
     <value>Экспорт ролей и загрузка текущих ролей</value>
   </synonym>
-  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <serverCall>true</serverCall>
 </mdclass:CommonModule>
