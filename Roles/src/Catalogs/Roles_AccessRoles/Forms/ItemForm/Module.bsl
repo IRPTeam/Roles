@@ -38,8 +38,8 @@ EndProcedure
 &AtClient
 Procedure BeforeWrite(Cancel, WriteParameters)
 	Try
-		// @skip-warning
 		Str = New Structure(Object.Description);
+		Roles_CommonFunctionsClientServer.ShowUsersMessage("", "Object.Description");
 	Except
 		Cancel = True;
 	EndTry;
