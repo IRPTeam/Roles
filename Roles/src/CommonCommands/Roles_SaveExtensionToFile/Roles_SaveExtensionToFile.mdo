@@ -6,5 +6,7 @@
     <value>Save extension to file</value>
   </synonym>
   <group>ActionsPanelTools</group>
+  <commandParameterType/>
   <representation>Auto</representation>
+  <shortcut></shortcut>
 </mdclass:CommonCommand>

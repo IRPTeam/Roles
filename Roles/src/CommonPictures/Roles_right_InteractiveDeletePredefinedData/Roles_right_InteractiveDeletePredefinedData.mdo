@@ -6,11 +6,11 @@
     <value>Right interactive delete predefined data</value>
   </synonym>
   <synonym>
-    <key>ru</key>
-    <value>Право интерактивного удаления предопределенных данных</value>
-  </synonym>
-  <synonym>
     <key></key>
     <value>Roles right interactive delete predefined data</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Право интерактивного удаления предопределенных данных</value>
   </synonym>
 </mdclass:CommonPicture>

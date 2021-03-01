@@ -515,8 +515,10 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>LoadFromClientPath</segments>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>LoadFromClientPath</segments>
+        </paths>
       </dataPath>
       <handlers>
         <event>OnChange</event>
