@@ -299,6 +299,7 @@
           <horizontalScrollBar>ScrollAuto</horizontalScrollBar>
           <protection>true</protection>
           <selectionShowMode>Always</selectionShowMode>
+          <drawingSelectionShowMode>Auto</drawingSelectionShowMode>
           <showGroups>true</showGroups>
         </extInfo>
       </items>
@@ -555,8 +556,10 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Object.SetSeparateRightToStandardAttributes</segments>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>Object.SetSeparateRightToStandardAttributes</segments>
+              </paths>
             </dataPath>
             <titleLocation>Right</titleLocation>
             <extendedTooltip>
