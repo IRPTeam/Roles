@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Main window mode fullscreen workplace</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Режим основного окна &quot;Полноэкранное рабочее место&quot;</value>
+  </synonym>
 </mdclass:CommonPicture>

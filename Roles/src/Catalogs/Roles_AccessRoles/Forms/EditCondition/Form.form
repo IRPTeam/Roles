@@ -559,6 +559,7 @@
             <autoMaxHeight>true</autoMaxHeight>
             <groupHorizontalAlign>Right</groupHorizontalAlign>
             <placementArea>UserCmds</placementArea>
+            <toolTipRepresentation>Auto</toolTipRepresentation>
           </items>
           <items xsi:type="form:Button">
             <name>Cancel</name>
@@ -590,6 +591,7 @@
             <autoMaxHeight>true</autoMaxHeight>
             <groupHorizontalAlign>Right</groupHorizontalAlign>
             <placementArea>UserCmds</placementArea>
+            <toolTipRepresentation>Auto</toolTipRepresentation>
           </items>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -734,6 +736,7 @@
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>Auto</toolTipRepresentation>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:Button">
@@ -765,6 +768,7 @@
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>Auto</toolTipRepresentation>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:Decoration">
@@ -1118,6 +1122,7 @@
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
+            <toolTipRepresentation>Auto</toolTipRepresentation>
             <representationInContextMenu>Auto</representationInContextMenu>
           </items>
           <items xsi:type="form:Decoration">
@@ -1205,10 +1210,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>TabDoc</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>TabDoc</segments>
           </dataPath>
           <titleLocation>None</titleLocation>
           <extendedTooltip>

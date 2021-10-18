@@ -11,10 +11,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Object.Description</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Object.Description</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -75,10 +73,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Object.UseCode</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Object.UseCode</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -153,10 +149,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>ValueType</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ValueType</segments>
     </dataPath>
     <toolTip>
       <key>en</key>
@@ -232,10 +226,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Object.isList</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Object.isList</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -330,10 +322,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ValueList.Value</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ValueList.Value</segments>
         </dataPath>
         <extendedTooltip>
           <name>ValueListValueExtendedTooltip</name>
@@ -552,10 +542,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ValueData</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ValueData</segments>
       </dataPath>
       <extendedTooltip>
         <name>ValueDataExtendedTooltip</name>
@@ -685,10 +673,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Object.BSLCode</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Object.BSLCode</segments>
       </dataPath>
       <titleLocation>None</titleLocation>
       <extendedTooltip>

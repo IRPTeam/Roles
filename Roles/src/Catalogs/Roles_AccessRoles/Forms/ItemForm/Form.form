@@ -19,10 +19,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Object.Description</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Object.Description</segments>
       </dataPath>
       <extendedTooltip>
         <name>DescriptionExtendedTooltip</name>
@@ -71,10 +69,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Object.ConfigRoles</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Object.ConfigRoles</segments>
       </dataPath>
       <extendedTooltip>
         <name>ConfigRolesExtendedTooltip</name>
@@ -125,10 +121,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ShowAllObjects</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ShowAllObjects</segments>
       </dataPath>
       <extendedTooltip>
         <name>ShowAllObjectsExtendedTooltip</name>
@@ -201,6 +195,7 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
+      <toolTipRepresentation>Auto</toolTipRepresentation>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <visible>true</visible>
@@ -246,10 +241,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>TabDocMartix</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>TabDocMartix</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
@@ -359,10 +352,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>SearchText</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>SearchText</segments>
           </dataPath>
           <handlers>
             <event>OnChange</event>
@@ -418,10 +409,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.SetRightsForNewNativeObjects</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.SetRightsForNewNativeObjects</segments>
             </dataPath>
             <titleLocation>Right</titleLocation>
             <extendedTooltip>
@@ -464,10 +453,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.SetRightsForAttributesAndTabularSectionsByDefault</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.SetRightsForAttributesAndTabularSectionsByDefault</segments>
             </dataPath>
             <titleLocation>Right</titleLocation>
             <extendedTooltip>
@@ -510,10 +497,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.SubordinateObjectsHaveIndependentRights</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.SubordinateObjectsHaveIndependentRights</segments>
             </dataPath>
             <titleLocation>Right</titleLocation>
             <extendedTooltip>
@@ -556,10 +541,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.SetSeparateRightToStandardAttributes</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.SetSeparateRightToStandardAttributes</segments>
             </dataPath>
             <titleLocation>Right</titleLocation>
             <extendedTooltip>
@@ -671,10 +654,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Edited</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Edited</segments>
               </dataPath>
               <extendedTooltip>
                 <name>RolesEditEditedExtendedTooltip</name>
@@ -715,10 +696,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Picture</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Picture</segments>
               </dataPath>
               <extendedTooltip>
                 <name>ExtendedTooltip</name>
@@ -765,10 +744,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ObjectFullName</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ObjectFullName</segments>
               </dataPath>
               <extendedTooltip>
                 <name>ExtendedTooltip</name>
@@ -850,10 +827,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ObjectSubtype</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ObjectSubtype</segments>
               </dataPath>
               <extendedTooltip>
                 <name>RolesEditObjectSubtypeExtendedTooltip</name>
@@ -902,10 +877,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ObjectPath</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ObjectPath</segments>
               </dataPath>
               <extendedTooltip>
                 <name>RolesEditObjectPathExtendedTooltip</name>
@@ -954,10 +927,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.DataStorageLink</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.DataStorageLink</segments>
               </dataPath>
               <extendedTooltip>
                 <name>RolesEditDataStorageLinkExtendedTooltip</name>
@@ -1034,10 +1005,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ObjectType</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ObjectType</segments>
               </dataPath>
               <extendedTooltip>
                 <name>ExtendedTooltip</name>
@@ -1086,10 +1055,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ObjectName</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ObjectName</segments>
               </dataPath>
               <extendedTooltip>
                 <name>ExtendedTooltip</name>
@@ -1138,10 +1105,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.EmptyRow</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.EmptyRow</segments>
               </dataPath>
               <extendedTooltip>
                 <name>RolesEditEmptyRowExtendedTooltip</name>
@@ -1211,10 +1176,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Read</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Read</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Khaki</color>
@@ -1277,10 +1240,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Insert</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Insert</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Khaki</color>
@@ -1343,10 +1304,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Update</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Update</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Khaki</color>
@@ -1409,10 +1368,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Delete</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Delete</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Khaki</color>
@@ -1512,10 +1469,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.View</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.View</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DodgerBlue</color>
@@ -1578,10 +1533,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Edit</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Edit</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DodgerBlue</color>
@@ -1636,10 +1589,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InputByString</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InputByString</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DodgerBlue</color>
@@ -1702,10 +1653,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Use</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Use</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DodgerBlue</color>
@@ -1768,10 +1717,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.TotalsControl</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.TotalsControl</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DodgerBlue</color>
@@ -1871,10 +1818,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveDelete</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveDelete</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.MediumSlateBlue</color>
@@ -1937,10 +1882,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveInsert</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveInsert</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.MediumSlateBlue</color>
@@ -2003,10 +1946,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveSetDeletionMark</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveSetDeletionMark</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.MediumSlateBlue</color>
@@ -2069,10 +2010,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveClearDeletionMark</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveClearDeletionMark</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.MediumSlateBlue</color>
@@ -2135,10 +2074,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveDeleteMarked</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveDeleteMarked</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.MediumSlateBlue</color>
@@ -2238,10 +2175,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Posting</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Posting</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Blue</color>
@@ -2304,10 +2239,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.UndoPosting</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.UndoPosting</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Blue</color>
@@ -2370,10 +2303,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractivePosting</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractivePosting</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Blue</color>
@@ -2436,10 +2367,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveUndoPosting</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveUndoPosting</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Blue</color>
@@ -2502,10 +2431,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractivePostingRegular</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractivePostingRegular</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Blue</color>
@@ -2568,10 +2495,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveChangeOfPosted</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveChangeOfPosted</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Blue</color>
@@ -2679,10 +2604,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveDeletePredefinedData</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveDeletePredefinedData</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Purple</color>
@@ -2745,10 +2668,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveSetDeletionMarkPredefinedData</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveSetDeletionMarkPredefinedData</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Purple</color>
@@ -2811,10 +2732,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveClearDeletionMarkPredefinedData</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveClearDeletionMarkPredefinedData</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Purple</color>
@@ -2877,10 +2796,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveDeleteMarkedPredefinedData</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveDeleteMarkedPredefinedData</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Purple</color>
@@ -2988,10 +2905,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Get</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Get</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Tomato</color>
@@ -3054,10 +2969,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Set</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Set</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Tomato</color>
@@ -3157,10 +3070,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Administration</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Administration</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3223,10 +3134,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.DataAdministration</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.DataAdministration</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3289,10 +3198,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.UpdateDataBaseConfiguration</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.UpdateDataBaseConfiguration</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3355,10 +3262,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ExclusiveMode</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ExclusiveMode</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3421,10 +3326,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ActiveUsers</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ActiveUsers</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3487,10 +3390,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.EventLog</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.EventLog</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3553,10 +3454,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ThinClient</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ThinClient</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3619,10 +3518,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.WebClient</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.WebClient</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3685,10 +3582,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.MobileClient</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.MobileClient</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3751,10 +3646,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ThickClient</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ThickClient</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3817,10 +3710,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ExternalConnection</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ExternalConnection</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3883,10 +3774,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Automation</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Automation</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -3949,10 +3838,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.TechnicalSpecialistMode</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.TechnicalSpecialistMode</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4015,10 +3902,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.CollaborationSystemInfoBaseRegistration</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.CollaborationSystemInfoBaseRegistration</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4081,10 +3966,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.SaveUserData</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.SaveUserData</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4147,10 +4030,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ConfigurationExtensionsAdministration</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ConfigurationExtensionsAdministration</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4213,10 +4094,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveOpenExtDataProcessors</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveOpenExtDataProcessors</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4279,10 +4158,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveOpenExtReports</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveOpenExtReports</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4345,10 +4222,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Output</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Output</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4411,10 +4286,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.MainWindowModeNormal</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.MainWindowModeNormal</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4474,10 +4347,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.MainWindowModeWorkplace</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.MainWindowModeWorkplace</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4537,10 +4408,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.MainWindowModeEmbeddedWorkplace</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.MainWindowModeEmbeddedWorkplace</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4600,10 +4469,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.MainWindowModeFullscreenWorkplace</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.MainWindowModeFullscreenWorkplace</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4663,10 +4530,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.MainWindowModeKiosk</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.MainWindowModeKiosk</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4726,10 +4591,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.AnalyticsSystemClient</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.AnalyticsSystemClient</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.DimGray</color>
@@ -4826,10 +4689,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ReadDataHistory</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ReadDataHistory</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Maroon</color>
@@ -4892,10 +4753,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ViewDataHistory</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ViewDataHistory</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Maroon</color>
@@ -4958,10 +4817,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.ReadDataHistoryOfMissingData</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ReadDataHistoryOfMissingData</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Maroon</color>
@@ -5024,10 +4881,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.UpdateDataHistory</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.UpdateDataHistory</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Maroon</color>
@@ -5090,10 +4945,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.UpdateDataHistoryOfMissingData</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.UpdateDataHistoryOfMissingData</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Maroon</color>
@@ -5156,10 +5009,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.UpdateDataHistorySettings</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.UpdateDataHistorySettings</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Maroon</color>
@@ -5222,10 +5073,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.UpdateDataHistoryVersionComment</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.UpdateDataHistoryVersionComment</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Maroon</color>
@@ -5288,10 +5137,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.EditDataHistoryVersionComment</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.EditDataHistoryVersionComment</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Maroon</color>
@@ -5354,10 +5201,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.SwitchToDataHistoryVersion</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.SwitchToDataHistoryVersion</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Maroon</color>
@@ -5457,10 +5302,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.StandardAuthenticationChange</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.StandardAuthenticationChange</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Tomato</color>
@@ -5523,10 +5366,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.SessionStandardAuthenticationChange</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.SessionStandardAuthenticationChange</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Tomato</color>
@@ -5589,10 +5430,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.SessionOSAuthenticationChange</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.SessionOSAuthenticationChange</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Tomato</color>
@@ -5700,10 +5539,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Start</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Start</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Navy</color>
@@ -5766,10 +5603,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveStart</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveStart</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Navy</color>
@@ -5832,10 +5667,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveActivate</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveActivate</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Navy</color>
@@ -5898,10 +5731,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.Execute</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.Execute</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Navy</color>
@@ -5964,10 +5795,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>RolesEdit.InteractiveExecute</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.InteractiveExecute</segments>
               </dataPath>
               <titleBackColor xsi:type="core:ColorRef">
                 <color>Web.Navy</color>
@@ -6095,6 +5924,7 @@
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
+              <toolTipRepresentation>Auto</toolTipRepresentation>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <visible>true</visible>
@@ -6324,10 +6154,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.RestrictionByCondition.Fields</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.RestrictionByCondition.Fields</segments>
             </dataPath>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
@@ -6375,10 +6203,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.RestrictionByCondition.Condition</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.RestrictionByCondition.Condition</segments>
             </dataPath>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
@@ -6434,10 +6260,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.RestrictionByCondition.FilterData</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.RestrictionByCondition.FilterData</segments>
             </dataPath>
             <extendedTooltip>
               <name>RestrictionByConditionMatrixFilterDataExtendedTooltip</name>
@@ -6769,10 +6593,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.Rights.ObjectType</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.Rights.ObjectType</segments>
             </dataPath>
             <handlers>
               <event>OnChange</event>
@@ -6825,10 +6647,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.Rights.ObjectName</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.Rights.ObjectName</segments>
             </dataPath>
             <handlers>
               <event>OnChange</event>
@@ -6886,10 +6706,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.Rights.ObjectSubtype</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.Rights.ObjectSubtype</segments>
             </dataPath>
             <extendedTooltip>
               <name>RightsObjectSubtypeExtendedTooltip</name>
@@ -6938,10 +6756,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.Rights.ObjectPath</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.Rights.ObjectPath</segments>
             </dataPath>
             <extendedTooltip>
               <name>RightsObjectPathExtendedTooltip</name>
@@ -6990,10 +6806,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.Rights.RightName</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.Rights.RightName</segments>
             </dataPath>
             <extendedTooltip>
               <name>RightsRightNameExtendedTooltip</name>
@@ -7047,10 +6861,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.Rights.RightValue</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.Rights.RightValue</segments>
             </dataPath>
             <extendedTooltip>
               <name>RightsRightValueExtendedTooltip</name>
@@ -7092,10 +6904,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Object.Rights.Disable</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.Rights.Disable</segments>
             </dataPath>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
@@ -7333,10 +7143,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>Object.RestrictionByCondition.Modified</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.RestrictionByCondition.Modified</segments>
               </dataPath>
               <extendedTooltip>
                 <name>RestrictionByConditionModifiedExtendedTooltip</name>
@@ -7378,10 +7186,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>Object.RestrictionByCondition.Fields</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.RestrictionByCondition.Fields</segments>
               </dataPath>
               <extendedTooltip>
                 <name>RestrictionByConditionFieldsExtendedTooltip</name>
@@ -7430,10 +7236,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>Object.RestrictionByCondition.Condition</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.RestrictionByCondition.Condition</segments>
               </dataPath>
               <extendedTooltip>
                 <name>RestrictionByConditionConditionExtendedTooltip</name>
@@ -7482,10 +7286,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>Object.RestrictionByCondition.FilterData</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.RestrictionByCondition.FilterData</segments>
               </dataPath>
               <extendedTooltip>
                 <name>RestrictionByConditionFilterDataExtendedTooltip</name>
@@ -7826,10 +7628,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Object.Templates.LineNumber</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Object.Templates.LineNumber</segments>
           </dataPath>
           <extendedTooltip>
             <name>TemplatesLineNumberExtendedTooltip</name>
@@ -7874,10 +7674,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Object.Templates.Name</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Object.Templates.Name</segments>
           </dataPath>
           <extendedTooltip>
             <name>TemplatesNameExtendedTooltip</name>
@@ -7926,10 +7724,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Object.Templates.Template</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Object.Templates.Template</segments>
           </dataPath>
           <extendedTooltip>
             <name>TemplatesTemplateExtendedTooltip</name>
@@ -8209,10 +8005,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Object.LangInfo.LineNumber</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Object.LangInfo.LineNumber</segments>
           </dataPath>
           <extendedTooltip>
             <name>LangInfoLineNumberExtendedTooltip</name>
@@ -8257,10 +8051,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Object.LangInfo.LangCode</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Object.LangInfo.LangCode</segments>
           </dataPath>
           <extendedTooltip>
             <name>LangInfoLangCodeExtendedTooltip</name>
@@ -8309,10 +8101,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Object.LangInfo.LangDescription</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Object.LangInfo.LangDescription</segments>
           </dataPath>
           <extendedTooltip>
             <name>LangInfoLangDescriptionExtendedTooltip</name>

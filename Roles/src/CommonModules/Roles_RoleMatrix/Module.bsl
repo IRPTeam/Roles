@@ -148,7 +148,7 @@ Procedure addSubtypeRow(Val MetaItem, Val MetaItemRow, Val ParamStructure)
 	If Roles_Settings.hasResources(Meta) Then
 		AddChild(MetaItem, MetaItemRow, "Resources", ParamStructure);
 	EndIf;
-	If Roles_Settings.hasStandardAttributes(Meta) And ParamStructure.ObjectData.SetSeparateRightToStandardAttributes Then
+	If Roles_Settings.hasStandardAttributes(Meta) And ParamStructure.ObjectData.Property("SetSeparateRightToStandardAttributes") And ParamStructure.ObjectData.SetSeparateRightToStandardAttributes Then
 		AddChild(MetaItem, MetaItemRow, "StandardAttributes", ParamStructure);
 	EndIf;
 	If Roles_Settings.hasCommands(Meta) Then

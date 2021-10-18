@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Main window mode normal</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Режим основного окна &quot;Обычный&quot;</value>
+  </synonym>
 </mdclass:CommonPicture>

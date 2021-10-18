@@ -5,4 +5,8 @@
     <key>en</key>
     <value>Main window mode embedded workplace</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Режим основного окна &quot;Встроенное рабочее место&quot;</value>
+  </synonym>
 </mdclass:CommonPicture>

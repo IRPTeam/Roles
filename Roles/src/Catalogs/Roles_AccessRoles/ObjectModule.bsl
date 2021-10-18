@@ -1,4 +1,5 @@
 #Region Private
+
 Procedure OnCopy(CopiedObject)
 	For Each Row In Rights Do
 		NewID = New UUID;

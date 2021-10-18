@@ -228,24 +228,24 @@ FROM
 		</useRestriction>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureOutput</dcscor:parameter>
+				<dcscor:parameter>ВыводитьКартинку</dcscor:parameter>
 				<dcscor:value xsi:type="dcsset:DataCompositionPictureOutputType">OutputByValue</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureSize</dcscor:parameter>
+				<dcscor:parameter>РазмерКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:PictureSize">RealSize</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>TextPositionRelativeToPicture</dcscor:parameter>
+				<dcscor:parameter>ПоложениеТекстаОтносительноКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:TextPositionRelativeToPicture">Right</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureVerticalAlign</dcscor:parameter>
+				<dcscor:parameter>ВертикальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>PictureHorizontalAlign</dcscor:parameter>
+				<dcscor:parameter>ГоризонтальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:HorizontalAlign">Auto</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -272,24 +272,24 @@ FROM
 		</useRestriction>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureOutput</dcscor:parameter>
+				<dcscor:parameter>ВыводитьКартинку</dcscor:parameter>
 				<dcscor:value xsi:type="dcsset:DataCompositionPictureOutputType">OutputByValue</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureSize</dcscor:parameter>
+				<dcscor:parameter>РазмерКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:PictureSize">RealSize</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>TextPositionRelativeToPicture</dcscor:parameter>
+				<dcscor:parameter>ПоложениеТекстаОтносительноКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:TextPositionRelativeToPicture">Right</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureVerticalAlign</dcscor:parameter>
+				<dcscor:parameter>ВертикальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>PictureHorizontalAlign</dcscor:parameter>
+				<dcscor:parameter>ГоризонтальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:HorizontalAlign">Auto</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -316,24 +316,24 @@ FROM
 		</useRestriction>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureOutput</dcscor:parameter>
+				<dcscor:parameter>ВыводитьКартинку</dcscor:parameter>
 				<dcscor:value xsi:type="dcsset:DataCompositionPictureOutputType">OutputByValue</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureSize</dcscor:parameter>
+				<dcscor:parameter>РазмерКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:PictureSize">RealSize</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>TextPositionRelativeToPicture</dcscor:parameter>
+				<dcscor:parameter>ПоложениеТекстаОтносительноКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:TextPositionRelativeToPicture">Right</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureVerticalAlign</dcscor:parameter>
+				<dcscor:parameter>ВертикальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>PictureHorizontalAlign</dcscor:parameter>
+				<dcscor:parameter>ГоризонтальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:HorizontalAlign">Auto</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -360,24 +360,24 @@ FROM
 		</useRestriction>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureOutput</dcscor:parameter>
+				<dcscor:parameter>ВыводитьКартинку</dcscor:parameter>
 				<dcscor:value xsi:type="dcsset:DataCompositionPictureOutputType">OutputByValue</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureSize</dcscor:parameter>
+				<dcscor:parameter>РазмерКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:PictureSize">RealSize</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>TextPositionRelativeToPicture</dcscor:parameter>
+				<dcscor:parameter>ПоложениеТекстаОтносительноКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:TextPositionRelativeToPicture">Right</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureVerticalAlign</dcscor:parameter>
+				<dcscor:parameter>ВертикальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>PictureHorizontalAlign</dcscor:parameter>
+				<dcscor:parameter>ГоризонтальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:HorizontalAlign">Justify</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -494,24 +494,24 @@ FROM
 		</useRestriction>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureOutput</dcscor:parameter>
+				<dcscor:parameter>ВыводитьКартинку</dcscor:parameter>
 				<dcscor:value xsi:type="dcsset:DataCompositionPictureOutputType">OutputByValue</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureSize</dcscor:parameter>
+				<dcscor:parameter>РазмерКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:PictureSize">RealSize</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>TextPositionRelativeToPicture</dcscor:parameter>
+				<dcscor:parameter>ПоложениеТекстаОтносительноКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:TextPositionRelativeToPicture">Right</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureVerticalAlign</dcscor:parameter>
+				<dcscor:parameter>ВертикальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>PictureHorizontalAlign</dcscor:parameter>
+				<dcscor:parameter>ГоризонтальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:HorizontalAlign">Justify</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -538,24 +538,24 @@ FROM
 		</useRestriction>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureOutput</dcscor:parameter>
+				<dcscor:parameter>ВыводитьКартинку</dcscor:parameter>
 				<dcscor:value xsi:type="dcsset:DataCompositionPictureOutputType">OutputByValue</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureSize</dcscor:parameter>
+				<dcscor:parameter>РазмерКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:PictureSize">RealSize</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>TextPositionRelativeToPicture</dcscor:parameter>
+				<dcscor:parameter>ПоложениеТекстаОтносительноКартинки</dcscor:parameter>
 				<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:TextPositionRelativeToPicture">Right</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>PictureVerticalAlign</dcscor:parameter>
+				<dcscor:parameter>ВертикальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>PictureHorizontalAlign</dcscor:parameter>
+				<dcscor:parameter>ГоризонтальноеПоложениеКартинки</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:HorizontalAlign">Justify</dcscor:value>
 			</dcscor:item>
 		</appearance>
@@ -1359,11 +1359,11 @@ FROM
 					</dcsset:filter>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-							<dcscor:parameter>BackColor</dcscor:parameter>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:Color">#CBFFC9</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-							<dcscor:parameter>Text</dcscor:parameter>
+							<dcscor:parameter>Текст</dcscor:parameter>
 							<dcscor:value xsi:type="v8:LocalStringType">
 								<v8:item>
 									<v8:lang>en</v8:lang>
@@ -1394,11 +1394,11 @@ FROM
 					</dcsset:filter>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-							<dcscor:parameter>BackColor</dcscor:parameter>
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:Color">#FFD4DD</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-							<dcscor:parameter>Text</dcscor:parameter>
+							<dcscor:parameter>Текст</dcscor:parameter>
 							<dcscor:value xsi:type="v8:LocalStringType">
 								<v8:item>
 									<v8:lang>en</v8:lang>
@@ -1423,11 +1423,11 @@ FROM
 					<dcsset:filter/>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-							<dcscor:parameter>Placement</dcscor:parameter>
+							<dcscor:parameter>Размещение</dcscor:parameter>
 							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-							<dcscor:parameter>MaximumHeight</dcscor:parameter>
+							<dcscor:parameter>МаксимальнаяВысота</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
@@ -1441,15 +1441,15 @@ FROM
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>TotalsPlacement</dcscor:parameter>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
 					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>HorizontalOverallPlacement</dcscor:parameter>
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
 					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>VerticalOverallPlacement</dcscor:parameter>
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
 					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
 				</dcscor:item>
 			</dcsset:outputParameters>
@@ -1490,7 +1490,7 @@ FROM
 							<dcsset:filter/>
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>MaximumHeight</dcscor:parameter>
+									<dcscor:parameter>МаксимальнаяВысота</dcscor:parameter>
 									<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
@@ -1530,7 +1530,7 @@ FROM
 							<dcsset:filter/>
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>BackColor</dcscor:parameter>
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
 									<dcscor:value xsi:type="v8ui:Color">web:Bisque</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
@@ -1576,12 +1576,12 @@ FROM
 								<dcsset:filter/>
 								<dcsset:appearance>
 									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-										<dcscor:parameter>Indent</dcscor:parameter>
+										<dcscor:parameter>Отступ</dcscor:parameter>
 										<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
 									</dcscor:item>
 									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 										<dcscor:use>false</dcscor:use>
-										<dcscor:parameter>AutoIndent</dcscor:parameter>
+										<dcscor:parameter>АвтоОтступ</dcscor:parameter>
 										<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
 									</dcscor:item>
 								</dcsset:appearance>
@@ -1595,7 +1595,7 @@ FROM
 								<dcsset:filter/>
 								<dcsset:appearance>
 									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-										<dcscor:parameter>BackColor</dcscor:parameter>
+										<dcscor:parameter>ЦветФона</dcscor:parameter>
 										<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
 									</dcscor:item>
 								</dcsset:appearance>
@@ -1603,11 +1603,11 @@ FROM
 						</dcsset:conditionalAppearance>
 						<dcsset:outputParameters>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>TitleOutput</dcscor:parameter>
+								<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
 								<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 							</dcscor:item>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>FilterOutput</dcscor:parameter>
+								<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
 								<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 							</dcscor:item>
 						</dcsset:outputParameters>
@@ -1651,12 +1651,12 @@ FROM
 									<dcsset:filter/>
 									<dcsset:appearance>
 										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-											<dcscor:parameter>Indent</dcscor:parameter>
+											<dcscor:parameter>Отступ</dcscor:parameter>
 											<dcscor:value xsi:type="xs:decimal">2</dcscor:value>
 										</dcscor:item>
 										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 											<dcscor:use>false</dcscor:use>
-											<dcscor:parameter>AutoIndent</dcscor:parameter>
+											<dcscor:parameter>АвтоОтступ</dcscor:parameter>
 											<dcscor:value xsi:type="xs:decimal">2</dcscor:value>
 										</dcscor:item>
 									</dcsset:appearance>
@@ -1670,7 +1670,7 @@ FROM
 									<dcsset:filter/>
 									<dcsset:appearance>
 										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-											<dcscor:parameter>BackColor</dcscor:parameter>
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
 											<dcscor:value xsi:type="v8ui:Color">web:AntiqueWhite</dcscor:value>
 										</dcscor:item>
 									</dcsset:appearance>
@@ -1678,7 +1678,7 @@ FROM
 							</dcsset:conditionalAppearance>
 							<dcsset:outputParameters>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>FilterOutput</dcscor:parameter>
+									<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
 									<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 								</dcscor:item>
 							</dcsset:outputParameters>
@@ -1722,12 +1722,12 @@ FROM
 										<dcsset:filter/>
 										<dcsset:appearance>
 											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-												<dcscor:parameter>Indent</dcscor:parameter>
+												<dcscor:parameter>Отступ</dcscor:parameter>
 												<dcscor:value xsi:type="xs:decimal">3</dcscor:value>
 											</dcscor:item>
 											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 												<dcscor:use>false</dcscor:use>
-												<dcscor:parameter>AutoIndent</dcscor:parameter>
+												<dcscor:parameter>АвтоОтступ</dcscor:parameter>
 												<dcscor:value xsi:type="xs:decimal">3</dcscor:value>
 											</dcscor:item>
 										</dcsset:appearance>
@@ -1741,7 +1741,7 @@ FROM
 										<dcsset:filter/>
 										<dcsset:appearance>
 											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-												<dcscor:parameter>BackColor</dcscor:parameter>
+												<dcscor:parameter>ЦветФона</dcscor:parameter>
 												<dcscor:value xsi:type="v8ui:Color">web:Ivory</dcscor:value>
 											</dcscor:item>
 										</dcsset:appearance>
@@ -1749,7 +1749,7 @@ FROM
 								</dcsset:conditionalAppearance>
 								<dcsset:outputParameters>
 									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-										<dcscor:parameter>FilterOutput</dcscor:parameter>
+										<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
 										<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 									</dcscor:item>
 								</dcsset:outputParameters>
@@ -1787,12 +1787,12 @@ FROM
 											<dcsset:filter/>
 											<dcsset:appearance>
 												<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-													<dcscor:parameter>Indent</dcscor:parameter>
+													<dcscor:parameter>Отступ</dcscor:parameter>
 													<dcscor:value xsi:type="xs:decimal">4</dcscor:value>
 												</dcscor:item>
 												<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 													<dcscor:use>false</dcscor:use>
-													<dcscor:parameter>AutoIndent</dcscor:parameter>
+													<dcscor:parameter>АвтоОтступ</dcscor:parameter>
 													<dcscor:value xsi:type="xs:decimal">4</dcscor:value>
 												</dcscor:item>
 											</dcsset:appearance>
@@ -1833,11 +1833,11 @@ FROM
 										<dcsset:filter/>
 										<dcsset:appearance>
 											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-												<dcscor:parameter>BackColor</dcscor:parameter>
+												<dcscor:parameter>ЦветФона</dcscor:parameter>
 												<dcscor:value xsi:type="v8ui:Color">web:Ivory</dcscor:value>
 											</dcscor:item>
 											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-												<dcscor:parameter>Indent</dcscor:parameter>
+												<dcscor:parameter>Отступ</dcscor:parameter>
 												<dcscor:value xsi:type="xs:decimal">3</dcscor:value>
 											</dcscor:item>
 										</dcsset:appearance>
@@ -1876,7 +1876,7 @@ FROM
 											<dcsset:filter/>
 											<dcsset:appearance>
 												<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-													<dcscor:parameter>Indent</dcscor:parameter>
+													<dcscor:parameter>Отступ</dcscor:parameter>
 													<dcscor:value xsi:type="xs:decimal">4</dcscor:value>
 												</dcscor:item>
 											</dcsset:appearance>
@@ -1923,11 +1923,11 @@ FROM
 										<dcsset:filter/>
 										<dcsset:appearance>
 											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-												<dcscor:parameter>BackColor</dcscor:parameter>
+												<dcscor:parameter>ЦветФона</dcscor:parameter>
 												<dcscor:value xsi:type="v8ui:Color">web:Ivory</dcscor:value>
 											</dcscor:item>
 											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-												<dcscor:parameter>Indent</dcscor:parameter>
+												<dcscor:parameter>Отступ</dcscor:parameter>
 												<dcscor:value xsi:type="xs:decimal">3</dcscor:value>
 											</dcscor:item>
 										</dcsset:appearance>
@@ -1935,7 +1935,7 @@ FROM
 								</dcsset:conditionalAppearance>
 								<dcsset:outputParameters>
 									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-										<dcscor:parameter>FilterOutput</dcscor:parameter>
+										<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
 										<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 									</dcscor:item>
 								</dcsset:outputParameters>
@@ -1986,12 +1986,12 @@ FROM
 											<dcsset:filter/>
 											<dcsset:appearance>
 												<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-													<dcscor:parameter>Indent</dcscor:parameter>
+													<dcscor:parameter>Отступ</dcscor:parameter>
 													<dcscor:value xsi:type="xs:decimal">3</dcscor:value>
 												</dcscor:item>
 												<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 													<dcscor:use>false</dcscor:use>
-													<dcscor:parameter>AutoIndent</dcscor:parameter>
+													<dcscor:parameter>АвтоОтступ</dcscor:parameter>
 													<dcscor:value xsi:type="xs:decimal">3</dcscor:value>
 												</dcscor:item>
 											</dcsset:appearance>
@@ -1999,7 +1999,7 @@ FROM
 									</dcsset:conditionalAppearance>
 									<dcsset:outputParameters>
 										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-											<dcscor:parameter>FilterOutput</dcscor:parameter>
+											<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
 											<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 										</dcscor:item>
 									</dcsset:outputParameters>
@@ -2042,15 +2042,15 @@ FROM
 						<dcsset:filter/>
 						<dcsset:appearance>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>Placement</dcscor:parameter>
+								<dcscor:parameter>Размещение</dcscor:parameter>
 								<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Cut</dcscor:value>
 							</dcscor:item>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>MaximumWidth</dcscor:parameter>
+								<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
 								<dcscor:value xsi:type="xs:decimal">3</dcscor:value>
 							</dcscor:item>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>Text</dcscor:parameter>
+								<dcscor:parameter>Текст</dcscor:parameter>
 								<dcscor:value xsi:type="xs:string"/>
 							</dcscor:item>
 						</dcsset:appearance>

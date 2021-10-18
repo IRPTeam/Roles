@@ -11,7 +11,7 @@
   </synonym>
   <synonym>
     <key>ru</key>
-    <value>Роль команд для общих форм</value>
+    <value>Открыть (для обычных форм)</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.Roles_ButtonForm.Form.Form</defaultForm>

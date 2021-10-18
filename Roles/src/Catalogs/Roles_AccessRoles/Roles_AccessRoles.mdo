@@ -196,6 +196,10 @@
       <key>en</key>
       <value>Set separate right to standard attributes</value>
     </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Установить отдельные права на стандартные реквизиты</value>
+    </synonym>
     <type>
       <types>Boolean</types>
     </type>

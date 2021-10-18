@@ -42,6 +42,7 @@
           <picture xsi:type="core:PictureRef">
             <picture>StdPicture.DataCompositionSettingsWizard</picture>
           </picture>
+          <toolTipRepresentation>Auto</toolTipRepresentation>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:FormField">
@@ -52,10 +53,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>CurrentTableName</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>CurrentTableName</segments>
           </dataPath>
           <extendedTooltip>
             <name>CurrentTableNameExtendedTooltip</name>
@@ -107,10 +106,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>CurrentAccessRightName</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>CurrentAccessRightName</segments>
           </dataPath>
           <extendedTooltip>
             <name>CurrentRightNameExtendedTooltip</name>
@@ -162,10 +159,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>UseSessionParametersFromTable</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>UseSessionParametersFromTable</segments>
           </dataPath>
           <extendedTooltip>
             <name>UseSessionParametersFromTableExtendedTooltip</name>
@@ -207,10 +202,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>RLS</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>RLS</segments>
           </dataPath>
           <extendedTooltip>
             <name>RLSExtendedTooltip</name>
@@ -278,10 +271,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>Templates.Name</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Templates.Name</segments>
               </dataPath>
               <extendedTooltip>
                 <name>TemplatesNameExtendedTooltip</name>
@@ -330,10 +321,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>Templates.NamedParams</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Templates.NamedParams</segments>
               </dataPath>
               <extendedTooltip>
                 <name>TemplatesNamedParamsExtendedTooltip</name>
@@ -408,10 +397,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Templates.Code</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Templates.Code</segments>
             </dataPath>
             <extendedTooltip>
               <name>TemplatesCodeExtendedTooltip</name>
@@ -733,6 +720,7 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <placementArea>UserCmds</placementArea>
+                <toolTipRepresentation>Auto</toolTipRepresentation>
                 <representationInContextMenu>Auto</representationInContextMenu>
               </items>
               <items xsi:type="form:Button">
@@ -764,6 +752,7 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <placementArea>UserCmds</placementArea>
+                <toolTipRepresentation>Auto</toolTipRepresentation>
                 <representationInContextMenu>Auto</representationInContextMenu>
               </items>
               <visible>true</visible>
@@ -806,10 +795,8 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <dataPath xsi:type="form:MultiLanguageDataPath">
-                  <paths xsi:type="form:DataPath">
-                    <segments>FindStringIntoQuery</segments>
-                  </paths>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>FindStringIntoQuery</segments>
                 </dataPath>
                 <toolTip>
                   <key>en</key>
@@ -867,10 +854,8 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <dataPath xsi:type="form:MultiLanguageDataPath">
-                  <paths xsi:type="form:DataPath">
-                    <segments>ReplaceStringWith</segments>
-                  </paths>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>ReplaceStringWith</segments>
                 </dataPath>
                 <toolTip>
                   <key>en</key>
@@ -986,10 +971,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>QueryText</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>QueryText</segments>
             </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
@@ -1043,10 +1026,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>TabDoc</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>TabDoc</segments>
             </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
@@ -1183,10 +1164,8 @@
                   <userVisible>
                     <common>true</common>
                   </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>DebugTree.Condition</segments>
-                    </paths>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>DebugTree.Condition</segments>
                   </dataPath>
                   <extendedTooltip>
                     <name>DebugTreeConditionExtendedTooltip</name>
@@ -1299,10 +1278,8 @@
                   <userVisible>
                     <common>true</common>
                   </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>DebugTree.ConditionText</segments>
-                    </paths>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>DebugTree.ConditionText</segments>
                   </dataPath>
                   <extendedTooltip>
                     <name>DebugTreeConditionTextExtendedTooltip</name>
@@ -1352,10 +1329,8 @@
                   <userVisible>
                     <common>true</common>
                   </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>DebugTree.Result</segments>
-                    </paths>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>DebugTree.Result</segments>
                   </dataPath>
                   <extendedTooltip>
                     <name>DebugTreeResultExtendedTooltip</name>
@@ -1404,10 +1379,8 @@
                   <userVisible>
                     <common>true</common>
                   </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>DebugTree.Code</segments>
-                    </paths>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>DebugTree.Code</segments>
                   </dataPath>
                   <extendedTooltip>
                     <name>DebugTreeCodeExtendedTooltip</name>
@@ -1457,10 +1430,8 @@
                   <userVisible>
                     <common>true</common>
                   </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>DebugTree.Status</segments>
-                    </paths>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>DebugTree.Status</segments>
                   </dataPath>
                   <extendedTooltip>
                     <name>DebugTreeStatusExtendedTooltip</name>
@@ -1502,10 +1473,8 @@
                   <userVisible>
                     <common>true</common>
                   </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>DebugTree.Error</segments>
-                    </paths>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>DebugTree.Error</segments>
                   </dataPath>
                   <extendedTooltip>
                     <name>DebugTreeErrorExtendedTooltip</name>
@@ -1732,10 +1701,8 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <dataPath xsi:type="form:MultiLanguageDataPath">
-                  <paths xsi:type="form:DataPath">
-                    <segments>Items.DebugTree.CurrentData.ConditionText</segments>
-                  </paths>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>Items.DebugTree.CurrentData.ConditionText</segments>
                 </dataPath>
                 <extendedTooltip>
                   <name>DebugTreeConditionText1ExtendedTooltip</name>
@@ -1785,10 +1752,8 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <dataPath xsi:type="form:MultiLanguageDataPath">
-                  <paths xsi:type="form:DataPath">
-                    <segments>Items.DebugTree.CurrentData.Code</segments>
-                  </paths>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>Items.DebugTree.CurrentData.Code</segments>
                 </dataPath>
                 <extendedTooltip>
                   <name>DebugTreeCode1ExtendedTooltip</name>
@@ -1905,6 +1870,7 @@
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
                     <placementArea>UserCmds</placementArea>
+                    <toolTipRepresentation>Auto</toolTipRepresentation>
                     <representationInContextMenu>Auto</representationInContextMenu>
                   </items>
                   <items xsi:type="form:Button">
@@ -1936,6 +1902,7 @@
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
                     <placementArea>UserCmds</placementArea>
+                    <toolTipRepresentation>Auto</toolTipRepresentation>
                     <representationInContextMenu>Auto</representationInContextMenu>
                   </items>
                   <visible>true</visible>
@@ -1999,6 +1966,7 @@
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
                   <placementArea>UserCmds</placementArea>
+                  <toolTipRepresentation>Auto</toolTipRepresentation>
                   <representationInContextMenu>Auto</representationInContextMenu>
                 </items>
                 <visible>true</visible>
@@ -2038,10 +2006,8 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <dataPath xsi:type="form:MultiLanguageDataPath">
-                  <paths xsi:type="form:DataPath">
-                    <segments>BSLCode</segments>
-                  </paths>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>BSLCode</segments>
                 </dataPath>
                 <titleLocation>None</titleLocation>
                 <extendedTooltip>
@@ -2091,10 +2057,8 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <dataPath xsi:type="form:MultiLanguageDataPath">
-                  <paths xsi:type="form:DataPath">
-                    <segments>BSLResult</segments>
-                  </paths>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>BSLResult</segments>
                 </dataPath>
                 <titleLocation>None</titleLocation>
                 <extendedTooltip>
@@ -2184,10 +2148,8 @@
                 <userVisible>
                   <common>true</common>
                 </userVisible>
-                <dataPath xsi:type="form:MultiLanguageDataPath">
-                  <paths xsi:type="form:DataPath">
-                    <segments>RLSTemplateView</segments>
-                  </paths>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>RLSTemplateView</segments>
                 </dataPath>
                 <titleLocation>None</titleLocation>
                 <extendedTooltip>
@@ -2349,10 +2311,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Items.Templates.CurrentData.Code</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Items.Templates.CurrentData.Code</segments>
             </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
@@ -2482,10 +2442,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>SessionParametersTable.Name</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>SessionParametersTable.Name</segments>
               </dataPath>
               <extendedTooltip>
                 <name>SessionParametersNameExtendedTooltip</name>
@@ -2534,10 +2492,8 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:MultiLanguageDataPath">
-                <paths xsi:type="form:DataPath">
-                  <segments>SessionParametersTable.Value</segments>
-                </paths>
+              <dataPath xsi:type="form:DataPath">
+                <segments>SessionParametersTable.Value</segments>
               </dataPath>
               <extendedTooltip>
                 <name>SessionParametersValueExtendedTooltip</name>

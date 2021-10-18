@@ -39,8 +39,8 @@ EndProcedure
 Procedure BeforeWrite(Cancel, WriteParameters)
 	Try
 		Str = New Structure(Object.Description);
-		Roles_CommonFunctionsClientServer.ShowUsersMessage("", "Object.Description");
 	Except
+		Roles_CommonFunctionsClientServer.ShowUsersMessage("", "Object.Description");
 		Cancel = True;
 	EndTry;
 EndProcedure

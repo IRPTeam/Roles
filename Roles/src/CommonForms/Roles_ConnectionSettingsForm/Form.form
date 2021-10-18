@@ -16,10 +16,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Source</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Source</segments>
     </dataPath>
     <titleLocation>Left</titleLocation>
     <handlers>
@@ -113,10 +111,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Path</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Path</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -223,10 +219,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ServerName</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ServerName</segments>
         </dataPath>
         <extendedTooltip>
           <name>ServerExtendedTooltip</name>
@@ -275,10 +269,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>BaseName</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>BaseName</segments>
         </dataPath>
         <extendedTooltip>
           <name>BaseNameExtendedTooltip</name>
@@ -372,10 +364,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Login</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Login</segments>
       </dataPath>
       <extendedTooltip>
         <name>LoginExtendedTooltip</name>
@@ -430,10 +420,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Password</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Password</segments>
       </dataPath>
       <extendedTooltip>
         <name>PasswordExtendedTooltip</name>
@@ -515,10 +503,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>LoadFromClientPath</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>LoadFromClientPath</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -564,15 +550,9 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>PathToXML</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>PathToXML</segments>
       </dataPath>
-      <toolTip>
-        <key>ru</key>
-        <value>Путь (на стороне сервера), напр. D:\Base\, выберите верхнюю папку над Roles</value>
-      </toolTip>
       <toolTipRepresentation>ShowBottom</toolTipRepresentation>
       <handlers>
         <event>OnChange</event>
@@ -630,6 +610,10 @@
         <key>en</key>
         <value>Select zip archive with archives folder Roles</value>
       </title>
+      <title>
+        <key>ru</key>
+        <value>Укажите zip архив с папкой Roles</value>
+      </title>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
@@ -672,6 +656,10 @@
       <title>
         <key>en</key>
         <value>Path at server side, ex. D:\Base\, set Roles above folder</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Путь на сервере 1С, например D:\Base\, т.е. папка Roles должна быть следующим уровнем</value>
       </title>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -798,10 +786,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>CountRoles</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>CountRoles</segments>
       </dataPath>
       <titleLocation>None</titleLocation>
       <extendedTooltip>
@@ -881,10 +867,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Log</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Log</segments>
     </dataPath>
     <extendedTooltip>
       <name>LogExtendedTooltip</name>
@@ -963,6 +947,7 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
+      <toolTipRepresentation>Auto</toolTipRepresentation>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <items xsi:type="form:Button">
@@ -993,6 +978,7 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
+      <toolTipRepresentation>Auto</toolTipRepresentation>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <visible>true</visible>
@@ -1249,6 +1235,10 @@
     <title>
       <key>en</key>
       <value>Load from client path</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Загрузка на клиенте</value>
     </title>
     <id>10</id>
     <valueType>

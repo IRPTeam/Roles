@@ -5,8 +5,11 @@
     <key>en</key>
     <value>Save extension to file</value>
   </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Сохранить расширение в файл</value>
+  </synonym>
   <group>ActionsPanelTools</group>
   <commandParameterType/>
   <representation>Auto</representation>
-  <shortcut></shortcut>
 </mdclass:CommonCommand>
