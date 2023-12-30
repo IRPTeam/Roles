@@ -55,19 +55,8 @@ EndProcedure
 
 &AtClient
 Procedure ConvertToQuery(Command)
-	TemplateStructure = New Structure;
-	For Each Tmp In Templates Do
-		TemplateRows = StrSplit(Tmp.Code, Chars.LF, False);
-		TemplateRows = DeleteCommentAndEmptyRow(TemplateRows);
-		
-		TempStr = New Structure;
-		TempStr.Insert("Code", StrConcat(TemplateRows, Chars.LF));
-		TempStr.Insert("Params", New Array);
-		TempStr.Insert("FunctionString", "");
-		TempStr.Insert("NamedParams", StrSplit(Tmp.NamedParams, ", ", False));
-		TemplateStructure.Insert(Tmp.Name, TempStr);
-	EndDo;
-	RLSParamStructure = ParamsStructureInTemplates(RLS, TemplateStructure);
+	
+	RLSParamStructure = RLSParameters();
 	
 	FillTemplateWithParams(RLSParamStructure);
 	
@@ -107,6 +96,57 @@ EndProcedure
 Procedure RunReport(Command)
 	RunReportAtServer();
 EndProcedure
+
+#Region SessionParametersImportExport
+
+&AtClient
+Async Procedure ImportSessionParameters(Command)
+	
+	FileDialog = New FileDialog(FileDialogMode.Open);
+	FileDialog.CheckFileExist = True;
+	FileDialog.Filter = "XML file (*.xml) | *.xml";	
+	
+	FilesArray = Await FileDialog.ChooseAsync();
+	
+	If FilesArray = Undefined Then
+		Return;
+	EndIf;
+	
+	BinaryData = New BinaryData(FilesArray[0]);
+	Address = PutToTempStorage(BinaryData, UUID);
+	SessionParametersFromXML(Address);
+	
+EndProcedure
+
+&AtClient
+Async Procedure ExportSessionParameters(Command)
+	
+	FileDialog = New FileDialog(FileDialogMode.Save);
+	FileDialog.Filter = "XML file (*.xml) | *.xml";
+	FileDialog.FullFileName = "SessionParameters_" + UserName() + ".xml";
+	FilesArray = Await FileDialog.ChooseAsync();
+	
+	If FilesArray = Undefined Then
+		Return;
+	EndIf;
+		
+	Address = SessionParametersToXML();
+	
+	DataWriter = New DataWriter(FilesArray[0]);
+	Await DataWriter.WriteAsync(GetFromTempStorage(Address));
+	Await DataWriter.CloseAsync();
+		
+EndProcedure
+
+&AtClient
+Procedure UpdateSessionParameters(Command)
+	
+	RLSParamStructure = RLSParameters();
+	FillSessionParametersTable(RLSParamStructure);	
+	
+EndProcedure
+
+#EndRegion
 
 #EndRegion
 
@@ -302,6 +342,11 @@ EndProcedure
 
 &AtServer
 Procedure FillAdditionalParam(AdditionalParamsStructure)
+	
+	If UsePrivelegedMode Then
+		SetPrivilegedMode(True);
+	EndIf;
+	
 	For Each Param In AdditionalParamsStructure Do
 		SessionParameter = Metadata.SessionParameters.Find(Param.Key);
 		If SessionParameter = Undefined Then
@@ -313,10 +358,12 @@ Procedure FillAdditionalParam(AdditionalParamsStructure)
 			AdditionalParamsStructure.Insert(Param.Key, SessionParameters[Param.Key]);
 		EndIf;
 	EndDo;
+	
 EndProcedure
 
 &AtServer
 Function AdditionalParamsStructure(RLSParamStructure)
+	
 	AdditionalParamList = New Structure;
 	For Each Tmp In RLSParamStructure Do
 		CodeRows = StrSplit(Tmp.Value.Code, " ,.()/" + Chars.LF, False);
@@ -622,6 +669,73 @@ EndProcedure
 
 #EndRegion
 
+#Region SessionParametersImportExport
+
+&AtServer
+Function SessionParametersToXML()
+	
+	SessionParametersStruct = New Structure;
+	
+	For Each SessionParametersRow In SessionParametersTable Do
+		SessionParametersStruct.Insert(SessionParametersRow.Name, SessionParametersRow.Value);
+	EndDo;
+	
+	XML = Roles_ServiceServer.SerializeXML(SessionParametersStruct);
+	
+	Temp = GetTempFileName("xml");
+	TextWriter = New TextWriter(Temp);
+	TextWriter.Write(XML);
+	TextWriter.Close();
+	
+	Address = PutToTempStorage(New BinaryData(Temp), UUID);
+	
+	DeleteFiles(Temp);
+	
+	Return Address;
+	
+EndFunction
+
+&AtServer
+Procedure SessionParametersFromXML(Address)
+	
+	BinaryData = GetFromTempStorage(Address);	
+	DataReader = New TextReader(BinaryData.OpenStreamForRead());
+	SessionParametersStruct = Roles_ServiceServer.DeserializeXML(DataReader.Read());
+	
+	SessionParametersTable.Clear();
+	
+	For Each KeyAndValue In SessionParametersStruct Do
+		SessionParametersRow = SessionParametersTable.Add();
+		SessionParametersRow.Name = KeyAndValue.Key;
+		SessionParametersRow.Value = KeyAndValue.Value;		
+	EndDo;
+	
+EndProcedure
+
+#EndRegion
+
+&AtClient
+Функция RLSParameters()
+	
+	TemplateStructure = New Structure;
+	For Each Tmp In Templates Do
+		TemplateRows = StrSplit(Tmp.Code, Chars.LF, False);
+		TemplateRows = DeleteCommentAndEmptyRow(TemplateRows);
+		
+		TempStr = New Structure;
+		TempStr.Insert("Code", StrConcat(TemplateRows, Chars.LF));
+		TempStr.Insert("Params", New Array);
+		TempStr.Insert("FunctionString", "");
+		TempStr.Insert("NamedParams", StrSplit(Tmp.NamedParams, ", ", False));
+		TemplateStructure.Insert(Tmp.Name, TempStr);
+	EndDo;
+	
+	RLSParamStructure = ParamsStructureInTemplates(RLS, TemplateStructure);
+	
+	Возврат RLSParamStructure;
+	
+КонецФункции
+
 &AtServer
 Function CodeTypeOrData(Val Code, AdditionalParamsStructure, Query)
 	//@skip-warning
@@ -663,14 +777,26 @@ EndFunction
 
 &AtServer
 Procedure RunBSLCodeAtServer()
+	
+	If UsePrivelegedMode Then
+		SetPrivilegedMode(True);
+	EndIf;
+	
 	ArrayText = New Array;
 	Execute(BSLCode);
 	BSLResult = StrConcat(ArrayText, Chars.LF);
+	
 EndProcedure
 
 &AtServer
 Procedure RunReportAtServer()
+	
+	If UsePrivelegedMode Then
+		SetPrivilegedMode(True);
+	EndIf;
+	
 	DCSTemplate = GetCommonTemplate("Roles_DCS");
+	DCSTemplate.DataSets[0].Fields.Clear();
 	
 	For Each ParamStr In SessionParametersTable Do
 		NewParam = DCSTemplate.Parameters.Add();
@@ -684,7 +810,6 @@ Procedure RunReportAtServer()
 	DataSet = DCSTemplate.DataSets[0];
 	DataSet.Query = (QueryText);
 
-	
 	Address = PutToTempStorage(DCSTemplate, UUID);
 	SettingsComposer.Initialize(New DataCompositionAvailableSettingsSource(Address));
 	
@@ -699,9 +824,8 @@ Procedure RunReportAtServer()
 		Selection.Field = Field.Field; 
 	EndDo;
 	
+	Settings = SettingsComposer.GetSettings();	
 	
-	
-	Settings = SettingsComposer.GetSettings();
 	DataCompositionSchema = GetFromTempStorage(Address);
 	Composer = New DataCompositionTemplateComposer();
 	Template = Composer.Execute(DataCompositionSchema, Settings);
@@ -712,7 +836,6 @@ Procedure RunReportAtServer()
 	OutputProcessor = New DataCompositionResultSpreadsheetDocumentOutputProcessor;
 	OutputProcessor.SetDocument(TabDoc);
 	OutputProcessor.Output(DataCompositionProcessor);
-
 
 EndProcedure
 
@@ -743,6 +866,7 @@ Procedure FillSessionParametersTable(Val RLSParamStructure)
 		EndDo; 
 	EndIf;
 EndProcedure
+
 #EndRegion
 
 

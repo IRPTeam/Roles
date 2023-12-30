@@ -102,6 +102,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
+          <source>SettingsComposerSettingsFilterFilterAvailableFieldsSearchString</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -140,6 +141,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
+          <source>SettingsComposerSettingsFilterFilterAvailableFieldsViewStatus</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
@@ -179,6 +181,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
+          <source>SettingsComposerSettingsFilterFilterAvailableFieldsSearchControl</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -304,6 +307,7 @@
               </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
+            <source>SettingsFilterSearchString</source>
             <extInfo xsi:type="form:SearchStringAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -342,6 +346,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
+            <source>SettingsFilterViewStatus</source>
             <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
               <horizontalLocation>Left</horizontalLocation>
@@ -381,6 +386,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
+            <source>SettingsFilterSearchControl</source>
             <extInfo xsi:type="form:SearchControlAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -559,7 +565,6 @@
             <autoMaxHeight>true</autoMaxHeight>
             <groupHorizontalAlign>Right</groupHorizontalAlign>
             <placementArea>UserCmds</placementArea>
-            <toolTipRepresentation>Auto</toolTipRepresentation>
           </items>
           <items xsi:type="form:Button">
             <name>Cancel</name>
@@ -591,7 +596,6 @@
             <autoMaxHeight>true</autoMaxHeight>
             <groupHorizontalAlign>Right</groupHorizontalAlign>
             <placementArea>UserCmds</placementArea>
-            <toolTipRepresentation>Auto</toolTipRepresentation>
           </items>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -736,7 +740,6 @@
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
-          <toolTipRepresentation>Auto</toolTipRepresentation>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:Button">
@@ -768,7 +771,6 @@
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
-          <toolTipRepresentation>Auto</toolTipRepresentation>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:Decoration">
@@ -913,6 +915,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
+          <source>SettingsComposerSettingsDataParametersSearchString</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -951,6 +954,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
+          <source>SettingsComposerSettingsDataParametersViewStatus</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
@@ -990,6 +994,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
+          <source>SettingsComposerSettingsDataParametersSearchControl</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1122,7 +1127,6 @@
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <placementArea>UserCmds</placementArea>
-            <toolTipRepresentation>Auto</toolTipRepresentation>
             <representationInContextMenu>Auto</representationInContextMenu>
           </items>
           <items xsi:type="form:Decoration">
@@ -1346,6 +1350,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
+          <source>SettingsComposerFixedSettingsFilterSearchString</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1384,6 +1389,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
+          <source>SettingsComposerFixedSettingsFilterViewStatus</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
@@ -1423,6 +1429,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
+          <source>SettingsComposerFixedSettingsFilterSearchControl</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>

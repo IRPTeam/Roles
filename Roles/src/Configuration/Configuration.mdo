@@ -28,15 +28,23 @@
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
   <defaultRoles>Role.Roles_UserRole</defaultRoles>
   <vendor>IRP Team</vendor>
-  <version>1.0.8.#buildNumber#</version>
-  <defaultLanguage>Language.English</defaultLanguage>
-  <languages uuid="49353af6-2b7b-4ba2-9083-d4adef5453f0">
-    <name>English</name>
+  <version>1.0.8.#BuildNumber#</version>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <languages uuid="99f781df-1c7f-45ad-aa17-c68f86245b58">
+    <name>Английский</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:LanguageExtension">
       <languageCode>Checked</languageCode>
     </extension>
     <languageCode>en</languageCode>
+  </languages>
+  <languages uuid="908c9876-9e57-4d8c-b274-042434fb9f6f">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.Roles_AccessSystem</subsystems>
   <commonPictures>CommonPicture.Roles_AccountingFlags</commonPictures>
@@ -114,6 +122,11 @@
   <commonPictures>CommonPicture.Roles_right_interactiveSetDeletionMarkPredefinedData</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveStart</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveUndoPosting</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mainWindowModeEmbeddedWorkplace</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mainWindowModeFullscreenWorkplace</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mainWindowModeKiosk</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mainWindowModeNormal</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mainWindowModeWorkplace</commonPictures>
   <commonPictures>CommonPicture.Roles_right_mobileClient</commonPictures>
   <commonPictures>CommonPicture.Roles_right_output</commonPictures>
   <commonPictures>CommonPicture.Roles_right_posting</commonPictures>
@@ -156,39 +169,34 @@
   <commonPictures>CommonPicture.Roles_Task</commonPictures>
   <commonPictures>CommonPicture.Roles_URLTemplate</commonPictures>
   <commonPictures>CommonPicture.Roles_WebService</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_mainWindowModeEmbeddedWorkplace</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_mainWindowModeFullscreenWorkplace</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_mainWindowModeKiosk</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_mainWindowModeNormal</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_mainWindowModeWorkplace</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
   <roles>Role.Roles_UserRole</roles>
-  <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
-  <commonTemplates>CommonTemplate.Roles_TemplateMetadataObject</commonTemplates>
+  <commonTemplates>CommonTemplate.Roles_DCS</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_MatrixTemplate</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_RoleTree</commonTemplates>
-  <commonTemplates>CommonTemplate.Roles_DCS</commonTemplates>
+  <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
+  <commonTemplates>CommonTemplate.Roles_TemplateMetadataObject</commonTemplates>
   <commonTemplates>CommonTemplate.Roles_TemplateMetadataObjectSP</commonTemplates>
-  <commonModules>CommonModule.Roles_Settings</commonModules>
-  <commonModules>CommonModule.Roles_GenerateExtension</commonModules>
-  <commonModules>CommonModule.Roles_SettingsReUse</commonModules>
-  <commonModules>CommonModule.Roles_ExportAndLoadCurrentRoles</commonModules>
-  <commonModules>CommonModule.Roles_ServiceServer</commonModules>
-  <commonModules>CommonModule.Roles_RoleMatrix</commonModules>
   <commonModules>CommonModule.Roles_CommonFunctionsClientServer</commonModules>
-  <commonCommands>CommonCommand.Roles_UpdateExtension</commonCommands>
-  <commonCommands>CommonCommand.Roles_LoadRolesFromXML</commonCommands>
+  <commonModules>CommonModule.Roles_ExportAndLoadCurrentRoles</commonModules>
+  <commonModules>CommonModule.Roles_GenerateExtension</commonModules>
+  <commonModules>CommonModule.Roles_RoleMatrix</commonModules>
+  <commonModules>CommonModule.Roles_ServiceServer</commonModules>
+  <commonModules>CommonModule.Roles_Settings</commonModules>
+  <commonModules>CommonModule.Roles_SettingsReUse</commonModules>
   <commonCommands>CommonCommand.Roles_ConvertTemplate</commonCommands>
+  <commonCommands>CommonCommand.Roles_LoadRolesFromXML</commonCommands>
   <commonCommands>CommonCommand.Roles_SaveExtensionToFile</commonCommands>
+  <commonCommands>CommonCommand.Roles_UpdateExtension</commonCommands>
   <commonForms>CommonForm.Roles_ConnectionSettingsForm</commonForms>
   <commonForms>CommonForm.Roles_ConvertTemplateToQuery</commonForms>
-  <catalogs>Catalog.Roles_AccessRoles</catalogs>
   <catalogs>Catalog.Roles_AccessProfiles</catalogs>
-  <catalogs>Catalog.Roles_Templates</catalogs>
+  <catalogs>Catalog.Roles_AccessRoles</catalogs>
   <catalogs>Catalog.Roles_Parameters</catalogs>
+  <catalogs>Catalog.Roles_Templates</catalogs>
+  <enums>Enum.Roles_MetadataSubtype</enums>
   <enums>Enum.Roles_MetadataTypes</enums>
   <enums>Enum.Roles_Rights</enums>
-  <enums>Enum.Roles_MetadataSubtype</enums>
   <reports>Report.Roles_AccessToObjectAnalyse</reports>
   <dataProcessors>DataProcessor.Roles_ButtonForm</dataProcessors>
 </mdclass:Configuration>

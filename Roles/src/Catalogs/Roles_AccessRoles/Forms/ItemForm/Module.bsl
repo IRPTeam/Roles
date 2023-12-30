@@ -199,6 +199,34 @@ Procedure RestrictionByConditionConditionOpening(Item, StandardProcessing)
 	Filter.ObjectPath = Items.RolesEdit.CurrentData.ObjectPath;
 	Filter.RightName = Items.RolesEdit.CurrentItem.Name;
 
+	OpenFormRLS(Item.Parent.CurrentData.Condition,
+				Items.RolesEdit.CurrentData.ObjectPath,
+				Items.RolesEdit.CurrentItem.Name,
+				Item);
+
+EndProcedure
+
+&AtClient
+Procedure RestrictionByConditionMatrixSelection(Item, RowSelected, Field, StandardProcessing)
+
+	If Not ReadOnly Then
+		Return;
+	EndIf;
+
+	StandardProcessing = False;
+
+	OpenFormRLS(Item.CurrentData.Condition, Items.RolesEdit.CurrentData.ObjectPath, Items.RolesEdit.CurrentItem.Name);
+
+EndProcedure
+
+&AtClient
+Procedure OpenFormRLS(Text, ObjectPath, Name, Item = Undefined)
+
+	Filter = New Structure("Text, ObjectPath, RightName, RLSList");
+	Filter.Text = Text;
+	Filter.ObjectPath = ObjectPath;
+	Filter.RightName = Name;
+
 	RLSList = New Array;
 	For Each RLSRow In Object.Templates Do
 		RLSList.Add(RLSRow.Template);
@@ -206,9 +234,16 @@ Procedure RestrictionByConditionConditionOpening(Item, StandardProcessing)
 	Filter.RLSList = RLSList;
 
 	Notify = New NotifyDescription("RestrictionByConditionConditionOpeningEnd", ThisObject, New Structure("Item", Item));
-	
-	OpenForm("CommonForm.Roles_ConvertTemplateToQuery", Filter, ThisObject, , , , Notify, 
-																			FormWindowOpeningMode.LockOwnerWindow);
+
+	OpenForm("CommonForm.Roles_ConvertTemplateToQuery",
+			 Filter,
+			 ThisObject,
+			 ,
+			 ,
+			 ,
+			 Notify,
+			 FormWindowOpeningMode.LockOwnerWindow);
+
 EndProcedure
 
 &AtClient
@@ -315,6 +350,10 @@ EndProcedure
 
 &AtClient
 Procedure SetFlags(CurrentRow,  Field, Value = Undefined, OnlyNextLvl = False)
+	
+	If Field.Name = "RolesEditObjectFullName" Then
+		Return;
+	EndIf;
 		
 	If NOT Value = Undefined Then
 		CurrentRow[Field.Name] = Value;
@@ -400,7 +439,7 @@ EndProcedure
 Procedure RestrictionByConditionConditionOpeningEnd(Text, AdditionalParameters) Export
 	
 	Item = AdditionalParameters.Item;
-	If NOT Text = Undefined Then
+	If NOT Text = Undefined And NOT Item = Undefined Then
 		Item.Parent.CurrentData.Condition = Text;
 	EndIf;
 
@@ -450,24 +489,3 @@ EndProcedure
 
 
 #EndRegion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

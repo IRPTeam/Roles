@@ -1,5 +1,6 @@
 #Region Internal
 Procedure UpdateRoleExt(Val Settings, CountRoles = 0, Log = "") Export
+	
 	LoadFromTemp = False;
 	If Settings.Source = "SQL"
 		Or Settings.Source = "File" Then
@@ -34,8 +35,6 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0, Log = "") Export
 		Settings.PathToXML = Path + "\";
 	EndIf;
 	
-	
-	
 	Rights = FindFiles(Settings.PathToXML + "Roles", "*.xml", False);	
 	LoadFromXMLFormat(Settings, Rights);
 	
@@ -48,7 +47,8 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0, Log = "") Export
 	
 	If LoadFromTemp Then	
 		DeleteFiles(Path);
-	EndIf;	
+	EndIf;
+		
 EndProcedure
 #EndRegion
 

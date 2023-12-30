@@ -42,7 +42,6 @@
           <picture xsi:type="core:PictureRef">
             <picture>StdPicture.DataCompositionSettingsWizard</picture>
           </picture>
-          <toolTipRepresentation>Auto</toolTipRepresentation>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:FormField">
@@ -180,6 +179,49 @@
           <contextMenu>
             <name>UseSessionParametersFromTableContextMenu</name>
             <id>174</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>PrivelegedMode</name>
+          <id>187</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>UsePrivelegedMode</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>PrivelegedModeExtendedTooltip</name>
+            <id>189</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>PrivelegedModeContextMenu</name>
+            <id>188</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -484,6 +526,7 @@
               </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
+            <source>TemplatesSearchString</source>
             <extInfo xsi:type="form:SearchStringAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -522,6 +565,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
+            <source>TemplatesViewStatus</source>
             <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
               <horizontalLocation>Left</horizontalLocation>
@@ -561,6 +605,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
+            <source>TemplatesSearchControl</source>
             <extInfo xsi:type="form:SearchControlAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -720,7 +765,6 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <placementArea>UserCmds</placementArea>
-                <toolTipRepresentation>Auto</toolTipRepresentation>
                 <representationInContextMenu>Auto</representationInContextMenu>
               </items>
               <items xsi:type="form:Button">
@@ -752,7 +796,6 @@
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <placementArea>UserCmds</placementArea>
-                <toolTipRepresentation>Auto</toolTipRepresentation>
                 <representationInContextMenu>Auto</representationInContextMenu>
               </items>
               <visible>true</visible>
@@ -1560,6 +1603,7 @@
                     </userVisible>
                     <autoFill>true</autoFill>
                   </contextMenu>
+                  <source>DebugTreeSearchString</source>
                   <extInfo xsi:type="form:SearchStringAdditionExtInfo">
                     <autoMaxWidth>true</autoMaxWidth>
                   </extInfo>
@@ -1598,6 +1642,7 @@
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>ViewStatusAddition</type>
+                  <source>DebugTreeViewStatus</source>
                   <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
                     <autoMaxWidth>true</autoMaxWidth>
                     <horizontalLocation>Left</horizontalLocation>
@@ -1637,6 +1682,7 @@
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>SearchControlAddition</type>
+                  <source>DebugTreeSearchControl</source>
                   <extInfo xsi:type="form:SearchControlAdditionExtInfo">
                     <autoMaxWidth>true</autoMaxWidth>
                   </extInfo>
@@ -1870,7 +1916,6 @@
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
                     <placementArea>UserCmds</placementArea>
-                    <toolTipRepresentation>Auto</toolTipRepresentation>
                     <representationInContextMenu>Auto</representationInContextMenu>
                   </items>
                   <items xsi:type="form:Button">
@@ -1902,7 +1947,6 @@
                     <autoMaxWidth>true</autoMaxWidth>
                     <autoMaxHeight>true</autoMaxHeight>
                     <placementArea>UserCmds</placementArea>
-                    <toolTipRepresentation>Auto</toolTipRepresentation>
                     <representationInContextMenu>Auto</representationInContextMenu>
                   </items>
                   <visible>true</visible>
@@ -1966,7 +2010,6 @@
                   <autoMaxWidth>true</autoMaxWidth>
                   <autoMaxHeight>true</autoMaxHeight>
                   <placementArea>UserCmds</placementArea>
-                  <toolTipRepresentation>Auto</toolTipRepresentation>
                   <representationInContextMenu>Auto</representationInContextMenu>
                 </items>
                 <visible>true</visible>
@@ -2537,6 +2580,96 @@
             <autoCommandBar>
               <name>SessionParametersCommandBar</name>
               <id>108</id>
+              <items xsi:type="form:Button">
+                <name>SessionParametersImportSessionParameters</name>
+                <id>176</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>SessionParametersImportSessionParametersExtendedTooltip</name>
+                  <id>177</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <commandName>Form.Command.ImportSessionParameters</commandName>
+                <representation>Auto</representation>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <placementArea>UserCmds</placementArea>
+                <representationInContextMenu>Auto</representationInContextMenu>
+              </items>
+              <items xsi:type="form:Button">
+                <name>SessionParametersExportSessionParameters</name>
+                <id>178</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>SessionParametersExportSessionParametersExtendedTooltip</name>
+                  <id>179</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <commandName>Form.Command.ExportSessionParameters</commandName>
+                <representation>Auto</representation>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <placementArea>UserCmds</placementArea>
+                <representationInContextMenu>Auto</representationInContextMenu>
+              </items>
+              <items xsi:type="form:Button">
+                <name>SessionParametersRereadSessionParameters</name>
+                <id>180</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>SessionParametersRereadSessionParametersExtendedTooltip</name>
+                  <id>181</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <commandName>Form.Command.RereadSessionParameters</commandName>
+                <representation>Auto</representation>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <placementArea>UserCmds</placementArea>
+                <representationInContextMenu>Auto</representationInContextMenu>
+              </items>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2578,6 +2711,7 @@
                 </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
+              <source>SessionParametersSearchString</source>
               <extInfo xsi:type="form:SearchStringAdditionExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
               </extInfo>
@@ -2616,6 +2750,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>ViewStatusAddition</type>
+              <source>SessionParametersViewStatus</source>
               <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
                 <horizontalLocation>Left</horizontalLocation>
@@ -2655,6 +2790,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>SearchControlAddition</type>
+              <source>SessionParametersSearchControl</source>
               <extInfo xsi:type="form:SearchControlAdditionExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
               </extInfo>
@@ -3486,6 +3622,27 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>UsePrivelegedMode</name>
+    <title>
+      <key>en</key>
+      <value>Use priveleged mode</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Привилегированный режим</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ConvertToQuery</name>
     <title>
@@ -3678,6 +3835,66 @@
       </handler>
     </action>
     <representation>TextPicture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ImportSessionParameters</name>
+    <title>
+      <key>en</key>
+      <value>Import session parameters</value>
+    </title>
+    <id>7</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.OpenFile</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ImportSessionParameters</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ExportSessionParameters</name>
+    <title>
+      <key>en</key>
+      <value>Export session parameters</value>
+    </title>
+    <id>8</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.SaveFile</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ExportSessionParameters</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>RereadSessionParameters</name>
+    <title>
+      <key>en</key>
+      <value>Reread session parameters</value>
+    </title>
+    <id>9</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Reread</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>UpdateSessionParameters</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <parameters>

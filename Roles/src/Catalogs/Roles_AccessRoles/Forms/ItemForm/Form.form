@@ -195,7 +195,6 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
-      <toolTipRepresentation>Auto</toolTipRepresentation>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <visible>true</visible>
@@ -246,7 +245,7 @@
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
-          <name>ExtendedTooltip</name>
+          <name>TabDocMartixExtendedTooltip</name>
           <id>457</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -261,7 +260,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>ContextMenu</name>
+          <name>TabDocMartixContextMenu</name>
           <id>456</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -700,7 +699,7 @@
                 <segments>RolesEdit.Picture</segments>
               </dataPath>
               <extendedTooltip>
-                <name>ExtendedTooltip</name>
+                <name>RolesEditPictureExtendedTooltip</name>
                 <id>288</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -715,7 +714,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ContextMenu</name>
+                <name>RolesEditPictureContextMenu</name>
                 <id>287</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -748,7 +747,7 @@
                 <segments>RolesEdit.ObjectFullName</segments>
               </dataPath>
               <extendedTooltip>
-                <name>ExtendedTooltip</name>
+                <name>RolesEditObjectFullNameExtendedTooltip</name>
                 <id>285</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -763,7 +762,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ContextMenu</name>
+                <name>RolesEditObjectFullNameContextMenu</name>
                 <id>284</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1009,7 +1008,7 @@
                 <segments>RolesEdit.ObjectType</segments>
               </dataPath>
               <extendedTooltip>
-                <name>ExtendedTooltip</name>
+                <name>RolesEditObjectTypeExtendedTooltip</name>
                 <id>277</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1024,7 +1023,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ContextMenu</name>
+                <name>RolesEditObjectTypeContextMenu</name>
                 <id>276</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1059,7 +1058,7 @@
                 <segments>RolesEdit.ObjectName</segments>
               </dataPath>
               <extendedTooltip>
-                <name>ExtendedTooltip</name>
+                <name>RolesEditObjectNameExtendedTooltip</name>
                 <id>282</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1074,7 +1073,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ContextMenu</name>
+                <name>RolesEditObjectNameContextMenu</name>
                 <id>281</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -1145,7 +1144,7 @@
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>RolesEditGroup1ExtendedTooltip6</name>
+              <name>RolesEditGroup1ExtendedTooltip</name>
               <id>279</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1438,7 +1437,7 @@
               <value>RLS</value>
             </title>
             <extendedTooltip>
-              <name>RolesEditGroup1ExtendedTooltip3</name>
+              <name>RolesEditGroupRLSExtendedTooltip</name>
               <id>268</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1787,7 +1786,7 @@
               <value>Основной</value>
             </title>
             <extendedTooltip>
-              <name>RolesEditGroup1ExtendedTooltip5</name>
+              <name>RolesEditGroupBasicExtendedTooltip</name>
               <id>272</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -2144,7 +2143,7 @@
               <value>Интерактивно</value>
             </title>
             <extendedTooltip>
-              <name>RolesEditGroup1ExtendedTooltip4</name>
+              <name>RolesEditGroupInteractiveExtendedTooltip</name>
               <id>270</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -3039,7 +3038,7 @@
               <value>SP</value>
             </title>
             <extendedTooltip>
-              <name>RolesEditGroup1ExtendedTooltip2</name>
+              <name>RolesEditGroupSessionParametersExtendedTooltip</name>
               <id>266</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4658,7 +4657,7 @@
               <value>Администрирование	</value>
             </title>
             <extendedTooltip>
-              <name>RolesEditGroup1ExtendedTooltip</name>
+              <name>RolesEditGroupAdminExtendedTooltip</name>
               <id>262</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -5271,7 +5270,7 @@
               <value>История</value>
             </title>
             <extendedTooltip>
-              <name>RolesEditGroup1ExtendedTooltip1</name>
+              <name>RolesEditGroupHistoryExtendedTooltip</name>
               <id>264</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -5318,7 +5317,7 @@
                 <value>Изменение стандартной аутентификации</value>
               </toolTip>
               <extendedTooltip>
-                <name>RolesEditStandardAuthenticationChangeExtendedTooltip</name>
+                <name>StandardAuthenticationChangeExtendedTooltip</name>
                 <id>497</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -5333,7 +5332,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>RolesEditStandardAuthenticationChangeContextMenu</name>
+                <name>StandardAuthenticationChangeContextMenu</name>
                 <id>496</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -5382,7 +5381,7 @@
                 <value>Изменение стандартной аутентификации текущего пользователя</value>
               </toolTip>
               <extendedTooltip>
-                <name>RolesEditSessionStandardAuthenticationChangeExtendedTooltip</name>
+                <name>SessionStandardAuthenticationChangeExtendedTooltip</name>
                 <id>500</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -5397,7 +5396,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>RolesEditSessionStandardAuthenticationChangeContextMenu</name>
+                <name>SessionStandardAuthenticationChangeContextMenu</name>
                 <id>499</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -5446,7 +5445,7 @@
                 <value>Изменение аутентификации операционной системы сеанса</value>
               </toolTip>
               <extendedTooltip>
-                <name>RolesEditSessionOSAuthenticationChangeExtendedTooltip</name>
+                <name>SessionOSAuthenticationChangeExtendedTooltip</name>
                 <id>503</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -5461,7 +5460,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>RolesEditSessionOSAuthenticationChangeContextMenu</name>
+                <name>SessionOSAuthenticationChangeContextMenu</name>
                 <id>502</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -5894,7 +5893,7 @@
             </extInfo>
           </items>
           <autoCommandBar>
-            <name>CommandBar</name>
+            <name>RolesEditCommandBar</name>
             <id>86</id>
             <items xsi:type="form:Button">
               <name>RestrictionByConditionMatrixAddRestriction</name>
@@ -5924,7 +5923,6 @@
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
-              <toolTipRepresentation>Auto</toolTipRepresentation>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
             <visible>true</visible>
@@ -5984,6 +5982,7 @@
               </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
+            <source>Addition</source>
             <extInfo xsi:type="form:SearchStringAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -6022,6 +6021,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
+            <source>Addition</source>
             <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
               <horizontalLocation>Left</horizontalLocation>
@@ -6061,12 +6061,13 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
+            <source>Addition</source>
             <extInfo xsi:type="form:SearchControlAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
           </searchControlAddition>
           <extendedTooltip>
-            <name>ExtendedTooltip</name>
+            <name>RolesEditExtendedTooltip</name>
             <id>88</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -6081,7 +6082,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ContextMenu</name>
+            <name>RolesEditContextMenu</name>
             <id>87</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -6158,7 +6159,7 @@
               <segments>Object.RestrictionByCondition.Fields</segments>
             </dataPath>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>RestrictionByConditionFieldsMatrixExtendedTooltip</name>
               <id>487</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -6173,7 +6174,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>RestrictionByConditionFieldsMatrixContextMenu</name>
               <id>486</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -6207,7 +6208,7 @@
               <segments>Object.RestrictionByCondition.Condition</segments>
             </dataPath>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>RestrictionByConditionConditionMatrixExtendedTooltip</name>
               <id>490</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -6222,7 +6223,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>RestrictionByConditionConditionMatrixContextMenu</name>
               <id>489</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -6307,7 +6308,7 @@
             </extInfo>
           </items>
           <autoCommandBar>
-            <name>TableCommandBar1</name>
+            <name>RestrictionByConditionMatrixCommandBar</name>
             <id>467</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -6317,6 +6318,10 @@
             <horizontalAlign>Left</horizontalAlign>
             <autoFill>true</autoFill>
           </autoCommandBar>
+          <handlers>
+            <event>Selection</event>
+            <name>RestrictionByConditionMatrixSelection</name>
+          </handlers>
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -6350,6 +6355,7 @@
               </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
+            <source>TableSearchString</source>
             <extInfo xsi:type="form:SearchStringAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -6388,6 +6394,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
+            <source>TableViewStatus</source>
             <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
               <horizontalLocation>Left</horizontalLocation>
@@ -6427,12 +6434,13 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
+            <source>TableSearchControl</source>
             <extInfo xsi:type="form:SearchControlAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
           </searchControlAddition>
           <extendedTooltip>
-            <name>TableExtendedTooltip</name>
+            <name>RestrictionByConditionMatrixExtendedTooltip</name>
             <id>469</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -6447,7 +6455,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>TableContextMenu</name>
+            <name>RestrictionByConditionMatrixContextMenu</name>
             <id>468</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -6908,7 +6916,7 @@
               <segments>Object.Rights.Disable</segments>
             </dataPath>
             <extendedTooltip>
-              <name>ExtendedTooltip</name>
+              <name>RightsDisableExtendedTooltip</name>
               <id>430</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -6923,7 +6931,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>ContextMenu</name>
+              <name>RightsDisableContextMenu</name>
               <id>429</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -6991,6 +6999,7 @@
               </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
+            <source>RightsSearchString</source>
             <extInfo xsi:type="form:SearchStringAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -7029,6 +7038,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
+            <source>RightsViewStatus</source>
             <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
               <horizontalLocation>Left</horizontalLocation>
@@ -7068,6 +7078,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
+            <source>RightsSearchControl</source>
             <extInfo xsi:type="form:SearchControlAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -7376,6 +7387,7 @@
                 </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
+              <source>RestrictionByConditionSearchString</source>
               <extInfo xsi:type="form:SearchStringAdditionExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
               </extInfo>
@@ -7414,6 +7426,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>ViewStatusAddition</type>
+              <source>RestrictionByConditionViewStatus</source>
               <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
                 <horizontalLocation>Left</horizontalLocation>
@@ -7453,6 +7466,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>SearchControlAddition</type>
+              <source>RestrictionByConditionSearchControl</source>
               <extInfo xsi:type="form:SearchControlAdditionExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
               </extInfo>
@@ -7511,7 +7525,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>Group1ExtendedTooltip1</name>
+            <name>Group1ExtendedTooltip</name>
             <id>66</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -7540,7 +7554,7 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>Group1ExtendedTooltip</name>
+          <name>GroupDataExtendedTooltip</name>
           <id>64</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -7810,6 +7824,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
+          <source>TemplatesSearchString</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -7848,6 +7863,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
+          <source>TemplatesViewStatus</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
@@ -7887,6 +7903,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
+          <source>TemplatesSearchControl</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -8187,6 +8204,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
+          <source>LangInfoSearchString</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -8225,6 +8243,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
+          <source>LangInfoViewStatus</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
@@ -8264,6 +8283,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
+          <source>LangInfoSearchControl</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
