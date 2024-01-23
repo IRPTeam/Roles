@@ -1,0 +1,3 @@
+*.bsl linguist-detectable=true
+*.feature linguist-detectable=false
+*.html linguist-detectable=false
