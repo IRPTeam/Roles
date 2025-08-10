@@ -25,11 +25,6 @@
       <extendedTooltip>
         <name>DescriptionExtendedTooltip</name>
         <id>3</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -40,11 +35,6 @@
       <contextMenu>
         <name>DescriptionContextMenu</name>
         <id>2</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -75,11 +65,6 @@
       <extendedTooltip>
         <name>ConfigRolesExtendedTooltip</name>
         <id>360</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -90,11 +75,6 @@
       <contextMenu>
         <name>ConfigRolesContextMenu</name>
         <id>359</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>CheckBoxField</type>
@@ -127,11 +107,6 @@
       <extendedTooltip>
         <name>ShowAllObjectsExtendedTooltip</name>
         <id>506</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -142,11 +117,6 @@
       <contextMenu>
         <name>ShowAllObjectsContextMenu</name>
         <id>505</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>CheckBoxField</type>
@@ -177,11 +147,6 @@
       <extendedTooltip>
         <name>UpdateRightsExtendedTooltip</name>
         <id>459</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -195,7 +160,6 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
-      <toolTipRepresentation>Auto</toolTipRepresentation>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <visible>true</visible>
@@ -206,11 +170,6 @@
     <extendedTooltip>
       <name>Group3ExtendedTooltip</name>
       <id>357</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -248,11 +207,6 @@
         <extendedTooltip>
           <name>ExtendedTooltip</name>
           <id>457</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -263,11 +217,6 @@
         <contextMenu>
           <name>ContextMenu</name>
           <id>456</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <autoFill>true</autoFill>
         </contextMenu>
         <type>SpreadsheetDocumentField</type>
@@ -320,11 +269,6 @@
       <extendedTooltip>
         <name>GroupReportExtendedTooltip</name>
         <id>454</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -362,11 +306,6 @@
           <extendedTooltip>
             <name>SearchTextExtendedTooltip</name>
             <id>422</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -377,11 +316,6 @@
           <contextMenu>
             <name>SearchTextContextMenu</name>
             <id>421</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -416,11 +350,6 @@
             <extendedTooltip>
               <name>SetRightsForNewNativeObjectsExtendedTooltip</name>
               <id>328</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -431,11 +360,6 @@
             <contextMenu>
               <name>SetRightsForNewNativeObjectsContextMenu</name>
               <id>327</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>CheckBoxField</type>
@@ -460,11 +384,6 @@
             <extendedTooltip>
               <name>SetRightsForAttributesAndTabularSectionsByDefaultExtendedTooltip</name>
               <id>331</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -475,11 +394,6 @@
             <contextMenu>
               <name>SetRightsForAttributesAndTabularSectionsByDefaultContextMenu</name>
               <id>330</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>CheckBoxField</type>
@@ -504,11 +418,6 @@
             <extendedTooltip>
               <name>SubordinateObjectsHaveIndependentRightsExtendedTooltip</name>
               <id>334</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -519,11 +428,6 @@
             <contextMenu>
               <name>SubordinateObjectsHaveIndependentRightsContextMenu</name>
               <id>333</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>CheckBoxField</type>
@@ -548,11 +452,6 @@
             <extendedTooltip>
               <name>SetSameRightToAdditionalAttributesExtendedTooltip</name>
               <id>527</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -563,11 +462,6 @@
             <contextMenu>
               <name>SetSameRightToAdditionalAttributesContextMenu</name>
               <id>526</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>CheckBoxField</type>
@@ -601,11 +495,6 @@
           <extendedTooltip>
             <name>GroupMainRightsExtendedTooltip</name>
             <id>325</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -660,11 +549,6 @@
               <extendedTooltip>
                 <name>RolesEditEditedExtendedTooltip</name>
                 <id>425</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -675,11 +559,6 @@
               <contextMenu>
                 <name>RolesEditEditedContextMenu</name>
                 <id>424</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>CheckBoxField</type>
@@ -702,11 +581,6 @@
               <extendedTooltip>
                 <name>ExtendedTooltip</name>
                 <id>288</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -717,11 +591,6 @@
               <contextMenu>
                 <name>ContextMenu</name>
                 <id>287</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>PictureField</type>
@@ -733,6 +602,10 @@
                 <autoMaxHeight>true</autoMaxHeight>
                 <horizontalStretch>true</horizontalStretch>
                 <verticalStretch>true</verticalStretch>
+                <border xsi:type="core:BorderDef">
+                  <style>Single</style>
+                  <width>1</width>
+                </border>
                 <fileDragMode>AsFileRef</fileDragMode>
               </extInfo>
             </items>
@@ -750,11 +623,6 @@
               <extendedTooltip>
                 <name>ExtendedTooltip</name>
                 <id>285</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -765,11 +633,6 @@
               <contextMenu>
                 <name>ContextMenu</name>
                 <id>284</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
@@ -798,11 +661,6 @@
             <extendedTooltip>
               <name>RolesEditGroup2ExtendedTooltip</name>
               <id>290</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -833,11 +691,6 @@
               <extendedTooltip>
                 <name>RolesEditObjectSubtypeExtendedTooltip</name>
                 <id>323</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -848,11 +701,6 @@
               <contextMenu>
                 <name>RolesEditObjectSubtypeContextMenu</name>
                 <id>322</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
@@ -883,11 +731,6 @@
               <extendedTooltip>
                 <name>RolesEditObjectPathExtendedTooltip</name>
                 <id>416</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -898,11 +741,6 @@
               <contextMenu>
                 <name>RolesEditObjectPathContextMenu</name>
                 <id>415</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
@@ -933,11 +771,6 @@
               <extendedTooltip>
                 <name>RolesEditDataStorageLinkExtendedTooltip</name>
                 <id>465</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -948,11 +781,6 @@
               <contextMenu>
                 <name>RolesEditDataStorageLinkContextMenu</name>
                 <id>464</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
@@ -976,11 +804,6 @@
             <extendedTooltip>
               <name>RolesEditGroup3ExtendedTooltip</name>
               <id>413</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1011,11 +834,6 @@
               <extendedTooltip>
                 <name>ExtendedTooltip</name>
                 <id>277</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1026,11 +844,6 @@
               <contextMenu>
                 <name>ContextMenu</name>
                 <id>276</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
@@ -1061,11 +874,6 @@
               <extendedTooltip>
                 <name>ExtendedTooltip</name>
                 <id>282</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1076,11 +884,6 @@
               <contextMenu>
                 <name>ContextMenu</name>
                 <id>281</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
@@ -1111,11 +914,6 @@
               <extendedTooltip>
                 <name>RolesEditEmptyRowExtendedTooltip</name>
                 <id>462</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1126,11 +924,6 @@
               <contextMenu>
                 <name>RolesEditEmptyRowContextMenu</name>
                 <id>461</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>CheckBoxField</type>
@@ -1147,11 +940,6 @@
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip6</name>
               <id>279</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1194,11 +982,6 @@
               <extendedTooltip>
                 <name>ReadExtendedTooltip</name>
                 <id>109</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1209,11 +992,6 @@
               <contextMenu>
                 <name>ReadContextMenu</name>
                 <id>108</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1258,11 +1036,6 @@
               <extendedTooltip>
                 <name>InsertExtendedTooltip</name>
                 <id>106</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1273,11 +1046,6 @@
               <contextMenu>
                 <name>InsertContextMenu</name>
                 <id>105</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1322,11 +1090,6 @@
               <extendedTooltip>
                 <name>UpdateExtendedTooltip</name>
                 <id>112</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1337,11 +1100,6 @@
               <contextMenu>
                 <name>UpdateContextMenu</name>
                 <id>111</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1386,11 +1144,6 @@
               <extendedTooltip>
                 <name>DeleteExtendedTooltip</name>
                 <id>115</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1401,11 +1154,6 @@
               <contextMenu>
                 <name>DeleteContextMenu</name>
                 <id>114</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1440,11 +1188,6 @@
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip3</name>
               <id>268</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1487,11 +1230,6 @@
               <extendedTooltip>
                 <name>ViewExtendedTooltip</name>
                 <id>118</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1502,11 +1240,6 @@
               <contextMenu>
                 <name>ViewContextMenu</name>
                 <id>117</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1543,11 +1276,6 @@
               <extendedTooltip>
                 <name>EditExtendedTooltip</name>
                 <id>121</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1558,11 +1286,6 @@
               <contextMenu>
                 <name>EditContextMenu</name>
                 <id>120</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1607,11 +1330,6 @@
               <extendedTooltip>
                 <name>InputByStringExtendedTooltip</name>
                 <id>124</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1622,11 +1340,6 @@
               <contextMenu>
                 <name>InputByStringContextMenu</name>
                 <id>123</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1671,11 +1384,6 @@
               <extendedTooltip>
                 <name>UseExtendedTooltip</name>
                 <id>133</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1686,11 +1394,6 @@
               <contextMenu>
                 <name>UseContextMenu</name>
                 <id>132</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1735,11 +1438,6 @@
               <extendedTooltip>
                 <name>TotalsControlExtendedTooltip</name>
                 <id>136</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1750,11 +1448,6 @@
               <contextMenu>
                 <name>TotalsControlContextMenu</name>
                 <id>135</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1789,11 +1482,6 @@
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip5</name>
               <id>272</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1836,11 +1524,6 @@
               <extendedTooltip>
                 <name>InteractiveDeleteExtendedTooltip</name>
                 <id>139</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1851,11 +1534,6 @@
               <contextMenu>
                 <name>InteractiveDeleteContextMenu</name>
                 <id>138</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1900,11 +1578,6 @@
               <extendedTooltip>
                 <name>InteractiveInsertExtendedTooltip</name>
                 <id>142</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1915,11 +1588,6 @@
               <contextMenu>
                 <name>InteractiveInsertContextMenu</name>
                 <id>141</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -1964,11 +1632,6 @@
               <extendedTooltip>
                 <name>InteractiveSetDeletionMarkExtendedTooltip</name>
                 <id>145</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -1979,11 +1642,6 @@
               <contextMenu>
                 <name>InteractiveSetDeletionMarkContextMenu</name>
                 <id>144</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2028,11 +1686,6 @@
               <extendedTooltip>
                 <name>InteractiveClearDeletionMarkExtendedTooltip</name>
                 <id>148</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2043,11 +1696,6 @@
               <contextMenu>
                 <name>InteractiveClearDeletionMarkContextMenu</name>
                 <id>147</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2092,11 +1740,6 @@
               <extendedTooltip>
                 <name>InteractiveDeleteMarkedExtendedTooltip</name>
                 <id>151</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2107,11 +1750,6 @@
               <contextMenu>
                 <name>InteractiveDeleteMarkedContextMenu</name>
                 <id>150</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2146,11 +1784,6 @@
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip4</name>
               <id>270</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2193,11 +1826,6 @@
               <extendedTooltip>
                 <name>PostingExtendedTooltip</name>
                 <id>127</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2208,11 +1836,6 @@
               <contextMenu>
                 <name>PostingContextMenu</name>
                 <id>126</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2257,11 +1880,6 @@
               <extendedTooltip>
                 <name>UndoPostingExtendedTooltip</name>
                 <id>130</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2272,11 +1890,6 @@
               <contextMenu>
                 <name>UndoPostingContextMenu</name>
                 <id>129</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2321,11 +1934,6 @@
               <extendedTooltip>
                 <name>InteractivePostingExtendedTooltip</name>
                 <id>154</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2336,11 +1944,6 @@
               <contextMenu>
                 <name>InteractivePostingContextMenu</name>
                 <id>153</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2385,11 +1988,6 @@
               <extendedTooltip>
                 <name>InteractiveUndoPostingExtendedTooltip</name>
                 <id>160</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2400,11 +1998,6 @@
               <contextMenu>
                 <name>InteractiveUndoPostingContextMenu</name>
                 <id>159</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2449,11 +2042,6 @@
               <extendedTooltip>
                 <name>InteractivePostingRegularExtendedTooltip</name>
                 <id>157</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2464,11 +2052,6 @@
               <contextMenu>
                 <name>InteractivePostingRegularContextMenu</name>
                 <id>156</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2513,11 +2096,6 @@
               <extendedTooltip>
                 <name>InteractiveChangeOfPostedExtendedTooltip</name>
                 <id>163</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2528,11 +2106,6 @@
               <contextMenu>
                 <name>InteractiveChangeOfPostedContextMenu</name>
                 <id>162</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2575,11 +2148,6 @@
             <extendedTooltip>
               <name>RolesEditGroupDocumentExtendedTooltip</name>
               <id>320</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2622,11 +2190,6 @@
               <extendedTooltip>
                 <name>InteractiveDeletePredefinedDataExtendedTooltip</name>
                 <id>166</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2637,11 +2200,6 @@
               <contextMenu>
                 <name>InteractiveDeletePredefinedDataContextMenu</name>
                 <id>165</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2686,11 +2244,6 @@
               <extendedTooltip>
                 <name>InteractiveSetDeletionMarkPredefinedDataExtendedTooltip</name>
                 <id>312</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2701,11 +2254,6 @@
               <contextMenu>
                 <name>InteractiveSetDeletionMarkPredefinedDataContextMenu</name>
                 <id>311</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2750,11 +2298,6 @@
               <extendedTooltip>
                 <name>InteractiveClearDeletionMarkPredefinedDataExtendedTooltip</name>
                 <id>315</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2765,11 +2308,6 @@
               <contextMenu>
                 <name>InteractiveClearDeletionMarkPredefinedDataContextMenu</name>
                 <id>314</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2814,11 +2352,6 @@
               <extendedTooltip>
                 <name>InteractiveDeleteMarkedPredefinedDataExtendedTooltip</name>
                 <id>318</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2829,11 +2362,6 @@
               <contextMenu>
                 <name>InteractiveDeleteMarkedPredefinedDataContextMenu</name>
                 <id>317</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2876,11 +2404,6 @@
             <extendedTooltip>
               <name>RolesEditGroupPredefinedExtendedTooltip</name>
               <id>309</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2923,11 +2446,6 @@
               <extendedTooltip>
                 <name>GetExtendedTooltip</name>
                 <id>169</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -2938,11 +2456,6 @@
               <contextMenu>
                 <name>GetContextMenu</name>
                 <id>168</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -2987,11 +2500,6 @@
               <extendedTooltip>
                 <name>SetExtendedTooltip</name>
                 <id>172</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3002,11 +2510,6 @@
               <contextMenu>
                 <name>SetContextMenu</name>
                 <id>171</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3041,11 +2544,6 @@
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip2</name>
               <id>266</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3088,11 +2586,6 @@
               <extendedTooltip>
                 <name>AdministrationExtendedTooltip</name>
                 <id>175</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3103,11 +2596,6 @@
               <contextMenu>
                 <name>AdministrationContextMenu</name>
                 <id>174</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3152,11 +2640,6 @@
               <extendedTooltip>
                 <name>DataAdministrationExtendedTooltip</name>
                 <id>178</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3167,11 +2650,6 @@
               <contextMenu>
                 <name>DataAdministrationContextMenu</name>
                 <id>177</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3216,11 +2694,6 @@
               <extendedTooltip>
                 <name>UpdateDataBaseConfigurationExtendedTooltip</name>
                 <id>181</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3231,11 +2704,6 @@
               <contextMenu>
                 <name>UpdateDataBaseConfigurationContextMenu</name>
                 <id>180</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3280,11 +2748,6 @@
               <extendedTooltip>
                 <name>ExclusiveModeExtendedTooltip</name>
                 <id>184</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3295,11 +2758,6 @@
               <contextMenu>
                 <name>ExclusiveModeContextMenu</name>
                 <id>183</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3344,11 +2802,6 @@
               <extendedTooltip>
                 <name>ActiveUsersExtendedTooltip</name>
                 <id>187</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3359,11 +2812,6 @@
               <contextMenu>
                 <name>ActiveUsersContextMenu</name>
                 <id>186</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3408,11 +2856,6 @@
               <extendedTooltip>
                 <name>EventLogExtendedTooltip</name>
                 <id>190</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3423,11 +2866,6 @@
               <contextMenu>
                 <name>EventLogContextMenu</name>
                 <id>189</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3472,11 +2910,6 @@
               <extendedTooltip>
                 <name>ThinClientExtendedTooltip</name>
                 <id>193</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3487,11 +2920,6 @@
               <contextMenu>
                 <name>ThinClientContextMenu</name>
                 <id>192</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3536,11 +2964,6 @@
               <extendedTooltip>
                 <name>WebClientExtendedTooltip</name>
                 <id>196</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3551,11 +2974,6 @@
               <contextMenu>
                 <name>WebClientContextMenu</name>
                 <id>195</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3600,11 +3018,6 @@
               <extendedTooltip>
                 <name>MobileClientExtendedTooltip</name>
                 <id>199</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3615,11 +3028,6 @@
               <contextMenu>
                 <name>MobileClientContextMenu</name>
                 <id>198</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3664,11 +3072,6 @@
               <extendedTooltip>
                 <name>ThickClientExtendedTooltip</name>
                 <id>202</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3679,11 +3082,6 @@
               <contextMenu>
                 <name>ThickClientContextMenu</name>
                 <id>201</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3728,11 +3126,6 @@
               <extendedTooltip>
                 <name>ExternalConnectionExtendedTooltip</name>
                 <id>205</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3743,11 +3136,6 @@
               <contextMenu>
                 <name>ExternalConnectionContextMenu</name>
                 <id>204</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3792,11 +3180,6 @@
               <extendedTooltip>
                 <name>AutomationExtendedTooltip</name>
                 <id>208</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3807,11 +3190,6 @@
               <contextMenu>
                 <name>AutomationContextMenu</name>
                 <id>207</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3856,11 +3234,6 @@
               <extendedTooltip>
                 <name>TechnicalSpecialistModeExtendedTooltip</name>
                 <id>211</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3871,11 +3244,6 @@
               <contextMenu>
                 <name>TechnicalSpecialistModeContextMenu</name>
                 <id>210</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3920,11 +3288,6 @@
               <extendedTooltip>
                 <name>CollaborationSystemInfoBaseRegistrationExtendedTooltip</name>
                 <id>214</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3935,11 +3298,6 @@
               <contextMenu>
                 <name>CollaborationSystemInfoBaseRegistrationContextMenu</name>
                 <id>213</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -3984,11 +3342,6 @@
               <extendedTooltip>
                 <name>SaveUserDataExtendedTooltip</name>
                 <id>217</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -3999,11 +3352,6 @@
               <contextMenu>
                 <name>SaveUserDataContextMenu</name>
                 <id>216</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4048,11 +3396,6 @@
               <extendedTooltip>
                 <name>ConfigurationExtensionsAdministrationExtendedTooltip</name>
                 <id>220</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4063,11 +3406,6 @@
               <contextMenu>
                 <name>ConfigurationExtensionsAdministrationContextMenu</name>
                 <id>219</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4112,11 +3450,6 @@
               <extendedTooltip>
                 <name>InteractiveOpenExtDataProcessorsExtendedTooltip</name>
                 <id>223</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4127,11 +3460,6 @@
               <contextMenu>
                 <name>InteractiveOpenExtDataProcessorsContextMenu</name>
                 <id>222</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4176,11 +3504,6 @@
               <extendedTooltip>
                 <name>InteractiveOpenExtReportsExtendedTooltip</name>
                 <id>226</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4191,11 +3514,6 @@
               <contextMenu>
                 <name>InteractiveOpenExtReportsContextMenu</name>
                 <id>225</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4240,11 +3558,6 @@
               <extendedTooltip>
                 <name>OutputExtendedTooltip</name>
                 <id>229</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4255,11 +3568,6 @@
               <contextMenu>
                 <name>OutputContextMenu</name>
                 <id>228</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4304,11 +3612,6 @@
               <extendedTooltip>
                 <name>MainWindowModeNormalExtendedTooltip</name>
                 <id>337</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4319,11 +3622,6 @@
               <contextMenu>
                 <name>MainWindowModeNormalContextMenu</name>
                 <id>336</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4365,11 +3663,6 @@
               <extendedTooltip>
                 <name>MainWindowModeWorkplaceExtendedTooltip</name>
                 <id>340</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4380,11 +3673,6 @@
               <contextMenu>
                 <name>MainWindowModeWorkplaceContextMenu</name>
                 <id>339</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4426,11 +3714,6 @@
               <extendedTooltip>
                 <name>MainWindowModeEmbeddedWorkplaceExtendedTooltip</name>
                 <id>343</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4441,11 +3724,6 @@
               <contextMenu>
                 <name>MainWindowModeEmbeddedWorkplaceContextMenu</name>
                 <id>342</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4487,11 +3765,6 @@
               <extendedTooltip>
                 <name>MainWindowModeFullscreenWorkplaceExtendedTooltip</name>
                 <id>346</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4502,11 +3775,6 @@
               <contextMenu>
                 <name>MainWindowModeFullscreenWorkplaceContextMenu</name>
                 <id>345</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4548,11 +3816,6 @@
               <extendedTooltip>
                 <name>MainWindowModeKioskExtendedTooltip</name>
                 <id>349</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4563,11 +3826,6 @@
               <contextMenu>
                 <name>MainWindowModeKioskContextMenu</name>
                 <id>348</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4609,11 +3867,6 @@
               <extendedTooltip>
                 <name>AnalyticsSystemClientExtendedTooltip</name>
                 <id>352</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4624,11 +3877,6 @@
               <contextMenu>
                 <name>AnalyticsSystemClientContextMenu</name>
                 <id>351</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4660,11 +3908,6 @@
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip</name>
               <id>262</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4707,11 +3950,6 @@
               <extendedTooltip>
                 <name>ReadDataHistoryExtendedTooltip</name>
                 <id>232</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4722,11 +3960,6 @@
               <contextMenu>
                 <name>ReadDataHistoryContextMenu</name>
                 <id>231</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4771,11 +4004,6 @@
               <extendedTooltip>
                 <name>ViewDataHistoryExtendedTooltip</name>
                 <id>235</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4786,11 +4014,6 @@
               <contextMenu>
                 <name>ViewDataHistoryContextMenu</name>
                 <id>234</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4835,11 +4058,6 @@
               <extendedTooltip>
                 <name>ReadDataHistoryOfMissingDataExtendedTooltip</name>
                 <id>238</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4850,11 +4068,6 @@
               <contextMenu>
                 <name>ReadDataHistoryOfMissingDataContextMenu</name>
                 <id>237</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4899,11 +4112,6 @@
               <extendedTooltip>
                 <name>UpdateDataHistoryExtendedTooltip</name>
                 <id>241</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4914,11 +4122,6 @@
               <contextMenu>
                 <name>UpdateDataHistoryContextMenu</name>
                 <id>240</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -4963,11 +4166,6 @@
               <extendedTooltip>
                 <name>UpdateDataHistoryOfMissingDataExtendedTooltip</name>
                 <id>244</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -4978,11 +4176,6 @@
               <contextMenu>
                 <name>UpdateDataHistoryOfMissingDataContextMenu</name>
                 <id>243</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5027,11 +4220,6 @@
               <extendedTooltip>
                 <name>UpdateDataHistorySettingsExtendedTooltip</name>
                 <id>247</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5042,11 +4230,6 @@
               <contextMenu>
                 <name>UpdateDataHistorySettingsContextMenu</name>
                 <id>246</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5091,11 +4274,6 @@
               <extendedTooltip>
                 <name>UpdateDataHistoryVersionCommentExtendedTooltip</name>
                 <id>250</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5106,11 +4284,6 @@
               <contextMenu>
                 <name>UpdateDataHistoryVersionCommentContextMenu</name>
                 <id>249</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5155,11 +4328,6 @@
               <extendedTooltip>
                 <name>EditDataHistoryVersionCommentExtendedTooltip</name>
                 <id>253</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5170,11 +4338,6 @@
               <contextMenu>
                 <name>EditDataHistoryVersionCommentContextMenu</name>
                 <id>252</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5219,11 +4382,6 @@
               <extendedTooltip>
                 <name>SwitchToDataHistoryVersionExtendedTooltip</name>
                 <id>256</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5234,11 +4392,6 @@
               <contextMenu>
                 <name>SwitchToDataHistoryVersionContextMenu</name>
                 <id>255</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5273,11 +4426,6 @@
             <extendedTooltip>
               <name>RolesEditGroup1ExtendedTooltip1</name>
               <id>264</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -5320,11 +4468,6 @@
               <extendedTooltip>
                 <name>RolesEditStandardAuthenticationChangeExtendedTooltip</name>
                 <id>497</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5335,11 +4478,6 @@
               <contextMenu>
                 <name>RolesEditStandardAuthenticationChangeContextMenu</name>
                 <id>496</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5384,11 +4522,6 @@
               <extendedTooltip>
                 <name>RolesEditSessionStandardAuthenticationChangeExtendedTooltip</name>
                 <id>500</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5399,11 +4532,6 @@
               <contextMenu>
                 <name>RolesEditSessionStandardAuthenticationChangeContextMenu</name>
                 <id>499</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5448,11 +4576,6 @@
               <extendedTooltip>
                 <name>RolesEditSessionOSAuthenticationChangeExtendedTooltip</name>
                 <id>503</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5463,11 +4586,6 @@
               <contextMenu>
                 <name>RolesEditSessionOSAuthenticationChangeContextMenu</name>
                 <id>502</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5510,11 +4628,6 @@
             <extendedTooltip>
               <name>RolesEditGroupExternalDataExtendedTooltip</name>
               <id>494</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -5557,11 +4670,6 @@
               <extendedTooltip>
                 <name>StartExtendedTooltip</name>
                 <id>295</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5572,11 +4680,6 @@
               <contextMenu>
                 <name>StartContextMenu</name>
                 <id>294</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5621,11 +4724,6 @@
               <extendedTooltip>
                 <name>InteractiveStartExtendedTooltip</name>
                 <id>298</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5636,11 +4734,6 @@
               <contextMenu>
                 <name>InteractiveStartContextMenu</name>
                 <id>297</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5685,11 +4778,6 @@
               <extendedTooltip>
                 <name>InteractiveActivateExtendedTooltip</name>
                 <id>307</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5700,11 +4788,6 @@
               <contextMenu>
                 <name>InteractiveActivateContextMenu</name>
                 <id>306</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5749,11 +4832,6 @@
               <extendedTooltip>
                 <name>ExecuteExtendedTooltip</name>
                 <id>301</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5764,11 +4842,6 @@
               <contextMenu>
                 <name>ExecuteContextMenu</name>
                 <id>300</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5813,11 +4886,6 @@
               <extendedTooltip>
                 <name>InteractiveExecuteExtendedTooltip</name>
                 <id>304</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5828,11 +4896,6 @@
               <contextMenu>
                 <name>InteractiveExecuteContextMenu</name>
                 <id>303</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>LabelField</type>
@@ -5875,11 +4938,6 @@
             <extendedTooltip>
               <name>RolesEditGroupTaskExtendedTooltip</name>
               <id>292</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -5907,11 +4965,6 @@
               <extendedTooltip>
                 <name>RestrictionByConditionMatrixAddRestrictionExtendedTooltip</name>
                 <id>492</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -5924,14 +4977,8 @@
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <placementArea>UserCmds</placementArea>
-              <toolTipRepresentation>Auto</toolTipRepresentation>
               <representationInContextMenu>Auto</representationInContextMenu>
             </items>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <horizontalAlign>Left</horizontalAlign>
             <autoFill>true</autoFill>
           </autoCommandBar>
@@ -5952,21 +4999,11 @@
             <name>RolesEditOnActivateCell</name>
           </handlers>
           <searchStringAddition>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>Addition</name>
             <id>89</id>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
               <id>91</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -5977,33 +5014,19 @@
             <contextMenu>
               <name>ContextMenu</name>
               <id>90</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
+            <source>RolesEdit</source>
             <extInfo xsi:type="form:SearchStringAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
           </searchStringAddition>
           <viewStatusAddition>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>Addition</name>
             <id>95</id>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
               <id>97</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6014,35 +5037,21 @@
             <contextMenu>
               <name>ContextMenu</name>
               <id>96</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
+            <source>RolesEdit</source>
             <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
               <horizontalLocation>Left</horizontalLocation>
             </extInfo>
           </viewStatusAddition>
           <searchControlAddition>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>Addition</name>
             <id>92</id>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
               <id>94</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6053,14 +5062,10 @@
             <contextMenu>
               <name>ContextMenu</name>
               <id>93</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
+            <source>RolesEdit</source>
             <extInfo xsi:type="form:SearchControlAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -6068,11 +5073,6 @@
           <extendedTooltip>
             <name>ExtendedTooltip</name>
             <id>88</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -6083,11 +5083,6 @@
           <contextMenu>
             <name>ContextMenu</name>
             <id>87</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <representation>Tree</representation>
@@ -6160,11 +5155,6 @@
             <extendedTooltip>
               <name>ExtendedTooltip</name>
               <id>487</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6175,11 +5165,6 @@
             <contextMenu>
               <name>ContextMenu</name>
               <id>486</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
@@ -6209,11 +5194,6 @@
             <extendedTooltip>
               <name>ExtendedTooltip</name>
               <id>490</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6224,11 +5204,6 @@
             <contextMenu>
               <name>ContextMenu</name>
               <id>489</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
@@ -6266,11 +5241,6 @@
             <extendedTooltip>
               <name>RestrictionByConditionMatrixFilterDataExtendedTooltip</name>
               <id>518</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6281,11 +5251,6 @@
             <contextMenu>
               <name>RestrictionByConditionMatrixFilterDataContextMenu</name>
               <id>517</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
@@ -6309,30 +5274,15 @@
           <autoCommandBar>
             <name>TableCommandBar1</name>
             <id>467</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <horizontalAlign>Left</horizontalAlign>
             <autoFill>true</autoFill>
           </autoCommandBar>
           <searchStringAddition>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>TableSearchString</name>
             <id>470</id>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
               <id>472</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6343,33 +5293,19 @@
             <contextMenu>
               <name>ContextMenu</name>
               <id>471</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
+            <source>RestrictionByConditionMatrix</source>
             <extInfo xsi:type="form:SearchStringAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
           </searchStringAddition>
           <viewStatusAddition>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>TableViewStatus</name>
             <id>476</id>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
               <id>478</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6380,35 +5316,21 @@
             <contextMenu>
               <name>ContextMenu</name>
               <id>477</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
+            <source>RestrictionByConditionMatrix</source>
             <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
               <horizontalLocation>Left</horizontalLocation>
             </extInfo>
           </viewStatusAddition>
           <searchControlAddition>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>TableSearchControl</name>
             <id>473</id>
             <extendedTooltip>
               <name>ExtendedTooltip</name>
               <id>475</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6419,14 +5341,10 @@
             <contextMenu>
               <name>ContextMenu</name>
               <id>474</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
+            <source>RestrictionByConditionMatrix</source>
             <extInfo xsi:type="form:SearchControlAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -6434,11 +5352,6 @@
           <extendedTooltip>
             <name>TableExtendedTooltip</name>
             <id>469</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -6449,11 +5362,6 @@
           <contextMenu>
             <name>TableContextMenu</name>
             <id>468</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <changeRowSet>true</changeRowSet>
@@ -6504,11 +5412,6 @@
         <extendedTooltip>
           <name>GroupVertical1ExtendedTooltip</name>
           <id>427</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -6549,11 +5452,6 @@
       <extendedTooltip>
         <name>GroupRoleMatrixExtendedTooltip</name>
         <id>84</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -6603,11 +5501,6 @@
             <extendedTooltip>
               <name>RightsObjectTypeExtendedTooltip</name>
               <id>29</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6618,11 +5511,6 @@
             <contextMenu>
               <name>RightsObjectTypeContextMenu</name>
               <id>28</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
@@ -6657,11 +5545,6 @@
             <extendedTooltip>
               <name>RightsObjectNameExtendedTooltip</name>
               <id>32</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6672,11 +5555,6 @@
             <contextMenu>
               <name>RightsObjectNameContextMenu</name>
               <id>31</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
@@ -6712,11 +5590,6 @@
             <extendedTooltip>
               <name>RightsObjectSubtypeExtendedTooltip</name>
               <id>509</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6727,11 +5600,6 @@
             <contextMenu>
               <name>RightsObjectSubtypeContextMenu</name>
               <id>508</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
@@ -6762,11 +5630,6 @@
             <extendedTooltip>
               <name>RightsObjectPathExtendedTooltip</name>
               <id>355</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6777,11 +5640,6 @@
             <contextMenu>
               <name>RightsObjectPathContextMenu</name>
               <id>354</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
@@ -6812,11 +5670,6 @@
             <extendedTooltip>
               <name>RightsRightNameExtendedTooltip</name>
               <id>35</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6827,11 +5680,6 @@
             <contextMenu>
               <name>RightsRightNameContextMenu</name>
               <id>34</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
@@ -6867,11 +5715,6 @@
             <extendedTooltip>
               <name>RightsRightValueExtendedTooltip</name>
               <id>419</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6882,11 +5725,6 @@
             <contextMenu>
               <name>RightsRightValueContextMenu</name>
               <id>418</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>CheckBoxField</type>
@@ -6910,11 +5748,6 @@
             <extendedTooltip>
               <name>ExtendedTooltip</name>
               <id>430</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6925,11 +5758,6 @@
             <contextMenu>
               <name>ContextMenu</name>
               <id>429</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>CheckBoxField</type>
@@ -6942,11 +5770,6 @@
           <autoCommandBar>
             <name>RightsCommandBar</name>
             <id>13</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <horizontalAlign>Left</horizontalAlign>
             <autoFill>true</autoFill>
           </autoCommandBar>
@@ -6959,21 +5782,11 @@
             <name>RightsOnChange</name>
           </handlers>
           <searchStringAddition>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>RightsSearchString</name>
             <id>15</id>
             <extendedTooltip>
               <name>RightsSearchStringExtendedTooltip</name>
               <id>17</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -6984,33 +5797,19 @@
             <contextMenu>
               <name>RightsSearchStringContextMenu</name>
               <id>16</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
+            <source>Rights</source>
             <extInfo xsi:type="form:SearchStringAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
           </searchStringAddition>
           <viewStatusAddition>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>RightsViewStatus</name>
             <id>18</id>
             <extendedTooltip>
               <name>RightsViewStatusExtendedTooltip</name>
               <id>20</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -7021,35 +5820,21 @@
             <contextMenu>
               <name>RightsViewStatusContextMenu</name>
               <id>19</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
+            <source>Rights</source>
             <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
               <horizontalLocation>Left</horizontalLocation>
             </extInfo>
           </viewStatusAddition>
           <searchControlAddition>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>RightsSearchControl</name>
             <id>21</id>
             <extendedTooltip>
               <name>RightsSearchControlExtendedTooltip</name>
               <id>23</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -7060,14 +5845,10 @@
             <contextMenu>
               <name>RightsSearchControlContextMenu</name>
               <id>22</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
+            <source>Rights</source>
             <extInfo xsi:type="form:SearchControlAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
             </extInfo>
@@ -7075,11 +5856,6 @@
           <extendedTooltip>
             <name>RightsExtendedTooltip</name>
             <id>14</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -7090,11 +5866,6 @@
           <contextMenu>
             <name>RightsContextMenu</name>
             <id>12</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <changeRowSet>true</changeRowSet>
@@ -7149,11 +5920,6 @@
               <extendedTooltip>
                 <name>RestrictionByConditionModifiedExtendedTooltip</name>
                 <id>521</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -7164,11 +5930,6 @@
               <contextMenu>
                 <name>RestrictionByConditionModifiedContextMenu</name>
                 <id>520</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>CheckBoxField</type>
@@ -7192,11 +5953,6 @@
               <extendedTooltip>
                 <name>RestrictionByConditionFieldsExtendedTooltip</name>
                 <id>59</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -7207,11 +5963,6 @@
               <contextMenu>
                 <name>RestrictionByConditionFieldsContextMenu</name>
                 <id>58</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
@@ -7242,11 +5993,6 @@
               <extendedTooltip>
                 <name>RestrictionByConditionConditionExtendedTooltip</name>
                 <id>62</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -7257,11 +6003,6 @@
               <contextMenu>
                 <name>RestrictionByConditionConditionContextMenu</name>
                 <id>61</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
@@ -7292,11 +6033,6 @@
               <extendedTooltip>
                 <name>RestrictionByConditionFilterDataExtendedTooltip</name>
                 <id>524</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -7307,11 +6043,6 @@
               <contextMenu>
                 <name>RestrictionByConditionFilterDataContextMenu</name>
                 <id>523</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
@@ -7331,11 +6062,6 @@
             <autoCommandBar>
               <name>RestrictionByConditionCommandBar</name>
               <id>43</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <horizontalAlign>Left</horizontalAlign>
               <autoFill>true</autoFill>
             </autoCommandBar>
@@ -7344,21 +6070,11 @@
               <name>RestrictionByConditionOnChange</name>
             </handlers>
             <searchStringAddition>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <name>RestrictionByConditionSearchString</name>
               <id>45</id>
               <extendedTooltip>
                 <name>RestrictionByConditionSearchStringExtendedTooltip</name>
                 <id>47</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -7369,33 +6085,19 @@
               <contextMenu>
                 <name>RestrictionByConditionSearchStringContextMenu</name>
                 <id>46</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
+              <source>RestrictionByCondition</source>
               <extInfo xsi:type="form:SearchStringAdditionExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
               </extInfo>
             </searchStringAddition>
             <viewStatusAddition>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <name>RestrictionByConditionViewStatus</name>
               <id>48</id>
               <extendedTooltip>
                 <name>RestrictionByConditionViewStatusExtendedTooltip</name>
                 <id>50</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -7406,35 +6108,21 @@
               <contextMenu>
                 <name>RestrictionByConditionViewStatusContextMenu</name>
                 <id>49</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>ViewStatusAddition</type>
+              <source>RestrictionByCondition</source>
               <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
                 <horizontalLocation>Left</horizontalLocation>
               </extInfo>
             </viewStatusAddition>
             <searchControlAddition>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <name>RestrictionByConditionSearchControl</name>
               <id>51</id>
               <extendedTooltip>
                 <name>RestrictionByConditionSearchControlExtendedTooltip</name>
                 <id>53</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <type>Label</type>
                 <autoMaxWidth>true</autoMaxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
@@ -7445,14 +6133,10 @@
               <contextMenu>
                 <name>RestrictionByConditionSearchControlContextMenu</name>
                 <id>52</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>SearchControlAddition</type>
+              <source>RestrictionByCondition</source>
               <extInfo xsi:type="form:SearchControlAdditionExtInfo">
                 <autoMaxWidth>true</autoMaxWidth>
               </extInfo>
@@ -7460,11 +6144,6 @@
             <extendedTooltip>
               <name>RestrictionByConditionExtendedTooltip</name>
               <id>44</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -7475,11 +6154,6 @@
             <contextMenu>
               <name>RestrictionByConditionContextMenu</name>
               <id>42</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <changeRowSet>true</changeRowSet>
@@ -7513,11 +6187,6 @@
           <extendedTooltip>
             <name>Group1ExtendedTooltip1</name>
             <id>66</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -7542,11 +6211,6 @@
         <extendedTooltip>
           <name>Group1ExtendedTooltip</name>
           <id>64</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -7587,11 +6251,6 @@
       <extendedTooltip>
         <name>GroupRoleDetailsExtendedTooltip</name>
         <id>82</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -7634,11 +6293,6 @@
           <extendedTooltip>
             <name>TemplatesLineNumberExtendedTooltip</name>
             <id>378</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -7649,11 +6303,6 @@
           <contextMenu>
             <name>TemplatesLineNumberContextMenu</name>
             <id>377</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>LabelField</type>
@@ -7680,11 +6329,6 @@
           <extendedTooltip>
             <name>TemplatesNameExtendedTooltip</name>
             <id>381</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -7695,11 +6339,6 @@
           <contextMenu>
             <name>TemplatesNameContextMenu</name>
             <id>380</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -7730,11 +6369,6 @@
           <extendedTooltip>
             <name>TemplatesTemplateExtendedTooltip</name>
             <id>384</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -7745,11 +6379,6 @@
           <contextMenu>
             <name>TemplatesTemplateContextMenu</name>
             <id>383</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -7769,30 +6398,15 @@
         <autoCommandBar>
           <name>TemplatesCommandBar</name>
           <id>365</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
         <searchStringAddition>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>TemplatesSearchString</name>
           <id>367</id>
           <extendedTooltip>
             <name>TemplatesSearchStringExtendedTooltip</name>
             <id>369</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -7803,33 +6417,19 @@
           <contextMenu>
             <name>TemplatesSearchStringContextMenu</name>
             <id>368</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
+          <source>Templates</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
         </searchStringAddition>
         <viewStatusAddition>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>TemplatesViewStatus</name>
           <id>370</id>
           <extendedTooltip>
             <name>TemplatesViewStatusExtendedTooltip</name>
             <id>372</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -7840,35 +6440,21 @@
           <contextMenu>
             <name>TemplatesViewStatusContextMenu</name>
             <id>371</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
+          <source>Templates</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
           </extInfo>
         </viewStatusAddition>
         <searchControlAddition>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>TemplatesSearchControl</name>
           <id>373</id>
           <extendedTooltip>
             <name>TemplatesSearchControlExtendedTooltip</name>
             <id>375</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -7879,14 +6465,10 @@
           <contextMenu>
             <name>TemplatesSearchControlContextMenu</name>
             <id>374</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
+          <source>Templates</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -7894,11 +6476,6 @@
         <extendedTooltip>
           <name>TemplatesExtendedTooltip</name>
           <id>366</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -7909,11 +6486,6 @@
         <contextMenu>
           <name>TemplatesContextMenu</name>
           <id>364</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <autoFill>true</autoFill>
         </contextMenu>
         <representation>HierarchicalList</representation>
@@ -7964,11 +6536,6 @@
       <extendedTooltip>
         <name>GroupTemplatesExtendedTooltip</name>
         <id>362</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -8011,11 +6578,6 @@
           <extendedTooltip>
             <name>LangInfoLineNumberExtendedTooltip</name>
             <id>402</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -8026,11 +6588,6 @@
           <contextMenu>
             <name>LangInfoLineNumberContextMenu</name>
             <id>401</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>LabelField</type>
@@ -8057,11 +6614,6 @@
           <extendedTooltip>
             <name>LangInfoLangCodeExtendedTooltip</name>
             <id>405</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -8072,11 +6624,6 @@
           <contextMenu>
             <name>LangInfoLangCodeContextMenu</name>
             <id>404</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -8107,11 +6654,6 @@
           <extendedTooltip>
             <name>LangInfoLangDescriptionExtendedTooltip</name>
             <id>408</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -8122,11 +6664,6 @@
           <contextMenu>
             <name>LangInfoLangDescriptionContextMenu</name>
             <id>407</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -8146,30 +6683,15 @@
         <autoCommandBar>
           <name>LangInfoCommandBar</name>
           <id>389</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
         <searchStringAddition>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>LangInfoSearchString</name>
           <id>391</id>
           <extendedTooltip>
             <name>LangInfoSearchStringExtendedTooltip</name>
             <id>393</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -8180,33 +6702,19 @@
           <contextMenu>
             <name>LangInfoSearchStringContextMenu</name>
             <id>392</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
+          <source>LangInfo</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
         </searchStringAddition>
         <viewStatusAddition>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>LangInfoViewStatus</name>
           <id>394</id>
           <extendedTooltip>
             <name>LangInfoViewStatusExtendedTooltip</name>
             <id>396</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -8217,35 +6725,21 @@
           <contextMenu>
             <name>LangInfoViewStatusContextMenu</name>
             <id>395</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
+          <source>LangInfo</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
           </extInfo>
         </viewStatusAddition>
         <searchControlAddition>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>LangInfoSearchControl</name>
           <id>397</id>
           <extendedTooltip>
             <name>LangInfoSearchControlExtendedTooltip</name>
             <id>399</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -8256,14 +6750,10 @@
           <contextMenu>
             <name>LangInfoSearchControlContextMenu</name>
             <id>398</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
+          <source>LangInfo</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -8271,11 +6761,6 @@
         <extendedTooltip>
           <name>LangInfoExtendedTooltip</name>
           <id>390</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -8286,11 +6771,6 @@
         <contextMenu>
           <name>LangInfoContextMenu</name>
           <id>388</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <autoFill>true</autoFill>
         </contextMenu>
         <representation>HierarchicalList</representation>
@@ -8341,11 +6821,6 @@
       <extendedTooltip>
         <name>GroupLangExtendedTooltip</name>
         <id>386</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -8383,11 +6858,6 @@
     <extendedTooltip>
       <name>GroupMainPagesExtendedTooltip</name>
       <id>80</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -8408,11 +6878,6 @@
   <autoCommandBar>
     <name>FormCommandBar</name>
     <id>-1</id>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>

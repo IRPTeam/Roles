@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b21cb32-3bbd-4778-9a01-fd161cc0f8a5">
   <name>Конфигурация</name>
-  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="f8462078-a42b-4054-a9d5-cbd52615693f"/>
-  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="7ee11d9e-2423-42b9-8b1b-1c4ba2c5dda8"/>
-  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="aef02318-162f-4334-9ddf-fd5eced37dc6"/>
-  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="88b88246-7f4b-4f86-a85f-a74457d06217"/>
-  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="beff7e51-3053-47ab-9ddb-c74d2825abe4"/>
-  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="f6f9ee0d-b91e-402b-9a29-1c597cf669ec"/>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="abf47882-ad4e-4deb-8026-4e0cf0018dcf"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="b059bace-0bec-4652-a117-70f199d60af5"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="709ae352-c3f6-4179-b142-da373efe9cd5"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="36c58c93-9dec-46db-9c11-6fe7909b5ab2"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="c8662bbb-cbef-468c-8386-2ad4eca59130"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="535435c6-4946-4761-8b47-bed3fbd49700"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="2005f4da-b92a-4a0b-b0fe-481c769d1ad8"/>
   <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
