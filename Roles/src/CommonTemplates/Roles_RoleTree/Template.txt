@@ -754,6 +754,17 @@
 		</ValueType>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">ExclusiveModeTerminationAtSessionStart</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>1</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">ObjectPath</Name>
 		<ValueType>
 			<Type>xs:string</Type>

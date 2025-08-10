@@ -148,6 +148,13 @@
       <value>Монопольный режим</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="f74e7990-bea5-4b33-a92b-7a99a42fd180">
+    <name>ExclusiveModeTerminationAtSessionStart</name>
+    <synonym>
+      <key>en</key>
+      <value>Exclusive mode termination at session start</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="e10b2cc5-1686-47ec-b345-2325c6aafa2e">
     <name>Execute</name>
     <synonym>
@@ -533,6 +540,28 @@
       <value>Сохранить данные пользователя</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="72a15c85-13d0-4034-b65e-ed22ad315311">
+    <name>SessionOSAuthenticationChange</name>
+    <synonym>
+      <key>en</key>
+      <value>Session OS authentication change</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение аутентификации операционной системы сеанса</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bba1b4e3-88f8-434e-9906-e630da57d66f">
+    <name>SessionStandardAuthenticationChange</name>
+    <synonym>
+      <key>en</key>
+      <value>Session standard authentication change</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение стандартной аутентификации текущего пользователя</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="8d52136d-915b-4d6e-b79e-d51a090760c7">
     <name>Set</name>
     <synonym>
@@ -542,6 +571,17 @@
     <synonym>
       <key>ru</key>
       <value>Установить</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a3eefb29-f5cc-4572-8aa2-8fa004f37d14">
+    <name>StandardAuthenticationChange</name>
+    <synonym>
+      <key>en</key>
+      <value>Standard authentication change</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение стандартной аутентификации</value>
     </synonym>
   </enumValues>
   <enumValues uuid="b1a7c7c4-640c-4bc7-8692-9c859e1046df">
@@ -729,39 +769,6 @@
     <synonym>
       <key>ru</key>
       <value>Web-клиент</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="a3eefb29-f5cc-4572-8aa2-8fa004f37d14">
-    <name>StandardAuthenticationChange</name>
-    <synonym>
-      <key>en</key>
-      <value>Standard authentication change</value>
-    </synonym>
-    <synonym>
-      <key>ru</key>
-      <value>Изменение стандартной аутентификации</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="bba1b4e3-88f8-434e-9906-e630da57d66f">
-    <name>SessionStandardAuthenticationChange</name>
-    <synonym>
-      <key>en</key>
-      <value>Session standard authentication change</value>
-    </synonym>
-    <synonym>
-      <key>ru</key>
-      <value>Изменение стандартной аутентификации текущего пользователя</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="72a15c85-13d0-4034-b65e-ed22ad315311">
-    <name>SessionOSAuthenticationChange</name>
-    <synonym>
-      <key>en</key>
-      <value>Session OS authentication change</value>
-    </synonym>
-    <synonym>
-      <key>ru</key>
-      <value>Изменение аутентификации операционной системы сеанса</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

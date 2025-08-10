@@ -3892,6 +3892,57 @@
                 </backColor>
               </extInfo>
             </items>
+            <items xsi:type="form:FormField">
+              <name>ExclusiveModeTerminationAtSessionStart</name>
+              <id>531</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>RolesEdit.ExclusiveModeTerminationAtSessionStart</segments>
+              </dataPath>
+              <titleBackColor xsi:type="core:ColorRef">
+                <color>Web.DimGray</color>
+              </titleBackColor>
+              <titleLocation>None</titleLocation>
+              <toolTip>
+                <key>en</key>
+                <value>Analytics system client</value>
+              </toolTip>
+              <toolTip>
+                <key>ru</key>
+                <value>Клиент системы аналитики	</value>
+              </toolTip>
+              <extendedTooltip>
+                <name>ExclusiveModeTerminationAtSessionStartExtendedTooltip</name>
+                <id>533</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ExclusiveModeTerminationAtSessionStartContextMenu</name>
+                <id>532</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>LabelField</type>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:LabelFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <backColor xsi:type="core:ColorRef">
+                  <color>Web.DimGray</color>
+                </backColor>
+              </extInfo>
+            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -9322,6 +9373,27 @@
         <value>Изменение аутентификации операционной системы сеанса</value>
       </title>
       <id>86</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ExclusiveModeTerminationAtSessionStart</name>
+      <title>
+        <key>en</key>
+        <value>Exclusive mode termination at session start</value>
+      </title>
+      <id>87</id>
       <valueType>
         <types>Number</types>
         <numberQualifiers>

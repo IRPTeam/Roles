@@ -235,6 +235,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -498,7 +501,10 @@
 			</item>
 			<item>
 				<field>SessionOSAuthenticationChange</field>
-			</item>
+			</item>			
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>			
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -745,6 +751,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>	
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -983,6 +992,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -1221,6 +1233,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -1464,6 +1479,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -1707,6 +1725,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -1950,6 +1971,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -2188,6 +2212,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -2426,6 +2453,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -2663,6 +2693,9 @@
 			</item>
 			<item>
 				<field>SessionOSAuthenticationChange</field>
+			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
 			</item>
 		</selection>
 		<filter>
@@ -2909,6 +2942,9 @@
 			</item>
 			<item>
 				<field>SessionOSAuthenticationChange</field>
+			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
 			</item>
 		</selection>
 		<filter>
@@ -3164,6 +3200,9 @@
 			</item>
 			<item>
 				<field>SessionOSAuthenticationChange</field>
+			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
 			</item>
 		</selection>
 		<filter>
@@ -3420,6 +3459,9 @@
 			</item>
 			<item>
 				<field>SessionOSAuthenticationChange</field>
+			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
 			</item>
 		</selection>
 		<filter>
@@ -3667,6 +3709,9 @@
 			</item>
 			<item>
 				<field>SessionOSAuthenticationChange</field>
+			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
 			</item>
 		</selection>
 		<filter>
@@ -3910,6 +3955,9 @@
 			</item>
 			<item>
 				<field>SessionOSAuthenticationChange</field>
+			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
 			</item>
 		</selection>
 		<filter>
@@ -4155,6 +4203,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -4406,6 +4457,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemGroup">
@@ -4661,6 +4715,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -4908,6 +4965,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -5160,6 +5220,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemGroup">
@@ -5393,6 +5456,9 @@
 				<field>SessionOSAuthenticationChange</field>
 			</item>
 			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
+			<item>
 				<field>View</field>
 			</item>
 		</selection>
@@ -5431,6 +5497,9 @@
 			</item>
 			<item>
 				<field>SessionOSAuthenticationChange</field>
+			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
 			</item>
 		</selection>
 		<filter>
@@ -5881,6 +5950,9 @@
 			</item>
 			<item>
 				<field>SessionOSAuthenticationChange</field>
+			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
 			</item>
 		</selection>
 		<filter>
@@ -6127,6 +6199,9 @@
 			<item>
 				<field>SessionOSAuthenticationChange</field>
 			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
@@ -6355,6 +6430,9 @@
 			</item>
 			<item>
 				<field>SessionOSAuthenticationChange</field>
+			</item>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
 			</item>
 		</selection>
 		<filter>
@@ -10918,6 +10996,39 @@
 	<item>
 		<selection>
 			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ExclusiveModeTerminationAtSessionStart</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">2</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
 				<field>ActiveUsers</field>
 			</item>
 		</selection>
@@ -13135,6 +13246,39 @@
 		<filter>
 			<item xsi:type="FilterItemComparison">
 				<left xsi:type="dcscor:Field">RolesEdit.SessionOSAuthenticationChange</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">3</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>TextColor</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Orange</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Text</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>⚫</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ExclusiveModeTerminationAtSessionStart</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">RolesEdit.ExclusiveModeTerminationAtSessionStart</left>
 				<comparisonType>Equal</comparisonType>
 				<right xsi:type="xs:decimal">3</right>
 			</item>

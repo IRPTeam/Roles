@@ -187,9 +187,9 @@
   <catalogs>Catalog.Roles_FunctionalOptions</catalogs>
   <catalogs>Catalog.Roles_Parameters</catalogs>
   <catalogs>Catalog.Roles_Templates</catalogs>
+  <enums>Enum.Roles_MetadataSubtype</enums>
   <enums>Enum.Roles_MetadataTypes</enums>
   <enums>Enum.Roles_Rights</enums>
-  <enums>Enum.Roles_MetadataSubtype</enums>
   <reports>Report.Roles_AccessToObjectAnalyse</reports>
   <dataProcessors>DataProcessor.Roles_ButtonForm</dataProcessors>
 </mdclass:Configuration>

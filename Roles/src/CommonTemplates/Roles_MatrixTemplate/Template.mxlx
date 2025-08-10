@@ -8,19 +8,9 @@
 			<code>English</code>
 			<description/>
 		</languageInfo>
-		<languageInfo>
-			<id>ru1</id>
-			<code>Language1</code>
-			<description>Language1</description>
-		</languageInfo>
-		<languageInfo>
-			<id>ru</id>
-			<code>Русский</code>
-			<description>Русский</description>
-		</languageInfo>
 	</languageSettings>
 	<columns>
-		<size>71</size>
+		<size>72</size>
 		<columnsItem>
 			<index>0</index>
 			<column>
@@ -432,7 +422,7 @@
 		<columnsItem>
 			<index>68</index>
 			<column>
-				<formatIndex>6</formatIndex>
+				<formatIndex>5</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
@@ -443,6 +433,12 @@
 		</columnsItem>
 		<columnsItem>
 			<index>70</index>
+			<column>
+				<formatIndex>6</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>71</index>
 			<column>
 				<formatIndex>6</formatIndex>
 			</column>
@@ -1289,6 +1285,22 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>Exclusive mode termination at session start</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент системы аналитики	</v8:content>
+						</v8:item>
+					</tl>
+					<detailParameter>ExclusiveModeTerminationAtSessionStart</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>61</f>
+					<tl>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Analytics system client</v8:content>
 						</v8:item>
 						<v8:item>
@@ -1301,7 +1313,7 @@
 			</c>
 			<c>
 				<c>
-					<f>61</f>
+					<f>62</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1317,7 +1329,7 @@
 			</c>
 			<c>
 				<c>
-					<f>62</f>
+					<f>63</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1333,7 +1345,7 @@
 			</c>
 			<c>
 				<c>
-					<f>63</f>
+					<f>64</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1349,7 +1361,7 @@
 			</c>
 			<c>
 				<c>
-					<f>64</f>
+					<f>65</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1365,7 +1377,7 @@
 			</c>
 			<c>
 				<c>
-					<f>65</f>
+					<f>66</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1381,7 +1393,7 @@
 			</c>
 			<c>
 				<c>
-					<f>66</f>
+					<f>67</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1397,7 +1409,7 @@
 			</c>
 			<c>
 				<c>
-					<f>67</f>
+					<f>68</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1413,7 +1425,7 @@
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>69</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1429,7 +1441,7 @@
 			</c>
 			<c>
 				<c>
-					<f>69</f>
+					<f>70</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1445,7 +1457,7 @@
 			</c>
 			<c>
 				<c>
-					<f>70</f>
+					<f>71</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1461,7 +1473,7 @@
 			</c>
 			<c>
 				<c>
-					<f>71</f>
+					<f>72</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1477,7 +1489,7 @@
 			</c>
 			<c>
 				<c>
-					<f>72</f>
+					<f>73</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1493,7 +1505,7 @@
 			</c>
 			<c>
 				<c>
-					<f>73</f>
+					<f>74</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1509,7 +1521,7 @@
 			</c>
 			<c>
 				<c>
-					<f>74</f>
+					<f>75</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1525,7 +1537,7 @@
 			</c>
 			<c>
 				<c>
-					<f>75</f>
+					<f>76</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1541,7 +1553,7 @@
 			</c>
 			<c>
 				<c>
-					<f>76</f>
+					<f>77</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1557,7 +1569,7 @@
 			</c>
 			<c>
 				<c>
-					<f>77</f>
+					<f>78</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -1576,430 +1588,436 @@
 	<rowsItem>
 		<index>1</index>
 		<row>
-			<formatIndex>78</formatIndex>
+			<formatIndex>79</formatIndex>
 			<c>
 				<c>
-					<f>79</f>
+					<f>80</f>
 					<parameter>Edited</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>80</f>
+					<f>81</f>
 					<parameter>ObjectFullName</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>81</f>
+					<f>82</f>
 					<parameter>ObjectPath</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>82</f>
+					<f>83</f>
 					<parameter>Read</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>83</f>
+					<f>84</f>
 					<parameter>Insert</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>83</f>
+					<f>84</f>
 					<parameter>Update</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>84</f>
+					<f>85</f>
 					<parameter>Delete</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>85</f>
+					<f>86</f>
 					<parameter>View</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>86</f>
+					<f>87</f>
 					<parameter>Edit</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>86</f>
+					<f>87</f>
 					<parameter>InputByString</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>86</f>
+					<f>87</f>
 					<parameter>Use</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>87</f>
+					<f>88</f>
 					<parameter>TotalsControl</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>88</f>
+					<f>89</f>
 					<parameter>InteractiveDelete</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>89</f>
+					<f>90</f>
 					<parameter>InteractiveInsert</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>89</f>
+					<f>90</f>
 					<parameter>InteractiveSetDeletionMark</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>89</f>
+					<f>90</f>
 					<parameter>InteractiveClearDeletionMark</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>90</f>
+					<f>91</f>
 					<parameter>InteractiveDeleteMarked</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>91</f>
+					<f>92</f>
 					<parameter>Posting</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>92</f>
+					<f>93</f>
 					<parameter>UndoPosting</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>92</f>
+					<f>93</f>
 					<parameter>InteractivePosting</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>92</f>
+					<f>93</f>
 					<parameter>InteractivePostingRegular</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>92</f>
+					<f>93</f>
 					<parameter>InteractiveUndoPosting</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>93</f>
+					<f>94</f>
 					<parameter>InteractiveChangeOfPosted</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>95</f>
 					<parameter>InteractiveDeletePredefinedData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>95</f>
+					<f>96</f>
 					<parameter>InteractiveSetDeletionMarkPredefinedData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>95</f>
+					<f>96</f>
 					<parameter>InteractiveClearDeletionMarkPredefinedData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>96</f>
+					<f>97</f>
 					<parameter>InteractiveDeleteMarkedPredefinedData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>97</f>
+					<f>98</f>
 					<parameter>Get</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>98</f>
+					<f>99</f>
 					<parameter>Set</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>99</f>
+					<f>100</f>
 					<parameter>Administration</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>DataAdministration</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>UpdateDataBaseConfiguration</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>ExclusiveMode</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>ActiveUsers</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>EventLog</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>ThinClient</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>WebClient</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>MobileClient</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>ThickClient</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>ExternalConnection</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>Automation</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>TechnicalSpecialistMode</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>CollaborationSystemInfoBaseRegistration</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>SaveUserData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>ConfigurationExtensionsAdministration</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>InteractiveOpenExtDataProcessors</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>InteractiveOpenExtReports</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>Output</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>MainWindowModeNormal</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>MainWindowModeWorkplace</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>MainWindowModeEmbeddedWorkplace</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>MainWindowModeFullscreenWorkplace</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>100</f>
+					<f>101</f>
 					<parameter>MainWindowModeKiosk</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>101</f>
+					<f>102</f>
+					<parameter>ExclusiveModeTerminationAtSessionStart</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>103</f>
 					<parameter>AnalyticsSystemClient</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>102</f>
+					<f>104</f>
 					<parameter>ReadDataHistory</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>103</f>
+					<f>105</f>
 					<parameter>ViewDataHistory</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>103</f>
+					<f>105</f>
 					<parameter>ReadDataHistoryOfMissingData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>103</f>
+					<f>105</f>
 					<parameter>UpdateDataHistory</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>103</f>
+					<f>105</f>
 					<parameter>UpdateDataHistoryOfMissingData</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>103</f>
+					<f>105</f>
 					<parameter>UpdateDataHistorySettings</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>103</f>
+					<f>105</f>
 					<parameter>UpdateDataHistoryVersionComment</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>103</f>
+					<f>105</f>
 					<parameter>EditDataHistoryVersionComment</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>104</f>
+					<f>106</f>
 					<parameter>SwitchToDataHistoryVersion</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>105</f>
+					<f>107</f>
 					<parameter>Start</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>106</f>
+					<f>108</f>
 					<parameter>InteractiveStart</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>106</f>
+					<f>108</f>
 					<parameter>InteractiveActivate</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>106</f>
+					<f>108</f>
 					<parameter>Execute</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>107</f>
+					<f>109</f>
 					<parameter>InteractiveExecute</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>108</f>
+					<f>110</f>
 					<parameter>StandardAuthenticationChange</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>109</f>
+					<f>111</f>
 					<parameter>SessionStandardAuthenticationChange</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>110</f>
+					<f>112</f>
 					<parameter>SessionOSAuthenticationChange</parameter>
 				</c>
 			</c>
@@ -2010,357 +2028,362 @@
 		<row>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>112</f>
+					<f>114</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>115</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>111</f>
+					<f>113</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>113</f>
 				</c>
 			</c>
 		</row>
@@ -2370,322 +2393,32 @@
 		<row>
 			<c>
 				<c>
-					<f>113</f>
+					<f>116</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>114</f>
+					<f>117</f>
 					<parameter>RLSName</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>115</f>
+					<f>118</f>
 					<parameter>ObjectPath</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>116</f>
+					<f>119</f>
 					<parameter>Fields</parameter>
 				</c>
 			</c>
 			<c>
 				<i>12</i>
 				<c>
-					<f>117</f>
+					<f>120</f>
 					<parameter>Condition</parameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>118</f>
 				</c>
 			</c>
 		</row>
@@ -2696,7 +2429,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2707,7 +2451,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2718,7 +2473,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2729,7 +2495,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2740,7 +2517,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2751,7 +2539,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2762,7 +2561,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2773,7 +2583,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2784,7 +2605,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2795,7 +2627,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2806,7 +2649,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2817,7 +2671,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2828,7 +2693,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2839,7 +2715,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2850,7 +2737,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2861,7 +2759,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2872,7 +2781,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2883,7 +2803,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2894,7 +2825,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2905,7 +2847,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2916,7 +2869,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2927,7 +2891,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2938,7 +2913,18 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>119</f>
+					<f>121</f>
+				</c>
+			</c>
+			<c>
+				<i>53</i>
+				<c>
+					<f>5</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
 				</c>
 			</c>
 		</row>
@@ -2966,7 +2952,7 @@
 	<merge>
 		<r>3</r>
 		<c>12</c>
-		<w>58</w>
+		<w>59</w>
 	</merge>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Footer</name>
@@ -3793,9 +3779,28 @@
 	<format>
 		<font>1</font>
 		<topBorder>1</topBorder>
+		<rightBorder>0</rightBorder>
+		<bottomBorder>1</bottomBorder>
+		<height>60</height>
+		<borderColor>#333333</borderColor>
+		<width>24</width>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
+		<textColor>#4D4D4D</textColor>
+		<backColor>#D9D9D9</backColor>
+		<textPlacement>Cut</textPlacement>
+		<picIndex>51</picIndex>
+		<picHorizontalAlignment>Center</picHorizontalAlignment>
+		<textPosition>Auto</textPosition>
+	</format>
+	<format>
+		<font>1</font>
+		<topBorder>1</topBorder>
 		<rightBorder>1</rightBorder>
 		<bottomBorder>1</bottomBorder>
+		<height>60</height>
 		<borderColor>#333333</borderColor>
+		<width>24</width>
 		<horizontalAlignment>Left</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textColor>#4D4D4D</textColor>
@@ -4299,6 +4304,18 @@
 	</format>
 	<format>
 		<font>3</font>
+		<rightBorder>0</rightBorder>
+		<bottomBorder>0</bottomBorder>
+		<borderColor>#333333</borderColor>
+		<width>72</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#333333</textColor>
+		<backColor>#D9D9D9</backColor>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<font>3</font>
 		<rightBorder>1</rightBorder>
 		<bottomBorder>0</bottomBorder>
 		<borderColor>#333333</borderColor>
@@ -4417,6 +4434,10 @@
 		<columnSizeChange>Normal</columnSizeChange>
 	</format>
 	<format>
+		<topBorder>1</topBorder>
+		<width>24</width>
+	</format>
+	<format>
 		<font>0</font>
 		<leftBorder>0</leftBorder>
 		<topBorder>2</topBorder>
@@ -4476,12 +4497,10 @@
 		<topBorder>2</topBorder>
 		<rightBorder>2</rightBorder>
 		<bottomBorder>2</bottomBorder>
+		<width>24</width>
 		<horizontalAlignment>Justify</horizontalAlignment>
 		<backColor>style:ToolTipBackColor</backColor>
 		<fillType>Parameter</fillType>
-	</format>
-	<format>
-		<rightBorder>2</rightBorder>
 	</format>
 	<format>
 		<columnSizeChange>Normal</columnSizeChange>

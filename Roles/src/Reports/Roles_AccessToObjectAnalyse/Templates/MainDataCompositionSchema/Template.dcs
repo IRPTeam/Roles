@@ -1274,6 +1274,16 @@ FROM
 							</dcsset:filter>
 							<dcsset:value xsi:type="xs:decimal">67</dcsset:value>
 						</dcsset:item>
+						<dcsset:item>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">RightName</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Enum.Roles_Rights.ExclusiveModeTerminationAtSessionStart</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:value xsi:type="xs:decimal">67</dcsset:value>
+						</dcsset:item>
 					</dcsset:cases>
 				</dcsset:item>
 			</dcsset:userFields>
