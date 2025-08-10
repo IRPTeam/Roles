@@ -196,7 +196,7 @@
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
-          <name>ExtendedTooltip</name>
+          <name>TabDocMartixExtendedTooltip</name>
           <id>29</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
@@ -206,7 +206,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>ContextMenu</name>
+          <name>TabDocMartixContextMenu</name>
           <id>28</id>
           <autoFill>true</autoFill>
         </contextMenu>

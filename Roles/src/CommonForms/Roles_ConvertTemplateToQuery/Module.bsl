@@ -262,11 +262,12 @@ Function CalculateResult(Val Code, Query) Export
 	Result = Undefined;
 	ErrorList = New Array;
 	Try
+		SetSafeMode(True);
 		Execute("Result = " + Code);
-		
+		SetSafeMode(False);
 		Return Result;
 	Except
-		ErrorList.Add(DetailErrorDescription(ErrorInfo()));
+		ErrorList.Add(ErrorProcessing.DetailErrorDescription(ErrorInfo()));
 	EndTry;
 	
 	// try to create query

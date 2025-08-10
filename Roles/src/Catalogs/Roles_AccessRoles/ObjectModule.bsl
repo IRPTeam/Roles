@@ -18,6 +18,11 @@ Procedure OnCopy(CopiedObject)
 EndProcedure
 
 Procedure BeforeWrite(Cancel)
+	
+	If DataExchange.Load Then
+		Return;
+	EndIf;
+	
 	If ConfigRoles And Not AdditionalProperties.Property("Update") Then
 		Cancel = True;
 	EndIf;

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "settings": {
+    "module-structure-form-event-regions": {
+      "enabled": false
+    },
+    "module-self-reference": {
+      "enabled": false
+    }
+  }
+}

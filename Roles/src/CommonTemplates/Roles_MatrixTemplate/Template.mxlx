@@ -4488,274 +4488,274 @@
 	</format>
 	<picture>
 		<index>0</index>
-		<picture ref="v8ui:Roles_right_read"/>
+		<picture t="false" ref="v8ui:Roles_right_read"/>
 	</picture>
 	<picture>
 		<index>1</index>
-		<picture ref="v8ui:Roles_right_insert"/>
+		<picture t="false" ref="v8ui:Roles_right_insert"/>
 	</picture>
 	<picture>
 		<index>2</index>
-		<picture ref="v8ui:Roles_right_update"/>
+		<picture t="false" ref="v8ui:Roles_right_update"/>
 	</picture>
 	<picture>
 		<index>3</index>
-		<picture ref="v8ui:Roles_right_delete"/>
+		<picture t="false" ref="v8ui:Roles_right_delete"/>
 	</picture>
 	<picture>
 		<index>4</index>
-		<picture ref="v8ui:Find"/>
+		<picture t="false" ref="v8ui:Find"/>
 	</picture>
 	<picture>
 		<index>5</index>
-		<picture ref="v8ui:Roles_right_edit"/>
+		<picture t="false" ref="v8ui:Roles_right_edit"/>
 	</picture>
 	<picture>
 		<index>6</index>
-		<picture ref="v8ui:Roles_right_inputByString"/>
+		<picture t="false" ref="v8ui:Roles_right_inputByString"/>
 	</picture>
 	<picture>
 		<index>7</index>
-		<picture ref="v8ui:Roles_right_use"/>
+		<picture t="false" ref="v8ui:Roles_right_use"/>
 	</picture>
 	<picture>
 		<index>8</index>
-		<picture ref="v8ui:Roles_right_totalsControl"/>
+		<picture t="false" ref="v8ui:Roles_right_totalsControl"/>
 	</picture>
 	<picture>
 		<index>9</index>
-		<picture ref="v8ui:Roles_right_interactiveDelete"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveDelete"/>
 	</picture>
 	<picture>
 		<index>10</index>
-		<picture ref="v8ui:Roles_right_interactiveInsert"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveInsert"/>
 	</picture>
 	<picture>
 		<index>11</index>
-		<picture ref="v8ui:Roles_right_interactiveSetDeletionMark"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveSetDeletionMark"/>
 	</picture>
 	<picture>
 		<index>12</index>
-		<picture ref="v8ui:Roles_right_interactiveClearDeletionMark"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveClearDeletionMark"/>
 	</picture>
 	<picture>
 		<index>13</index>
-		<picture ref="v8ui:Roles_right_interactiveDelete"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveDelete"/>
 	</picture>
 	<picture>
 		<index>14</index>
-		<picture ref="v8ui:Roles_right_posting"/>
+		<picture t="false" ref="v8ui:Roles_right_posting"/>
 	</picture>
 	<picture>
 		<index>15</index>
-		<picture ref="v8ui:Roles_right_undoPosting"/>
+		<picture t="false" ref="v8ui:Roles_right_undoPosting"/>
 	</picture>
 	<picture>
 		<index>16</index>
-		<picture ref="v8ui:Roles_right_interactivePosting"/>
+		<picture t="false" ref="v8ui:Roles_right_interactivePosting"/>
 	</picture>
 	<picture>
 		<index>17</index>
-		<picture ref="v8ui:Roles_right_interactiveUndoPosting"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveUndoPosting"/>
 	</picture>
 	<picture>
 		<index>18</index>
-		<picture ref="v8ui:Roles_right_interactivePostingRegular"/>
+		<picture t="false" ref="v8ui:Roles_right_interactivePostingRegular"/>
 	</picture>
 	<picture>
 		<index>19</index>
-		<picture ref="v8ui:Roles_right_interactiveChangeOfPosted"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveChangeOfPosted"/>
 	</picture>
 	<picture>
 		<index>20</index>
-		<picture ref="v8ui:Roles_right_InteractiveDeletePredefinedData"/>
+		<picture t="false" ref="v8ui:Roles_right_InteractiveDeletePredefinedData"/>
 	</picture>
 	<picture>
 		<index>21</index>
-		<picture ref="v8ui:Roles_right_interactiveSetDeletionMarkPredefinedData"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveSetDeletionMarkPredefinedData"/>
 	</picture>
 	<picture>
 		<index>22</index>
-		<picture ref="v8ui:Roles_right_interactiveClearDeletionMarkPredefinedData"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveClearDeletionMarkPredefinedData"/>
 	</picture>
 	<picture>
 		<index>23</index>
-		<picture ref="v8ui:Roles_right_InteractiveDeleteMarkedPredefinedData"/>
+		<picture t="false" ref="v8ui:Roles_right_InteractiveDeleteMarkedPredefinedData"/>
 	</picture>
 	<picture>
 		<index>24</index>
-		<picture ref="v8ui:Roles_right_get"/>
+		<picture t="false" ref="v8ui:Roles_right_get"/>
 	</picture>
 	<picture>
 		<index>25</index>
-		<picture ref="v8ui:Roles_right_set"/>
+		<picture t="false" ref="v8ui:Roles_right_set"/>
 	</picture>
 	<picture>
 		<index>26</index>
-		<picture ref="v8ui:Roles_right_administration"/>
+		<picture t="false" ref="v8ui:Roles_right_administration"/>
 	</picture>
 	<picture>
 		<index>27</index>
-		<picture ref="v8ui:Roles_right_dataAdministration"/>
+		<picture t="false" ref="v8ui:Roles_right_dataAdministration"/>
 	</picture>
 	<picture>
 		<index>28</index>
-		<picture ref="v8ui:Roles_right_updateDataBaseConfiguration"/>
+		<picture t="false" ref="v8ui:Roles_right_updateDataBaseConfiguration"/>
 	</picture>
 	<picture>
 		<index>29</index>
-		<picture ref="v8ui:Roles_right_exclusiveMode"/>
+		<picture t="false" ref="v8ui:Roles_right_exclusiveMode"/>
 	</picture>
 	<picture>
 		<index>30</index>
-		<picture ref="v8ui:Roles_right_activeUsers"/>
+		<picture t="false" ref="v8ui:Roles_right_activeUsers"/>
 	</picture>
 	<picture>
 		<index>31</index>
-		<picture ref="v8ui:Roles_right_eventLog"/>
+		<picture t="false" ref="v8ui:Roles_right_eventLog"/>
 	</picture>
 	<picture>
 		<index>32</index>
-		<picture ref="v8ui:Roles_right_thinClient"/>
+		<picture t="false" ref="v8ui:Roles_right_thinClient"/>
 	</picture>
 	<picture>
 		<index>33</index>
-		<picture ref="v8ui:Roles_right_webClient"/>
+		<picture t="false" ref="v8ui:Roles_right_webClient"/>
 	</picture>
 	<picture>
 		<index>34</index>
-		<picture ref="v8ui:Roles_right_mobileClient"/>
+		<picture t="false" ref="v8ui:Roles_right_mobileClient"/>
 	</picture>
 	<picture>
 		<index>35</index>
-		<picture ref="v8ui:Roles_right_thickClient"/>
+		<picture t="false" ref="v8ui:Roles_right_thickClient"/>
 	</picture>
 	<picture>
 		<index>36</index>
-		<picture ref="v8ui:Roles_right_externalConnection"/>
+		<picture t="false" ref="v8ui:Roles_right_externalConnection"/>
 	</picture>
 	<picture>
 		<index>37</index>
-		<picture ref="v8ui:Roles_right_automation"/>
+		<picture t="false" ref="v8ui:Roles_right_automation"/>
 	</picture>
 	<picture>
 		<index>38</index>
-		<picture ref="v8ui:Roles_right_allFunctionsMode"/>
+		<picture t="false" ref="v8ui:Roles_right_allFunctionsMode"/>
 	</picture>
 	<picture>
 		<index>39</index>
-		<picture ref="v8ui:Roles_right_collaborationSystemInfoBaseRegistration"/>
+		<picture t="false" ref="v8ui:Roles_right_collaborationSystemInfoBaseRegistration"/>
 	</picture>
 	<picture>
 		<index>40</index>
-		<picture ref="v8ui:Roles_right_saveUserData"/>
+		<picture t="false" ref="v8ui:Roles_right_saveUserData"/>
 	</picture>
 	<picture>
 		<index>41</index>
-		<picture ref="v8ui:Roles_configuration_extension_administration"/>
+		<picture t="false" ref="v8ui:Roles_configuration_extension_administration"/>
 	</picture>
 	<picture>
 		<index>42</index>
-		<picture ref="v8ui:Roles_right_interactiveOpenExtDataProcessors"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveOpenExtDataProcessors"/>
 	</picture>
 	<picture>
 		<index>43</index>
-		<picture ref="v8ui:Roles_right_interactiveOpenExtReports"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveOpenExtReports"/>
 	</picture>
 	<picture>
 		<index>44</index>
-		<picture ref="v8ui:Roles_right_output"/>
+		<picture t="false" ref="v8ui:Roles_right_output"/>
 	</picture>
 	<picture>
 		<index>45</index>
-		<picture ref="v8ui:Select"/>
+		<picture t="false" ref="v8ui:Select"/>
 	</picture>
 	<picture>
 		<index>46</index>
-		<picture ref="v8ui:Select"/>
+		<picture t="false" ref="v8ui:Select"/>
 	</picture>
 	<picture>
 		<index>47</index>
-		<picture ref="v8ui:Select"/>
+		<picture t="false" ref="v8ui:Select"/>
 	</picture>
 	<picture>
 		<index>48</index>
-		<picture ref="v8ui:Select"/>
+		<picture t="false" ref="v8ui:Select"/>
 	</picture>
 	<picture>
 		<index>49</index>
-		<picture ref="v8ui:Select"/>
+		<picture t="false" ref="v8ui:Select"/>
 	</picture>
 	<picture>
 		<index>50</index>
-		<picture ref="v8ui:Select"/>
+		<picture t="false" ref="v8ui:Select"/>
 	</picture>
 	<picture>
 		<index>51</index>
-		<picture ref="v8ui:Roles_right_readDataHistory"/>
+		<picture t="false" ref="v8ui:Roles_right_readDataHistory"/>
 	</picture>
 	<picture>
 		<index>52</index>
-		<picture ref="v8ui:Roles_right_viewDataHistory"/>
+		<picture t="false" ref="v8ui:Roles_right_viewDataHistory"/>
 	</picture>
 	<picture>
 		<index>53</index>
-		<picture ref="v8ui:Roles_right_updateDataHistoryOfMissingData"/>
+		<picture t="false" ref="v8ui:Roles_right_updateDataHistoryOfMissingData"/>
 	</picture>
 	<picture>
 		<index>54</index>
-		<picture ref="v8ui:Roles_right_updateDataHistory"/>
+		<picture t="false" ref="v8ui:Roles_right_updateDataHistory"/>
 	</picture>
 	<picture>
 		<index>55</index>
-		<picture ref="v8ui:Roles_right_updateDataHistoryOfMissingData"/>
+		<picture t="false" ref="v8ui:Roles_right_updateDataHistoryOfMissingData"/>
 	</picture>
 	<picture>
 		<index>56</index>
-		<picture ref="v8ui:Roles_right_updateDataHistorySettings"/>
+		<picture t="false" ref="v8ui:Roles_right_updateDataHistorySettings"/>
 	</picture>
 	<picture>
 		<index>57</index>
-		<picture ref="v8ui:Roles_right_updateDataHistoryVersionComment"/>
+		<picture t="false" ref="v8ui:Roles_right_updateDataHistoryVersionComment"/>
 	</picture>
 	<picture>
 		<index>58</index>
-		<picture ref="v8ui:Roles_right_editDataHistoryVersionComment"/>
+		<picture t="false" ref="v8ui:Roles_right_editDataHistoryVersionComment"/>
 	</picture>
 	<picture>
 		<index>59</index>
-		<picture ref="v8ui:Roles_right_switchToDataHistoryVersion"/>
+		<picture t="false" ref="v8ui:Roles_right_switchToDataHistoryVersion"/>
 	</picture>
 	<picture>
 		<index>60</index>
-		<picture ref="v8ui:Roles_right_start"/>
+		<picture t="false" ref="v8ui:Roles_right_start"/>
 	</picture>
 	<picture>
 		<index>61</index>
-		<picture ref="v8ui:Roles_right_interactiveStart"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveStart"/>
 	</picture>
 	<picture>
 		<index>62</index>
-		<picture ref="v8ui:Roles_right_interactiveActivate"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveActivate"/>
 	</picture>
 	<picture>
 		<index>63</index>
-		<picture ref="v8ui:Roles_right_execute"/>
+		<picture t="false" ref="v8ui:Roles_right_execute"/>
 	</picture>
 	<picture>
 		<index>64</index>
-		<picture ref="v8ui:Roles_right_interactiveExecute"/>
+		<picture t="false" ref="v8ui:Roles_right_interactiveExecute"/>
 	</picture>
 	<picture>
 		<index>65</index>
-		<picture ref="v8ui:Roles_right_standardAuthenticationChange"/>
+		<picture t="false" ref="v8ui:Roles_right_standardAuthenticationChange"/>
 	</picture>
 	<picture>
 		<index>66</index>
-		<picture ref="v8ui:Roles_right_sessionStandardAuthenticationChange"/>
+		<picture t="false" ref="v8ui:Roles_right_sessionStandardAuthenticationChange"/>
 	</picture>
 	<picture>
 		<index>67</index>
-		<picture ref="v8ui:Roles_right_sessionOSAuthenticationChange"/>
+		<picture t="false" ref="v8ui:Roles_right_sessionOSAuthenticationChange"/>
 	</picture>
 </document>
