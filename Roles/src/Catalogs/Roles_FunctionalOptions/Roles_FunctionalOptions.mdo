@@ -236,6 +236,139 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <tabularSections uuid="7ec6782d-d42e-4b0e-bfde-5e76dae41b21">
+    <producedTypes>
+      <objectType typeId="6b792e6e-881a-416f-90a4-892d09335595" valueTypeId="9865ab42-8ca6-4462-9574-15fb8d4450cf"/>
+      <rowType typeId="f1b24bc6-99e5-4926-84ad-894904d478f7" valueTypeId="7ba3d985-09b8-4b68-b69e-611ed1d6c7e9"/>
+    </producedTypes>
+    <name>FormContent</name>
+    <synonym>
+      <key>en</key>
+      <value>Form content</value>
+    </synonym>
+    <attributes uuid="a65007f0-6816-4162-9c8d-cd777c06bf0a">
+      <name>ObjectType</name>
+      <synonym>
+        <key>en</key>
+        <value>Object type</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Тип объекта</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Roles_MetadataTypes</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a9155368-a6ce-42ae-9eec-098bc381343a">
+      <name>ObjectName</name>
+      <synonym>
+        <key>en</key>
+        <value>Object name</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Имя объекта</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="02b9add1-6d0c-45d9-b037-b327de25f399">
+      <name>RowID</name>
+      <synonym>
+        <key>en</key>
+        <value>Row ID</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>ID строки</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9a03dd2a-9ce1-4135-b380-35e53754a3bf">
+      <name>ObjectPath</name>
+      <synonym>
+        <key>en</key>
+        <value>Object path</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Путь объекта</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e9bd1d04-6eb2-4bc8-ba07-7026ce36d304">
+      <name>ObjectSubtype</name>
+      <synonym>
+        <key>en</key>
+        <value>Object subtype</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Подтип объекта</value>
+      </synonym>
+      <type>
+        <types>EnumRef.Roles_MetadataSubtype</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="300d7a74-527e-47fe-b92e-98da2719131b">
+      <name>FormName</name>
+      <synonym>
+        <key>en</key>
+        <value>Form name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <tabularSections uuid="aef3b2b0-c77f-4bd8-a0f0-e86049ea808f">
     <producedTypes>
       <objectType typeId="256685b3-dc9c-4a8b-b589-56293ca9c9e8" valueTypeId="b6422225-d172-472e-99f6-2941d531b465"/>

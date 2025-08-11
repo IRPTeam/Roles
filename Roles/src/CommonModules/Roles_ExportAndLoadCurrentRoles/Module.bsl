@@ -50,6 +50,9 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0, CountFO = 0, Log = "") Exp
 	LoadFunctionalOptionsFromEDTFormat(Settings, FunctionalOptions);
 	CountFO = FunctionalOptions.Count();
 	
+	Forms = FindFiles(Settings.PathToXML, "*.form", True);		
+	Log = Log + Chars.LF + LoadFunctionalOptionsFromEDTFormatForms(Settings, Forms, Log);
+	
 	If LoadFromTemp Then	
 		DeleteFiles(Path);
 	EndIf;	
@@ -57,6 +60,90 @@ EndProcedure
 #EndRegion
 
 #Region Private
+
+Function LoadFunctionalOptionsFromEDTFormatForms(Settings, Val Forms, Log)
+	
+	Map = New Map;
+	FORef = Catalogs.Roles_FunctionalOptions.Select();
+	While FORef.Next() Do
+		Map.Insert("FunctionalOption." + FORef.Description, New Structure("Obj, Updated", FORef.GetObject(), False))
+	EndDo;
+	
+	ErrorsArray = New Array;
+	For Each Form In Forms Do
+		TextReader = New TextReader();
+		TextReader.Open(Form.FullName, TextEncoding.UTF8);
+		Text = TextReader.Read();
+		TextReader.Close();
+		If StrFind(Text, "<functionalOptions>") = 0 Then
+			Continue;
+		EndIf;
+		
+		XML = New XMLReader();
+		XML.SetString(Text);
+		
+		FormInfo = New DOMBuilder(); 
+		XMLData = FormInfo.Read(XML);
+		XML.Close();
+		
+		ListFO = XMLData.GetElementByTagName("functionalOptions");
+		
+		For Each FORow In ListFO Do
+			FO = Map.Get(FORow.TextContent);
+			If FO = Undefined Then
+				ErrorsArray.Add("Functional option: " + FORow.TextContent + ", not found. But using in: " + Form.FullName);
+				Continue;
+			EndIf;
+			FO.Updated = True;
+			NewForm = FO.Obj.FormContent.Add();
+			PathData = StrSplit(Form.Path, "\/", False);
+			NewForm.FormName = PathData[PathData.UBound()];
+			
+			If Not PathData[PathData.UBound() - 1] = "CommonForms" Then
+				NewForm.ObjectName = PathData[PathData.UBound() - 2];
+				NewForm.ObjectType = Enums.Roles_MetadataTypes[Left(PathData[PathData.UBound() - 3], StrLen(PathData[PathData.UBound() - 3]) - 1)];
+			Else
+				NewForm.ObjectType = Enums.Roles_MetadataTypes.CommonForm;
+			EndIf;
+			If FORow.ParentNode.TagName = "formCommands" Then
+				For Each CN In FORow.ParentNode.ChildNodes Do
+					If CN.NodeName = "name" Then
+						NewForm.ObjectPath = CN.TextContent;
+						NewForm.ObjectSubtype = Enums.Roles_MetadataSubtype.Command;
+						Break;
+					EndIf;
+				EndDo;
+			ElsIf FORow.ParentNode.TagName = "attributes" Then
+				For Each CN In FORow.ParentNode.ChildNodes Do
+					If CN.NodeName = "name" Then
+						NewForm.ObjectPath = CN.TextContent;
+						NewForm.ObjectSubtype = Enums.Roles_MetadataSubtype.Attribute;
+						Break;
+					EndIf;
+				EndDo;
+			ElsIf FORow.ParentNode.TagName = "columns" Then
+				For Each CN In FORow.ParentNode.ChildNodes Do
+					If CN.NodeName = "name" Then
+						NewForm.ObjectPath = CN.TextContent;
+						NewForm.ObjectSubtype = Enums.Roles_MetadataSubtype.Table;
+						Break;
+					EndIf;
+				EndDo;
+			Else
+				ErrorsArray.Add("Functional option: " + FORow.TextContent + ", Undefined tag content:" + FORow.ParentNode.TagName + " In : " + Form.FullName);
+			EndIf;
+		EndDo;
+		
+	EndDo;
+	
+	For Each VK In Map Do
+		If VK.Value.Updated Then
+			VK.Value.Obj.Write();
+		EndIf;
+	EndDo;
+	
+	Return StrConcat(ErrorsArray, Chars.LF);
+EndFunction
 
 Procedure LoadFunctionalOptionsFromEDTFormat(Settings, Val FunctionalOptions)
 
@@ -76,9 +163,9 @@ Procedure LoadFunctionalOptionsFromEDTFormat(Settings, Val FunctionalOptions)
 			FunctionalOptionObject = Catalogs.Roles_FunctionalOptions.CreateItem();
 			FunctionalOptionObject.SetNewObjectRef(FunctionalOptionRef);
 		Else
-			If FunctionalOptionRef.LastHashUpdate = CurrentHash Then
-				Continue;
-			EndIf;
+//			If FunctionalOptionRef.LastHashUpdate = CurrentHash Then
+//				Continue;
+//			EndIf;
 
 			FunctionalOptionObject = FunctionalOptionRef.GetObject();
 		EndIf;
@@ -90,6 +177,7 @@ Procedure LoadFunctionalOptionsFromEDTFormat(Settings, Val FunctionalOptions)
 		
 		FunctionalOptionObject.Content.Clear();
 		FunctionalOptionObject.LangInfo.Clear();
+		FunctionalOptionObject.FormContent.Clear();
 		
 		FunctionalOptionObject.Description = FunctionalOptionInfo.Name;
 		FunctionalOptionObject.Location = FunctionalOptionInfo.Location;
