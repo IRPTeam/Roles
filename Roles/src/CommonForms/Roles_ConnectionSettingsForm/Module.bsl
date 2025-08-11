@@ -137,7 +137,7 @@ Procedure LoadRolesFromCurrentConfigEnd(Settings)
 	    BeforeStartCall = New NotifyDescription("AddFileBeforeStartCall", ThisObject);
 	    BeginPutFileToServer(EndCall, ProgressCall, BeforeStartCall, , Settings.PathToXML, ThisObject.UUID);
 	Else	
-		Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(Settings, CountRoles, Log);
+		Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(Settings, CountRoles, CountFO, Log);
 	EndIf;
 EndProcedure
 
@@ -215,7 +215,7 @@ Procedure SaveFilesAtServer(Address, AddInfo)
 	Zip.Close();
 	MemoryStream.Close();
 	AddInfo.Settings.PathToXML = Path;
-	Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(AddInfo.Settings, CountRoles, Log);
+	Roles_ExportAndLoadCurrentRoles.UpdateRoleExt(AddInfo.Settings, CountRoles, CountFO, Log);
 EndProcedure
 
 &AtClient

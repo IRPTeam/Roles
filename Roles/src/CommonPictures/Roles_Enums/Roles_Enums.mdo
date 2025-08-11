@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="375ff3b3-409c-46a6-a71b-e901451ef876">
+  <name>Roles_Enums</name>
+  <synonym>
+    <key>en</key>
+    <value>Roles enums</value>
+  </synonym>
+</mdclass:CommonPicture>

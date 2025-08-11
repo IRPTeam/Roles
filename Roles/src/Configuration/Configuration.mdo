@@ -64,6 +64,7 @@
   <commonPictures>CommonPicture.Roles_DimensionTables</commonPictures>
   <commonPictures>CommonPicture.Roles_Document</commonPictures>
   <commonPictures>CommonPicture.Roles_DocumentJournal</commonPictures>
+  <commonPictures>CommonPicture.Roles_Enums</commonPictures>
   <commonPictures>CommonPicture.Roles_ExchangePlan</commonPictures>
   <commonPictures>CommonPicture.Roles_ExtDimensionAccountingFlags</commonPictures>
   <commonPictures>CommonPicture.Roles_ExternalDataSource</commonPictures>
@@ -114,6 +115,11 @@
   <commonPictures>CommonPicture.Roles_right_interactiveSetDeletionMarkPredefinedData</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveStart</commonPictures>
   <commonPictures>CommonPicture.Roles_right_interactiveUndoPosting</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mainWindowModeEmbeddedWorkplace</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mainWindowModeFullscreenWorkplace</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mainWindowModeKiosk</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mainWindowModeNormal</commonPictures>
+  <commonPictures>CommonPicture.Roles_right_mainWindowModeWorkplace</commonPictures>
   <commonPictures>CommonPicture.Roles_right_mobileClient</commonPictures>
   <commonPictures>CommonPicture.Roles_right_output</commonPictures>
   <commonPictures>CommonPicture.Roles_right_posting</commonPictures>
@@ -156,11 +162,6 @@
   <commonPictures>CommonPicture.Roles_Task</commonPictures>
   <commonPictures>CommonPicture.Roles_URLTemplate</commonPictures>
   <commonPictures>CommonPicture.Roles_WebService</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_mainWindowModeEmbeddedWorkplace</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_mainWindowModeFullscreenWorkplace</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_mainWindowModeKiosk</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_mainWindowModeNormal</commonPictures>
-  <commonPictures>CommonPicture.Roles_right_mainWindowModeWorkplace</commonPictures>
   <roles>Role.Roles_DefaultRole</roles>
   <roles>Role.Roles_UserRole</roles>
   <commonTemplates>CommonTemplate.Roles_TemplateDB</commonTemplates>
@@ -191,5 +192,6 @@
   <enums>Enum.Roles_MetadataTypes</enums>
   <enums>Enum.Roles_Rights</enums>
   <reports>Report.Roles_AccessToObjectAnalyse</reports>
+  <reports>Report.Roles_FunctionalOptionsAnalyse</reports>
   <dataProcessors>DataProcessor.Roles_ButtonForm</dataProcessors>
 </mdclass:Configuration>

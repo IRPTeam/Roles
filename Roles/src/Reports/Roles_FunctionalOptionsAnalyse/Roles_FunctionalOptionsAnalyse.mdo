@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5c2edb6-34e4-4bc9-99da-7bbdb88b78a7">
+  <producedTypes>
+    <objectType typeId="3171d9c3-c827-4506-b016-3a23712931db" valueTypeId="c4d18b41-5e33-4cb0-a648-19b9a4380d71"/>
+    <managerType typeId="ff701e1e-b04a-4760-bc98-a8a8b2d6d694" valueTypeId="747d50b6-f6a6-4571-89c4-08f892b897fa"/>
+  </producedTypes>
+  <name>Roles_FunctionalOptionsAnalyse</name>
+  <synonym>
+    <key>en</key>
+    <value>Functional options analyse</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.Roles_FunctionalOptionsAnalyse.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <templates uuid="c5018318-5589-4322-a18c-8468b8853b99">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -45,4 +45,5 @@
   <content>Report.Roles_AccessToObjectAnalyse</content>
   <content>CommonCommand.Roles_SaveExtensionToFile</content>
   <content>Catalog.Roles_FunctionalOptions</content>
+  <content>Report.Roles_FunctionalOptionsAnalyse</content>
 </mdclass:Subsystem>

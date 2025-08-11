@@ -98,6 +98,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="486e865e-efc6-4164-9a27-46dfa5d1650f">
+    <name>Location</name>
+    <synonym>
+      <key>en</key>
+      <value>Location</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="b5622549-134f-4218-9fe2-f4e4bb3a55b8">
     <producedTypes>
       <objectType typeId="a7c6cd56-7741-4082-bdab-ce4bb7ca909d" valueTypeId="51f7224d-fa5a-4ac2-ae77-26292359f0b2"/>
@@ -155,26 +173,6 @@
       <indexing>Index</indexing>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="e0a6830c-66ef-4bf3-bcb1-209b714e2b25">
-      <name>RightName</name>
-      <synonym>
-        <key>en</key>
-        <value>Right name</value>
-      </synonym>
-      <synonym>
-        <key>ru</key>
-        <value>Имя права</value>
-      </synonym>
-      <type>
-        <types>EnumRef.Roles_Rights</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
     <attributes uuid="922498ae-6cce-4214-a21c-31f5e3104b50">
       <name>RowID</name>
       <synonym>
@@ -219,42 +217,6 @@
       <indexing>Index</indexing>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="38849fd0-edf1-4956-9f88-0f5f1cc346bd">
-      <name>RightValue</name>
-      <synonym>
-        <key>en</key>
-        <value>Right value</value>
-      </synonym>
-      <synonym>
-        <key>ru</key>
-        <value>Значение</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="215e8360-713d-44b3-ac1b-119aabd13107">
-      <name>Disable</name>
-      <synonym>
-        <key>en</key>
-        <value>Disable</value>
-      </synonym>
-      <synonym>
-        <key>ru</key>
-        <value>Отключить</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
     <attributes uuid="895d8d64-a375-4db7-baa6-013c32abaa9c">
       <name>ObjectSubtype</name>
       <synonym>
@@ -267,6 +229,63 @@
       </synonym>
       <type>
         <types>EnumRef.Roles_MetadataSubtype</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="aef3b2b0-c77f-4bd8-a0f0-e86049ea808f">
+    <producedTypes>
+      <objectType typeId="256685b3-dc9c-4a8b-b589-56293ca9c9e8" valueTypeId="b6422225-d172-472e-99f6-2941d531b465"/>
+      <rowType typeId="dc440412-88ef-403a-aaec-bfe26cf1ccf2" valueTypeId="31698e8f-c7ce-45bf-a631-0e48f1d1ea16"/>
+    </producedTypes>
+    <name>LangInfo</name>
+    <synonym>
+      <key>en</key>
+      <value>Lang info</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Информация о языке</value>
+    </synonym>
+    <attributes uuid="f6948691-4b0a-4aef-9787-be8f0dae1599">
+      <name>LangCode</name>
+      <synonym>
+        <key>en</key>
+        <value>Lang code</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Код языка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="00def643-8b1c-4d7a-9734-97eb993c408e">
+      <name>LangDescription</name>
+      <synonym>
+        <key>en</key>
+        <value>Lang description</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Описание на языке</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

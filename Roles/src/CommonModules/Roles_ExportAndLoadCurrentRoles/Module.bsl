@@ -1,5 +1,5 @@
 #Region Internal
-Procedure UpdateRoleExt(Val Settings, CountRoles = 0, Log = "") Export
+Procedure UpdateRoleExt(Val Settings, CountRoles = 0, CountFO = 0, Log = "") Export
 	LoadFromTemp = False;
 	If Settings.Source = "SQL"
 		Or Settings.Source = "File" Then
@@ -37,14 +37,18 @@ Procedure UpdateRoleExt(Val Settings, CountRoles = 0, Log = "") Export
 	
 	
 	Rights = FindFiles(Settings.PathToXML + "Roles", "*.xml", False);	
-	LoadFromXMLFormat(Settings, Rights);
+	LoadRolesFromXMLFormat(Settings, Rights);
 	
 	CountRoles = Rights.Count();
 	
 	Rights = FindFiles(Settings.PathToXML + "Roles", "*.mdo", True);		
-	LoadFromEDTFormat(Settings, Rights);
+	LoadRolesFromEDTFormat(Settings, Rights);
 	
 	CountRoles = CountRoles + Rights.Count();
+	
+	FunctionalOptions = FindFiles(Settings.PathToXML + "FunctionalOptions", "*.mdo", True);		
+	LoadFunctionalOptionsFromEDTFormat(Settings, FunctionalOptions);
+	CountFO = FunctionalOptions.Count();
 	
 	If LoadFromTemp Then	
 		DeleteFiles(Path);
@@ -53,7 +57,105 @@ EndProcedure
 #EndRegion
 
 #Region Private
-Procedure LoadFromEDTFormat(Settings, Val Rights)
+
+Procedure LoadFunctionalOptionsFromEDTFormat(Settings, Val FunctionalOptions)
+
+	For Each FO In FunctionalOptions Do
+		TextReader = New TextReader();
+		TextReader.Open(FO.FullName, TextEncoding.UTF8);
+		Text = TextReader.Read();
+		TextReader.Close();
+		CurrentHash = Roles_ServiceServer.HashMD5(Text);
+		
+		FunctionalOptionInfo = Roles_ServiceServer.DeserializeXMLUseXDTOFactory(Text);
+		
+		UUID = New UUID(FunctionalOptionInfo.uuid);
+		
+		FunctionalOptionRef = Catalogs.Roles_FunctionalOptions.GetRef(UUID);
+		If FunctionalOptionRef.Description = "" Then
+			FunctionalOptionObject = Catalogs.Roles_FunctionalOptions.CreateItem();
+			FunctionalOptionObject.SetNewObjectRef(FunctionalOptionRef);
+		Else
+			If FunctionalOptionRef.LastHashUpdate = CurrentHash Then
+				Continue;
+			EndIf;
+
+			FunctionalOptionObject = FunctionalOptionRef.GetObject();
+		EndIf;
+		
+		FunctionalOptionObject.LastHashUpdate = CurrentHash;
+		FunctionalOptionObject.AdditionalProperties.Insert("Update");
+		
+		CurrentHash = Roles_ServiceServer.HashMD5(Roles_ServiceServer.SerializeXML(FunctionalOptionObject));
+		
+		FunctionalOptionObject.Content.Clear();
+		FunctionalOptionObject.LangInfo.Clear();
+		
+		FunctionalOptionObject.Description = FunctionalOptionInfo.Name;
+		FunctionalOptionObject.Location = FunctionalOptionInfo.Location;
+		If Not FunctionalOptionInfo.Properties().Get("Synonym") = Undefined Then	
+			If TypeOf(FunctionalOptionInfo.Synonym) = Type("XDTODataObject") Then
+				Lang = FunctionalOptionInfo.Synonym;
+				NewLang = FunctionalOptionObject.LangInfo.Add();
+				NewLang.LangCode = Lang.key;
+				NewLang.LangDescription = Lang.value;
+			Else
+				For Each Lang In FunctionalOptionInfo.Synonym Do
+					NewLang = FunctionalOptionObject.LangInfo.Add();
+					NewLang.LangCode = Lang.key;
+					NewLang.LangDescription = Lang.value;
+				EndDo;
+			EndIf;
+		EndIf;
+		If Not FunctionalOptionInfo.Properties().Get("Comment") = Undefined Then
+			FunctionalOptionObject.Comment = FunctionalOptionInfo.Comment;
+		Else
+			FunctionalOptionObject.Comment = "";
+		EndIf;
+		
+		If Not FunctionalOptionInfo.Properties().Get("content") = Undefined Then	
+			If TypeOf(FunctionalOptionInfo.content) = Type("String") Then
+				Content = FunctionalOptionInfo.Content;
+				NewContent = FunctionalOptionObject.Content.Add();
+				NewContent.RowID = New UUID();
+				NewContent.ObjectPath = Content;
+				
+				ObjectFullName = StrSplit(Content, ".", False);
+				NewContent.ObjectType = Enums.Roles_MetadataTypes[ObjectFullName[0]];
+				NewContent.ObjectName = ObjectFullName[1];	
+				If ObjectFullName.Count() > 2 Then
+					If Not ObjectFullName[2] = "Subsystem" Then
+						NewContent.ObjectSubtype = Enums.Roles_MetadataSubtype[ObjectFullName[2]];
+					EndIf;
+				EndIf;
+			Else
+				For Each Content In FunctionalOptionInfo.content Do
+					NewContent = FunctionalOptionObject.Content.Add();
+					NewContent.RowID = New UUID();
+					NewContent.ObjectPath = Content;
+					
+					ObjectFullName = StrSplit(Content, ".", False);
+					NewContent.ObjectType = Enums.Roles_MetadataTypes[ObjectFullName[0]];
+					NewContent.ObjectName = ObjectFullName[1];	
+					If ObjectFullName.Count() > 2 Then
+						If Not ObjectFullName[2] = "Subsystem" Then
+							NewContent.ObjectSubtype = Enums.Roles_MetadataSubtype[ObjectFullName[2]];
+						EndIf;
+					EndIf;
+				EndDo;
+			EndIf;
+		EndIf;
+		
+		NewHash = Roles_ServiceServer.HashMD5(Roles_ServiceServer.SerializeXML(FunctionalOptionObject));
+		
+		If Not CurrentHash = NewHash Then
+			FunctionalOptionObject.Write();
+		EndIf;
+	EndDo;
+EndProcedure
+
+
+Procedure LoadRolesFromEDTFormat(Settings, Val Rights)
 
 	For Each Right In Rights Do
 		TextReader = New TextReader();
@@ -200,7 +302,7 @@ Procedure LoadRightsToDB(RightObject, Text)
 	EndDo;
 EndProcedure
 
-Procedure LoadFromXMLFormat(Settings, Val Rights)
+Procedure LoadRolesFromXMLFormat(Settings, Val Rights)
 
 	For Each Right In Rights Do
 		TextReader = New TextReader();
