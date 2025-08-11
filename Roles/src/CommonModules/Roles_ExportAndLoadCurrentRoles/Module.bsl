@@ -122,9 +122,16 @@ Function LoadFunctionalOptionsFromEDTFormatForms(Settings, Val Forms, Log)
 					EndIf;
 				EndDo;
 			ElsIf FORow.ParentNode.TagName = "columns" Then
-				For Each CN In FORow.ParentNode.ChildNodes Do
+				For Each CN In FORow.ParentNode.ParentNode.ChildNodes Do
 					If CN.NodeName = "name" Then
 						NewForm.ObjectPath = CN.TextContent;
+						NewForm.ObjectSubtype = Enums.Roles_MetadataSubtype.Table;
+						Break;
+					EndIf;
+				EndDo;
+				For Each CN In FORow.ParentNode.ChildNodes Do
+					If CN.NodeName = "name" Then
+						NewForm.ObjectPath = NewForm.ObjectPath + "." + CN.TextContent;
 						NewForm.ObjectSubtype = Enums.Roles_MetadataSubtype.Table;
 						Break;
 					EndIf;
